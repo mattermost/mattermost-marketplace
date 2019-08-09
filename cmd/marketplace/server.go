@@ -10,8 +10,8 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/mattermost/mattermost-marketplace/internal/api"
-	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/mattermost/mattermost-marketplace/internal/store"
+	"github.com/mattermost/mattermost-server/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -20,7 +20,7 @@ import (
 var instanceID string
 
 func init() {
-	instanceID = model.NewID()
+	instanceID = model.NewId()
 
 	serverCmd.PersistentFlags().String("database", "plugins.json", "The read-only JSON file backing the server.")
 	serverCmd.PersistentFlags().String("listen", ":8085", "The interface and port on which to listen.")
