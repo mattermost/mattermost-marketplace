@@ -58,7 +58,6 @@ func (c *Client) GetPlugins(request *GetPluginsRequest) ([]*model.Plugin, error)
 	switch resp.StatusCode {
 	case http.StatusOK:
 		return model.PluginsFromReader(resp.Body)
-
 	default:
 		return nil, errors.Errorf("failed with status code %d", resp.StatusCode)
 	}
