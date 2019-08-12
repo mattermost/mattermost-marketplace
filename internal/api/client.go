@@ -10,13 +10,13 @@ import (
 	"github.com/pkg/errors"
 )
 
-// Client is the programmatic interface to the provisioning server API.
+// Client is the programmatic interface to the marketplace server API.
 type Client struct {
 	Address    string
 	httpClient *http.Client
 }
 
-// NewClient creates a client to the provisioning server at the given address.
+// NewClient creates a client to the marketplace server at the given address.
 func NewClient(address string) *Client {
 	return &Client{
 		Address:    address,
