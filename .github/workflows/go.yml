@@ -1,0 +1,14 @@
+name: Build
+on: [pull_request]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v1
+
+    - name: Golang Action
+      uses: cedrickring/golang-action/go1.12@1.3.0
