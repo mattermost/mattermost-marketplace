@@ -12,23 +12,31 @@ import (
 )
 
 func TestPlugins(t *testing.T) {
-	plugin1 := &model.Plugin{
+	demoPlugin := &model.Plugin{
 		HomepageURL:       "https://github.com/mattermost/mattermost-plugin-demo",
 		DownloadURL:       "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 		DownloadSignature: []byte("signature"),
-		Manifest:          &mattermostModel.Manifest{},
+		Manifest: &mattermostModel.Manifest{
+			Id:          "com.mattermost.demo-plugin",
+			Name:        "Demo Plugin",
+			Description: "This plugin demonstrates the capabilities of a Mattermost plugin.",
+		},
 	}
 
-	plugin2 := &model.Plugin{
+	starterPlugin := &model.Plugin{
 		HomepageURL:       "https://github.com/mattermost/mattermost-plugin-starter-template",
 		DownloadURL:       "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
 		DownloadSignature: []byte("signature2"),
-		Manifest:          &mattermostModel.Manifest{},
+		Manifest: &mattermostModel.Manifest{
+			Id:          "com.mattermost.plugin-starter-template",
+			Name:        "Plugin Starter Template",
+			Description: "This plugin serves as a starting point for writing a Mattermost plugin.",
+		},
 	}
 
 	data, err := json.Marshal([]*model.Plugin{
-		plugin1,
-		plugin2,
+		demoPlugin,
+		starterPlugin,
 	})
 	require.NoError(t, err)
 
@@ -53,7 +61,7 @@ func TestPlugins(t *testing.T) {
 			Filter:  "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{plugin1}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
 	})
 
 	t.Run("page 0, per page 10", func(t *testing.T) {
@@ -63,7 +71,7 @@ func TestPlugins(t *testing.T) {
 			Filter:  "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{plugin1, plugin2}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
 	})
 
 	t.Run("page 0, per page 1", func(t *testing.T) {
@@ -73,7 +81,7 @@ func TestPlugins(t *testing.T) {
 			Filter:  "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{plugin1}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
 	})
 
 	t.Run("page 0, per page 10", func(t *testing.T) {
@@ -83,7 +91,7 @@ func TestPlugins(t *testing.T) {
 			Filter:  "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{plugin1, plugin2}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
 	})
 
 	t.Run("default paging", func(t *testing.T) {
@@ -91,6 +99,70 @@ func TestPlugins(t *testing.T) {
 			Filter: "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{plugin1, plugin2}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
+	})
+
+	t.Run("filter spaces", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter: "  ",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
+	})
+
+	t.Run("id match, exact", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter: "com.mattermost.demo-plugin",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+	})
+
+	t.Run("id match, case-insensitive", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter: "com.mattermost.demo-PLUGIN",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+	})
+
+	t.Run("name match, exact", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter: "Plugin Starter Template",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{starterPlugin}, actualPlugins)
+	})
+
+	t.Run("name match, partial", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter: "Starter",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{starterPlugin}, actualPlugins)
+	})
+
+	t.Run("name match, case-insensitive", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter: "TEMPLATE",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{starterPlugin}, actualPlugins)
+	})
+
+	t.Run("description match, partial", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter: "capabilities",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+	})
+
+	t.Run("description match, case-insensitive, multiple matches", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter: "MATTERMOST",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
 	})
 }
