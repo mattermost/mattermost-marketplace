@@ -118,7 +118,7 @@ func TestPlugins(t *testing.T) {
 		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
 	})
 
-	t.Run("id match, case-insensitivei", func(t *testing.T) {
+	t.Run("id match, case-insensitive", func(t *testing.T) {
 		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "com.mattermost.demo-PLUGIN",
 		})
