@@ -25,6 +25,10 @@ func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
 
 // GetPlugins fetches the given page of plugins. The first page is 0.
 func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugin, error) {
+	if pluginFilter.PerPage == 0 {
+		return nil, nil
+	}
+
 	var plugins []*model.Plugin
 
 	filter := strings.TrimSpace(pluginFilter.Filter)
@@ -40,7 +44,7 @@ func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 		}
 	}
 
-	if len(plugins) == 0 || pluginFilter.PerPage == 0 {
+	if len(plugins) == 0 {
 		return nil, nil
 	}
 	if pluginFilter.PerPage == model.AllPerPage {
