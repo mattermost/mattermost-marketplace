@@ -10,9 +10,6 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "marketplace",
 	Short: "Marketplace is a repository of Mattermost plugins.",
-	RunE: func(cmd *cobra.Command, args []string) error {
-		return serverCmd.RunE(cmd, args)
-	},
 	// SilenceErrors allows us to explicitly log the error returned from rootCmd below.
 	SilenceErrors: true,
 }
