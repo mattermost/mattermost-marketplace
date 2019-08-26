@@ -27,18 +27,13 @@ This repository houses the open-source components of the Mattermost Integrations
 Simply run the following:
 
 ```
-# Make sure Go modules is turned on
-$ export GO111MODULE=on
-$ go run ./cmd/marketplace server
-
-# Usage
-$ go run ./cmd/marketplace server --help
+$ make run-server
 ```
 
 ### Testing
 
-Run the go tests to test:
+Running all tests:
 
 ```
-$ go test ./...
+$ make test
 ```
