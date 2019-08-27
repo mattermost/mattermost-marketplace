@@ -15,3 +15,25 @@ This repository houses the open-source components of the Mattermost Integrations
 ## Get Involved
 
 - [Join the discussion on Integrations Marketplace](https://community.mattermost.com/core/channels/marketplace)
+
+## Developing
+
+### Environment Setup
+
+1. Install [Go](https://golang.org/doc/install)
+
+### Running
+
+Simply run the following:
+
+```
+$ make run-server
+```
+
+### Testing
+
+Running all tests:
+
+```
+$ make test
+```
