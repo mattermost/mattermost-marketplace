@@ -45,7 +45,7 @@ func TestPlugins(t *testing.T) {
 	require.NoError(t, err)
 
 	t.Run("page 0, per page 0", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{
 			Page:    0,
 			PerPage: 0,
 			Filter:  "",
@@ -55,7 +55,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("page 0, per page 1", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{
 			Page:    0,
 			PerPage: 1,
 			Filter:  "",
@@ -65,7 +65,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("page 0, per page 10", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{
 			Page:    0,
 			PerPage: 10,
 			Filter:  "",
@@ -75,7 +75,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("page 0, per page 1", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{
 			Page:    0,
 			PerPage: 1,
 			Filter:  "",
@@ -85,7 +85,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("page 0, per page 10", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{
 			Page:    0,
 			PerPage: 10,
 			Filter:  "",
@@ -95,7 +95,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("default paging", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "",
 		})
 		require.NoError(t, err)
@@ -103,7 +103,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("filter spaces", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "  ",
 		})
 		require.NoError(t, err)
@@ -111,7 +111,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("id match, exact", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "com.mattermost.demo-plugin",
 		})
 		require.NoError(t, err)
@@ -119,7 +119,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("id match, case-insensitive", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "com.mattermost.demo-PLUGIN",
 		})
 		require.NoError(t, err)
@@ -127,7 +127,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("name match, exact", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "Plugin Starter Template",
 		})
 		require.NoError(t, err)
@@ -135,7 +135,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("name match, partial", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "Starter",
 		})
 		require.NoError(t, err)
@@ -143,7 +143,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("name match, case-insensitive", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "TEMPLATE",
 		})
 		require.NoError(t, err)
@@ -151,7 +151,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("description match, partial", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "capabilities",
 		})
 		require.NoError(t, err)
@@ -159,7 +159,7 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("description match, case-insensitive, multiple matches", func(t *testing.T) {
-		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+		actualPlugins, err := sqlStore.GetPlugins(model.PluginFilter{PerPage: model.AllPerPage,
 			Filter: "MATTERMOST",
 		})
 		require.NoError(t, err)

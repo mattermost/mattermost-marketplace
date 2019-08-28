@@ -1,49 +1,22 @@
-package api_test
+package client_test
 
 import (
-	"bytes"
-	"encoding/json"
 	"fmt"
 	"net/http"
-	"net/http/httptest"
 	"testing"
 
-	"github.com/gorilla/mux"
-	internalApi "github.com/mattermost/mattermost-marketplace/internal/api"
+	"github.com/mattermost/mattermost-marketplace/client"
 	"github.com/mattermost/mattermost-marketplace/internal/model"
-	"github.com/mattermost/mattermost-marketplace/internal/store"
-	"github.com/mattermost/mattermost-marketplace/internal/testlib"
-	"github.com/mattermost/mattermost-marketplace/pkg/api"
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 	"github.com/stretchr/testify/require"
 )
 
-func setupApi(t *testing.T, plugins []*model.Plugin) (*api.Client, string, func()) {
-	logger := testlib.MakeLogger(t)
-
-	data, err := json.Marshal(plugins)
-	require.NoError(t, err)
-	store, err := store.New(bytes.NewReader(data), logger)
-	require.NoError(t, err)
-
-	router := mux.NewRouter()
-	internalApi.Register(router, &internalApi.Context{
-		Store:  store,
-		Logger: logger,
-	})
-	ts := httptest.NewServer(router)
-
-	return api.NewClient(ts.URL), ts.URL, func() {
-		ts.Close()
-	}
-}
-
 func TestPlugins(t *testing.T) {
 	t.Run("no plugins", func(t *testing.T) {
-		client, _, tearDown := setupApi(t, nil)
+		c, _, tearDown := SetupApi(t, nil)
 		defer tearDown()
 
-		plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+		plugins, err := c.GetPlugins(client.GetPluginsRequest{
 			Page:    0,
 			PerPage: 10,
 		})
@@ -53,7 +26,7 @@ func TestPlugins(t *testing.T) {
 
 	t.Run("parameter edge cases", func(t *testing.T) {
 		t.Run("invalid page", func(t *testing.T) {
-			_, url, tearDown := setupApi(t, nil)
+			_, url, tearDown := SetupApi(t, nil)
 			defer tearDown()
 
 			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=invalid&per_page=100", url))
@@ -62,7 +35,7 @@ func TestPlugins(t *testing.T) {
 		})
 
 		t.Run("invalid perPage", func(t *testing.T) {
-			_, url, tearDown := setupApi(t, nil)
+			_, url, tearDown := SetupApi(t, nil)
 			defer tearDown()
 
 			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=0&per_page=invalid", url))
@@ -71,7 +44,7 @@ func TestPlugins(t *testing.T) {
 		})
 
 		t.Run("no paging parameters", func(t *testing.T) {
-			_, url, tearDown := setupApi(t, nil)
+			_, url, tearDown := SetupApi(t, nil)
 			defer tearDown()
 
 			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins", url))
@@ -80,7 +53,7 @@ func TestPlugins(t *testing.T) {
 		})
 
 		t.Run("missing page", func(t *testing.T) {
-			_, url, tearDown := setupApi(t, nil)
+			_, url, tearDown := SetupApi(t, nil)
 			defer tearDown()
 
 			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?per_page=100", url))
@@ -89,7 +62,7 @@ func TestPlugins(t *testing.T) {
 		})
 
 		t.Run("missing perPage", func(t *testing.T) {
-			_, url, tearDown := setupApi(t, nil)
+			_, url, tearDown := SetupApi(t, nil)
 			defer tearDown()
 
 			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=1", url))
@@ -120,10 +93,10 @@ func TestPlugins(t *testing.T) {
 		plugins := []*model.Plugin{plugin1, plugin2, plugin3}
 
 		t.Run("get plugins, page 0, perPage 2", func(t *testing.T) {
-			client, _, tearDown := setupApi(t, plugins)
+			c, _, tearDown := SetupApi(t, plugins)
 			defer tearDown()
 
-			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+			plugins, err := c.GetPlugins(client.GetPluginsRequest{
 				Page:    0,
 				PerPage: 2,
 			})
@@ -132,10 +105,10 @@ func TestPlugins(t *testing.T) {
 		})
 
 		t.Run("get plugins, page 1, perPage 2", func(t *testing.T) {
-			client, _, tearDown := setupApi(t, plugins)
+			c, _, tearDown := SetupApi(t, plugins)
 			defer tearDown()
 
-			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+			plugins, err := c.GetPlugins(client.GetPluginsRequest{
 				Page:    1,
 				PerPage: 2,
 			})

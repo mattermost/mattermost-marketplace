@@ -49,7 +49,7 @@ func handleGetPlugins(c *Context, w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	plugins, err := c.Store.GetPlugins(filter)
+	plugins, err := c.Store.GetPlugins(*filter)
 	if err != nil {
 		c.Logger.WithError(err).Error("failed to query plugins")
 		w.WriteHeader(http.StatusInternalServerError)

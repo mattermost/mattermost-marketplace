@@ -7,7 +7,7 @@ import (
 
 // Store describes the interface to the backing store.
 type Store interface {
-	GetPlugins(filter *model.PluginFilter) ([]*model.Plugin, error)
+	GetPlugins(filter model.PluginFilter) ([]*model.Plugin, error)
 }
 
 // Context provides the API with all necessary data and interfaces for responding to requests.

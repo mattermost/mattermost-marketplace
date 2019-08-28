@@ -6,7 +6,7 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
-func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
+func pluginMatchesFilter(plugin model.Plugin, filter string) bool {
 	filter = strings.ToLower(filter)
 	if strings.ToLower(plugin.Manifest.Id) == filter {
 		return true
@@ -24,7 +24,7 @@ func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
 }
 
 // GetPlugins fetches the given page of plugins. The first page is 0.
-func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugin, error) {
+func (store *Store) GetPlugins(pluginFilter model.PluginFilter) ([]*model.Plugin, error) {
 	if pluginFilter.PerPage == 0 {
 		return nil, nil
 	}
@@ -36,7 +36,7 @@ func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 		plugins = store.plugins
 	} else {
 		for _, plugin := range store.plugins {
-			if !pluginMatchesFilter(plugin, filter) {
+			if !pluginMatchesFilter(*plugin, filter) {
 				continue
 			}
 
