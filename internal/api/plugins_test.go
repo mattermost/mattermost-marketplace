@@ -9,15 +9,16 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	"github.com/mattermost/mattermost-marketplace/internal/api"
+	internalApi "github.com/mattermost/mattermost-marketplace/internal/api"
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/mattermost/mattermost-marketplace/internal/store"
 	"github.com/mattermost/mattermost-marketplace/internal/testlib"
+	"github.com/mattermost/mattermost-marketplace/pkg/api"
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 	"github.com/stretchr/testify/require"
 )
 
-func setupApi(t *testing.T, plugins []*model.Plugin) (*api.Client, func()) {
+func setupApi(t *testing.T, plugins []*model.Plugin) (*api.Client, string, func()) {
 	logger := testlib.MakeLogger(t)
 
 	data, err := json.Marshal(plugins)
@@ -26,20 +27,20 @@ func setupApi(t *testing.T, plugins []*model.Plugin) (*api.Client, func()) {
 	require.NoError(t, err)
 
 	router := mux.NewRouter()
-	api.Register(router, &api.Context{
+	internalApi.Register(router, &internalApi.Context{
 		Store:  store,
 		Logger: logger,
 	})
 	ts := httptest.NewServer(router)
 
-	return api.NewClient(ts.URL), func() {
+	return api.NewClient(ts.URL), ts.URL, func() {
 		ts.Close()
 	}
 }
 
 func TestPlugins(t *testing.T) {
 	t.Run("no plugins", func(t *testing.T) {
-		client, tearDown := setupApi(t, nil)
+		client, _, tearDown := setupApi(t, nil)
 		defer tearDown()
 
 		plugins, err := client.GetPlugins(&api.GetPluginsRequest{
@@ -52,46 +53,46 @@ func TestPlugins(t *testing.T) {
 
 	t.Run("parameter edge cases", func(t *testing.T) {
 		t.Run("invalid page", func(t *testing.T) {
-			client, tearDown := setupApi(t, nil)
+			_, url, tearDown := setupApi(t, nil)
 			defer tearDown()
 
-			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=invalid&per_page=100", client.Address))
+			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=invalid&per_page=100", url))
 			require.NoError(t, err)
 			require.Equal(t, http.StatusBadRequest, resp.StatusCode)
 		})
 
 		t.Run("invalid perPage", func(t *testing.T) {
-			client, tearDown := setupApi(t, nil)
+			_, url, tearDown := setupApi(t, nil)
 			defer tearDown()
 
-			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=0&per_page=invalid", client.Address))
+			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=0&per_page=invalid", url))
 			require.NoError(t, err)
 			require.Equal(t, http.StatusBadRequest, resp.StatusCode)
 		})
 
 		t.Run("no paging parameters", func(t *testing.T) {
-			client, tearDown := setupApi(t, nil)
+			_, url, tearDown := setupApi(t, nil)
 			defer tearDown()
 
-			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins", client.Address))
+			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins", url))
 			require.NoError(t, err)
 			require.Equal(t, http.StatusOK, resp.StatusCode)
 		})
 
 		t.Run("missing page", func(t *testing.T) {
-			client, tearDown := setupApi(t, nil)
+			_, url, tearDown := setupApi(t, nil)
 			defer tearDown()
 
-			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?per_page=100", client.Address))
+			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?per_page=100", url))
 			require.NoError(t, err)
 			require.Equal(t, http.StatusOK, resp.StatusCode)
 		})
 
 		t.Run("missing perPage", func(t *testing.T) {
-			client, tearDown := setupApi(t, nil)
+			_, url, tearDown := setupApi(t, nil)
 			defer tearDown()
 
-			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=1", client.Address))
+			resp, err := http.Get(fmt.Sprintf("%s/api/v1/plugins?page=1", url))
 			require.NoError(t, err)
 			require.Equal(t, http.StatusOK, resp.StatusCode)
 		})
@@ -119,7 +120,7 @@ func TestPlugins(t *testing.T) {
 		plugins := []*model.Plugin{plugin1, plugin2, plugin3}
 
 		t.Run("get plugins, page 0, perPage 2", func(t *testing.T) {
-			client, tearDown := setupApi(t, plugins)
+			client, _, tearDown := setupApi(t, plugins)
 			defer tearDown()
 
 			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
@@ -131,7 +132,7 @@ func TestPlugins(t *testing.T) {
 		})
 
 		t.Run("get plugins, page 1, perPage 2", func(t *testing.T) {
-			client, tearDown := setupApi(t, plugins)
+			client, _, tearDown := setupApi(t, plugins)
 			defer tearDown()
 
 			plugins, err := client.GetPlugins(&api.GetPluginsRequest{

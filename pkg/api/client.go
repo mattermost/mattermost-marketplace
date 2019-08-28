@@ -12,14 +12,14 @@ import (
 
 // Client is the programmatic interface to the marketplace server API.
 type Client struct {
-	Address    string
+	address    string
 	httpClient *http.Client
 }
 
 // NewClient creates a client to the marketplace server at the given address.
 func NewClient(address string) *Client {
 	return &Client{
-		Address:    address,
+		address:    address,
 		httpClient: &http.Client{},
 	}
 }
@@ -33,7 +33,7 @@ func closeBody(r *http.Response) {
 }
 
 func (c *Client) buildURL(urlPath string, args ...interface{}) string {
-	return fmt.Sprintf("%s%s", c.Address, fmt.Sprintf(urlPath, args...))
+	return fmt.Sprintf("%s%s", c.address, fmt.Sprintf(urlPath, args...))
 }
 
 func (c *Client) doGet(u string) (*http.Response, error) {
