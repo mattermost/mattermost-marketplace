@@ -4,6 +4,7 @@ go 1.12
 
 require (
 	github.com/go-ldap/ldap v3.0.3+incompatible // indirect
+	github.com/google/go-github/v28 v28.0.0
 	github.com/gorilla/mux v1.7.3
 	github.com/mattermost/mattermost-server v5.12.3+incompatible
 	github.com/pborman/uuid v1.2.0
@@ -14,4 +15,5 @@ require (
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/zap v1.10.0 // indirect
 	golang.org/x/net v0.0.0-20190724013045-ca1201d0de80 // indirect
+	golang.org/x/oauth2 v0.0.0-20190319182350-c85d3e98c914
 )

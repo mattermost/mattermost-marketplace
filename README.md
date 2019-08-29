@@ -37,3 +37,11 @@ Running all tests:
 ```
 $ make test
 ```
+
+### Updating plugins.json
+
+At the moment, the marketplace simply points at the latest release of a fixed set of Mattermost plugins. In the future, this database will be fine-tuned to facilitate tracking multiple versions for the appropriate Mattermost server version. To update `plugins.json`, simply run:
+
+```
+$ go run ./cmd/generator --github-token <your github token> --debug > plugins.json
+```
