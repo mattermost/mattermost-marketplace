@@ -37,3 +37,19 @@ Running all tests:
 ```
 $ make test
 ```
+
+### Deploying as a Lambda Function
+
+In addition to running as a standalone server, the Marketplace is also designed to run as a Lambda function, compiling the `plugins.json` database into the binary for immediate access without further configuration.
+
+Simply run the following:
+
+```
+$ make deploy-lambda
+```
+
+To iterate quickly after the Cloud Formation stack is up, simply run:
+
+```
+$ make deploy-lambda-fast
+```

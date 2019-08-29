@@ -1,0 +1,6 @@
+Meeting summary:
+* Review of lambda function proposal. NS: Continue with plan to deliver lambda for MVP. 
+* Monitoring?
+* Deployment? Staging/testing managed by the team. Production to be eventually fully managed by IST, but we might even launch on the staging environment while iterating on production (flipping the DNS later). GitHub Actions to build/test. Jenkins to deploy. Production branch merges require sign-off from build member / security member. Triggers deployment to production lambda instance. Master branch merges require only developer sign-off, and deploy to Staging. Toolkit team has access to production S3 bucket containing logs for debugging, and full access to staging environment. 
+* Security?
+* DNS?
