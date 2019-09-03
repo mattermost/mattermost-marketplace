@@ -7,6 +7,6 @@ import (
 )
 
 func TestNewStatikStore(t *testing.T) {
-	_, err := newStatikStore(logger)
+	_, err := newStatikStore("/plugins.json", logger)
 	require.NoError(t, err)
 }

@@ -22,13 +22,13 @@ func main() {
 	}
 }
 
-func newStatikStore(logger logrus.FieldLogger) (*store.Store, error) {
+func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.Store, error) {
 	statikFS, err := fs.New()
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to open statik fileystem")
 	}
 
-	database, err := statikFS.Open("/plugins.json")
+	database, err := statikFS.Open(statikPath)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed to open %s", database)
 	}
@@ -45,7 +45,7 @@ func newStatikStore(logger logrus.FieldLogger) (*store.Store, error) {
 func listenAndServe() error {
 	logger = logrus.New()
 
-	statikStore, err := newStatikStore(logger)
+	statikStore, err := newStatikStore("/plugins.json", logger)
 	if err != nil {
 		return err
 	}
