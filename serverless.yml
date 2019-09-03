@@ -4,7 +4,7 @@ frameworkVersion: '>=1.28.0 <2.0.0'
 
 provider:
   name: aws
-  stage: dev
+  stage: ${opt:stage, 'dev'}
   region: us-east-1
   runtime: go1.x
   timeout: 5
@@ -51,7 +51,7 @@ resources:
                   - "."
                   - - Ref: ApiGatewayRestApi
                     - execute-api.us-east-1.amazonaws.com
-              OriginPath: /dev
+              OriginPath: /${self:provider.stage}
               CustomOriginConfig:
                 HTTPPort: 80
                 HTTPSPort: 443
