@@ -38,6 +38,14 @@ Running all tests:
 $ make test
 ```
 
+### Updating plugins.json
+
+At the moment, the marketplace simply points at the latest release of a fixed set of Mattermost plugins. In the future, this database will be fine-tuned to facilitate tracking multiple versions for the appropriate Mattermost server version. To update `plugins.json`, simply run:
+
+```
+$ go run ./cmd/generator --github-token <your github token> --debug > plugins.json
+```
+
 ### Deploying as a Lambda Function
 
 In addition to running as a standalone server, the Marketplace is also designed to run as a Lambda function, compiling the `plugins.json` database into the binary for immediate access without further configuration.
