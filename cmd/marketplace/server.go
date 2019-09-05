@@ -47,7 +47,7 @@ var serverCmd = &cobra.Command{
 
 		fileStore, err := store.New(databaseFile, logger)
 		if err != nil {
-			return errors.Wrapf(err, "failed to initialize %s as store", database)
+			return errors.Wrap(err, "failed to initialize store")
 		}
 
 		logger := logger.WithField("instance", instanceID)

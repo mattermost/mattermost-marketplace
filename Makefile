@@ -1,42 +1,65 @@
-GO ?= $(shell command -v go 2> /dev/null)
-MACHINE = $(shell uname -m)
-GOFLAGS ?= $(GOFLAGS:)
-BUILD_TIME := $(shell date -u +%Y%m%d.%H%M%S)
-BUILD_HASH := $(shell git rev-parse HEAD)
-
 export GO111MODULE=on
 
 ## Checks the code style, tests, builds and bundles.
-all: check-style
+all: check-style build
+
+## Generate uses statikfs to bundle the plugin.json for use with the lambda function.
+.PHONY: generate
+generate:
+	go get github.com/rakyll/statik
+	cp plugins.json data/static/
+	go generate ./...
 
 ## Runs govet and gofmt against all packages.
 .PHONY: check-style
 check-style: govet lint
-	@echo Checking for style guide compliance
+
+## Runs govet against all packages.
+.PHONY: govet
+govet:
+	go vet ./...
 
 ## Runs lint against all packages.
 .PHONY: lint
 lint:
-	@echo Running lint
-	env GO111MODULE=off $(GO) get -u golang.org/x/lint/golint
+	GO111MODULE=off go get -u golang.org/x/lint/golint
 	golint -set_exit_status ./...
-	@echo lint success
-
-## Runs govet against all packages.
-.PHONY: vet
-govet:
-	@echo Running govet
-	$(GO) vet ./...
-	@echo Govet success
 
 ## Runs test against all packages.
 .PHONY: test
 test:
-	@echo Running test
-	$(GO) test ./...
+	go test ./...
+
+## Build builds the various commands
+.PHONY: build
+build: build-server build-lambda
+
+## Compile the server for the current platform.
+.PHONY: build-server
+build-server: generate
+	go build -o dist/marketplace ./cmd/marketplace/
 
 ## Run the mattermost-marketplace
 .PHONY: run-server
 run-server:
 	go run ./cmd/marketplace server
 
+## Compile the server as a lambda function
+.PHONY: build-lambda
+build-lambda: generate
+	GOOS=linux go build -ldflags="-s -w" -o dist/marketplace-lambda ./cmd/lambda/
+
+## Deploy the lambda stack
+.PHONY: deploy-lambda
+deploy-lambda: clean build-lambda
+	sls deploy --verbose
+
+## Deploy the lambda function only to an existing stack
+.PHONY: deploy-lambda-fast
+deploy-lambda-fast: clean build-lambda
+	sls deploy function -f server
+
+## Clean all generated files
+.PHONY: clean
+clean:
+	rm -rf ./dist

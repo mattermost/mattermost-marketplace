@@ -1,0 +1,58 @@
+service: mattermost-marketplace
+
+frameworkVersion: '>=1.28.0 <2.0.0'
+
+provider:
+  name: aws
+  stage: ${opt:stage, 'dev'}
+  region: us-east-1
+  runtime: go1.x
+  timeout: 5
+  memorySize: 512
+
+package:
+  exclude:
+    - ./**
+  include:
+    - ./dist/**
+
+functions:
+  server:
+    handler: dist/marketplace-lambda
+    # Proxy all HTTP requests to the lambda function
+    events:
+      - http:
+          path: /{proxy+}
+          method: any
+
+resources:
+  Resources:
+    CloudFrontDistribution:
+      Type: AWS::CloudFront::Distribution
+      Properties:
+        DistributionConfig:
+          Comment: Marketplace Cache
+          DefaultCacheBehavior:
+            TargetOriginId: Marketplace
+            ViewerProtocolPolicy: 'redirect-to-https'
+            DefaultTTL: 30
+            ForwardedValues:
+              QueryString: true
+              QueryStringCacheKeys:
+                - filter 
+                - per_page
+                - page
+                - server_version
+          Enabled: true
+          Origins:
+            - Id: Marketplace
+              DomainName:
+                Fn::Join:
+                  - "."
+                  - - Ref: ApiGatewayRestApi
+                    - execute-api.us-east-1.amazonaws.com
+              OriginPath: /${self:provider.stage}
+              CustomOriginConfig:
+                HTTPPort: 80
+                HTTPSPort: 443
+                OriginProtocolPolicy: https-only
