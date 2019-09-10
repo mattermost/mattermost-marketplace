@@ -34,7 +34,7 @@ lint:
 ## Runs test against all packages.
 .PHONY: test
 test:
-	go test ./...
+	go test -ldflags="$(LDFLAGS)" ./...
 
 ## Build builds the various commands
 .PHONY: build
