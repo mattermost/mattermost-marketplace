@@ -28,10 +28,11 @@ func initHealthCheck(apiRouter *mux.Router, context *Context) {
 
 func handleHealthCheck(c *Context, w http.ResponseWriter, r *http.Request) {
 	response := healthCheckResponse{
-		Status:    "pass",
-		Version:   "1",
-		ReleaseID: buildTag,
-		Notes:     []string{buildHash},
+		Status:      "pass",
+		Version:     "1",
+		ReleaseID:   buildTag,
+		Notes:       []string{buildHash},
+		Description: "The stateless HTTP service backing the Mattermost marketplace",
 	}
 	w.Header().Set("Content-Type", "application/health+json")
 	outputJSON(c, w, response)
