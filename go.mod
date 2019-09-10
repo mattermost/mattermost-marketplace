@@ -8,6 +8,8 @@ require (
 	github.com/go-ldap/ldap v3.0.3+incompatible // indirect
 	github.com/google/go-github/v28 v28.0.0
 	github.com/gorilla/mux v1.7.3
+	github.com/h2non/filetype v1.0.10
+	github.com/h2non/go-is-svg v0.0.0-20160927212452-35e8c4b0612c
 	github.com/mattermost/mattermost-server v5.12.3+incompatible
 	github.com/pkg/errors v0.8.1
 	github.com/rakyll/statik v0.1.6

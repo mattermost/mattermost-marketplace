@@ -4,15 +4,19 @@ import (
 	"archive/tar"
 	"compress/gzip"
 	"context"
+	"encoding/base64"
 	"encoding/json"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"net/http"
 	"os"
 	"path"
 	"strings"
 
 	"github.com/google/go-github/v28/github"
+	"github.com/h2non/filetype"
+	svg "github.com/h2non/go-is-svg"
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
@@ -87,6 +91,20 @@ var generatorCmd = &cobra.Command{
 			"mattermost-plugin-nps",
 		}
 
+		type iconURL struct {
+			URL    string
+			Inline bool
+		}
+
+		iconURLs := map[string]iconURL{
+			"mattermost-plugin-aws-SNS":        iconURL{"https://unpkg.com/simple-icons@latest/icons/amazonaws.svg", true},
+			"mattermost-plugin-github":         iconURL{"https://unpkg.com/simple-icons@latest/icons/github.svg", true},
+			"mattermost-plugin-gitlab":         iconURL{"https://unpkg.com/simple-icons@latest/icons/gitlab.svg", true},
+			"mattermost-plugin-jenkins":        iconURL{"https://unpkg.com/simple-icons@latest/icons/jenkins.svg", true},
+			"mattermost-plugin-jira":           iconURL{"https://unpkg.com/simple-icons@latest/icons/jira.svg", true},
+			"mattermost-plugin-skype4business": iconURL{"https://unpkg.com/simple-icons@latest/icons/skype.svg", true},
+		}
+
 		plugins := []*model.Plugin{}
 
 		for _, repositoryName := range repositoryNames {
@@ -95,6 +113,28 @@ var generatorCmd = &cobra.Command{
 			plugin, err := getReleasePlugin(ctx, client, repositoryName, includePreRelease)
 			if err != nil {
 				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
+			}
+
+			if iconURL, ok := iconURLs[repositoryName]; ok {
+				if iconURL.Inline {
+					icon, err := getIcon(ctx, iconURL.URL)
+					if err != nil {
+						return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
+					}
+					if svg.Is(icon) {
+						plugin.IconURL = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon))
+					} else {
+						kind, err := filetype.Image(icon)
+						if err != nil {
+							return errors.Wrapf(err, "failed to match icon at %s to image", iconURL)
+						}
+
+						plugin.IconURL = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
+					}
+
+				} else {
+					plugin.IconURL = iconURL.URL
+				}
 			}
 
 			plugins = append(plugins, plugin)
@@ -156,6 +196,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 
 	plugin := model.Plugin{
 		HomepageURL:       repository.GetHTMLURL(),
+		IconURL:           "",
 		DownloadURL:       downloadURL,
 		DownloadSignature: []byte{},
 	}
@@ -216,4 +257,16 @@ func getLatestRelease(ctx context.Context, client *github.Client, repoName strin
 	}
 
 	return latestRelease, nil
+}
+
+func getIcon(ctx context.Context, url string) ([]byte, error) {
+	logger.Debugf("fetching icon url %s", url)
+
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to download plugin icon at %s", url)
+	}
+	defer resp.Body.Close()
+
+	return ioutil.ReadAll(resp.Body)
 }
