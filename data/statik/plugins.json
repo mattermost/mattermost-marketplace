@@ -1,0 +1,902 @@
+[
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-demo",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.2.0/com.mattermost.demo-plugin-0.2.0.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "com.mattermost.demo-plugin",
+      "name": "Demo Plugin",
+      "description": "This plugin demonstrates the capabilities of a Mattermost plugin.",
+      "version": "0.2.0",
+      "min_server_version": "5.14.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Header: Configure your demo plugin settings below",
+        "footer": "Footer: The code for this demo plugin can be found [here](https://github.com/mattermost/mattermost-plugin-demo)",
+        "settings": [
+          {
+            "key": "ChannelName",
+            "display_name": "Channel Name",
+            "type": "text",
+            "help_text": "The channel to use as part of the demo plugin, created for each team automatically if it does not exist.",
+            "placeholder": "demo_plugin",
+            "default": "demo_plugin"
+          },
+          {
+            "key": "Username",
+            "display_name": "Username",
+            "type": "text",
+            "help_text": "The user to use as part of the demo plugin, created automatically if it does not exist.",
+            "placeholder": "demo_plugin",
+            "default": "demo_plugin"
+          },
+          {
+            "key": "LastName",
+            "display_name": "Demo User Last Name",
+            "type": "radio",
+            "help_text": "Select the last name for the demo user",
+            "placeholder": "",
+            "default": "Plugin User",
+            "options": [
+              {
+                "display_name": "Plugin User",
+                "value": "Plugin User"
+              },
+              {
+                "display_name": "Demoson III",
+                "value": "Demoson III"
+              },
+              {
+                "display_name": "McDemo",
+                "value": "McDemo"
+              }
+            ]
+          },
+          {
+            "key": "TextStyle",
+            "display_name": "Text Style",
+            "type": "dropdown",
+            "help_text": "Change the text style of the messages posted by this plugin",
+            "placeholder": "",
+            "default": "",
+            "options": [
+              {
+                "display_name": "none",
+                "value": ""
+              },
+              {
+                "display_name": "italics",
+                "value": "_"
+              },
+              {
+                "display_name": "bold",
+                "value": "**"
+              }
+            ]
+          },
+          {
+            "key": "RandomSecret",
+            "display_name": "Random Secret",
+            "type": "generated",
+            "help_text": "Generate a random string that the demo plugin will watch for. If the secret string is mentioned in any channel then the demo plugin will publish a special message.",
+            "regenerate_help_text": "Generate a new secret string.",
+            "placeholder": "",
+            "default": "CFgcq9Hr9OKSevvqH_SH-mPlgVklmpUm"
+          },
+          {
+            "key": "SecretMessage",
+            "display_name": "Secret Message",
+            "type": "longtext",
+            "help_text": "The message posted by the demo plugin when the secret phrase is detected.",
+            "placeholder": "",
+            "default": "Yay! The random secret string was posted!\n\nGo to the settings page for this plugin in the system console to generate a new random secret."
+          },
+          {
+            "key": "EnableMentionUser",
+            "display_name": "Enable Mention User",
+            "type": "bool",
+            "help_text": "Enable or disable the demo plugin to tag a username on every message sent. The username value is set below.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "MentionUser",
+            "display_name": "Mention User",
+            "type": "username",
+            "help_text": "Configure the username to be mentioned by the demo plugin. Must be enabled in the setting above.",
+            "placeholder": "demo_plugin",
+            "default": "demo_plugin"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-github",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-github/releases/download/v0.10.2/github-0.10.2.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "github",
+      "name": "GitHub",
+      "description": "GitHub plugin for Mattermost.",
+      "version": "0.10.2",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "To set up the GitHub plugin, you need to register a GitHub OAuth app here https://github.com/settings/applications/new.",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-github).",
+        "settings": [
+          {
+            "key": "GitHubOAuthClientID",
+            "display_name": "GitHub OAuth Client ID",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with GitHub.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitHubOAuthClientSecret",
+            "display_name": "GitHub OAuth Client Secret",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with GitHub.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The webhook secret set in GitHub.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GithubOrg",
+            "display_name": "GitHub Organization",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnterpriseBaseURL",
+            "display_name": "Enterprise Base URL",
+            "type": "text",
+            "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnterpriseUploadURL",
+            "display_name": "Enterprise Upload URL",
+            "type": "text",
+            "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-autolink",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-autolink/releases/download/v1.1.0/mattermost-autolink-1.1.0.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "mattermost-autolink",
+      "name": "Autolink",
+      "description": "Automatically rewrite text matching a regular expression into a Markdown link.",
+      "version": "1.1.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-autolink/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-autolink).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableAdminCommand",
+            "display_name": "Enable administration with /autolink command",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-zoom",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-zoom/releases/download/v1.0.7/zoom-1.0.7.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "zoom",
+      "name": "Zoom",
+      "description": "Zoom audio and video conferencing plugin for Mattermost 5.2+.",
+      "version": "1.0.7",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL to set up the Zoom plugin. See [documentation](https://about.mattermost.com/default-zoom-documentation) to learn more.\n\n```https://SITEURL/plugins/zoom/webhook?secret=WEBHOOKSECRET```",
+        "settings": [
+          {
+            "key": "ZoomURL",
+            "display_name": "Zoom URL",
+            "type": "text",
+            "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://zoom.us",
+            "default": null
+          },
+          {
+            "key": "ZoomAPIURL",
+            "display_name": "Zoom API URL",
+            "type": "text",
+            "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://api.zoom.us/v2",
+            "default": null
+          },
+          {
+            "key": "APIKey",
+            "display_name": "API Key",
+            "type": "text",
+            "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "APISecret",
+            "display_name": "API Secret",
+            "type": "text",
+            "help_text": "The API Secret generated by Zoom for your API key.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-jira",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-jira/releases/download/v2.1.0/jira-2.1.0.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "jira",
+      "name": "Jira",
+      "description": "Atlassian Jira plugin for Mattermost.",
+      "version": "2.1.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL format to [configure the Jira integration.](https://about.mattermost.com/default-jira-plugin)  `https://SITEURL/plugins/jira/api/v2/webhook?secret=WEBHOOKSECRET`",
+        "settings": [
+          {
+            "key": "EnableJiraUI",
+            "display_name": "Allow users to attach and create Jira issues in Mattermost",
+            "type": "bool",
+            "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
+            "placeholder": "",
+            "default": true
+          },
+          {
+            "key": "Secret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "RolesAllowedToEditJiraSubscriptions",
+            "display_name": "Mattermost Roles Allowed to Edit Jira Subscriptions",
+            "type": "radio",
+            "help_text": "Mattermost users who can subscribe channels to Jira tickets.",
+            "placeholder": "",
+            "default": "system_admin",
+            "options": [
+              {
+                "display_name": "All users",
+                "value": "users"
+              },
+              {
+                "display_name": "Users who can manage channel settings",
+                "value": "channel_admin"
+              },
+              {
+                "display_name": "Users who can manage teams",
+                "value": "team_admin"
+              },
+              {
+                "display_name": "System Admins",
+                "value": "system_admin"
+              }
+            ]
+          },
+          {
+            "key": "GroupsAllowedToEditJiraSubscriptions",
+            "display_name": "Jira Groups Allowed to Edit Jira Subscriptions",
+            "type": "text",
+            "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
+            "placeholder": "",
+            "default": ""
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-autotranslate",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-autotranslate/releases/download/v0.1.2/autotranslate-0.1.2.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "autotranslate",
+      "name": "Autotranslate",
+      "description": "Autotranslate plugin for Mattermost 5.4 and later.",
+      "version": "0.1.2",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "AWSAccessKeyID",
+            "display_name": "AWS Access Key ID",
+            "type": "text",
+            "help_text": "The access key ID from AWS",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "AWSSecretAccessKey",
+            "display_name": "AWS Secret Access Key",
+            "type": "text",
+            "help_text": "The secret access key from AWS",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "AWSRegion",
+            "display_name": "AWS Region",
+            "type": "text",
+            "help_text": "The region from AWS",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-profanity-filter",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-profanity-filter/releases/download/v0.1.0/mattermost-profanity-filter.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "mattermost-profanity-filter",
+      "name": "Profanity Filter",
+      "description": "For filtering out naughty words.",
+      "version": "0.1.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "RejectPosts",
+            "display_name": "Reject Posts",
+            "type": "bool",
+            "help_text": "If set the plugin will reject posts containing profanity instead of censoring.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "CensorCharacter",
+            "display_name": "Censor Character",
+            "type": "text",
+            "help_text": "The character(s) to use to censor profanity. Censored words' letters will be replaced with this character. Note that markdown will be interpreted. You can escape markdown character with a backslash. For using * you type \\*.",
+            "placeholder": "Ex. \\*",
+            "default": "\\*"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-welcomebot",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.1.0/com.mattermost.welcomebot-1.1.0.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "com.mattermost.welcomebot",
+      "name": "Welcome Bot",
+      "description": "This plugin adds a WelcomeBot that helps add new users to channels.",
+      "version": "1.1.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-welcomebot/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-welcomebot)",
+        "footer": "",
+        "settings": null
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-jenkins",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-jenkins/releases/download/v1.0.0/jenkins-1.0.0.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "jenkins",
+      "name": "Jenkins plugin",
+      "description": "Jenkins plugin for Mattermost",
+      "version": "1.0.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "To report an issue, make a suggestion or a contribution, or fork your own version of the plugin, [check the repository](https://github.com/waseem18/mattermost-plugin-jenkins).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "JenkinsURL",
+            "display_name": "Jenkins URL",
+            "type": "text",
+            "help_text": "The URL for your Jenkins instance. Must start with http:// or https://. For example: https://jenkins.example.com.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-antivirus",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/download/v0.1.1/antivirus-0.1.1.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "antivirus",
+      "name": "Antivirus",
+      "description": "Antivirus plugin for scanning uploaded files.",
+      "version": "0.1.1",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Antivirus plugin for scanning uploaded files to Mattermost, uses ClamAV to scan files. See [documentation here](https://github.com/mattermost/mattermost-plugin-antivirus)",
+        "footer": "",
+        "settings": [
+          {
+            "key": "ClamavHostPort",
+            "display_name": "ClamAV - Host and Port",
+            "type": "text",
+            "help_text": "The hostname and port to connect to clamd",
+            "placeholder": "localhost:3310",
+            "default": "localhost:3310"
+          },
+          {
+            "key": "ScanTimeoutSeconds",
+            "display_name": "Scan Timeout (seconds)",
+            "type": "number",
+            "help_text": "How long the virus scan can take before giving up.",
+            "placeholder": "10",
+            "default": 10
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-walltime",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-walltime/releases/download/0.1.1/com.mattermost.walltime-plugin-0.1.1.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "com.mattermost.walltime-plugin",
+      "name": "Walltime Plugin",
+      "description": "This plugin converts the dates/times in messages to the recipient's local timezone.",
+      "version": "0.1.1",
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "No configuration is needed to use the Walltime plugin.",
+        "footer": "Made with ❤️ from Mattermost, Inc.",
+        "settings": []
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/download/v1.0.1/com.mattermost.custom-attributes-1.0.1.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "com.mattermost.custom-attributes",
+      "name": "Custom User Attributes",
+      "description": "Add custom user attributes to the Mattermost user profile popover.",
+      "version": "1.0.1",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-custom-attributes/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-custom-attributes).",
+        "footer": "",
+        "settings": null
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-skype4business",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-skype4business/releases/download/v0.1.2/skype4business-0.1.2.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "skype4business",
+      "name": "Skype for Business",
+      "description": "Skype for Business plugin for Mattermost 5.2+.",
+      "version": "0.1.2",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/kosgrz/mattermost-plugin-skype4business).",
+        "settings": [
+          {
+            "key": "productType",
+            "display_name": "Skype for Business Product Type",
+            "type": "radio",
+            "help_text": "The product type of your Skype for Business instance.",
+            "placeholder": "",
+            "default": "Server",
+            "options": [
+              {
+                "display_name": "Server",
+                "value": "server"
+              },
+              {
+                "display_name": "Online",
+                "value": "online"
+              }
+            ]
+          },
+          {
+            "key": "Username",
+            "display_name": "Bot username",
+            "type": "text",
+            "help_text": "Username of your selected bot account. We strongly recommend using a dedicated bot account for this plugin, rather than an existing user account. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Password",
+            "display_name": "Bot password",
+            "type": "text",
+            "help_text": "Password of your selected bot account. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Domain",
+            "display_name": "Server Domain",
+            "type": "text",
+            "help_text": "The domain of your Skype for Business server instance. For example, contoso.com. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "ClientId",
+            "display_name": "Application ID",
+            "type": "text",
+            "help_text": "Application ID from the Azure Active Directory. Only required for Skype for Business Online.\n\nUse this URL to configure the plugin in Azure Active Directory: ```https://SITEURL/plugins/skype4business/api/v1/auth_redirect```",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-aws-SNS",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-aws-SNS/releases/download/v1.0.2/com.mattermost.aws-sns-1.0.2.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "com.mattermost.aws-sns",
+      "name": "AWS SNS",
+      "description": "Send alert notifications from Amazon AWS CloudWatch to Mattermost channels via AWS SNS.",
+      "version": "1.0.2",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "This plugin is used to receive alert notifications from [Amazon AWS CloudWatch](https://aws.amazon.com/cloudwatch/) to Mattermost channels via AWS SNS.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "TeamChannel",
+            "display_name": "Channel to send notifications to:",
+            "type": "text",
+            "help_text": "The channel to send notifications to, specified in the format `teamname,channelname`. If the specified channel does not exist, the plugin will create the channel for you.\n \nNote: Must be the team and channel handle used in the URL. For example, in the following URL, set the value to `myteam,mychannel`: https://example.com/myteam/channels/mychannel",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "AllowedUserIds",
+            "display_name": "Authorized User IDs:",
+            "type": "text",
+            "help_text": "List of users authorized to accept AWS SNS subscriptions to a Mattermost channel. Must be a comma-separated list of user ID's.\n \nTip: Use the [mattermost user search](https://mattermost.com/pl/cli-mattermost-user-search) CLI command to determine a user ID.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Username",
+            "display_name": "Username:",
+            "type": "username",
+            "help_text": "Select the username that this integration is attached to.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Token",
+            "display_name": "Token:",
+            "type": "generated",
+            "help_text": "Generated token to validate incoming requests from AWS SNS.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-gitlab",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/download/v1.0.0/com.github.manland.mattermost-plugin-gitlab-1.0.0.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "com.github.manland.mattermost-plugin-gitlab",
+      "name": "GitLab",
+      "description": "GitLab plugin for Mattermost.",
+      "version": "1.0.0",
+      "min_server_version": "5.10.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "To set up the GitLab plugin, you need to register a GitLab OAuth app here https://gitlab.com/profile/applications.",
+        "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/manland/mattermost-plugin-gitlab).",
+        "settings": [
+          {
+            "key": "GitlabURL",
+            "display_name": "Gitlab URL",
+            "type": "text",
+            "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
+            "placeholder": "https://gitlab.com",
+            "default": "https://gitlab.com"
+          },
+          {
+            "key": "GitlabOAuthClientID",
+            "display_name": "GitLab OAuth Client ID",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitlabOAuthClientSecret",
+            "display_name": "Gitlab OAuth Client Secret",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The webhook secret set in GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitlabGroup",
+            "display_name": "Gitlab Group",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
+            "placeholder": "groupName",
+            "default": null
+          },
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "HomepageURL": "https://github.com/mattermost/mattermost-plugin-nps",
+    "DownloadURL": "https://github.com/mattermost/mattermost-plugin-nps/releases/download/v1.0.3/com.mattermost.nps-1.0.3.tar.gz",
+    "DownloadSignature": "",
+    "Manifest": {
+      "id": "com.mattermost.nps",
+      "name": "User Satisfaction Surveys",
+      "description": "This plugin sends quarterly user satisfaction surveys to gather feedback and help improve Mattermost.",
+      "version": "1.0.3",
+      "min_server_version": "5.14.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Mattermost sends user satisfaction surveys to gather feedback and improve product quality. [Learn more](!https://mattermost.com/pl/default-nps) about user satisfaction surveys.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableSurvey",
+            "display_name": "Enable User Satisfaction Survey",
+            "type": "bool",
+            "help_text": "When true, a [user satisfaction survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://about.mattermost.com/default-privacy-policy) for more information on the collection and use of information received through our services.",
+            "placeholder": "",
+            "default": true
+          }
+        ]
+      }
+    }
+  }
+]

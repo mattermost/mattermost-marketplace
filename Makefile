@@ -7,7 +7,7 @@ all: check-style build
 .PHONY: generate
 generate:
 	go get github.com/rakyll/statik
-	cp plugins.json data/static/
+	cp plugins.json data/statik/
 	go generate ./...
 
 ## Runs govet and gofmt against all packages.
