@@ -1,5 +1,10 @@
 export GO111MODULE=on
 
+BUILD_HASH = $(shell git rev-parse HEAD)
+BUILD_TAG = $(shell git describe --abbrev=0)
+LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHash=$(BUILD_HASH)"
+LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildTag=$(BUILD_TAG)"
+
 ## Checks the code style, tests, builds and bundles.
 all: check-style build
 
@@ -38,17 +43,17 @@ build: build-server build-lambda
 ## Compile the server for the current platform.
 .PHONY: build-server
 build-server: generate
-	go build -o dist/marketplace ./cmd/marketplace/
+	go build -ldflags="$(LDFLAGS)" -o dist/marketplace ./cmd/marketplace/
 
 ## Run the mattermost-marketplace
 .PHONY: run-server
 run-server:
-	go run ./cmd/marketplace server
+	go run -ldflags="$(LDFLAGS)" ./cmd/marketplace server
 
 ## Compile the server as a lambda function
 .PHONY: build-lambda
 build-lambda: generate
-	GOOS=linux go build -ldflags="-s -w" -o dist/marketplace-lambda ./cmd/lambda/
+	GOOS=linux go build -ldflags="-s -w $(LDFLAGS)" -o dist/marketplace-lambda ./cmd/lambda/
 
 ## Deploy the lambda stack
 .PHONY: deploy-lambda
