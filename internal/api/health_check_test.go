@@ -35,7 +35,7 @@ func TestHealthCheck(t *testing.T) {
 	assert.Equal(t, respose.Status, "pass")
 	assert.Equal(t, respose.Version, "1")
 	assert.Equal(t, respose.ReleaseID, "") // This needs to be changed, when the first tag is cut
-	assert.Len(t, respose.Notes, 1)        // This needs to be changed, when the first tag is cut
+	assert.Len(t, respose.Notes, 1)
 	assert.NotEmpty(t, respose.Notes[0])
 	assert.NotEmpty(t, respose.Description)
 }
