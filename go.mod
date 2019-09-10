@@ -16,8 +16,10 @@ require (
 	github.com/stretchr/testify v1.3.0
 	go.uber.org/atomic v1.4.0 // indirect
 	go.uber.org/zap v1.10.0 // indirect
-	golang.org/x/oauth2 v0.0.0-20190319182350-c85d3e98c914
 	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472 // indirect
 	golang.org/x/net v0.0.0-20190827160401-ba9fcec4b297 // indirect
+	golang.org/x/oauth2 v0.0.0-20190319182350-c85d3e98c914
 	golang.org/x/sys v0.0.0-20190902133755-9109b7679e13 // indirect
 )
+
+replace git.apache.org/thrift.git => github.com/apache/thrift v0.12.0
