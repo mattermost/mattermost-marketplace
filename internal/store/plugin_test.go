@@ -14,6 +14,7 @@ import (
 func TestPlugins(t *testing.T) {
 	demoPlugin := &model.Plugin{
 		HomepageURL:       "https://github.com/mattermost/mattermost-plugin-demo",
+		IconData:          "icon-data.svg",
 		DownloadURL:       "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 		DownloadSignature: []byte("signature"),
 		Manifest: &mattermostModel.Manifest{
@@ -25,6 +26,7 @@ func TestPlugins(t *testing.T) {
 
 	starterPlugin := &model.Plugin{
 		HomepageURL:       "https://github.com/mattermost/mattermost-plugin-starter-template",
+		IconData:          "icon-data2.svg",
 		DownloadURL:       "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
 		DownloadSignature: []byte("signature2"),
 		Manifest: &mattermostModel.Manifest{
