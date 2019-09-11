@@ -1,5 +1,12 @@
 export GO111MODULE=on
 
+BUILD_TAG = $(shell git describe --abbrev=0)
+BUILD_HASH = $(shell git rev-parse HEAD)
+BUILD_HASH_SHORT = $(shell git rev-parse --short HEAD)
+LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildTag=$(BUILD_TAG)"
+LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHash=$(BUILD_HASH)"
+LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHashShort=$(BUILD_HASH_SHORT)"
+
 ## Checks the code style, tests, builds and bundles.
 all: check-style build
 
@@ -7,7 +14,7 @@ all: check-style build
 .PHONY: generate
 generate:
 	go get github.com/rakyll/statik
-	mkdir data/static/
+	mkdir -p data/static/
 	cp plugins.json data/static/
 	go generate ./...
 
@@ -29,7 +36,7 @@ lint:
 ## Runs test against all packages.
 .PHONY: test
 test:
-	go test ./...
+	go test -ldflags="$(LDFLAGS)" ./...
 
 ## Build builds the various commands
 .PHONY: build
@@ -38,17 +45,17 @@ build: build-server build-lambda
 ## Compile the server for the current platform.
 .PHONY: build-server
 build-server: generate
-	go build -o dist/marketplace ./cmd/marketplace/
+	go build -ldflags="$(LDFLAGS)" -o dist/marketplace ./cmd/marketplace/
 
 ## Run the mattermost-marketplace
 .PHONY: run-server
 run-server:
-	go run ./cmd/marketplace server
+	go run -ldflags="$(LDFLAGS)" ./cmd/marketplace server
 
 ## Compile the server as a lambda function
 .PHONY: build-lambda
 build-lambda: generate
-	GOOS=linux go build -ldflags="-s -w" -o dist/marketplace-lambda ./cmd/lambda/
+	GOOS=linux go build -ldflags="-s -w $(LDFLAGS)" -o dist/marketplace-lambda ./cmd/lambda/
 
 ## Deploy the lambda stack
 .PHONY: deploy-lambda
