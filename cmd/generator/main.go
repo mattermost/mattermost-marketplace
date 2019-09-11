@@ -126,7 +126,7 @@ var generatorCmd = &cobra.Command{
 					} else {
 						kind, err := filetype.Image(icon)
 						if err != nil {
-							return errors.Wrapf(err, "failed to match icon at %s to image", iconURL)
+							return errors.Wrapf(err, "failed to match icon at %s to image", iconURL.URL)
 						}
 
 						plugin.IconURL = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
