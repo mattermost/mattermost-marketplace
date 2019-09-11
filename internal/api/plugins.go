@@ -59,5 +59,6 @@ func handleGetPlugins(c *Context, w http.ResponseWriter, r *http.Request) {
 		plugins = []*model.Plugin{}
 	}
 
+	w.Header().Set("Content-Type", "application/json")
 	outputJSON(c, w, plugins)
 }
