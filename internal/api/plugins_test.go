@@ -100,21 +100,21 @@ func TestPlugins(t *testing.T) {
 	t.Run("plugins", func(t *testing.T) {
 		plugin1 := &model.Plugin{
 			HomepageURL:       "https://github.com/mattermost/mattermost-plugin-demo",
-			IconURL:           "http://example.com/icon.svg",
+			IconData:          "icon-data.svg",
 			DownloadURL:       "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 			DownloadSignature: []byte("signature"),
 			Manifest:          &mattermostModel.Manifest{},
 		}
 		plugin2 := &model.Plugin{
 			HomepageURL:       "https://github.com/mattermost/mattermost-plugin-starter-template",
-			IconURL:           "http://example.com/icon2.svg",
+			IconData:          "icon-data2.svg",
 			DownloadURL:       "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
 			DownloadSignature: []byte("signature2"),
 			Manifest:          &mattermostModel.Manifest{},
 		}
 		plugin3 := &model.Plugin{
 			HomepageURL:       "https://github.com/matterpoll/matterpoll",
-			IconURL:           "http://example.com/icon3.svg",
+			IconData:          "icon-data3.svg",
 			DownloadURL:       "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
 			DownloadSignature: []byte("signature3"),
 			Manifest:          &mattermostModel.Manifest{},

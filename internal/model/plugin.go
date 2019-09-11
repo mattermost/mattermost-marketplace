@@ -10,7 +10,7 @@ import (
 // Plugin represents a Mattermost plugin in the marketplace.
 type Plugin struct {
 	HomepageURL       string
-	IconURL           string
+	IconData          string
 	DownloadURL       string
 	DownloadSignature []byte
 	Manifest          *mattermostModel.Manifest

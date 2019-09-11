@@ -92,17 +92,16 @@ var generatorCmd = &cobra.Command{
 		}
 
 		type iconURL struct {
-			URL    string
-			Inline bool
+			URL string
 		}
 
 		iconURLs := map[string]iconURL{
-			"mattermost-plugin-aws-SNS":        iconURL{"https://unpkg.com/simple-icons@latest/icons/amazonaws.svg", true},
-			"mattermost-plugin-github":         iconURL{"https://unpkg.com/simple-icons@latest/icons/github.svg", true},
-			"mattermost-plugin-gitlab":         iconURL{"https://unpkg.com/simple-icons@latest/icons/gitlab.svg", true},
-			"mattermost-plugin-jenkins":        iconURL{"https://unpkg.com/simple-icons@latest/icons/jenkins.svg", true},
-			"mattermost-plugin-jira":           iconURL{"https://unpkg.com/simple-icons@latest/icons/jira.svg", true},
-			"mattermost-plugin-skype4business": iconURL{"https://unpkg.com/simple-icons@latest/icons/skype.svg", true},
+			"mattermost-plugin-aws-SNS":        iconURL{"https://unpkg.com/simple-icons@latest/icons/amazonaws.svg"},
+			"mattermost-plugin-github":         iconURL{"https://unpkg.com/simple-icons@latest/icons/github.svg"},
+			"mattermost-plugin-gitlab":         iconURL{"https://unpkg.com/simple-icons@latest/icons/gitlab.svg"},
+			"mattermost-plugin-jenkins":        iconURL{"https://unpkg.com/simple-icons@latest/icons/jenkins.svg"},
+			"mattermost-plugin-jira":           iconURL{"https://unpkg.com/simple-icons@latest/icons/jira.svg"},
+			"mattermost-plugin-skype4business": iconURL{"https://unpkg.com/simple-icons@latest/icons/skype.svg"},
 		}
 
 		plugins := []*model.Plugin{}
@@ -116,24 +115,19 @@ var generatorCmd = &cobra.Command{
 			}
 
 			if iconURL, ok := iconURLs[repositoryName]; ok {
-				if iconURL.Inline {
-					icon, err := getIcon(ctx, iconURL.URL)
-					if err != nil {
-						return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
-					}
-					if svg.Is(icon) {
-						plugin.IconURL = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon))
-					} else {
-						kind, err := filetype.Image(icon)
-						if err != nil {
-							return errors.Wrapf(err, "failed to match icon at %s to image", iconURL.URL)
-						}
-
-						plugin.IconURL = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
-					}
-
+				icon, err := getIcon(ctx, iconURL.URL)
+				if err != nil {
+					return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
+				}
+				if svg.Is(icon) {
+					plugin.IconData = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon))
 				} else {
-					plugin.IconURL = iconURL.URL
+					kind, err := filetype.Image(icon)
+					if err != nil {
+						return errors.Wrapf(err, "failed to match icon at %s to image", iconURL.URL)
+					}
+
+					plugin.IconData = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
 				}
 			}
 
@@ -196,7 +190,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 
 	plugin := model.Plugin{
 		HomepageURL:       repository.GetHTMLURL(),
-		IconURL:           "",
+		IconData:          "",
 		DownloadURL:       downloadURL,
 		DownloadSignature: []byte{},
 	}
