@@ -12,7 +12,7 @@ all: check-style build
 .PHONY: generate
 generate:
 	go get github.com/rakyll/statik
-	mkdir data/static/
+	mkdir -p data/static/
 	cp plugins.json data/static/
 	go generate ./...
 
