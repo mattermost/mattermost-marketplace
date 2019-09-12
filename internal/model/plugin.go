@@ -9,11 +9,11 @@ import (
 
 // Plugin represents a Mattermost plugin in the marketplace.
 type Plugin struct {
-	HomepageURL       string
-	IconData          string
-	DownloadURL       string
-	DownloadSignature []byte
-	Manifest          *mattermostModel.Manifest
+	HomepageURL       string                    `json:"homepage_url"`
+	IconData          string                    `json:"icon_data"`
+	DownloadURL       string                    `json:"download_url"`
+	DownloadSignature []byte                    `json:"download_signature"`
+	Manifest          *mattermostModel.Manifest `json:"manifest"`
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.
