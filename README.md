@@ -1,4 +1,4 @@
-# Mattermost Marketplace ![CircleCI branch](https://img.shields.io/circleci/project/github/mattermost/mattermost-marketplace/master.svg)
+# Mattermost Marketplace
 
 The Mattermost Marketplace is a collection of plugins for use with [Mattermost](https://github.com/mattermost/mattermost-server). This repository houses the stateless HTTP service that will eventually run at marketplace.integrations.mattermost.com. It is meant to be queried by the Mattermost server to enable plugin discovery by system administrators.
 
