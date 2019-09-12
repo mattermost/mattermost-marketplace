@@ -3,8 +3,6 @@ cloud.google.com/go v0.31.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMT
 cloud.google.com/go v0.34.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
 cloud.google.com/go v0.37.1/go.mod h1:SAbnLi6YTSPKSI0dTUEOVLCkyPfKXK8n4ibqiMoj4ok=
 contrib.go.opencensus.io/exporter/ocagent v0.4.9/go.mod h1:ueLzZcP7LPhPulEBukGn4aLh7Mx9YJwpVJ9nL2FYltw=
-git.apache.org/thrift.git v0.0.0-20180902110319-2566ecd5d999/go.mod h1:fPE2ZNJGynbRyZ4dJvy6G277gSllfV2HJqblrnkyeyg=
-git.apache.org/thrift.git v0.12.0/go.mod h1:fPE2ZNJGynbRyZ4dJvy6G277gSllfV2HJqblrnkyeyg=
 github.com/Azure/azure-sdk-for-go v26.5.0+incompatible/go.mod h1:9XXNKU+eRnpl9moKnB4QOLf1HestfXbmab5FXxiDBjc=
 github.com/Azure/go-autorest v11.5.2+incompatible/go.mod h1:r+4oMnoxhatjLLJ6zxSWATqVooLgysK6ZNox3g/xq24=
 github.com/BurntSushi/toml v0.3.1 h1:WXkYYl6Yr3qBf1K79EBnL4mak0OimBfB0XUf9Vl28OQ=
@@ -124,6 +122,10 @@ github.com/gregjones/httpcache v0.0.0-20190212212710-3befbb6ad0cc/go.mod h1:Fecb
 github.com/grpc-ecosystem/grpc-gateway v1.5.0/go.mod h1:RSKVYQBd5MCa4OVpNdGskqpgL2+G+NZTnrVHpWWfpdw=
 github.com/grpc-ecosystem/grpc-gateway v1.6.2/go.mod h1:RSKVYQBd5MCa4OVpNdGskqpgL2+G+NZTnrVHpWWfpdw=
 github.com/grpc-ecosystem/grpc-gateway v1.8.5/go.mod h1:vNeuVxBJEsws4ogUvrchl83t/GYV9WGTSLVdBhOQFDY=
+github.com/h2non/filetype v1.0.10 h1:z+SJfnL6thYJ9kAST+6nPRXp1lMxnOVbMZHNYHMar0s=
+github.com/h2non/filetype v1.0.10/go.mod h1:isekKqOuhMj+s/7r3rIeTErIRy4Rub5uBWHfvMusLMU=
+github.com/h2non/go-is-svg v0.0.0-20160927212452-35e8c4b0612c h1:fEE5/5VNnYUoBOj2I9TP8Jc+a7lge3QWn9DKE7NCwfc=
+github.com/h2non/go-is-svg v0.0.0-20160927212452-35e8c4b0612c/go.mod h1:ObS/W+h8RYb1Y7fYivughjxojTmIu5iAIjSrSLCLeqE=
 github.com/hako/durafmt v0.0.0-20180520121703-7b7ae1e72ead/go.mod h1:5Scbynm8dF1XAPwIwkGPqzkM/shndPm79Jd1003hTjE=
 github.com/hashicorp/errwrap v1.0.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
 github.com/hashicorp/go-hclog v0.0.0-20180709165350-ff2cf002a8dd/go.mod h1:9bjs9uLqI8l75knNv3lV1kA55veR+WUPSiKIWcQHudI=
