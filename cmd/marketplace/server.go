@@ -51,7 +51,7 @@ var serverCmd = &cobra.Command{
 		}
 
 		logger := logger.WithField("instance", instanceID)
-		logger.Info("Starting Integrations Marketplace")
+		logger.Info("Starting Plugin Marketplace")
 
 		router := mux.NewRouter()
 

@@ -1,4 +1,4 @@
-// Package main is the entry point to the Mattermost Integrations Marketplace server.
+// Package main is the entry point to the Plugin Marketplace server.
 package main
 
 import (
