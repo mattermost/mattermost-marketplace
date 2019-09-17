@@ -88,31 +88,25 @@ var generatorCmd = &cobra.Command{
 		ctx := context.Background()
 
 		repositoryNames := []string{
-			// "mattermost-plugin-demo",
 			"mattermost-plugin-github",
 			"mattermost-plugin-autolink",
 			"mattermost-plugin-zoom",
 			"mattermost-plugin-jira",
-			// "mattermost-plugin-autotranslate",
-			// "mattermost-plugin-profanity-filter",
 			"mattermost-plugin-welcomebot",
 			"mattermost-plugin-jenkins",
 			"mattermost-plugin-antivirus",
-			// "mattermost-plugin-walltime",
 			"mattermost-plugin-custom-attributes",
-			// "mattermost-plugin-skype4business",
 			"mattermost-plugin-aws-SNS",
 			"mattermost-plugin-gitlab",
 			"mattermost-plugin-nps",
 		}
 
 		icons := map[string]string{
-			"mattermost-plugin-aws-SNS":        "https://unpkg.com/simple-icons@latest/icons/amazonaws.svg",
-			"mattermost-plugin-github":         "https://unpkg.com/simple-icons@latest/icons/github.svg",
-			"mattermost-plugin-gitlab":         "https://unpkg.com/simple-icons@latest/icons/gitlab.svg",
-			"mattermost-plugin-jenkins":        "https://unpkg.com/simple-icons@latest/icons/jenkins.svg",
-			"mattermost-plugin-jira":           "data/icons/jira.svg",
-			"mattermost-plugin-skype4business": "https://unpkg.com/simple-icons@latest/icons/skype.svg",
+			"mattermost-plugin-aws-SNS": "https://unpkg.com/simple-icons@latest/icons/amazonaws.svg",
+			"mattermost-plugin-github":  "https://unpkg.com/simple-icons@latest/icons/github.svg",
+			"mattermost-plugin-gitlab":  "https://unpkg.com/simple-icons@latest/icons/gitlab.svg",
+			"mattermost-plugin-jenkins": "https://unpkg.com/simple-icons@latest/icons/jenkins.svg",
+			"mattermost-plugin-jira":    "https://unpkg.com/simple-icons@latest/icons/jira.svg",
 		}
 
 		plugins := []*model.Plugin{}
