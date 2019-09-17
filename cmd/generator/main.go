@@ -102,11 +102,11 @@ var generatorCmd = &cobra.Command{
 		}
 
 		icons := map[string]string{
-			"mattermost-plugin-aws-SNS": "https://unpkg.com/simple-icons@latest/icons/amazonaws.svg",
+			"mattermost-plugin-aws-SNS": "data/icons/aws-sns.svg",
 			"mattermost-plugin-github":  "https://unpkg.com/simple-icons@latest/icons/github.svg",
-			"mattermost-plugin-gitlab":  "https://unpkg.com/simple-icons@latest/icons/gitlab.svg",
-			"mattermost-plugin-jenkins": "https://unpkg.com/simple-icons@latest/icons/jenkins.svg",
-			"mattermost-plugin-jira":    "https://unpkg.com/simple-icons@latest/icons/jira.svg",
+			"mattermost-plugin-gitlab":  "data/icons/gitlab.svg",
+			"mattermost-plugin-jenkins": "data/icons/jenkins.svg",
+			"mattermost-plugin-jira":    "data/icons/jira.svg",
 		}
 
 		plugins := []*model.Plugin{}

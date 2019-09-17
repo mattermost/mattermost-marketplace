@@ -1,919 +1,601 @@
 [
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-demo",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.2.0/com.mattermost.demo-plugin-0.2.0.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "com.mattermost.demo-plugin",
-        "name": "Demo Plugin",
-        "description": "This plugin demonstrates the capabilities of a Mattermost plugin.",
-        "version": "0.2.0",
-        "min_server_version": "5.14.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-github/releases/download/v0.10.2/github-0.10.2.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "github",
+      "name": "GitHub",
+      "description": "GitHub plugin for Mattermost.",
+      "version": "0.10.2",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "To set up the GitHub plugin, you need to register a GitHub OAuth app here https://github.com/settings/applications/new.",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-github).",
+        "settings": [
+          {
+            "key": "GitHubOAuthClientID",
+            "display_name": "GitHub OAuth Client ID",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with GitHub.",
+            "placeholder": "",
+            "default": null
           },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "Header: Configure your demo plugin settings below",
-          "footer": "Footer: The code for this demo plugin can be found [here](https://github.com/mattermost/mattermost-plugin-demo)",
-          "settings": [
-            {
-              "key": "ChannelName",
-              "display_name": "Channel Name",
-              "type": "text",
-              "help_text": "The channel to use as part of the demo plugin, created for each team automatically if it does not exist.",
-              "placeholder": "demo_plugin",
-              "default": "demo_plugin"
-            },
-            {
-              "key": "Username",
-              "display_name": "Username",
-              "type": "text",
-              "help_text": "The user to use as part of the demo plugin, created automatically if it does not exist.",
-              "placeholder": "demo_plugin",
-              "default": "demo_plugin"
-            },
-            {
-              "key": "LastName",
-              "display_name": "Demo User Last Name",
-              "type": "radio",
-              "help_text": "Select the last name for the demo user",
-              "placeholder": "",
-              "default": "Plugin User",
-              "options": [
-                {
-                  "display_name": "Plugin User",
-                  "value": "Plugin User"
-                },
-                {
-                  "display_name": "Demoson III",
-                  "value": "Demoson III"
-                },
-                {
-                  "display_name": "McDemo",
-                  "value": "McDemo"
-                }
-              ]
-            },
-            {
-              "key": "TextStyle",
-              "display_name": "Text Style",
-              "type": "dropdown",
-              "help_text": "Change the text style of the messages posted by this plugin",
-              "placeholder": "",
-              "default": "",
-              "options": [
-                {
-                  "display_name": "none",
-                  "value": ""
-                },
-                {
-                  "display_name": "italics",
-                  "value": "_"
-                },
-                {
-                  "display_name": "bold",
-                  "value": "**"
-                }
-              ]
-            },
-            {
-              "key": "RandomSecret",
-              "display_name": "Random Secret",
-              "type": "generated",
-              "help_text": "Generate a random string that the demo plugin will watch for. If the secret string is mentioned in any channel then the demo plugin will publish a special message.",
-              "regenerate_help_text": "Generate a new secret string.",
-              "placeholder": "",
-              "default": "CFgcq9Hr9OKSevvqH_SH-mPlgVklmpUm"
-            },
-            {
-              "key": "SecretMessage",
-              "display_name": "Secret Message",
-              "type": "longtext",
-              "help_text": "The message posted by the demo plugin when the secret phrase is detected.",
-              "placeholder": "",
-              "default": "Yay! The random secret string was posted!\n\nGo to the settings page for this plugin in the system console to generate a new random secret."
-            },
-            {
-              "key": "EnableMentionUser",
-              "display_name": "Enable Mention User",
-              "type": "bool",
-              "help_text": "Enable or disable the demo plugin to tag a username on every message sent. The username value is set below.",
-              "placeholder": "",
-              "default": false
-            },
-            {
-              "key": "MentionUser",
-              "display_name": "Mention User",
-              "type": "username",
-              "help_text": "Configure the username to be mentioned by the demo plugin. Must be enabled in the setting above.",
-              "placeholder": "demo_plugin",
-              "default": "demo_plugin"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
-      "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-github/releases/download/v0.10.2/github-0.10.2.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "github",
-        "name": "GitHub",
-        "description": "GitHub plugin for Mattermost.",
-        "version": "0.10.2",
-        "min_server_version": "5.12.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+          {
+            "key": "GitHubOAuthClientSecret",
+            "display_name": "GitHub OAuth Client Secret",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with GitHub.",
+            "placeholder": "",
+            "default": null
           },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "To set up the GitHub plugin, you need to register a GitHub OAuth app here https://github.com/settings/applications/new.",
-          "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-github).",
-          "settings": [
-            {
-              "key": "GitHubOAuthClientID",
-              "display_name": "GitHub OAuth Client ID",
-              "type": "text",
-              "help_text": "The client ID for the OAuth app registered with GitHub.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "GitHubOAuthClientSecret",
-              "display_name": "GitHub OAuth Client Secret",
-              "type": "text",
-              "help_text": "The client secret for the OAuth app registered with GitHub.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "WebhookSecret",
-              "display_name": "Webhook Secret",
-              "type": "generated",
-              "help_text": "The webhook secret set in GitHub.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "EncryptionKey",
-              "display_name": "At Rest Encryption Key",
-              "type": "generated",
-              "help_text": "The AES encryption key used to encrypt stored access tokens.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "GithubOrg",
-              "display_name": "GitHub Organization",
-              "type": "text",
-              "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "EnterpriseBaseURL",
-              "display_name": "Enterprise Base URL",
-              "type": "text",
-              "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "EnterpriseUploadURL",
-              "display_name": "Enterprise Upload URL",
-              "type": "text",
-              "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "EnablePrivateRepo",
-              "display_name": "Enable Private Repositories",
-              "type": "bool",
-              "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
-              "placeholder": "",
-              "default": null
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/download/v1.1.0/mattermost-autolink-1.1.0.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "mattermost-autolink",
-        "name": "Autolink",
-        "description": "Automatically rewrite text matching a regular expression into a Markdown link.",
-        "version": "1.1.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The webhook secret set in GitHub.",
+            "placeholder": "",
+            "default": null
           },
-          "executable": ""
-        },
-        "settings_schema": {
-          "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-autolink/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-autolink).",
-          "footer": "",
-          "settings": [
-            {
-              "key": "EnableAdminCommand",
-              "display_name": "Enable administration with /autolink command",
-              "type": "bool",
-              "help_text": "",
-              "placeholder": "",
-              "default": false
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/download/v1.0.7/zoom-1.0.7.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "zoom",
-        "name": "Zoom",
-        "description": "Zoom audio and video conferencing plugin for Mattermost 5.2+.",
-        "version": "1.0.7",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
           },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "",
-          "footer": "Use this webhook URL to set up the Zoom plugin. See [documentation](https://about.mattermost.com/default-zoom-documentation) to learn more.\n\n```https://SITEURL/plugins/zoom/webhook?secret=WEBHOOKSECRET```",
-          "settings": [
-            {
-              "key": "ZoomURL",
-              "display_name": "Zoom URL",
-              "type": "text",
-              "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
-              "placeholder": "https://zoom.us",
-              "default": null
-            },
-            {
-              "key": "ZoomAPIURL",
-              "display_name": "Zoom API URL",
-              "type": "text",
-              "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
-              "placeholder": "https://api.zoom.us/v2",
-              "default": null
-            },
-            {
-              "key": "APIKey",
-              "display_name": "API Key",
-              "type": "text",
-              "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "APISecret",
-              "display_name": "API Secret",
-              "type": "text",
-              "help_text": "The API Secret generated by Zoom for your API key.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "WebhookSecret",
-              "display_name": "Webhook Secret",
-              "type": "generated",
-              "help_text": "The secret used to authenticate the webhook to Mattermost.",
-              "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
-              "placeholder": "",
-              "default": null
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
-      "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+SmlyYSBpY29uPC90aXRsZT48cGF0aCBkPSJNMjMuMzIzIDExLjMzTDEzLjAwMSAxIDEyIDAgNC4yMjUgNy43NzUuNjcgMTEuMzNhLjk2Ljk2IDAgMCAwIDAgMS4zNDdsNy4xMDMgNy4xMDNMMTIgMjRsNy43NzEtNy43NzEuMTIxLS4xMjEgMy40MzEtMy40MzFhLjk0NS45NDUgMCAwIDAgMC0xLjM0N3pNMTIgMTUuNTUxTDguNDQ5IDEyIDEyIDguNDUzIDE1LjU0OCAxMiAxMiAxNS41NTF6Ii8+PC9zdmc+",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/download/v2.1.2/jira-2.1.2.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "jira",
-        "name": "Jira",
-        "description": "Atlassian Jira plugin for Mattermost.",
-        "version": "2.1.2",
-        "min_server_version": "5.12.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+          {
+            "key": "GithubOrg",
+            "display_name": "GitHub Organization",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
+            "placeholder": "",
+            "default": null
           },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "",
-          "footer": "Use this webhook URL format to [configure the Jira integration.](https://about.mattermost.com/default-jira-plugin)  `https://SITEURL/plugins/jira/api/v2/webhook?secret=WEBHOOKSECRET`",
-          "settings": [
-            {
-              "key": "EnableJiraUI",
-              "display_name": "Allow users to attach and create Jira issues in Mattermost",
-              "type": "bool",
-              "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
-              "placeholder": "",
-              "default": true
-            },
-            {
-              "key": "Secret",
-              "display_name": "Webhook Secret",
-              "type": "generated",
-              "help_text": "The secret used to authenticate the webhook to Mattermost.",
-              "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "RolesAllowedToEditJiraSubscriptions",
-              "display_name": "Mattermost Roles Allowed to Edit Jira Subscriptions",
-              "type": "radio",
-              "help_text": "Mattermost users who can subscribe channels to Jira tickets.",
-              "placeholder": "",
-              "default": "system_admin",
-              "options": [
-                {
-                  "display_name": "All users",
-                  "value": "users"
-                },
-                {
-                  "display_name": "Users who can manage channel settings",
-                  "value": "channel_admin"
-                },
-                {
-                  "display_name": "Users who can manage teams",
-                  "value": "team_admin"
-                },
-                {
-                  "display_name": "System Admins",
-                  "value": "system_admin"
-                }
-              ]
-            },
-            {
-              "key": "GroupsAllowedToEditJiraSubscriptions",
-              "display_name": "Jira Groups Allowed to Edit Jira Subscriptions",
-              "type": "text",
-              "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
-              "placeholder": "",
-              "default": ""
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-autotranslate",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-autotranslate/releases/download/v0.1.2/autotranslate-0.1.2.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "autotranslate",
-        "name": "Autotranslate",
-        "description": "Autotranslate plugin for Mattermost 5.4 and later.",
-        "version": "0.1.2",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+          {
+            "key": "EnterpriseBaseURL",
+            "display_name": "Enterprise Base URL",
+            "type": "text",
+            "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
+            "placeholder": "",
+            "default": null
           },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "",
-          "footer": "",
-          "settings": [
-            {
-              "key": "AWSAccessKeyID",
-              "display_name": "AWS Access Key ID",
-              "type": "text",
-              "help_text": "The access key ID from AWS",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "AWSSecretAccessKey",
-              "display_name": "AWS Secret Access Key",
-              "type": "text",
-              "help_text": "The secret access key from AWS",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "AWSRegion",
-              "display_name": "AWS Region",
-              "type": "text",
-              "help_text": "The region from AWS",
-              "placeholder": "",
-              "default": null
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter/releases/download/v0.1.0/mattermost-profanity-filter.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "mattermost-profanity-filter",
-        "name": "Profanity Filter",
-        "description": "For filtering out naughty words.",
-        "version": "0.1.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+          {
+            "key": "EnterpriseUploadURL",
+            "display_name": "Enterprise Upload URL",
+            "type": "text",
+            "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
+            "placeholder": "",
+            "default": null
           },
-          "executable": ""
-        },
-        "settings_schema": {
-          "header": "",
-          "footer": "",
-          "settings": [
-            {
-              "key": "RejectPosts",
-              "display_name": "Reject Posts",
-              "type": "bool",
-              "help_text": "If set the plugin will reject posts containing profanity instead of censoring.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "CensorCharacter",
-              "display_name": "Censor Character",
-              "type": "text",
-              "help_text": "The character(s) to use to censor profanity. Censored words' letters will be replaced with this character. Note that markdown will be interpreted. You can escape markdown character with a backslash. For using * you type \\*.",
-              "placeholder": "Ex. \\*",
-              "default": "\\*"
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.1.0/com.mattermost.welcomebot-1.1.0.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "com.mattermost.welcomebot",
-        "name": "Welcome Bot",
-        "description": "This plugin adds a WelcomeBot that helps add new users to channels.",
-        "version": "1.1.0",
-        "min_server_version": "5.12.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-          },
-          "executable": ""
-        },
-        "settings_schema": {
-          "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-welcomebot/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-welcomebot)",
-          "footer": "",
-          "settings": null
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-jenkins",
-      "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+SmVua2lucyBpY29uPC90aXRsZT48cGF0aCBkPSJNMi44NzMgMjRoLS45NzVjLS4wMjUtLjA2Ni0uMDQ5LS4xMzEtLjA3LS4xOTctLjIxNS0uNjY2LS41OTQtMS40OS0uNjkyLTIuMTU0LS4xNDYtLjk4NC43OC0xLjAzOSAxLjM3NC0xLjQ2NS45MTUtLjY2IDEuNjM1LTEuMDI1IDIuNjI3LTEuNjIxLjI5NS0uMTc4IDEuMTgyLS42MjMgMS4yODEtLjgyOC4yMDEtLjQwOC0uMzQ1LS45ODItLjQ5LTEuMzAxLS4yMjUtLjUwNi0uMzQ1LS45MzYtLjM3Ni0xLjQzNC0uODI0LS4xMzEtMS40NTUtLjYyNy0xLjg0NC0xLjE4NS0uNjMtLjkyNS0xLjA2Ni0yLjYzNS0uNTI1LTMuOTM2LjA0NS0uMTAzLjI1NC0uMzA1LjI4NS0uNDYzLjA2LS4zMDktLjEwNS0uNzItLjEyMS0xLjA0OS0uMDYtMS42OTIuMjg1LTMuMTUgMS40MjYtMy42Ni40NjMtMS44NCAyLjExMy0yLjQ1MyAzLjY3My0zLjM2Ny41ODEtLjM0MiAxLjIyNC0uNTYyIDEuODktLjgwNyAyLjM3Mi0uODc3IDYuMDI4LS43MTIgNy45OTUuNzgzLjgzNi42MzMgMi4xNzYgMS45NzEgMi42NTYgMi45MzkgMS4yNjIgMi41NTUgMS4xNyA2LjgyNi4yODcgOS45MzUtLjEyMS40MjEtLjI5MSAxLjAzMi0uNTMzIDEuNTMzLS4xNjguMzQ5LS42ODkgMS4wNS0uNjI1IDEuMzYuMDY0LjMxNCAxLjE4OSAxLjE3IDEuNDMyIDEuMzk1LjQzNC40MjIgMS4yNi45NzUgMS4zMjQgMS41LjA3LjU1Ny0uMjQ4IDEuMzM2LS40MSAxLjg3NS0uMjE3LjcyMS0uNDM2IDEuNDQxLS42NTQgMi4xMzFIMi44NzFsLjAwMi4wMTZ6bTExLjEwNC0zLjU0MWMtLjU0NS0uMjk5LTEuMzYxLS42MjEtMi4wNjUtLjc1Ni0uODY5LS4xNjQtLjc3OSAxLjE4OC0uNzUgMS45OTQuMDMuNjQzLjM2MSAxLjMxNi41MTEgMS43NDQuMDc1LjE5Ny4wODkuNDEuMjU1LjQ0OS4zLjA2OCAxLjI5LS4zMjYgMS41NzUtLjQ3OS42LS4zMjggMS4wNjQtLjg0NCAxLjU3NC0xLjE4OS4wMTYtLjE3LjAxNi0uMzQuMDMxLS41MDgtLjMwMS0uMTQ4LS42NDUtLjI1OC0xLjA5Ni0uMjc3LjMxNC0uMTUuNzUtLjE1IDEuMDM1LS4zMzJsLjAxNi0uMTkzYy0uNDk2LS4wMzEtLjY4OS0uMjU0LTEuMDIxLS40MzZsLS4wNjUtLjAxN3ptNy40NTUgMi45MzZjLjE5My0uNjE5LjM1OS0xLjIyMS40NjUtMS43NTIuMDU5LS4yODcuMjE1LS45MTguMTc4LTEuMTc2LS4wNTktLjQ1OS0uNjg0LS43OTktMS4wMDQtMS4wODYtLjU4NC0uNTI1LS45NTEtLjk3NS0xLjU2MS0xLjQ2OS0uMjQ4LjM3NS0uNzc5LjYxNS0uOTgyLjkxNCAxLjQ0Ny0uNjg5IDEuNzA5IDIuNjI1IDEuMTQxIDMuNjg5LjA5LjMzLjM5MS40NTEuNTE0LjczNmwtLjA4Ni4xNjZoMS4yODljLjAxNCAwIC4wMzEgMCAuMDQ1LjAxNGwuMDAxLS4wMzZ6bS02LjYzNS0uMDEyYy0uMDQ5LS4wNzQtLjEtLjEzNS0uMTUtLjIwOWwtLjMwMS4xOTVoLjQ1MXYuMDE0em0yLjc3MSAwYy4wMDgtLjIwOS4wMTgtLjQwNC4wMjktLjU5OC0uNTI5LjAyOS0uODI0LS40OC0xLjE5NS0uNTI3LS4zMjQtLjA0NS0uNi4zNjEtMS4wMi4xOTUtLjA5Ni4xMDUtLjE4NC4yMjctLjI4NS4zMTYuMTU0LjE4LjI5NS4zNzUuNDI0LjU4NGguODE2Yy4wMTQtLjE2NC4xMzUtLjI4NS4yOTktLjI4NS4xNjYgMCAuMjg1LjEyMS4yODUuMjdoLjY2bC0uMDEzLjA0NXptMi4xMTYgMGMtLjMxNC0uNDc5LS45NDctLjg5OC0xLjY4LS41NTVsLS4wMzEuNTQxaDEuNzExdi4wMTR6bS04LjUxIDBsLS4xMDUtLjM0NGMtLjIyNS0uNzIxLS4zNTktMS4yNi0uNDA1LTEuNjgtLjkxNC0uNDM2LTEuODc1LS44NzEtMi42NTQtMS40MjYtLjE1LS4xMDUtMS4xMDktMS4zNS0xLjIzLTEuMzA1LTEuNzM5LjY3Ni0zLjM1OSAxLjg1OS00LjgxNCAyLjk4NC4yNTYuNTU3LjQ4IDEuMTQxLjY5IDEuNzRoOC41MDVsLjAxMy4wMzF6bTguMjY1LTIuMTEzYy0uMDI5LS41MTItLjE2NC0xLjU2MS0uNDgtMS43NC0uNjYtLjM5MS0xLjg0Ni43NzktMi4zNC45NDMuMDQ1LjE1LjEzNS4yNzEuMTUuNDguMjg1LS4wNzQuNjQ1LS4wMjkuODk4LjA5Mi0uMjk5LjAyOS0uNjI5LjAyOS0uODI0LjE2NC0uMDc0LjE5NS4wMTYuNDgtLjAyOS43NjQuNjg5LjE5NyAxLjUuMzAzIDIuMzg1LjMzMi4xNjQtLjIyNy4yMjUtLjY0NS4yMTEtMS4wODJsLjAyOS4wNDd6bS00LjA4LS4zNmMtLjA0NS4zNzUuMDQ1LjUxLjExOS45NDMgMS4yNi4zOTEgMS4wMzUtMS43NC0uMTM1LS45NTlsLjAxNi4wMTZ6TTguNzYxIDE5LjVjLS40NS40NTcgMS4yNzEgMS4wODIgMS44MTQgMS4xMTUgMC0uMjkxLjE2NS0uNTY0LjEzNS0uNzcxLS42NDktLjExNy0xLjUwMi0uMDQxLTEuOTQ1LS4zNDZsLS4wMDQuMDAyem01LjU2NS4yMTVjMCAuMDQzLS4wNjEuMDI5LS4wNjguMDY0LjU4LjQ1MSAxLjAxNC41NDUgMS44MDMuNTEuMzU0LS4yNjIuNjctLjU2MyAxLjA0My0uODA3LS44NTUuMDc0LTEuOTMyLjYwNy0yLjc3NS4yMjlsLS4wMDMuMDA0em0zLjQyLTE3LjcyN2MtMS42MDUtLjkwNi00LjM1LTEuNTkxLTYuMDc2LS43MzEtMS4zOC42OTItMy4yNyAxLjg0MS0zLjg5OSAzLjI5Mi42IDEuNDAyLS4xNjYgMi42ODYtLjIyNiA0LjEwOS0uMDE4Ljc1OC4zNiAxLjQyLjM5MSAyLjI0My0uMi4zMzgtLjgyNS4zOC0xLjI2LjM1Ni0uMTQ2LS43MjktLjQwMS0xLjU0OS0xLjE1NS0xLjYzMS0xLjA2NC0uMTE1LTEuODQ1Ljc2NS0xLjg5MSAxLjY4NC0uMDYgMS4wNzkuODM0IDIuODY0IDIuMDg2IDIuNzQ1LjQ4OC0uMDQ2LjYwOC0uNTQxIDEuMTM5LS41NDEuMjg1LjU3LS40NDUuNzUtLjUyMyAxLjE1NS0uMDE2LjEwNS4wNTkuNTExLjEwNC43MDUuMjMzLjk0NC43NDQgMi4xNTkgMS4yNDUgMi44OC42MzUuOSAxLjg4NCAxLjA1MSAzLjIyOSAxLjE0MS4yNC0uNTI1IDEuMTI1LS40OCAxLjcwNi0uMzQ2LS42OTEtLjI3LTEuMzM2LS45NDUtMS44NzUtMS41MjktLjYxNS0uNjc2LTEuMjMtMS40MS0xLjI2MS0yLjI4IDEuMTU1IDEuNjA0IDIuMSAyLjk5OSA0LjIwMSAzLjcwNCAxLjU5LjUyNSAzLjQ0OS0uMjU0IDQuNjY0LTEuMTA5LjUxLS4zNTkuODExLS45MyAxLjE3LTEuNDM5IDEuMzUtMS45MzYgMS45OC00LjcxIDEuODQ2LTcuMzk1LS4wNjEtMS4xMTEtLjA2MS0yLjIyMS0uNDM2LTIuOTU1LS4zODktLjc4MS0xLjY5NS0xLjQ3MS0yLjQ3NS0uNzgxLS4xNS0uNzY0LjYyOS0xLjIyOSAxLjU0NS0uOTU5LS42Ni0uODU1LTEuMzM2LTEuODU5LTIuMjY2LTIuMzg1bC4wMTcuMDY3em0tNC4xNjQgMTIuOTA4Yy42MTUgMS41NDQgMi43MjUgMS4zNjMgNC41MDYgMS4zMjMtLjA4NC4xOTQtLjI1Ni40MzUtLjQ2NS41MTUtLjU3LjIzMi0yLjE0Ni40MDgtMi45MzgtLjAxMi0uNTA2LS4yNzEtLjgyNC0uODczLTEuMTAyLTEuMjI3LS4xMzctLjE3Mi0uNzk1LS42MDgtLjAxMi0uNjA5bC4wMTEuMDF6bS4xNjQtLjg3MWMuODkzLjQ2NSAyLjUyLjUxOCAzLjczMi40OC4wNjYuMjY4LjA2Ni41OTQuMDY4LjkxNC0xLjU1MS4wOC0zLjM4Ny0uMzA0LTMuNzk1LTEuMzk1aC0uMDA1em02LjY3Ni0uNTg1Yy0uNDczLjktMS4xNDUgMS44OTctMi41MzkgMS45MjgtLjAyMy0uMjg0LS4wNDUtLjczNSAwLS45MDQgMS4wNjQtLjEwMyAxLjcyNy0uNjQ2IDIuNTQzLTEuMDE3bC0uMDA0LS4wMDd6bS0uNjQ5LS42NjdjLTEuMDIuNjYtMi4xNTQgMS4zNzUtMy44MjQgMS4yMS0uMzUyLS4zMS0uNDg2LTEuMDAxLS4xNDEtMS40NTguMTgyLjMxMy4wNjEuODg1LjU3Ljk2OS45NDUuMTY2IDIuMDM5LS41NzggMi43My0uODQuNDItLjcxMi0uMDQ1LS45NzUtLjQyLTEuNDMyLS43ODEtLjkzMS0xLjgzLTIuMS0xLjgwMS0zLjUxLjMxNC0uMjI1LjM0Ni4zNDUuMzkxLjQ0OS40MDQuOTYxIDEuNDI0IDIuMTc2IDIuMTc0IDMgLjE4LjIxMS40OC4zOTEuNTEuNTI1LjA5Mi4zODktLjI1NC44NTQtLjIwOSAxLjEwOWwuMDItLjAyMnptLTEzLjQ0LS42NzVjLS4zMTQtLjE4NC0uMzkzLS45OS0uNzY4LTEuMDEtLjUzNS0uMDMtLjQzOCAxLjA0OS0uNDM2IDEuNjc5LS4zNy0uMzI5LS40MzUtMS4zNjQtLjE2NC0xLjg5LS4zMDgtLjE1LS40NDUuMTY1LS42MTguMjg1LjIyLTEuNTkgMi4zNC0uNzM0IDEuOTg5Ljk2bC0uMDAzLS4wMjR6TTQuNzE0IDUuOTk0Yy0uNjg1Ljc1Ni0uNTQgMi4xNzQtLjQ1OSAzLjE4OCAxLjI0NC0uNzg1IDIuODk4LjA2IDIuODgzIDEuMzk1LjU5NS0uMDE2LjIyMy0uNzQ0LjExNS0xLjIxNS0uMzUzLTEuNTI5LjU5Mi0zLjE4OC4wNDEtNC41OS0xLjA2NC4wODMtMS45MzkuNTE5LTIuNTc4IDEuMjE0bC0uMDAyLjAwOHptOS4xMiAxLjExM2MuMzA3LjU2Mi40MDQgMS4xNDguODQgMS41Ny4xOTUuMTkxLjU3NC40MjQuMzg3Ljk1MS0uMDQ1LjEyMS0uMzY1LjM5MS0uNTUxLjQ1LS42NzQuMTk1LTIuMjU0LjAzLTEuNzIxLS44MS41NjMuMDE1IDEuMzE0LjM1OSAxLjczMi0uMDQ1LS4zMTQtLjUyNS0uODg1LTEuNTMtLjY3NC0yLjEzbC0uMDEzLjAxNHptNi4xOTktLjAxM2guMDY4Yy4zMy42NjguNiAxLjM3NSAxLjAwNCAxLjk2NS0uMjcuNjI5LTIuMDUzIDEuMTktMi4wMjMuMDU3LjM4OS0uMTcgMS4wNDktLjAzNSAxLjM5NS0uMjUtLjE5My0uNTU2LS40OC0xLjAwNi0uNDM0LTEuNzcxbC0uMDEtLjAwMXptLTYuOTI4LTEuNjE3Yy0xLjQyMi0uMzMtMi4xMzEuNTkyLTIuNTYgMS41NTMtLjM4NC0uMDk0LS4yMzEtLjYxNS0uMTM1LS44ODMuMjU1LS43MDEgMS4yOC0xLjYzMyAyLjExOS0xLjUwNi4zNTkuMDU3Ljg0OC4zODYuNTc2LjgzNHYuMDAyek05LjY0MyAxLjU5MmMtMS41Ni40NC0zLjU2IDEuNTc0LTQuMiAyLjk3NC40OTUtLjA3Ljg0LS4zMjEgMS4zMy0uMzUxLjE4Ni0uMDE2LjQyOC4wNzQuNjQxLjAxNS40MjQtLjEwNC43OC0xLjA2NSAxLjEwMi0xLjQwOS4zMTEtLjM0Ni42ODUtLjQ5Ny45NDEtLjgxMS4xNjYtLjA5LjQwOC0uMDc0LjQyLS4zMy0uMDc0LS4wNzUtLjE1LS4xMzUtLjIzMy0uMTA1di4wMTd6Ii8+PC9zdmc+",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-jenkins/releases/download/v1.0.0/jenkins-1.0.0.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "jenkins",
-        "name": "Jenkins plugin",
-        "description": "Jenkins plugin for Mattermost",
-        "version": "1.0.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-          },
-          "executable": ""
-        },
-        "settings_schema": {
-          "header": "To report an issue, make a suggestion or a contribution, or fork your own version of the plugin, [check the repository](https://github.com/waseem18/mattermost-plugin-jenkins).",
-          "footer": "",
-          "settings": [
-            {
-              "key": "JenkinsURL",
-              "display_name": "Jenkins URL",
-              "type": "text",
-              "help_text": "The URL for your Jenkins instance. Must start with http:// or https://. For example: https://jenkins.example.com.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "EncryptionKey",
-              "display_name": "At Rest Encryption Key",
-              "type": "generated",
-              "help_text": "The AES encryption key used to encrypt stored access tokens.",
-              "placeholder": "",
-              "default": null
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-antivirus",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/download/v0.1.1/antivirus-0.1.1.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "antivirus",
-        "name": "Antivirus",
-        "description": "Antivirus plugin for scanning uploaded files.",
-        "version": "0.1.1",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-          },
-          "executable": ""
-        },
-        "settings_schema": {
-          "header": "Antivirus plugin for scanning uploaded files to Mattermost, uses ClamAV to scan files. See [documentation here](https://github.com/mattermost/mattermost-plugin-antivirus)",
-          "footer": "",
-          "settings": [
-            {
-              "key": "ClamavHostPort",
-              "display_name": "ClamAV - Host and Port",
-              "type": "text",
-              "help_text": "The hostname and port to connect to clamd",
-              "placeholder": "localhost:3310",
-              "default": "localhost:3310"
-            },
-            {
-              "key": "ScanTimeoutSeconds",
-              "display_name": "Scan Timeout (seconds)",
-              "type": "number",
-              "help_text": "How long the virus scan can take before giving up.",
-              "placeholder": "10",
-              "default": 10
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-walltime",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-walltime/releases/download/0.1.1/com.mattermost.walltime-plugin-0.1.1.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "com.mattermost.walltime-plugin",
-        "name": "Walltime Plugin",
-        "description": "This plugin converts the dates/times in messages to the recipient's local timezone.",
-        "version": "0.1.1",
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "No configuration is needed to use the Walltime plugin.",
-          "footer": "Made with ❤️ from Mattermost, Inc.",
-          "settings": []
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/download/v1.0.1/com.mattermost.custom-attributes-1.0.1.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "com.mattermost.custom-attributes",
-        "name": "Custom User Attributes",
-        "description": "Add custom user attributes to the Mattermost user profile popover.",
-        "version": "1.0.1",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-          },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-custom-attributes/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-custom-attributes).",
-          "footer": "",
-          "settings": null
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-skype4business",
-      "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+U2t5cGUgaWNvbjwvdGl0bGU+PHBhdGggZD0iTTEyLjA2OSAxOC44NzRjLTQuMDIzIDAtNS44Mi0xLjk3OS01LjgyLTMuNDY0IDAtLjc2NS41NjEtMS4yOTYgMS4zMzMtMS4yOTYgMS43MjMgMCAxLjI3MyAyLjQ3NyA0LjQ4NyAyLjQ3NyAxLjY0MSAwIDIuNTUtLjg5NSAyLjU1LTEuODExIDAtLjU1MS0uMjY5LTEuMTYtMS4zNTQtMS40MjlsLTMuNTc2LS44OTVjLTIuODgtLjcyNC0zLjQwMy0yLjI4Ni0zLjQwMy0zLjc1MSAwLTMuMDQ3IDIuODYxLTQuMTkxIDUuNTQ5LTQuMTkxIDIuNDcxIDAgNS4zOTMgMS4zNzMgNS4zOTMgMy4xOTkgMCAuNzg0LS42ODggMS4yNC0xLjQ1MyAxLjI0LTEuNDY5IDAtMS4xOTgtMi4wMzctNC4xNjQtMi4wMzctMS40NjkgMC0yLjI5Mi42NjQtMi4yOTIgMS42MTdzMS4xNTMgMS4yNTggMi4xNTcgMS40ODdsMi42MzcuNTg3YzIuODkxLjY0OSAzLjYyNCAyLjM0NiAzLjYyNCAzLjk0NCAwIDIuNDc2LTEuOTAyIDQuMzI0LTUuNzIyIDQuMzI0bTExLjA4NC00Ljg4MmwtLjAyOS4xMzUtLjA0NC0uMjRjLjAxNS4wNDUuMDQ0LjA3NC4wNTkuMTIuMTItLjY3NS4xODEtMS4zNjMuMTgxLTIuMDUyIDAtMS41MjktLjMwMS0zLjAxMi0uODk4LTQuNDItLjU2OS0xLjM0OC0xLjM5NS0yLjU2Mi0yLjQyNy0zLjU5Ni0xLjA0OS0xLjAzMy0yLjI0Ny0xLjg1Ni0zLjU5NS0yLjQyNi0xLjMxOC0uNjMxLTIuODAxLS45My00LjMyOC0uOTMtLjcyIDAtMS40NDQuMDctMi4xNDMuMjA0bC4xMTkuMDYtLjIzOS0uMDMzLjExOS0uMDI1QzguOTEuMjc0IDcuODI5IDAgNi43MzEgMGMtMS43ODkgMC0zLjQ3LjY5OC00LjczNiAxLjk2N0MuNzI5IDMuMjM1LjAzMiA0LjkyMy4wMzIgNi43MTZjMCAxLjE0My4yOTIgMi4yNjUuODQ0IDMuMjU4bC4wMi0uMTI0LjA0MS4yMzktLjA2LS4xMTVjLS4xMTQuNjQ1LS4xNzIgMS4yOTktLjE3MiAxLjk1NSAwIDEuNTMuMyAzLjAxNy44ODQgNC40MTYuNTY4IDEuMzYyIDEuMzc4IDIuNTc2IDIuNDI3IDMuNjA5IDEuMDM0IDEuMDUgMi4yNDcgMS44NTcgMy41OTUgMi40NDIgMS4zOTQuNiAyLjg3Ny44OTggNC40MDQuODk4LjY1OSAwIDEuMzM0LS4wNiAxLjk3Ny0uMTc5bC0uMTE5LS4wNjIuMjQuMDQ2LS4xMzUuMDNjMS4wMDIuNTY5IDIuMTI2Ljg3MSAzLjI5NC44NzEgMS43ODMgMCAzLjQ1OS0uNjkgNC43MzMtMS45NjMgMS4yNTktMS4yNTkgMS45NjItMi45NTEgMS45NjItNC43NDkgMC0xLjEzOC0uMjk5LTIuMjYyLS44NTMtMy4yNjYiLz48L3N2Zz4=",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-skype4business/releases/download/v0.1.2/skype4business-0.1.2.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "skype4business",
-        "name": "Skype for Business",
-        "description": "Skype for Business plugin for Mattermost 5.2+.",
-        "version": "0.1.2",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-          },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "",
-          "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/kosgrz/mattermost-plugin-skype4business).",
-          "settings": [
-            {
-              "key": "productType",
-              "display_name": "Skype for Business Product Type",
-              "type": "radio",
-              "help_text": "The product type of your Skype for Business instance.",
-              "placeholder": "",
-              "default": "Server",
-              "options": [
-                {
-                  "display_name": "Server",
-                  "value": "server"
-                },
-                {
-                  "display_name": "Online",
-                  "value": "online"
-                }
-              ]
-            },
-            {
-              "key": "Username",
-              "display_name": "Bot username",
-              "type": "text",
-              "help_text": "Username of your selected bot account. We strongly recommend using a dedicated bot account for this plugin, rather than an existing user account. Only required for Skype for Business Server.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "Password",
-              "display_name": "Bot password",
-              "type": "text",
-              "help_text": "Password of your selected bot account. Only required for Skype for Business Server.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "Domain",
-              "display_name": "Server Domain",
-              "type": "text",
-              "help_text": "The domain of your Skype for Business server instance. For example, contoso.com. Only required for Skype for Business Server.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "ClientId",
-              "display_name": "Application ID",
-              "type": "text",
-              "help_text": "Application ID from the Azure Active Directory. Only required for Skype for Business Online.\n\nUse this URL to configure the plugin in Azure Active Directory: ```https://SITEURL/plugins/skype4business/api/v1/auth_redirect```",
-              "placeholder": "",
-              "default": null
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS",
-      "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHJvbGU9ImltZyIgdmlld0JveD0iMCAwIDI0IDI0Ij48dGl0bGU+QW1hem9uIEFXUyBpY29uPC90aXRsZT48cGF0aCBkPSJNNi43NjMgMTAuMDM2YzAgLjI5Ni4wMzIuNTM1LjA4OC43MS4wNjQuMTc2LjE0NC4zNjguMjU2LjU3Ni4wNC4wNjMuMDU2LjEyNy4wNTYuMTgzIDAgLjA4LS4wNDguMTYtLjE1Mi4yNGwtLjUwMy4zMzVhLjM4My4zODMgMCAwIDEtLjIwOC4wNzJjLS4wOCAwLS4xNi0uMDQtLjIzOS0uMTEyYTIuNDcgMi40NyAwIDAgMS0uMjg3LS4zNzUgNi4xOCA2LjE4IDAgMCAxLS4yNDgtLjQ3MWMtLjYyMi43MzQtMS40MDUgMS4xMDEtMi4zNDcgMS4xMDEtLjY3IDAtMS4yMDUtLjE5MS0xLjU5Ni0uNTc0LS4zOTEtLjM4NC0uNTktLjg5NC0uNTktMS41MzMgMC0uNjc4LjIzOS0xLjIzLjcyNi0xLjY0NC40ODctLjQxNSAxLjEzMy0uNjIzIDEuOTU1LS42MjMuMjcyIDAgLjU1MS4wMjQuODQ2LjA2NC4yOTYuMDQuNi4xMDQuOTE4LjE3NnYtLjU4M2MwLS42MDctLjEyNy0xLjAzLS4zNzUtMS4yNzctLjI1NS0uMjQ4LS42ODYtLjM2Ny0xLjMtLjM2Ny0uMjggMC0uNTY4LjAzMS0uODYzLjEwMy0uMjk1LjA3Mi0uNTgzLjE2LS44NjIuMjcyYTIuMjg3IDIuMjg3IDAgMCAxLS4yOC4xMDQuNDg4LjQ4OCAwIDAgMS0uMTI3LjAyM2MtLjExMiAwLS4xNjgtLjA4LS4xNjgtLjI0N3YtLjM5MWMwLS4xMjguMDE2LS4yMjQuMDU2LS4yOGEuNTk3LjU5NyAwIDAgMSAuMjI0LS4xNjdjLjI3OS0uMTQ0LjYxNC0uMjY0IDEuMDA1LS4zNmE0Ljg0IDQuODQgMCAwIDEgMS4yNDYtLjE1MWMuOTUgMCAxLjY0NC4yMTYgMi4wOTEuNjQ3LjQzOS40My42NjIgMS4wODUuNjYyIDEuOTYzdjIuNTg2em0tMy4yNCAxLjIxNGMuMjYzIDAgLjUzNC0uMDQ4LjgyMi0uMTQ0LjI4Ny0uMDk2LjU0My0uMjcxLjc1OC0uNTEuMTI4LS4xNTIuMjI0LS4zMi4yNzItLjUxMi4wNDctLjE5MS4wOC0uNDIzLjA4LS42OTR2LS4zMzVhNi42NiA2LjY2IDAgMCAwLS43MzUtLjEzNiA2LjAyIDYuMDIgMCAwIDAtLjc1LS4wNDhjLS41MzUgMC0uOTI2LjEwNC0xLjE5LjMyLS4yNjMuMjE1LS4zOS41MTgtLjM5LjkxNyAwIC4zNzUuMDk1LjY1NS4yOTUuODQ2LjE5MS4yLjQ3LjI5Ni44MzguMjk2em02LjQxLjg2MmMtLjE0NCAwLS4yNC0uMDI0LS4zMDQtLjA4LS4wNjQtLjA0OC0uMTItLjE2LS4xNjgtLjMxMUw3LjU4NiA1LjU1YTEuMzk4IDEuMzk4IDAgMCAxLS4wNzItLjMyYzAtLjEyOC4wNjQtLjIuMTkxLS4yaC43ODNjLjE1MSAwIC4yNTUuMDI1LjMxLjA4LjA2NS4wNDguMTEzLjE2LjE2LjMxMmwxLjM0MiA1LjI4NCAxLjI0NS01LjI4NGMuMDQtLjE2LjA4OC0uMjY0LjE1MS0uMzEyYS41NDkuNTQ5IDAgMCAxIC4zMi0uMDhoLjYzOGMuMTUyIDAgLjI1Ni4wMjUuMzIuMDguMDYzLjA0OC4xMi4xNi4xNTEuMzEybDEuMjYxIDUuMzQ4IDEuMzgxLTUuMzQ4Yy4wNDgtLjE2LjEwNC0uMjY0LjE2LS4zMTJhLjUyLjUyIDAgMCAxIC4zMTEtLjA4aC43NDNjLjEyNyAwIC4yLjA2NS4yLjIgMCAuMDQtLjAwOS4wOC0uMDE3LjEyOGExLjEzNyAxLjEzNyAwIDAgMS0uMDU2LjJsLTEuOTIzIDYuMTdjLS4wNDguMTYtLjEwNC4yNjMtLjE2OC4zMTFhLjUxLjUxIDAgMCAxLS4zMDMuMDhoLS42ODdjLS4xNTEgMC0uMjU1LS4wMjQtLjMyLS4wOC0uMDYzLS4wNTYtLjExOS0uMTYtLjE1LS4zMmwtMS4yMzgtNS4xNDgtMS4yMyA1LjE0Yy0uMDQuMTYtLjA4Ny4yNjQtLjE1LjMyLS4wNjUuMDU2LS4xNzcuMDgtLjMyLjA4em0xMC4yNTYuMjE1Yy0uNDE1IDAtLjgzLS4wNDgtMS4yMjktLjE0My0uMzk5LS4wOTYtLjcxLS4yLS45MTgtLjMyLS4xMjgtLjA3MS0uMjE1LS4xNTEtLjI0Ny0uMjIzYS41NjMuNTYzIDAgMCAxLS4wNDgtLjIyNHYtLjQwN2MwLS4xNjcuMDY0LS4yNDcuMTgzLS4yNDcuMDQ4IDAgLjA5Ni4wMDguMTQ0LjAyNC4wNDguMDE2LjEyLjA0OC4yLjA4LjI3MS4xMi41NjYuMjE1Ljg3OC4yNzkuMzE5LjA2NC42My4wOTYuOTUuMDk2LjUwMiAwIC44OTQtLjA4OCAxLjE2NS0uMjY0YS44Ni44NiAwIDAgMCAuNDE1LS43NTguNzc3Ljc3NyAwIDAgMC0uMjE1LS41NTljLS4xNDQtLjE1MS0uNDE2LS4yODctLjgwNy0uNDE1bC0xLjE1Ny0uMzZjLS41ODMtLjE4My0xLjAxNC0uNDU0LTEuMjc3LS44MTNhMS45MDIgMS45MDIgMCAwIDEtLjQtMS4xNThjMC0uMzM1LjA3My0uNjMuMjE2LS44ODYuMTQ0LS4yNTUuMzM1LS40NzkuNTc1LS42NTQuMjQtLjE4NC41MS0uMzIuODMtLjQxNS4zMi0uMDk2LjY1NS0uMTM2IDEuMDA2LS4xMzYuMTc1IDAgLjM1OS4wMDguNTM1LjAzMi4xODMuMDI0LjM1LjA1Ni41MTguMDg4LjE2LjA0LjMxMi4wOC40NTUuMTI3LjE0NC4wNDguMjU2LjA5Ni4zMzYuMTQ0YS42OS42OSAwIDAgMSAuMjQuMi40My40MyAwIDAgMSAuMDcxLjI2M3YuMzc1YzAgLjE2OC0uMDY0LjI1Ni0uMTg0LjI1NmEuODMuODMgMCAwIDEtLjMwMy0uMDk2IDMuNjUyIDMuNjUyIDAgMCAwLTEuNTMyLS4zMTFjLS40NTUgMC0uODE1LjA3MS0xLjA2Mi4yMjMtLjI0OC4xNTItLjM3NS4zODMtLjM3NS43MSAwIC4yMjQuMDguNDE2LjI0LjU2Ny4xNTkuMTUyLjQ1NC4zMDQuODc3LjQ0bDEuMTM0LjM1OGMuNTc0LjE4NC45OS40NCAxLjIzNy43NjcuMjQ3LjMyNy4zNjcuNzAyLjM2NyAxLjExNyAwIC4zNDMtLjA3Mi42NTUtLjIwNy45MjYtLjE0NC4yNzItLjMzNi41MTEtLjU4My43MDMtLjI0OC4yLS41NDMuMzQzLS44ODYuNDQ3LS4zNi4xMTEtLjczNC4xNjctMS4xNDIuMTY3ek0yMS42OTggMTYuMjA3Yy0yLjYyNiAxLjk0LTYuNDQyIDIuOTY5LTkuNzIyIDIuOTY5LTQuNTk4IDAtOC43NC0xLjctMTEuODctNC41MjYtLjI0Ny0uMjIzLS4wMjQtLjUyNy4yNzItLjM1MSAzLjM4NCAxLjk2MyA3LjU1OSAzLjE1MyAxMS44NzcgMy4xNTMgMi45MTQgMCA2LjExNC0uNjA3IDkuMDYtMS44NTIuNDM5LS4yLjgxNC4yODcuMzgzLjYwN3pNMjIuNzkyIDE0Ljk2MWMtLjMzNi0uNDMtMi4yMi0uMjA3LTMuMDc0LS4xMDMtLjI1NS4wMzItLjI5NS0uMTkyLS4wNjMtLjM2IDEuNS0xLjA1MyAzLjk2Ny0uNzUgNC4yNTQtLjM5OS4yODcuMzYtLjA4IDIuODI2LTEuNDg1IDQuMDA3LS4yMTUuMTg0LS40MjMuMDg4LS4zMjctLjE1MS4zMi0uNzkgMS4wMy0yLjU3LjY5NS0yLjk5NHoiLz48L3N2Zz4=",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS/releases/download/v1.0.2/com.mattermost.aws-sns-1.0.2.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "com.mattermost.aws-sns",
-        "name": "AWS SNS",
-        "description": "Send alert notifications from Amazon AWS CloudWatch to Mattermost channels via AWS SNS.",
-        "version": "1.0.2",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-          },
-          "executable": ""
-        },
-        "settings_schema": {
-          "header": "This plugin is used to receive alert notifications from [Amazon AWS CloudWatch](https://aws.amazon.com/cloudwatch/) to Mattermost channels via AWS SNS.",
-          "footer": "",
-          "settings": [
-            {
-              "key": "TeamChannel",
-              "display_name": "Channel to send notifications to:",
-              "type": "text",
-              "help_text": "The channel to send notifications to, specified in the format `teamname,channelname`. If the specified channel does not exist, the plugin will create the channel for you.\n \nNote: Must be the team and channel handle used in the URL. For example, in the following URL, set the value to `myteam,mychannel`: https://example.com/myteam/channels/mychannel",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "AllowedUserIds",
-              "display_name": "Authorized User IDs:",
-              "type": "text",
-              "help_text": "List of users authorized to accept AWS SNS subscriptions to a Mattermost channel. Must be a comma-separated list of user ID's.\n \nTip: Use the [mattermost user search](https://mattermost.com/pl/cli-mattermost-user-search) CLI command to determine a user ID.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "Username",
-              "display_name": "Username:",
-              "type": "username",
-              "help_text": "Select the username that this integration is attached to.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "Token",
-              "display_name": "Token:",
-              "type": "generated",
-              "help_text": "Generated token to validate incoming requests from AWS SNS.",
-              "placeholder": "",
-              "default": null
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
-      "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0TGFiIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0yMy45NTUgMTMuNTg3bC0xLjM0Mi00LjEzNS0yLjY2NC04LjE4OWMtLjEzNS0uNDIzLS43My0uNDIzLS44NjcgMEwxNi40MTggOS40NUg3LjU4Mkw0LjkxOSAxLjI2M0M0Ljc4My44NCA0LjE4NS44NCA0LjA1IDEuMjZMMS4zODYgOS40NDkuMDQ0IDEzLjU4N2MtLjEyMS4zNzUuMDE0Ljc4OS4zMzEgMS4wMjNMMTIgMjMuMDU0bDExLjYyNS04LjQ0M2MuMzE4LS4yMzUuNDUzLS42NDcuMzMtMS4wMjQiLz48L3N2Zz4=",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/download/v1.0.0/com.github.manland.mattermost-plugin-gitlab-1.0.0.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "com.github.manland.mattermost-plugin-gitlab",
-        "name": "GitLab",
-        "description": "GitLab plugin for Mattermost.",
-        "version": "1.0.0",
-        "min_server_version": "5.10.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-          },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "To set up the GitLab plugin, you need to register a GitLab OAuth app here https://gitlab.com/profile/applications.",
-          "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/manland/mattermost-plugin-gitlab).",
-          "settings": [
-            {
-              "key": "GitlabURL",
-              "display_name": "Gitlab URL",
-              "type": "text",
-              "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
-              "placeholder": "https://gitlab.com",
-              "default": "https://gitlab.com"
-            },
-            {
-              "key": "GitlabOAuthClientID",
-              "display_name": "GitLab OAuth Client ID",
-              "type": "text",
-              "help_text": "The client ID for the OAuth app registered with GitLab.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "GitlabOAuthClientSecret",
-              "display_name": "Gitlab OAuth Client Secret",
-              "type": "text",
-              "help_text": "The client secret for the OAuth app registered with GitLab.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "WebhookSecret",
-              "display_name": "Webhook Secret",
-              "type": "generated",
-              "help_text": "The webhook secret set in GitLab.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "EncryptionKey",
-              "display_name": "At Rest Encryption Key",
-              "type": "generated",
-              "help_text": "The AES encryption key used to encrypt stored access tokens.",
-              "placeholder": "",
-              "default": null
-            },
-            {
-              "key": "GitlabGroup",
-              "display_name": "Gitlab Group",
-              "type": "text",
-              "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
-              "placeholder": "groupName",
-              "default": null
-            },
-            {
-              "key": "EnablePrivateRepo",
-              "display_name": "Enable Private Repositories",
-              "type": "bool",
-              "help_text": "(Optional) Allow the plugin to work with private repositories.",
-              "placeholder": "",
-              "default": null
-            }
-          ]
-        }
-      }
-    },
-    {
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-nps",
-      "icon_data": "",
-      "download_url": "https://github.com/mattermost/mattermost-plugin-nps/releases/download/v1.0.3/com.mattermost.nps-1.0.3.tar.gz",
-      "download_signature": "",
-      "manifest": {
-        "id": "com.mattermost.nps",
-        "name": "User Satisfaction Surveys",
-        "description": "This plugin sends quarterly user satisfaction surveys to gather feedback and help improve Mattermost.",
-        "version": "1.0.3",
-        "min_server_version": "5.14.0",
-        "server": {
-          "executables": {
-            "linux-amd64": "server/dist/plugin-linux-amd64",
-            "darwin-amd64": "server/dist/plugin-darwin-amd64",
-            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-          },
-          "executable": ""
-        },
-        "webapp": {
-          "bundle_path": "webapp/dist/main.js"
-        },
-        "settings_schema": {
-          "header": "Mattermost sends user satisfaction surveys to gather feedback and improve product quality. [Learn more](!https://mattermost.com/pl/default-nps) about user satisfaction surveys.",
-          "footer": "",
-          "settings": [
-            {
-              "key": "EnableSurvey",
-              "display_name": "Enable User Satisfaction Survey",
-              "type": "bool",
-              "help_text": "When true, a [user satisfaction survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://about.mattermost.com/default-privacy-policy) for more information on the collection and use of information received through our services.",
-              "placeholder": "",
-              "default": true
-            }
-          ]
-        }
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
       }
     }
-  ]
-  
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+    "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/download/v1.1.0/mattermost-autolink-1.1.0.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "mattermost-autolink",
+      "name": "Autolink",
+      "description": "Automatically rewrite text matching a regular expression into a Markdown link.",
+      "version": "1.1.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-autolink/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-autolink).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableAdminCommand",
+            "display_name": "Enable administration with /autolink command",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+    "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/download/v1.0.7/zoom-1.0.7.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "zoom",
+      "name": "Zoom",
+      "description": "Zoom audio and video conferencing plugin for Mattermost 5.2+.",
+      "version": "1.0.7",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL to set up the Zoom plugin. See [documentation](https://about.mattermost.com/default-zoom-documentation) to learn more.\n\n```https://SITEURL/plugins/zoom/webhook?secret=WEBHOOKSECRET```",
+        "settings": [
+          {
+            "key": "ZoomURL",
+            "display_name": "Zoom URL",
+            "type": "text",
+            "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://zoom.us",
+            "default": null
+          },
+          {
+            "key": "ZoomAPIURL",
+            "display_name": "Zoom API URL",
+            "type": "text",
+            "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://api.zoom.us/v2",
+            "default": null
+          },
+          {
+            "key": "APIKey",
+            "display_name": "API Key",
+            "type": "text",
+            "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "APISecret",
+            "display_name": "API Secret",
+            "type": "text",
+            "help_text": "The API Secret generated by Zoom for your API key.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNzMuMjcgNzUuNzYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMjY4NGZmO30uY2xzLTJ7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fS5jbHMtM3tmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50LTIpO308L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMzQuNjQiIHkxPSIxNS4zNSIgeDI9IjE5IiB5Mj0iMzAuOTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAuMTgiIHN0b3AtY29sb3I9IiMwMDUyY2MiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyNjg0ZmYiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50LTIiIHgxPSIzOC43OCIgeTE9IjYwLjI4IiB4Mj0iNTQuMzkiIHkyPSI0NC42NyIgeGxpbms6aHJlZj0iI2xpbmVhci1ncmFkaWVudCIvPjwvZGVmcz48dGl0bGU+SmlyYSBTb2Z0d2FyZS1pY29uLWJsdWU8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJCbHVlIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik03Mi40LDM1Ljc2LDM5LjgsMy4xNiwzNi42NCwwaDBMMTIuMSwyNC41NGgwTC44OCwzNS43NkEzLDMsMCwwLDAsLjg4LDQwTDIzLjMsNjIuNDIsMzYuNjQsNzUuNzYsNjEuMTgsNTEuMjJsLjM4LS4zOEw3Mi40LDQwQTMsMywwLDAsMCw3Mi40LDM1Ljc2Wk0zNi42NCw0OS4wOGwtMTEuMi0xMS4yLDExLjItMTEuMiwxMS4yLDExLjJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuNjQsMjYuNjhBMTguODYsMTguODYsMCwwLDEsMzYuNTYuMDlMMTIuMDUsMjQuNTksMjUuMzksMzcuOTMsMzYuNjQsMjYuNjhaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDcuODcsMzcuODUsMzYuNjQsNDkuMDhhMTguODYsMTguODYsMCwwLDEsMCwyNi42OGgwTDYxLjIxLDUxLjE5WiIvPjwvZz48L2c+PC9zdmc+",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/download/v2.1.3/jira-2.1.3.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "jira",
+      "name": "Jira",
+      "description": "Atlassian Jira plugin for Mattermost.",
+      "version": "2.1.3",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL format to [configure the Jira integration.](https://about.mattermost.com/default-jira-plugin)  `https://SITEURL/plugins/jira/api/v2/webhook?secret=WEBHOOKSECRET`",
+        "settings": [
+          {
+            "key": "EnableJiraUI",
+            "display_name": "Allow users to attach and create Jira issues in Mattermost",
+            "type": "bool",
+            "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
+            "placeholder": "",
+            "default": true
+          },
+          {
+            "key": "Secret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "RolesAllowedToEditJiraSubscriptions",
+            "display_name": "Mattermost Roles Allowed to Edit Jira Subscriptions",
+            "type": "radio",
+            "help_text": "Mattermost users who can subscribe channels to Jira tickets.",
+            "placeholder": "",
+            "default": "system_admin",
+            "options": [
+              {
+                "display_name": "All users",
+                "value": "users"
+              },
+              {
+                "display_name": "Users who can manage channel settings",
+                "value": "channel_admin"
+              },
+              {
+                "display_name": "Users who can manage teams",
+                "value": "team_admin"
+              },
+              {
+                "display_name": "System Admins",
+                "value": "system_admin"
+              }
+            ]
+          },
+          {
+            "key": "GroupsAllowedToEditJiraSubscriptions",
+            "display_name": "Jira Groups Allowed to Edit Jira Subscriptions",
+            "type": "text",
+            "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
+            "placeholder": "",
+            "default": ""
+          }
+        ]
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
+    "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.1.0/com.mattermost.welcomebot-1.1.0.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "com.mattermost.welcomebot",
+      "name": "Welcome Bot",
+      "description": "This plugin adds a WelcomeBot that helps add new users to channels.",
+      "version": "1.1.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-welcomebot/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-welcomebot)",
+        "footer": "",
+        "settings": null
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-jenkins",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjQ4LjAgcjk2NTQiCiAgIHdpZHRoPSIxODAiCiAgIGhlaWdodD0iMTgwIgogICB4bWw6c3BhY2U9InByZXNlcnZlIgogICBzb2RpcG9kaTpkb2NuYW1lPSJoZWFkc2hvdC5zdmciPjxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTgiPjxyZGY6UkRGPjxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj48ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD48ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+PGRjOnRpdGxlIC8+PC9jYzpXb3JrPjwvcmRmOlJERj48L21ldGFkYXRhPjxkZWZzCiAgICAgaWQ9ImRlZnM2Ij48Y2xpcFBhdGgKICAgICAgIGNsaXBQYXRoVW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgaWQ9ImNsaXBQYXRoMTgiPjxwYXRoCiAgICAgICAgIGQ9Ik0gMCwyNDk0Ljg0IDAsMCBsIDE4MDQuMzQsMCAwLDI0OTQuODQgLTE4MDQuMzQsMCB6IgogICAgICAgICBpZD0icGF0aDIwIgogICAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiAvPjwvY2xpcFBhdGg+PC9kZWZzPjxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgICBvYmplY3R0b2xlcmFuY2U9IjEwIgogICAgIGdyaWR0b2xlcmFuY2U9IjEwIgogICAgIGd1aWRldG9sZXJhbmNlPSIxMCIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMCIKICAgICBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTUwMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSI4NDQiCiAgICAgaWQ9Im5hbWVkdmlldzQiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjIuNjciCiAgICAgaW5rc2NhcGU6Y3g9Ijg1LjQzNzQ4MyIKICAgICBpbmtzY2FwZTpjeT0iMjguMzMzMzMzIgogICAgIGlua3NjYXBlOndpbmRvdy14PSIyMjgxIgogICAgIGlua3NjYXBlOndpbmRvdy15PSI1NjIiCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMCIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJnMTAiIC8+PGcKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgaW5rc2NhcGU6bGFiZWw9ImJhY2tncm91bmQiCiAgICAgc3R5bGU9ImRpc3BsYXk6bm9uZSI+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDI2LTYiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO2Rpc3BsYXk6aW5saW5lIgogICAgICAgZD0iTSAyMS41MTAyODUsNjkuNTEwNTgyIEMgMy41MTE0NTcsODcuOTI2Nzg4IC03LjYyNjM5NjEsMTEzLjM1NCAtNy42MjYzOTYxLDE0MS40ODM2MiBsIDAsMCBjIDAsMjguMTIzNzUgMTEuMTM3ODUzMSw1My41NTQyNSAyOS4xMzY2ODExLDcxLjk2NzA1IGwgMCwwIGMgMTguMDA3NTAyLDE4LjQxMjgxIDQyLjgyNDQ3NiwyOS43NzQ2MyA3MC4yNjA3MjUsMjkuNzc0NjMgbCAwLDAgYyAyNy40MzY5NiwwIDUyLjI1NTY5LC0xMS4zNjE4MiA3MC4yNjE1NSwtMjkuNzc0NjMgbCAwLDAgYyAxNy45OTc2NiwtMTguNDEyOCAyOS4xMzc4OSwtNDMuODQzMyAyOS4xMzc4OSwtNzEuOTY3MDUgbCAwLDAgYyAwLC0yOC4xMjk2MiAtMTEuMTQwMjMsLTUzLjU1NjgzMiAtMjkuMTM3ODksLTcxLjk3MzAzOCBsIDAsMCBDIDE0NC4wMjY3LDUxLjEwMTQwOCAxMTkuMjA3OTcsMzkuNzM5NTk2IDkxLjc3MTAxLDM5LjczNzI0NiBsIDAsMCBjIC0yNy40MzYyNDksMC4wMDIzIC01Mi4yNTMyMjMsMTEuMzY0MTYyIC03MC4yNjA3MjUsMjkuNzczMzM2IGwgMCwwIHogTSAxNi45NTQzMDIsMjE3LjkwNDg5IEMgLTIuMTc0MjU5LDE5OC4zNDIxOSAtMTQsMTcxLjMwNjE5IC0xNCwxNDEuNDgzNjIgbCAwLDAgYyAwLC0yOS44MjcyNyAxMS44MjU3NDEsLTU2Ljg2MDY4MiAzMC45NTQzMDMsLTc2LjQyNDY3NSBsIDAsMCBDIDM2LjA3ODQwOCw0NS40OTE0MzMgNjIuNTUxMDU5LDMzLjM2Mjg1OCA5MS43NzEwMSwzMy4zNjYzNzEgbCAwLDAgYyAyOS4yMjAyLC0wLjAwMzggNTUuNjk1NTQsMTIuMTI1MDYyIDc0LjgxNjM2LDMxLjY5MjU3NCBsIDAsMCBjIDE5LjEzMDIsMTkuNTYzOTkzIDMwLjk1NzQ4LDQ2LjU5OTc1NSAzMC45NTUxMyw3Ni40MjQ2NzUgbCAwLDAgYyAwLjAwMiwyOS44MjI1NyAtMTEuODI0OTMsNTYuODU4NTcgLTMwLjk1NTEzLDc2LjQyMTI3IGwgMCwwIGMgLTE5LjEyMDgyLDE5LjU2NjQ2IC00NS41OTYxNiwzMS42OTM1MSAtNzQuODE2MzYsMzEuNjkzNTEgbCAwLDAgYyAtMjkuMjE5OTUxLDAgLTU1LjY5MjYwMywtMTIuMTI3MDUgLTc0LjgxNjcwOCwtMzEuNjkzNTEgbCAwLDAiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDIyIgogICAgICAgc3R5bGU9ImZpbGw6I2QzMzgzMztmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZTtkaXNwbGF5OmlubGluZSIKICAgICAgIGQ9Im0gMTk0LjM1ODI0LDE0MS4wOTIwNCBjIDAsNTcuOTUwNzggLTQ1LjkyOTE0LDEwNC45Mjk2OSAtMTAyLjU4NTgyMiwxMDQuOTI5NjkgLTU2LjY1NTczNywwIC0xMDIuNTg0OTMsLTQ2Ljk3ODkxIC0xMDIuNTg0OTMsLTEwNC45Mjk2OSAwLC01Ny45NTIxOTIgNDUuOTI5MTkzLC0xMDQuOTMxOCAxMDIuNTg0OTMsLTEwNC45MzE4IDU2LjY1NjY4MiwwIDEwMi41ODU4MjIsNDYuOTc5NjA4IDEwMi41ODU4MjIsMTA0LjkzMTgiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDI0IgogICAgICAgc3R5bGU9ImZpbGw6I2VmM2QzYTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTtkaXNwbGF5OmlubGluZSIKICAgICAgIGQ9Im0gLTYuNjMyMTM0MSwxNjcuMDc5NjYgYyAwLDAgLTcuNDI2NDg1OSwtMTA5LjQyNDQ4MSA5My40MDExODMxLC0xMTIuNTUxMzAyIEwgNzkuNzM1MDYyLDQyLjgwNDI3IDI1LjAyMjk0LDYxLjE3MjQwNiA5LjM5MDUwNCw3OS4xNDg5NTkgLTQuMjg3MzE1NSwxMDUuMzMzNTUgbCAtNy44MTY2NzU1LDMwLjQ4MjY0IDIuMzQ0ODE4NiwyMC4zMjEzNyIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMjYiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO2Rpc3BsYXk6aW5saW5lIgogICAgICAgZD0iTSAyMS41MTAyODUsNjkuNTEwNTgyIEMgMy41MTE0NTcsODcuOTI2Nzg4IC03LjYyNjM5NjEsMTEzLjM1NCAtNy42MjYzOTYxLDE0MS40ODM2MiBsIDAsMCBjIDAsMjguMTIzNzUgMTEuMTM3ODUzMSw1My41NTQyNSAyOS4xMzY2ODExLDcxLjk2NzA1IGwgMCwwIGMgMTguMDA3NTAyLDE4LjQxMjgxIDQyLjgyNDQ3NiwyOS43NzQ2MyA3MC4yNjA3MjUsMjkuNzc0NjMgbCAwLDAgYyAyNy40MzY5NiwwIDUyLjI1NTY5LC0xMS4zNjE4MiA3MC4yNjE1NSwtMjkuNzc0NjMgbCAwLDAgYyAxNy45OTc2NiwtMTguNDEyOCAyOS4xMzc4OSwtNDMuODQzMyAyOS4xMzc4OSwtNzEuOTY3MDUgbCAwLDAgYyAwLC0yOC4xMjk2MiAtMTEuMTQwMjMsLTUzLjU1NjgzMiAtMjkuMTM3ODksLTcxLjk3MzAzOCBsIDAsMCBDIDE0NC4wMjY3LDUxLjEwMTQwOCAxMTkuMjA3OTcsMzkuNzM5NTk2IDkxLjc3MTAxLDM5LjczNzI0NiBsIDAsMCBjIC0yNy40MzYyNDksMC4wMDIzIC01Mi4yNTMyMjMsMTEuMzY0MTYyIC03MC4yNjA3MjUsMjkuNzczMzM2IGwgMCwwIHogTSAxNi45NTQzMDIsMjE3LjkwNDg5IEMgLTIuMTc0MjU5LDE5OC4zNDIxOSAtMTQsMTcxLjMwNjE5IC0xNCwxNDEuNDgzNjIgbCAwLDAgYyAwLC0yOS44MjcyNyAxMS44MjU3NDEsLTU2Ljg2MDY4MiAzMC45NTQzMDMsLTc2LjQyNDY3NSBsIDAsMCBDIDM2LjA3ODQwOCw0NS40OTE0MzMgNjIuNTUxMDU5LDMzLjM2Mjg1OCA5MS43NzEwMSwzMy4zNjYzNzEgbCAwLDAgYyAyOS4yMjAyLC0wLjAwMzggNTUuNjk1NTQsMTIuMTI1MDYyIDc0LjgxNjM2LDMxLjY5MjU3NCBsIDAsMCBjIDE5LjEzMDIsMTkuNTYzOTkzIDMwLjk1NzQ4LDQ2LjU5OTc1NSAzMC45NTUxMyw3Ni40MjQ2NzUgbCAwLDAgYyAwLjAwMiwyOS44MjI1NyAtMTEuODI0OTMsNTYuODU4NTcgLTMwLjk1NTEzLDc2LjQyMTI3IGwgMCwwIGMgLTE5LjEyMDgyLDE5LjU2NjQ2IC00NS41OTYxNiwzMS42OTM1MSAtNzQuODE2MzYsMzEuNjkzNTEgbCAwLDAgYyAtMjkuMjE5OTUxLDAgLTU1LjY5MjYwMywtMTIuMTI3MDUgLTc0LjgxNjcwOCwtMzEuNjkzNTEgbCAwLDAiIC8+PC9nPjxnCiAgICAgaWQ9ImcxMCIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlua3NjYXBlOmxhYmVsPSJmcm9udCIKICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLjI1LDAsMCwtMS4yNSwwLDE4MCkiCiAgICAgc3R5bGU9ImRpc3BsYXk6aW5saW5lIj48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMjgiCiAgICAgICBzdHlsZT0iZmlsbDojZjBkNmI3O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxMDcuOTY0NjIsMzAuNjYxMTU5IC0xMi41MDYzMjUsLTEuODc1ODU1IC0xNi44ODI4ODIsLTEuODc1ODU1IC0xMC45NDI5ODcsLTAuMzEyMzMgLTEwLjYyOTM0NCwwLjMxMjMzIC04LjEyOTIwNSwyLjUwMTQ1MyAtNy4xOTA5MDIsNy44MTU3NDkgLTUuNjI3NTY0LDE1Ljk0NDc2NiAtMS4yNTA0NDUsMy40MzkzOCAtNy41MDM0MiwyLjUwMDUxNSAtNC4zNzcxMiw3LjE5MTA4OSAtMy4xMjYyOTksMTAuMzE3MjAyIDMuNDM5NTY3LDkuMDY2OTQ1IDguMTI4MDc5LDIuODEzNzgyIDYuNTY1NDkzLC0zLjEyNzA1IDMuMTI3MDUsLTYuODc3ODIyIDMuNzUxNzA5LDAuNjI1NTk4IDEuMjUwMDcsMS41NjI1ODcgLTEuMjUwMDcsNy4xOTEwOSAtMC4zMTMyNjcsOS4wNjY5NDQgMS44NzU4NTQsMTIuNTA1MzgzIC0wLjA3MzI1LDcuMTQzMjYgNS43MDA4MTcsOS4xMTM4NCAxMC4wMDQ2ODUsNy4xOTEwOSAxNy41MDg0NzksNy41MDM0MiAxOS4zODMzOTYsLTIuODEzNzggMTYuODgyNjkxLC0xMi4xOTMwNiA3LjgxNjY5LC0xMi41MDUzOSA1LjAwMTk2LC05LjA2Njk0IDEuMjUwMjYsLTIyLjUxMDI1OSAtMy43NTE3MSwtMTkuMzg0MTQ3IC02Ljg3NzgyLC0xNy4xOTUwMjQgLTYuNTY1NDksLTkuMDY2OTQ0IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgzMCIKICAgICAgIHN0eWxlPSJmaWxsOiMzMzUwNjE7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDk3LjMzNDE1LC0yMy40MjUzNjUgLTQ0LjcwODU2MywtMS44NzU4NTUgMCwtNy41MDM0MTkgMy43NTE3MSwtMjYuMjYxOTY5IC0xLjg3NTg1NSwtMi4xODkxMjIgLTMxLjI2Mzc0OCwxMC42MzA0NjkgLTIuMTg5MTIyLDMuNzUxNzEgLTMuMTI2MywzNS4zMjc5NzUgLTcuMTg5Nzc3LDIxLjI2MDAwMTMgLTEuNTYzNzEyNCw1LjAwMTk2NjcgMjUuMDEwNzczNCwxNy4xOTUwMjQgNy44MTY2ODcsMy4xMjcwNSA2Ljg3NzYzNCwtOC40NDEzNDcgNS45NDAwODIsLTUuMzE1MjM1IDYuODc4NzYsLTIuMTg4MTg0IDMuMTI1OTI1LC0wLjkzNzkyOCAzLjc1MTcxLC0xNi4yNTcwOTYxIDIuODEzNzgyLC0zLjQzOTE5MjMgNy4xOTEyNzcsMi41MDEyNjQ4NiAtNS4wMDI5MDUsLTkuNjkyNTQyMTYgMjcuMjAwMDgyLC0xMi44MTc3MTYzIC0zLjQzODQ0LC0xLjg3NTg1NSIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMzIiCiAgICAgICBzdHlsZT0iZmlsbDojNmQ2YjZkO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAyMy4yMzc2OTQsODUuNjg2NTQ4IDguMTI4MDc5LDIuODEzNzgyIDYuNTY1NDkzLC0zLjEyNzA1IDMuMTI3MDUsLTYuODc3ODIyIDMuNzUxNzA5LDAuNjI1NTk4IDAuOTM3OTI4LDMuNzUxNzEgLTEuODc1ODU1LDcuMTkwMTUxIDEuODc1ODU1LDE3LjE5NTk2MyAtMS41NjM3MTMsOS4zNzkyNyA1LjYyNzU2NSw2LjU2NTUgMTIuMTkzMDU3LDkuNjkxNiAtMy40MzkxOTMsNC42ODk2NCAtMTcuMTk1MjExLC04LjQ0MTM1IC03LjE5MDkwMiwtNS42Mjc1NiAtNC4wNjQyMjcsLTguNzUzNjggLTYuMjUyOTc1LC04LjQ0MTM1IC0xLjg3NTg1NSwtMTAuMDA0ODcgMS4yNTExOTUsLTEwLjYyOTUzMiIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMzQiCiAgICAgICBzdHlsZT0iZmlsbDojZGNkOWQ4O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAzNi4wNTU0MTEsMTE1LjA3NDYzIGMgMCwwIDQuNjg5NjM3LDExLjU2NzQ2IDIzLjQ0ODE4NiwxNy4xOTUwMiAxOC43NTg1NDgsNS42Mjc1NyAwLjkzNzkyNyw0LjA2NDk4IDAuOTM3OTI3LDQuMDY0OTggbCAtMjAuMzIxMTM2LC03LjgxNjY5IC03LjgxNjY4NywtNy44MTU3NSAtMy40Mzg0NDIsLTYuMjUzMTYgNy4xOTAxNTIsMC42MjU2IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgzNiIKICAgICAgIHN0eWxlPSJmaWxsOiNkY2Q5ZDg7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDI2LjY3NjEzNiw4Ny44NzQ3MzMgYyAwLDAgLTYuNTY1NDkyLDIxLjg4NTU5NyAxOC40NDYwMzIsMjUuMDExNzA3IGwgLTAuOTM3OTI4LDMuNzUxNzEgLTE3LjE5NDgzNiwtNC4wNjQ5NyAtNS4wMDI5MDUsLTE2LjI1NzEgMS4yNTExOTUsLTEwLjYyOTUzMiAzLjQzODQ0MiwyLjE4ODE4NSIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMzgiCiAgICAgICBzdHlsZT0iZmlsbDojZjdlNGNkO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAzNi42ODA4MjEsNTguNzk4OTgyIDQuMDkzNTg0LDMuOTY2NDk1IGMgMCwwIDEuODQ3NjIzLC0wLjIxNDc4NSAyLjE1OTc2NSwtMi40MDI5NyAwLjMxMjE0MywtMi4xODkxMjMgMS4yNTAwNywtMjEuODg1NTk5IDE0LjY5MzU3MiwtMzIuNTE2MDY4IDEuMjI2MjQ2LC0wLjk2OTgxNyAtMTAuMDAzOTM0LDEuNTY0NDYzIC0xMC4wMDM5MzQsMS41NjQ0NjMgTCAzNy42MTg3NDgsNDUuMDQyNCIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoNDAiCiAgICAgICBzdHlsZT0iZmlsbDojZjdlNGNkO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSA5NC4yMDg5NzUsNjQuNzM4ODc2IGMgMCwwIDAuNzI4NzcsOS40NzY4MTkgMy4yODA4NzEsOC43NDgwNSAyLjU1MjEwNCwtMC43Mjg3NyAyLjU1MjEwNCwtMy4yODA4NyAyLjU1MjEwNCwtMy4yODA4NyAwLDAgLTYuMTk3ODI4LC00LjAwOTY0IC01LjgzMjk3NSwtNS40NjcxOCIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoNDIiCiAgICAgICBzdHlsZT0iZmlsbDojZjdlNGNkO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxMjAuMTU2NzQsOTkuNDQyMTkyIGMgMCwwIC01LjE1Mjk4LC0xLjA4Nzk5NiAtNS42Mjc1NywtNS42Mjc1NjUgLTAuNDc0NTksLTQuNTQwNTA3IDUuNjI3NTcsLTAuOTM3OTI3IDYuNTY1NSwtMC42MjU1OTgiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDQ0IgogICAgICAgc3R5bGU9ImZpbGw6I2Y3ZTRjZDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gODIuMzI3MTIzLDk5LjEyODkyNCBjIDAsMCAtNi44Nzg3NiwtMC45Mzc5MjcgLTYuODc4NzYsLTUuMzE0Mjk3IDAsLTQuMzc3MzA3IDcuODE2ODc1LC00LjA2NDk3NyAxMC4wMDUwNiwtMi4xODkxMjMiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDQ2IgogICAgICAgc3R5bGU9ImZpbGw6I2Y3ZTRjZDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gMzkuODA3MTIsNzguODA3Nzg4IGMgMCwwIC0xMS44ODA5MTQsNy4xOTEwOSAtMTMuMTMwOTg0LDAuMzEyMzMgLTEuMjUwNDQ1LC02Ljg3NzgyMiAtNC4wNjQ5NzcsLTExLjg4MDcyNyAxLjg3NTg1NSwtMTkuMDcwODc5IGwgLTQuMDY0MjI3LDEuMjUwMjU4IC0zLjc1MTcxLDkuNjkxNjA0IC0xLjI1MDA3LDkuMzc5Mjc0IDcuMTkwMTUyLDcuNTA0MzU4IDguMTI4ODMsLTAuNjI1NTk4IDQuNjg5NjM3LC0zLjc1MTcxIDAuMzEyNTE3LC00LjY4OTYzNyIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoNDgiCiAgICAgICBzdHlsZT0iZmlsbDojZjdlNGNkO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSA0NS40MzQ2ODUsOTguNTA0MjY0IGMgMCwwIDUuMzE1MDQ3LDI3LjUxMjIyNiAzMi4yMDI4MDEsMzIuODI3NDU2IDIyLjEzNjIxMyw0LjM3NTQ0IDMzLjc2NDYzNCwtMC45Mzc5MiAzOC4xNDE5NDQsLTUuOTM5ODkgMCwwIC0xOS42OTY0NzYsMjMuNDQ3MjUgLTM4LjQ1NTIxMiwxNi4yNTcxIC0xOC43NTg1NDksLTcuMTkxMDkgLTMyLjUxNDE5MywtMjAuMzIyMDggLTMyLjIwMjA1LC0yOC43NjI0OSAwLjUzMjM2NywtMTQuMzc2NTQ4IDAuMzEyNTE3LC0xNC4zODIxNzYgMC4zMTI1MTcsLTE0LjM4MjE3NiIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoNTAiCiAgICAgICBzdHlsZT0iZmlsbDojZjdlNGNkO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxMTcuOTY4NTUsMTIyLjI2NTcyIGMgMCwwIC05LjA2NiwwLjMxMjMzIC05LjM3OTI3LC03LjgxNjY5IDAsMCAtOS40ZS00LC0xLjI1MDI2IDAuNjI0NjYsLTIuNTAwNTEgMCwwIDcuMTkyMDMsOC4xMjkwMSAxMS41Njg0LDMuNzUxNzEiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDUyIgogICAgICAgc3R5bGU9ImZpbGw6I2Y3ZTRjZDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gNzguMjY3Njc5LDExMS4xMDE1NyBjIDAsMCAtMS41NjA4MDUsMTIuNDc3MjUgLTEyLjE5ODU5LDUuMjIzMzIgLTYuODc4MDEsLTQuNjg5NjQgLTYuMjUyMjI1LC0xMS4yNTUxMyAtNS4wMDIxNTUsLTEyLjUwNTM5IDEuMjUwNDQ1LC0xLjI1MTIgMC45MTA0NDYsLTMuNzY5NTMgMS44NjIzNDksLTIuMDQwOTMgMC45NTE0MzMsMS43Mjg2IDAuNjM4MTY2LDcuMzU2MTYgNC4wNzc3MzMsOC45MTg3NSAzLjQzOTE5MiwxLjU2MzUzIDkuMDc2OTgxLDMuMzA5OTUgMTEuMjYwNjYzLDAuNDA0MjUiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDU0IgogICAgICAgc3R5bGU9ImZpbGw6IzQ5NzI4YjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Ik0gNDguODczODc3LDI2LjU5NzExOSAxOS40ODU5ODQsMTMuNDY2MTM1IGMgMCwwIDEyLjE5MzA1NywtNDguNDU5ODk3IDUuOTM5NzA3LC02My40NjY3MzYgbCAtNC4zNzcxMTksMS41NjI1ODcgLTAuMzEyNTE4LDE4LjQ0NjQwNyBMIDEyLjYwODM1LDUuMDIzODUwMSA5LjE2ODc4MjYsMTQuNzE2MzkyIDM5LjgwNzEyLDM1LjM0OTg1OCA0OC44NzM4NzcsMjYuNTk3MTE5IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg1NiIKICAgICAgIHN0eWxlPSJmaWxsOiM0OTcyOGI7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDUxLjg5NTc4NiwtMC4yMDYyMjA4NiA0LjE2OTM2OSwtNS4wODcxMzA4NCAwLC0xOC43NTg1NDkzIC01LjAwMjkwNSwwIGMgMCwwIC0wLjYyNDY2LDEzLjEzMDk4NSAtMC42MjQ2NiwxNC42OTQ2OTczIDAsMS41NjMzMzc0IDAuNjI0NjYsNy4xOTA5MDIxIDAuNjI0NjYsNy4xOTA5MDIxIiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg1OCIKICAgICAgIHN0eWxlPSJmaWxsOiM0OTcyOGI7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDUyLjAwMDE3NywtMjYuODY1NjgzIC0xNC4wNjg5MTEsLTAuNjI0NjYgNC4wNjQ5NzcsLTIuODEzNzgyIDEwLjAwMzkzNCwtMS41NjMzMzciIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDYwIgogICAgICAgc3R5bGU9ImZpbGw6IzMzNTA2MTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gMTAwLjE0NzkzLC0yMy43Mzg2MzMgMTEuNTY3NDYsMC4zMTI1MTggMi44MTM3OCwtMjguNzYzNjA5IC0xMS44ODA3MiwtMS41NjI1ODcgLTIuNTAwNTIsMzAuMDEzNjc4IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg2MiIKICAgICAgIHN0eWxlPSJmaWxsOiMzMzUwNjE7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDEwMy4yNzQwNCwtMjMuNzM4NjMzIDE3LjUwODMsMC45Mzc5MjggYyAwLDAgNy4xOTAxNSwxOC4xMzMxMzg1IDcuMTkwMTUsMTkuMDcxMDY1OSAwLDAuOTM3OTI3NSA2LjI1MzE2LDI2LjI2MTc4MTEgNi4yNTMxNiwyNi4yNjE3ODExIGwgLTE0LjA2ODkxLDE0LjY5MzU3MSAtMi44MTM3OCwyLjUwMTQ1MiAtNy41MDM0MiwtNy41MDM0MTkgMCwtMjkuMDc1NzUwNyAtNi41NjU1LC0yNi44ODY2MjgzIiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg2NCIKICAgICAgIHN0eWxlPSJmaWxsOiM0OTcyOGI7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDExMS4wODk3OSwtMjEuNTUwMjYgLTEwLjk0MTg2LC0yLjE4ODM3MyAxLjU2MjU5LC04Ljc1NDYxNCBjIDQuMDY0MDQsLTEuODc1ODU1IDEwLjk0MjgsMy4xMjcwNSAxMC45NDI4LDMuMTI3MDUiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDY2IgogICAgICAgc3R5bGU9ImZpbGw6IzQ5NzI4YjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gMTExLjQwMzA2LDMzLjE2MTY3MyAyMS44ODQ2NiwtMTYuMjU3MDk2IDAuNjI1Niw3LjUwMzQyIC0xNi41NzAzNiwxNS4zMTkxNjggLTUuOTM5OSwtNi41NjU0OTIiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDY4IgogICAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gNjIuODUwMTIyLC04NS4zMzIyODEgLTYuNDcyODI1LDI2LjI2NTY3MyAtMy4yMTkzNDIsMTkuMzgwMjA3IC0wLjUzMjM2OCwxNC4zODUxODEgMjkuMjk1OTc2LDEuNTU5NTg2IDE4LjIyNjM2NywwLjAwMyAtMS42NTczMTYsLTMyLjgzMDQ2MiAyLjgxMzc4NiwtMjUuMzI0MDAzIC0wLjMxMjMzLC00LjY4OTYzNyAtMjMuNzYwMTQ0LC0xLjg3NTg1NSAtMTQuMzgxODA0LDMuMTI2MzA5IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg3MCIKICAgICAgIHN0eWxlPSJmaWxsOiNkY2Q5ZDg7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDk2LjA4Mjk1NCwtMjMuNDI2MTE1IGMgMCwwIC0xLjU2MjU4NywtMzIuNTE1MzE4IDMuMTI3MDUsLTU1LjY1MDIzNyAwLDAgLTkuMzc5Mjc0LC01Ljk0MDg1MSAtMjMuMTM2MjMxLC03LjUwMzQ0NyBsIDI2LjI2MjM0NywwLjkzNzkyNyAzLjEyNjExLDEuODc1ODU1IC0zLjc1MTcxLDUxLjI3Mjc3IC0wLjkzNzkzLDEwLjk0MzczNyIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoNzIiCiAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxMTUuMDYxOTIsLTQ5LjY5MTA4NSAxMi4xOTMwNSwzLjQzOTE5MiAyMy4xMzQ5MiwxLjI1MDQ0NSAzLjQzOTM4LDEwLjYyOTQzOCAtNi4yNTMxNiwxOC40NDYzMTMgLTcuMTkwMTUsMC45Mzc5MjcgLTEwLjAwNDg4LC0zLjEyNjI5OSAtOS41OTg3NCwtNC42ODY2MzYgLTUuMDk1NzYsMC45MzQ5MjYgLTMuOTcxMTksLTEuNTYwMzM2IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg3NCIKICAgICAgIHN0eWxlPSJmaWxsOiNkY2Q5ZDg7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDExNC44NDE1LC00My40MzUxMDkgYyAwLDAgOC4xMjgwOCwzLjc1MDk1OSA5LjM3OTI4LDMuNDM4NDQyIGwgLTMuNDM4NDQsMTcuMTk1OTYyIDQuMDY0MDQsMS41NjI1ODcgYyAwLDAgMi44MTM3OCwtMTYuMjU2OTA5IDIuODEzNzgsLTE4LjEzMjc2NCAwLDAgMTcuNTA3MzUsLTAuOTM3OTI3IDE5LjA3MDg4LC0wLjkzNzkyNyAwLDAgMy43NTE3MSw3LjE5MDkwMiAyLjgxMzc4LDE0LjY5NDMyMSBsIDMuNDM5MzgsLTEwLjAwNDY4NCAwLjMxMjMzLC01LjYyNzU2NSAtNS4wMDE5NywtNy41MDM0MTkgLTUuNjI3NTYsLTEuMjUwNDQ1IC05LjM3OTI4LDAuMzEyNTE3IC0zLjEyNjExLDQuMDYzODUyIC0xMC45NDI4LC0xLjU2MjU4NyAtMy40MzkzOCwtMS4yNTExOTUiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDc2IgogICAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIKICAgICAgIGQ9Ik0gMTAyLjU1NTU5LC0yMS4yNDEwMjYgOTUuNjc3NzcsLTMuNzMyNjQwNCA4OC40ODY2OCw2LjU4NDU2MTQgYyAwLDAgMS41NjI1ODcsNC4zNzczMDc2IDMuNzUxNzEsNC4zNzczMDc2IDIuMTg5MTIyLDAgNy4xOTEwODksMCA3LjE5MTA4OSwwIEwgMTA2LjMwNzMsOC40NjA0MTYzIDEwNS42ODI2NCwtMy4xMDcyMzA0IDEwMi41NTU1OSwtMjEuMjQxMDI2IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg3OCIKICAgICAgIHN0eWxlPSJmaWxsOiNkY2Q5ZDg7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDEwMy44OTk2NCwtMTUuMjk3Mjg2IGMgMCwwIC04Ljc1NDYxMywxNi44ODE5NDM4IC04Ljc1NDYxMywxOS4zODMyMDg3IDAsMCAxLjU2MjU4NywzLjc1MTcwOTggMy43NTE3MSwyLjgxMzc4MjMgMi4xODkxMjMsLTAuOTM3OTI3NCA2Ljg3ODc2MywtMy40Mzg0NDIgNi44Nzg3NjMsLTMuNDM4NDQyIGwgMCw1LjkzOTg5NDUgLTEwLjYzMDQ3MywyLjE4OTEyMjUgLTcuMTkwMTUyLC0wLjkzNzkyNyAxMi4xOTMwNTUsLTI4Ljc2MzQyMSAyLjUwMDUyLC0wLjMxMzI2OCIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoODAiCiAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIgogICAgICAgZD0ibSA2NS42NjQyNzksMjUuOTY3NzcgLTguNjYxMTk3LDAuOTQxNjc5IC04LjEyOTIwNSwyLjUwMTQ1MyAwLC0yLjgxMzc4MyAzLjk3MTkzNSwtNC4zODAxMjEgMTIuNTA1NTc1LC01LjYyNzU2NSIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoODIiCiAgICAgICBzdHlsZT0iZmlsbDojZGNkOWQ4O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSA1MS42ODg3ODUsMjUuMDMwNzggYyAwLDAgOS42OTI1NDIsLTQuMDY0OTc3IDEyLjgxODg0MiwtMy4xMjcwNSBsIDAuMzExMDE3LC0zLjc0Nzk1OCAtOC43NTIzNjQsMS44NzIxMDMgLTUuMzE1NDIyLDMuNzUxNzEgMC45Mzc5MjcsMS4yNTExOTUiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDg0IgogICAgICAgc3R5bGU9ImZpbGw6I2QzMzgzMztmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gMTE1LjAyODE1LDkuODk3MzIxMSBjIC01LjMwNDkyLDAuMTU1Njk1OSAtMTAuMDk3NzMsMC43ODU5ODI5IC0xNC4yOTQwMSwxLjk2OTY0NzkgMC4yODUxMywxLjcyMDE1OSAtMC4yNDg1NSwzLjQwODQyOCAwLjE4MDA4LDQuNjQ3NDMgMS4xNjk1OSwwLjg0MjI1OSAzLjEyOTg2LDAuODI5MTI4IDQuODk3ODYsMS4wMjcwMzEgLTEuNTI4ODMsMC43NTEyOCAtMy42NzY2OCwxLjA0ODYwMyAtNS40NDA5MiwwLjYxNDM0MiAtMC4wNDEzLDEuMTkzOTgyIC0wLjU3NjgyNywxLjkzNDAwNyAtMC45MDEzNSwyLjg2ODE4MiAyLjk4MjYxLDEuMDY0NTQ4IDEwLjAyMzYzLDguMDQzNjY2IDEzLjk4NDUsNS43MzI2MTMgMS44ODcxMSwtMS4wOTkyNTEgMi42ODkwNCwtNy4zNzc3MzcgMi44MzUzNSwtMTAuNDMwNjkxIDAuMTIxOTMsLTIuNTMyNDA0IC0wLjIyOTc5LC01LjA4NzMxOSAtMS4yNjE1MSwtNi40Mjg1NTQ5IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg4NiIKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiNkMzM4MzM7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIKICAgICAgIGQ9Im0gMTE1LjAyODE1LDkuODk3MzIxMSBjIC01LjMwNDkyLDAuMTU1Njk1OSAtMTAuMDk3NzMsMC43ODU5ODI5IC0xNC4yOTQwMSwxLjk2OTY0NzkgMC4yODUxMywxLjcyMDE1OSAtMC4yNDg1NSwzLjQwODQyOCAwLjE4MDA4LDQuNjQ3NDMgMS4xNjk1OSwwLjg0MjI1OSAzLjEyOTg2LDAuODI5MTI4IDQuODk3ODYsMS4wMjcwMzEgLTEuNTI4ODMsMC43NTEyOCAtMy42NzY2OCwxLjA0ODYwMyAtNS40NDA5MiwwLjYxNDM0MiAtMC4wNDEzLDEuMTkzOTgyIC0wLjU3NjgyNywxLjkzNDAwNyAtMC45MDEzNSwyLjg2ODE4MiAyLjk4MjYxLDEuMDY0NTQ4IDEwLjAyMzYzLDguMDQzNjY2IDEzLjk4NDUsNS43MzI2MTMgMS44ODcxMSwtMS4wOTkyNTEgMi42ODkwNCwtNy4zNzc3MzcgMi44MzUzNSwtMTAuNDMwNjkxIDAuMTIxOTMsLTIuNTMyNDA0IC0wLjIyOTc5LC01LjA4NzMxOSAtMS4yNjE1MSwtNi40Mjg1NTQ5IHoiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDg4IgogICAgICAgc3R5bGU9ImZpbGw6I2QzMzgzMztmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gODkuNjYwMDI3LDE4LjU2OTM5OCBjIC0wLjAxNDA3LC0wLjQwMTQzMyAtMC4wMzA5NSwtMC44MDU2NzkgLTAuMDQ2OSwtMS4yMTA4NjQgLTEuNjU2MzgsLTEuMDg3OTk2IC00LjMzMDQxMSwtMS4wNzQ4NjUgLTYuMTQ4MTE0LC0xLjk4OTM0NCAyLjY3OTY1OCwtMC4xMTcyNDEgNC43ODkwNTcsLTAuNzYyNTM1IDYuNjE0MjY0LC0xLjY3MjMyNSAtMC4wNDAzMywtMS4wMTEwODYgLTAuMDc4NzksLTIuMDIxMjMzIC0wLjExODE3OSwtMy4wMzIzMTkgQyA4Ni45MjUwMzEsOC41ODYwOTg2IDg0LjE1MTU3OSw1LjQ5MDkzOCA4MC41NzY5NSwzLjU0MTgzMSA3OC44ODY4MDUsMi42MjAwMzU5IDcyLjk1NTE2NCwwLjI0ODExMTE5IDcxLjE1Njk3LDAuNjY3MjcwOTcgNzAuMTM5NiwwLjkwMzUzNDg5IDcwLjA0Nzk2NCwyLjE2NjA3OSA2OS42NDEyNzksMy4zNTYxMjE0IDY4Ljc3NDgyMiw1LjkwNDU2NCA2Ni43Nzk4NSw5Ljk2MTEwMDIgNjYuNjA1ODY1LDEzLjc5NzIyMyBjIC0wLjIyMTYzMyw0Ljg0NTMzNCAtMC43MTA3NjIsMTIuOTY1OTA5IDQuNTEwODY4LDExLjk2Nzk1NSA0LjIxMjYwNywtMC44MDM4MDQgOS4xMTIxNTIsLTIuNzQ0Mzc2IDEyLjM3MzYwOCwtNC41MjY0MzggMS45OTMwOTUsLTEuMDg5ODcyIDMuMTQ1ODA4LC0yLjQzNjczNiA2LjE2OTY4NiwtMi42NjkzNDIiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDkwIgogICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6I2QzMzgzMztzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLWRhc2hhcnJheTpub25lIgogICAgICAgZD0ibSA4OS42NjAwMjcsMTguNTY5Mzk4IGMgLTAuMDE0MDcsLTAuNDAxNDMzIC0wLjAzMDk1LC0wLjgwNTY3OSAtMC4wNDY5LC0xLjIxMDg2NCAtMS42NTYzOCwtMS4wODc5OTYgLTQuMzMwNDExLC0xLjA3NDg2NSAtNi4xNDgxMTQsLTEuOTg5MzQ0IDIuNjc5NjU4LC0wLjExNzI0MSA0Ljc4OTA1NywtMC43NjI1MzUgNi42MTQyNjQsLTEuNjcyMzI1IC0wLjA0MDMzLC0xLjAxMTA4NiAtMC4wNzg3OSwtMi4wMjEyMzMgLTAuMTE4MTc5LC0zLjAzMjMxOSBDIDg2LjkyNTAzMSw4LjU4NjA5ODYgODQuMTUxNTc5LDUuNDkwOTM4IDgwLjU3Njk1LDMuNTQxODMxIDc4Ljg4NjgwNSwyLjYyMDAzNTkgNzIuOTU1MTY0LDAuMjQ4MTExMTkgNzEuMTU2OTcsMC42NjcyNzA5NyA3MC4xMzk2LDAuOTAzNTM0ODkgNzAuMDQ3OTY0LDIuMTY2MDc5IDY5LjY0MTI3OSwzLjM1NjEyMTQgNjguNzc0ODIyLDUuOTA0NTY0IDY2Ljc3OTg1LDkuOTYxMTAwMiA2Ni42MDU4NjUsMTMuNzk3MjIzIGMgLTAuMjIxNjMzLDQuODQ1MzM0IC0wLjcxMDc2MiwxMi45NjU5MDkgNC41MTA4NjgsMTEuOTY3OTU1IDQuMjEyNjA3LC0wLjgwMzgwNCA5LjExMjE1MiwtMi43NDQzNzYgMTIuMzczNjA4LC00LjUyNjQzOCAxLjk5MzA5NSwtMS4wODk4NzIgMy4xNDU4MDgsLTIuNDM2NzM2IDYuMTY5Njg2LC0yLjY2OTM0MiB6IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg5MiIKICAgICAgIHN0eWxlPSJmaWxsOiNkMzM4MzM7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDkyLjY3NTQ2NCwxMi43ODgwMTMgYyAtMC40NjMzMzYsMi42MzkzMjggLTAuOTk4ODkzLDMuMzkyNDg0IC0wLjc5MTYxMSw1LjY5NTA5NiA3LjAzOTE0Niw0LjY5MzM4OSA4LjM2MDY4NywtOC4wNjE0ODYgMC43OTE2MTEsLTUuNjk1MDk2IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGg5NCIKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiNkMzM4MzM7c3Ryb2tlLXdpZHRoOjI7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIKICAgICAgIGQ9Im0gOTIuNjc1NDY0LDEyLjc4ODAxMyBjIC0wLjQ2MzMzNiwyLjYzOTMyOCAtMC45OTg4OTMsMy4zOTI0ODQgLTAuNzkxNjExLDUuNjk1MDk2IDcuMDM5MTQ2LDQuNjkzMzg5IDguMzYwNjg3LC04LjA2MTQ4NiAwLjc5MTYxMSwtNS42OTUwOTYgeiIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoOTYiCiAgICAgICBzdHlsZT0iZmlsbDojZWYzZDNhO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxMDIuODY3OTIsMTAuNjQ4NjAxIGMgMCwwIC0yLjE4OTEyLDMuMTI3MDUgLTAuNjI1Niw0LjA2NDk3OCAxLjU2MzUzLDAuOTM3OTI3IDMuMTI3MDUsLTkuMzhlLTQgNC4wNjQ5OCwxLjU2MjU4NyAwLjkzNzkzLDEuNTYzNTI1IDAsMi41MDE0NTIgMC4zMTIzMyw0LjM3NzMwNyAwLjMxMjMzLDEuODc1ODU1IDEuODc2NzksMi4xODkxMjMgMy40MzkzOCwyLjUwMTQ1MiAxLjU2MjU5LDAuMzEyMzMgNS45NDA4MywwLjkzNzkyOCA2LjU2NTQ5LC0wLjYyNTU5NyBsIC0xLjg3NTg1LDUuNjI3NTY1IC0zLjc1MTcxLDEuMjUwMjU3IC0xMS44ODA3MjgsLTYuODc3ODIyIC0wLjYyNTU5OCwtMy40MzkzOCAwLC02Ljg3NzgyMiIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoOTgiCiAgICAgICBzdHlsZT0iZmlsbDojZWYzZDNhO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0iTSA3MC4wNDA2NDksMC4zMzEzMDUzNiBDIDY5LjY2NTEwMyw1LjIxMDQ5NzcgNjkuMjY3NjA5LDEwLjA4MzAzMSA2OC44MjUzNzYsMTQuOTU3NDQgYyAtMC42NjE3MDgsNy4yNzgzMTcgMS43NDgyOTcsNi4wMDgzNjMgOC4wNTczNiw2LjAwODM2MyAwLjk2MzYyNiwwIDUuOTMzMjM1LC0xLjE0ODk2MSA2LjI4ODcwOSwtMS44NzU4NTUgMS43MDUxNTIsLTMuNDgyNTI1IC0yLjg1MTI5OSwtMi43MDg3MzQgMS45NjQwMiwtNS4zMzQ5MzEgNC4wNjQ5NzgsLTIuMjE2MzIzIDExLjI0NTc1LDEuMzQ1OTI2IDkuNjAzNDM5LDYuMjcyODU4IC0wLjkxOTE2OSwxLjA5NTUgLTQuNzg5MDU3LDAuMzQxNDA2IC02LjE3NjI1MiwxLjA2MDc5NiAtMi40NDIzNjMsMS4yNjYyMDIgLTQuODg0NzI2LDIuNTMyNDA0IC03LjMyNzM3LDMuNzk4NjA2IEMgNzguMTI3NzQsMjYuNDk5NTc1IDcwLjk0NTU2MSwyOC44NTAwMjEgNjcuNjMyNDI2LDI2LjU5NzExOSA1OS4yMzc2LDIwLjg4Nzk1NSA2OC4xNjIyNjEsNi42MjMwMTY0IDcxLjE1Njk3LDAuNjY3MjcwOTciIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDEwMCIKICAgICAgIHN0eWxlPSJmaWxsOiMyMzFmMjA7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDc4LjI2NzY3OSwxMTEuMTAxNTcgYyAtOC41MjEyNTgsMS45ODQ2NSAtMTIuNzU1NDM4LC0zLjU2NiAtMTUuMzM4Mzk2LC05LjMyMyAtMi4zMDYzNjQsMC41NTkgLTEuMzg4NjAyLDMuNjk1NDMgLTAuODA2MDU1LDUuMjkzNjYgMS41MjUyNTgsNC4xOTQ0MSA3LjY3MTk2NSw5Ljc3NzkgMTIuNjk0Mjg1LDkuMDIwOTkgMi4xNjEyNjYsLTAuMzI1NDYgNS4wODYwMDUsLTIuMzAxNjggMy40NTAxNjYsLTQuOTkxNjUiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDEwMiIKICAgICAgIHN0eWxlPSJmaWxsOiMyMzFmMjA7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDExOS43ODYyNiwxMDEuMzk3NzcgYyAwLjEzNDEyLC0wLjAwNiAwLjI3MDEyLC0wLjAxMDMgMC40MDQyNCwtMC4wMTU5IDEuOTI1NTcsLTQuMDAwMjY1IDMuNTkyMjcsLTguMjM3ODIxIDYuMDIxNSwtMTEuNzY5MTE4IC0xLjYyNzMxLC0zLjc5MDE2NSAtMTIuMzIyNDksLTcuMTQ0MTkzIC0xMi4xNTc0MiwtMC4zMzg1OTIgMi4zMTI5MywxLjAxMTA4NiA2LjMwNTY5LDAuMjA2MzQ0IDguMzU2LDEuNDk3ODcgLTEuMTg1NTQsMy4yNTM2NzEgLTIuODk2MzIsNi4wMjMzNyAtMi42MjQzMiwxMC42MjU3OCIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMTA0IgogICAgICAgc3R5bGU9ImZpbGw6IzIzMWYyMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gODIuNjMwMjYxLDEwMS4yOTM2NiBjIDEuODI3MDgzLC0zLjM0OTMzOCAyLjQyMTcyOSwtNi44Njg0NDIgNS4wMTg4NSwtOS4zOTk5MDggMS4xNjk1OTUsLTEuMTM5NTgyIDMuNDQ0MDY5LC0yLjUyODY1MyAyLjMxNjY4MSwtNS42OTc5MDkgLTAuMjYzNTU4LC0wLjc0NzUyOSAtMi4xODkxMjMsLTIuNDE0MjI2IC0zLjMwMDU2NywtMi43NDE1NjIgLTQuMDYwMjg4LC0xLjE5ODY3MiAtMTMuNTIxMzUsLTAuMjQ3NjEzIC0xMC4zMTczODksNC44MTQzODEgMy4zNTc4NzQsLTAuMTU2NjM0IDcuODcxMjc0LC0yLjE4MDY4MSAxMC4zODExNjgsMC4yNTY5OTIgLTEuOTI3NDQxLDMuMDgxMDkyIC01LjM2MzYzMiw5LjE3NjY4MiAtNC4wOTg3NDMsMTIuNzY4MDA2IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgxMDYiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxMTguMjYyMTIsNjcuMjUyNTIyIGMgLTYuMTEzNDEsLTMuOTI3MTAyIC0xMi45MzAyNiwtOC4xOTc0ODYgLTIyLjk0NzMyOCwtNy4yMDcwMzQgLTIuMTQwMzUxLDEuODYwODQ4IC0yLjk1NjM0Nyw2LjAwMTc5NyAtMC44NzY5NjIsOC43MzY3OTQgMS4wODIzNjgsLTEuODYwODQ4IDAuNDAyMzcxLC01LjI4MzM0NiAzLjQxODc0NSwtNS43OTgyNjggNS42ODM4NDUsLTAuOTcyNjMxIDEyLjI5OTA0NSwzLjQ3Njg5NyAxNi4zODc0NjUsNS4wMzE5ODEgMi41MzUyMiw0LjI3NDEzNSAtMC4yMTg1Myw1Ljg0NjEwMiAtMi41MDIzOSw4LjU5NzA0MyAtNC42NzU1Nyw1LjYzNjAwNiAtMTAuOTQ3NDksMTIuNjIxNjg5IC0xMC43MTk1NywyMS4wNTkyODUgMS44ODk5MiwxLjM3MDMxMiAyLjA1MzEyLC0yLjA5MTU3OSAyLjMyNDE4LC0yLjcyMTg2NiAyLjQ0MTQzLC01LjcxMzg1NCA4LjU4NTc5LC0xMy4wMjEyNDYgMTMuMDcwMDIsLTE3LjkxMTYgMS4xMDExMywtMS4yMDQyOTkgMi45MTQxNCwtMi4zNTk4MjYgMy4xMTU4LC0zLjE1NjEyNiAwLjU4MTUxLC0yLjMxNTc0MyAtMS41MTI4OCwtNS4wOTAxMzIgLTEuMjY5OTYsLTYuNjMwMjA5IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgxMDgiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAzNy42Njc1Miw3MS4zODY5MDYgYyAtMS45MTYxODUsMS4wOTM2MjQgLTIuMzcyMyw1LjkxMDgxOSAtNC42MjE5MTksNi4wNDc3NTYgLTMuMjE0OTMzLDAuMTk1MDg5IC0yLjYyODcyOSwtNi4yNDk0MSAtMi42MTU4NzksLTEwLjAxODAwMyAtMi4yMTI5NDYsMi4wMDkwNDEgLTIuNjAyMDkyLDguMTk0NjcyIC0wLjk3NjM4MywxMS4zNzE0MzMgLTEuODUyNzgxLDAuOTA5Nzg5IC0yLjY4MDEyNywtMS4wMDM1ODMgLTMuNzA3ODE0LC0xLjY3Nzk1MyAxLjMyMDc4OSw5LjU5NDk5OCAxNC4wMzU5OSw0LjQ1MDQ2NiAxMS45MjE5OTUsLTUuNzIzMjMzIiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgxMTAiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxMjIuMTU0NTIsNjMuMjU2OTUxIGMgLTIuODQ1NjcsLTUuNDE2NTMxIC02Ljg3MTI1LC0xMS4zODE3NDkgLTE1LjIyMTYyLC0xMS41NTUyNjYgLTAuMTY5NzcsMS43NDkyMzUgLTAuMzAwMTQsNC40MTEwNzMgMC4wMDksNS40NjQzNjUgNi4zODM1MywwLjYxMzQwNSAxMC4zMjQ3LDMuODYyMzg2IDE1LjIxMjI0LDYuMDkwOTAxIiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgxMTIiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSA4Mi4xNDg3MjksNTkuNzQ1MzUxIGMgNS4zMjU5MjcsLTIuODAwNjUyIDE1LjExNDEzOCwtMy4xMDE3MjYgMjIuMzUzMDYxLC0yLjg4OTc1NSAwLjM4ODMsLTEuNTg2MDM1IDAuMzc4OTIsLTMuNTQ1MzY1IDAuMzkzOTMsLTUuNDc5MzcyIC05LjMwNTE3OCwtMC40NjQyNzQgLTIwLjMwNzA2NiwxLjgzODMzOCAtMjIuNzQ2OTkxLDguMzY5MTI3IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgxMTQiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSA4MS4xMzY0MjQsNTQuNTIyOTcxIGMgMy42ODI5NiwtOS4yNDcwMjcgMTYuMzQxMjI4LC04LjE4MjQ3OSAyNy4wMTU3NzYsLTcuOTI3MzYzIC0wLjQ2OTksLTEuMjAwNTQ3IC0xLjQ4ODQ5LC0yLjYxODY5MyAtMi43NTQ2OSwtMy4xMzE3NCAtMy40MjA2MiwtMS4zOTE4ODQgLTEyLjg1NTIzMiwtMi40NDc5OSAtMTcuNjAzOTU4LDAuMDc0MSAtMy4wMTE2ODUsMS42MDEwNDIgLTQuOTQ2NjMsNS4yMTg2MjggLTYuNTk2NzI1LDcuMzM5MjgyIC0wLjc5Njg2NCwxLjAyNDIxNyAtNC43NjQ3NjYsMy42NDAwOTYgLTAuMDYwNCwzLjY0NTcyNCIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMTE2IgogICAgICAgc3R5bGU9ImZpbGw6IzgxYjBjNDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gMTE3LjgxNzU1LDMuNTE1ODUwNCBjIC00LjMyMTk3LC03LjQwMjMxMDkgLTguNDU3MjksLTE1LjAwNTA1NzQgLTEzLjU4NDk0LC0yMS41MzQyNTE0IDIuMTQ5NzMsNi4zMjA3ODcgMy4wNjk4MywxNi44OTk5NTE5IDMuMzk0MzYsMjQuOTY1MDAyNCA0LjQ5NzM2LDIuMTA0NzA5MiA4LjM0ODQ5LC0wLjQ3MzY1MzQgMTAuMTkwNTgsLTMuNDMwNzUxIiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgxMTgiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxNDEuMDc0NCwtMjMuMDg4NzQzIGMgLTQuODM4NzcsLTAuOTY4NjkxIC04LjIzODc2LC01LjY3MTQ1OSAtMTIuOTU5MzUsLTUuMzY5NjM0IDIuNTk0MzEsMy42NTcyNiA3LjE0MDQ0LDUuMTk4OTMxIDEyLjk1OTM1LDUuMzY5NjM0IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgxMjAiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxNDMuMjA5MTIsLTMwLjY2MTM4MSBjIC0zLjk0Mzk5LC0wLjQxNjUzNCAtOC41NzY0MSwtMS4wNTUxNjkgLTEyLjU3NjY3LC0wLjcyNjE0NCAxLjg5MzY4LDIuODkyNTY4IDkuMTg5ODEsMS44OTQ1MiAxMi41NzY2NywwLjcyNjE0NCIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMTIyIgogICAgICAgc3R5bGU9ImZpbGw6IzIzMWYyMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gMTQ0LjU3NTY4LC0zNy4xOTAyMDEgYyAtNC40MzI2NSwtMC4wOTYwNCAtOS45NDIwMywtMC4wMDc3IC0xNC4xNTUyLDAuMzQ1ODE0IDIuNDkyMDcsMi42NzY3NTEgMTEuMjgwNDUsMC45OTMyNjYgMTQuMTU1MiwtMC4zNDU4MTQiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDEyNCIKICAgICAgIHN0eWxlPSJmaWxsOiNkY2Q5ZDg7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDEwOS40Nzc1LC01NS4wNTY5NjggYyAwLjYzNTkxLC01LjU2Njc4NyAyLjg0Mjg1LC0xMS4yMDcyMDEgMi41NjYxNywtMTcuMzAzNzI5IC0yLjQ1MDgxLC0wLjgyNjUwMiAtMy44NTg2NCwtMS41NDkzNjMgLTcuMTQyMzIsLTEuNTQ0OTU1IC0wLjIzMTY3LDUuMTgxMjk5IC0wLjkyNDgsMTMuMTAyMDAzIC0wLjcxNzUyLDE4LjA0MTEyOSAxLjYxNTExLC0wLjEwNjkyNCAzLjk5NjUxLDEuMTUzNzQ0IDUuMjkzNjcsMC44MDc1NTUiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDEyNiIKICAgICAgIHN0eWxlPSJmaWxsOiNmMGQ2Yjc7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDEwMi4zMzE0MywyNi45ODU0MjEgYyAtMi4yMjU3LC0xLjQ1Mjg0OSAtNC4xMjEyNTYsLTMuMjY2ODAxIC02LjI1ODc5MywtNC44MTgxMzMgLTQuNzQwMjg1LC0wLjIzNDQ4MiAtNy4zMjcwODksMC4zMjgyNzQgLTEwLjgwOTYxNCwzLjA1MDE0IDAuMDU3MjEsMC4yMTg1MzcgMC40MDcwNjEsMC4xMjA5OTMgMC40MjAxOTIsMC4zODkyNCA1LjA3NDE4NywtMi4yNjEzNDMgMTEuNTI0MzE0LDAuOTIxMDQ1IDE2LjY0ODIxNSwxLjM3ODc1MyIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMTI4IgogICAgICAgc3R5bGU9ImZpbGw6IzgxYjBjNDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gNzUuNjkzODE5LC03LjYwMzM3MzIgYyAxLjM5NDEzNSw2LjA0MTE5MDYgNi44NTY4MTIsOS4xNzAwMjI4IDExLjgxNzQxNiwxMi40OTY4NTE0IDUuMTIwMTQ2LC02LjQ5ODE0ODkgOC4yMzQwNjUsLTE0Ljg1NDg5NDggMTEuNjYzMTI4LC0yMi45MTkxOTUyIC04LjEwMTgxNywyLjQ0MjI3IC0xNi4zNzk5NjUsNi40MDUwMTMgLTIzLjQ4MDU0NCwxMC40MjIzNDM4IiAvPjxwYXRoCiAgICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgICAgaWQ9InBhdGgxMzAiCiAgICAgICBzdHlsZT0iZmlsbDojMjMxZjIwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgZD0ibSAxMDQuMTgzODMsLTU1Ljg2NDUyMyBjIC0wLjIwNzI4LC00LjkzOTEyNiAwLjQ4NTg1LC0xMi44NTk4MyAwLjcxNzUyLC0xOC4wNDExMjkgMy4yODM2OCwtMC4wMDQ0IDQuNjkxNTEsMC43MTg0NTMgNy4xNDIzMiwxLjU0NDk1NSAwLjI3NjY4LDYuMDk2NTI4IC0xLjkzMDI2LDExLjczNjk0MiAtMi41NjYxNywxNy4zMDM3MjkgLTEuMjk3MTYsMC4zNDYxODkgLTMuNjc4NTYsLTAuOTE0NDc5IC01LjI5MzY3LC0wLjgwNzU1NSB6IG0gLTUxLjEzMDI2NywyOC4wODk4MDEgYyAyLjE2NTMsLTE5LjkwNTYzNCA1LjMwMTQ0OCwtMzYuNjM4ODIyIDExLjA1MzU2OSwtNTQuMjY1NjU5IDEyLjc2NjQxMiwtMy44NzYyNzYgMjguMTU2NTgyLC00LjIxNDA3OSAzOS40NDA3ODgsLTAuNzE2MjY3IC0yLjA3MTg4LDkuOTQ4NjUzIC0xLjE2Njc4LDIyLjA2MDY3MyAtMi4zNzc2NSwzMi42NzcyNjEgLTAuOTEyNiw3Ljk3OTY5OSAtMC40NDczOSwxNi4wMDg1NDYgLTEuNjk4NTg0LDI0LjE0OTc1NiAtMTMuNjczMTA2LDIuODQ0NTQ2IC0zMi45OTk1NywwLjY2NDk5IC00Ni40MTgxMjMsLTEuODQ1MDkxIHogbSA0OS42NTExNTcsMS43MjAxNTkgYyAtMC4xMTUzNiwtOC41NDkwMjEgMC4zODI2OCwtMTYuOTgxOTI3IDEuMDM1NDcsLTI1LjU0MTY0IDMuMjgyNzUsMC40OTI3ODcgNS41MTAzMywwLjgyMTgxMiA4LjU2MDQ3LDEuNDkwNDYgLTAuOTkwNDUsOC4yNDA1MzcgLTAuODY4NTIsMTcuNTEzMTY5IC0yLjg4NiwyNC44MDI2NDcgLTIuMzMxNjksLTAuMDIyMzIgLTQuMzg0ODIsMC4wMjcxMSAtNi43MDk5NCwtMC43NTE0NjcgeiBtIDE2LjY1MjksMS4zNzgwMDMgYyAtMS41NTc4OSwwLjM1NzE2MyAtMy4zNzE4NSwwLjAxMzg4IC00Ljg2MDM0LC0wLjAxNTAxIDAuNjk5NywtNi45Njg4OTUgMi4zOTczNSwtMTQuNjU4ODY4IDIuOTk0ODEsLTIxLjk3Mzk1MiAyLjM0MiwtMC4wNzI4OCAzLjU5MzIsMS4wMzE3MjEgNS41MTk3LDEuNDAzMjM0IDAuMTAzMTcsNi40MjExNDUgLTAuNTYwODgsMTUuMjY3Njc2IC0zLjY1NDE3LDIwLjU4NTcyNSB6IG0gMjUuMjE1MjUsLTIzLjAzODIxOCBjIDQuODgxOTEsMS4xODU1NCA3Ljk1MTc0LDcuMTY0ODI4IDYuNTg2MTIsMTMuMzA1MzQ1IC0wLjkxNjM1LDQuMTI2ODgxIC0yLjU0ODM1LDExLjg5Nzc5NyAtNC4yOTQ3NywxNC41Mzc4NzUgLTEuMjkwNTksMS45NTI3NjUgLTQuNzg5OTksNC41MDkzNjggLTcuNTg0MDgsMi43MTk5OSAtNC41NDUyLC0yLjkxMDQ4MyAtMTIuNTUyMjgsLTMuNzU1MzY4IC0xNS44NjY5MiwtNy4yNzg0MTEgMS42NjIwMSwtNS41MzM3NzIgMi4xNzc4NywtMTMuMTM0NjQyIDIuODYzNDksLTIwLjE0NjQgNS42NzgyMiwtMC4zNTM5NzQgMTIuNjY0ODQsMS41NjI1ODcgMTcuMzg3MywtMC40NzEyMTUgLTMuMjk2ODEsLTEuMDY3OTI0IC03LjU3NDcsLTEuMDc2MzY1IC0xMC40MjMxOCwtMi42MzI3NjIgMi4zMjc5MywtMS4xMjQzODggNy43NzgyMywtMC44OTcyMjIgMTEuMzMyMDQsLTAuMDM0NDIgeiBNIDk5LjE3NDM2MywtMTguMDI1NzE3IEMgOTUuNzQ1MywtOS45NjE0MTY2IDkyLjYzMTM4MSwtMS42MDQ2NzA3IDg3LjUxMTIzNSw0Ljg5MzQ3ODIgODIuNTUwNjMxLDEuNTY2NjQ5NiA3Ny4wODc5NTQsLTEuNTYyMTgyNiA3NS42OTM4MTksLTcuNjAzMzczMiA4Mi43OTQzOTgsLTExLjYyMDcwNCA5MS4wNzI1NDYsLTE1LjU4MzQ0NyA5OS4xNzQzNjMsLTE4LjAyNTcxNyB6IG0gOC40NTI2MDcsMjQuOTcyMzE4NCBjIC0wLjMyNDUzLC04LjA2NTA1MDUgLTEuMjQ0NjMsLTE4LjY0NDIxNTQgLTMuMzk0MzYsLTI0Ljk2NTAwMjQgNS4xMjc2NSw2LjUyOTE5NCA5LjI2Mjk3LDE0LjEzMTk0MDUgMTMuNTg0OTQsMjEuNTM0MjUxNCAtMS44NDIwOSwyLjk1NzA5NzYgLTUuNjkzMjIsNS41MzU0NjAyIC0xMC4xOTA1OCwzLjQzMDc1MSB6IE0gOTguMDQ1MDk5LDEwLjM1MTI3OCBDIDk2LjEwMjY1MSwxMC41NjA0MzYgOTQuNDUzNzc0LDguMTE4MDcyOCA5MS45Mjc5MzYsOS4xNzQxNzkxIDkxLjM0OTIzNSw4LjUzNDUxMjUgOTAuODIzMDU3LDcuODQxMzg0MiA5MC4yMzMxMDEsNy4yMTY3MjQ1IGMgNS41Nzg3OTIsLTYuNzIzMTU3NjkgOC4xMTQwMSwtMTYuMjYxNzg2IDEyLjQyMjg0OSwtMjQuMTYyNjk5NSAyLjMxMTk5LDcuNTg5NTIxNiAyLjA0NTYyLDE1LjkwNDQzNiAyLjU1NDkxLDI0LjE4ODAyMzUgLTMuMTc2NzYsLTAuMjAxNjU0NCAtNC45MzkxMiwyLjg3Mjg3MTUgLTcuMTY1NzYxLDMuMTA5MjI5NSB6IG0gLTYuMTYxMjQ2LDguMTMxODMxIGMgLTAuMjA3MjgyLC0yLjMwMjYxMiAwLjMyODI3NSwtMy4wNTU3NjggMC43OTE2MTEsLTUuNjk1MDk2IDcuNTY5MDc2LC0yLjM2NjM5IDYuMjQ3NTM1LDEwLjM4ODQ4NSAtMC43OTE2MTEsNS42OTUwOTYgeiBNIDgzLjQ5MDM0MSwyMS4yMzg3NCBDIDgwLjIyODg4NSwyMy4wMjA4MDIgNzUuMzI5MzQsMjQuOTYxMzc0IDcxLjExNjczMywyNS43NjUxNzggNjUuODk1MTAzLDI2Ljc2NDA3IDY2LjM4NDIzMiwxOC42NDI1NTcgNjYuNjA1ODY1LDEzLjc5NzIyMyA2Ni43Nzk4NSw5Ljk2MTEwMDIgNjguNzc0ODIyLDUuOTA0NTY0IDY5LjY0MTI3OSwzLjM1NjEyMTQgNzAuMDQ3OTY0LDIuMTY2MDc5IDcwLjEzOTYsMC45MDM1MzQ4OSA3MS4xNTY5NywwLjY2NzI3MDk3IDcyLjk1NTE2NCwwLjI0ODExMTE5IDc4Ljg4NjgwNSwyLjYyMDAzNTkgODAuNTc2OTUsMy41NDE4MzEgYyAzLjU3NDYyOSwxLjk0OTEwNyA2LjM0ODA4MSw1LjA0NDI2NzYgOS4zODQxNTIsNy4xMjI3MTUgMC4wMzkzOSwxLjAxMTA4NiAwLjA3Nzg1LDIuMDIxMjMzIDAuMTE4MTc5LDMuMDMyMzE5IC0xLjgyNTIwNywwLjkwOTc5IC0zLjkzNDYwNiwxLjU1NTA4NCAtNi42MTQyNjQsMS42NzIzMjUgMS44MTc3MDMsMC45MTQ0NzkgNC40OTE3MzQsMC45MDEzNDggNi4xNDgxMTQsMS45ODkzNDQgMC4wMTU5NSwwLjQwNTE4NSAwLjAzMjgzLDAuODA5NDMxIDAuMDQ2OSwxLjIxMDg2NCAtMy4wMjM4NzgsMC4yMzI2MDYgLTQuMTc2NTkxLDEuNTc5NDcgLTYuMTY5Njg2LDIuNjY5MzQyIHogbSAtMzEuMTUxOTQ3LDUuNjU4NTE2IGMgLTIuNzA2ODU5LC0yLjc0ODEyNyA3LjU5MjA1MywtNi40OTQyMSAxMC44NzExNDIsLTYuNjk1ODY0IC0wLjAxODI5LDEuNzM4OTE3IDAuOTkxMDE0LDMuMzc4NDE1IDAuNzg3NjcxLDQuNjI1ODU4IC0zLjg5NDU1NiwwLjY4Mzc0OSAtOS4wMTI4MjYsMC4yMzI2MDYgLTExLjY1ODgxMywyLjA3MDAwNiB6IG0gMzMuMzQ0ODIxLC0xLjI5MDU4OCBjIC0wLjAxMzEzLC0wLjI2ODI0NyAtMC4zNjI5NzgsLTAuMTcwNzAzIC0wLjQyMDE5MiwtMC4zODkyNCAzLjQ4MjUyNSwtMi43MjE4NjYgNi4wNjkzMjksLTMuMjg0NjIyIDEwLjgwOTYxNCwtMy4wNTAxNCAyLjEzNzUzNywxLjU1MTMzMiA0LjAzMzA5MywzLjM2NTI4NCA2LjI1ODc5Myw0LjgxODEzMyAtNS4xMjM5MDEsLTAuNDU3NzA4IC0xMS41NzQwMjgsLTMuNjQwMDk2IC0xNi42NDgyMTUsLTEuMzc4NzUzIHogbSAzMC42MDY0NDUsLTkuMjgwNzkyIGMgLTAuMTQ2MzEsMy4wNTI5NTQgLTAuOTQ4MjQsOS4zMzE0NCAtMi44MzUzNSwxMC40MzA2OTEgLTMuOTYwODcsMi4zMTE5OTEgLTExLjAwMTg5LC00LjY2ODA2NSAtMTMuOTg0NSwtNS43MzI2MTMgMC4zMjQ1MjMsLTAuOTM0MTc1IDAuODYwMDgsLTEuNjc0MiAwLjkwMTM1LC0yLjg2ODE4MiAxLjc2NDI0LDAuNDM0MjYxIDMuOTEyMDksMC4xMzY5MzggNS40NDA5MiwtMC42MTQzNDIgLTEuNzY4LC0wLjE5NzkwMyAtMy43MjgyNywtMC4xODQ3NzIgLTQuODk3ODYsLTEuMDI3MDMxIC0wLjQyODYzLC0xLjIzOTAwMiAwLjEwNTA1LC0yLjkyNzI3MSAtMC4xODAwOCwtNC42NDc0MyA0LjE5NjI4LC0xLjE4MzY2NSA4Ljk4OTA5LC0xLjgxMzk1MiAxNC4yOTQwMSwtMS45Njk2NDc5IDEuMDMxNzIsMS4zNDEyMzU5IDEuMzgzNDQsMy44OTYxNTA5IDEuMjYxNTEsNi40Mjg1NTQ5IHogTSA0Ny43ODEzNzksMjQuMjM5MTcgQyA0Ni45MzEzMzYsMjQuODQ1MDcxIDQxLjE4MTA5LDMyLjMyNjkxOCA0MC4zOTMzMjUsMzIuMDE2NDY0IDI5Ljk4ODIzOSwyNy45MTMwMzEgMjAuMjU5MDI0LDIwLjgxNzYxIDExLjU2NDkwNiwxNC4xMDY3MzkgYyA4LjI4OTMwOSwtMTcuNzg2OTQ5MyAxMS42MzU0NTksLTM5LjU3ODc1NSAxMi4yMjY3MjgsLTYwLjU4MjQyMSA5LjQ5NTc2NSwtNC40NDEyNzQgMTcuODM2Mzc5LC0xMC44NDM3NTQgMzAuNzIxOTA3LC0xMS41MTIzMDkgLTEuNDkxMTE3LDEwLjU0OTgwOCAtMi44NTIyMzcsMTkuOTYyMDk3IC0zLjY5ODYyMywyOS44OTQ1NjEgLTMuMjM3NjMyLDEuMzY0Nzc4IC03Ljg4MjYyMywtMC4wNjE5IC0xMC45MTI1MDQsMC40MjMxOTMgLTAuMDI1NywzLjY1MTI1OCA0LjYyNzM1OSwxLjU5ODg4NSA1LjAxNDkxLDQuMDU0Mjg1IDAuMjkyMDcxLDEuODU3MTkgLTIuNTYwMTY2LDEuOTk3ODc5IC0xLjYzMTQzMSw0LjkyMjMzNyAyLjM2ODY0MiwtMC44NjEwMTcgMy42MTI1MjIsLTIuNzYyODUzIDYuMTM4NjQyLC0zLjQ3Njk5MSAyLjMwODIzOSw1LjA0OTgwMiAtMC4wMzIyNiwxMy45ODQ2ODYxIDAuMzAwNDE4LDE4LjIwNTM1OTUgMC4wNjMwMywwLjc5MjQ1NDkgMC4zOTU3MTEsNC4zOTAzNDQ2IDIuMTcwODMzLDMuNzU5MDI1NjQgMS41NzEwMjgsLTAuNTU4NzIzMzcgLTAuMDg5NzYsLTkuNTY4NjQxOTQgMC4wODI0NCwtMTMuNTYzMjc1MTQgMC4xNTY4MjEsLTMuNjgwMzMzIC0wLjQ0NDQ4NCwtNy4yNDE0NTYgMS4wNDU5NzYsLTkuNTUxODUzIDEyLjQ1MTM2MiwxLjY5NDgzNSAyNS4xMDQxOTEsMi43OTAzMzQgMzguNTc2MzkzLDMuMTU5OTcyIC0yLjk2Mzg1MSwxLjI3MTczNSAtNi40ODQ4MywyLjQ3NTI4NCAtMTAuMzQ1MTUyLDQuNjUxMTgyIC0yLjA5MjcwNCwxLjE3OTcyNSAtOC42ODkzMzUsMy42MzQ0NjkgLTkuMjkzMTczLDUuNjIyMTI0MyAtMC45NjM1MzIsMy4xNjcyODcyIDIuNTI3OTk2LDQuODU0NDMxMSAzLjEyNTE3NSw3LjU2OTczMSAtNi4yODUxNDYsLTMuNDI3ODQzNCAtNy41MTEzOTIsMy4yODU2NTM2NSAtOC45OTgxOTUsOC4wNDE4ODM3IC0xLjM0NzE0NSw0LjMwNzkwMSAtMi4xMTM5OTUsNy41MjU5MyAtMi40NDQ1MiwxMC4wMTA1IC01LjQxNDI4LDIuNTgxMTc2IC0xMS4yMDMwNzQsNS4xOTUxOCAtMTUuODYzMzU1LDguNTA1MTI2IHogbSA2My4wMDkyMTEsNi44NzIxOTQgYyA4LjY2OTI3LDQuMjAzNzkxIDEwLjIzMTg1LC0xNS43MTEyMjMgNi44MzM3NCwtMjIuMTI2NjQ2MyAwLjUyNTI0LC0xLjkxMzM3MiAyLjMzMTY5LC0yLjY0NTg5MzMgMy4wNjg5LC00LjM2NjA1MjIgLTQuODM3ODMsLTguNjY2MzU1OCAtMTAuMjExMjEsLTE2Ljc1NTk3OTUgLTE1LjE0NzUzLC0yNS4zMjAzODI1IDMuNjcxOTksMi4yODU4MjIgOC45MTY4OCwwLjQwODg0MiAxMy4yMzc5MSwyLjExOTgwOSAxLjU3OTQ3LDAuNjI0NjYgMi43MjI4MSw0LjI0MDQ2NCAzLjkxODY2LDcuMTMzMDMyIDMuMjg5MzEsNy45NTgxMjcgNi43NDI3NiwxNy45OTEyMzA3IDguMjc5MDksMjUuNTg1NjI5IDAuMzQ3MDMsMS43MzA0NzYgMS4yOTI0Niw1LjUwMDk0NSAxLjA4MDQ5LDcuMDQxMDIxIC0wLjM3Nzk4LDIuNzU3NTA3IC00LjExOTM4LDQuODAyMTg5IC02LjAyMjQzLDYuNTA3MzQxIC0zLjUwNTk3LDMuMTQ5NTYgLTUuNzEzODYsNS45MjExMzYgLTkuMzcwODMsOC44NjYyMjggLTEuNDgyODcsLTIuMTg5MTIzIC00LjY2NTI2LC0zLjY1OTc5MyAtNS44NzgsLTUuNDM5OTc5IHogTSAyNy45NTQ4MTMsMTA3Ljk5MTQgYyAtNC4xMzA5MTQsLTQuNTQ1MiAtMy4yNjYyMzksLTEzLjA2MTU3NyAtMi43NjYxMzYsLTE5LjEyMDU4OCA3LjQ2Njc0Nyw0LjY5NzE0IDE3LjM3NzI2MywtMC4zNzE0MiAxNy4yODM4NDYsLTguMzYwNjg2IDMuNTY0ODc0LDAuMDk0NzMgMS4zMzE3NjMsNC40NTIzNDIgMC42ODY5MzgsNy4yNTk1NTkgLTIuMTA3MzM2LDkuMTY5MTc4IDMuNTUwMjQzLDE5LjEzMDkwNSAwLjI1NjUyMywyNy41MTU5NzUgLTYuMzk1MTY1LC0wLjQ4NDkxIC0xMS42NDkwNTksLTMuMDk3MDMgLTE1LjQ2MTE3MSwtNy4yOTQyNiB6IG0gMjkuNTU3NTY0LDI2LjM4MDE1IGMgLTkuMzUxNzkzLC0yLjY1MDU5IC0yMS4zMzcxOTMsLTkuNDQ1ODcgLTI1LjE4MDA2OSwtMTcuODQ2ODkgMi45NzU2NjgsMC40MzIzOSA1LjA0MTM2LDEuOTMzMDcgNy45NzY3OTEsMi4xMTg3OCAxLjEwOTM4MSwwLjA3MjIgMi41NjI3OTMsLTAuNDY1MjEgMy44Mzc4MTIsLTAuMTQ4MTkgMi41NDA4NDUsMC42MzAyOSA0LjY4NTIyOSw2LjMyNzI2IDYuNjAyMDcxLDguNDQ2OTcgMS44Njg1MzksMi4wNzAwMSA0LjExNDQwNiwyLjk1NDQ4IDUuNjUxMzg4LDQuODQxNTkgMC45ODc0NSwwLjQ3NjQ2IDIuNDQ3NDI4LDAuNDQzNjQgMi41MDM1MTYsMS45MjY1IC0wLjQyNzk3NiwwLjQ1NzcxIC0wLjg3ODY1MSwwLjgwNjYyIC0xLjM5MTUwOSwwLjY2MTI0IHogbSA0OC42ODE0MzMsLTIuNDkzMDEgYyAtOS43MDY2MDksNS40NzY1NSAtMjYuMTM2Mzc4LDkuNTk1OTMgLTM2LjQ2MTY0Niw0LjQ0ODU5IC04LjMzMTQyMiwtNC4xNTQwOCAtMTkuNTkzMjEsLTExLjAyNzIyIC0yMy40MzI4MDQsLTE5LjczNjgxIDMuNTg2ODIyLC04LjQwNDc3IC0xLjA2MjQ4NCwtMTYuMTA2MDkgLTEuMzU5MjQ0LC0yNC42MzkzNTUgLTAuMTU3NTcyLC00LjU0MDUwNiAyLjEzNzgxOCwtOC41MDQxODggMi4zMTM2NzksLTEzLjQ0NzA2NSAtMS4yMjczNzIsLTIuMDI0OTg2IC00Ljk3NzI5OSwtMi4yNzQ0NzQgLTcuNTczMTA3LC0yLjEzNTY2MSAtMC44NzM3NzMsNC4zNzI2MTggLTIuNDAzNDM5LDkuMjg3MzU3IC02LjkwNjE0OCw5Ljc4MDcwNyAtNi4zNzEzNDEsMC42OTY4OCAtMTEuMDI5ODM5LC00LjU3NjE0OCAtMTEuMzE5MjgzLC0xMC4wODY0NzIgLTAuMzQyNTMxLC02LjQ4MDE0IDQuOTc3MjA2LC0xNy4yMjAzNDcgMTIuNTE3Mjk4LC0xNi40NzQ2OTUgMi45MTI3MzQsMC4yODc5NDQgMy42MjgyNzksMy4yMDc3MTIgNi44MDE4NSwzLjE3NzY5OCAxLjcyMDA2NSwtMy40MzE4NzYgLTIuNjUzMzAzLC00LjUwOTU1NSAtMy4xMDMyMjcsLTYuOTY0MTExIC0wLjExNzI0MSwtMC42MzQwMzkgMC4zNjI2OTcsLTMuMTEyMDQzIDAuNjQxODI0LC00LjI3NDEzNSAxLjM2OTU2MiwtNS42NTg1MTcgNC40MjI2MDksLTEyLjk4MTg1NCA3LjQyNzYzNSwtMTcuMjg5NzU1IDMuODEzOTg4LC01LjQ2NDM2NSAxMS4zMDcxODQsLTYuMjg3ODY1IDE5LjM2ODU3NywtNi44MjM0MjIgMS40Mzk4MTIsMy4xMDE3MjYgNi43NDM4ODYsMi44NDY2MSAxMC4xOTk5NjEsMi4wMzUzMDMgLTQuMTQxODg4LDEuNjQwNDM1IC03Ljk5MjU0OSw1LjYxNzI0NyAtMTEuMTgzNzUzLDkuMTM3Mjg5IC0zLjY2NTYwOCw0LjAzODcxNSAtNy4zNzg3NjksOC4zNzEwMDIgLTcuNTY2MzU1LDEzLjY0OTY1OCA2LjkyNzA2MywtOS42MTAwMDUgMTIuNjQ5OTIxLC0xOC4wMDI1OCAyNS4yNDYwMDYsLTIyLjIyOTgxOSA5LjUzMTAzMSwtMy4xOTY0NTYgMjAuNjYyMzU3LDEuNDY1MDQzIDI3Ljk4NTY4Nyw2LjYwNzY5OSAzLjAzODg5LDIuMTM3NTM3IDQuODUyODQsNS41MjkwODIgNy4wMTI4OSw4LjYzMzYyMiA4LjA4MjEyLDExLjYyNTYxMSAxMS44NTM1MiwyOC4yMTk0MjMgMTEuMDI0NCw0NC4zMDMwMDMgLTAuMzQxNDEsNi42MzMwMjMgLTAuMzI2NCwxMy4yNDM1MzEgLTIuNTUyMSwxNy43MDYxOTEgLTIuMzI2MDYsNC42NjYxOSAtMTAuMTkzNCw4Ljg0MDkxIC0xNC43OTg2Miw0LjYyMDIzIC0wLjg1MzUyLDQuNTM3NyAzLjgyOTU1LDcuMzQzOTggOS4zMzA1LDUuNzExMDQgLTMuOTIyNDEsNS4wNjIgLTguMDM4OTgsMTEuMTQ0NDYgLTEzLjYxNDAyLDE0LjI5MDI3IHogbSAxOC4wODQxOCwtMTQ5LjY2MjQ1OSBjIDcuNTg1MDIsMy43NzA3NSAyMS43NTcxLDEwLjE0OTQwNjYgMjYuNTEyNCwtMC4wMTM4OCAxLjc1NDg2LC0zLjc0NjI3IDMuODEzNjEsLTEwLjA3OTA2MiA0LjcyMjQ2LC0xMy45NDYyMzEgMS4yODQwMiwtNS40NTU3MzYgLTEuMzkxODgsLTE2LjkyMzAyNSAtNi45OTk3NSwtMTguNzUzNzY1IC00Ljk1MzIsLTEuNjE2OCAtMTAuNzMyNzEsLTEuNTE4MzE3IC0xNi42OTg4NiwtMC4zMTk4MzQgLTAuNzAyNTEsMC41ODQzMjkgLTEuNDg0NzQsMS42MDI5MTggLTIuMDMxNTUsMi42NjQ2NTIgLTQuMjYwMDcsMC4xNjUyNjMgLTguMjQ5MDcsLTAuMjI4NjY3IC0xMS42MTQzNiwtMS45Nzk4NzEgMC4zMTg5LC0zLjE1MDQ5OCAtMS44MTIwNywtMy42NTYxMzUgLTMuODA5ODYsLTQuMzA0OTkzIC0xLjQ4MDk5LC01Ljg3MjI3IDIuOTYyOTEsLTEzLjU0MDk1MiAxLjg5OTMsLTE4Ljg5NTU4IC0wLjc1ODc4LC0zLjgxNDczOCAtNS40NTIxNywtNC40MDQ2MDEgLTguOTAxODcsLTUuMTE4MjcgLTAuMTEyNTUsLTIuMTE5OTA0IDAuMTUxMDEsLTMuODg5NDgyIDAuMzg2NDMsLTUuNjgyOTAyIC0wLjc4ODgsLTIuOTA2NDc4IC00LjMyNjY2LC00LjU2MTAzOCAtNy42Nzg4MSwtNC45NjYyNTEgLTExLjAyOTA5LC0xLjMyNjI5IC0yNy43NzUxMjgsLTEuOTIyMDIxIC0zOC4zODM2NSwxLjg5MjcwOSAtMi45NjAyODcsNy4yNjEyIC01LjI5MjM1LDE2LjA5MjgxOSAtNy43NTgwNjcsMjQuMzg0Mjg1IC0xMC4zNDY0NjUsLTEuMTA0OTczIC0xOC43MTQ1Niw0LjQ2NDM0NyAtMjYuNjAzMzc0LDguMTEzMDcyIC0yLjczMTMzOSwxLjI2NjIwMiAtNi41MDk3NzksMS45NjM3MzkgLTcuNTMwMTUxLDQuMTM3ODU1IC0wLjk4OTIzMiwyLjEwNDg5NiAtMC41ODQ0MjIsNi4xMzkwMTYgLTAuODI5ODc4LDkuOTQ5NzIxIC0wLjYyNDY1OSw5LjczMjg3NCAtMS4xNTk1NTksMTkuMTIwNTg5IC0zLjcyOTc2MiwyOS4wODYwNjggQyAxNC4wNzQ2MTIsLTcuMDY1MTkwNCAxMi4wNjMxMzMsLTMuMTE5MjM1OSAxMC42NTk5LDEuMTg5Njk2NiA5LjM2MjkzMzYsNS4xODMyOTc4IDcuMDk2OTAwOSwxMC4xMTg2NzIgNi41MDU5MTI4LDE0LjEwMTExMiBjIC0wLjg3NjMwNTYsNS45MDIzNzcgNC42ODE1NzEyLDYuMjMwNjUyIDguMjM1NDcyMiw4Ljc4ODM4IDUuNDkzODE2LDMuOTU1MjQgOS44MDYxMjUsNi4xNDI0ODcgMTUuNzU2MDU1LDkuNzEyMjM5IDEuNzYyMjcyLDEuMDU3MDQ0IDcuMDc2NjYzLDMuNzMyOTUxIDcuNjgxMTU3LDQuOTY1Mzg4IDEuMjAxNjczLDIuNDQzMyAtMi4wNjI2OSw1Ljg4ODMwOCAtMi45MzU0MzIsNy44MDM1NTYgLTEuMzgwNTM1LDMuMDI4NTY4IC0yLjEwMDQ4OCw1LjYwMTMwMiAtMi4yOTgyOTcsOC41ODk1MzkgLTQuOTkxMTgxLDAuNzg4Nzk3IC04Ljc3NDc4LDMuNzU5MjEzIC0xMS4wNjAyMjgsNy4xMDg1NTIgLTMuNzgwNTk4LDUuNTQzMTUyIC02LjQwMjQ4LDE1Ljc5ODQ1IC0zLjEzMTQ1OCwyMy41OTkxOTMgMC4yNTY1MjMsMC42MTQzNDIgMS41MzU4NTYsMS44MjIzOTMgMS43MjQ1NjcsMi43NjU5NDggMC4zNzIyNjMsMS44NTgwMzQgLTAuNzAwNTM4LDQuMzI4NTM1IC0wLjc2NzIyNSw2LjMwNDc0OCAtMC4zNDM2NTYsMTAuMTM4OTk1IDEuNzE1NDcsMTguODc0ODU1IDguNTQxMDQ5LDIxLjkzMjQ5NSAyLjc3MDkxOSwxMS4wMzg0NyAxMi42ODgzNzYsMTQuNzA4NTggMjIuMDMyMTAzLDIwLjE5NDUyIDMuNDkyNzQ4LDIuMDUwMzEgNy4zNDI5NCwzLjM2MDU5IDExLjMxOTI4NCw0LjgyMzc2IDE0LjI2NDE4OCw1LjI0OTU4IDM2LjE0OTUwNSw0LjI2MSA0Ny45ODgwMywtNC42OTI0NSA1LjAxOTc4LC0zLjc5NjczIDEzLjA0Mzc1LC0xMS44MTMyIDE1LjkxMzgxLC0xNy42MTcxIDcuNTgwMzMsLTE1LjMyMjkyIDcuMDQxOTYsLTQwLjkzMTE0OSAxLjczOTg2LC01OS41NzA1ODEgLTAuNzEyODMsLTIuNTAyMzkgLTEuNzQ2NDMsLTYuMTgwOTQyIC0zLjE4OTksLTkuMTg2OTk5IC0xLjAwNjM5LC0yLjA5OTA4MiAtNC4xMzQzOCwtNi4yOTkxMjEgLTMuNzU0NTIsLTguMTUyNDY1IDAuMzkxMTIsLTEuOTE2MTg2IDcuMTMyLC03LjAzNDQ1NiA4LjU3NzM1LC04LjQyODIxNiAyLjYwMjc1LC0yLjUxMDgzMiA3LjU0NzUsLTUuODQzMjg4IDcuOTQ3OTksLTkuMDExNjA3IDAuNDMwNTEsLTMuMzcxODQ5IC0xLjQ4NTY3LC03Ljk4NDU3NyAtMi40NTY0MywtMTEuMjM4MjQ3IC0zLjI0NTIzLC0xMC44NTgyOTIgLTYuNDExNjcsLTIwLjg5NTI0MTEgLTEwLjA5MTE2LC0zMC41NzU2ODQiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDEzMiIKICAgICAgIHN0eWxlPSJmaWxsOiNmN2U0Y2Q7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDczLjY3Mzk5Miw1Ny4zNzk4OTggYyAwLjQxMTQ2OSwwLjU0Nzc0OSAyLjY3Mzg0NCwxLjM3OTY5MSA1LjgzOTM0OSwtMC4xNDQ0NDEgMCwwIC0zLjc1MTcxLC0wLjYyNTU5OCAtMy40Mzk1NjgsLTYuODgwNjM2IGwgLTEuNTYzMzM3LDAuMzEzMjY4IGMgMCwwIC0xLjYxNTY3NCw1LjY3MTY0NyAtMC44MzY0NDQsNi43MTE4MDkiIC8+PHBhdGgKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBpZD0icGF0aDEzNCIKICAgICAgIHN0eWxlPSJmaWxsOiMxZDE5MTk7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICBkPSJtIDEwMS4wODU4NiwzLjYxNjk1OSBjIDAsLTAuOTQ5Mjc2NCAtMC43NzAwNCwtMS43MTkwMzM0IC0xLjcyMDE2LC0xLjcxOTAzMzQgLTAuOTQ5MTgyLDAgLTEuNzE5MjIxLDAuNzY5NzU3IC0xLjcxOTIyMSwxLjcxOTAzMzQgMCwwLjk0OTE4MjUgMC43NzAwMzksMS43MjAxNTg5IDEuNzE5MjIxLDEuNzIwMTU4OSAwLjk1MDEyLDAgMS43MjAxNiwtMC43NzA5NzY0IDEuNzIwMTYsLTEuNzIwMTU4OSIgLz48cGF0aAogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIGlkPSJwYXRoMTM2IgogICAgICAgc3R5bGU9ImZpbGw6IzFkMTkxOTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgIGQ9Im0gMTAyLjgwNTA4LC00LjM1NTQyNDMgYyAwLC0wLjk0OTI3NjMgLTAuNzcwMDQsLTEuNzE5MDMzNCAtMS43MjAxNiwtMS43MTkwMzM0IC0wLjk0OTE4LDAgLTEuNzE5MjIsMC43Njk3NTcxIC0xLjcxOTIyLDEuNzE5MDMzNCAwLDAuOTQ5Mjc2NCAwLjc3MDA0LDEuNzIwMTU5IDEuNzE5MjIsMS43MjAxNTkgMC45NTAxMiwwIDEuNzIwMTYsLTAuNzcwODgyNiAxLjcyMDE2LC0xLjcyMDE1OSIgLz48cmVjdAogICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZSIKICAgICAgIGlkPSJyZWN0MzA0OCIKICAgICAgIHdpZHRoPSI3MC40MTE5ODciCiAgICAgICBoZWlnaHQ9IjQuMTE5ODUwMiIKICAgICAgIHg9IjE2Ljg1MzkzMyIKICAgICAgIHk9IjE3Ny4zNzgyOCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuOCwwLDAsLTAuOCwwLDE0NCkiCiAgICAgICByeD0iMC45ODI1ODAwNyIKICAgICAgIHJ5PSIwLjk4MjU4MDA3IiAvPjxyZWN0CiAgICAgICBzdHlsZT0iZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO2Rpc3BsYXk6aW5saW5lIgogICAgICAgaWQ9InJlY3QzMDQ4LTUiCiAgICAgICB3aWR0aD0iNTAuMDM3NDU3IgogICAgICAgaGVpZ2h0PSIzLjI5NTg4MDEiCiAgICAgICB4PSI3OC41MDE4NzciCiAgICAgICB5PSItMi4wOTczNzU2IgogICAgICAgcng9IjAuNzg2MDY0MDMiCiAgICAgICByeT0iMC43ODYwNjQwMyIKICAgICAgIHRyYW5zZm9ybT0ic2NhbGUoMSwtMSkiIC8+PHJlY3QKICAgICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7ZGlzcGxheTppbmxpbmUiCiAgICAgICBpZD0icmVjdDMwNDgtNiIKICAgICAgIHdpZHRoPSI1NC44MzE0NjMiCiAgICAgICBoZWlnaHQ9IjMuMjk1ODgwMSIKICAgICAgIHg9IjEzLjQ4MzE0NyIKICAgICAgIHk9Ii0zLjY5NzM3NTgiCiAgICAgICByeD0iMC43ODYwNjQwMyIKICAgICAgIHJ5PSIwLjc4NjA2NDAzIgogICAgICAgdHJhbnNmb3JtPSJzY2FsZSgxLC0xKSIgLz48cmVjdAogICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtkaXNwbGF5OmlubGluZSIKICAgICAgIGlkPSJyZWN0MzA0OC01LTkiCiAgICAgICB3aWR0aD0iNDUuMjQzNDUiCiAgICAgICBoZWlnaHQ9IjMuMjk1ODgwMSIKICAgICAgIHg9IjgzLjI5NTg4MyIKICAgICAgIHk9Ii0zLjY5NzM3NTUiCiAgICAgICByeD0iMC43ODYwNjQwMyIKICAgICAgIHJ5PSIwLjc4NjA2NDAzIgogICAgICAgdHJhbnNmb3JtPSJzY2FsZSgxLC0xKSIgLz48L2c+PC9zdmc+",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-jenkins/releases/download/v1.0.0/jenkins-1.0.0.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "jenkins",
+      "name": "Jenkins plugin",
+      "description": "Jenkins plugin for Mattermost",
+      "version": "1.0.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "To report an issue, make a suggestion or a contribution, or fork your own version of the plugin, [check the repository](https://github.com/waseem18/mattermost-plugin-jenkins).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "JenkinsURL",
+            "display_name": "Jenkins URL",
+            "type": "text",
+            "help_text": "The URL for your Jenkins instance. Must start with http:// or https://. For example: https://jenkins.example.com.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-antivirus",
+    "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/download/v0.1.1/antivirus-0.1.1.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "antivirus",
+      "name": "Antivirus",
+      "description": "Antivirus plugin for scanning uploaded files.",
+      "version": "0.1.1",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Antivirus plugin for scanning uploaded files to Mattermost, uses ClamAV to scan files. See [documentation here](https://github.com/mattermost/mattermost-plugin-antivirus)",
+        "footer": "",
+        "settings": [
+          {
+            "key": "ClamavHostPort",
+            "display_name": "ClamAV - Host and Port",
+            "type": "text",
+            "help_text": "The hostname and port to connect to clamd",
+            "placeholder": "localhost:3310",
+            "default": "localhost:3310"
+          },
+          {
+            "key": "ScanTimeoutSeconds",
+            "display_name": "Scan Timeout (seconds)",
+            "type": "number",
+            "help_text": "How long the virus scan can take before giving up.",
+            "placeholder": "10",
+            "default": 10
+          }
+        ]
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
+    "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/download/v1.0.1/com.mattermost.custom-attributes-1.0.1.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "com.mattermost.custom-attributes",
+      "name": "Custom User Attributes",
+      "description": "Add custom user attributes to the Mattermost user profile popover.",
+      "version": "1.0.1",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-custom-attributes/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-custom-attributes).",
+        "footer": "",
+        "settings": null
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNzUgNzUiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDp1cmwoI1BpbmtHcmFkaWVudCk7fS5jbHMtMntmaWxsOiNmZmY7fTwvc3R5bGU+PGxpbmVhckdyYWRpZW50IGlkPSJQaW5rR3JhZGllbnQiIHgxPSI4MDYuNzUiIHkxPSItMzgyLjEzIiB4Mj0iODA2Ljc1IiB5Mj0iLTIzMi4xMyIgZ3JhZGllbnRUcmFuc2Zvcm09InRyYW5zbGF0ZSg4MjUuMTMgMzkwLjc4KSByb3RhdGUoLTEzNSkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiMDA4NGQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjRmOGIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48dGl0bGU+QW1hem9uLVNpbXBsZS1Ob3RpZmljYXRpb24tU2VydmljZS1TTlM8L3RpdGxlPjxnIGlkPSJXb3JraW5nIj48cmVjdCBpZD0iUGlua19HcmFkaWVudCIgZGF0YS1uYW1lPSJQaW5rIEdyYWRpZW50IiBjbGFzcz0iY2xzLTEiIHdpZHRoPSI3NSIgaGVpZ2h0PSI3NSIvPjxnIGlkPSJJY29uX1Rlc3QiIGRhdGEtbmFtZT0iSWNvbiBUZXN0Ij48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01NC41OCw1MC45MmwwLC44M2MwLS4xLDAtLjIsMC0uM0EyLjMzLDIuMzMsMCwwLDEsNTQuNTgsNTAuOTJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDEuNDUsMzFsLS4xLjE5YS43Mi43MiwwLDAsMCwuMDktLjJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzIuNzgsMjcuNTNjLS44OSwwLTguNzUtLjA3LTguNzUsMi45YTEuNDIsMS40MiwwLDAsMCwuMS41NSwyLDIsMCwwLDAsLjEuMjFsNS40NCwxMnY2LjIxYzAsLjYzLjI2LDEsLjgxLDFoLjI2YTguNzYsOC43NiwwLDAsMCwzLjQyLTEuNzdsLjY3LS40N2ExLDEsMCwwLDAsLjQ3LS44NFY0My4yMmw2LjA1LTEyaDBhLjcyLjcyLDAsMCwwLC4wOS0uMiwxLjQyLDEuNDIsMCwwLDAsLjEtLjU1QzQxLjU0LDI3LjQ2LDMzLjY4LDI3LjUzLDMyLjc4LDI3LjUzWm0wLDEuODRjMy41MywwLDUuOC42Miw2LjU2LDEuMDYtLjc2LjQ0LTMsMS4wNi02LjU2LDEuMDZzLTUuNzktLjYyLTYuNTUtMS4wNkMyNywzMCwyOS4yNSwyOS4zNywzMi43OCwyOS4zN1ptLjczLDEzYzAsLjE0LDAsLjM5LDAsLjY1djMuOTFsLS4zOS4yNGMtLjU3LjMzLTEuMDcuNTYtMS42NC44NlY0M2ExLjE0LDEuMTQsMCwwLDAtLjA4LS40bC00LjI2LTkuNzRhMjUuOTEsMjUuOTEsMCwwLDAsNS42NC42MiwyNi4zNywyNi4zNywwLDAsMCw1LjQ4LS41OFoiLz48cGF0aCBjbGFzcz0iY2xzLTIiIGQ9Ik01MSw1NS4xN0EyMi44LDIyLjgsMCwwLDEsMzcuNTQsNTkuNUMyNi42Niw1OS41LDE3LjM4LDUyLjQzLDE1LjIsNDJhNC41MSw0LjUxLDAsMCwwLDQuMTgtMy40OWg1LjFWMzYuNjJIMTkuNEE0LjQ5LDQuNDksMCwwLDAsMTUuMjIsMzNhMjMsMjMsMCwwLDEsMzUuNC0xMy40Mkw1MS43NiwxOEEyNSwyNSwwLDAsMCwxMy4wOCwzMy40NGE0LjQ4LDQuNDgsMCwwLDAsMCw4LjEzQTI1LDI1LDAsMCwwLDM3LjU0LDYxLjVhMjQuNzcsMjQuNzcsMCwwLDAsMTQuNTgtNC43MVpNMTIuNSwzNy41QTIuNSwyLjUsMCwwLDEsMTQuNywzNUgxNWEyLjUsMi41LDAsMSwxLTIuNDksMi41WiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTE0Ljg2LDM1YTAsMCwwLDAsMCwwLDBsLS4xNSwwWiIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTYwLDQyYTQuNSw0LjUsMCwxLDAtNC40LTUuNDNoLTUuMmwwLTEyLjM3aDIuN2E0LjUsNC41LDAsMSwwLC4wOC0xLjYxbC0zLjY4LS4wNWEuODMuODMsMCwwLDAtMSwuODhWMzYuNTRINDAuODF2MS44NUg0OC41VjUxLjQ3YTEsMSwwLDAsMCwxLDFoMy4xNGE0LjUsNC41LDAsMSwwLDAtMS43N0g1MC40NmwtLjA1LTEyLjMySDU1LjZBNC41MSw0LjUxLDAsMCwwLDYwLDQyWm0wLTdhMi41LDIuNSwwLDEsMS0yLjUsMi41QTIuNSwyLjUsMCwwLDEsNjAsMzVabS0yLjUtMTMuOTFBMi40OSwyLjQ5LDAsMSwxLDU1LDIzLjU2LDIuNDksMi40OSwwLDAsMSw1Ny41MSwyMS4wN1pNNTcsNDlhMi41LDIuNSwwLDEsMS0yLjQ3LDIuODF2MGMwLS4xLDAtLjIsMC0uM2EyLjMzLDIuMzMsMCwwLDEsLjA2LS41M2gwQTIuNTEsMi41MSwwLDAsMSw1Nyw0OVoiLz48L2c+PC9nPjwvc3ZnPg==",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS/releases/download/v1.0.2/com.mattermost.aws-sns-1.0.2.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "com.mattermost.aws-sns",
+      "name": "AWS SNS",
+      "description": "Send alert notifications from Amazon AWS CloudWatch to Mattermost channels via AWS SNS.",
+      "version": "1.0.2",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "This plugin is used to receive alert notifications from [Amazon AWS CloudWatch](https://aws.amazon.com/cloudwatch/) to Mattermost channels via AWS SNS.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "TeamChannel",
+            "display_name": "Channel to send notifications to:",
+            "type": "text",
+            "help_text": "The channel to send notifications to, specified in the format `teamname,channelname`. If the specified channel does not exist, the plugin will create the channel for you.\n \nNote: Must be the team and channel handle used in the URL. For example, in the following URL, set the value to `myteam,mychannel`: https://example.com/myteam/channels/mychannel",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "AllowedUserIds",
+            "display_name": "Authorized User IDs:",
+            "type": "text",
+            "help_text": "List of users authorized to accept AWS SNS subscriptions to a Mattermost channel. Must be a comma-separated list of user ID's.\n \nTip: Use the [mattermost user search](https://mattermost.com/pl/cli-mattermost-user-search) CLI command to determine a user ID.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Username",
+            "display_name": "Username:",
+            "type": "username",
+            "help_text": "Select the username that this integration is attached to.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Token",
+            "display_name": "Token:",
+            "type": "generated",
+            "help_text": "Generated token to validate incoming requests from AWS SNS.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyBpZD0ibG9nb19hcnQiIGRhdGEtbmFtZT0ibG9nbyBhcnQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iOTcuMzI1IDg0LjA1IDY4MC42NSA2MjcuMSIgd2lkdGg9IjY4MC42NSIgaGVpZ2h0PSI2MjcuMSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmYzZkMjY7fS5jbHMtMntmaWxsOiNlMjQzMjk7fS5jbHMtM3tmaWxsOiNmY2EzMjY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5naXRsYWItaWNvbi1yZ2I8L3RpdGxlPjxnIGlkPSJnNDQiPjxwYXRoIGlkPSJwYXRoNDYiIGNsYXNzPSJjbHMtMSIgZD0iTTQ2MS4xNywzMDEuODNsLTE4LjkxLTU4LjEyTDQwNC44NCwxMjguNDNhNi40Nyw2LjQ3LDAsMCwwLTEyLjI3LDBMMzU1LjE1LDI0My42NEgyMzAuODJMMTkzLjQsMTI4LjQzYTYuNDYsNi40NiwwLDAsMC0xMi4yNiwwTDE0My43OCwyNDMuNjRsLTE4LjkxLDU4LjE5YTEyLjg4LDEyLjg4LDAsMCwwLDQuNjYsMTQuMzlMMjkzLDQzNSw0NTYuNDQsMzE2LjIyYTEyLjksMTIuOSwwLDAsMCw0LjczLTE0LjM5Ii8+PC9nPjxnIGlkPSJnNDgiPjxwYXRoIGlkPSJwYXRoNTAiIGNsYXNzPSJjbHMtMiIgZD0iTTI5Myw0MzQuOTFoMGw2Mi4xNi0xOTEuMjhIMjMwLjg3TDI5Myw0MzQuOTFaIi8+PC9nPjxnIGlkPSJnNTYiPjxwYXRoIGlkPSJwYXRoNTgiIGNsYXNzPSJjbHMtMSIgZD0iTTI5Myw0MzQuOTEsMjMwLjgyLDI0My42M2gtODdMMjkzLDQzNC45MVoiLz48L2c+PGcgaWQ9Imc2NCI+PHBhdGggaWQ9InBhdGg2NiIgY2xhc3M9ImNscy0zIiBkPSJNMTQzLjc1LDI0My42OWgwbC0xOC45MSw1OC4xMmExMi44OCwxMi44OCwwLDAsMCw0LjY2LDE0LjM5TDI5Myw0MzUsMTQzLjc1LDI0My42OVoiLz48L2c+PGcgaWQ9Imc3MiI+PHBhdGggaWQ9InBhdGg3NCIgY2xhc3M9ImNscy0yIiBkPSJNMTQzLjc4LDI0My42OWg4Ny4xMUwxOTMuNCwxMjguNDlhNi40Nyw2LjQ3LDAsMCwwLTEyLjI3LDBsLTM3LjM1LDExNS4yWiIvPjwvZz48ZyBpZD0iZzc2Ij48cGF0aCBpZD0icGF0aDc4IiBjbGFzcz0iY2xzLTEiIGQ9Ik0yOTMsNDM0LjkxbDYyLjE2LTE5MS4yOEg0NDIuM0wyOTMsNDM0LjkxWiIvPjwvZz48ZyBpZD0iZzgwIj48cGF0aCBpZD0icGF0aDgyIiBjbGFzcz0iY2xzLTMiIGQ9Ik00NDIuMjQsMjQzLjY5aDBsMTguOTEsNTguMTJhMTIuODUsMTIuODUsMCwwLDEtNC42NiwxNC4zOUwyOTMsNDM0LjkxbDE0OS4yLTE5MS4yMloiLz48L2c+PGcgaWQ9Imc4NCI+PHBhdGggaWQ9InBhdGg4NiIgY2xhc3M9ImNscy0yIiBkPSJNNDQyLjI4LDI0My42OWgtODcuMWwzNy40Mi0xMTUuMmE2LjQ2LDYuNDYsMCwwLDEsMTIuMjYsMGwzNy40MiwxMTUuMloiLz48L2c+PC9zdmc+Cg==",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/download/v1.0.0/com.github.manland.mattermost-plugin-gitlab-1.0.0.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "com.github.manland.mattermost-plugin-gitlab",
+      "name": "GitLab",
+      "description": "GitLab plugin for Mattermost.",
+      "version": "1.0.0",
+      "min_server_version": "5.10.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "To set up the GitLab plugin, you need to register a GitLab OAuth app here https://gitlab.com/profile/applications.",
+        "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/manland/mattermost-plugin-gitlab).",
+        "settings": [
+          {
+            "key": "GitlabURL",
+            "display_name": "Gitlab URL",
+            "type": "text",
+            "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
+            "placeholder": "https://gitlab.com",
+            "default": "https://gitlab.com"
+          },
+          {
+            "key": "GitlabOAuthClientID",
+            "display_name": "GitLab OAuth Client ID",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitlabOAuthClientSecret",
+            "display_name": "Gitlab OAuth Client Secret",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The webhook secret set in GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitlabGroup",
+            "display_name": "Gitlab Group",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
+            "placeholder": "groupName",
+            "default": null
+          },
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-nps",
+    "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-nps/releases/download/v1.0.3/com.mattermost.nps-1.0.3.tar.gz",
+    "download_signature": "",
+    "manifest": {
+      "id": "com.mattermost.nps",
+      "name": "User Satisfaction Surveys",
+      "description": "This plugin sends quarterly user satisfaction surveys to gather feedback and help improve Mattermost.",
+      "version": "1.0.3",
+      "min_server_version": "5.14.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Mattermost sends user satisfaction surveys to gather feedback and improve product quality. [Learn more](!https://mattermost.com/pl/default-nps) about user satisfaction surveys.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableSurvey",
+            "display_name": "Enable User Satisfaction Survey",
+            "type": "bool",
+            "help_text": "When true, a [user satisfaction survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://about.mattermost.com/default-privacy-policy) for more information on the collection and use of information received through our services.",
+            "placeholder": "",
+            "default": true
+          }
+        ]
+      }
+    }
+  }
+]
