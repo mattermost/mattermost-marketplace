@@ -1,20 +1,20 @@
-# Mattermost Marketplace
+# Plugin Marketplace
 
-The Mattermost Marketplace is a collection of plugins for use with [Mattermost](https://github.com/mattermost/mattermost-server). This repository houses the stateless HTTP service that will eventually run at marketplace.integrations.mattermost.com. It is meant to be queried by the Mattermost server to enable plugin discovery by system administrators.
+The Plugin Marketplace is a collection of plugins for use with [Mattermost](https://github.com/mattermost/mattermost-server). This repository houses the stateless HTTP service that will eventually run at marketplace.integrations.mattermost.com. It is meant to be queried by the Mattermost server to enable plugin discovery by system administrators.
 
-Although Mattermost hosts the marketplace as an AWS Lambda function backed by S3 and CloudFront, the core feature set is designed for use in any hosting environment, enabling private, self-hosted collections of plugins.
+Although Mattermost hosts the Marketplace as an AWS Lambda function backed by S3 and CloudFront, the core feature set is designed for use in any hosting environment, enabling private, self-hosted collections of plugins.
 
-Read more about the [Mattermost Plugins Marketplace Architecture](https://docs.google.com/document/d/1tVj0eNwMdIIGn8YoTs-cYz9NYvXjqx6bqWH-wa-yDLk/edit).
+Read more about the [Plugin Marketplace Architecture](https://docs.google.com/document/d/1tVj0eNwMdIIGn8YoTs-cYz9NYvXjqx6bqWH-wa-yDLk/edit).
 
 ## Other Resources
 
-This repository houses the open-source components of the Mattermost Plugins Marketplce. Other resources are linked below:
+This repository houses the open-source components of the Plugin Marketplace. Other resources are linked below:
 
 - [Mattermost the server and user interface](https://github.com/mattermost/mattermost-server)
 
 ## Get Involved
 
-- [Join the discussion on ~Plugins Marketplace](https://community.mattermost.com/core/channels/plugins-marketplace)
+- [Join the discussion on ~Plugin Marketplace](https://community.mattermost.com/core/channels/plugins-marketplace)
 
 ## Developing
 
@@ -40,7 +40,7 @@ $ make test
 
 ### Updating plugins.json
 
-At the moment, the marketplace simply points at the latest release of a fixed set of Mattermost plugins. In the future, this database will be fine-tuned to facilitate tracking multiple versions for the appropriate Mattermost server version. To update `plugins.json`, simply run:
+At the moment, the Marketplace simply points at the latest release of a fixed set of Mattermost plugins. In the future, this database will be fine-tuned to facilitate tracking multiple versions for the appropriate Mattermost server version. To update `plugins.json`, simply run:
 
 ```
 $ go run ./cmd/generator --github-token <your github token> --debug > plugins.json
