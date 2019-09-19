@@ -101,7 +101,7 @@ var generatorCmd = &cobra.Command{
 			"mattermost-plugin-nps",
 		}
 
-		icons := map[string]string{
+		iconPaths := map[string]string{
 			"mattermost-plugin-aws-SNS": "data/icons/aws-sns.svg",
 			"mattermost-plugin-github":  "https://unpkg.com/simple-icons@latest/icons/github.svg",
 			"mattermost-plugin-gitlab":  "data/icons/gitlab.svg",
@@ -119,8 +119,8 @@ var generatorCmd = &cobra.Command{
 				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
 			}
 
-			if icon, ok := icons[repositoryName]; ok {
-				icon, err := getIcon(ctx, icon)
+			if iconPath, ok := iconPaths[repositoryName]; ok {
+				icon, err := getIcon(ctx, iconPath)
 				if err != nil {
 					return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
 				}
@@ -129,7 +129,7 @@ var generatorCmd = &cobra.Command{
 				} else {
 					kind, err := filetype.Image(icon)
 					if err != nil {
-						return errors.Wrapf(err, "failed to match icon at %s to image", icon)
+						return errors.Wrapf(err, "failed to match icon at %s to image", iconPath)
 					}
 
 					plugin.IconData = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
