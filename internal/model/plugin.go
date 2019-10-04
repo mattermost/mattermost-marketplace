@@ -7,9 +7,12 @@ import (
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 )
 
-// PluginSignatures represents Mattermost plugin signatures
-type PluginSignatures struct {
-	Signature     string `json:"signature"`
+// PluginSignature is a public key signature of a plugin and the corresponding public key hash for use in verifying a plugin downloaded from the marketplace.
+type PluginSignature struct {
+	// Signature represents a signature of a plugin saved in base64 encoding.
+	Signature string `json:"signature"`
+	// PublicKeyHash represents first arbitrary number of symbols of the
+	// public key fingerprint, hashed using SHA-1 algorithm.
 	PublicKeyHash string `json:"public_key_hash"`
 }
 
@@ -19,7 +22,7 @@ type Plugin struct {
 	IconData    string                    `json:"icon_data"`
 	DownloadURL string                    `json:"download_url"`
 	Manifest    *mattermostModel.Manifest `json:"manifest"`
-	Signatures  []*PluginSignatures       `json:"signatures"`
+	Signatures  []*PluginSignature        `json:"signatures"`
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.

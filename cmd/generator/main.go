@@ -255,41 +255,41 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	return plugin, nil
 }
 
-func downloadSignatures(assets []github.ReleaseAsset) ([]*model.PluginSignatures, error) {
-	signatures := make([]*model.PluginSignatures, 0, len(assets))
+func downloadSignatures(assets []github.ReleaseAsset) ([]*model.PluginSignature, error) {
+	signatures := make([]*model.PluginSignature, 0, len(assets))
 	for _, asset := range assets {
-		hash, err := getHashFromSignatureFileName(asset)
+		hash, err := getPublicKeyHashFromAsset(asset)
 		if err != nil {
-			return nil, err
+			return nil, errors.Wrap(err, "Can't get public key hash from the asset")
 		}
-		sig, err := getSignatureFromSignatureFileName(asset)
+		sig, err := getSignatureFromAsset(asset)
 		if err != nil {
-			return nil, err
+			return nil, errors.Wrap(err, "Can't get signature from the asset")
 		}
 
-		signature := &model.PluginSignatures{
-			PublicKeyHash: hash,
+		signature := &model.PluginSignature{
 			Signature:     sig,
+			PublicKeyHash: hash,
 		}
 		signatures = append(signatures, signature)
 	}
 	return signatures, nil
 }
 
-func getHashFromSignatureFileName(asset github.ReleaseAsset) (string, error) {
+func getPublicKeyHashFromAsset(asset github.ReleaseAsset) (string, error) {
 	name := asset.GetName()
 	if !strings.HasSuffix(name, ".sig") && !strings.HasSuffix(name, ".asc") {
 		return "", errors.New("signature file has wrong extension")
 	}
-	name = name[:len(name)-4]
+	name = name[:len(name)-4] //Trim the suffix
 	lastIndex := strings.LastIndex(name, "-")
 	if lastIndex == -1 {
-		return "", errors.New("can't find public key hash in the signature file name")
+		return "", errors.New("can't find public key hash in the signature file name " + name)
 	}
 	return name[lastIndex+1:], nil
 }
 
-func getSignatureFromSignatureFileName(asset github.ReleaseAsset) (string, error) {
+func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {
 	url := asset.GetBrowserDownloadURL()
 	logger.Debugf("fetching signature file from %s", url)
 

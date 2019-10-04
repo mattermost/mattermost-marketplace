@@ -36,7 +36,7 @@ func TestPluginFromReader(t *testing.T) {
 			IconData:    "icon-data.svg",
 			DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 			Manifest:    &mattermostModel.Manifest{},
-			Signatures:  []*PluginSignatures{{Signature: "signature1", PublicKeyHash: "hash1"}},
+			Signatures:  []*PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
 		}, plugin)
 	})
 }
@@ -69,14 +69,14 @@ func TestPluginsFromReader(t *testing.T) {
 				IconData:    "icon-data.svg",
 				DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 				Manifest:    &mattermostModel.Manifest{},
-				Signatures:  []*PluginSignatures{{Signature: "signature1", PublicKeyHash: "hash1"}},
+				Signatures:  []*PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
 			},
 			{
 				HomepageURL: "https://github.com/mattermost/mattermost-plugin-starter-template",
 				IconData:    "icon-data2.svg",
 				DownloadURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
 				Manifest:    &mattermostModel.Manifest{},
-				Signatures:  []*PluginSignatures{{Signature: "signature2", PublicKeyHash: "hash2"}},
+				Signatures:  []*PluginSignature{{Signature: "signature2", PublicKeyHash: "hash2"}},
 			},
 		}, plugin)
 	})
