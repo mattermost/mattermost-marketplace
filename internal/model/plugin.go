@@ -11,8 +11,8 @@ import (
 type PluginSignature struct {
 	// Signature represents a signature of a plugin saved in base64 encoding.
 	Signature string `json:"signature"`
-	// PublicKeyHash represents first arbitrary number of symbols of the
-	// public key fingerprint, hashed using SHA-1 algorithm.
+	// PublicKeyHash represents first 6 symbols of the public key fingerprint,
+	// hashed using SHA-1 algorithm.
 	PublicKeyHash string `json:"public_key_hash"`
 }
 

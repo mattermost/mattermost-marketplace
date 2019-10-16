@@ -284,7 +284,7 @@ func getPublicKeyHashFromAsset(asset github.ReleaseAsset) (string, error) {
 	name = name[:len(name)-4] //Trim the suffix
 	lastIndex := strings.LastIndex(name, "-")
 	if lastIndex == -1 {
-		return "", errors.New("can't find public key hash in the signature file name " + name)
+		return "", errors.Errorf("can't find public key hash in the signature file name %s", name)
 	}
 	return name[lastIndex+1:], nil
 }
