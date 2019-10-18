@@ -104,7 +104,7 @@ var generatorCmd = &cobra.Command{
 
 		iconPaths := map[string]string{
 			"mattermost-plugin-aws-SNS": "data/icons/aws-sns.svg",
-			"mattermost-plugin-github":  "https://unpkg.com/simple-icons@latest/icons/github.svg",
+			"mattermost-plugin-github":  "data/icons/github.svg",
 			"mattermost-plugin-gitlab":  "data/icons/gitlab.svg",
 			"mattermost-plugin-jenkins": "data/icons/jenkins.svg",
 			"mattermost-plugin-jira":    "data/icons/jira.svg",
