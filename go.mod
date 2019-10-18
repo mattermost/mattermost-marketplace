@@ -6,7 +6,6 @@ require (
 	github.com/akrylysov/algnhsa v0.0.0-20190319020909-05b3d192e9a7
 	github.com/aws/aws-lambda-go v1.13.0 // indirect
 	github.com/go-ldap/ldap v3.0.3+incompatible // indirect
-	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/google/go-github/v28 v28.0.0
 	github.com/gorilla/mux v1.7.3
 	github.com/h2non/filetype v1.0.10
@@ -23,5 +22,3 @@ require (
 	github.com/stretchr/testify v1.4.0
 	golang.org/x/oauth2 v0.0.0-20190319182350-c85d3e98c914
 )
-
-replace git.apache.org/thrift.git => github.com/apache/thrift v0.12.0

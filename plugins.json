@@ -2,13 +2,16 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
-    "download_url": "https://github.com/mattermost/mattermost-plugin-github/releases/download/v0.11.0/github-0.11.0.tar.gz",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-github/releases/download/v0.12.0/github-0.12.0.tar.gz",
     "download_signature": "",
     "manifest": {
       "id": "github",
       "name": "GitHub",
       "description": "GitHub plugin for Mattermost.",
-      "version": "0.11.0",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-github/issues",
+      "icon_path": "assets/icon.svg",
+      "version": "0.12.0",
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
@@ -91,7 +94,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-10-25T22:01:42Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
@@ -126,7 +130,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-10-01T17:54:25Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
@@ -197,7 +202,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-10-02T20:55:52Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
@@ -278,7 +284,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-10-14T13:18:52Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
@@ -304,7 +311,8 @@
         "footer": "",
         "settings": null
       }
-    }
+    },
+    "updated_at": "2019-10-01T18:32:49Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-jenkins",
@@ -346,7 +354,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-08-14T21:13:53Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-antivirus",
@@ -388,7 +397,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-08-08T23:17:57Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
@@ -416,7 +426,8 @@
         "footer": "",
         "settings": null
       }
-    }
+    },
+    "updated_at": "2019-10-01T18:01:52Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS",
@@ -474,7 +485,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-07-17T17:06:16Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
@@ -560,7 +572,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-10-10T21:56:38Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-nps",
@@ -598,7 +611,8 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-07-18T17:54:15Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-webex",
@@ -636,6 +650,7 @@
           }
         ]
       }
-    }
+    },
+    "updated_at": "2019-10-17T16:37:46Z"
   }
 ]

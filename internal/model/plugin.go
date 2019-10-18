@@ -3,6 +3,7 @@ package model
 import (
 	"encoding/json"
 	"io"
+	"time"
 
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 )
@@ -14,6 +15,7 @@ type Plugin struct {
 	DownloadURL       string                    `json:"download_url"`
 	DownloadSignature []byte                    `json:"download_signature"`
 	Manifest          *mattermostModel.Manifest `json:"manifest"`
+	UpdatedAt         time.Time                 `json:"updated_at"`
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.
