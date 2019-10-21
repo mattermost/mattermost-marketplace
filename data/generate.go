@@ -1,3 +1,3 @@
-//go:generate statik -f -src=./static
+//go:generate statik -f -m -src=./static
 
 package data

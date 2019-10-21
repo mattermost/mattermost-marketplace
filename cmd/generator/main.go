@@ -99,6 +99,7 @@ var generatorCmd = &cobra.Command{
 			"mattermost-plugin-aws-SNS",
 			"mattermost-plugin-gitlab",
 			"mattermost-plugin-nps",
+			"mattermost-plugin-webex",
 		}
 
 		iconPaths := map[string]string{
@@ -107,6 +108,7 @@ var generatorCmd = &cobra.Command{
 			"mattermost-plugin-gitlab":  "data/icons/gitlab.svg",
 			"mattermost-plugin-jenkins": "data/icons/jenkins.svg",
 			"mattermost-plugin-jira":    "data/icons/jira.svg",
+			"mattermost-plugin-webex":   "data/icons/webex.svg",
 		}
 
 		plugins := []*model.Plugin{}
