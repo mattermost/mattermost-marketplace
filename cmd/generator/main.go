@@ -124,7 +124,6 @@ var generatorCmd = &cobra.Command{
 			}
 
 			if len(plugin.IconData) == 0 {
-
 				if iconPath, ok := iconPaths[repositoryName]; ok {
 					icon, err := getIcon(ctx, iconPath)
 					if err != nil {
