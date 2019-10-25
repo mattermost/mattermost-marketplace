@@ -11,7 +11,7 @@ require (
 	github.com/h2non/filetype v1.0.10
 	github.com/h2non/go-is-svg v0.0.0-20160927212452-35e8c4b0612c
 	github.com/jehiah/go-strftime v0.0.0-20171201141054-1d33003b3869 // indirect
-	github.com/mattermost/mattermost-server v0.0.0-20191017141203-48c06e9bce3b
+	github.com/mattermost/mattermost-server master
 	github.com/minio/minio-go v0.0.0-20190422205105-a8704b60278f // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.1 // indirect
