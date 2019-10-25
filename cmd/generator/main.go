@@ -239,14 +239,14 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 			return nil, errors.Wrapf(err, "failed to read plugin bundle for release %s", releaseName)
 		}
 
-		manifestData, err := getTarFile(tar.NewReader(bytes.NewReader(bundleData)), "plugin.json")
+		manifestData, err := getFromTarFile(tar.NewReader(bytes.NewReader(bundleData)), "plugin.json")
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to read manifest from plugin bundle for release %s", releaseName)
 		}
 		plugin.Manifest = mattermostModel.ManifestFromJson(bytes.NewReader(manifestData))
 
 		if plugin.Manifest.IconPath != "" {
-			iconData, err := getTarFile(tar.NewReader(bytes.NewReader(bundleData)), plugin.Manifest.IconPath)
+			iconData, err := getFromTarFile(tar.NewReader(bytes.NewReader(bundleData)), plugin.Manifest.IconPath)
 			if err != nil {
 				return nil, errors.Wrapf(err, "failed to read icon data from plugin bundle for release %s", releaseName)
 			}
@@ -275,7 +275,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	return plugin, nil
 }
 
-func getTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
+func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 	for {
 		hdr, err := reader.Next()
 		if err == io.EOF {
