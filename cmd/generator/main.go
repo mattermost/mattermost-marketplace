@@ -190,7 +190,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 				timestampUpdatedAt = releaseAsset.GetCreatedAt()
 			}
 
-			updatedAt = timestampUpdatedAt.In(timestampUpdatedAt.Location())
+			updatedAt = timestampUpdatedAt.In(time.UTC)
 		}
 	}
 
