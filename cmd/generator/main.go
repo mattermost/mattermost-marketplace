@@ -244,6 +244,9 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 			return nil, errors.Wrapf(err, "failed to read manifest from plugin bundle for release %s", releaseName)
 		}
 		plugin.Manifest = mattermostModel.ManifestFromJson(bytes.NewReader(manifestData))
+		if plugin.Manifest == nil {
+			return nil, errors.Errorf("manifest nil after reading from plugin bundle for release %s", releaseName)
+		}
 
 		if plugin.Manifest.IconPath != "" {
 			iconData, err := getFromTarFile(tar.NewReader(bytes.NewReader(bundleData)), plugin.Manifest.IconPath)
