@@ -210,7 +210,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	// If no plugin in existing database or the updated timestamp has changed, attempt to download and inspect manifest.
 	if plugin == nil || updatedAt.IsZero() || plugin.UpdatedAt.Before(updatedAt) {
 		if plugin == nil {
-			logger.Debug("no existing plugin; fetching download url")
+			logger.Debug("no existing plugin")
 		} else if updatedAt.IsZero() {
 			logger.Debug("no new update timestamp for plugin")
 		} else if plugin.UpdatedAt.IsZero() {
