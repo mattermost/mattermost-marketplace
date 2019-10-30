@@ -177,10 +177,19 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	logger.Debugf("found latest release %s", releaseName)
 
 	downloadURL := ""
+	signatureAssets := make([]github.ReleaseAsset, 0)
 	for _, releaseAsset := range latestRelease.Assets {
-		if strings.HasSuffix(releaseAsset.GetName(), ".tar.gz") {
+		assetName := releaseAsset.GetName()
+		if strings.HasSuffix(assetName, ".tar.gz") {
 			downloadURL = releaseAsset.GetBrowserDownloadURL()
 		}
+		if strings.HasSuffix(assetName, ".sig") || strings.HasSuffix(assetName, ".asc") {
+			signatureAssets = append(signatureAssets, releaseAsset)
+		}
+	}
+	signatures, err := downloadSignatures(signatureAssets)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
 	}
 
 	if downloadURL == "" {
@@ -239,13 +248,64 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	plugin.HomepageURL = repository.GetHTMLURL()
 	plugin.IconData = ""
 	plugin.DownloadURL = downloadURL
-	plugin.DownloadSignature = []byte{}
+	plugin.Signatures = signatures
 
 	if plugin.Manifest == nil {
 		return nil, fmt.Errorf("failed to find plugin manifest for release %s", releaseName)
 	}
 
 	return plugin, nil
+}
+
+func downloadSignatures(assets []github.ReleaseAsset) ([]*model.PluginSignature, error) {
+	signatures := make([]*model.PluginSignature, 0, len(assets))
+	for _, asset := range assets {
+		hash, err := getPublicKeyHashFromAsset(asset)
+		if err != nil {
+			return nil, errors.Wrap(err, "Can't get public key hash from the asset")
+		}
+		sig, err := getSignatureFromAsset(asset)
+		if err != nil {
+			return nil, errors.Wrap(err, "Can't get signature from the asset")
+		}
+
+		signature := &model.PluginSignature{
+			Signature:     sig,
+			PublicKeyHash: hash,
+		}
+		signatures = append(signatures, signature)
+	}
+	return signatures, nil
+}
+
+func getPublicKeyHashFromAsset(asset github.ReleaseAsset) (string, error) {
+	name := asset.GetName()
+	if !strings.HasSuffix(name, ".sig") && !strings.HasSuffix(name, ".asc") {
+		return "", errors.New("signature file has wrong extension")
+	}
+	name = name[:len(name)-4] //Trim the suffix
+	lastIndex := strings.LastIndex(name, "-")
+	if lastIndex == -1 {
+		return "", errors.Errorf("can't find public key hash in the signature file name %s", name)
+	}
+	return name[lastIndex+1:], nil
+}
+
+func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {
+	url := asset.GetBrowserDownloadURL()
+	logger.Debugf("fetching signature file from %s", url)
+
+	resp, err := http.Get(url)
+	if err != nil {
+		return "", errors.Wrapf(err, "failed to download signature file %s", asset.GetName())
+	}
+	defer resp.Body.Close()
+
+	sigFile, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return "", errors.Wrapf(err, "failed to open downloaded signature file %s", asset.GetName())
+	}
+	return base64.StdEncoding.EncodeToString(sigFile), nil
 }
 
 func getLatestRelease(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) (*github.RepositoryRelease, error) {
