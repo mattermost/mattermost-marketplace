@@ -301,7 +301,8 @@ func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 
 		// Match the filepath, assuming the tar file contains a leading folder matching the
 		// plugin id.
-		if matched, err := path.Match(fmt.Sprintf("*/%s", filepath), hdr.Name); err != nil {
+		matched, err := path.Match(fmt.Sprintf("*/%s", filepath), hdr.Name)
+		if err != nil {
 			return nil, errors.Wrapf(err, "failed to match file %s in tar file", filepath)
 		} else if !matched {
 			continue
