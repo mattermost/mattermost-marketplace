@@ -13,27 +13,27 @@ import (
 
 func TestPlugins(t *testing.T) {
 	demoPlugin := &model.Plugin{
-		HomepageURL:       "https://github.com/mattermost/mattermost-plugin-demo",
-		IconData:          "icon-data.svg",
-		DownloadURL:       "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
-		DownloadSignature: []byte("signature"),
+		HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
+		IconData:    "icon-data.svg",
+		DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 		Manifest: &mattermostModel.Manifest{
 			Id:          "com.mattermost.demo-plugin",
 			Name:        "Demo Plugin",
 			Description: "This plugin demonstrates the capabilities of a Mattermost plugin.",
 		},
+		Signatures: []*model.PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
 	}
 
 	starterPlugin := &model.Plugin{
-		HomepageURL:       "https://github.com/mattermost/mattermost-plugin-starter-template",
-		IconData:          "icon-data2.svg",
-		DownloadURL:       "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
-		DownloadSignature: []byte("signature2"),
+		HomepageURL: "https://github.com/mattermost/mattermost-plugin-starter-template",
+		IconData:    "icon-data2.svg",
+		DownloadURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
 		Manifest: &mattermostModel.Manifest{
 			Id:          "com.mattermost.plugin-starter-template",
 			Name:        "Plugin Starter Template",
 			Description: "This plugin serves as a starting point for writing a Mattermost plugin.",
 		},
+		Signatures: []*model.PluginSignature{{Signature: "signature2", PublicKeyHash: "hash2"}},
 	}
 
 	data, err := json.Marshal([]*model.Plugin{
