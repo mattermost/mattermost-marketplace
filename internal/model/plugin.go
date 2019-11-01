@@ -14,6 +14,7 @@ type Plugin struct {
 	IconData          string                    `json:"icon_data"`
 	DownloadURL       string                    `json:"download_url"`
 	DownloadSignature []byte                    `json:"download_signature"`
+	ReleaseNotesURL   string                    `json:"release_notes_url"`
 	Manifest          *mattermostModel.Manifest `json:"manifest"`
 	UpdatedAt         time.Time                 `json:"updated_at"`
 }

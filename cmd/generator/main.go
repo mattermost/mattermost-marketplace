@@ -181,6 +181,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	logger.Debugf("found latest release %s", releaseName)
 
 	downloadURL := ""
+	releaseNotesURL := latestRelease.GetHTMLURL()
 	var updatedAt time.Time
 	for _, releaseAsset := range latestRelease.Assets {
 		if strings.HasSuffix(releaseAsset.GetName(), ".tar.gz") {
@@ -273,6 +274,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	}
 	plugin.DownloadURL = downloadURL
 	plugin.DownloadSignature = []byte{}
+	plugin.ReleaseNotesURL = releaseNotesURL
 	plugin.UpdatedAt = updatedAt
 
 	return plugin, nil
