@@ -8,7 +8,8 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
-var ErrNotFound = errors.New("Plugin not found.")
+// ErrNotFound Error when a plugin is not found.
+var ErrNotFound = errors.New("plugin not found")
 
 func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
 	filter = strings.ToLower(filter)
@@ -87,7 +88,7 @@ func (store *Store) getPlugins(serverVersion string) ([]*model.Plugin, error) {
 // getPlugin gets the first plugin from the sorted pluginVersions slice that satisfies serverVersion.
 func getPlugin(serverVersion string, pluginVersions pluginVersions) (*model.Plugin, error) {
 	if len(pluginVersions) == 0 {
-		return nil, errors.New("plugins should not be empty.")
+		return nil, errors.New("plugins should not be empty")
 	}
 
 	// Get the latest plugin if no server version is provided
