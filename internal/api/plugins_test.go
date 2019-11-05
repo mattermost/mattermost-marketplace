@@ -280,5 +280,24 @@ func TestPlugins(t *testing.T) {
 			require.NoError(t, err)
 			require.Equal(t, []*model.Plugin{plugin1_3, plugin2_1, plugin3_3, plugin4_1}, plugins)
 		})
+
+		t.Run("invalid server_version format", func(t *testing.T) {
+			client, tearDown := setupApi(t, plugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage:       -1,
+				ServerVersion: "1",
+			})
+			require.Error(t, err)
+			require.Nil(t, plugins)
+
+			plugins, err = client.GetPlugins(&api.GetPluginsRequest{
+				PerPage:       -1,
+				ServerVersion: "a",
+			})
+			require.Error(t, err)
+			require.Nil(t, plugins)
+		})
 	})
 }
