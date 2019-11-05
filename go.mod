@@ -10,6 +10,7 @@ require (
 	github.com/gorilla/mux v1.7.3
 	github.com/h2non/filetype v1.0.10
 	github.com/h2non/go-is-svg v0.0.0-20160927212452-35e8c4b0612c
+	github.com/hashicorp/go-version v1.2.0
 	github.com/mattermost/mattermost-server v5.12.3+incompatible
 	github.com/pkg/errors v0.8.1
 	github.com/rakyll/statik v0.1.6

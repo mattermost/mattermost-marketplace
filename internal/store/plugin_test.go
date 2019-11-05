@@ -17,9 +17,25 @@ func TestPlugins(t *testing.T) {
 		IconData:    "icon-data.svg",
 		DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 		Manifest: &mattermostModel.Manifest{
-			Id:          "com.mattermost.demo-plugin",
-			Name:        "Demo Plugin",
-			Description: "This plugin demonstrates the capabilities of a Mattermost plugin.",
+			Id:               "com.mattermost.demo-plugin",
+			Name:             "Demo Plugin",
+			Description:      "This plugin demonstrates the capabilities of a Mattermost plugin.",
+			Version:          "1.2.3",
+			MinServerVersion: "1.14.0",
+		},
+		Signatures: []*model.PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+	}
+
+	demoPlugin_2 := &model.Plugin{
+		HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
+		IconData:    "icon-data.svg",
+		DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
+		Manifest: &mattermostModel.Manifest{
+			Id:               "com.mattermost.demo-plugin",
+			Name:             "Demo Plugin",
+			Description:      "This plugin demonstrates the capabilities of a Mattermost plugin.",
+			Version:          "1.2.4",
+			MinServerVersion: "1.15.0",
 		},
 		Signatures: []*model.PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
 	}
@@ -29,15 +45,18 @@ func TestPlugins(t *testing.T) {
 		IconData:    "icon-data2.svg",
 		DownloadURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
 		Manifest: &mattermostModel.Manifest{
-			Id:          "com.mattermost.plugin-starter-template",
-			Name:        "Plugin Starter Template",
-			Description: "This plugin serves as a starting point for writing a Mattermost plugin.",
+			Id:               "com.mattermost.plugin-starter-template",
+			Name:             "Plugin Starter Template",
+			Description:      "This plugin serves as a starting point for writing a Mattermost plugin.",
+			Version:          "1.2.3",
+			MinServerVersion: "1.15.0",
 		},
 		Signatures: []*model.PluginSignature{{Signature: "signature2", PublicKeyHash: "hash2"}},
 	}
 
 	data, err := json.Marshal([]*model.Plugin{
 		demoPlugin,
+		demoPlugin_2,
 		starterPlugin,
 	})
 	require.NoError(t, err)
@@ -63,7 +82,7 @@ func TestPlugins(t *testing.T) {
 			Filter:  "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2}, actualPlugins)
 	})
 
 	t.Run("page 0, per page 10", func(t *testing.T) {
@@ -73,7 +92,7 @@ func TestPlugins(t *testing.T) {
 			Filter:  "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2, starterPlugin}, actualPlugins)
 	})
 
 	t.Run("page 0, per page 1", func(t *testing.T) {
@@ -83,7 +102,7 @@ func TestPlugins(t *testing.T) {
 			Filter:  "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2}, actualPlugins)
 	})
 
 	t.Run("page 0, per page 10", func(t *testing.T) {
@@ -93,7 +112,7 @@ func TestPlugins(t *testing.T) {
 			Filter:  "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2, starterPlugin}, actualPlugins)
 	})
 
 	t.Run("default paging", func(t *testing.T) {
@@ -101,7 +120,7 @@ func TestPlugins(t *testing.T) {
 			Filter: "",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2, starterPlugin}, actualPlugins)
 	})
 
 	t.Run("filter spaces", func(t *testing.T) {
@@ -109,7 +128,7 @@ func TestPlugins(t *testing.T) {
 			Filter: "  ",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2, starterPlugin}, actualPlugins)
 	})
 
 	t.Run("id match, exact", func(t *testing.T) {
@@ -117,7 +136,7 @@ func TestPlugins(t *testing.T) {
 			Filter: "com.mattermost.demo-plugin",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2}, actualPlugins)
 	})
 
 	t.Run("id match, case-insensitive", func(t *testing.T) {
@@ -125,7 +144,7 @@ func TestPlugins(t *testing.T) {
 			Filter: "com.mattermost.demo-PLUGIN",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2}, actualPlugins)
 	})
 
 	t.Run("name match, exact", func(t *testing.T) {
@@ -157,7 +176,7 @@ func TestPlugins(t *testing.T) {
 			Filter: "capabilities",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2}, actualPlugins)
 	})
 
 	t.Run("description match, case-insensitive, multiple matches", func(t *testing.T) {
@@ -165,6 +184,32 @@ func TestPlugins(t *testing.T) {
 			Filter: "MATTERMOST",
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{demoPlugin, starterPlugin}, actualPlugins)
+		require.Equal(t, []*model.Plugin{demoPlugin_2, starterPlugin}, actualPlugins)
+	})
+
+	t.Run("with a server version 1.15", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter:        "MATTERMOST",
+			ServerVersion: "1.15.0",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{demoPlugin_2, starterPlugin}, actualPlugins)
+	})
+
+	t.Run("with a server version 1.14", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			Filter:        "MATTERMOST",
+			ServerVersion: "1.14.0",
+		})
+		require.NoError(t, err)
+		require.Equal(t, []*model.Plugin{demoPlugin}, actualPlugins)
+	})
+
+	t.Run("with a server version that does not satisfy any plugin min server version", func(t *testing.T) {
+		actualPlugins, err := sqlStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
+			ServerVersion: "1.13.0",
+		})
+		require.NoError(t, err)
+		require.Nil(t, actualPlugins)
 	})
 }

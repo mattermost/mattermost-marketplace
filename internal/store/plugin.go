@@ -3,8 +3,12 @@ package store
 import (
 	"strings"
 
+	"github.com/pkg/errors"
+
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
+
+var ErrNotFound = errors.New("Plugin not found.")
 
 func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
 	filter = strings.ToLower(filter)
@@ -29,19 +33,21 @@ func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 		return nil, nil
 	}
 
-	var plugins []*model.Plugin
+	plugins, err := store.getPlugins(pluginFilter.ServerVersion)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to get plugins")
+	}
 
 	filter := strings.TrimSpace(pluginFilter.Filter)
-	if filter == "" {
-		plugins = store.plugins
-	} else {
-		for _, plugin := range store.plugins {
-			if !pluginMatchesFilter(plugin, filter) {
-				continue
+	if filter != "" {
+		n := 0
+		for _, plugin := range plugins {
+			if pluginMatchesFilter(plugin, filter) {
+				plugins[n] = plugin
+				n++
 			}
-
-			plugins = append(plugins, plugin)
 		}
+		plugins = plugins[:n]
 	}
 
 	if len(plugins) == 0 {
@@ -61,4 +67,49 @@ func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 	}
 
 	return plugins[start:end], nil
+}
+
+func (store *Store) getPlugins(serverVersion string) ([]*model.Plugin, error) {
+	var result []*model.Plugin
+
+	for _, plugin := range store.plugins {
+		p, err := getPlugin(serverVersion, plugin)
+		if err != nil && err != ErrNotFound {
+			return nil, errors.Wrapf(err, "failed to get plugin")
+		} else if err != ErrNotFound {
+			result = append(result, p)
+		}
+	}
+
+	return result, nil
+}
+
+// getPlugin gets the first plugin from the sorted pluginVersions slice that satisfies serverVersion.
+func getPlugin(serverVersion string, pluginVersions pluginVersions) (*model.Plugin, error) {
+	if len(pluginVersions) == 0 {
+		return nil, errors.New("plugins should not be empty.")
+	}
+
+	// Get the latest plugin if no server version is provided
+	if serverVersion == "" {
+		return pluginVersions[len(pluginVersions)-1], nil
+	}
+
+	for i := len(pluginVersions) - 1; i >= 0; i-- {
+		// Missing MinServerVersion means it's compatible with all servers
+		if pluginVersions[i].Manifest.MinServerVersion == "" {
+			return pluginVersions[i], nil
+		}
+
+		meetMinServerVersion, err := pluginVersions[i].Manifest.MeetMinServerVersion(serverVersion)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to MeetMinServerVersion version for manifest.Id) %s", pluginVersions[i].Manifest.Id)
+		}
+
+		if meetMinServerVersion {
+			return pluginVersions[i], nil
+		}
+	}
+
+	return nil, ErrNotFound
 }
