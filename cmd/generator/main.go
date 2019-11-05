@@ -12,6 +12,7 @@ import (
 	"net/http"
 	"os"
 	"path"
+	"sort"
 	"strings"
 
 	"github.com/google/go-github/v28/github"
@@ -116,29 +117,31 @@ var generatorCmd = &cobra.Command{
 		for _, repositoryName := range repositoryNames {
 			logger.Debugf("querying repository %s", repositoryName)
 
-			plugin, err := getReleasePlugin(ctx, client, repositoryName, includePreRelease, existingPlugins)
+			releasePlugins, err := getReleasePlugins(ctx, client, repositoryName, includePreRelease, existingPlugins)
 			if err != nil {
 				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
 			}
 
-			if iconPath, ok := iconPaths[repositoryName]; ok {
-				icon, err := getIcon(ctx, iconPath)
-				if err != nil {
-					return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
-				}
-				if svg.Is(icon) {
-					plugin.IconData = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon))
-				} else {
-					kind, err := filetype.Image(icon)
+			for _, plugin := range releasePlugins {
+				if iconPath, ok := iconPaths[repositoryName]; ok {
+					icon, err := getIcon(ctx, iconPath)
 					if err != nil {
-						return errors.Wrapf(err, "failed to match icon at %s to image", iconPath)
+						return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
 					}
+					if svg.Is(icon) {
+						plugin.IconData = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon))
+					} else {
+						kind, err := filetype.Image(icon)
+						if err != nil {
+							return errors.Wrapf(err, "failed to match icon at %s to image", iconPath)
+						}
 
-					plugin.IconData = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
+						plugin.IconData = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
+					}
 				}
-			}
 
-			plugins = append(plugins, plugin)
+				plugins = append(plugins, plugin)
+			}
 		}
 
 		encoder := json.NewEncoder(os.Stdout)
@@ -151,7 +154,7 @@ var generatorCmd = &cobra.Command{
 	},
 }
 
-func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) (*model.Plugin, error) {
+func getReleasePlugins(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
 	logger := logger.WithField("repository", repositoryName)
 
 	repository, _, err := client.Repositories.Get(ctx, "mattermost", repositoryName)
@@ -159,102 +162,116 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 		return nil, errors.Wrap(err, "failed to get repository")
 	}
 
-	latestRelease, err := getLatestRelease(ctx, client, repositoryName, includePreRelease)
+	releases, err := getReleases(ctx, client, repositoryName, includePreRelease)
 	if err != nil {
 		return nil, err
 	}
-	if latestRelease == nil {
-		logger.Warnf("no latest release found for repository")
+	if len(releases) == 0 {
+		logger.Warnf("no releases found for repository")
 		return nil, nil
 	}
 
-	var releaseName string
-	if latestRelease.GetName() == "" {
-		releaseName = latestRelease.GetTagName()
-	} else {
-		releaseName = fmt.Sprintf("%s (%s)", latestRelease.GetName(), latestRelease.GetTagName())
-	}
-	logger.Debugf("found latest release %s", releaseName)
-
-	downloadURL := ""
-	signatureAssets := make([]github.ReleaseAsset, 0)
-	for _, releaseAsset := range latestRelease.Assets {
-		assetName := releaseAsset.GetName()
-		if strings.HasSuffix(assetName, ".tar.gz") {
-			downloadURL = releaseAsset.GetBrowserDownloadURL()
+	var plugins []*model.Plugin
+	serverVersions := map[string]bool{}
+	// Start from the latest release
+	for i := len(releases) - 1; i >= 0; i-- {
+		release := releases[i]
+		var releaseName string
+		if release.GetName() == "" {
+			releaseName = release.GetTagName()
+		} else {
+			releaseName = fmt.Sprintf("%s (%s)", release.GetName(), release.GetTagName())
 		}
-		if strings.HasSuffix(assetName, ".sig") || strings.HasSuffix(assetName, ".asc") {
-			signatureAssets = append(signatureAssets, releaseAsset)
+		logger.Debugf("found release %s", releaseName)
+
+		downloadURL := ""
+		signatureAssets := make([]github.ReleaseAsset, 0)
+		for _, releaseAsset := range release.Assets {
+			assetName := releaseAsset.GetName()
+			if strings.HasSuffix(assetName, ".tar.gz") {
+				downloadURL = releaseAsset.GetBrowserDownloadURL()
+			}
+			if strings.HasSuffix(assetName, ".sig") || strings.HasSuffix(assetName, ".asc") {
+				signatureAssets = append(signatureAssets, releaseAsset)
+			}
 		}
-	}
-	signatures, err := downloadSignatures(signatureAssets)
-	if err != nil {
-		return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
-	}
-
-	if downloadURL == "" {
-		logger.Warnf("Failed to find plugin asset release %s", releaseName)
-		return nil, nil
-	}
-
-	var plugin *model.Plugin
-	for _, p := range existingPlugins {
-		if p.DownloadURL == downloadURL {
-			plugin = p
-			break
-		}
-	}
-
-	// If no plugin in existing database, attempt to download and inspect manifest.
-	if plugin == nil {
-		plugin = &model.Plugin{}
-
-		logger.Debugf("fetching download url %s", downloadURL)
-
-		resp, err := http.Get(downloadURL)
+		signatures, err := downloadSignatures(signatureAssets)
 		if err != nil {
-			return nil, errors.Wrapf(err, "failed to download plugin bundle for release %s", releaseName)
-		}
-		defer resp.Body.Close()
-
-		gzBundleReader, err := gzip.NewReader(resp.Body)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to read gzipped plugin bundle for release %s", releaseName)
+			return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
 		}
 
-		bundleReader := tar.NewReader(gzBundleReader)
-		for {
-			hdr, err := bundleReader.Next()
-			if err == io.EOF {
+		if downloadURL == "" {
+			logger.Warnf("Failed to find plugin asset release %s", releaseName)
+			continue
+		}
+
+		var plugin *model.Plugin
+		for _, p := range existingPlugins {
+			if p.DownloadURL == downloadURL {
+				plugin = p
 				break
 			}
-			if err != nil {
-				return nil, errors.Wrapf(err, "failed to read plugin bundle for release %s", releaseName)
-			}
-
-			if path.Base(hdr.Name) != "plugin.json" {
-				continue
-			}
-			manifest := mattermostModel.ManifestFromJson(bundleReader)
-
-			plugin.Manifest = manifest
-			break
 		}
-	} else {
-		logger.Debugf("skipping download since found existing plugin")
+
+		// If no plugin in existing database, attempt to download and inspect manifest.
+		if plugin == nil {
+			plugin = &model.Plugin{}
+
+			logger.Debugf("fetching download url %s", downloadURL)
+
+			resp, err := http.Get(downloadURL)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to download plugin bundle for release %s", releaseName)
+			}
+			defer resp.Body.Close()
+
+			gzBundleReader, err := gzip.NewReader(resp.Body)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to read gzipped plugin bundle for release %s", releaseName)
+			}
+
+			bundleReader := tar.NewReader(gzBundleReader)
+			for {
+				hdr, err := bundleReader.Next()
+				if err == io.EOF {
+					break
+				}
+				if err != nil {
+					return nil, errors.Wrapf(err, "failed to read plugin bundle for release %s", releaseName)
+				}
+
+				if path.Base(hdr.Name) != "plugin.json" {
+					continue
+				}
+				manifest := mattermostModel.ManifestFromJson(bundleReader)
+
+				plugin.Manifest = manifest
+				break
+			}
+		} else {
+			logger.Debugf("skipping download since found existing plugin")
+		}
+
+		// Reset fields, even if we found the existing plugin above.
+		plugin.HomepageURL = repository.GetHTMLURL()
+		plugin.IconData = ""
+		plugin.DownloadURL = downloadURL
+		plugin.Signatures = signatures
+
+		if plugin.Manifest == nil {
+			return nil, fmt.Errorf("failed to find plugin manifest for release %s", releaseName)
+		}
+
+		// Ignore if we have the latest plugin version for this server version
+		if serverVersions[plugin.Manifest.MinServerVersion] {
+			continue
+		}
+
+		serverVersions[plugin.Manifest.MinServerVersion] = true
+		plugins = append(plugins, plugin)
 	}
 
-	// Reset fields, even if we found the existing plugin above.
-	plugin.HomepageURL = repository.GetHTMLURL()
-	plugin.IconData = ""
-	plugin.DownloadURL = downloadURL
-	plugin.Signatures = signatures
-
-	if plugin.Manifest == nil {
-		return nil, fmt.Errorf("failed to find plugin manifest for release %s", releaseName)
-	}
-
-	return plugin, nil
+	return plugins, nil
 }
 
 func downloadSignatures(assets []github.ReleaseAsset) ([]*model.PluginSignature, error) {
@@ -308,7 +325,8 @@ func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {
 	return base64.StdEncoding.EncodeToString(sigFile), nil
 }
 
-func getLatestRelease(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) (*github.RepositoryRelease, error) {
+func getReleases(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) ([]*github.RepositoryRelease, error) {
+	var result []*github.RepositoryRelease
 	releases, _, err := client.Repositories.ListReleases(ctx, "mattermost", repoName, &github.ListOptions{
 		Page:    0,
 		PerPage: 10,
@@ -317,7 +335,6 @@ func getLatestRelease(ctx context.Context, client *github.Client, repoName strin
 		return nil, errors.Wrapf(err, "failed to get releases for repository %s", repoName)
 	}
 
-	var latestRelease *github.RepositoryRelease
 	for _, release := range releases {
 		if release.GetDraft() {
 			continue
@@ -327,12 +344,16 @@ func getLatestRelease(ctx context.Context, client *github.Client, repoName strin
 			continue
 		}
 
-		if latestRelease == nil || release.GetPublishedAt().After(latestRelease.GetPublishedAt().Time) {
-			latestRelease = release
-		}
+		result = append(result, release)
 	}
 
-	return latestRelease, nil
+	// Sort by PublishedAt
+	sort.SliceStable(
+		result,
+		func(i, j int) bool { return result[i].GetPublishedAt().Before(result[j].GetPublishedAt().Time) },
+	)
+
+	return result, nil
 }
 
 func getIcon(ctx context.Context, icon string) ([]byte, error) {

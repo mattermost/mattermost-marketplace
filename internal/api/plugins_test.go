@@ -130,7 +130,7 @@ func TestPlugins(t *testing.T) {
 			HomepageURL: "https://github.com/matterpoll/matterpoll",
 			IconData:    "icon-data3.svg",
 			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
-			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.2.3", MinServerVersion: "1.16.0"},
+			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.2.1"},
 			Signatures:  []*model.PluginSignature{{Signature: "signature3", PublicKeyHash: "hash3"}},
 		}
 
@@ -138,7 +138,15 @@ func TestPlugins(t *testing.T) {
 			HomepageURL: "https://github.com/matterpoll/matterpoll",
 			IconData:    "icon-data3.svg",
 			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
-			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.2.4", MinServerVersion: "1.17.0"},
+			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.2.2", MinServerVersion: "1.16.0"},
+			Signatures:  []*model.PluginSignature{{Signature: "signature3", PublicKeyHash: "hash3"}},
+		}
+
+		plugin3_3 := &model.Plugin{
+			HomepageURL: "https://github.com/matterpoll/matterpoll",
+			IconData:    "icon-data3.svg",
+			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.2.3", MinServerVersion: "1.17.0"},
 			Signatures:  []*model.PluginSignature{{Signature: "signature3", PublicKeyHash: "hash3"}},
 		}
 
@@ -150,7 +158,7 @@ func TestPlugins(t *testing.T) {
 			Signatures:  []*model.PluginSignature{{Signature: "signature3", PublicKeyHash: "hash3"}},
 		}
 
-		plugins := []*model.Plugin{plugin1_1, plugin1_2, plugin1_3, plugin2_1, plugin3_1, plugin3_2}
+		plugins := []*model.Plugin{plugin1_1, plugin1_2, plugin1_3, plugin2_1, plugin3_1, plugin3_2, plugin3_3}
 
 		t.Run("get plugins, page 0, perPage 2", func(t *testing.T) {
 			client, tearDown := setupApi(t, plugins)
@@ -173,7 +181,7 @@ func TestPlugins(t *testing.T) {
 				PerPage: 2,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin3_2}, plugins)
+			require.Equal(t, []*model.Plugin{plugin3_3}, plugins)
 		})
 
 		t.Run("server version that satisfies all plugins", func(t *testing.T) {
@@ -185,7 +193,7 @@ func TestPlugins(t *testing.T) {
 				ServerVersion: "1.18.0",
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1_3, plugin2_1, plugin3_2}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1_3, plugin2_1, plugin3_3}, plugins)
 		})
 
 		t.Run("server version that satisfies 1 plugin", func(t *testing.T) {
@@ -197,11 +205,12 @@ func TestPlugins(t *testing.T) {
 				ServerVersion: "1.15.0",
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1_3}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1_3, plugin3_1}, plugins)
 		})
 
 		t.Run("server version that satisfies no plugin", func(t *testing.T) {
-			client, tearDown := setupApi(t, plugins)
+			client, tearDown := setupApi(t, []*model.Plugin{plugin1_1, plugin1_2, plugin1_3, plugin2_1, plugin3_2, plugin3_3})
+
 			defer tearDown()
 
 			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
@@ -220,7 +229,7 @@ func TestPlugins(t *testing.T) {
 				PerPage: 3,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1_3, plugin2_1, plugin3_2}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1_3, plugin2_1, plugin3_3}, plugins)
 		})
 
 		t.Run("no server version that satisfies 1 plugin", func(t *testing.T) {
@@ -232,11 +241,11 @@ func TestPlugins(t *testing.T) {
 				PerPage: 3,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin3_2}, plugins)
+			require.Equal(t, []*model.Plugin{plugin3_3}, plugins)
 		})
 
 		t.Run("server version 1.16 that satisfies 1 plugin", func(t *testing.T) {
-			client, tearDown := setupApi(t, plugins)
+			client, tearDown := setupApi(t, []*model.Plugin{plugin1_1, plugin1_2, plugin1_3, plugin2_1, plugin3_2, plugin3_3, plugin4_1})
 			defer tearDown()
 
 			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
@@ -245,7 +254,7 @@ func TestPlugins(t *testing.T) {
 				PerPage:       3,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin3_1}, plugins)
+			require.Equal(t, []*model.Plugin{plugin3_2}, plugins)
 		})
 
 		t.Run("server version 1.17 that satisfies 1 plugin", func(t *testing.T) {
@@ -258,18 +267,18 @@ func TestPlugins(t *testing.T) {
 				PerPage:       3,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin3_2}, plugins)
+			require.Equal(t, []*model.Plugin{plugin3_3}, plugins)
 		})
 
 		t.Run("server version that satisfies 1 plugin with no min_server_version", func(t *testing.T) {
-			client, tearDown := setupApi(t, []*model.Plugin{plugin1_1, plugin1_2, plugin1_3, plugin2_1, plugin3_1, plugin3_2, plugin4_1})
+			client, tearDown := setupApi(t, []*model.Plugin{plugin1_1, plugin1_2, plugin1_3, plugin2_1, plugin3_1, plugin3_2, plugin3_3, plugin4_1})
 			defer tearDown()
 
 			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
 				PerPage: -1,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1_3, plugin2_1, plugin3_2, plugin4_1}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1_3, plugin2_1, plugin3_3, plugin4_1}, plugins)
 		})
 	})
 }
