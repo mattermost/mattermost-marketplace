@@ -148,19 +148,14 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
     "icon_data": "",
-    "download_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/download/v1.1.1/zoom-1.1.1.tar.gz",
-    "signatures": [
-      {
-        "signature": "iHUEABYIAB0WIQQT5gANrliHz466capuC+FV9fkzswUCXbhRgQAKCRBuC+FV9fkzs3MsAP9vHgiqwAtCI9mT9CMNeEDWyXoS3hOqmsptCcFAHh01pgD/YPcPP//a9eiBcCfUh9W99a/izuLRc9nc1Wpu8mtshQA=",
-        "public_key_hash": "F3FACE"
-      }
-    ],
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.1.1",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/download/v1.1.2/zoom-1.1.2.tar.gz",
+    "signatures": [],
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.1.2",
     "manifest": {
       "id": "zoom",
       "name": "Zoom",
       "description": "Zoom audio and video conferencing plugin for Mattermost 5.2+.",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
@@ -221,7 +216,7 @@
         ]
       }
     },
-    "updated_at": "2019-10-02T20:55:52Z"
+    "updated_at": "2019-11-05T02:52:17Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
