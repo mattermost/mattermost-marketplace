@@ -10,9 +10,6 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
-// ErrNotFound Error when a plugin is not found.
-var ErrNotFound = errors.New("plugin not found")
-
 func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
 	filter = strings.ToLower(filter)
 	if strings.ToLower(plugin.Manifest.Id) == filter {

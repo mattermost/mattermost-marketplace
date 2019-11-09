@@ -359,7 +359,7 @@ func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {
 	return base64.StdEncoding.EncodeToString(sigFile), nil
 }
 
-// getReleases returns all github release for repoName.
+// getReleases returns all github releases for repoName.
 func getReleases(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) ([]*github.RepositoryRelease, error) {
 	var result []*github.RepositoryRelease
 	opts := &github.ListOptions{
