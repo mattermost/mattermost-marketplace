@@ -27,14 +27,14 @@ func TestNew(t *testing.T) {
 	t.Run("missing manifest id", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
 		store, err := New(bytes.NewReader([]byte(`[{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-demo","IconData":"icon-data.svg","DownloadURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","Manifest":{},"signatures":[{"signature":"signature1","public_key_hash":"hash1"}]},{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-starter-template","DownloadURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","Manifest":{},"signatures":[{"signature":"signature2","public_key_hash":"hash2"}]}]`)), logger)
-		require.Contains(t, err.Error(), "failed to sort plugins: Plugin manifest Id is empty")
+		require.Contains(t, err.Error(), "failed to validate plugins: plugin manifest Id is empty ")
 		require.Nil(t, store)
 	})
 
 	t.Run("missing manifest version", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
 		store, err := New(bytes.NewReader([]byte(`[{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-demo","IconData":"icon-data.svg","DownloadURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","Manifest":{"id": "test"},"signatures":[{"signature":"signature1","public_key_hash":"hash1"}]},{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-starter-template","DownloadURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","Manifest":{"id": "test"},"signatures":[{"signature":"signature2","public_key_hash":"hash2"}]}]`)), logger)
-		require.EqualError(t, err, "failed to sort plugins: failed to parse manifest version for manifest.Id test: Malformed version: ")
+		require.EqualError(t, err, "failed to validate plugins: failed to parse manifest version for manifest.Id test: Version string empty")
 		require.Nil(t, store)
 	})
 

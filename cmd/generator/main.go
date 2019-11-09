@@ -15,6 +15,7 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
 	"github.com/h2non/filetype"
 	svg "github.com/h2non/go-is-svg"
@@ -119,7 +120,8 @@ var generatorCmd = &cobra.Command{
 
 			releasePlugins, err := getReleasePlugins(ctx, client, repositoryName, includePreRelease, existingPlugins)
 			if err != nil {
-				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
+				logger.Warn(errors.Wrapf(err, "failed to get release plugins for repository %s", repositoryName))
+				continue
 			}
 
 			for _, plugin := range releasePlugins {
@@ -154,6 +156,7 @@ var generatorCmd = &cobra.Command{
 	},
 }
 
+// getReleasePlugins returns the slice of plugins sorted by plugin version, descending.
 func getReleasePlugins(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
 	logger := logger.WithField("repository", repositoryName)
 
@@ -172,10 +175,9 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 	}
 
 	var plugins []*model.Plugin
-	serverVersions := map[string]bool{}
-	// Start from the latest release
-	for i := len(releases) - 1; i >= 0; i-- {
-		release := releases[i]
+	// Keep track of the latest plugin that satisfies a given server version
+	minServerVersionsSeen := map[string]*model.Plugin{}
+	for _, release := range releases {
 		var releaseName string
 		if release.GetName() == "" {
 			releaseName = release.GetTagName()
@@ -259,17 +261,49 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 		plugin.Signatures = signatures
 
 		if plugin.Manifest == nil {
-			return nil, fmt.Errorf("failed to find plugin manifest for release %s", releaseName)
-		}
-
-		// Ignore if we have the latest plugin version for this server version
-		if serverVersions[plugin.Manifest.MinServerVersion] {
+			logger.Warnf("failed to find plugin manifest for release %s", releaseName)
 			continue
 		}
 
-		serverVersions[plugin.Manifest.MinServerVersion] = true
+		if minServerVersionsSeen[plugin.Manifest.MinServerVersion] != nil {
+			if plugin.Manifest.Version == "" {
+				logger.Warnf("version is empty for manifest.Id %s", plugin.Manifest.Id)
+				continue
+			}
+
+			p := minServerVersionsSeen[plugin.Manifest.MinServerVersion]
+			ver1, err := semver.Parse(p.Manifest.Version)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse version %s", p.Manifest.Version)
+			}
+
+			ver2, err := semver.Parse(plugin.Manifest.Version)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse release plugin version %s", plugin.Manifest.Version)
+			}
+
+			// Ignore if we have the latest plugin version for this server version
+			if ver1.GTE(ver2) {
+				continue
+			}
+		}
+
+		minServerVersionsSeen[plugin.Manifest.MinServerVersion] = plugin
+	}
+
+	for _, plugin := range minServerVersionsSeen {
 		plugins = append(plugins, plugin)
 	}
+
+	// Sort the final slice by plugin version, descending
+	sort.SliceStable(
+		plugins,
+		func(i, j int) bool {
+			ver1 := semver.MustParse(plugins[i].Manifest.Version)
+			ver2 := semver.MustParse(plugins[j].Manifest.Version)
+			return ver1.GT(ver2)
+		},
+	)
 
 	return plugins, nil
 }
@@ -325,33 +359,36 @@ func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {
 	return base64.StdEncoding.EncodeToString(sigFile), nil
 }
 
+// getReleases returns all github release for repoName.
 func getReleases(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) ([]*github.RepositoryRelease, error) {
 	var result []*github.RepositoryRelease
-	releases, _, err := client.Repositories.ListReleases(ctx, "mattermost", repoName, &github.ListOptions{
+	opts := &github.ListOptions{
 		Page:    0,
 		PerPage: 10,
-	})
-	if err != nil {
-		return nil, errors.Wrapf(err, "failed to get releases for repository %s", repoName)
 	}
-
-	for _, release := range releases {
-		if release.GetDraft() {
-			continue
+	for {
+		releases, resp, err := client.Repositories.ListReleases(ctx, "mattermost", repoName, opts)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to get releases for repository %s", repoName)
 		}
 
-		if release.GetPrerelease() && !includePreRelease {
-			continue
+		for _, release := range releases {
+			if release.GetDraft() {
+				continue
+			}
+
+			if release.GetPrerelease() && !includePreRelease {
+				continue
+			}
+
+			result = append(result, release)
 		}
 
-		result = append(result, release)
+		if resp.NextPage == 0 {
+			break
+		}
+		opts.Page = resp.NextPage
 	}
-
-	// Sort by PublishedAt
-	sort.SliceStable(
-		result,
-		func(i, j int) bool { return result[i].GetPublishedAt().Before(result[j].GetPublishedAt().Time) },
-	)
 
 	return result, nil
 }

@@ -345,7 +345,12 @@
         ]
       }
     },
-    "signatures": []
+    "signatures": [
+      {
+        "signature": "iHUEABYIAB0WIQQT5gANrliHz466capuC+FV9fkzswUCXcRA3AAKCRBuC+FV9fkzs427APoDmZXpb4OTwZR5disj30Uykgo6Gv8gy/20xINrgksLpQEA8pt8QyADRV6dtSwJnUj+vjQhmxm8EGedjPWbEpeeHgs=",
+        "public_key_hash": "F3FACE"
+      }
+    ]
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",

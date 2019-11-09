@@ -1,8 +1,10 @@
 package store
 
 import (
+	"sort"
 	"strings"
 
+	"github.com/blang/semver"
 	"github.com/pkg/errors"
 
 	"github.com/mattermost/mattermost-marketplace/internal/model"
@@ -41,14 +43,13 @@ func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 
 	filter := strings.TrimSpace(pluginFilter.Filter)
 	if filter != "" {
-		n := 0
+		var filteredPlugins []*model.Plugin
 		for _, plugin := range plugins {
 			if pluginMatchesFilter(plugin, filter) {
-				plugins[n] = plugin
-				n++
+				filteredPlugins = append(filteredPlugins, plugin)
 			}
 		}
-		plugins = plugins[:n]
+		plugins = filteredPlugins
 	}
 
 	if len(plugins) == 0 {
@@ -70,47 +71,57 @@ func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 	return plugins[start:end], nil
 }
 
+// getPlugins returns all the plugins that satisfies serverVersion.
+// Slice is sorted by plugin name, ascending.
 func (store *Store) getPlugins(serverVersion string) ([]*model.Plugin, error) {
 	var result []*model.Plugin
+	plugins := map[string]*model.Plugin{}
 
-	for _, plugin := range store.plugins {
-		p, err := getPlugin(serverVersion, plugin)
-		if err != nil && err != ErrNotFound {
-			return nil, errors.Wrapf(err, "failed to get plugin")
-		} else if err != ErrNotFound {
-			result = append(result, p)
+	for _, storePlugin := range store.plugins {
+		meetsMinServerVersion := true
+		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
+			meets, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
+			}
+			meetsMinServerVersion = meets
+		}
+
+		if !meetsMinServerVersion {
+			continue
+		}
+
+		if plugins[storePlugin.Manifest.Id] == nil {
+			plugins[storePlugin.Manifest.Id] = storePlugin
+			continue
+		}
+
+		pluginVersion, err := semver.Parse(plugins[storePlugin.Manifest.Id].Manifest.Version)
+		if err != nil {
+			return nil, errors.Errorf("failed to parse manifest.Version for manifest.Id %s", storePlugin.Manifest.Id)
+		}
+
+		storePluginVersion, err := semver.Parse(storePlugin.Manifest.Version)
+		if err != nil {
+			return nil, errors.Errorf("failed to parse storePlugin manifest.Version for manifest.Id %s", storePlugin.Manifest.Id)
+		}
+
+		if storePluginVersion.GT(pluginVersion) {
+			plugins[storePlugin.Manifest.Id] = storePlugin
 		}
 	}
+
+	for _, plugin := range plugins {
+		result = append(result, plugin)
+	}
+
+	// Sort the final slice by plugin name, ascending
+	sort.SliceStable(
+		result,
+		func(i, j int) bool {
+			return strings.ToLower(result[i].Manifest.Name) < strings.ToLower(result[j].Manifest.Name)
+		},
+	)
 
 	return result, nil
-}
-
-// getPlugin gets the first plugin from the sorted pluginVersions slice that satisfies serverVersion.
-func getPlugin(serverVersion string, pluginVersions pluginVersions) (*model.Plugin, error) {
-	if len(pluginVersions) == 0 {
-		return nil, errors.New("plugins should not be empty")
-	}
-
-	// Get the latest plugin if no server version is provided
-	if serverVersion == "" {
-		return pluginVersions[len(pluginVersions)-1], nil
-	}
-
-	for i := len(pluginVersions) - 1; i >= 0; i-- {
-		// Missing MinServerVersion means it's compatible with all servers
-		if pluginVersions[i].Manifest.MinServerVersion == "" {
-			return pluginVersions[i], nil
-		}
-
-		meetMinServerVersion, err := pluginVersions[i].Manifest.MeetMinServerVersion(serverVersion)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to MeetMinServerVersion version for manifest.Id) %s", pluginVersions[i].Manifest.Id)
-		}
-
-		if meetMinServerVersion {
-			return pluginVersions[i], nil
-		}
-	}
-
-	return nil, ErrNotFound
 }
