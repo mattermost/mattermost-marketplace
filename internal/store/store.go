@@ -4,10 +4,10 @@ import (
 	"io"
 
 	"github.com/blang/semver"
-
-	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
+
+	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
 // Store provides access to a store backed by the given reader.
