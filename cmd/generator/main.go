@@ -199,7 +199,8 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 		}
 		signatures, err := downloadSignatures(signatureAssets)
 		if err != nil {
-			return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
+			logger.Error(errors.Wrapf(err, "failed to download signatures for release %s", releaseName))
+			continue
 		}
 
 		if downloadURL == "" {
@@ -223,13 +224,15 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 
 			resp, err := http.Get(downloadURL)
 			if err != nil {
-				return nil, errors.Wrapf(err, "failed to download plugin bundle for release %s", releaseName)
+				logger.Error(errors.Wrapf(err, "failed to download plugin bundle for release %s", releaseName))
+				continue
 			}
 			defer resp.Body.Close()
 
 			gzBundleReader, err := gzip.NewReader(resp.Body)
 			if err != nil {
-				return nil, errors.Wrapf(err, "failed to read gzipped plugin bundle for release %s", releaseName)
+				logger.Error(errors.Wrapf(err, "failed to read gzipped plugin bundle for release %s", releaseName))
+				continue
 			}
 
 			bundleReader := tar.NewReader(gzBundleReader)
@@ -239,7 +242,8 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 					break
 				}
 				if err != nil {
-					return nil, errors.Wrapf(err, "failed to read plugin bundle for release %s", releaseName)
+					logger.Error(errors.Wrapf(err, "failed to read plugin bundle for release %s", releaseName))
+					continue
 				}
 
 				if path.Base(hdr.Name) != "plugin.json" {
@@ -274,12 +278,14 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 			p := minServerVersionsSeen[plugin.Manifest.MinServerVersion]
 			ver1, err := semver.Parse(p.Manifest.Version)
 			if err != nil {
-				return nil, errors.Wrapf(err, "failed to parse version %s", p.Manifest.Version)
+				logger.Error(errors.Wrapf(err, "failed to parse version %s", p.Manifest.Version))
+				continue
 			}
 
 			ver2, err := semver.Parse(plugin.Manifest.Version)
 			if err != nil {
-				return nil, errors.Wrapf(err, "failed to parse release plugin version %s", plugin.Manifest.Version)
+				logger.Error(errors.Wrapf(err, "failed to parse release plugin version %s", plugin.Manifest.Version))
+				continue
 			}
 
 			// Ignore if we have the latest plugin version for this server version
