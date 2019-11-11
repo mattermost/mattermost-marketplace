@@ -3,6 +3,7 @@ package model
 import (
 	"encoding/json"
 	"io"
+	"time"
 
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 )
@@ -18,11 +19,13 @@ type PluginSignature struct {
 
 // Plugin represents a Mattermost plugin in the marketplace.
 type Plugin struct {
-	HomepageURL string                    `json:"homepage_url"`
-	IconData    string                    `json:"icon_data"`
-	DownloadURL string                    `json:"download_url"`
-	Manifest    *mattermostModel.Manifest `json:"manifest"`
-	Signatures  []*PluginSignature        `json:"signatures"`
+	HomepageURL     string                    `json:"homepage_url"`
+	IconData        string                    `json:"icon_data"`
+	DownloadURL     string                    `json:"download_url"`
+	Signatures      []*PluginSignature        `json:"signatures"`
+	ReleaseNotesURL string                    `json:"release_notes_url"`
+	Manifest        *mattermostModel.Manifest `json:"manifest"`
+	UpdatedAt       time.Time                 `json:"updated_at"`
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.

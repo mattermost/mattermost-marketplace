@@ -28,15 +28,16 @@ func TestPluginFromReader(t *testing.T) {
 
 	t.Run("request", func(t *testing.T) {
 		plugin, err := PluginFromReader(bytes.NewReader([]byte(
-			`{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","manifest":{},"signatures":[{"signature":"signature1","public_key_hash":"hash1"}]}`,
+			`{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signatures":[{"signature":"signature1","public_key_hash":"hash1"}],"release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{}}`,
 		)))
 		require.NoError(t, err)
 		require.Equal(t, &Plugin{
-			HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
-			IconData:    "icon-data.svg",
-			DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
-			Manifest:    &mattermostModel.Manifest{},
-			Signatures:  []*PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-demo",
+			IconData:        "icon-data.svg",
+			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
+			Signatures:      []*PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
+			Manifest:        &mattermostModel.Manifest{},
 		}, plugin)
 	})
 }
@@ -60,23 +61,25 @@ func TestPluginsFromReader(t *testing.T) {
 
 	t.Run("request", func(t *testing.T) {
 		plugin, err := PluginsFromReader(bytes.NewReader([]byte(
-			`[{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","manifest":{},"signatures":[{"signature":"signature1","public_key_hash":"hash1"}]},{"homepage_url":"https://github.com/mattermost/mattermost-plugin-starter-template","icon_data":"icon-data2.svg","download_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","download_signature":"c2lnbmF0dXJlMg==","manifest":{},"signatures":[{"signature":"signature2","public_key_hash":"hash2"}]}]`,
+			`[{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signatures":[{"signature":"signature1","public_key_hash":"hash1"}],"release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{}},{"homepage_url":"https://github.com/mattermost/mattermost-plugin-starter-template","icon_data":"icon-data2.svg","download_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","signatures":[{"signature":"signature2","public_key_hash":"hash2"}],"release_notes_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","manifest":{}}]`,
 		)))
 		require.NoError(t, err)
 		require.Equal(t, []*Plugin{
 			{
-				HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
-				IconData:    "icon-data.svg",
-				DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
-				Manifest:    &mattermostModel.Manifest{},
-				Signatures:  []*PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+				HomepageURL:     "https://github.com/mattermost/mattermost-plugin-demo",
+				IconData:        "icon-data.svg",
+				DownloadURL:     "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
+				Signatures:      []*PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+				ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
+				Manifest:        &mattermostModel.Manifest{},
 			},
 			{
-				HomepageURL: "https://github.com/mattermost/mattermost-plugin-starter-template",
-				IconData:    "icon-data2.svg",
-				DownloadURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
-				Manifest:    &mattermostModel.Manifest{},
-				Signatures:  []*PluginSignature{{Signature: "signature2", PublicKeyHash: "hash2"}},
+				HomepageURL:     "https://github.com/mattermost/mattermost-plugin-starter-template",
+				IconData:        "icon-data2.svg",
+				DownloadURL:     "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
+				Signatures:      []*PluginSignature{{Signature: "signature2", PublicKeyHash: "hash2"}},
+				ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
+				Manifest:        &mattermostModel.Manifest{},
 			},
 		}, plugin)
 	})
