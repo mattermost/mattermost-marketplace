@@ -360,7 +360,7 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 	for _, releaseAsset := range release.Assets {
 		assetName := releaseAsset.GetName()
 		if strings.Contains(assetName, "-amd64") {
-			// Ignore old style bundles
+			logger.Debugf("ignoring old style tar bundle %s, for release %s", assetName, releaseName)
 			continue
 		}
 
