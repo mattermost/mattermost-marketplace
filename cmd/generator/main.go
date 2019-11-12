@@ -177,15 +177,16 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 	}
 
 	var plugins []*model.Plugin
-	// Keep track of the latest plugin that satisfies a given server version
+	// Keep track of the latest plugin compatible with the given server version
 	minServerVersionsSeen := map[string]*model.Plugin{}
 	for _, release := range releases {
 		releasePlugin, err := getReleasePlugin(release, repository, existingPlugins)
 		if err != nil {
-			return nil, errors.Wrapf(err, "failed to get release plugin for %s", *release.Name)
+			return nil, errors.Wrapf(err, "failed to get release plugin for %s", release.GetName())
 		}
 
 		if releasePlugin == nil {
+			logger.Warnf("no plugin found for release %s", release.GetName())
 			continue
 		}
 
@@ -222,9 +223,7 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 	sort.SliceStable(
 		plugins,
 		func(i, j int) bool {
-			ver1 := semver.MustParse(plugins[i].Manifest.Version)
-			ver2 := semver.MustParse(plugins[j].Manifest.Version)
-			return ver1.GT(ver2)
+			return semver.MustParse(plugins[i].Manifest.Version).GT(semver.MustParse(plugins[j].Manifest.Version))
 		},
 	)
 
