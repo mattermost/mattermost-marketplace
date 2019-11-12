@@ -68,24 +68,21 @@ func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 	return plugins[start:end], nil
 }
 
-// getPlugins returns all the plugins that satisfies serverVersion.
-// Slice is sorted by plugin name, ascending.
+// getPlugins returns all plugins compatible with the given server version, sorted by name ascending.
 func (store *Store) getPlugins(serverVersion string) ([]*model.Plugin, error) {
 	var result []*model.Plugin
 	plugins := map[string]*model.Plugin{}
 
 	for _, storePlugin := range store.plugins {
-		meetsMinServerVersion := true
 		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
-			meets, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
+			meetsMinServerVersion, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
 			if err != nil {
 				return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
 			}
-			meetsMinServerVersion = meets
-		}
 
-		if !meetsMinServerVersion {
-			continue
+			if !meetsMinServerVersion {
+				continue
+			}
 		}
 
 		if plugins[storePlugin.Manifest.Id] == nil {
@@ -93,17 +90,13 @@ func (store *Store) getPlugins(serverVersion string) ([]*model.Plugin, error) {
 			continue
 		}
 
-		pluginVersion, err := semver.Parse(plugins[storePlugin.Manifest.Id].Manifest.Version)
+		lastSeenPluginVersion, err := semver.Parse(plugins[storePlugin.Manifest.Id].Manifest.Version)
 		if err != nil {
 			return nil, errors.Errorf("failed to parse manifest.Version for manifest.Id %s", storePlugin.Manifest.Id)
 		}
 
-		storePluginVersion, err := semver.Parse(storePlugin.Manifest.Version)
-		if err != nil {
-			return nil, errors.Errorf("failed to parse storePlugin manifest.Version for manifest.Id %s", storePlugin.Manifest.Id)
-		}
-
-		if storePluginVersion.GT(pluginVersion) {
+		storePluginVersion := semver.MustParse(storePlugin.Manifest.Version)
+		if storePluginVersion.GT(lastSeenPluginVersion) {
 			plugins[storePlugin.Manifest.Id] = storePlugin
 		}
 	}
