@@ -22,7 +22,7 @@ type Plugin struct {
 	HomepageURL     string                    `json:"homepage_url"`
 	IconData        string                    `json:"icon_data"`
 	DownloadURL     string                    `json:"download_url"`
-	Signatures      []*PluginSignature        `json:"signatures"`
+	Signature       *PluginSignature          `json:"signature"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	UpdatedAt       time.Time                 `json:"updated_at"`

@@ -181,7 +181,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	logger.Debugf("found latest release %s", releaseName)
 
 	downloadURL := ""
-	signatureAssets := make([]github.ReleaseAsset, 0)
+	var signatureAsset *github.ReleaseAsset
 	releaseNotesURL := latestRelease.GetHTMLURL()
 	var updatedAt time.Time
 	for _, releaseAsset := range latestRelease.Assets {
@@ -196,12 +196,20 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 			updatedAt = timestampUpdatedAt.In(time.UTC)
 		}
 		if strings.HasSuffix(assetName, ".sig") || strings.HasSuffix(assetName, ".asc") {
-			signatureAssets = append(signatureAssets, releaseAsset)
+			if signatureAsset != nil {
+				return nil, errors.Wrapf(err, "found multiple signatures %s for release %s", assetName, releaseName)
+			}
+			signatureAsset = &releaseAsset
 		}
 	}
-	signatures, err := downloadSignatures(signatureAssets)
-	if err != nil {
-		return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
+
+	var signature *model.PluginSignature
+	if signatureAsset != nil {
+		sig, err := downloadSignature(signatureAsset)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
+		}
+		signature = sig
 	}
 
 	if downloadURL == "" {
@@ -282,7 +290,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 		plugin.HomepageURL = repository.GetHTMLURL()
 	}
 	plugin.DownloadURL = downloadURL
-	plugin.Signatures = signatures
+	plugin.Signature = signature
 	plugin.ReleaseNotesURL = releaseNotesURL
 	plugin.UpdatedAt = updatedAt
 
@@ -318,25 +326,20 @@ func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 	return nil, errors.Errorf("failed to find %s in tar file", filepath)
 }
 
-func downloadSignatures(assets []github.ReleaseAsset) ([]*model.PluginSignature, error) {
-	signatures := make([]*model.PluginSignature, 0, len(assets))
-	for _, asset := range assets {
-		hash, err := getPublicKeyHashFromAsset(asset)
-		if err != nil {
-			return nil, errors.Wrap(err, "Can't get public key hash from the asset")
-		}
-		sig, err := getSignatureFromAsset(asset)
-		if err != nil {
-			return nil, errors.Wrap(err, "Can't get signature from the asset")
-		}
-
-		signature := &model.PluginSignature{
-			Signature:     sig,
-			PublicKeyHash: hash,
-		}
-		signatures = append(signatures, signature)
+func downloadSignature(asset *github.ReleaseAsset) (*model.PluginSignature, error) {
+	hash, err := getPublicKeyHashFromAsset(*asset)
+	if err != nil {
+		return nil, errors.Wrap(err, "Can't get public key hash from the asset")
 	}
-	return signatures, nil
+	sig, err := getSignatureFromAsset(*asset)
+	if err != nil {
+		return nil, errors.Wrap(err, "Can't get signature from the asset")
+	}
+
+	return &model.PluginSignature{
+		Signature:     sig,
+		PublicKeyHash: hash,
+	}, nil
 }
 
 func getPublicKeyHashFromAsset(asset github.ReleaseAsset) (string, error) {
