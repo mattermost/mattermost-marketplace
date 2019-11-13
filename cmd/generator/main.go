@@ -204,10 +204,9 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	}
 
 	var signature string
-	var signaturePublicKeyHash string
 	if signatureAsset != nil {
 		var err error
-		signature, signaturePublicKeyHash, err = downloadSignature(signatureAsset)
+		signature, err = downloadSignature(signatureAsset)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
 		}
@@ -294,7 +293,6 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	plugin.ReleaseNotesURL = releaseNotesURL
 	plugin.UpdatedAt = updatedAt
 	plugin.Signature = signature
-	plugin.SignaturePublicKeyHash = signaturePublicKeyHash
 
 	return plugin, nil
 }
@@ -328,30 +326,13 @@ func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 	return nil, errors.Errorf("failed to find %s in tar file", filepath)
 }
 
-func downloadSignature(asset *github.ReleaseAsset) (signature string, signaturePublicKeyHash string, err error) {
-	signaturePublicKeyHash, err = getPublicKeyHashFromAsset(*asset)
+func downloadSignature(asset *github.ReleaseAsset) (string, error) {
+	signature, err := getSignatureFromAsset(*asset)
 	if err != nil {
-		return "", "", errors.Wrap(err, "Can't get public key hash from the asset")
-	}
-	signature, err = getSignatureFromAsset(*asset)
-	if err != nil {
-		return "", "", errors.Wrap(err, "Can't get signature from the asset")
+		return "", errors.Wrap(err, "Can't get signature from the asset")
 	}
 
-	return
-}
-
-func getPublicKeyHashFromAsset(asset github.ReleaseAsset) (string, error) {
-	name := asset.GetName()
-	if !strings.HasSuffix(name, ".sig") && !strings.HasSuffix(name, ".asc") {
-		return "", errors.New("signature file has wrong extension")
-	}
-	name = name[:len(name)-4] //Trim the suffix
-	lastIndex := strings.LastIndex(name, "-")
-	if lastIndex == -1 {
-		return "", errors.Errorf("can't find public key hash in the signature file name %s", name)
-	}
-	return name[lastIndex+1:], nil
+	return signature, nil
 }
 
 func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {

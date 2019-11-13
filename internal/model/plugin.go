@@ -16,12 +16,8 @@ type Plugin struct {
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	UpdatedAt       time.Time                 `json:"updated_at"`
-
 	// Signature represents a signature of a plugin saved in base64 encoding.
 	Signature string `json:"signature"`
-	// SignaturePublicKeyHash represents an abbreviated public key fingerprint,
-	// hashed using SHA-1 algorithm.
-	SignaturePublicKeyHash string `json:"signature_public_key_hash"`
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.

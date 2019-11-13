@@ -99,31 +99,28 @@ func TestPlugins(t *testing.T) {
 
 	t.Run("plugins", func(t *testing.T) {
 		plugin1 := &model.Plugin{
-			HomepageURL:            "https://github.com/mattermost/mattermost-plugin-demo",
-			IconData:               "icon-data.svg",
-			DownloadURL:            "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
-			Signature:              "signature1",
-			SignaturePublicKeyHash: "hash1",
-			ReleaseNotesURL:        "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
-			Manifest:               &mattermostModel.Manifest{},
+			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-demo",
+			IconData:        "icon-data.svg",
+			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
+			Signature:       "signature1",
+			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
+			Manifest:        &mattermostModel.Manifest{},
 		}
 		plugin2 := &model.Plugin{
-			HomepageURL:            "https://github.com/mattermost/mattermost-plugin-starter-template",
-			IconData:               "icon-data2.svg",
-			DownloadURL:            "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
-			Signature:              "signature2",
-			SignaturePublicKeyHash: "hash2",
-			ReleaseNotesURL:        "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
-			Manifest:               &mattermostModel.Manifest{},
+			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-starter-template",
+			IconData:        "icon-data2.svg",
+			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
+			Signature:       "signature2",
+			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
+			Manifest:        &mattermostModel.Manifest{},
 		}
 		plugin3 := &model.Plugin{
-			HomepageURL:            "https://github.com/matterpoll/matterpoll",
-			IconData:               "icon-data3.svg",
-			DownloadURL:            "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
-			Signature:              "signature3",
-			SignaturePublicKeyHash: "hash3",
-			ReleaseNotesURL:        "https://github.com/matterpoll/matterpoll/releases/v1.1.0",
-			Manifest:               &mattermostModel.Manifest{},
+			HomepageURL:     "https://github.com/matterpoll/matterpoll",
+			IconData:        "icon-data3.svg",
+			DownloadURL:     "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
+			Signature:       "signature3",
+			ReleaseNotesURL: "https://github.com/matterpoll/matterpoll/releases/v1.1.0",
+			Manifest:        &mattermostModel.Manifest{},
 		}
 		plugins := []*model.Plugin{plugin1, plugin2, plugin3}
 
