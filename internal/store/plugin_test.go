@@ -21,7 +21,8 @@ func TestPlugins(t *testing.T) {
 			Name:        "Demo Plugin",
 			Description: "This plugin demonstrates the capabilities of a Mattermost plugin.",
 		},
-		Signature: &model.PluginSignature{Signature: "signature1", PublicKeyHash: "hash1"},
+		Signature:              "signature1",
+		SignaturePublicKeyHash: "hash1",
 	}
 
 	starterPlugin := &model.Plugin{
@@ -33,7 +34,8 @@ func TestPlugins(t *testing.T) {
 			Name:        "Plugin Starter Template",
 			Description: "This plugin serves as a starting point for writing a Mattermost plugin.",
 		},
-		Signature: &model.PluginSignature{Signature: "signature2", PublicKeyHash: "hash2"},
+		Signature:              "signature2",
+		SignaturePublicKeyHash: "hash2",
 	}
 
 	data, err := json.Marshal([]*model.Plugin{
