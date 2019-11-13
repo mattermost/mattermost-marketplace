@@ -330,16 +330,16 @@ func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 }
 
 func downloadSignature(asset *github.ReleaseAsset) (signature string, signaturePublicKeyHash string, err error) {
-	hash, err := getPublicKeyHashFromAsset(*asset)
+	signaturePublicKeyHash, err = getPublicKeyHashFromAsset(*asset)
 	if err != nil {
 		return "", "", errors.Wrap(err, "Can't get public key hash from the asset")
 	}
-	sig, err := getSignatureFromAsset(*asset)
+	signature, err = getSignatureFromAsset(*asset)
 	if err != nil {
 		return "", "", errors.Wrap(err, "Can't get signature from the asset")
 	}
 
-	return sig, hash, nil
+	return
 }
 
 func getPublicKeyHashFromAsset(asset github.ReleaseAsset) (string, error) {
