@@ -206,12 +206,11 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	var signature string
 	var signaturePublicKeyHash string
 	if signatureAsset != nil {
-		sig, sigPulicKeyHash, err := downloadSignature(signatureAsset)
+		var err error
+		signature, signaturePublicKeyHash, err = downloadSignature(signatureAsset)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
 		}
-		signature = sig
-		signaturePublicKeyHash = sigPulicKeyHash
 	}
 
 	if downloadURL == "" {
