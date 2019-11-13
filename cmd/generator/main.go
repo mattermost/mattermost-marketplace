@@ -291,10 +291,10 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 		plugin.HomepageURL = repository.GetHTMLURL()
 	}
 	plugin.DownloadURL = downloadURL
-	plugin.Signature = signature
-	plugin.SignaturePublicKeyHash = signaturePublicKeyHash
 	plugin.ReleaseNotesURL = releaseNotesURL
 	plugin.UpdatedAt = updatedAt
+	plugin.Signature = signature
+	plugin.SignaturePublicKeyHash = signaturePublicKeyHash
 
 	return plugin, nil
 }
