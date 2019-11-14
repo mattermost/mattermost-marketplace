@@ -37,7 +37,7 @@ func TestPlugins(t *testing.T) {
 			Version:          "0.2.0",
 			MinServerVersion: "5.15.0",
 		},
-		Signatures: []*model.PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+		Signature: "signature1",
 	}
 
 	starterPluginV1Min515 := &model.Plugin{
