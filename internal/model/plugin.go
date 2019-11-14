@@ -8,24 +8,16 @@ import (
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 )
 
-// PluginSignature is a public key signature of a plugin and the corresponding public key hash for use in verifying a plugin downloaded from the marketplace.
-type PluginSignature struct {
-	// Signature represents a signature of a plugin saved in base64 encoding.
-	Signature string `json:"signature"`
-	// PublicKeyHash represents an abbreviated public key fingerprint,
-	// hashed using SHA-1 algorithm.
-	PublicKeyHash string `json:"public_key_hash"`
-}
-
 // Plugin represents a Mattermost plugin in the marketplace.
 type Plugin struct {
 	HomepageURL     string                    `json:"homepage_url"`
 	IconData        string                    `json:"icon_data"`
 	DownloadURL     string                    `json:"download_url"`
-	Signatures      []*PluginSignature        `json:"signatures"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	UpdatedAt       time.Time                 `json:"updated_at"`
+	// Signature represents a signature of a plugin saved in base64 encoding.
+	Signature string `json:"signature"`
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.

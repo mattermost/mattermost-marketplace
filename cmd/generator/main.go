@@ -354,7 +354,7 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 	logger.Debugf("found latest release %s", releaseName)
 
 	downloadURL := ""
-	signatureAssets := make([]github.ReleaseAsset, 0)
+	var signatureAsset *github.ReleaseAsset
 	releaseNotesURL := release.GetHTMLURL()
 	var updatedAt time.Time
 	for _, releaseAsset := range release.Assets {
@@ -374,12 +374,20 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 			updatedAt = timestampUpdatedAt.In(time.UTC)
 		}
 		if strings.HasSuffix(assetName, ".sig") || strings.HasSuffix(assetName, ".asc") {
-			signatureAssets = append(signatureAssets, releaseAsset)
+			if signatureAsset != nil {
+				return nil, errors.Wrapf(err, "found multiple signatures %s for release %s", assetName, releaseName)
+			}
+			signatureAsset = &releaseAsset
 		}
 	}
-	signatures, err := downloadSignatures(signatureAssets)
-	if err != nil {
-		return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
+
+	var signature string
+	if signatureAsset != nil {
+		var err error
+		signature, err = downloadSignature(signatureAsset)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
+		}
 	}
 
 	if downloadURL == "" {
@@ -460,11 +468,93 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 		plugin.HomepageURL = repository.GetHTMLURL()
 	}
 	plugin.DownloadURL = downloadURL
-	plugin.Signatures = signatures
 	plugin.ReleaseNotesURL = releaseNotesURL
 	plugin.UpdatedAt = updatedAt
+	plugin.Signature = signature
 
 	return plugin, nil
+}
+
+func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
+	for {
+		hdr, err := reader.Next()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to read tar file")
+		}
+
+		// Match the filepath, assuming the tar file contains a leading folder matching the
+		// plugin id.
+		matched, err := path.Match(fmt.Sprintf("*/%s", filepath), hdr.Name)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to match file %s in tar file", filepath)
+		} else if !matched {
+			continue
+		}
+
+		data, err := ioutil.ReadAll(reader)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to read %s in tar file", filepath)
+		}
+		return data, nil
+	}
+
+	return nil, errors.Errorf("failed to find %s in tar file", filepath)
+}
+
+func downloadSignature(asset *github.ReleaseAsset) (string, error) {
+	signature, err := getSignatureFromAsset(*asset)
+	if err != nil {
+		return "", errors.Wrap(err, "Can't get signature from the asset")
+	}
+
+	return signature, nil
+}
+
+func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {
+	url := asset.GetBrowserDownloadURL()
+	logger.Debugf("fetching signature file from %s", url)
+
+	resp, err := http.Get(url)
+	if err != nil {
+		return "", errors.Wrapf(err, "failed to download signature file %s", asset.GetName())
+	}
+	defer resp.Body.Close()
+
+	sigFile, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return "", errors.Wrapf(err, "failed to open downloaded signature file %s", asset.GetName())
+	}
+	return base64.StdEncoding.EncodeToString(sigFile), nil
+}
+
+func getLatestRelease(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) (*github.RepositoryRelease, error) {
+	releases, _, err := client.Repositories.ListReleases(ctx, "mattermost", repoName, &github.ListOptions{
+		Page:    0,
+		PerPage: 10,
+	})
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to get releases for repository %s", repoName)
+	}
+
+	var latestRelease *github.RepositoryRelease
+	for _, release := range releases {
+		if release.GetDraft() {
+			continue
+		}
+
+		if release.GetPrerelease() && !includePreRelease {
+			continue
+		}
+
+		if latestRelease == nil || release.GetPublishedAt().After(latestRelease.GetPublishedAt().Time) {
+			latestRelease = release
+		}
+	}
+
+	return latestRelease, nil
 }
 
 func getIcon(ctx context.Context, icon string) ([]byte, error) {

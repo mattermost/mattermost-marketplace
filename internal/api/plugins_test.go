@@ -103,35 +103,35 @@ func TestPlugins(t *testing.T) {
 			IconData:    "icon-data.svg",
 			DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 			Manifest:    &mattermostModel.Manifest{Id: "mattermost-plugin-demo", Name: "mattermost-plugin-demo", Version: "0.1.0", MinServerVersion: "5.15.0"},
-			Signatures:  []*model.PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+			Signature:   "signature1",
 		}
 		plugin1_V2Min515 := &model.Plugin{
 			HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
 			IconData:    "icon-data.svg",
 			DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.2.0/com.mattermost.demo-plugin-0.2.0.tar.gz",
 			Manifest:    &mattermostModel.Manifest{Id: "mattermost-plugin-demo", Name: "mattermost-plugin-demo", Version: "0.2.0", MinServerVersion: "5.15.0"},
-			Signatures:  []*model.PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+			Signature:   "signature1",
 		}
 		plugin1_V3Min515 := &model.Plugin{
 			HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
 			IconData:    "icon-data.svg",
 			DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.3.0/com.mattermost.demo-plugin-0.3.0.tar.gz",
 			Manifest:    &mattermostModel.Manifest{Id: "mattermost-plugin-demo", Name: "mattermost-plugin-demo", Version: "0.3.0", MinServerVersion: "5.15.0"},
-			Signatures:  []*model.PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+			Signature:   "signature1",
 		}
 		plugin2_V1Min516 := &model.Plugin{
 			HomepageURL: "https://github.com/mattermost/mattermost-plugin-starter-template",
 			IconData:    "icon-data2.svg",
 			DownloadURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
 			Manifest:    &mattermostModel.Manifest{Id: "mattermost-plugin-starter-template", Name: "mattermost-plugin-starter-template", Version: "0.1.0", MinServerVersion: "5.16.0"},
-			Signatures:  []*model.PluginSignature{{Signature: "signature2", PublicKeyHash: "hash2"}},
+			Signature:   "signature2",
 		}
 		plugin3_V1NoMin := &model.Plugin{
 			HomepageURL: "https://github.com/matterpoll/matterpoll",
 			IconData:    "icon-data3.svg",
 			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
 			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.1.0"},
-			Signatures:  []*model.PluginSignature{{Signature: "signature3", PublicKeyHash: "hash3"}},
+			Signature:   "signature3",
 		}
 
 		plugin3_V2Min516 := &model.Plugin{
@@ -139,7 +139,7 @@ func TestPlugins(t *testing.T) {
 			IconData:    "icon-data3.svg",
 			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.2.0/com.github.matterpoll.matterpoll-1.2.0.tar.gz",
 			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.2.0", MinServerVersion: "5.16.0"},
-			Signatures:  []*model.PluginSignature{{Signature: "signature3", PublicKeyHash: "hash3"}},
+			Signature:   "signature3",
 		}
 
 		plugin3_V3Min517 := &model.Plugin{
@@ -147,7 +147,7 @@ func TestPlugins(t *testing.T) {
 			IconData:    "icon-data3.svg",
 			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.3.0/com.github.matterpoll.matterpoll-1.3.0.tar.gz",
 			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.3.0", MinServerVersion: "5.17.0"},
-			Signatures:  []*model.PluginSignature{{Signature: "signature3", PublicKeyHash: "hash3"}},
+			Signature:   "signature3",
 		}
 
 		plugin4_V1NoMin := &model.Plugin{
@@ -155,7 +155,7 @@ func TestPlugins(t *testing.T) {
 			IconData:    "icon-data3.svg",
 			DownloadURL: "fake_plugin.tar.gz",
 			Manifest:    &mattermostModel.Manifest{Id: "fake_plugin", Name: "Zfake_plugin", Version: "1.2.4"},
-			Signatures:  []*model.PluginSignature{{Signature: "signature3", PublicKeyHash: "hash3"}},
+			Signature:   "signature3",
 		}
 
 		allPlugins := []*model.Plugin{plugin1_V1Min515, plugin1_V2Min515, plugin1_V3Min515, plugin2_V1Min516, plugin3_V1NoMin, plugin3_V2Min516, plugin3_V3Min517}

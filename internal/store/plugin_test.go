@@ -23,7 +23,7 @@ func TestPlugins(t *testing.T) {
 			Version:          "0.1.0",
 			MinServerVersion: "5.14.0",
 		},
-		Signatures: []*model.PluginSignature{{Signature: "signature1", PublicKeyHash: "hash1"}},
+		Signature: "signature1",
 	}
 
 	demoPluginV2Min515 := &model.Plugin{
@@ -51,7 +51,7 @@ func TestPlugins(t *testing.T) {
 			Version:          "0.1.0",
 			MinServerVersion: "5.15.0",
 		},
-		Signatures: []*model.PluginSignature{{Signature: "signature2", PublicKeyHash: "hash2"}},
+		Signature: "signature2",
 	}
 
 	data, err := json.Marshal([]*model.Plugin{
