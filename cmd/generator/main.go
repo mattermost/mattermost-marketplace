@@ -197,7 +197,7 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 		}
 		if strings.HasSuffix(assetName, ".sig") || strings.HasSuffix(assetName, ".asc") {
 			if signatureAsset != nil {
-				return nil, errors.Wrapf(err, "found multiple signatures %s for release %s", assetName, releaseName)
+				return nil, errors.Errorf("found multiple signatures %s for release %s", assetName, releaseName)
 			}
 			signatureAsset = &releaseAsset
 		}
