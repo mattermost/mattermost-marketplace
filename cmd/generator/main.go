@@ -388,8 +388,8 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 		plugin.HomepageURL = repository.GetHTMLURL()
 	}
 	plugin.DownloadURL = downloadURL
-	plugin.Signature = signature
 	plugin.ReleaseNotesURL = releaseNotesURL
+	plugin.Signature = signature
 	plugin.UpdatedAt = updatedAt
 
 	return plugin, nil

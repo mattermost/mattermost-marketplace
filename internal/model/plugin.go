@@ -10,14 +10,14 @@ import (
 
 // Plugin represents a Mattermost plugin in the marketplace.
 type Plugin struct {
-	HomepageURL string `json:"homepage_url"`
-	IconData    string `json:"icon_data"`
-	DownloadURL string `json:"download_url"`
+	HomepageURL     string `json:"homepage_url"`
+	IconData        string `json:"icon_data"`
+	DownloadURL     string `json:"download_url"`
+	ReleaseNotesURL string `json:"release_notes_url"`
 	// Signature represents a signature of a plugin saved in base64 encoding.
-	Signature       string                    `json:"signature"`
-	ReleaseNotesURL string                    `json:"release_notes_url"`
-	Manifest        *mattermostModel.Manifest `json:"manifest"`
-	UpdatedAt       time.Time                 `json:"updated_at"`
+	Signature string                    `json:"signature"`
+	Manifest  *mattermostModel.Manifest `json:"manifest"`
+	UpdatedAt time.Time                 `json:"updated_at"`
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.
