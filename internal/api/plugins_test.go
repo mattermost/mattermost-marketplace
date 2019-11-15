@@ -98,34 +98,70 @@ func TestPlugins(t *testing.T) {
 	})
 
 	t.Run("plugins", func(t *testing.T) {
-		plugin1 := &model.Plugin{
-			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-demo",
-			IconData:        "icon-data.svg",
-			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
-			Signature:       "signature1",
-			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
-			Manifest:        &mattermostModel.Manifest{},
+		plugin1_V1Min515 := &model.Plugin{
+			HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
+			IconData:    "icon-data.svg",
+			DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "mattermost-plugin-demo", Name: "mattermost-plugin-demo", Version: "0.1.0", MinServerVersion: "5.15.0"},
+			Signature:   "signature1",
 		}
-		plugin2 := &model.Plugin{
-			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-starter-template",
-			IconData:        "icon-data2.svg",
-			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
-			Signature:       "signature2",
-			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
-			Manifest:        &mattermostModel.Manifest{},
+		plugin1_V2Min515 := &model.Plugin{
+			HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
+			IconData:    "icon-data.svg",
+			DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.2.0/com.mattermost.demo-plugin-0.2.0.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "mattermost-plugin-demo", Name: "mattermost-plugin-demo", Version: "0.2.0", MinServerVersion: "5.15.0"},
+			Signature:   "signature1",
 		}
-		plugin3 := &model.Plugin{
-			HomepageURL:     "https://github.com/matterpoll/matterpoll",
-			IconData:        "icon-data3.svg",
-			DownloadURL:     "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
-			Signature:       "signature3",
-			ReleaseNotesURL: "https://github.com/matterpoll/matterpoll/releases/v1.1.0",
-			Manifest:        &mattermostModel.Manifest{},
+		plugin1_V3Min515 := &model.Plugin{
+			HomepageURL: "https://github.com/mattermost/mattermost-plugin-demo",
+			IconData:    "icon-data.svg",
+			DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.3.0/com.mattermost.demo-plugin-0.3.0.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "mattermost-plugin-demo", Name: "mattermost-plugin-demo", Version: "0.3.0", MinServerVersion: "5.15.0"},
+			Signature:   "signature1",
 		}
-		plugins := []*model.Plugin{plugin1, plugin2, plugin3}
+		plugin2_V1Min516 := &model.Plugin{
+			HomepageURL: "https://github.com/mattermost/mattermost-plugin-starter-template",
+			IconData:    "icon-data2.svg",
+			DownloadURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "mattermost-plugin-starter-template", Name: "mattermost-plugin-starter-template", Version: "0.1.0", MinServerVersion: "5.16.0"},
+			Signature:   "signature2",
+		}
+		plugin3_V1NoMin := &model.Plugin{
+			HomepageURL: "https://github.com/matterpoll/matterpoll",
+			IconData:    "icon-data3.svg",
+			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.1.0/com.github.matterpoll.matterpoll-1.1.0.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.1.0"},
+			Signature:   "signature3",
+		}
+
+		plugin3_V2Min516 := &model.Plugin{
+			HomepageURL: "https://github.com/matterpoll/matterpoll",
+			IconData:    "icon-data3.svg",
+			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.2.0/com.github.matterpoll.matterpoll-1.2.0.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.2.0", MinServerVersion: "5.16.0"},
+			Signature:   "signature3",
+		}
+
+		plugin3_V3Min517 := &model.Plugin{
+			HomepageURL: "https://github.com/matterpoll/matterpoll",
+			IconData:    "icon-data3.svg",
+			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.3.0/com.github.matterpoll.matterpoll-1.3.0.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "matterpoll", Name: "matterpoll", Version: "1.3.0", MinServerVersion: "5.17.0"},
+			Signature:   "signature3",
+		}
+
+		plugin4_V1NoMin := &model.Plugin{
+			HomepageURL: "fake_plugin",
+			IconData:    "icon-data3.svg",
+			DownloadURL: "fake_plugin.tar.gz",
+			Manifest:    &mattermostModel.Manifest{Id: "fake_plugin", Name: "Zfake_plugin", Version: "1.2.4"},
+			Signature:   "signature3",
+		}
+
+		allPlugins := []*model.Plugin{plugin1_V1Min515, plugin1_V2Min515, plugin1_V3Min515, plugin2_V1Min516, plugin3_V1NoMin, plugin3_V2Min516, plugin3_V3Min517}
 
 		t.Run("get plugins, page 0, perPage 2", func(t *testing.T) {
-			client, tearDown := setupApi(t, plugins)
+			client, tearDown := setupApi(t, allPlugins)
 			defer tearDown()
 
 			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
@@ -133,11 +169,11 @@ func TestPlugins(t *testing.T) {
 				PerPage: 2,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1, plugin2}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1_V3Min515, plugin2_V1Min516}, plugins)
 		})
 
 		t.Run("get plugins, page 1, perPage 2", func(t *testing.T) {
-			client, tearDown := setupApi(t, plugins)
+			client, tearDown := setupApi(t, allPlugins)
 			defer tearDown()
 
 			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
@@ -145,7 +181,123 @@ func TestPlugins(t *testing.T) {
 				PerPage: 2,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin3}, plugins)
+			require.Equal(t, []*model.Plugin{plugin3_V3Min517}, plugins)
+		})
+
+		t.Run("server version that satisfies all plugins", func(t *testing.T) {
+			client, tearDown := setupApi(t, allPlugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage:       3,
+				ServerVersion: "5.18.0",
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin1_V3Min515, plugin2_V1Min516, plugin3_V3Min517}, plugins)
+		})
+
+		t.Run("server version that satisfies plugin1_V3Min515 and plugin3_V1NoMin", func(t *testing.T) {
+			client, tearDown := setupApi(t, allPlugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage:       3,
+				ServerVersion: "5.15.0",
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin1_V3Min515, plugin3_V1NoMin}, plugins)
+		})
+
+		t.Run("server version that satisfies no plugin", func(t *testing.T) {
+			client, tearDown := setupApi(t, []*model.Plugin{plugin1_V1Min515, plugin1_V2Min515, plugin1_V3Min515, plugin2_V1Min516, plugin3_V2Min516, plugin3_V3Min517})
+
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage:       3,
+				ServerVersion: "5.14.0",
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{}, plugins)
+		})
+
+		t.Run("no server version satisfies all plugins", func(t *testing.T) {
+			client, tearDown := setupApi(t, allPlugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage: 3,
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin1_V3Min515, plugin2_V1Min516, plugin3_V3Min517}, plugins)
+		})
+
+		t.Run("no server version that satisfies plugin3_V3Min517", func(t *testing.T) {
+			client, tearDown := setupApi(t, allPlugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				Filter:  "matterpoll",
+				PerPage: 3,
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin3_V3Min517}, plugins)
+		})
+
+		t.Run("server version 1.16 that satisfies plugin3_V2Min516", func(t *testing.T) {
+			client, tearDown := setupApi(t, []*model.Plugin{plugin1_V1Min515, plugin1_V2Min515, plugin1_V3Min515, plugin2_V1Min516, plugin3_V2Min516, plugin3_V3Min517, plugin4_V1NoMin})
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				Filter:        "matterpoll",
+				ServerVersion: "5.16.0",
+				PerPage:       3,
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin3_V2Min516}, plugins)
+		})
+
+		t.Run("server version 1.17 that satisfies plugin3_V3Min517", func(t *testing.T) {
+			client, tearDown := setupApi(t, allPlugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				Filter:        "matterpoll",
+				ServerVersion: "5.17.0",
+				PerPage:       3,
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin3_V3Min517}, plugins)
+		})
+
+		t.Run("no server version gets all the latest plugins", func(t *testing.T) {
+			client, tearDown := setupApi(t, append(allPlugins, plugin4_V1NoMin))
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage: -1,
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin1_V3Min515, plugin2_V1Min516, plugin3_V3Min517, plugin4_V1NoMin}, plugins)
+		})
+
+		t.Run("invalid server_version format", func(t *testing.T) {
+			client, tearDown := setupApi(t, allPlugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage:       -1,
+				ServerVersion: "1",
+			})
+			require.Error(t, err)
+			require.Nil(t, plugins)
+
+			plugins, err = client.GetPlugins(&api.GetPluginsRequest{
+				PerPage:       -1,
+				ServerVersion: "a",
+			})
+			require.Error(t, err)
+			require.Nil(t, plugins)
 		})
 	})
 }

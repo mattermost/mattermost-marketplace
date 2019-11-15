@@ -13,9 +13,11 @@ import (
 	"net/http"
 	"os"
 	"path"
+	"sort"
 	"strings"
 	"time"
 
+	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
 	"github.com/h2non/filetype"
 	svg "github.com/h2non/go-is-svg"
@@ -118,31 +120,32 @@ var generatorCmd = &cobra.Command{
 		for _, repositoryName := range repositoryNames {
 			logger.Debugf("querying repository %s", repositoryName)
 
-			plugin, err := getReleasePlugin(ctx, client, repositoryName, includePreRelease, existingPlugins)
+			releasePlugins, err := getReleasePlugins(ctx, client, repositoryName, includePreRelease, existingPlugins)
 			if err != nil {
 				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
 			}
 
-			if len(plugin.IconData) == 0 {
-				if iconPath, ok := iconPaths[repositoryName]; ok {
-					icon, err := getIcon(ctx, iconPath)
-					if err != nil {
-						return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
-					}
-					if svg.Is(icon) {
-						plugin.IconData = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon))
-					} else {
-						kind, err := filetype.Image(icon)
+			for _, plugin := range releasePlugins {
+				if len(plugin.IconData) == 0 {
+					if iconPath, ok := iconPaths[repositoryName]; ok {
+						icon, err := getIcon(ctx, iconPath)
 						if err != nil {
-							return errors.Wrapf(err, "failed to match icon at %s to image", iconPath)
+							return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
 						}
+						if svg.Is(icon) {
+							plugin.IconData = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon))
+						} else {
+							kind, err := filetype.Image(icon)
+							if err != nil {
+								return errors.Wrapf(err, "failed to match icon at %s to image", iconPath)
+							}
 
-						plugin.IconData = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
+							plugin.IconData = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
+						}
 					}
 				}
+				plugins = append(plugins, plugin)
 			}
-
-			plugins = append(plugins, plugin)
 		}
 
 		encoder := json.NewEncoder(os.Stdout)
@@ -155,7 +158,8 @@ var generatorCmd = &cobra.Command{
 	},
 }
 
-func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) (*model.Plugin, error) {
+// getReleasePlugins queries GitHub for all releases of the given plugin, sorting by plugin versioning descending.
+func getReleasePlugins(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
 	logger := logger.WithField("repository", repositoryName)
 
 	repository, _, err := client.Repositories.Get(ctx, "mattermost", repositoryName)
@@ -163,29 +167,123 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 		return nil, errors.Wrap(err, "failed to get repository")
 	}
 
-	latestRelease, err := getLatestRelease(ctx, client, repositoryName, includePreRelease)
+	releases, err := getReleases(ctx, client, repositoryName, includePreRelease)
 	if err != nil {
 		return nil, err
 	}
-	if latestRelease == nil {
-		logger.Warnf("no latest release found for repository")
+	if len(releases) == 0 {
+		logger.Warnf("no releases found for repository")
 		return nil, nil
 	}
 
+	var plugins []*model.Plugin
+	// Keep track of the latest plugin compatible with the given server version
+	minServerVersionsSeen := map[string]*model.Plugin{}
+	for _, release := range releases {
+		releasePlugin, err := getReleasePlugin(release, repository, existingPlugins)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to get release plugin for %s", release.GetName())
+		}
+
+		if releasePlugin == nil {
+			logger.Warnf("no plugin found for release %s", release.GetName())
+			continue
+		}
+
+		if minServerVersionsSeen[releasePlugin.Manifest.MinServerVersion] != nil {
+			if releasePlugin.Manifest.Version == "" {
+				return nil, errors.Errorf("version is empty for manifest.Id %s", releasePlugin.Manifest.Id)
+			}
+
+			lastSeenPlugin := minServerVersionsSeen[releasePlugin.Manifest.MinServerVersion]
+			lastSeenPluginVersion, err := semver.Parse(lastSeenPlugin.Manifest.Version)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse version %s", lastSeenPlugin.Manifest.Version)
+			}
+
+			releasePluginVersion, err := semver.Parse(releasePlugin.Manifest.Version)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse release plugin version %s", releasePlugin.Manifest.Version)
+			}
+
+			// Ignore if we have the latest plugin version for this server version
+			if lastSeenPluginVersion.GTE(releasePluginVersion) {
+				continue
+			}
+		}
+
+		minServerVersionsSeen[releasePlugin.Manifest.MinServerVersion] = releasePlugin
+	}
+
+	for _, plugin := range minServerVersionsSeen {
+		plugins = append(plugins, plugin)
+	}
+
+	// Sort the final slice by plugin version, descending
+	sort.SliceStable(
+		plugins,
+		func(i, j int) bool {
+			return semver.MustParse(plugins[i].Manifest.Version).GT(semver.MustParse(plugins[j].Manifest.Version))
+		},
+	)
+
+	return plugins, nil
+}
+
+// getReleases returns all GitHub releases for the given repository.
+func getReleases(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) ([]*github.RepositoryRelease, error) {
+	var result []*github.RepositoryRelease
+	options := &github.ListOptions{
+		Page:    0,
+		PerPage: 40,
+	}
+	for {
+		releases, resp, err := client.Repositories.ListReleases(ctx, "mattermost", repoName, options)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to get releases for repository %s", repoName)
+		}
+
+		for _, release := range releases {
+			if release.GetDraft() {
+				continue
+			}
+
+			if release.GetPrerelease() && !includePreRelease {
+				continue
+			}
+
+			result = append(result, release)
+		}
+
+		if resp.NextPage == 0 {
+			break
+		}
+		options.Page = resp.NextPage
+	}
+
+	return result, nil
+}
+
+func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repository, existingPlugins []*model.Plugin) (*model.Plugin, error) {
 	var releaseName string
-	if latestRelease.GetName() == "" {
-		releaseName = latestRelease.GetTagName()
+	if release.GetName() == "" {
+		releaseName = release.GetTagName()
 	} else {
-		releaseName = fmt.Sprintf("%s (%s)", latestRelease.GetName(), latestRelease.GetTagName())
+		releaseName = fmt.Sprintf("%s (%s)", release.GetName(), release.GetTagName())
 	}
 	logger.Debugf("found latest release %s", releaseName)
 
 	downloadURL := ""
 	var signatureAsset *github.ReleaseAsset
-	releaseNotesURL := latestRelease.GetHTMLURL()
+	releaseNotesURL := release.GetHTMLURL()
 	var updatedAt time.Time
-	for _, releaseAsset := range latestRelease.Assets {
+	for _, releaseAsset := range release.Assets {
 		assetName := releaseAsset.GetName()
+		if strings.Contains(assetName, "-amd64") {
+			logger.Debugf("ignoring old style tar bundle %s, for release %s", assetName, releaseName)
+			continue
+		}
+
 		if strings.HasSuffix(assetName, ".tar.gz") {
 			downloadURL = releaseAsset.GetBrowserDownloadURL()
 			timestampUpdatedAt := releaseAsset.GetUpdatedAt()
@@ -291,8 +389,8 @@ func getReleasePlugin(ctx context.Context, client *github.Client, repositoryName
 	}
 	plugin.DownloadURL = downloadURL
 	plugin.ReleaseNotesURL = releaseNotesURL
-	plugin.UpdatedAt = updatedAt
 	plugin.Signature = signature
+	plugin.UpdatedAt = updatedAt
 
 	return plugin, nil
 }
