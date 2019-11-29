@@ -18,20 +18,18 @@ generate:
 	cp plugins.json data/static/
 	go generate ./...
 
-## Runs govet and gofmt against all packages.
+## Runs go vet and golangci-lint against all packages.
 .PHONY: check-style
-check-style: govet lint
-
-## Runs govet against all packages.
-.PHONY: govet
-govet:
+check-style:
 	go vet ./...
 
-## Runs lint against all packages.
-.PHONY: lint
-lint:
-	GO111MODULE=off go get -u golang.org/x/lint/golint
-	golint -set_exit_status ./...
+# https://stackoverflow.com/a/677212/1027058 (check if a command exists or not)
+	@if ! [ -x "$$(command -v golangci-lint)" ]; then \
+		echo "golangci-lint is not installed. Please see https://github.com/golangci/golangci-lint#install for installation instructions."; \
+		exit 1; \
+	fi; \
+
+	golangci-lint run ./...
 
 ## Runs test against all packages.
 .PHONY: test

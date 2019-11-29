@@ -1,0 +1,49 @@
+service:
+  golangci-lint-version: 1.21.0 # Keep this in sync with .circleci/config.yml and Jenkinsfile.pr
+
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+
+linters-settings:
+  gofmt:
+    simplify: true
+  govet:
+    check-shadowing: true
+    enable-all: true
+
+linters:
+  disable-all: true
+  enable:
+    # - bodyclose
+    - deadcode
+    - depguard
+    - dogsled
+    - dupl
+    - errcheck
+    # - funlen
+    # - gochecknoinits
+    - goconst
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - golint
+    # - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - interfacer
+    # - lll
+    - misspell
+    - nakedret
+    - scopelint
+    - staticcheck
+    - structcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+    - whitespace

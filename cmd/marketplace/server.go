@@ -90,7 +90,10 @@ var serverCmd = &cobra.Command{
 
 		ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 		defer cancel()
-		srv.Shutdown(ctx)
+		err = srv.Shutdown(ctx)
+		if err != nil {
+			logger.WithField("err", err).Error("Failed to shutdown")
+		}
 
 		return nil
 	},
