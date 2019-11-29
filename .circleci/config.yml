@@ -62,9 +62,9 @@ workflows:
   ci:
     jobs:
       - lint
-      - test
+      - test:
           requires:
             - lint
-      - build
+      - build:
           requires:
             - test
