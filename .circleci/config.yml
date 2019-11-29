@@ -54,7 +54,7 @@ jobs:
       - checkout
       - *restore_cache
       - run: make build
-      - run: check-uncommitted
+      - check-uncommitted
       - *save_cache
 
 workflows:
@@ -63,4 +63,8 @@ workflows:
     jobs:
       - lint
       - test
+          requires:
+            - lint
       - build
+          requires:
+            - test
