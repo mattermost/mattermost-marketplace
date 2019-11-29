@@ -15,6 +15,19 @@ aliases:
     paths:
     - "/go/pkg/mod"
 
+commands:
+  check-uncommitted:
+    description: Check for uncommitted changes.
+    steps:
+      - run: 
+          name: Check for uncomitted changes using git porcelain command.
+          command: |
+            if [[ `git status --porcelain` ]]; then
+              echo "ERROR: uncommitted changes"
+              git status --porcelain
+              exit 1
+            fi
+
 jobs:
   lint:
     executor:
@@ -41,12 +54,7 @@ jobs:
       - checkout
       - *restore_cache
       - run: make build
-      - run: |
-        if [[ `git status <<parameters.path>> --porcelain` ]]; then
-          echo "ERROR: uncommitted changes"
-          git status --porcelain
-          exit 1
-        fi
+      - run: check-uncommitted
       - *save_cache
 
 workflows:
