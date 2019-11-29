@@ -45,4 +45,4 @@ workflows:
   version: 2
   ci:
     jobs:
-      - build:
+      - build
