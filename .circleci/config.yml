@@ -29,30 +29,14 @@ commands:
             fi
 
 jobs:
-  lint:
-    executor:
-      name: default
-    steps:
-      - checkout
-      - *restore_cache
-      - run: make check-style
-      - *save_cache
-
-  test:
-    executor:
-      name: default
-    steps:
-      - checkout
-      - *restore_cache
-      - run: make test
-      - *save_cache
-
   build:
     executor:
       name: default
     steps:
       - checkout
       - *restore_cache
+      - run: make check-style
+      - run: make test
       - run: make build
       - check-uncommitted
       - *save_cache
@@ -61,10 +45,4 @@ workflows:
   version: 2
   ci:
     jobs:
-      - lint
-      - test:
-          requires:
-            - lint
       - build:
-          requires:
-            - test
