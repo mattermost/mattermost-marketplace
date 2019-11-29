@@ -73,9 +73,9 @@ var serverCmd = &cobra.Command{
 
 		go func() {
 			logger.WithField("addr", srv.Addr).Info("Listening")
-			err := srv.ListenAndServe()
-			if err != nil && err != http.ErrServerClosed {
-				logger.WithField("err", err).Error("Failed to listen and serve")
+			listenErr := srv.ListenAndServe()
+			if listenErr != nil && listenErr != http.ErrServerClosed {
+				logger.WithField("err", listenErr).Error("Failed to listen and serve")
 			}
 		}()
 
