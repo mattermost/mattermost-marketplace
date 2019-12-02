@@ -29,7 +29,7 @@ check-style:
 		exit 1; \
 	fi; \
 
-	golangci-lint run ./...
+	golangci-lint run --max-same-issues=10 ./...
 
 ## Runs test against all packages.
 .PHONY: test

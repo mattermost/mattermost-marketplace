@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/mattermost/mattermost-marketplace/internal/testlib"
 	"github.com/stretchr/testify/require"
+
+	"github.com/mattermost/mattermost-marketplace/internal/testlib"
 )
 
 func TestNew(t *testing.T) {

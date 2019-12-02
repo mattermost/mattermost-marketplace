@@ -9,12 +9,13 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/mattermost/mattermost-marketplace/internal/api"
-	"github.com/mattermost/mattermost-marketplace/internal/store"
 	"github.com/mattermost/mattermost-server/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
+
+	"github.com/mattermost/mattermost-marketplace/internal/api"
+	"github.com/mattermost/mattermost-marketplace/internal/store"
 )
 
 var instanceID string

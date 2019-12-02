@@ -6,18 +6,27 @@ run:
   modules-download-mode: readonly
 
 linters-settings:
+  goconst:
+    min-len: 2
+    min-occurrences: 2
   gofmt:
     simplify: true
+  goimports:
+    local-prefixes: github.com/mattermost/mattermost-marketplace
+  golint:
+    min-confidence: 0
   govet:
     check-shadowing: true
     enable-all: true
+  misspell:
+    locale: US
 
 linters:
   disable-all: true
   enable:
     # - bodyclose
     - deadcode
-    - depguard
+    # - depguard
     - dogsled
     - dupl
     - errcheck

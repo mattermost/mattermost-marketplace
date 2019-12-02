@@ -9,12 +9,13 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
+	mattermostModel "github.com/mattermost/mattermost-server/model"
+	"github.com/stretchr/testify/require"
+
 	"github.com/mattermost/mattermost-marketplace/internal/api"
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/mattermost/mattermost-marketplace/internal/store"
 	"github.com/mattermost/mattermost-marketplace/internal/testlib"
-	mattermostModel "github.com/mattermost/mattermost-server/model"
-	"github.com/stretchr/testify/require"
 )
 
 func setupAPI(t *testing.T, plugins []*model.Plugin) (*api.Client, func()) {

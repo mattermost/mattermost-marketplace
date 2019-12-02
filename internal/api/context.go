@@ -1,8 +1,9 @@
 package api
 
 import (
-	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/sirupsen/logrus"
+
+	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
 // Store describes the interface to the backing store.
