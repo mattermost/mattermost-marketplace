@@ -20,6 +20,7 @@ indent_style = tab
 [*.md]
 indent_style = space
 indent_size = 4
+trim_trailing_whitespace = false
 
 [.golangci.yml]
 indent_style = space
