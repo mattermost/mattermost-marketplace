@@ -65,7 +65,6 @@ jobs:
       - checkout
       - install-golangci-lint
       - *restore_cache
-      - run: make check-style
       - run: make test
       - run: make build
       - check-uncommitted

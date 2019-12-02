@@ -33,7 +33,7 @@ check-style:
 
 ## Runs test against all packages.
 .PHONY: test
-test:
+test: check-style
 	go test -ldflags="$(LDFLAGS)" ./...
 
 ## Build builds the various commands
