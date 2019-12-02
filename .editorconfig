@@ -12,7 +12,7 @@ trim_trailing_whitespace = true
 indent_style = tab
 
 [*.json]
-indent_size = 2
+indent_size = 4
 
 [Makefile,*.mk]
 indent_style = tab
