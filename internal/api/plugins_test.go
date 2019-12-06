@@ -163,7 +163,7 @@ func TestPlugins(t *testing.T) {
 			IconData:    "icon-data3.svg",
 			DownloadURL: "https://github.com/matterpoll/matterpoll/releases/download/v1.2.0/com.github.matterpoll.matterpoll-1.2.0.tar.gz",
 			Manifest: &mattermostModel.Manifest{
-				Id:               "matterpoll-OLD",
+				Id:               "matterpoll",
 				Name:             "matterpoll",
 				Version:          "1.2.0",
 				MinServerVersion: "5.16.0",
