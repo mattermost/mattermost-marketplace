@@ -56,3 +56,7 @@ linters:
     - unused
     - varcheck
     - whitespace
+
+issues:
+  max-same-issues: 10
+  max-per-linter: 10
