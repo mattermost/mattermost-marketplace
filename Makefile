@@ -67,6 +67,11 @@ deploy-lambda: clean build-lambda
 deploy-lambda-fast: clean build-lambda
 	sls deploy function -f server
 
+## Update plugins.json
+.PHONY: plugins.json
+plugins.json:
+	go run ./cmd/generator --github-token $(GITHUB_TOKEN) --existing plugins.json --debug | jq | sponge plugins.json
+
 ## Clean all generated files
 .PHONY: clean
 clean:
