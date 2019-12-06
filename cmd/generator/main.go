@@ -33,7 +33,7 @@ import (
 func init() {
 	generatorCmd.PersistentFlags().String("github-token", "", "The optional GitHub token for API requests.")
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
-	generatorCmd.PersistentFlags().Bool("include-pre-release", true, "Whether to include pre-release versions.")
+	generatorCmd.PersistentFlags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
 	generatorCmd.PersistentFlags().String("existing", "", "An existing plugins.json to help streamline incremental updates.")
 }
 
