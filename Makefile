@@ -8,7 +8,7 @@ LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHa
 LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHashShort=$(BUILD_HASH_SHORT)"
 
 ## Checks the code style, tests, builds and bundles.
-all: check-style build
+all: check-style test build
 
 ## Generate uses statikfs to bundle the plugin.json for use with the lambda function.
 .PHONY: generate
@@ -33,7 +33,7 @@ check-style:
 
 ## Runs test against all packages.
 .PHONY: test
-test: check-style
+test:
 	go test -ldflags="$(LDFLAGS)" ./...
 
 ## Build builds the various commands
