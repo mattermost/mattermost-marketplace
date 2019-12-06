@@ -177,7 +177,6 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 	}
 
 	var plugins []*model.Plugin
-	var latestPlugin *model.Plugin
 	for _, release := range releases {
 		plugin, err := getReleasePlugin(release, repository, existingPlugins)
 		if err != nil {
@@ -191,15 +190,6 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 
 		if plugin.Manifest.Version == "" {
 			return nil, errors.Errorf("version is empty for manifest.Id %s", plugin.Manifest.Id)
-		}
-
-		pluginVersion, err := semver.Parse(plugin.Manifest.Version)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to parse release plugin version %s", plugin.Manifest.Version)
-		}
-
-		if latestPlugin == nil || pluginVersion.GT(semver.MustParse(latestPlugin.Manifest.Version)) {
-			latestPlugin = plugin
 		}
 
 		plugins = append(plugins, plugin)
