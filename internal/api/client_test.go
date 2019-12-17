@@ -31,11 +31,12 @@ func TestBuildURL(t *testing.T) {
 		},
 	}
 
-	for name, tt := range testCases {
+	for name, testCase := range testCases {
+		testCase := testCase
 		t.Run(name, func(t *testing.T) {
-			config.Address = tt.base
-			actual := config.buildURL(tt.path)
-			assert.Equal(t, tt.expected, actual)
+			config.Address = testCase.base
+			actual := config.buildURL(testCase.path)
+			assert.Equal(t, testCase.expected, actual)
 		})
 	}
 }

@@ -9,12 +9,13 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/mattermost/mattermost-marketplace/internal/api"
-	"github.com/mattermost/mattermost-marketplace/internal/store"
 	"github.com/mattermost/mattermost-server/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
+
+	"github.com/mattermost/mattermost-marketplace/internal/api"
+	"github.com/mattermost/mattermost-marketplace/internal/store"
 )
 
 var instanceID string
@@ -73,9 +74,9 @@ var serverCmd = &cobra.Command{
 
 		go func() {
 			logger.WithField("addr", srv.Addr).Info("Listening")
-			err := srv.ListenAndServe()
-			if err != nil && err != http.ErrServerClosed {
-				logger.WithField("err", err).Error("Failed to listen and serve")
+			listenErr := srv.ListenAndServe()
+			if listenErr != nil && listenErr != http.ErrServerClosed {
+				logger.WithField("err", listenErr).Error("Failed to listen and serve")
 			}
 		}()
 
@@ -90,7 +91,10 @@ var serverCmd = &cobra.Command{
 
 		ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 		defer cancel()
-		srv.Shutdown(ctx)
+		err = srv.Shutdown(ctx)
+		if err != nil {
+			logger.WithField("err", err).Error("Failed to shutdown")
+		}
 
 		return nil
 	},
