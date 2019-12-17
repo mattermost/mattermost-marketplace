@@ -1,0 +1,64 @@
+service:
+  golangci-lint-version: 1.21.0 # Keep this in sync with .circleci/config.yml
+
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+
+linters-settings:
+  goconst:
+    min-len: 2
+    min-occurrences: 2
+  gofmt:
+    simplify: true
+  goimports:
+    local-prefixes: github.com/mattermost/mattermost-marketplace
+  golint:
+    min-confidence: 0
+  govet:
+    check-shadowing: true
+    enable-all: true
+  misspell:
+    locale: US
+
+linters:
+  disable-all: true
+  enable:
+    # - bodyclose
+    - deadcode
+    # - depguard
+    - dogsled
+    - dupl
+    - errcheck
+    # - funlen
+    # - gochecknoinits
+    - goconst
+    - gocritic
+    - gocyclo
+    - gofmt
+    - goimports
+    - golint
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - interfacer
+    # - lll
+    - misspell
+    - nakedret
+    - scopelint
+    - staticcheck
+    - structcheck
+    - stylecheck
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+    - whitespace
+
+issues:
+  max-same-issues: 10
+  max-per-linter: 10
+  exclude:
+    - "G107: Potential HTTP request made with variable url"
