@@ -15,7 +15,7 @@ func initPlugins(apiRouter *mux.Router, context *Context) {
 	}
 
 	pluginsRouter := apiRouter.PathPrefix("/plugins").Subrouter()
-	pluginsRouter.Handle("", addContext(handleGetPlugins)).Methods("GET")
+	pluginsRouter.Handle("", addContext(handleGetPlugins)).Methods(http.MethodGet)
 }
 
 func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {

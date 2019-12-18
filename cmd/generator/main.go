@@ -144,6 +144,9 @@ var generatorCmd = &cobra.Command{
 						}
 					}
 				}
+
+				plugin.Labels = []model.Label{model.OfficialLabel}
+
 				plugins = append(plugins, plugin)
 			}
 		}

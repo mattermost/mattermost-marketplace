@@ -7,5 +7,6 @@ func Register(rootRouter *mux.Router, context *Context) {
 	apiRouter := rootRouter.PathPrefix("/api/v1").Subrouter()
 
 	initPlugins(apiRouter, context)
+	initLabels(apiRouter, context)
 	initHealthCheck(apiRouter, context)
 }

@@ -8,16 +8,16 @@ import (
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 )
 
-// Plugin represents a Mattermost plugin in the marketplace.
+// Plugin represents a Mattermost plugin in the Marketplace.
 type Plugin struct {
-	HomepageURL     string `json:"homepage_url"`
-	IconData        string `json:"icon_data"`
-	DownloadURL     string `json:"download_url"`
-	ReleaseNotesURL string `json:"release_notes_url"`
-	// Signature represents a signature of a plugin saved in base64 encoding.
-	Signature string                    `json:"signature"`
-	Manifest  *mattermostModel.Manifest `json:"manifest"`
-	UpdatedAt time.Time                 `json:"updated_at"`
+	HomepageURL     string                    `json:"homepage_url"`
+	IconData        string                    `json:"icon_data"`
+	DownloadURL     string                    `json:"download_url"`
+	ReleaseNotesURL string                    `json:"release_notes_url"`
+	Labels          []Label                   `json:"labels"`
+	Signature       string                    `json:"signature"` // Signature represents a signature of a plugin saved in base64 encoding.
+	Manifest        *mattermostModel.Manifest `json:"manifest"`
+	UpdatedAt       time.Time                 `json:"updated_at"`
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.
