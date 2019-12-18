@@ -5,6 +5,7 @@ import (
 	"net/url"
 
 	"github.com/gorilla/mux"
+
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 

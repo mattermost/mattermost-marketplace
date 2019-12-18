@@ -5,10 +5,11 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/mattermost/mattermost-marketplace/internal/model"
-	"github.com/mattermost/mattermost-marketplace/internal/testlib"
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 	"github.com/stretchr/testify/require"
+
+	"github.com/mattermost/mattermost-marketplace/internal/model"
+	"github.com/mattermost/mattermost-marketplace/internal/testlib"
 )
 
 func TestPlugins(t *testing.T) {

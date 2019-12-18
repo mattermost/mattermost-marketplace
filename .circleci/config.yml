@@ -19,14 +19,43 @@ commands:
   check-uncommitted:
     description: Check for uncommitted changes.
     steps:
-      - run: 
-          name: Check for uncomitted changes using git porcelain command.
+      - run:
+          name: Check for uncomitted changes.
           command: |
             if [[ `git status --porcelain` ]]; then
               echo "ERROR: uncommitted changes"
               git status --porcelain
               exit 1
             fi
+  install-golangci-lint:
+    description: Install golangci-lint
+    parameters:
+      version:
+        type: string
+        default: 1.21.0
+      gobin:
+        type: string
+        default: /go/bin
+      prefix:
+        type: string
+        default: v1
+        description: Prefix for cache key to store the binary.
+    steps:
+      - restore_cache:
+          name: Restore golangci-lint cache
+          keys: ['<< parameters.prefix >>-golangci-lint-{{ arch }}-<< parameters.version >>']
+      - run:
+          name: Install golangci-lint
+          command: |
+            mkdir -p << parameters.gobin >>
+            command -v << parameters.gobin >>/golangci-lint && exit
+
+            download=https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh
+            wget -O- -q $download | sh -s -- -b << parameters.gobin >>/ v<< parameters.version >>
+      - save_cache:
+          name: Save golangci-lint cache
+          key: '<< parameters.prefix >>-golangci-lint-{{ arch }}-<< parameters.version >>'
+          paths: [<< parameters.gobin >>/golangci-lint]
 
 jobs:
   build:
@@ -34,6 +63,7 @@ jobs:
       name: default
     steps:
       - checkout
+      - install-golangci-lint
       - *restore_cache
       - run: make check-style
       - run: make test
