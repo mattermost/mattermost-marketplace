@@ -7,8 +7,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/pkg/errors"
+
+	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
 // Client is the programmatic interface to the marketplace server API.

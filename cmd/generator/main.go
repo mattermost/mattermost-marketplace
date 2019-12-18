@@ -250,7 +250,8 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 	logger.Debugf("found latest release %s", releaseName)
 
 	downloadURL := ""
-	var signatureAsset *github.ReleaseAsset
+	var signatureAsset github.ReleaseAsset
+	var foundSignatureAsset bool
 	releaseNotesURL := release.GetHTMLURL()
 	var updatedAt time.Time
 	for _, releaseAsset := range release.Assets {
@@ -270,15 +271,16 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 			updatedAt = timestampUpdatedAt.In(time.UTC)
 		}
 		if strings.HasSuffix(assetName, ".sig") || strings.HasSuffix(assetName, ".asc") {
-			if signatureAsset != nil {
+			if foundSignatureAsset {
 				return nil, errors.Errorf("found multiple signatures %s for release %s", assetName, releaseName)
 			}
-			signatureAsset = &releaseAsset
+			signatureAsset = releaseAsset
+			foundSignatureAsset = true
 		}
 	}
 
 	var signature string
-	if signatureAsset != nil {
+	if foundSignatureAsset {
 		var err error
 		signature, err = downloadSignature(signatureAsset)
 		if err != nil {
@@ -301,13 +303,14 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 
 	// If no plugin in existing database or the updated timestamp has changed, attempt to download and inspect manifest.
 	if plugin == nil || updatedAt.IsZero() || plugin.UpdatedAt.Before(updatedAt) {
-		if plugin == nil {
+		switch {
+		case plugin == nil:
 			logger.Debug("no existing plugin")
-		} else if updatedAt.IsZero() {
+		case updatedAt.IsZero():
 			logger.Debug("no new update timestamp for plugin")
-		} else if plugin.UpdatedAt.IsZero() {
+		case plugin.UpdatedAt.IsZero():
 			logger.Debug("no recorded update timestamp for plugin")
-		} else if plugin.UpdatedAt.Before(updatedAt) {
+		case plugin.UpdatedAt.Before(updatedAt):
 			logger.Debugf("plugin release asset is newer (+%d seconds)", updatedAt.Sub(plugin.UpdatedAt)/time.Second)
 		}
 
@@ -400,8 +403,8 @@ func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 	return nil, errors.Errorf("failed to find %s in tar file", filepath)
 }
 
-func downloadSignature(asset *github.ReleaseAsset) (string, error) {
-	signature, err := getSignatureFromAsset(*asset)
+func downloadSignature(asset github.ReleaseAsset) (string, error) {
+	signature, err := getSignatureFromAsset(asset)
 	if err != nil {
 		return "", errors.Wrap(err, "Can't get signature from the asset")
 	}
@@ -426,38 +429,16 @@ func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {
 	return base64.StdEncoding.EncodeToString(sigFile), nil
 }
 
-func getLatestRelease(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) (*github.RepositoryRelease, error) {
-	releases, _, err := client.Repositories.ListReleases(ctx, "mattermost", repoName, &github.ListOptions{
-		Page:    0,
-		PerPage: 10,
-	})
-	if err != nil {
-		return nil, errors.Wrapf(err, "failed to get releases for repository %s", repoName)
-	}
-
-	var latestRelease *github.RepositoryRelease
-	for _, release := range releases {
-		if release.GetDraft() {
-			continue
-		}
-
-		if release.GetPrerelease() && !includePreRelease {
-			continue
-		}
-
-		if latestRelease == nil || release.GetPublishedAt().After(latestRelease.GetPublishedAt().Time) {
-			latestRelease = release
-		}
-	}
-
-	return latestRelease, nil
-}
-
 func getIcon(ctx context.Context, icon string) ([]byte, error) {
 	if strings.HasPrefix(icon, "http") {
 		logger.Debugf("fetching icon from url %s", icon)
 
-		resp, err := http.Get(icon)
+		req, err := http.NewRequestWithContext(ctx, "GET", icon, nil)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to initialize request to download plugin icon at %s", icon)
+		}
+
+		resp, err := http.DefaultClient.Do(req)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to download plugin icon at %s", icon)
 		}

@@ -8,7 +8,7 @@ LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHa
 LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHashShort=$(BUILD_HASH_SHORT)"
 
 ## Checks the code style, tests, builds and bundles.
-all: check-style build
+all: check-style test build
 
 ## Generate uses statikfs to bundle the plugin.json for use with the lambda function.
 .PHONY: generate
@@ -18,20 +18,18 @@ generate:
 	cp plugins.json data/static/
 	go generate ./...
 
-## Runs govet and gofmt against all packages.
+## Runs go vet and golangci-lint against all packages.
 .PHONY: check-style
-check-style: govet lint
-
-## Runs govet against all packages.
-.PHONY: govet
-govet:
+check-style:
 	go vet ./...
 
-## Runs lint against all packages.
-.PHONY: lint
-lint:
-	GO111MODULE=off go get -u golang.org/x/lint/golint
-	golint -set_exit_status ./...
+# https://stackoverflow.com/a/677212/1027058 (check if a command exists or not)
+	@if ! [ -x "$$(command -v golangci-lint)" ]; then \
+		echo "golangci-lint is not installed. Please see https://github.com/golangci/golangci-lint#install for installation instructions."; \
+		exit 1; \
+	fi; \
+
+	golangci-lint run ./...
 
 ## Runs test against all packages.
 .PHONY: test
@@ -46,6 +44,10 @@ build: build-server build-lambda
 .PHONY: build-server
 build-server: generate
 	go build -ldflags="$(LDFLAGS)" -o dist/marketplace ./cmd/marketplace/
+
+## Run the mattermost-marketplace
+.PHONY: run
+run: run-server
 
 ## Run the mattermost-marketplace
 .PHONY: run-server
