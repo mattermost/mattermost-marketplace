@@ -46,6 +46,10 @@ build-server: generate
 	go build -ldflags="$(LDFLAGS)" -o dist/marketplace ./cmd/marketplace/
 
 ## Run the mattermost-marketplace
+.PHONY: run
+run: run-server
+
+## Run the mattermost-marketplace
 .PHONY: run-server
 run-server:
 	go run -ldflags="$(LDFLAGS)" ./cmd/marketplace server
