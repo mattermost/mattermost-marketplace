@@ -20,7 +20,7 @@ type healthCheckResponse struct {
 	Description string                       `json:"description"`
 }
 
-// initHealthCheck health check endpoints on the given router.
+// initHealthCheck registers health check endpoints on the given router.
 func initHealthCheck(apiRouter *mux.Router, context *Context) {
 	addContext := func(handler contextHandlerFunc) *contextHandler {
 		return newContextHandler(context, handler)

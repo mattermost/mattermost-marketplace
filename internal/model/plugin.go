@@ -8,7 +8,7 @@ import (
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 )
 
-// Plugin represents a Mattermost plugin in the Marketplace.
+// Plugin represents a Mattermost plugin in the Plugin Marketplace.
 type Plugin struct {
 	HomepageURL     string                    `json:"homepage_url"`
 	IconData        string                    `json:"icon_data"`

@@ -12,13 +12,13 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
-// Client is the programmatic interface to the marketplace server API.
+// Client is the programmatic interface to the Plugin Marketplace API.
 type Client struct {
 	Address    string
 	httpClient *http.Client
 }
 
-// NewClient creates a client to the marketplace server at the given address.
+// NewClient creates a client to the Plugin Marketplace at the given address.
 func NewClient(address string) *Client {
 	return &Client{
 		Address:    address,
