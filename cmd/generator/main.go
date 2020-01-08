@@ -161,7 +161,7 @@ var generatorCmd = &cobra.Command{
 	},
 }
 
-// getReleasePlugins queries GitHub for all releases of the given plugin, sorting by plugin versioning descending.
+// getReleasePlugins queries GitHub for all releases of the given plugin, sorting by plugin version descending.
 func getReleasePlugins(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
 	logger := logger.WithField("repository", repositoryName)
 
@@ -180,45 +180,21 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 	}
 
 	var plugins []*model.Plugin
-	// Keep track of the latest plugin compatible with the given server version
-	minServerVersionsSeen := map[string]*model.Plugin{}
 	for _, release := range releases {
-		releasePlugin, err := getReleasePlugin(release, repository, existingPlugins)
+		plugin, err := getReleasePlugin(release, repository, existingPlugins)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to get release plugin for %s", release.GetName())
 		}
 
-		if releasePlugin == nil {
+		if plugin == nil {
 			logger.Warnf("no plugin found for release %s", release.GetName())
 			continue
 		}
 
-		if minServerVersionsSeen[releasePlugin.Manifest.MinServerVersion] != nil {
-			if releasePlugin.Manifest.Version == "" {
-				return nil, errors.Errorf("version is empty for manifest.Id %s", releasePlugin.Manifest.Id)
-			}
-
-			lastSeenPlugin := minServerVersionsSeen[releasePlugin.Manifest.MinServerVersion]
-			lastSeenPluginVersion, err := semver.Parse(lastSeenPlugin.Manifest.Version)
-			if err != nil {
-				return nil, errors.Wrapf(err, "failed to parse version %s", lastSeenPlugin.Manifest.Version)
-			}
-
-			releasePluginVersion, err := semver.Parse(releasePlugin.Manifest.Version)
-			if err != nil {
-				return nil, errors.Wrapf(err, "failed to parse release plugin version %s", releasePlugin.Manifest.Version)
-			}
-
-			// Ignore if we have the latest plugin version for this server version
-			if lastSeenPluginVersion.GTE(releasePluginVersion) {
-				continue
-			}
+		if plugin.Manifest.Version == "" {
+			return nil, errors.Errorf("version is empty for manifest.Id %s", plugin.Manifest.Id)
 		}
 
-		minServerVersionsSeen[releasePlugin.Manifest.MinServerVersion] = releasePlugin
-	}
-
-	for _, plugin := range minServerVersionsSeen {
 		plugins = append(plugins, plugin)
 	}
 

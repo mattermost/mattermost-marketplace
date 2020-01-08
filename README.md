@@ -1,6 +1,6 @@
 # Plugin Marketplace
 
-The Plugin Marketplace is a collection of plugins for use with [Mattermost](https://github.com/mattermost/mattermost-server). This repository houses the stateless HTTP service that will eventually run at marketplace.integrations.mattermost.com. It is meant to be queried by the Mattermost server to enable plugin discovery by system administrators.
+The Plugin Marketplace is a collection of plugins for use with [Mattermost](https://github.com/mattermost/mattermost-server). This repository houses the stateless HTTP service that is run at https://api.integrations.mattermost.com. It is meant to be queried by the Mattermost server to enable plugin discovery by system administrators.
 
 Although Mattermost hosts the Marketplace as an AWS Lambda function backed by S3 and CloudFront, the core feature set is designed for use in any hosting environment, enabling private, self-hosted collections of plugins.
 
@@ -40,10 +40,11 @@ $ make test
 
 ### Updating plugins.json
 
-At the moment, the Marketplace simply points at the latest release of a fixed set of Mattermost plugins. In the future, this database will be fine-tuned to facilitate tracking multiple versions for the appropriate Mattermost server version. To update `plugins.json`, simply run:
+At the moment, the Marketplace simply points at the latest release of a fixed set of Mattermost plugins. In the future, this database will be fine-tuned to facilitate tracking multiple versions for the appropriate Mattermost server version. To update `plugins.json`, ensure you have [jq](https://stedolan.github.io/jq/) and [sponge](https://linux.die.net/man/1/sponge) installed and run:
 
 ```
-$ go run ./cmd/generator --github-token <your github token> --debug > plugins.json
+export GITHUB_TOKEN=<github token>
+make plugins.json
 ```
 
 ### Deploying as a Lambda Function
