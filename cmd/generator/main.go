@@ -436,7 +436,7 @@ func getIcon(ctx context.Context, icon string) ([]byte, error) {
 	if strings.HasPrefix(icon, "http") {
 		logger.Debugf("fetching icon from url %s", icon)
 
-		req, err := http.NewRequestWithContext(ctx, "GET", icon, nil)
+		req, err := http.NewRequestWithContext(ctx, http.MethodGet, icon, nil)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to initialize request to download plugin icon at %s", icon)
 		}
