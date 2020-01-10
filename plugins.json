@@ -8,7 +8,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gB6YACgkQ0bVLR6XO/sRwQg/6AqwBk2/JZooONI4Ie01v+zBFXtnJUzYvy9fxpRG9lC/M6CjYWM+FtWRn6NLeA3ve86JfEaxlXtc2Kwc4RZHoknjjEiouTBplP4FpSuVIC7ciP282tru3cS64hOTl4pvuxd2zXKlW7lN8/bACNs9dilRdSaJaqZBmaU9Noz0lSIoG5HC7V5r9LG/i80tGQR0UFwX6fYktTOBLGjCi/xSeI6VaaHh6kVSiy4dDkJuER1s1rPyKxaTRvhGS2/hcF3/gxssmFLbGsx6EsVlRyiZsQC6YeIoyYTxRUnOdMQXDGonvuzL/woA3LGyP3EpzaPuqZx2yUNxUavznICr4ZzruY1jGkWq5pGNSMZM4LwhKmpcWUzYTs4TmDzJdUoPjfKWdHt0Gc4/mq/SdELoO4CEzl7AThRI1Flp8xUBQPTl0h0e9k8hIN//vNtaRQFUNgZDAKfPUqWYPwkheUyObE7FMpY3LppxlNmRsaGrdkybEN0uMvfnSG2YxfOv38tTEVTc06V1s5hyzJ7FJ22z5JKfIyO/RlgjfifpXIcarYcbjCXcxC0qptOX4ypAUwKgFpKDSjRmM8v8SfIjExXkAUPYvyTQFAg2bIDykyepQleqFTBMcgr00qp8D2czprL3M/7ksSmgHrM3xx/46i+Ry6A2Mj6aAmq6lf5FXVthHyh8ajw4=",
@@ -114,7 +115,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -217,7 +219,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBMcACgkQ0bVLR6XO/sQAMg//ScB2TSxRbvVy4T2guFcROkz0EEnmusthv+lGNuwe10hP1AnnanDHRatKBnazGqXy3GaPSzkX2bmFCLgQxoZiWgs/sBYKXGkiROWN712CayCCj//OIyfGdGi/GTi3x8vsGmxKW+ZevXFm/TWx5tQ6R/uhpjjErLzns/BDRV5bK6hvD8ACH4lCyiy3C/xei+AP4lKdeYCjTZwYZIgtkKV6Bc8UbVUezUN4hZ/gCDdltfR1T1Li+8l70B0IwY3HtqeR+39exzFPboPyaD5Z8L2jsKj9OY6KwMGW5Q3HonoEmmVr1Qe/N3NMRW73elsUJNkeCk5OqkOmV32wF6Ie8Qrm9O0fZmHQ4q3Y1p21zqQNZ/hKIXbuAK1tSV7t25G9+6YsnzVagX7fYdI2z2VZHLS8oZr7V52XDkvlaMWjhcU3gbY4sgrZjEsOK/Dw7JhsTQbZ3vlvyQyb6UHUP/YbfZ3QzlZBAm9DMLsEw+rUHUQrimXTPW37Us7AhTnkWXChBnXrlYtTOqU9Wwwo8nbSttrHdZFiXnjUciWp885nBTg8ogmP54nPNB2EAcYaA6LfczW51WPoS4N5trmW5bmkQaRrqF5FoJsUR64bEB7NY3Eyoa8mIj6VSQ3eBGFDOKGksD7+aYW/rbKkMLnXsHoCMpe6wgmo+giDtobY3akhtWBs25Q=",
@@ -261,7 +264,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -304,7 +308,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -338,7 +343,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -372,7 +378,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBRMACgkQ0bVLR6XO/sQ4wg/+LSUNF5OPlPy00RyKmOlu6aq8H2wfa3AMh+D9HClAIKJtZ1nyU4SLmP4+TPQo+Kjf2YsMnigmYmARzOuBLetGCAaWaZJNG6qsys8/LR85mVqWFyek2RHZ68mp+emeP/2ZYr5QMQP25hAPrhG2Lu/R/3j+HIMZwb2O8Cq3mXwsQeYobpS3aucinFsEEdpvAvIpZqwjwaUgZRBDWHd+hrT5LCFuFQnXAiBCRTB9OwPN83I9FKZma0L8kvr9tx0CcM7GW9IwYcIoCiNt87os55TtNSCnE5EmXhLltHpYlopn4w26hJAvZ0ntrmiQ4CYaPgelEyjynCbd/LOsc18HhfTQscbsdcimQwtrdJp95TLbQsIoNYpfygl6QTW/BZ71GsIWe30e6+U+xCNvizC607wO13gwLfWYP111fhRkXRtmDNS0d6es9pcUE3nfcVVf3IiP7Od64bH7FgSO4NXOP0Qkt/5yZM6d6O0GVwK9dqB9uKHNSKr6OWAvBOnuQ6O2mygcTeTS3WWAd1i1VohqG/5OHg4gswQFsaoOPV9lgqqIbXlcOc14xQO5oGP5HzsMW//Sjpbq9RjzuX9r1h1vMvNuH5cr6jOr1Z3m2kIqllmlp7ZYoAMF1rT/El8wQdO4GixFxCucOK6IWgWefW844kEIwSwO17nvSxgl2jwJu44foVo=",
@@ -452,7 +459,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iHUEABYIAB0WIQQT5gANrliHz466capuC+FV9fkzswUCXbhRgQAKCRBuC+FV9fkzs3MsAP9vHgiqwAtCI9mT9CMNeEDWyXoS3hOqmsptCcFAHh01pgD/YPcPP//a9eiBcCfUh9W99a/izuLRc9nc1Wpu8mtshQA=",
@@ -532,7 +540,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -612,7 +621,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -691,7 +701,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -770,7 +781,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -849,7 +861,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -928,7 +941,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1007,7 +1021,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1086,7 +1101,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl36Qx8ACgkQ0bVLR6XO/sT/3w/+MHANqvvYh9ocL1uDsoUsTVyTy1hJE5tqnAA9Tl0ckJmIcDHAk2mgvuHLCGqA8o35AVHv//4rPaT5Vcg5DWY3U0kb4b0xZLWSTp+El6JGZaE5nbO5DmCzC+lDqwYsf8RrvynMjkKALLDjCl1ppahyqNeTAOYXocfGbZfQNPNFA7gFHJdwLvEzzoy1UqAQKsku0b50Xp/MeVZX6URie3h3nYfIlBADmPUr4//5FfT1OO3Xh0nJT9JsPWGKTTLndR9D05T+VQIQaHBVBk2mskrV+MGBWHM/RYEUfuzYxya+Mtg9Xj6MnD/bvoNyjwOPybQhyMpVAWFplTkhYlqkzF0RB3EpmQUkKJpYsvfCk5dwB2qpiGeRVSCv3XXYmaBHRrrjtY7PTbcQe4fJLix0Xzbl1KSoHVNm0p7FNvS/ENoWs0ucC1t7796UZZojzuxtRpZ/rwK4i1YLUr/UWfcrabMA+2fIbBP41tMEC6mgkBZTx+Lr8TrF2Ih+1z4tzKPu0b49v7Wz785wNC9XWAslX23hf3a6p8HovXAAXg+ODqVHc5O+bCEi8VLo+//yGUsTxQQdURTxbs37vzR8c7+lpircFxxpLMMoxWZsIJ0wGhVZVUI/r711jXNkvg1tsJ23M5sF7c5z7xDajxRc4XqYpAqhxysD4w/EyxS4p6skoGpLOog=",
@@ -1185,7 +1201,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gKvAACgkQ0bVLR6XO/sTSfg/+KquJtvgbY4sGwFq4zG0Ms2YQqxXmq/qdkhWol02vCClzCgxC5I8QOLtWvyCsCO6cS/thHjv47LPiSZtwai4G5v3YLyl/YtuPU2ZNa5d6D8J6z1ue3Y9GOo6Np9DgS3cfCKEWtwYcbdaxz06WC7uW9Bk49WpCLZo//sfF5loWc780H1iyRMqXHbWEyqvj7GyM5LL8SfQCKEDJUy2EPeLN/PpXwEzZc/SCyjkxWK1GCR3rkVKOp5M4rmOl74YZ6zuOfofi1mugTxE8dlrxxxDSg60Mh6O9I27Wj38FJf8rWA0j5UnbvUqZp5/J3doO8GD87kCbZpVSuJUerKiavJoPyGwF3h5Ow35+BcydB7Tn6Oc6MzyN6605oey2axpVfWM9F2vmjE5Vsp4BO6hcNidmeM3XhF+895LQw9XpRlra/SgUZtU5waON3YUwoElOLPo3NGG6nJuAQ70jQAivwVK9ghjIAQ7dzSJ9fcCGiDIP2bbxZVA4w/4XEswhK8ypDznHcXL2nYunMJjh3qIbsxlN6W1Cwikad+OncvCBGDWwMUZNAww3ez+eWPAeaL3gbt7VDBf2KonWeIyCtyibpK4Mtz961+OHQwravt6reTHjPb1i0IPnAiCqBARqsbJrYAS2USRMHriSTPCMB9mEuk5fGEWbM0F/j7Ku3wmbsa/ZFq0=",
@@ -1275,7 +1292,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1365,7 +1383,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1455,7 +1474,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1545,7 +1565,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1635,7 +1656,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1725,7 +1747,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1788,7 +1811,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1851,7 +1875,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1911,7 +1936,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -1971,7 +1997,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2031,7 +2058,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2091,7 +2119,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2151,7 +2180,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBccACgkQ0bVLR6XO/sTBDw//cU8hpOJBouC1XIF48TRPtdLb2KMllDf6Wk35X4AIYWWDCxbqoXQ3eIO9JfhIKRdRHMIs95uMNmmuCCq5nY8+hR3oiAW6KDIuWdlkzuvpiMdvh3R7kWSNNqN7ksKVOwqekD+meKFieW+pPuFMDuAZrRFeGLHobT+zplXmUzJu3o+EapBMN491TO02eUZEZaq68N486Tno+kpn5fSO9EJF3MB8Jnif4trMTUjJMAQW8QDpPzl3Vt8vwiz3RlJyj5bhBav5TBKtbqGtqaay78AbuQjvuIM3Po+9H0S9nw3XS558zANE7mn9qrEIARtC6VhJUddo3sGuYhd50DxmUs0YadNMz+e8xvNCkxmtJdO8vyq4h83dyZRYj47i95Efl8Maq35V+T0OWcsG/ezWIg5SIgZnR94pVN5LJEEATyGnUKj3uwUW0aecT0PYzThq0scEJxJnvTW0+XJ/aRFnlyyVglQhto5hloyhR0M3YeF7meRD82A/6AS6fqb5+EoTWDAzz/25t+F81f6W7YXfu+C8BAZ4bFgKz6ujMPFqXnuHc49B7XBtgjHjn4QTlirZVRW7kMeD4Xa1ueeMy0MY4s1kKQX4WGcobE09NDJkpxIeGaxFhsGS0MzXLD9/Y5Wld8EimbfDIQGk8chh9jFbILgtlwPq16sELrIT8TCh4XoQVYA=",
@@ -2186,7 +2216,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2221,7 +2252,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQGzBAABCAAdFiEE8/rOReDeZCyL1qjmTHxlYsGSzB8FAl3WrscACgkQTHxlYsGSzB/e/wv/Ti7RyQ4ny2+JI7kMlteLR2VwXcwJeg0f8bXpB9i5bDj6+kimrliuyGZfMSRSer/ShLtsXT67qkYV66SL1ygFrrmk00k+/h6UVjbeiiR/rIxq3LCMzzoHntTHze65mF0Pk/BaQAaead98jE5Ahn2u0wOj12sLS6bK0cmHo5fUC7X+NmseO6zDml4US5nFteUE4ix7VtJZMd3OaBXJBCMHiokWTX8ijyGaGRjTIHTaQ/1aLWl+F+iO8EMhPMDy6LGUC4dEEHHrUntw3vitV3ZkMECRj1TnKHPo5L9egvEc4DBhgq/YBKWGKAG/04WfOJypAA0pMWyen6sJQBycoEPmPNQeQt8La8pPQGoRvVITUUDVC6pOmFYDMM7L2+blGPYqmM9S3wMCKGBKaylEzZFQeuRXdfXcgARk6CBu0KFhcXiwtUGW7gWIRmRYUwZPPDq7epCPlEGWp4McBYTtdd1l0Nq9cjtT0pTzyHFwOmaw5rE0JPVk22MC1XwFnLNbIdEC",
@@ -2256,7 +2288,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBgkACgkQ0bVLR6XO/sSLBg//eIKT7cfz+GkW3Lvu5koa5eOG1f2UrViHzrgkVTjV9oRlRrA2bwgiwKFLKj1nNcWN563j57LPMWKA5jQw4OVqYe8vzxOzPYrWvSHGNXDvKwOqpaCvfPPP03JHNr1lMDxrWin0K2vT/SGQbem+7vqSlznHYlGAXkEGqim7CeiujQBKHQYB8Eh19T6pDjYmvtlpBdlmn7yObxRxF/gFS9EOx1lKRaw9OCeR2ofkrrIxkg4lZzUPsrhxBoAtPiEVkoTgNoGHnr5zx0rl+ATxBv3JRTfUbgW6ep1jnqmBePa7W0uFEvmh1mWPTf/kkNojsLA28eKJnNI12VTmBVz7FVPiyC1r5D1RuwvZwBZRuUf/Fr67Xm5/2Qz9JretkZuJldmu44SBZpSnJAus+yQLhSnSnwfmPByw9FFdvDv8giDiZE4QEchY4XFqA8xc9uWSZUCXJyDfWJabmYlA/eOtg7AueGvQtpOUrt9WaCZuJpRRC/qInmHXlNNgUblEp7Bi+CDK+c/9APcaf1HBaS1G+pirrx7CIuKkxRUVUbYSPHop0WycA9f2c0SwKaOA5URl++JwN8RJlx+aPc8vrap2MOQJAD5UViR+KiAWmiUJoaJivzl0j39Pr6kw3l/vCgGz9d9IRAlOGPdQIJL132iTAbCgh9a95mDMujaoIsjezHc0Wn8=",
@@ -2307,7 +2340,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2366,7 +2400,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2425,7 +2460,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBkcACgkQ0bVLR6XO/sQ0cQ//X4zgcJYdrA/1hsXKsIG9KH6IMPnEBqXY4+HUwVwR1LojsVpEUQ3EE526EuOdIm2lOa58viK9A8turNFK0rBsKm6MlIEDiYkKdBgxuo7ZWBiaqkX1/JsoJ0xXk7HGbIfIOYawmitWS6kq5MhSITmJrPJik9nnTffO71rP+Ddjqcmhpd9HGupCIykB0um96Zs2Y7FISA9hiqM4P1UGJqK2DAsWONXwdMsvO+Dyvp+lgh+wCInZQ3wffyntmbGnYQsWGODOY8wVVnMl2oovM5FpKx9xNQ2Tir3D1p6BbNMdFq47Q4Fwu1FqtpPCPZij7GnH1YZX3CWTfMR5dODhQH5AhVV9qvwpjj8SRts+cu7V+2OYx2mrOGWnQ5XVEcKqjzzGzzYCkfvcawiTknIDUaPsZoGRMWE8uk05pDtqwG+Ntv2jqOwbGSBU0Ll/pcQO+02BWQ0rLfCsYLrgDtPG00E2hS4tn6K8+J/psZD+KUoKCu43V8nyrKM4FxdzwSo+d9+VXkxRDK1NdZ1TPPZaAPKUVtFMhzDQiTEB9X+GG9O8EMRt2PMpuz1s/EmJIdmEATmiCqDMI3/D/mtFXDRBSElq76axIMrmrqe1ms1PLZirrFe8nZJ68NXQ3NT74H5kB3AMvP2bUz3R3z0y6BdTQD7sl31nouITLmR05LnZWU5danU=",
@@ -2470,50 +2506,14 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
     "icon_data": "",
-    "download_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/download/v1.1.0/com.mattermost.custom-attributes-1.1.0.tar.gz",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/tag/v1.1.0",
-    "labels": [
-      {
-        "name": "Official",
-        "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
-      }
-    ],
-    "signature": "",
-    "manifest": {
-      "id": "com.mattermost.custom-attributes",
-      "name": "Custom User Attributes",
-      "description": "Add custom user attributes to the Mattermost user profile popover.",
-      "version": "1.1.0",
-      "server": {
-        "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
-          "darwin-amd64": "server/dist/plugin-darwin-amd64",
-          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        },
-        "executable": ""
-      },
-      "webapp": {
-        "bundle_path": "webapp/dist/main.js"
-      },
-      "settings_schema": {
-        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-custom-attributes/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-custom-attributes).",
-        "footer": "",
-        "settings": null
-      }
-    },
-    "updated_at": "2019-12-19T18:54:49Z"
-  },
-  {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
-    "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/download/v1.0.2/com.mattermost.custom-attributes-1.0.2.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/tag/v1.0.2",
     "labels": [
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBoYACgkQ0bVLR6XO/sTvyg/9H0X+jl7dYONYAXdSROyYqhaKKNsnEpWBVkg+4oCj0ZsPOyvAaCEkMycmUQZGuCBGjXn6Un8JHqqd0M4dcZtmeAjmezQwf19EQG2ZlknCSB4LPqBgvPg0RiF4ZAf9x1RORdR8pnFw/k/VlVQH7sksoQ17XtAUELFSDmxIpor1gXpNl+99FJ7Ig7j/rVW/kQy3Jq45fsMP2J8m6PAZ+g+nOA4CfY9CMqjfiI3Vj0JnEaSJGpH18KLlEQmHXmSgvArosCRmr/rUnEPHv8nJrAGmufs5njNv9GadnyGMxW8uHJ+JR0UwXuuXaTmoSW4VBeThyNE4t/iaEgunwuacJ33Dml0qImrAk8kRiRK0ZduNeIPMTFhlJprncaHB+4NVZFdhh6iGRIbp+kHfEVHtkSDmxffroahvjVaj0eZZ1fQ8+7oD1xi1A4hZHND+fFZVbL3ZMQwhOZ3rr3LRlyb/4CqnvuXrkeXUL/0Exg7OkRNv1JNBI7Pd+QpDDanPe3RHRmVXIwnDPGYqa8xlk13byckSGx1i+Xb7ZLrUbBBmMsNhqUd+19Zu8ys5AydI8gD8Ym4ACbl230mhToWzLIpWYu9QNLoeBeyWFWySWJEf7XMpLEHiien+fYKCK+aZWzxvuUno/pH7krqjnbEMfdKd9aT2Rskj+anTfNIJjoWmNHm9itA=",
@@ -2550,7 +2550,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2587,7 +2588,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2624,7 +2626,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gA6cACgkQ0bVLR6XO/sQNhw/+LcCSNwdXZx/pX9jdBVl+GeRCy7/cgn/C3IFqvBekXgbgqMgF61T6Arv9WN7rhhhLaH8WBfEFxiY7HTjxeZLUatLmXboIdMAWnLQAwIcUa/x+Ob0QWl6qagXlVXbf/526XgVDuCPcAb9Tzv44vrJqa7hg6vlWkBJljuxowPlOmnNgLM3jicmVSxFwTlWT8W50F9c5+kUXGF+T6fRWvNRBzawmD2RfJVZ/FnqLkY3w88A3x8QlwOOOWRbaWscYm3uDcBh7U5bkrR6UqcEf1Brgf8alHnIYNerENmP+rHJ/xKq0XS+GtDH/wEz/QPUAWxjzUKWn7J3MmURf1KyzyGhstwmLtNmliiWIMZGbTQBPEFWeOd+UZ+xhGl8Q1KC4fNUYxyJ1CFL4pByOYzTMlr3aZq5lkzjJqjib/4Gs8srrfkyaUU2cpUFWDOMccnDjgFRlhAA9XLOzNcabdW3wBmodh3G28oyql0k2Xa7qI/v7TbWcBDlctgu0Q5qNmkoTmcsLlLivJ1i7RiGDxlKTe7cfxL3cyv1xlWN2nMQ4KACmNv6Gg/rgWtkHSQHCTGna17dcP1nWyvpqVvJHO6l1RNrApt8daLRuNmCZfQGacWAwQtthRxPsO699ei2biokYBOjmuyHzbV5hI2VK75heMDtbkk3nUsEfvTkbtuRYY+LiDik=",
@@ -2691,7 +2694,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2758,7 +2762,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -2825,7 +2830,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBrQACgkQ0bVLR6XO/sRFNg//XF5Crh3N6lg/i12EfNEihsURZ26JyMhKZ1QTri8rlbYCu5XVxacrs+oH6CfsiKI0Z1r+zcjVx/JZGgKFn0MkulDrn2gLd5w5oBW1YxUMUyrvUZaFVzYcYySyjg3oJgei7cZxqbWrpQIOj1H2mfVAKmKIC3T2xzhNQMldSJRYc/4yb5Llsno9MkroQko+9U8iDlI55zlE3leVpG707/+EcQrzsScR1TCOMQ/Z5+XThxPqDDDTRLYa+dRWFuGGNOKMtTg+7dhxTezrdegHUjeoWp4CYyalfLpjeJyqXrUGCoY+031wMme/cgLmrQcTvn4/QqTqq6mjH4h3ogmp0zxMjRBF9GT7t7h3iBRkVPBd+NErTrcgyGZb8CJYOxDsZnZo5IAtdeYourokX3RqlwbULKMVfMyKPdDqsS2srpKmdtEoXUa10unDZm3IFjRBX4y8jigk5j/xY//rxNKBoCca7mQrcuikcU9jOFrlg8GEtZ1DnordVK0bqGbbN2KbrVuqVtPPbFfsuz7rh4zlddDGznTxEmq3gYv2cF49bKAkk4FUFZrnJ1HWhfnIn6lDdF6uj9wRlQ22+0Z7lpoKEJdorLx4YupY+7EWmRZrN0eCl0EX8E4a8Vg9HurIEynk45sqxLbtTKgLbpvMjel0h5mxogWhz17abPwcNZRq6qSORXM=",
@@ -2920,7 +2926,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -3015,7 +3022,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -3110,7 +3118,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -3212,7 +3221,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -3314,7 +3324,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIyBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBtwACgkQ0bVLR6XO/sSITQ/2LU0WwgzI3Rth+61asZrOAaTF192Yt1xeloJojRgU9CSdCenKag3m/g3VTWfDIlc3h4Ix7rU6mWgUdFfDmc0e6SLOSnfL8ELj6IFtSBfG+LndALNqv5+oyuw4F0NxWg6sEvcv6Lvt/zYRNDzRN6SO3pPiS0Y8qX9U/8KfTAhZFUCJukLuOkkbBchpRyeq7cChmdjtbfjS2goamdsX63BfDYv2pTg/6L3tlMswaNFJc9/STU9flmd1vyqN4X0eGSKT5gdBYBKjdQv7PxWbbFvv6+txdBiHQRpUiykBBZ59fT3GIK804y+8k4HkhloMn6gs8oWW+zJceXH3lrVmr9QwmSVU1QzFNPEA1H1x/1dmpD25sqW+wdKYeWazh5LY0plMlWJwGD2R6ro+O93POgpQMbeW+56HgHfWf+vWu803L+BDpjQ6q2DNDHbByhJNpk012R7aEs/GycGp4zW7CHjCGJ2XK17FYScxdTheNJyoKqmnHGaBiWPwGXQsiWdFIwrNiLJbh7J1yGZenHYGmW9qKwN2AmqbAUQtVWaDKjWWFagYLVh9z5bc10gEEt9z7A1NCk9wcerQ/hIrBb2CLmPdnVgMtGMF1Jbe+iCEijFKhY6eexEy6Hdnw8M27U4hLBdQPrE9WSQFHX5HlnT1QL1wRdze30BLMfrA1dTeodz+EQ==",
@@ -3361,7 +3372,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -3408,7 +3420,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -3455,7 +3468,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
@@ -3502,7 +3516,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBzgACgkQ0bVLR6XO/sTS0g/+O7mt1qTnKZRjuwD8gJnSOSlvQNbevbXpdKaOeeF/Y9Wb+TZIUPMUSui/UO5KbdM+pa0RRyZveIa6tds9MKJWy/GKPERKzitTpsedYN6APLjwRpIq3TU+Sl6p7jXLHsWhFuaFMmkDj9CMUppmSgDNr1RLMp2vP4UMcy+WHK0wMDk9YBl+RxJCVyqZ9IAqi/p5oLlNIPZnd4JWF50T1+5hA8/PlNNpgble5IEXGSBshYHFiW7sJKy49ATpM44NGA5z2fQeMWyQolmqkl490U0WL/BFopyEKQycLbkqQ2BX9PogSAikDw1c2loZfELkNpwjFqHaNvFOKctSlZKouXterSIS3aZReqNdy/XPBsEXsxhKOVn8VlwaEDIrD7LclrPlRthD9G9XAZFdXj9BCFKnPLdFAm/f4cKULDxczLPqhtcODAebgB7i1LBwft4BD2RvPQ/TlO4pQBPT7JN7BdJDApNpKZN1iLMeY58yWW4Wm33lPxtlCoeUT98Hll0TQYJuwHxS5YxfGJTkaIWZ6f23EZ5+h5NrKGEpiGTeMd3LYFM7DaFkhLfBEVl20CsZt/AxxD5i1g9uGBOJ/w45JjofY7bN5JmNjvk1gr8yVDv70O0G8pd2NvzEdiFhLsTJVkaK+wV66pajfmf2Ob3bMI9tfuY/6C6ypogCFkftVjV6Z90=",
@@ -3549,7 +3564,8 @@
       {
         "name": "Official",
         "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins"
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": "#166de0"
       }
     ],
     "signature": "",
