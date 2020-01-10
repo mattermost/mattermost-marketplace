@@ -38,6 +38,7 @@ func TestGetLabels(t *testing.T) {
 		Name:        "Official",
 		Description: "This plugin is maintained by Mattermost",
 		URL:         "https://mattermost.com/pl/default-community-plugins",
+		Color:       "#166de0",
 	}}
 
 	assert.Equal(t, expectedResponse, respose)
