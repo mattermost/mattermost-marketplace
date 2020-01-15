@@ -31,10 +31,11 @@ import (
 )
 
 func init() {
-	generatorCmd.PersistentFlags().String("github-token", "", "The optional GitHub token for API requests.")
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
-	generatorCmd.PersistentFlags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
-	generatorCmd.PersistentFlags().String("existing", "", "An existing plugins.json to help streamline incremental updates.")
+	generatorCmd.PersistentFlags().String("existing", "plugins.json", "An existing plugins.json to help streamline incremental updates.")
+
+	generatorCmd.Flags().String("github-token", "", "The optional GitHub token for API requests.")
+	generatorCmd.Flags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
 }
 
 func main() {
@@ -52,9 +53,9 @@ var generatorCmd = &cobra.Command{
 	RunE: func(command *cobra.Command, args []string) error {
 		command.SilenceUsage = true
 
-		debug, _ := command.Flags().GetBool("debug")
-		if debug {
-			logger.SetLevel(logrus.DebugLevel)
+		existingPlugins, err := InitCommand(command)
+		if err != nil {
+			return err
 		}
 
 		includePreRelease, _ := command.Flags().GetBool("include-pre-release")
@@ -72,21 +73,6 @@ var generatorCmd = &cobra.Command{
 			client = github.NewClient(tc)
 		} else {
 			client = github.NewClient(nil)
-		}
-
-		var existingPlugins []*model.Plugin
-		existingDatabase, _ := command.Flags().GetString("existing")
-		if existingDatabase != "" {
-			file, err := os.Open(existingDatabase)
-			if err != nil {
-				return errors.Wrapf(err, "failed to open existing database %s", existingDatabase)
-			}
-			defer file.Close()
-
-			existingPlugins, err = model.PluginsFromReader(file)
-			if err != nil {
-				return errors.Wrapf(err, "failed to read existing database %s", existingDatabase)
-			}
 		}
 
 		ctx := context.Background()
@@ -120,7 +106,8 @@ var generatorCmd = &cobra.Command{
 		for _, repositoryName := range repositoryNames {
 			logger.Debugf("querying repository %s", repositoryName)
 
-			releasePlugins, err := getReleasePlugins(ctx, client, repositoryName, includePreRelease, existingPlugins)
+			var releasePlugins []*model.Plugin
+			releasePlugins, err = getReleasePlugins(ctx, client, repositoryName, includePreRelease, existingPlugins)
 			if err != nil {
 				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
 			}
@@ -128,20 +115,12 @@ var generatorCmd = &cobra.Command{
 			for _, plugin := range releasePlugins {
 				if len(plugin.IconData) == 0 {
 					if iconPath, ok := iconPaths[repositoryName]; ok {
-						icon, err := getIcon(ctx, iconPath)
+						var iconData string
+						iconData, err = getIconDataFromPath(ctx, iconPath)
 						if err != nil {
 							return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
 						}
-						if svg.Is(icon) {
-							plugin.IconData = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon))
-						} else {
-							kind, err := filetype.Image(icon)
-							if err != nil {
-								return errors.Wrapf(err, "failed to match icon at %s to image", iconPath)
-							}
-
-							plugin.IconData = fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon))
-						}
+						plugin.IconData = iconData
 					}
 				}
 
@@ -151,8 +130,7 @@ var generatorCmd = &cobra.Command{
 			}
 		}
 
-		encoder := json.NewEncoder(os.Stdout)
-		err := encoder.Encode(plugins)
+		err = json.NewEncoder(os.Stdout).Encode(plugins)
 		if err != nil {
 			return errors.Wrap(err, "failed to encode plugins result")
 		}
@@ -285,9 +263,9 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 	var signature string
 	if foundSignatureAsset {
 		var err error
-		signature, err = downloadSignature(signatureAsset)
+		signature, err = downloadSignature(signatureAsset.GetBrowserDownloadURL())
 		if err != nil {
-			return nil, errors.Wrapf(err, "failed to download signatures for release %s", releaseName)
+			return nil, errors.Wrapf(err, "failed to download signature for release %s", releaseName)
 		}
 	}
 
@@ -321,20 +299,9 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 
 		plugin = &model.Plugin{}
 
-		resp, err := http.Get(downloadURL)
+		bundleData, err := downloadBundleData(downloadURL)
 		if err != nil {
-			return nil, errors.Wrapf(err, "failed to download plugin bundle for release %s", releaseName)
-		}
-		defer resp.Body.Close()
-
-		gzBundleReader, err := gzip.NewReader(resp.Body)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to read gzipped plugin bundle for release %s", releaseName)
-		}
-
-		bundleData, err := ioutil.ReadAll(gzBundleReader)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to read plugin bundle for release %s", releaseName)
+			return nil, errors.Wrapf(err, "failed download bundle data for release %s", releaseName)
 		}
 
 		manifestData, err := getFromTarFile(tar.NewReader(bytes.NewReader(bundleData)), "plugin.json")
@@ -347,13 +314,10 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 		}
 
 		if plugin.Manifest.IconPath != "" {
-			iconData, err := getFromTarFile(tar.NewReader(bytes.NewReader(bundleData)), plugin.Manifest.IconPath)
+			plugin.IconData, err = getIconDataFromTarFile(bundleData, plugin.Manifest.IconPath)
 			if err != nil {
-				return nil, errors.Wrapf(err, "failed to read icon data from plugin bundle for release %s", releaseName)
+				return nil, errors.Wrapf(err, "failed to set icon for release %s", releaseName)
 			}
-
-			logger.Debugf("using icon specified in manifest as %s", plugin.Manifest.IconPath)
-			plugin.IconData = fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(iconData))
 		}
 	} else {
 		logger.Debugf("skipping download since found existing plugin")
@@ -406,55 +370,131 @@ func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 	return nil, errors.Errorf("failed to find %s in tar file", filepath)
 }
 
-func downloadSignature(asset github.ReleaseAsset) (string, error) {
-	signature, err := getSignatureFromAsset(asset)
-	if err != nil {
-		return "", errors.Wrap(err, "Can't get signature from the asset")
-	}
-
-	return signature, nil
-}
-
-func getSignatureFromAsset(asset github.ReleaseAsset) (string, error) {
-	url := asset.GetBrowserDownloadURL()
+func downloadSignature(url string) (string, error) {
 	logger.Debugf("fetching signature file from %s", url)
 
 	resp, err := http.Get(url)
 	if err != nil {
-		return "", errors.Wrapf(err, "failed to download signature file %s", asset.GetName())
+		return "", errors.Wrapf(err, "failed to download signature file from %s", url)
 	}
 	defer resp.Body.Close()
 
+	if resp.StatusCode != http.StatusOK {
+		return "", errors.Errorf("received %d status code while downloading plugin bundle", resp.StatusCode)
+	}
+
 	sigFile, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		return "", errors.Wrapf(err, "failed to open downloaded signature file %s", asset.GetName())
+		return "", errors.Wrapf(err, "failed to open downloaded signature file from %s", url)
 	}
 	return base64.StdEncoding.EncodeToString(sigFile), nil
 }
 
-func getIcon(ctx context.Context, icon string) ([]byte, error) {
-	if strings.HasPrefix(icon, "http") {
-		logger.Debugf("fetching icon from url %s", icon)
+func downloadBundleData(url string) ([]byte, error) {
+	resp, err := http.Get(url)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to download plugin bundle")
+	}
+	defer resp.Body.Close()
 
-		req, err := http.NewRequestWithContext(ctx, http.MethodGet, icon, nil)
+	if resp.StatusCode != http.StatusOK {
+		return nil, errors.Errorf("received %d status code while downloading plugin bundle", resp.StatusCode)
+	}
+
+	gzBundleReader, err := gzip.NewReader(resp.Body)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to read gzipped plugin bundle")
+	}
+
+	bundleData, err := ioutil.ReadAll(gzBundleReader)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to read plugin bundle")
+	}
+
+	return bundleData, nil
+}
+
+func getIconDataFromTarFile(file []byte, path string) (string, error) {
+	iconData, err := getFromTarFile(tar.NewReader(bytes.NewReader(file)), path)
+	if err != nil {
+		return "", errors.Wrapf(err, "failed to read icon data from plugin bundle for path %s", path)
+	}
+
+	logger.Debugf("using icon specified in manifest as %s", path)
+	return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(iconData)), nil
+}
+
+func getIconDataFromPath(ctx context.Context, path string) (string, error) {
+	var icon []byte
+	if strings.HasPrefix(path, "http") {
+		logger.Debugf("fetching icon from url %s", path)
+
+		req, err := http.NewRequestWithContext(ctx, http.MethodGet, path, nil)
 		if err != nil {
-			return nil, errors.Wrapf(err, "failed to initialize request to download plugin icon at %s", icon)
+			return "", errors.Wrapf(err, "failed to initialize request to download plugin icon at %s", path)
 		}
 
 		resp, err := http.DefaultClient.Do(req)
 		if err != nil {
-			return nil, errors.Wrapf(err, "failed to download plugin icon at %s", icon)
+			return "", errors.Wrapf(err, "failed to download plugin icon at %s", path)
 		}
 		defer resp.Body.Close()
 
-		return ioutil.ReadAll(resp.Body)
+		icon, err = ioutil.ReadAll(resp.Body)
+		if err != nil {
+			return "", errors.Wrapf(err, "failed to read plugin icon at %s", path)
+		}
+	} else {
+		logger.Debugf("fetching icon from path %s", icon)
+
+		var err error
+		icon, err = ioutil.ReadFile(path)
+		if err != nil {
+			return "", errors.Wrapf(err, "failed to open icon at path %s", path)
+		}
 	}
 
-	logger.Debugf("fetching icon from path %s", icon)
-	data, err := ioutil.ReadFile(icon)
+	if svg.Is(icon) {
+		return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon)), nil
+	}
+
+	kind, err := filetype.Image(icon)
 	if err != nil {
-		return nil, errors.Wrapf(err, "failed to open icon at path %s", icon)
+		return "", errors.Wrap(err, "failed to match icon to image")
 	}
 
-	return data, nil
+	return fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon)), nil
+}
+
+// InitCommand parses the persistent flags and returns a list of existing plugins, if existing flag is defined.
+func InitCommand(command *cobra.Command) ([]*model.Plugin, error) {
+	debug, err := command.Flags().GetBool("debug")
+	if err != nil {
+		return nil, err
+	}
+
+	if debug {
+		logger.SetLevel(logrus.DebugLevel)
+	}
+
+	var existingPlugins []*model.Plugin
+	existingDatabase, err := command.Flags().GetString("existing")
+	if err != nil {
+		return nil, err
+	}
+
+	if existingDatabase != "" {
+		file, err := os.Open(existingDatabase)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to open existing database %s", existingDatabase)
+		}
+		defer file.Close()
+
+		existingPlugins, err = model.PluginsFromReader(file)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to read existing database %s", existingDatabase)
+		}
+	}
+
+	return existingPlugins, nil
 }
