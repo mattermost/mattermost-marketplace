@@ -47,7 +47,7 @@ var addCmd = &cobra.Command{
 
 		bundleData, err := downloadBundleData(bundleURL)
 		if err != nil {
-			return errors.Wrapf(err, "failed download bundle data")
+			return errors.Wrapf(err, "failed downloading bundle data")
 		}
 
 		manifestData, err := getFromTarFile(tar.NewReader(bytes.NewReader(bundleData)), "plugin.json")
@@ -64,7 +64,7 @@ var addCmd = &cobra.Command{
 		if manifest.IconPath != "" {
 			iconData, err = getIconDataFromTarFile(bundleData, manifest.IconPath)
 			if err != nil {
-				return errors.Wrap(err, "failed to set icon")
+				return errors.Wrap(err, "failed to get icon")
 			}
 		}
 
@@ -83,7 +83,6 @@ var addCmd = &cobra.Command{
 			Manifest:        manifest,
 			UpdatedAt:       time.Now().In(time.UTC),
 		}
-		plugin.Signature = ""
 
 		plugins = append(plugins, plugin)
 		err = json.NewEncoder(os.Stdout).Encode(plugins)

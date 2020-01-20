@@ -116,7 +116,7 @@ var generatorCmd = &cobra.Command{
 				if len(plugin.IconData) == 0 {
 					if iconPath, ok := iconPaths[repositoryName]; ok {
 						var iconData string
-						iconData, err = getIconDataFromPath(ctx, iconPath)
+						iconData, err = getIconDataFromPath(iconPath)
 						if err != nil {
 							return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
 						}
@@ -314,10 +314,12 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 		}
 
 		if plugin.Manifest.IconPath != "" {
-			plugin.IconData, err = getIconDataFromTarFile(bundleData, plugin.Manifest.IconPath)
+			var iconData string
+			iconData, err = getIconDataFromTarFile(bundleData, plugin.Manifest.IconPath)
 			if err != nil {
 				return nil, errors.Wrapf(err, "failed to set icon for release %s", releaseName)
 			}
+			plugin.IconData = iconData
 		}
 	} else {
 		logger.Debugf("skipping download since found existing plugin")
@@ -380,25 +382,25 @@ func downloadSignature(url string) (string, error) {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return "", errors.Errorf("received %d status code while downloading plugin bundle", resp.StatusCode)
+		return "", errors.Errorf("received %d status code while downloading plugin bundle from %v", resp.StatusCode, url)
 	}
 
-	sigFile, err := ioutil.ReadAll(resp.Body)
+	signature, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
-		return "", errors.Wrapf(err, "failed to open downloaded signature file from %s", url)
+		return "", errors.Wrapf(err, "failed to read signature from %s", url)
 	}
-	return base64.StdEncoding.EncodeToString(sigFile), nil
+	return base64.StdEncoding.EncodeToString(signature), nil
 }
 
 func downloadBundleData(url string) ([]byte, error) {
 	resp, err := http.Get(url)
 	if err != nil {
-		return nil, errors.Wrapf(err, "failed to download plugin bundle")
+		return nil, errors.Wrapf(err, "failed to download plugin bundle from %v", url)
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		return nil, errors.Errorf("received %d status code while downloading plugin bundle", resp.StatusCode)
+		return nil, errors.Errorf("received %d status code while downloading plugin bundle from %v", resp.StatusCode, url)
 	}
 
 	gzBundleReader, err := gzip.NewReader(resp.Body)
@@ -420,38 +422,13 @@ func getIconDataFromTarFile(file []byte, path string) (string, error) {
 		return "", errors.Wrapf(err, "failed to read icon data from plugin bundle for path %s", path)
 	}
 
-	logger.Debugf("using icon specified in manifest as %s", path)
 	return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(iconData)), nil
 }
 
-func getIconDataFromPath(ctx context.Context, path string) (string, error) {
-	var icon []byte
-	if strings.HasPrefix(path, "http") {
-		logger.Debugf("fetching icon from url %s", path)
-
-		req, err := http.NewRequestWithContext(ctx, http.MethodGet, path, nil)
-		if err != nil {
-			return "", errors.Wrapf(err, "failed to initialize request to download plugin icon at %s", path)
-		}
-
-		resp, err := http.DefaultClient.Do(req)
-		if err != nil {
-			return "", errors.Wrapf(err, "failed to download plugin icon at %s", path)
-		}
-		defer resp.Body.Close()
-
-		icon, err = ioutil.ReadAll(resp.Body)
-		if err != nil {
-			return "", errors.Wrapf(err, "failed to read plugin icon at %s", path)
-		}
-	} else {
-		logger.Debugf("fetching icon from path %s", icon)
-
-		var err error
-		icon, err = ioutil.ReadFile(path)
-		if err != nil {
-			return "", errors.Wrapf(err, "failed to open icon at path %s", path)
-		}
+func getIconDataFromPath(path string) (string, error) {
+	icon, err := ioutil.ReadFile(path)
+	if err != nil {
+		return "", errors.Wrapf(err, "failed to open icon at path %s", path)
 	}
 
 	if svg.Is(icon) {
