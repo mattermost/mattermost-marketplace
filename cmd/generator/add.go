@@ -20,8 +20,11 @@ func init() {
 }
 
 var addCmd = &cobra.Command{
-	Use:     "add [repo] [tag]",
-	Short:   "Add a plugin release to the plugins.json database",
+	Use:   "add [repo] [tag]",
+	Short: "Add a plugin release to the plugins.json database",
+	Long: "The generator commands allows adding a specific plugin release to the database by using this command.\n\n" +
+		"The release has to be build first using the cut plugin command, which also uploads it to https://plugins-store.test.mattermost.com/release/. " +
+		"This localtion is used to fetch the plugin release.",
 	Example: `  generator add matterpoll v1.5.1`,
 	Args:    cobra.ExactArgs(2),
 	RunE: func(command *cobra.Command, args []string) error {
