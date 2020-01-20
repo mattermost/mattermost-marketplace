@@ -2386,67 +2386,6 @@
     "updated_at": "2018-12-18T07:44:40Z"
   },
   {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
-    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNzMuMjcgNzUuNzYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMjY4NGZmO30uY2xzLTJ7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fS5jbHMtM3tmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50LTIpO308L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMzQuNjQiIHkxPSIxNS4zNSIgeDI9IjE5IiB5Mj0iMzAuOTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAuMTgiIHN0b3AtY29sb3I9IiMwMDUyY2MiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyNjg0ZmYiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50LTIiIHgxPSIzOC43OCIgeTE9IjYwLjI4IiB4Mj0iNTQuMzkiIHkyPSI0NC42NyIgeGxpbms6aHJlZj0iI2xpbmVhci1ncmFkaWVudCIvPjwvZGVmcz48dGl0bGU+SmlyYSBTb2Z0d2FyZS1pY29uLWJsdWU8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJCbHVlIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik03Mi40LDM1Ljc2LDM5LjgsMy4xNiwzNi42NCwwaDBMMTIuMSwyNC41NGgwTC44OCwzNS43NkEzLDMsMCwwLDAsLjg4LDQwTDIzLjMsNjIuNDIsMzYuNjQsNzUuNzYsNjEuMTgsNTEuMjJsLjM4LS4zOEw3Mi40LDQwQTMsMywwLDAsMCw3Mi40LDM1Ljc2Wk0zNi42NCw0OS4wOGwtMTEuMi0xMS4yLDExLjItMTEuMiwxMS4yLDExLjJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuNjQsMjYuNjhBMTguODYsMTguODYsMCwwLDEsMzYuNTYuMDlMMTIuMDUsMjQuNTksMjUuMzksMzcuOTMsMzYuNjQsMjYuNjhaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDcuODcsMzcuODUsMzYuNjQsNDkuMDhhMTguODYsMTguODYsMCwwLDEsMCwyNi42OGgwTDYxLjIxLDUxLjE5WiIvPjwvZz48L2c+PC9zdmc+",
-    "download_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/download/v1.0.2/com.mattermost.jira-1.0.2.tar.gz",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/tag/v1.0.2",
-    "labels": [
-      {
-        "name": "Official",
-        "description": "This plugin is maintained by Mattermost",
-        "url": "https://mattermost.com/pl/default-community-plugins",
-        "color": "#166de0"
-      }
-    ],
-    "signature": "",
-    "manifest": {
-      "id": "com.mattermost.jira",
-      "name": "Jira",
-      "description": "Receives webhook events from JIRA and makes Mattermost posts for them.",
-      "version": "1.0.2",
-      "server": {
-        "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
-          "darwin-amd64": "server/dist/plugin-darwin-amd64",
-          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        },
-        "executable": ""
-      },
-      "settings_schema": {
-        "header": "",
-        "footer": "Use this webhook URL to set up the JIRA integration. See [documentation](https://about.mattermost.com/default-jira-plugin) to learn more.\n\n`https://SITEURL/plugins/jira/webhook?secret=WEBHOOKSECRET&team=TEAMURL&channel=CHANNELURL`",
-        "settings": [
-          {
-            "key": "Enabled",
-            "display_name": "Enable JIRA",
-            "type": "bool",
-            "help_text": "When true, you can configure JIRA webhooks to post message in Mattermost. To help combat phishing attacks, all posts are labelled by a BOT tag.",
-            "placeholder": "",
-            "default": null
-          },
-          {
-            "key": "UserName",
-            "display_name": "User",
-            "type": "username",
-            "help_text": "Select the username that this integration is attached to.",
-            "placeholder": "",
-            "default": null
-          },
-          {
-            "key": "Secret",
-            "display_name": "Secret",
-            "type": "generated",
-            "help_text": "This secret is used to authenticate to Mattermost.",
-            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing JIRA integrations.",
-            "placeholder": "",
-            "default": null
-          }
-        ]
-      }
-    },
-    "updated_at": "2018-12-13T09:59:35Z"
-  },
-  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.1.1/com.mattermost.welcomebot-1.1.1.tar.gz",
