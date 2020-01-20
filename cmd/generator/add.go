@@ -5,9 +5,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"os"
-	"regexp"
 	"time"
 
+	"github.com/blang/semver"
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
@@ -34,8 +34,9 @@ var addCmd = &cobra.Command{
 
 		repo := args[0]
 		tag := args[1]
-		if !regexp.MustCompile("v[0-9]+.[0-9]+.[0-9]+$").MatchString(tag) {
-			return errors.Errorf("bad tag. Maybe a typo? You set this tag %s but we expected something like v2.3.4", tag)
+
+		if _, err = semver.ParseTolerant(tag); err != nil {
+			return errors.Wrapf(err, "%v is an invalid tag. Something like v2.3.4 is expected", tag)
 		}
 
 		bundleURL := "https://plugins-store.test.mattermost.com/release/" + repo + "-" + tag + ".tar.gz"
