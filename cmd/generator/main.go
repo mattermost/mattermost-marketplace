@@ -19,7 +19,6 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
-	"github.com/h2non/filetype"
 	svg "github.com/h2non/go-is-svg"
 	mattermostModel "github.com/mattermost/mattermost-server/model"
 	"github.com/pkg/errors"
@@ -431,16 +430,11 @@ func getIconDataFromPath(path string) (string, error) {
 		return "", errors.Wrapf(err, "failed to open icon at path %s", path)
 	}
 
-	if svg.Is(icon) {
-		return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon)), nil
+	if !svg.Is(icon) {
+		return "", errors.Wrapf(err, "icon at path %s is not svg", path)
 	}
 
-	kind, err := filetype.Image(icon)
-	if err != nil {
-		return "", errors.Wrap(err, "failed to match icon to image")
-	}
-
-	return fmt.Sprintf("data:%s;base64,%s", kind.MIME, base64.StdEncoding.EncodeToString(icon)), nil
+	return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon)), nil
 }
 
 // InitCommand parses the persistent flags and returns a list of existing plugins, if existing flag is defined.

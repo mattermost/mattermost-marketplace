@@ -8,7 +8,6 @@ require (
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/google/go-github/v28 v28.0.0
 	github.com/gorilla/mux v1.7.3
-	github.com/h2non/filetype v1.0.10
 	github.com/h2non/go-is-svg v0.0.0-20160927212452-35e8c4b0612c
 	github.com/mattermost/mattermost-server v0.0.0-20191025180218-37e042497717
 	github.com/pkg/errors v0.8.1
