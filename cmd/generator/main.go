@@ -6,7 +6,6 @@ import (
 	"compress/gzip"
 	"context"
 	"encoding/base64"
-	"encoding/json"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -31,7 +30,7 @@ import (
 
 func init() {
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
-	generatorCmd.PersistentFlags().String("existing", "plugins.json", "An existing plugins.json to help streamline incremental updates.")
+	generatorCmd.PersistentFlags().String("database", "plugins.json", "Path to the plugins database to update.")
 
 	generatorCmd.Flags().String("github-token", "", "The optional GitHub token for API requests.")
 	generatorCmd.Flags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
@@ -52,9 +51,20 @@ var generatorCmd = &cobra.Command{
 	RunE: func(command *cobra.Command, args []string) error {
 		command.SilenceUsage = true
 
-		existingPlugins, err := InitCommand(command)
+		err := InitCommand(command)
 		if err != nil {
 			return err
+		}
+
+		db, err := openDatabase(command)
+		if err != nil {
+			return errors.Wrap(err, "failed to open plugin database")
+		}
+		defer db.Close()
+
+		existingPlugins, err := model.PluginsFromReader(db)
+		if err != nil {
+			return errors.Wrap(err, "read plugins from database")
 		}
 
 		includePreRelease, _ := command.Flags().GetBool("include-pre-release")
@@ -129,9 +139,13 @@ var generatorCmd = &cobra.Command{
 			}
 		}
 
-		err = json.NewEncoder(os.Stdout).Encode(plugins)
+		_, err = db.Seek(0, 0)
 		if err != nil {
-			return errors.Wrap(err, "failed to encode plugins result")
+			return err
+		}
+		err = model.PluginsToWriter(db, plugins)
+		if err != nil {
+			return errors.Wrap(err, "failed to write plugins database")
 		}
 
 		return nil
@@ -437,35 +451,33 @@ func getIconDataFromPath(path string) (string, error) {
 	return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon)), nil
 }
 
-// InitCommand parses the persistent flags and returns a list of existing plugins, if existing flag is defined.
-func InitCommand(command *cobra.Command) ([]*model.Plugin, error) {
+// InitCommand parses the log level flag
+func InitCommand(command *cobra.Command) error {
 	debug, err := command.Flags().GetBool("debug")
 	if err != nil {
-		return nil, err
+		return err
 	}
 
 	if debug {
 		logger.SetLevel(logrus.DebugLevel)
 	}
 
-	var existingPlugins []*model.Plugin
-	existingDatabase, err := command.Flags().GetString("existing")
+	return nil
+}
+
+func openDatabase(command *cobra.Command) (*os.File, error) {
+	existingDatabase, err := command.Flags().GetString("database")
 	if err != nil {
 		return nil, err
 	}
 
-	if existingDatabase != "" {
-		file, err := os.Open(existingDatabase)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to open existing database %s", existingDatabase)
-		}
-		defer file.Close()
-
-		existingPlugins, err = model.PluginsFromReader(file)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to read existing database %s", existingDatabase)
-		}
+	if existingDatabase == "" {
+		return nil, errors.New("database name most not be empty")
+	}
+	file, err := os.OpenFile(existingDatabase, os.O_RDWR, 0644)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to open existing database %s", existingDatabase)
 	}
 
-	return existingPlugins, nil
+	return file, nil
 }
