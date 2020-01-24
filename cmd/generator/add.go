@@ -33,13 +33,12 @@ var addCmd = &cobra.Command{
 			return err
 		}
 
-		db, err := openDatabase(command)
+		dbFile, err := command.Flags().GetString("database")
 		if err != nil {
-			return errors.Wrap(err, "failed to open plugin database")
+			return err
 		}
-		defer db.Close()
 
-		plugins, err := model.PluginsFromReader(db)
+		plugins, err := pluginsFromDatabase(dbFile)
 		if err != nil {
 			return errors.Wrap(err, "failed to read plugins from database")
 		}
@@ -95,11 +94,7 @@ var addCmd = &cobra.Command{
 
 		plugins = append(plugins, plugin)
 
-		_, err = db.Seek(0, 0)
-		if err != nil {
-			return err
-		}
-		err = model.PluginsToWriter(db, plugins)
+		err = pluginsToDatabase(dbFile, plugins)
 		if err != nil {
 			return errors.Wrap(err, "failed to write plugins database")
 		}

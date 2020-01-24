@@ -56,15 +56,14 @@ var generatorCmd = &cobra.Command{
 			return err
 		}
 
-		db, err := openDatabase(command)
+		dbFile, err := command.Flags().GetString("database")
 		if err != nil {
-			return errors.Wrap(err, "failed to open plugin database")
+			return err
 		}
-		defer db.Close()
 
-		existingPlugins, err := model.PluginsFromReader(db)
+		existingPlugins, err := pluginsFromDatabase(dbFile)
 		if err != nil {
-			return errors.Wrap(err, "read plugins from database")
+			return errors.Wrap(err, "failed to read plugins from database")
 		}
 
 		includePreRelease, _ := command.Flags().GetBool("include-pre-release")
@@ -139,11 +138,7 @@ var generatorCmd = &cobra.Command{
 			}
 		}
 
-		_, err = db.Seek(0, 0)
-		if err != nil {
-			return err
-		}
-		err = model.PluginsToWriter(db, plugins)
+		err = pluginsToDatabase(dbFile, plugins)
 		if err != nil {
 			return errors.Wrap(err, "failed to write plugins database")
 		}
@@ -465,20 +460,45 @@ func InitCommand(command *cobra.Command) error {
 	return nil
 }
 
-func openDatabase(command *cobra.Command) (*os.File, error) {
-	existingDatabase, err := command.Flags().GetString("database")
-	if err != nil {
-		return nil, err
-	}
-
-	if existingDatabase == "" {
+func pluginsFromDatabase(path string) ([]*model.Plugin, error) {
+	if path == "" {
 		return nil, errors.New("database name must not be empty")
 	}
 
-	file, err := os.OpenFile(existingDatabase, os.O_RDWR, 0644)
+	file, err := os.Open(path)
 	if err != nil {
-		return nil, errors.Wrapf(err, "failed to open existing database %s", existingDatabase)
+		return nil, errors.Wrapf(err, "failed to open existing database %s", path)
+	}
+	defer file.Close()
+
+	plugins, err := model.PluginsFromReader(file)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to read plugins from database %s", path)
 	}
 
-	return file, nil
+	return plugins, nil
+}
+
+func pluginsToDatabase(path string, plugins []*model.Plugin) error {
+	if path == "" {
+		return errors.New("database name must not be empty")
+	}
+
+	file, err := os.OpenFile(path, os.O_RDWR, 0644)
+	if err != nil {
+		return errors.Wrapf(err, "failed to open existing database %s", path)
+	}
+	defer file.Close()
+
+	_, err = file.Seek(0, 0)
+	if err != nil {
+		return err
+	}
+
+	err = model.PluginsToWriter(file, plugins)
+	if err != nil {
+		return errors.Wrapf(err, "failed to write plugins database %s", path)
+	}
+
+	return nil
 }
