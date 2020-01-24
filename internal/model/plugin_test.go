@@ -86,7 +86,7 @@ func TestPluginsFromReader(t *testing.T) {
 	})
 }
 
-func TestPluginsSetReader(t *testing.T) {
+func TestPluginsToWriter(t *testing.T) {
 	t.Run("nil request", func(t *testing.T) {
 		var b bytes.Buffer
 
