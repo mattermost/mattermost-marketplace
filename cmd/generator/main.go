@@ -474,6 +474,7 @@ func openDatabase(command *cobra.Command) (*os.File, error) {
 	if existingDatabase == "" {
 		return nil, errors.New("database name must not be empty")
 	}
+
 	file, err := os.OpenFile(existingDatabase, os.O_RDWR, 0644)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed to open existing database %s", existingDatabase)
