@@ -20,7 +20,7 @@ import (
 	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
 	svg "github.com/h2non/go-is-svg"
-	mattermostModel "github.com/mattermost/mattermost-server/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"

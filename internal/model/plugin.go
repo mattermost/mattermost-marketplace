@@ -5,7 +5,7 @@ import (
 	"io"
 	"time"
 
-	mattermostModel "github.com/mattermost/mattermost-server/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 )
 
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.

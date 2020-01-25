@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/blang/semver"
-	mattermostModel "github.com/mattermost/mattermost-server/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
@@ -77,7 +77,7 @@ var addCmd = &cobra.Command{
 			HomepageURL:     manifest.HomepageURL,
 			IconData:        iconData,
 			DownloadURL:     bundleURL,
-			ReleaseNotesURL: "", // Not jet supported
+			ReleaseNotesURL: manifest.ReleaseNotesURL,
 			Labels:          nil,
 			Signature:       signature,
 			Manifest:        manifest,
