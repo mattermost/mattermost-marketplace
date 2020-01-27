@@ -3,8 +3,6 @@ package main
 import (
 	"archive/tar"
 	"bytes"
-	"encoding/json"
-	"os"
 	"time"
 
 	"github.com/blang/semver"
@@ -30,9 +28,19 @@ var addCmd = &cobra.Command{
 	RunE: func(command *cobra.Command, args []string) error {
 		command.SilenceUsage = true
 
-		plugins, err := InitCommand(command)
+		err := InitCommand(command)
 		if err != nil {
 			return err
+		}
+
+		dbFile, err := command.Flags().GetString("database")
+		if err != nil {
+			return err
+		}
+
+		plugins, err := pluginsFromDatabase(dbFile)
+		if err != nil {
+			return errors.Wrap(err, "failed to read plugins from database")
 		}
 
 		repo := args[0]
@@ -85,9 +93,10 @@ var addCmd = &cobra.Command{
 		}
 
 		plugins = append(plugins, plugin)
-		err = json.NewEncoder(os.Stdout).Encode(plugins)
+
+		err = pluginsToDatabase(dbFile, plugins)
 		if err != nil {
-			return errors.Wrap(err, "failed to encode plugins result")
+			return errors.Wrap(err, "failed to write plugins database")
 		}
 
 		return nil

@@ -45,6 +45,20 @@ func PluginsFromReader(reader io.Reader) ([]*Plugin, error) {
 	return plugins, nil
 }
 
+// PluginsToWriter encodes a json-encoded list of plugins to the given io.Writer.
+func PluginsToWriter(w io.Writer, plugins []*Plugin) error {
+	encoder := json.NewEncoder(w)
+	encoder.SetIndent("", "  ")
+	encoder.SetEscapeHTML(false)
+
+	err := encoder.Encode(plugins)
+	if err != nil && err != io.EOF {
+		return err
+	}
+
+	return nil
+}
+
 // PluginFilter describes the parameters used to constrain a set of plugins.
 type PluginFilter struct {
 	Page          int
