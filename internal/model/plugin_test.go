@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"testing"
 
-	mattermostModel "github.com/mattermost/mattermost-server/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 
+	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
 
@@ -82,5 +83,84 @@ func TestPluginsFromReader(t *testing.T) {
 				Manifest:        &mattermostModel.Manifest{},
 			},
 		}, plugin)
+	})
+}
+
+func TestPluginsToWriter(t *testing.T) {
+	t.Run("nil request", func(t *testing.T) {
+		var b bytes.Buffer
+
+		err := PluginsToWriter(&b, nil)
+
+		require.NoError(t, err)
+		assert.Equal(t, "null\n", b.String())
+	})
+
+	t.Run("empty request", func(t *testing.T) {
+		var b bytes.Buffer
+		p := []*Plugin{}
+
+		err := PluginsToWriter(&b, p)
+
+		require.NoError(t, err)
+		assert.Equal(t, "[]\n", b.String())
+	})
+
+	t.Run("empty request", func(t *testing.T) {
+		var b bytes.Buffer
+		p := []*Plugin{{
+			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-demo",
+			IconData:        "icon-data.svg",
+			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
+			Signature:       "signature1",
+			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
+			Manifest: &mattermostModel.Manifest{
+				Id:      "demo",
+				Version: "1.0.0",
+			},
+		}, {
+			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-starter-template",
+			IconData:        "icon-data2.svg",
+			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
+			Signature:       "signature2",
+			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
+			Manifest: &mattermostModel.Manifest{
+				Id:      "template",
+				Version: "2.0.0",
+			},
+		}}
+
+		err := PluginsToWriter(&b, p)
+		expectedResult := `[
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-demo",
+    "icon_data": "icon-data.svg",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
+    "labels": null,
+    "signature": "signature1",
+    "manifest": {
+      "id": "demo",
+      "version": "1.0.0"
+    },
+    "updated_at": "0001-01-01T00:00:00Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-starter-template",
+    "icon_data": "icon-data2.svg",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
+    "labels": null,
+    "signature": "signature2",
+    "manifest": {
+      "id": "template",
+      "version": "2.0.0"
+    },
+    "updated_at": "0001-01-01T00:00:00Z"
+  }
+]
+`
+		require.NoError(t, err)
+		assert.Equal(t, expectedResult, b.String())
 	})
 }

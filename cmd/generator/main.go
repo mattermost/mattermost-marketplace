@@ -6,7 +6,6 @@ import (
 	"compress/gzip"
 	"context"
 	"encoding/base64"
-	"encoding/json"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -20,7 +19,7 @@ import (
 	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
 	svg "github.com/h2non/go-is-svg"
-	mattermostModel "github.com/mattermost/mattermost-server/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -31,7 +30,7 @@ import (
 
 func init() {
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
-	generatorCmd.PersistentFlags().String("existing", "plugins.json", "An existing plugins.json to help streamline incremental updates.")
+	generatorCmd.PersistentFlags().String("database", "plugins.json", "Path to the plugins database to update.")
 
 	generatorCmd.Flags().String("github-token", "", "The optional GitHub token for API requests.")
 	generatorCmd.Flags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
@@ -52,9 +51,19 @@ var generatorCmd = &cobra.Command{
 	RunE: func(command *cobra.Command, args []string) error {
 		command.SilenceUsage = true
 
-		existingPlugins, err := InitCommand(command)
+		err := InitCommand(command)
 		if err != nil {
 			return err
+		}
+
+		dbFile, err := command.Flags().GetString("database")
+		if err != nil {
+			return err
+		}
+
+		existingPlugins, err := pluginsFromDatabase(dbFile)
+		if err != nil {
+			return errors.Wrap(err, "failed to read plugins from database")
 		}
 
 		includePreRelease, _ := command.Flags().GetBool("include-pre-release")
@@ -129,9 +138,9 @@ var generatorCmd = &cobra.Command{
 			}
 		}
 
-		err = json.NewEncoder(os.Stdout).Encode(plugins)
+		err = pluginsToDatabase(dbFile, plugins)
 		if err != nil {
-			return errors.Wrap(err, "failed to encode plugins result")
+			return errors.Wrap(err, "failed to write plugins database")
 		}
 
 		return nil
@@ -437,35 +446,59 @@ func getIconDataFromPath(path string) (string, error) {
 	return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon)), nil
 }
 
-// InitCommand parses the persistent flags and returns a list of existing plugins, if existing flag is defined.
-func InitCommand(command *cobra.Command) ([]*model.Plugin, error) {
+// InitCommand parses the log level flag
+func InitCommand(command *cobra.Command) error {
 	debug, err := command.Flags().GetBool("debug")
 	if err != nil {
-		return nil, err
+		return err
 	}
 
 	if debug {
 		logger.SetLevel(logrus.DebugLevel)
 	}
 
-	var existingPlugins []*model.Plugin
-	existingDatabase, err := command.Flags().GetString("existing")
+	return nil
+}
+
+func pluginsFromDatabase(path string) ([]*model.Plugin, error) {
+	if path == "" {
+		return nil, errors.New("database name must not be empty")
+	}
+
+	file, err := os.Open(path)
 	if err != nil {
-		return nil, err
+		return nil, errors.Wrapf(err, "failed to open existing database %s", path)
+	}
+	defer file.Close()
+
+	plugins, err := model.PluginsFromReader(file)
+	if err != nil {
+		return nil, errors.Wrapf(err, "failed to read plugins from database %s", path)
 	}
 
-	if existingDatabase != "" {
-		file, err := os.Open(existingDatabase)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to open existing database %s", existingDatabase)
-		}
-		defer file.Close()
+	return plugins, nil
+}
 
-		existingPlugins, err = model.PluginsFromReader(file)
-		if err != nil {
-			return nil, errors.Wrapf(err, "failed to read existing database %s", existingDatabase)
-		}
+func pluginsToDatabase(path string, plugins []*model.Plugin) error {
+	if path == "" {
+		return errors.New("database name must not be empty")
 	}
 
-	return existingPlugins, nil
+	file, err := os.OpenFile(path, os.O_RDWR, 0644)
+	if err != nil {
+		return errors.Wrapf(err, "failed to open existing database %s", path)
+	}
+	defer file.Close()
+
+	_, err = file.Seek(0, 0)
+	if err != nil {
+		return err
+	}
+
+	err = model.PluginsToWriter(file, plugins)
+	if err != nil {
+		return errors.Wrapf(err, "failed to write plugins database %s", path)
+	}
+
+	return nil
 }
