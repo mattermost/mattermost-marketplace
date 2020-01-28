@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	mattermostModel "github.com/mattermost/mattermost-server/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 	"github.com/stretchr/testify/require"
 
 	"github.com/mattermost/mattermost-marketplace/internal/api"
