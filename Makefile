@@ -6,6 +6,7 @@ BUILD_HASH_SHORT = $(shell git rev-parse --short HEAD)
 LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildTag=$(BUILD_TAG)"
 LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHash=$(BUILD_HASH)"
 LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHashShort=$(BUILD_HASH_SHORT)"
+SLS_STAGE ?= "dev"
 
 ## Checks the code style, tests, builds and bundles.
 all: check-style test build
@@ -62,12 +63,12 @@ build-lambda: generate
 ## Deploy the lambda stack
 .PHONY: deploy-lambda
 deploy-lambda: clean build-lambda
-	sls deploy --verbose
+	sls deploy --verbose --stage $(SLS_STAGE)
 
 ## Deploy the lambda function only to an existing stack
 .PHONY: deploy-lambda-fast
 deploy-lambda-fast: clean build-lambda
-	sls deploy function -f server
+	sls deploy function -f server --stage $(SLS_STAGE)
 
 ## Update plugins.json
 .PHONY: plugins.json
