@@ -32,14 +32,8 @@ func TestGetLabels(t *testing.T) {
 	var respose []model.Label
 	err := json.NewDecoder(result.Body).Decode(&respose)
 	require.NoError(t, err)
-	require.Len(t, respose, 1)
 
-	expectedResponse := []model.Label{{
-		Name:        "Official",
-		Description: "This plugin is maintained by Mattermost",
-		URL:         "https://mattermost.com/pl/default-community-plugins",
-		Color:       "#166de0",
-	}}
+	expectedResponse := []model.Label{}
 
 	assert.Equal(t, expectedResponse, respose)
 }
