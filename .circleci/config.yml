@@ -1,9 +1,20 @@
 version: 2.1
 
 executors:
-  default:
+  build:
     docker:
       - image: circleci/golang:1.13
+  deploy:
+    docker:
+      - image: circleci/node:8.10
+
+references:
+  workspace_root: &workspace_root
+    /tmp/workspace
+
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: *workspace_root
 
 aliases:
 - &restore_cache
@@ -60,7 +71,8 @@ commands:
 jobs:
   build:
     executor:
-      name: default
+      name: build
+    working_directory: *workspace_root
     steps:
       - checkout
       - install-golangci-lint
@@ -70,9 +82,46 @@ jobs:
       - run: make build
       - check-uncommitted
       - *save_cache
+      - persist_to_workspace:
+          root: *workspace_root
+          paths:
+            - .
+
+  deploy:
+    executor:
+      name: deploy
+    working_directory: *workspace_root
+    steps:
+      - run:
+          name: Install Serverless CLI and dependencies
+          command: sudo npm i -g serverless
+      - *attach_workspace
+      - run:
+          name: Deploy Function
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                export AWS_ACCESS_KEY_ID=$AWS_STAGING_ACCESS_KEY_ID
+                export AWS_SECRET_ACCESS_KEY=$AWS_STAGING_SECRET_ACCESS_KEY
+                sudo -E sls deploy function -f server --stage staging
+            elif [ "${CIRCLE_BRANCH}" == "production" ]; then
+                export AWS_ACCESS_KEY_ID=$AWS_PRODUCTION_ACCESS_KEY_ID
+                export AWS_SECRET_ACCESS_KEY=$AWS_PRODUCTION_SECRET_ACCESS_KEY
+                sudo -E sls deploy function -f server --stage production
+            else
+                echo "Unexpected branch ${CIRCLE_BRANCH}"
+                exit 1
+            fi
 
 workflows:
   version: 2
   ci:
     jobs:
       - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
+                - production
