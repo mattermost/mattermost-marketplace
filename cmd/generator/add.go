@@ -15,6 +15,10 @@ import (
 
 func init() {
 	generatorCmd.AddCommand(addCmd)
+
+	addCmd.Flags().Bool("beta", false, "Mark release as Beta")
+	addCmd.Flags().Bool("official", false, "Mark this plugin is maintanied by Mattermost")
+	addCmd.Flags().Bool("community", false, "Mark this plugin is maintanied by the community")
 }
 
 var addCmd = &cobra.Command{
@@ -28,8 +32,26 @@ var addCmd = &cobra.Command{
 	RunE: func(command *cobra.Command, args []string) error {
 		command.SilenceUsage = true
 
-		err := InitCommand(command)
+		official, err := command.Flags().GetBool("official")
 		if err != nil {
+			return err
+		}
+
+		community, err := command.Flags().GetBool("community")
+		if err != nil {
+			return err
+		}
+
+		if official == community {
+			return errors.New("you must either set the release as a official or as a community plugin")
+		}
+
+		beta, err := command.Flags().GetBool("beta")
+		if err != nil {
+			return err
+		}
+
+		if err = InitCommand(command); err != nil {
 			return err
 		}
 
@@ -81,12 +103,21 @@ var addCmd = &cobra.Command{
 			return errors.Wrap(err, "failed to download plugin signature")
 		}
 
+		labels := []model.Label{}
+		if beta {
+			labels = append(labels, model.BetaLabel)
+		}
+
+		if official {
+			labels = append(labels, model.CommunityLabel)
+		}
+
 		plugin := &model.Plugin{
 			HomepageURL:     manifest.HomepageURL,
 			IconData:        iconData,
 			DownloadURL:     bundleURL,
 			ReleaseNotesURL: manifest.ReleaseNotesURL,
-			Labels:          nil,
+			Labels:          labels,
 			Signature:       signature,
 			Manifest:        manifest,
 			UpdatedAt:       time.Now().In(time.UTC),
