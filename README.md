@@ -51,14 +51,24 @@ make plugins.json
 
 In addition to running as a standalone server, the Marketplace is also designed to run as a Lambda function, compiling the `plugins.json` database into the binary for immediate access without further configuration.
 
+### Automatic Deployment
+
+Changes merged to `master` are automatically deployed to https://api.staging.integrations.mattermost.com.
+
+Changes merged to `production` are automatically deployed to https://api.integrations.mattermost.com.
+
+To update production, simply create, review and merge the appropriate pull request. Often this will just be a merge from `master` to `production`, but if there are pending changes not yet ready for a production release there, it may be appropriate to just update the plugin database with a direct change to production that is later merged back to `master`.
+
+### Manual Deployment
+
 Simply run the following:
 
 ```
-$ make deploy-lambda
+$ SLS_STAGE=staging make deploy-lambda
 ```
 
 To iterate quickly after the Cloud Formation stack is up, simply run:
 
 ```
-$ make deploy-lambda-fast
+$ SLS_STAGE=staging make deploy-lambda-fast
 ```
