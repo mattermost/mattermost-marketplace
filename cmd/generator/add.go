@@ -18,7 +18,7 @@ func init() {
 
 	addCmd.Flags().Bool("beta", false, "Mark release as Beta")
 	addCmd.Flags().Bool("official", false, "Mark this plugin is maintanied by Mattermost")
-	addCmd.Flags().Bool("community", false, "Mark this plugin is maintanied by the community")
+	addCmd.Flags().Bool("community", false, "Mark this plugin is maintanied by the Open Source Community")
 }
 
 var addCmd = &cobra.Command{

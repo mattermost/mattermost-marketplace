@@ -15,7 +15,7 @@ var AllLabels = []Label{
 
 var CommunityLabel Label = Label{
 	Name:        "Community",
-	Description: "This plugin is maintained by the Open Source Community",
+	Description: "This plugin is maintained by the Open Source Community.",
 	URL:         "https://mattermost.com/pl/default-community-plugins",
 }
 
