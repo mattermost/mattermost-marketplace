@@ -21,6 +21,6 @@ var CommunityLabel Label = Label{
 
 var BetaLabel Label = Label{
 	Name:        "Beta",
-	Description: "This plugin is currently in Beta and it's not recommended in production use.",
+	Description: "This plugin is currently in Beta and is not recommended for use in production.",
 	URL:         "https://mattermost.com/pl/default-beta-plugins",
 }

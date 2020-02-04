@@ -17,8 +17,8 @@ func init() {
 	generatorCmd.AddCommand(addCmd)
 
 	addCmd.Flags().Bool("beta", false, "Mark release as Beta")
-	addCmd.Flags().Bool("official", false, "Mark this plugin is maintanied by Mattermost")
-	addCmd.Flags().Bool("community", false, "Mark this plugin is maintanied by the Open Source Community")
+	addCmd.Flags().Bool("official", false, "Mark this plugin as maintanied by Mattermost")
+	addCmd.Flags().Bool("community", false, "Mark this plugin as maintanied by the Open Source Community")
 }
 
 var addCmd = &cobra.Command{
@@ -108,7 +108,7 @@ var addCmd = &cobra.Command{
 			labels = append(labels, model.BetaLabel)
 		}
 
-		if official {
+		if community {
 			labels = append(labels, model.CommunityLabel)
 		}
 
