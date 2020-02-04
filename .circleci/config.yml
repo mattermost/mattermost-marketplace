@@ -92,10 +92,10 @@ jobs:
       name: deploy
     working_directory: *workspace_root
     steps:
+      - *attach_workspace
       - run:
           name: Install Serverless CLI and dependencies
           command: sudo npm i -g serverless
-      - *attach_workspace
       - run:
           name: Deploy Function
           command: |
