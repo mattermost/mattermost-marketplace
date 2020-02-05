@@ -30,7 +30,7 @@ After a new plugin has been submitted, the assignee of the issue posts the follo
     - Dev:
     - Security:
     - QA:
-- [ ] Fork repo under Mattermost oranisation
+- [ ] Create a private fork under the Mattermost organization
 - [ ] Cut plugin release
 - [ ] Add release to Marketplace
 - [ ] Reach out on [Marketing Channel](https://community-release.mattermost.com/private-core/channels/marketing) to tweet about the plugin.
