@@ -32,7 +32,7 @@ Please go trough this checklist and confirm every item. If your plugin doesn't f
 - [ ] The source code is available in a public git repository.
 - [ ] There is a public issue or bug tracker for the plugin, which is linked in the plugin documentation and linked via `support_url` in the manifest.
 - [ ] The plugin provides detailed usage documentation with at least one screenshot of the plugin in action, list of features and a development guide. This is typically a README file or a landing page on the web. The link to the documentation is set as `homepage_url` in the manifest. A great example is the [README of the GitHub plugin](https://github.com/mattermost/mattermost-plugin-github/blob/master/README.md).
-- [ ] For every release a changelog has to be published. The link to it is noted via `release_notes_url` in the manifest.
+- [ ] For every release a changelog has to be published, with a link recorded in the `release_notes_url` property of the `plugin.json` manifest.
 - [ ] The plugin has to be out of Beta and be released with at least v1.0.0.
 - [ ] All configuration is accessible via the UI of Mattermost.
 - [ ] The plugin id defined in the manifest must not collide with the id of an existing plugin in the marketplace. It should follow [the naming convention](https://developers.mattermost.com/extend/plugins/manifest-reference/#id).
@@ -46,7 +46,7 @@ Please go trough this checklist and confirm every item. If your plugin doesn't f
 
 - [ ] The plugin does not expose a vulnerability.
 - [ ] The plugin does not include favor the author of the plugin or a third party excessively by e.g. including a bitcoin miner that mines on behalf of the author.
-- [ ] The plugins author must notify Mattermost about any vulnerabilities in the future.
+- [ ] The plugins provided an email address or a username on the [Community Server](https://community.mattermost) used to report vulnerabilities in the future.
 
 **Functional Requirements**
 
