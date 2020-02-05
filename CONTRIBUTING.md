@@ -8,11 +8,11 @@ If you think you found a bug, [please use the GitHub issue tracker](https://gith
 
 ## Community Plugin
 
-To add your plugin to the Marketplace, please open [an issue using thus template](https://github.com/mattermost/mattermost-marketplace/issues/new?template=add_plugin.md). To update your plugin, please also open an issue [using this template](https://github.com/mattermost/mattermost-marketplace/issues/new?template=update_plugin.md).
+To add your plugin to the Marketplace, please open [an issue using this template](https://github.com/mattermost/mattermost-marketplace/issues/new?template=add_plugin.md). To update your plugin, please also open an issue [using this template](https://github.com/mattermost/mattermost-marketplace/issues/new?template=update_plugin.md).
 
 ### Playbook
 
-This is a playbook used my Mattermost core committers.
+The following is a playback for use by Mattermost core committers.
 
 #### New plugin
 
@@ -25,7 +25,7 @@ JIRA template:
 After a new plugin has been submitted, the assignees of the issue posts the following message:
 ```
 ## Process checklist
-- [ ] Request review and create JIRA tickets and link them here:
+- [ ] Request review, create JIRA tickets, and link them here:
     - PM:
     - Dev:
     - Security:
@@ -33,7 +33,7 @@ After a new plugin has been submitted, the assignees of the issue posts the foll
 - [ ] Fork repo under Mattermost oranisation
 - [ ] Cut plugin release
 - [ ] Add release to Marketplace
-- [ ] Reach out on [Marketing Channel](https://community-release.mattermost.com/private-core/channels/marketing
+- [ ] Reach out on [Marketing Channel](https://community-release.mattermost.com/private-core/channels/marketing) to tweet about the plugin.
 ) to tweet about the plugin
 - [ ] Work with `@hanna.park` regarding swag
 ```

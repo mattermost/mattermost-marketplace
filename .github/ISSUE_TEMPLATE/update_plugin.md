@@ -18,7 +18,7 @@ Are there any notable changes since the last release?
 
 #### Review Commit
 <!--
-Please link the commit or release that should be used for review.
+Please link to an open-source repository and release that should be used for review. It does not suffice to point at an already built plugin: Mattermost code reviews and builds all plugins itself when listing in the marketplace.
 -->
 
 ## Checklist

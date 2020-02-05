@@ -7,23 +7,23 @@ assignees: hanzei
 
 ---
 <!--
-Thank you very for submitting your Plugin! It will go through a review process to make sure it follow the quality standard  of the Marketplace. This process might take a couple of weeks bepending on how many changes are needed.
+Thank you very for submitting your plugin for consideration! A review process is required to ensure your plugin adheres to the quality standard of the Marketplace. This process may take a couple of weeks depending on Mattermost staff availability and any changes that are required.
 Read https://developers.mattermost.com/extend/plugins/community-plugin-marketplace/ before submitting your plugin.
 -->
 
 #### Summary
 <!--
-A brief description what your plugin does.
+A brief description what your plugin does. Consider including screenshots to help illustrate.
 -->
 
 #### Review Commit
 <!--
-Please link the commit or release that should be used for review.
+Please link to an open-source repository and release that should be used for review. It does not suffice to point at an already built plugin: Mattermost code reviews and builds all plugins itself when listing in the marketplace.
 -->
 
 ## Checklist
 <!--
-Please go trough this checklist and confirm every item. If your plugin doesn't fulfil every item, leave a comment explaining why and if you will fix this.
+Please go trough this checklist and confirm every item. If your plugin doesn't fulfil every item, leave a comment explaining why.
 -->
 
 **Product Requirements**
@@ -32,7 +32,7 @@ Please go trough this checklist and confirm every item. If your plugin doesn't f
 - [ ] The source code is available in a public git repository.
 - [ ] There is a public issue or bug tracker for the plugin, which is linked in the plugin documentation and linked via `support_url` in the manifest.
 - [ ] The plugin provides detailed usage documentation with at least one screenshot of the plugin in action, list of features and a development guide. This is typically a README file or a landing page on the web. The link to the documentation is set as `homepage_url` in the manifest. A great example is the [README of the GitHub plugin](https://github.com/mattermost/mattermost-plugin-github/blob/master/README.md).
-- [ ] For every release a changelog has to be publish. The link to it is noted via `release_notes_url` in the manifest.
+- [ ] For every release a changelog has to be published. The link to it is noted via `release_notes_url` in the manifest.
 - [ ] The plugin has to be out of Beta and be released with at least v1.0.0.
 - [ ] All configuration has to be possible using the UI of Mattermost.
 - [ ] The plugin id defined in the manifest must not collide with the id of an existing plugin in the marketplace. It should follow [the naming convention](https://developers.mattermost.com/extend/plugins/manifest-reference/#id).
