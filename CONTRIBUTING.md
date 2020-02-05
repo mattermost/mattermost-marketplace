@@ -22,7 +22,7 @@ JIRA template:
   - [Security](https://mattermost.atlassian.net/browse/MM-22225)
   - [QA](https://mattermost.atlassian.net/browse/MM-22223)
 
-After a new plugin has been submitted, the assignees of the issue posts the following message:
+After a new plugin has been submitted, the assignee of the issue posts the following message:
 ```
 ## Process checklist
 - [ ] Request review, create JIRA tickets, and link them here:
@@ -46,7 +46,7 @@ JIRA template:
   - [Security](https://mattermost.atlassian.net/browse/MM-22226)
   - [QA](https://mattermost.atlassian.net/browse/MM-22227)
 
-After an update for an existing plugin has been submitted, the assignees of the issue posts the following message:
+After an update for an existing plugin has been submitted, the assignee of the issue posts the following message:
 ```
 ## Process checklist
 - [ ] Request review and create JIRA tickets and link them here:
