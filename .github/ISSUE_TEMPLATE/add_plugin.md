@@ -45,7 +45,6 @@ Please go trough this checklist and confirm every item. If your plugin doesn't f
 **Security Requirements**
 
 - [ ] The plugin does not expose a vulnerability.
-- [ ] The plugin does not include favor the author of the plugin or a third party excessively by e.g. including a bitcoin miner that mines on behalf of the author.
 - [ ] The plugins provided an email address or a username on the [Community Server](https://community.mattermost) used to report vulnerabilities in the future.
 
 **Functional Requirements**
