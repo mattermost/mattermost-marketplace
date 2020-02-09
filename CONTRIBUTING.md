@@ -4,7 +4,7 @@ Thank you for your interest in contributing! Join the [**Plugin Marketplace chan
 
 ## Reporting Issues
 
-If you think you found a bug within the Marketplace code, [please use the GitHub issue tracker](https://github.com/mattermost/mattermost-marketplace/labels/issues/new) on this repository to open an issue. Bugs in the Marketplace in-product experience should be reported on the [Mattermost Server repository](https://github.com/mattermost/mattermost-server/issues/new). Please report bugs within the plugins themself on there respective issues trackers.
+If you think you found a bug within the Marketplace code, [please use the GitHub issue tracker](https://github.com/mattermost/mattermost-marketplace/labels/issues/new) on this repository to open an issue. Bugs in the Marketplace in-product experience should be reported on the [Mattermost Server repository](https://github.com/mattermost/mattermost-server/issues/new). Please report bugs within specific plugin on their respective issue trackers.
 
 ## Community Plugin
 
@@ -12,7 +12,7 @@ To add your plugin to the Marketplace, please open [an issue using this template
 
 ### Playbook
 
-The following is a playback for use by Mattermost core committers.
+The following is a playbook for use by Mattermost core committers.
 
 #### New plugin
 
