@@ -7,3 +7,20 @@ type Label struct {
 	URL         string `json:"url"`
 	Color       string `json:"color"`
 }
+
+var AllLabels = []Label{
+	CommunityLabel,
+	BetaLabel,
+}
+
+var CommunityLabel Label = Label{
+	Name:        "Community",
+	Description: "This plugin is maintained by the Open Source Community.",
+	URL:         "https://mattermost.com/pl/default-community-plugins",
+}
+
+var BetaLabel Label = Label{
+	Name:        "Beta",
+	Description: "This plugin is currently in Beta and is not recommended for use in production.",
+	URL:         "https://mattermost.com/pl/default-beta-plugins",
+}
