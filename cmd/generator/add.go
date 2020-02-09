@@ -90,6 +90,11 @@ var addCmd = &cobra.Command{
 			return errors.New("manifest nil after reading from plugin bundle for release")
 		}
 
+		err = manifest.IsValid()
+		if err != nil {
+			return errors.Wrap(err, "manifest is invalid")
+		}
+
 		var iconData string
 		if manifest.IconPath != "" {
 			iconData, err = getIconDataFromTarFile(bundleData, manifest.IconPath)
