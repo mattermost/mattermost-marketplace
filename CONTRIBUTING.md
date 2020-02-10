@@ -31,7 +31,7 @@ After a new plugin has been submitted, the assignee of the issue posts the follo
     - Security:
     - QA:
 - [ ] Create a private fork under the Mattermost organization
-- [ ] Cut plugin release
+- [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process/)
 - [ ] Add release to Marketplace
 - [ ] Reach out on [Marketing Channel](https://community-release.mattermost.com/private-core/channels/marketing) to tweet about the plugin.
 ) to tweet about the plugin
@@ -55,6 +55,6 @@ After an update for an existing plugin has been submitted, the assignee of the i
     - Security:
     - QA:
 - [ ] Update fork
-- [ ] Cut plugin release
+- [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process/)
 - [ ] Add release to Marketplace
 ```
