@@ -49,5 +49,5 @@ Please go trough this checklist and confirm every item. If your plugin doesn't f
 
 **Functional Requirements**
 
-- [ ] The plugin works as expected with the latest version of Mattermost.
-- [ ] The plugin works as expected with the latest ESR version of Mattermost. This must not be checked if `min_server_version` is higher than the latest ESR version.
+- [ ] The plugin must set a `min_server_version` in the manifest.
+- [ ] The plugin must work on all Mattermost versions greater or equal then `min_server_version`.
