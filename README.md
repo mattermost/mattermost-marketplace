@@ -57,7 +57,7 @@ Changes merged to `master` are automatically deployed to https://api.staging.int
 
 Changes merged to `production` are automatically deployed to https://api.integrations.mattermost.com.
 
-To update production, simply create, review and merge the appropriate pull request. Often this will just be a merge from `master` to `production`, but if there are pending changes not yet ready for a production release there, it may be appropriate to just update the plugin database with a direct change to production that is later merged back to `master`.
+When adding or updating the plugins database (or corresponding tooling), submit the changes directly to `production`, and then merge `production` immediately back to `master` to reduce unnecessary merge conflicts. All other changes should be committed directly to `master`. Changes pending release from `master` should be merged to `production` after qualification and in coordination with any supporting Mattermost server release.
 
 ### Manual Deployment
 
