@@ -319,6 +319,11 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 			return nil, errors.Errorf("manifest nil after reading from plugin bundle for release %s", releaseName)
 		}
 
+		err = plugin.Manifest.IsValid()
+		if err != nil {
+			return nil, errors.Wrapf(err, "invalid manifest for release %s", releaseName)
+		}
+
 		if plugin.Manifest.IconPath != "" {
 			var iconData string
 			iconData, err = getIconDataFromTarFile(bundleData, plugin.Manifest.IconPath)

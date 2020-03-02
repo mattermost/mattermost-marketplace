@@ -9,8 +9,8 @@ require (
 	github.com/google/go-github/v28 v28.0.0
 	github.com/gorilla/mux v1.7.3
 	github.com/h2non/go-is-svg v0.0.0-20160927212452-35e8c4b0612c
-	github.com/mattermost/mattermost-server/v5 v5.3.2-0.20200125202641-0944917fa591
-	github.com/pkg/errors v0.8.1
+	github.com/mattermost/mattermost-server/v5 v5.3.2-0.20200205094658-57717a23afa2
+	github.com/pkg/errors v0.9.1
 	github.com/rakyll/statik v0.1.6
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/cobra v0.0.5
