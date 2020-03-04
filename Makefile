@@ -14,7 +14,7 @@ all: check-style test build
 ## Generate uses statikfs to bundle the plugin.json for use with the lambda function.
 .PHONY: generate
 generate:
-	go get github.com/rakyll/statik
+	go get github.com/rakyll/statik@v0.1.6
 	mkdir -p data/static/
 	cp plugins.json data/static/
 	go generate ./...
