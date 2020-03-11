@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing! Join the [**Plugin Marketplace channel**](https://community.mattermost.com/core/channels/plugins-marketplace) on the Mattermost community server for discussion about this plugin.
+Thank you for your interest in contributing! Join the [**Plugin Marketplace channel**](https://community.mattermost.com/core/channels/plugins-marketplace) on the Mattermost community server for discussion about the Plugin Marketplace.
 
 ## Reporting Issues
 
