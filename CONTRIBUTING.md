@@ -16,21 +16,13 @@ The following is a playbook for use by Mattermost core committers.
 
 #### New plugin
 
-JIRA template:
-  - [PM](https://mattermost.atlassian.net/browse/MM-22224)
-  - [Dev](https://mattermost.atlassian.net/browse/MM-22221)
-  - [Security](https://mattermost.atlassian.net/browse/MM-22225)
-  - [QA](https://mattermost.atlassian.net/browse/MM-22223)
-
 After a new plugin has been submitted, the assignee of the issue posts the following message:
 ```
 ## Process checklist
-- [ ] Request review, create JIRA tickets, and link them here:
-    - PM:
-    - Dev:
-    - Security:
-    - QA:
-- [ ] Create a private fork under the Mattermost organization
+- [ ] Create a private fork under the Mattermost organization. `master` should only contain a `README.md`.
+- [ ] Give submitter read access to the fork
+- [ ] Create PR to merge upstream into `master`.
+- [ ] Request reviews
 - [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process/)
 - [ ] Add release to Marketplace
 - [ ] Reach out on [Marketing Channel](https://community-release.mattermost.com/private-core/channels/marketing) to tweet about the plugin.
@@ -40,21 +32,11 @@ After a new plugin has been submitted, the assignee of the issue posts the follo
 
 #### Update plugin
 
-JIRA template:
-  - [PM](https://mattermost.atlassian.net/browse/MM-22228)
-  - [Dev](https://mattermost.atlassian.net/browse/MM-22222)
-  - [Security](https://mattermost.atlassian.net/browse/MM-22226)
-  - [QA](https://mattermost.atlassian.net/browse/MM-22227)
-
 After an update for an existing plugin has been submitted, the assignee of the issue posts the following message:
 ```
 ## Process checklist
-- [ ] Request review and create JIRA tickets and link them here:
-    - PM:
-    - Dev:
-    - Security:
-    - QA:
-- [ ] Update fork
+- [ ] Create PR to merge changes from upstream into `master`.
+- [ ] Request reviews
 - [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process/)
 - [ ] Add release to Marketplace
 ```
