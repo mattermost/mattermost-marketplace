@@ -14,7 +14,7 @@ type Plugin struct {
 	IconData        string                    `json:"icon_data"` // The base64 encoding of an svg image
 	DownloadURL     string                    `json:"download_url"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
-	Labels          []Label                   `json:"labels"`
+	Labels          []Label                   `json:"labels,omitempty"`
 	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
