@@ -44,7 +44,7 @@ Please go trough this checklist and confirm every item. If your plugin doesn't f
 
 **Security Requirements**
 
-- [ ] The plugin does not expose a vulnerability.
+- [ ] Security reviews do not reveal any exploitable vulnerabilities in the plugin.
 - [ ] The plugin provided an email address or a username on the [Community Server](https://community.mattermost.com) used to report vulnerabilities in the future.
 
 **Functional Requirements**
