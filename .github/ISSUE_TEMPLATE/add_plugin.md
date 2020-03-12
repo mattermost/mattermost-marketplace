@@ -23,7 +23,7 @@ Please link to an open-source repository and release that should be used for rev
 
 ## Checklist
 <!--
-Please go trough this checklist and confirm every item. If your plugin doesn't fulfil every item, leave a comment explaining why.
+Please go through this checklist and confirm every item. If your plugin doesn't fulfil every item, leave a comment explaining why.
 -->
 
 **Product Requirements**
