@@ -4,8 +4,8 @@ about: Request to add your plugin to the Marketplace
 title: "Add $REPOSITORY_NAME to Marketplace"
 labels: Plugin/New
 assignees: hanzei
-
 ---
+
 <!--
 Thank you very for submitting your plugin for consideration! A review process is required to ensure your plugin adheres to the quality standard of the Marketplace. This process may take a couple of weeks depending on Mattermost staff availability and any changes that are required.
 Read https://developers.mattermost.com/extend/plugins/community-plugin-marketplace/ before submitting your plugin.
