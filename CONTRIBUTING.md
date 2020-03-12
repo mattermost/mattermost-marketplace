@@ -1,11 +1,11 @@
 # Contributing
 
-Thank you for your interest in contributing! Join the [**Plugin Marketplace channel**](https://community.mattermost.com/core/channels/plugins-marketplace) on the Mattermost community server for discussion about the Plugin Marketplace.
+Thank you for your interest in contributing! Join the [Plugin Marketplace channel](https://community.mattermost.com/core/channels/plugins-marketplace) on the Mattermost Community Server for discussion about the Plugin Marketplace.
 
 
 ## Reporting Issues
 
-If you think you found a bug within the Marketplace code, [please use the GitHub issue tracker](https://github.com/mattermost/mattermost-marketplace/labels/issues/new) on this repository to open an issue. Bugs in the Marketplace in-product experience should be reported on the [Mattermost Server repository](https://github.com/mattermost/mattermost-server/issues/new). Please report bugs within specific plugin on their respective issue trackers.
+If you think you found a bug within the Marketplace code, [please use the GitHub issue tracker](https://github.com/mattermost/mattermost-marketplace/labels/issues/new) on this repository to open an issue. Bugs in the Marketplace in-product experience should be reported on the [Mattermost Server repository](https://github.com/mattermost/mattermost-server/issues/new). Please report bugs within specific plugins on their respective issue trackers.
 
 
 ## Community Plugin
@@ -23,14 +23,14 @@ After a new plugin has been submitted, the assignee of the issue posts the follo
 ```
 ## Process checklist
 - [ ] Create a private fork under the Mattermost organization. `master` should only contain a `README.md`.
-- [ ] Give submitter read access to the fork
+- [ ] Give submitter read access to the fork.
 - [ ] Create PR to merge upstream into `master`.
-- [ ] Request reviews
-- [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process/)
-- [ ] Add release to Marketplace
+- [ ] Request reviews.
+- [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process).
+- [ ] Add release to Marketplace.
 - [ ] Reach out on [Marketing Channel](https://community-release.mattermost.com/private-core/channels/marketing) to tweet about the plugin.
 ) to tweet about the plugin
-- [ ] Work with `@hanna.park` regarding swag
+- [ ] Work with `@hanna.park` regarding swag.
 ```
 
 #### Update Plugin
@@ -39,7 +39,7 @@ After an update for an existing plugin has been submitted, the assignee of the i
 ```
 ## Process checklist
 - [ ] Create PR to merge changes from upstream into `master`.
-- [ ] Request reviews
-- [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process/)
-- [ ] Add release to Marketplace
+- [ ] Request reviews.
+- [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process).
+- [ ] Add release to Marketplace.
 ```
