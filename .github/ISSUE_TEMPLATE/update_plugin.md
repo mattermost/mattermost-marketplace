@@ -7,7 +7,7 @@ assignees: hanzei
 ---
 
 <!--
-Thank you very for continuing to develop and maintain your plugin. It will go through a review process to make sure all requirements are still met since the last release.
+Thank you very much for continuing to develop and maintain your plugin. It will go through a review process to make sure all requirements are still met since the last release.
 -->
 
 #### Summary
