@@ -15,7 +15,7 @@ Thank you very much for continuing to develop and maintain your plugin. It will 
 Are there any notable changes since the last release?
 -->
 
-#### Review Reference
+#### Review reference
 <!--
 Please link to an open source repository and release that should be used for review. As Mattermost code reviews and builds all plugins itself when listing in the Marketplace, the link cannot point at an already built plugin.
 -->

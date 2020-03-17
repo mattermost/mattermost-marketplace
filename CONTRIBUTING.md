@@ -3,12 +3,12 @@
 Thank you for your interest in contributing! Join the [Plugin Marketplace channel](https://community.mattermost.com/core/channels/plugins-marketplace) on the Mattermost Community Server for discussion about the Plugin Marketplace.
 
 
-## Reporting Issues
+## Reporting issues
 
 If you think you found a bug within the Marketplace code, [please use the GitHub issue tracker](https://github.com/mattermost/mattermost-marketplace/labels/issues/new) on this repository to open an issue. Bugs in the Marketplace in-product experience should be reported on the [Mattermost Server repository](https://github.com/mattermost/mattermost-server/issues/new). Please report bugs within specific plugins on their respective issue trackers.
 
 
-## Community Plugin
+## Community plugin
 
 To add your plugin to the Marketplace, please open [an issue using this template](https://github.com/mattermost/mattermost-marketplace/issues/new?template=add_plugin.md). To update your plugin, please also open an issue [using this template](https://github.com/mattermost/mattermost-marketplace/issues/new?template=update_plugin.md).
 
@@ -17,7 +17,7 @@ To add your plugin to the Marketplace, please open [an issue using this template
 
 The following is a playbook for use by Mattermost core committers.
 
-#### New Plugin
+#### New plugin
 
 After a new plugin has been submitted, the assignee of the issue posts the following message:
 ```
@@ -32,7 +32,7 @@ After a new plugin has been submitted, the assignee of the issue posts the follo
 - [ ] Work with `@hanna.park` regarding swag.
 ```
 
-#### Update Plugin
+#### Update plugin
 
 After an update for an existing plugin has been submitted, the assignee of the issue posts the following message:
 ```

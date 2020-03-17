@@ -16,7 +16,7 @@ Read https://developers.mattermost.com/extend/plugins/community-plugin-marketpla
 A brief description what your plugin does. Consider including screenshots to help illustrate.
 -->
 
-#### Review Commit
+#### Review commit
 <!--
 Please link to an open source repository and release that should be used for review. As Mattermost code reviews and builds all plugins itself when listing in the Marketplace, the link cannot point at an already built plugin.
 -->
@@ -26,7 +26,7 @@ Please link to an open source repository and release that should be used for rev
 Go through this checklist and confirm every item. If your plugin doesn't fulfill every item, leave a comment explaining why.
 -->
 
-**Product Requirements**
+**Product requirements**
 
 - [ ] The plugin is published under an Apache v2 compatible license (e.g. no GPL, APGL). A list of compatible licenses can be found [here](https://apache.org/legal/resolved.html#category-a).
 - [ ] The source code is available in a public git repository.
@@ -37,17 +37,17 @@ Go through this checklist and confirm every item. If your plugin doesn't fulfill
 - [ ] All configuration is accessible via the Mattermost UI.
 - [ ] The plugin ID defined in the manifest must not collide with the ID of an existing plugin in the Marketplace. It should follow [the documentation's suggested naming convention](https://developers.mattermost.com/extend/plugins/manifest-reference/#id).
 
-**Technical Requirements**
+**Technical requirements**
 
 - [ ] The plugin works for 60k concurrent connections and in a high-availability deployment. **Note:** There are currently no publicly-available tools to verify these properties. As such, they are checked during code review by a developer.
 - [ ] The plugin logs important events on appropriate log levels to allow System Admins to troubleshoot issues.
 
-**Security Requirements**
+**Security requirements**
 
 - [ ] Security reviews do not reveal any exploitable vulnerabilities in the plugin.
 - [ ] The plugin provides an email address or a username on the [Community Server](https://community.mattermost.com) used to report vulnerabilities in the future. Please post it into this issue or send it to ben.schumacher@mattermost.com.
 
-**Functional Requirements**
+**Functional requirements**
 
 - [ ] The plugin must set a `min_server_version` in the manifest.
 - [ ] The plugin must work on all Mattermost versions greater than or equal to the `min_server_version`.
