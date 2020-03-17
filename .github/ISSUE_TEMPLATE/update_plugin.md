@@ -25,5 +25,5 @@ Please link to an open source repository and release that should be used for rev
 - [ ] [All requirements](https://developers.mattermost.com/extend/plugins/community-plugin-marketplace/#requirements-for-adding-community-plugin-to-the-marketplace) are still met.
 - [ ] The release also has to follow [Semantic Versioning](https://semver.org/). For plugins in particular this means:
   - If the plugin exposes a public API, breaking changes to the API require a major version bump.
-  - If an update requires manual migration actions from the administrator, a major version bump is required.
+  - If an update requires manual migration actions from the System Admin, a major version bump is required.
 - [ ] A changelog has been published. The link to it is noted via `release_notes_url` in the manifest.
