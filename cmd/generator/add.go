@@ -15,21 +15,43 @@ import (
 
 func init() {
 	generatorCmd.AddCommand(addCmd)
+
+	addCmd.Flags().Bool("beta", false, "Mark release as Beta")
+	addCmd.Flags().Bool("official", false, "Mark this plugin as maintanied by Mattermost")
+	addCmd.Flags().Bool("community", false, "Mark this plugin as maintanied by the Open Source Community")
 }
 
 var addCmd = &cobra.Command{
 	Use:   "add [repo] [tag]",
 	Short: "Add a plugin release to the plugins.json database",
 	Long: "The generator commands allows adding a specific plugin release to the database by using this command.\n\n" +
-		"The release has to be built first using the /mb cutPlugin command, which also uploads it to https://plugins-store.test.mattermost.com/release/. " +
+		"The release has to be built first using the /mb cutplugin command, which also uploads it to https://plugins-store.test.mattermost.com/release/. " +
 		"This location is used to fetch the plugin release.",
 	Example: `  generator add matterpoll v1.5.1`,
 	Args:    cobra.ExactArgs(2),
 	RunE: func(command *cobra.Command, args []string) error {
 		command.SilenceUsage = true
 
-		err := InitCommand(command)
+		official, err := command.Flags().GetBool("official")
 		if err != nil {
+			return err
+		}
+
+		community, err := command.Flags().GetBool("community")
+		if err != nil {
+			return err
+		}
+
+		if official == community {
+			return errors.New("you must either set the release as a official or as a community plugin")
+		}
+
+		beta, err := command.Flags().GetBool("beta")
+		if err != nil {
+			return err
+		}
+
+		if err = InitCommand(command); err != nil {
 			return err
 		}
 
@@ -68,6 +90,11 @@ var addCmd = &cobra.Command{
 			return errors.New("manifest nil after reading from plugin bundle for release")
 		}
 
+		err = manifest.IsValid()
+		if err != nil {
+			return errors.Wrap(err, "manifest is invalid")
+		}
+
 		var iconData string
 		if manifest.IconPath != "" {
 			iconData, err = getIconDataFromTarFile(bundleData, manifest.IconPath)
@@ -81,12 +108,21 @@ var addCmd = &cobra.Command{
 			return errors.Wrap(err, "failed to download plugin signature")
 		}
 
+		labels := []model.Label{}
+		if beta {
+			labels = append(labels, model.BetaLabel)
+		}
+
+		if community {
+			labels = append(labels, model.CommunityLabel)
+		}
+
 		plugin := &model.Plugin{
 			HomepageURL:     manifest.HomepageURL,
 			IconData:        iconData,
 			DownloadURL:     bundleURL,
 			ReleaseNotesURL: manifest.ReleaseNotesURL,
-			Labels:          nil,
+			Labels:          labels,
 			Signature:       signature,
 			Manifest:        manifest,
 			UpdatedAt:       time.Now().In(time.UTC),

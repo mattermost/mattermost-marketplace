@@ -32,8 +32,5 @@ func TestGetLabels(t *testing.T) {
 	var respose []model.Label
 	err := json.NewDecoder(result.Body).Decode(&respose)
 	require.NoError(t, err)
-
-	expectedResponse := []model.Label{}
-
-	assert.Equal(t, expectedResponse, respose)
+	assert.Equal(t, model.AllLabels, respose)
 }
