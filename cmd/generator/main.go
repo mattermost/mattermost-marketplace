@@ -86,18 +86,18 @@ var generatorCmd = &cobra.Command{
 		ctx := context.Background()
 
 		repositoryNames := []string{
-			"mattermost-plugin-github",
-			"mattermost-plugin-autolink",
-			"mattermost-plugin-zoom",
-			"mattermost-plugin-jira",
-			"mattermost-plugin-welcomebot",
-			"mattermost-plugin-jenkins",
 			"mattermost-plugin-antivirus",
-			"mattermost-plugin-custom-attributes",
+			"mattermost-plugin-autolink",
 			"mattermost-plugin-aws-SNS",
+			"mattermost-plugin-custom-attributes",
+			"mattermost-plugin-github",
 			"mattermost-plugin-gitlab",
+			"mattermost-plugin-jira",
+			"mattermost-plugin-jenkins",
 			"mattermost-plugin-nps",
 			"mattermost-plugin-webex",
+			"mattermost-plugin-welcomebot",
+			"mattermost-plugin-zoom",
 		}
 
 		iconPaths := map[string]string{
@@ -107,6 +107,7 @@ var generatorCmd = &cobra.Command{
 			"mattermost-plugin-jenkins": "data/icons/jenkins.svg",
 			"mattermost-plugin-jira":    "data/icons/jira.svg",
 			"mattermost-plugin-webex":   "data/icons/webex.svg",
+			"mattermost-plugin-zoom":    "data/icons/zoom.svg",
 		}
 
 		plugins := []*model.Plugin{}
