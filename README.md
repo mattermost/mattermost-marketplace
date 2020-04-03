@@ -48,7 +48,7 @@ make plugins.json
 
 Make sure to double check the `diff` of `plugins.json` to ensure every release get added correctly.
 
-If you run this command multiple times, GitHub might rate limit you. Using an API does help with this issue:
+If you run this command multiple times, GitHub might rate limit you. Using an API token does help:
 
 `export GITHUB_TOKEN=<github token>`
 
