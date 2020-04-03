@@ -32,7 +32,6 @@ func init() {
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
 	generatorCmd.PersistentFlags().String("database", "plugins.json", "Path to the plugins database to update.")
 
-	generatorCmd.Flags().String("github-token", "", "The optional GitHub token for API requests.")
 	generatorCmd.Flags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
 }
 
@@ -67,7 +66,7 @@ var generatorCmd = &cobra.Command{
 		}
 
 		includePreRelease, _ := command.Flags().GetBool("include-pre-release")
-		githubToken, _ := command.Flags().GetString("github-token")
+		githubToken := os.Getenv("GITHUB_TOKEN")
 
 		var client *github.Client
 
