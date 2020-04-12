@@ -2804,6 +2804,48 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
     "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/download/v1.2.0/com.mattermost.custom-attributes-1.2.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/tag/v1.2.0",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6HRGUACgkQ0bVLR6XO/sR7HQ//YiGh0HP+lJrXNr9O7voTRInTcKBSdZ2sR9VSYAeWCl3R0s2u/SmF0lZ9/GhWIZKO4qMvihI2BSqtOBmrtOzpx59eyq/vKJZHvwmZWcDw3pAmH0BR+DuurdoiT/0GlStmatKvZ6EfOhzORI60f5j+tcI/5JHUxj/Ydz7CismFq71lhCaEDrP+tm36sinyQtVjC5xWbk74J6fwlEXQC9Pu8lQqKEKEWNut/xpuoZPOAx2X+LRcwHQ8UNTUr4t2gs9ZzX6ZrtwR0OIh/6IwROBrARl5eSVAGmOoWiGhaYXxVtdmSaY1hqI7NvZhVkbqY2LPp3+6owlRU2ekcRuxJe6d+kmirE94wk0ITGJuEXW1Kqx6e0uNf7k4ISVaS5YFNHImfE6R62kxNqCcVqXB+v4magbKraI49DJx1YJXoTXmryOQ494G/KCSnlsh7mG9wHdIfUhfiJ3B0TSDH7SPxkzGLkrRxAxYtwRomZEsYUeFOfK0N3AX3e9VBwbvO7SK3/u16Son1L0j3CV9Dvqqm0YDBRA/qlz6E+fJVNqq+0pO8PuPXDJ9TAumYOb74neMDxhk12KiKEz8/bDEUmbprsSLkBDAyga+WpDkWARXizEBVbZZpror3nypPFzvVe/E5WHyh/2FLTH7It/7mitUfGwlERblzPM52kdl4vlI4/q9ZbY=",
+    "manifest": {
+      "id": "com.mattermost.custom-attributes",
+      "name": "Custom User Attributes",
+      "description": "Add custom user attributes to the Mattermost user profile popover.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/issues",
+      "version": "1.2.0",
+      "min_server_version": "5.20.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "CustomAttributes",
+            "display_name": "Custom Attributes",
+            "type": "custom",
+            "help_text": "",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "updated_at": "2020-03-24T18:41:23Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes",
+    "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/download/v1.1.0/com.mattermost.custom-attributes-1.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-custom-attributes/releases/tag/v1.1.0",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl4XKDQACgkQ0bVLR6XO/sQldA/7BikDhJHSew4sJy7cnOBq8eP7gtorns3eMxvKrlwOMCm86CS0vlqq4mvRUKUruLe+ZEHwng2H4LM0mgJb73F4Z8O6TNXOaiTE/fvpJ1vZucHNpLdVFj4EUIC4duNUa7ztX7OilDqG6UG+DPhsveqCyd4cH+X1rQMDUL4vZtvPGK3TbMBZTLhiNBwtd+P4kUHbGMwEVA+YVU07Oz6txoUQEKKKytBVWxgrXXpTzeUB8wEIuAz2XGhmPeJvQBei3Cnvo8jOEz8po0RASpDmQzLTP6y6pZTsUMukAOjcQmSVJkLnoYG2uOMgIVQMcnl9Fj+2Wmc1FJEaaC4N8U5RdVcumwz+AWj0WElBfpM5B1G/kdaZZgR0YFt1X6fSuMEVNsHyOYXf/MxEpsYrHmS+WYDgdDYCLPg5iRCChpCjgyGoqRctMebV7CKrfTnL2pZKAVMA5NMrlAoYAt7klDASJC088qM5oWYy2cgdQENcGa5r3MK9DOM0GXGHydtUxTq995P7XEHk5ApfuxBRjdTWxO/FKEY7NBRygfxSdM0yLFp/FUOJ1SMDJGOZ2XnGNpc3zVA7HlHX8Z2XrT3c/RgQdbQyL4b5t4fepDFVGGNdvGdpVbaws5xOSjuQP5OMKjj5Lz593mHJsZEe2reRMr+5FtLl/Vbt/I3BhtSEax9evjVIjoU=",
