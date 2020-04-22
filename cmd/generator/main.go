@@ -97,7 +97,6 @@ var generatorCmd = &cobra.Command{
 			"mattermost-plugin-aws-SNS",
 			"mattermost-plugin-gitlab",
 			"mattermost-plugin-nps",
-			"mattermost-plugin-todo",
 			"mattermost-plugin-webex",
 		}
 
