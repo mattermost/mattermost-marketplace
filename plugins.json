@@ -3864,5 +3864,44 @@
       }
     },
     "updated_at": "2019-10-04T15:14:32Z"
+  },
+  {
+    "homepage_url": "",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.2.0.tar.gz",
+    "release_notes_url": "",
+    "labels": [
+      {
+        "name": "Beta",
+        "description": "This plugin is currently in Beta and is not recommended for use in production.",
+        "url": "https://mattermost.com/pl/default-beta-plugins",
+        "color": ""
+      }
+    ],
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6fK3MACgkQ0bVLR6XO/sR2JQ/8CUdVcqBLXStJE8g+VbHUUT0hfBnijIPzbiPVzHjnkWIz6kY6nUrfykg6nSNN5rhverw0ovOLEwrusrKKb0997xvn60Ekmsyfrr3b2V+ZCVvgdG678lJWXnhqu6n/xtCW6GCTTVZB42Jnr4Ri5VVwNL0mSE6Rc4urlWnMApasKVi4tl3trbvVyOJrKUwtlgNXHYnRkZOVcmc64AxG7DBhXawmuNTUbZ6f9WaC8/F9ZxxErWxERN0rlH/rSdYsRG/CIIYxCJ63R9YT2xRMcJkiMBt2bh4zXKazHfw5/ozadyG7TEQVnPrNS+xZvj4JkgKLw5c3NwcIORONujnL8JINlOKUJf+xmBdNPGTwS2WWeDp6rSx0xPmSttXi8b+glBXvq80lrzSz1CLvSr/MOwB3yeuMl1EAKhPvwrUm49uGt2dsIgaHaImbAXXzs277OjuG4ra6bNKPpgjh7mjr5opnDRai3r1cqOMKPQnevBXxQCcRPbIUfxr3tVKOQSaG2cTFgot57yebnUGwYNFRD+D6oAkgTh2nIm95QPqLsQ3CpawPiR9pz9VIX0RVoQg0+OYKAGql8GjXH97cj4EZZnlDLtBIxol0mmGVxndNFYhYesnQxF9l2LroG/8jown+gqQorOcS5cv4RSGVl31QftWNgiDALr7mH2ionJFFn0vVjiA=",
+    "manifest": {
+      "id": "com.mattermost.plugin-todo",
+      "name": "Todo Plugin",
+      "description": "This plugin makes it easy to keep track of Todo issues and get daily reminders.",
+      "version": "0.2.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "updated_at": "2020-04-22T18:12:27.541293964Z"
   }
 ]
