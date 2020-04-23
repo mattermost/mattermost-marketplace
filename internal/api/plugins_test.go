@@ -23,7 +23,7 @@ func setupAPI(t *testing.T, plugins []*model.Plugin) (*api.Client, func()) {
 
 	data, err := json.Marshal(plugins)
 	require.NoError(t, err)
-	store, err := store.New(bytes.NewReader(data), logger)
+	store, err := store.NewStaticFromReader(bytes.NewReader(data), logger)
 	require.NoError(t, err)
 
 	router := mux.NewRouter()

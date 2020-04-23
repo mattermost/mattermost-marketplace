@@ -1,14 +1,59 @@
 package store
 
 import (
+	"io"
 	"sort"
 	"strings"
 
 	"github.com/blang/semver"
 	"github.com/pkg/errors"
+	"github.com/sirupsen/logrus"
 
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
+
+// StaticStore provides access to a store backed by a static set of plugins.
+type StaticStore struct {
+	plugins []*model.Plugin
+	logger  logrus.FieldLogger
+}
+
+// NewStatic constructs a new instance of a static store, parsing the plugins from the given reader.
+func NewStaticFromReader(reader io.Reader, logger logrus.FieldLogger) (*StaticStore, error) {
+	plugins, err := model.PluginsFromReader(reader)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to parse stream")
+	}
+
+	return NewStatic(plugins, logger)
+}
+
+// NewStatic constructs a new instance of a static store using the given plugins.
+func NewStatic(plugins []*model.Plugin, logger logrus.FieldLogger) (*StaticStore, error) {
+	if err := validatePlugins(plugins); err != nil {
+		return nil, errors.Wrap(err, "failed to validate plugins")
+	}
+
+	return &StaticStore{
+		plugins,
+		logger,
+	}, nil
+}
+
+func validatePlugins(plugins []*model.Plugin) error {
+	for _, plugin := range plugins {
+		err := plugin.Manifest.IsValid()
+		if err != nil {
+			return errors.Wrapf(err, "invalid manifest for plugin %s", plugin.Manifest.Id)
+		}
+
+		if plugin.Manifest.Version == "" {
+			return errors.Errorf("missing version in manifest for plugin%s", plugin.Manifest.Id)
+		}
+	}
+
+	return nil
+}
 
 func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
 	filter = strings.ToLower(filter)
@@ -28,7 +73,7 @@ func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
 }
 
 // GetPlugins fetches the given page of plugins. The first page is 0.
-func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugin, error) {
+func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugin, error) {
 	if pluginFilter.PerPage == 0 {
 		return nil, nil
 	}
@@ -69,7 +114,7 @@ func (store *Store) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 }
 
 // getPlugins returns all plugins compatible with the given server version, sorted by name ascending.
-func (store *Store) getPlugins(serverVersion string) ([]*model.Plugin, error) {
+func (store *StaticStore) getPlugins(serverVersion string) ([]*model.Plugin, error) {
 	var result []*model.Plugin
 	plugins := map[string]*model.Plugin{}
 

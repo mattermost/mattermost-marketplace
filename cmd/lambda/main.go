@@ -22,7 +22,7 @@ func main() {
 	}
 }
 
-func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.Store, error) {
+func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.StaticStore, error) {
 	statikFS, err := fs.New()
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to open statik fileystem")
@@ -34,7 +34,7 @@ func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.Store,
 	}
 	defer database.Close()
 
-	statikStore, err := store.New(database, logger)
+	statikStore, err := store.NewStaticFromReader(database, logger)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to initialize store")
 	}

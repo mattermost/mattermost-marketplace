@@ -46,7 +46,7 @@ var serverCmd = &cobra.Command{
 		}
 		defer databaseFile.Close()
 
-		fileStore, err := store.New(databaseFile, logger)
+		staticStore, err := store.NewStaticFromReader(databaseFile, logger)
 		if err != nil {
 			return errors.Wrap(err, "failed to initialize store")
 		}
@@ -57,7 +57,7 @@ var serverCmd = &cobra.Command{
 		router := mux.NewRouter()
 
 		api.Register(router, &api.Context{
-			Store:  fileStore,
+			Store:  staticStore,
 			Logger: logger,
 		})
 
