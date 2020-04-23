@@ -53,7 +53,7 @@ run: run-server
 
 ## Run the Plugin Marketplace
 .PHONY: run-server
-run-server:
+run-server: generate
 	go run -ldflags="$(LDFLAGS)" ./cmd/marketplace server
 
 ## Compile the server as a lambda function
