@@ -38,6 +38,20 @@ Running all tests:
 $ make test
 ```
 
+### Proxying upstream
+
+The marketplace can be configured to proxy to an upstream marketplace, overlaying any locally defined plugins on top of the remote service. Invoke the server with the appropriate flag:
+
+```
+go run ./cmd/marketplace server --upstream https://api.integrations.mattermost.com
+```
+
+To compile this flag into the binary such as when building the lambda function, define the appropriate environment variable:
+```
+export BUILD_UPSTREAM_URL=https://api.integrations.mattermost.com
+make build-lambda
+```
+
 ### Updating plugins.json
 
 At the moment, the Marketplace simply points at the latest release of a fixed set of Mattermost plugins. In the future, this database will be fine-tuned to facilitate tracking multiple versions for the appropriate Mattermost server version. To update `plugins.json`, ensure you have [jq](https://stedolan.github.io/jq/) and [sponge](https://linux.die.net/man/1/sponge) installed and run:

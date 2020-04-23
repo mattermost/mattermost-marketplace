@@ -13,6 +13,11 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/store"
 )
 
+var (
+	// upstreamURL may be compiled into the binary by defining $BUILD_UPSTREAM_URL
+	upstreamURL = ""
+)
+
 var logger *logrus.Logger
 
 func main() {
@@ -45,14 +50,26 @@ func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.Static
 func listenAndServe() error {
 	logger = logrus.New()
 
+	var stores []store.Store
+
 	statikStore, err := newStatikStore("/plugins.json", logger)
 	if err != nil {
 		return err
 	}
+	stores = append(stores, statikStore)
+
+	if upstreamURL != "" {
+		upstreamStore, err := store.NewProxy(upstreamURL, logger)
+		if err != nil {
+			return errors.Wrap(err, "failed to initialize upstream store")
+		}
+
+		stores = append(stores, upstreamStore)
+	}
 
 	router := mux.NewRouter()
 	api.Register(router, &api.Context{
-		Store:  statikStore,
+		Store:  store.NewMerged(logger, stores...),
 		Logger: logger,
 	})
 

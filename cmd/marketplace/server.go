@@ -18,13 +18,19 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/store"
 )
 
-var instanceID string
+var (
+	instanceID string
+
+	// upstreamURL may be compiled into the binary by defining $BUILD_UPSTREAM_URL
+	upstreamURL string
+)
 
 func init() {
 	instanceID = model.NewId()
 
 	serverCmd.PersistentFlags().String("database", "plugins.json", "The read-only JSON file backing the server.")
 	serverCmd.PersistentFlags().String("listen", ":8085", "The interface and port on which to listen.")
+	serverCmd.PersistentFlags().String("upstream", upstreamURL, "An upstream marketplace server with which to merge results.")
 	serverCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
 }
 
@@ -46,9 +52,24 @@ var serverCmd = &cobra.Command{
 		}
 		defer databaseFile.Close()
 
+		var stores []store.Store
+
 		staticStore, err := store.NewStaticFromReader(databaseFile, logger)
 		if err != nil {
 			return errors.Wrap(err, "failed to initialize store")
+		}
+		stores = append(stores, staticStore)
+
+		upstreamURL, _ := command.Flags().GetString("upstream")
+		if upstreamURL != "" {
+			upstreamStore, err := store.NewProxy(upstreamURL, logger)
+			if err != nil {
+				return errors.Wrap(err, "failed to initialize upstream store")
+			}
+
+			logger.WithField("upstream", upstreamURL).Info("Proxying to upstream marketplace")
+
+			stores = append(stores, upstreamStore)
 		}
 
 		logger := logger.WithField("instance", instanceID)
@@ -57,7 +78,7 @@ var serverCmd = &cobra.Command{
 		router := mux.NewRouter()
 
 		api.Register(router, &api.Context{
-			Store:  staticStore,
+			Store:  store.NewMerged(logger, stores...),
 			Logger: logger,
 		})
 
