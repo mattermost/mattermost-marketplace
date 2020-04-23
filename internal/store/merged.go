@@ -7,13 +7,11 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
-// Store describes the interface to the backing store.
-type Store interface {
-	GetPlugins(filter *model.PluginFilter) ([]*model.Plugin, error)
-}
-
-// Merged is a store that merges the results of multiple stores together, always preferring the
-// most recently updated plugin record when a conflict occurs.
+// Merged is a store that merges the results of multiple stores together.
+//
+// If a plugin is present in multiple stores, the later version is preferred. If a plugin with
+// the same version is present in multiple stores, the one from the later store (as initialized)
+// is preferred.
 type Merged struct {
 	stores []Store
 	logger logrus.FieldLogger
