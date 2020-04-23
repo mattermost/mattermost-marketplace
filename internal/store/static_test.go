@@ -207,6 +207,21 @@ func TestStaticGetPlugins(t *testing.T) {
 		Signature: "signature1",
 	}
 
+	// earlier will never appear, since later instance with same version overrides
+	starterPluginV1Min515Earlier := &model.Plugin{
+		HomepageURL: "https://github.com/mattermost/mattermost-plugin-starter-template-earlier",
+		IconData:    "icon-data2-earlier.svg",
+		DownloadURL: "https://github.com/mattermost/mattermost-plugin-starter-template-earlier/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
+		Manifest: &mattermostModel.Manifest{
+			Id:               "com.mattermost.plugin-starter-template",
+			Name:             "Plugin Starter Template (Earlier)",
+			Description:      "This plugin serves as a starting point for writing a Mattermost plugin.",
+			Version:          "0.1.0",
+			MinServerVersion: "5.15.0",
+		},
+		Signature: "signature2-earlier",
+	}
+
 	starterPluginV1Min515 := &model.Plugin{
 		HomepageURL: "https://github.com/mattermost/mattermost-plugin-starter-template",
 		IconData:    "icon-data2.svg",
@@ -224,6 +239,7 @@ func TestStaticGetPlugins(t *testing.T) {
 	data, err := json.Marshal([]*model.Plugin{
 		demoPluginV1Min514,
 		demoPluginV2Min515,
+		starterPluginV1Min515Earlier,
 		starterPluginV1Min515,
 	})
 	require.NoError(t, err)

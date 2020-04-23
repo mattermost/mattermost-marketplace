@@ -141,7 +141,10 @@ func (store *StaticStore) getPlugins(serverVersion string) ([]*model.Plugin, err
 		}
 
 		storePluginVersion := semver.MustParse(storePlugin.Manifest.Version)
-		if storePluginVersion.GT(lastSeenPluginVersion) {
+
+		// Replace the existing plugin if this version is newer, or if it's the same but
+		// appears later in the list.
+		if storePluginVersion.GTE(lastSeenPluginVersion) {
 			plugins[storePlugin.Manifest.Id] = storePlugin
 		}
 	}
