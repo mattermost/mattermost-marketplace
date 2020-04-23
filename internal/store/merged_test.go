@@ -6,9 +6,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
+	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/mattermost/mattermost-marketplace/internal/testlib"
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 )
 
 func TestMerged(t *testing.T) {

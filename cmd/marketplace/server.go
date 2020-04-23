@@ -62,7 +62,8 @@ var serverCmd = &cobra.Command{
 
 		upstreamURL, _ := command.Flags().GetString("upstream")
 		if upstreamURL != "" {
-			upstreamStore, err := store.NewProxy(upstreamURL, logger)
+			var upstreamStore *store.Proxy
+			upstreamStore, err = store.NewProxy(upstreamURL, logger)
 			if err != nil {
 				return errors.Wrap(err, "failed to initialize upstream store")
 			}

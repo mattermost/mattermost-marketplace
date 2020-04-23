@@ -7,9 +7,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
+	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/mattermost/mattermost-marketplace/internal/testlib"
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 )
 
 func TestProxy(t *testing.T) {
@@ -17,7 +18,6 @@ func TestProxy(t *testing.T) {
 		logger := testlib.MakeLogger(t)
 		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusOK)
-
 		}))
 		t.Cleanup(ts.Close)
 
@@ -35,7 +35,8 @@ func TestProxy(t *testing.T) {
 		logger := testlib.MakeLogger(t)
 		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusOK)
-			w.Write([]byte(`{"invalid":`))
+			_, err := w.Write([]byte(`{"invalid":`))
+			require.NoError(t, err)
 		}))
 		t.Cleanup(ts.Close)
 
@@ -53,7 +54,8 @@ func TestProxy(t *testing.T) {
 		logger := testlib.MakeLogger(t)
 		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusOK)
-			w.Write([]byte(`[{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1", "release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{}}]`))
+			_, err := w.Write([]byte(`[{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1", "release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{}}]`))
+			require.NoError(t, err)
 		}))
 		t.Cleanup(ts.Close)
 
@@ -64,7 +66,7 @@ func TestProxy(t *testing.T) {
 			PerPage: model.AllPerPage,
 		})
 		require.NoError(t, err)
-		require.Equal(t, []*model.Plugin{&model.Plugin{
+		require.Equal(t, []*model.Plugin{{
 			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-demo",
 			IconData:        "icon-data.svg",
 			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
