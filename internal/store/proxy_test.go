@@ -31,7 +31,7 @@ func TestProxy(t *testing.T) {
 		require.Empty(t, plugins)
 	})
 
-	t.Run("empty stream", func(t *testing.T) {
+	t.Run("empty stream with error", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
 		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusOK)
