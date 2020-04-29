@@ -52,13 +52,12 @@ var serverCmd = &cobra.Command{
 		}
 		defer databaseFile.Close()
 
-		var stores []store.Store
+		var apiStore store.Store
 
-		staticStore, err := store.NewStaticFromReader(databaseFile, logger)
+		apiStore, err = store.NewStaticFromReader(databaseFile, logger)
 		if err != nil {
 			return errors.Wrap(err, "failed to initialize store")
 		}
-		stores = append(stores, staticStore)
 
 		upstreamURL, _ := command.Flags().GetString("upstream")
 		if upstreamURL != "" {
@@ -70,7 +69,7 @@ var serverCmd = &cobra.Command{
 
 			logger.WithField("upstream", upstreamURL).Info("Proxying to upstream marketplace")
 
-			stores = append(stores, upstreamStore)
+			apiStore = store.NewMerged(logger, apiStore, upstreamStore)
 		}
 
 		logger := logger.WithField("instance", instanceID)
@@ -79,7 +78,7 @@ var serverCmd = &cobra.Command{
 		router := mux.NewRouter()
 
 		api.Register(router, &api.Context{
-			Store:  store.NewMerged(logger, stores...),
+			Store:  apiStore,
 			Logger: logger,
 		})
 

@@ -50,13 +50,12 @@ func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.Static
 func listenAndServe() error {
 	logger = logrus.New()
 
-	var stores []store.Store
-
-	statikStore, err := newStatikStore("/plugins.json", logger)
+	var apiStore store.Store
+	var err error
+	apiStore, err = newStatikStore("/plugins.json", logger)
 	if err != nil {
 		return err
 	}
-	stores = append(stores, statikStore)
 
 	if upstreamURL != "" {
 		upstreamStore, err := store.NewProxy(upstreamURL, logger)
@@ -64,12 +63,12 @@ func listenAndServe() error {
 			return errors.Wrap(err, "failed to initialize upstream store")
 		}
 
-		stores = append(stores, upstreamStore)
+		apiStore = store.NewMerged(logger, apiStore, upstreamStore)
 	}
 
 	router := mux.NewRouter()
 	api.Register(router, &api.Context{
-		Store:  store.NewMerged(logger, stores...),
+		Store:  apiStore,
 		Logger: logger,
 	})
 
