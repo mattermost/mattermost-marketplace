@@ -73,7 +73,7 @@ deploy-lambda-fast: clean build-lambda
 ## Update plugins.json
 .PHONY: plugins.json
 plugins.json:
-	go run ./cmd/generator --github-token $(GITHUB_TOKEN) --database plugins.json --debug
+	go run ./cmd/generator --database plugins.json --debug
 
 ## Clean all generated files
 .PHONY: clean

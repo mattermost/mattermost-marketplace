@@ -40,12 +40,17 @@ $ make test
 
 ### Updating plugins.json
 
-At the moment, the Marketplace simply points at the latest release of a fixed set of Mattermost plugins. In the future, this database will be fine-tuned to facilitate tracking multiple versions for the appropriate Mattermost server version. To update `plugins.json`, ensure you have [jq](https://stedolan.github.io/jq/) and [sponge](https://linux.die.net/man/1/sponge) installed and run:
+To fetch all new release from GitHub, run
 
 ```
-export GITHUB_TOKEN=<github token>
 make plugins.json
 ```
+
+Make sure to double check the `diff` of `plugins.json` to ensure every release get added correctly.
+
+If you run this command multiple times, GitHub might rate limit you. Using an API token does help:
+
+`export GITHUB_TOKEN=<github token>`
 
 ### Deploying as a Lambda Function
 
