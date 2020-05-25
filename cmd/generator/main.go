@@ -112,6 +112,23 @@ var generatorCmd = &cobra.Command{
 			plugins = append(plugins, releasePlugins...)
 		}
 
+		// Ensure mannally added plugin are still keeped in the database
+		manuallyAdded := []*model.Plugin{}
+		for _, ep := range existingPlugins {
+			found := false
+			for _, p := range plugins {
+				if p.DownloadURL == ep.DownloadURL {
+					found = true
+				}
+			}
+
+			if !found {
+				manuallyAdded = append(manuallyAdded, ep)
+			}
+		}
+
+		plugins = append(plugins, manuallyAdded...)
+
 		err = pluginsToDatabase(dbFile, plugins)
 		if err != nil {
 			return errors.Wrap(err, "failed to write plugins database")
