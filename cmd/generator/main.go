@@ -467,6 +467,22 @@ func pluginsToDatabase(path string, plugins []*model.Plugin) error {
 		return errors.New("database name must not be empty")
 	}
 
+	// Sort plugin before writing to DB.
+	// First ASC by id, then DESC by version.
+	sort.SliceStable(
+		plugins,
+		func(i, j int) bool {
+			switch strings.Compare(plugins[i].Manifest.Id, plugins[j].Manifest.Id) {
+			case -1:
+				return true
+			case 1:
+				return false
+			default:
+				return semver.MustParse(plugins[i].Manifest.Version).GT(semver.MustParse(plugins[j].Manifest.Version))
+			}
+		},
+	)
+
 	file, err := os.OpenFile(path, os.O_RDWR, 0644)
 	if err != nil {
 		return errors.Wrapf(err, "failed to open existing database %s", path)
