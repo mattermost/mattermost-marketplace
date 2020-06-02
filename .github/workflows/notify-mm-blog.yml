@@ -1,0 +1,31 @@
+name: notify-TODO
+on:
+  push #:
+#    branches:
+#      - producion
+#    paths:
+#      - 'plugins.json'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Generate webhook payload
+        shell: bash
+        run: |
+          .github/workflows/notify-mm-blog.sh
+      - name: Notify channel 1
+        uses: mattermost/action-mattermost-notify@master
+        env:
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_1 }}
+      - name: Notify channel 2
+        uses: mattermost/action-mattermost-notify@master
+        env:
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_2 }}
+      - name: Notify channel 3
+        uses: mattermost/action-mattermost-notify@master
+        env:
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_3 }}
