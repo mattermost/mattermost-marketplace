@@ -4240,5 +4240,98 @@
       }
     },
     "updated_at": "2020-04-22T18:12:27.541293964Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-skype4business",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDI5MS4zNjQgMjkxLjM2NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjkxLjM2NCAyOTEuMzY0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6IzAwQUZGMDsiIGQ9Ik0yODIuOTY2LDE3Ni42MTJjMi4wOTQtOS40OTUsMy4yMDQtMTkuMzA5LDMuMjA0LTI5LjQwNWMwLTc1LjY2MS02Mi4xOTctMTM3LjAxMS0xMzguOTQxLTEzNy4wMTEKCQljLTguMDkzLDAtMTYuMDMyLDAuNjkyLTIzLjc1MiwyLjAwM0MxMTEuMDYxLDQuNDc5LDk2LjM2NywwLDgwLjYxOCwwQzM2LjEwMSwwLDAuMDMyLDM1LjU3NywwLjAzMiw3OS40NzUKCQljMCwxNC42NTcsNC4wNTEsMjguMzg1LDExLjA3LDQwLjE5M2MtMS44NDgsOC44OTQtMi44MTMsMTguMTA3LTIuODEzLDI3LjUzOWMwLDc1LjY4OCw2Mi4xOTcsMTM0Ljc1MywxMzguOTMyLDEzNC43NTMKCQljOC42OTQsMCwxNy4xOTctMC43OTIsMjUuNDM2LTIuMjk0YzExLjM1Miw2LjAwOCwyNC4zMTYsMTEuNjk4LDM4LjA5OSwxMS42OThjNDQuNTA4LDAsODAuNTc3LTM1LjU2OCw4MC41NzctNzkuNDY2CgkJQzI5MS4zMzMsMTk5LjIzNSwyODguMzE5LDE4Ny4yNDUsMjgyLjk2NiwxNzYuNjEyeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yMTAuNiwyMDMuMTMxYy01LjM2Miw3LjYyLTEzLjIxLDEzLjYxLTIzLjU0MiwxNy45MTZjLTEwLjMzMyw0LjM0Mi0yMi41NjgsNi40OTEtMzYuNzI0LDYuNDkxCgkJYy0xNi45NzgsMC0zMC45OC0yLjk1LTQyLjAyMy04Ljg1OGMtNy44MTEtNC4yNDItMTQuMTc0LTkuOTIzLTE5LjA3Mi0xNy4wMDZjLTQuODgtNy4wODMtNy4zMjgtMTMuOTgzLTcuMzI4LTIwLjY5MwoJCWMwLTMuODc4LDEuNDY2LTcuMjEsNC4zOTctOS45NjljMi45MzEtMi43OTUsNi42NzMtNC4xNjksMTEuMTk4LTQuMTY5YzMuNjc4LDAsNi44LDEuMDY1LDkuMzMxLDMuMjQxCgkJYzIuNTQ5LDIuMTU4LDQuNzI1LDUuMzUzLDYuNTA5LDkuNjA0YzIuMTk0LDUuMDUzLDQuNTUyLDkuMjY4LDcuMTEsMTIuNjQ1YzIuNTMxLDMuMzc3LDYuMTE4LDYuMTgxLDEwLjcyNCw4LjM3NQoJCWM0LjYyNSwyLjE3NiwxMC42OTcsMy4yODYsMTguMTk4LDMuMjg2YzEwLjMyNCwwLDE4LjcxNy0yLjIwMywyNS4xODEtNi42MzdjNi40NDUtNC40MTUsOS42ODYtOS45NTksOS42ODYtMTYuNTc4CgkJYzAtNS4yNDQtMS43NDgtOS41MzItNS4yMjYtMTIuNzgyYy0zLjQ4Ny0zLjI3Ny03Ljk4NC01Ljc4MS0xMy41MDEtNy41MDFjLTUuNTA4LTEuNzM5LTEyLjg4Mi0zLjU3OC0yMi4xMzEtNS41MTcKCQljLTEyLjM1NC0yLjY0OS0yMi43MDUtNS43ODEtMzEuMDI1LTkuMzMxYy04LjMzLTMuNTc4LTE0Ljk1Ny04LjQzLTE5LjgzNy0xNC41NzVjLTQuODk4LTYuMTcyLTcuMzM4LTEzLjgxOS03LjMzOC0yMi45NQoJCWMwLTguNzIxLDIuNTc2LTE2LjQ1LDcuNzQ3LTIzLjIxNGM1LjE2Mi02Ljc3MywxMi42MTgtMTEuOTcxLDIyLjQxMy0xNS42MTNjOS43NzctMy42NDEsMjEuMjg1LTUuNDUzLDM0LjQ5NC01LjQ1MwoJCWMxMC41NiwwLDE5LjcsMS4yMTEsMjcuNDExLDMuNjA1YzcuNzExLDIuNDIyLDE0LjA5Myw1LjYyNiwxOS4xNzIsOS42MjNjNS4wODksMy45OTcsOC44MTIsOC4xODQsMTEuMTUyLDEyLjU4MQoJCWMyLjM0OSw0LjM3LDMuNTIzLDguNjg1LDMuNTIzLDEyLjgzNmMwLDMuODE0LTEuNDU3LDcuMjc0LTQuMzg4LDEwLjMyNGMtMi45MzEsMy4wNTktNi41OTEsNC41OTctMTAuOTcsNC41OTcKCQljLTMuOTk3LDAtNy4wMjgtMC45MjktOS4xMDQtMi43NThjLTIuMDc2LTEuODM5LTQuMzI0LTQuODQzLTYuNzM3LTkuMDIyYy0zLjE0MS01Ljk3Mi02Ljg4Mi0xMC42MzMtMTEuMjctMTMuOTc0CgkJYy00LjM4OC0zLjM1LTExLjQxNi01LjAyNS0yMS4xMjEtNS4wMjVjLTguOTg1LDAtMTYuMjUsMS44MDMtMjEuNzY3LDUuNDUzYy01LjUxNywzLjYyMy04LjI4NCw4LjAxMS04LjI4NCwxMy4xMTgKCQljMCwzLjE1LDAuOTU2LDUuODk5LDIuODIyLDguMjAyYzEuODY2LDIuMzIxLDQuNDUyLDQuMjc5LDcuNzU2LDUuOTI3YzMuMjY4LDEuNjU3LDYuNiwyLjk1LDkuOTU5LDMuOTA1CgkJYzMuMzU5LDAuOTM4LDguOTIyLDIuMjk0LDE2LjY3OCw0LjA5N2M5LjY4NiwyLjA4NSwxOC40NzEsNC4zOTcsMjYuMzM3LDYuOTFjNy44NTcsMi41MjIsMTQuNTU3LDUuNTksMjAuMDc0LDkuMTY3CgkJYzUuNTA4LDMuNjA1LDkuODIzLDguMTc1LDEyLjkwOSwxMy42OTJjMy4wODYsNS40OTksNC42NDMsMTIuMjQ0LDQuNjQzLDIwLjIzOEMyMTguNjM5LDE4Ni44OTksMjE1Ljk0NSwxOTUuNTAyLDIxMC42LDIwMy4xMzF6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-skype4business-v0.2.0.tar.gz",
+    "release_notes_url": "",
+    "labels": [
+      {
+        "name": "Beta",
+        "description": "This plugin is currently in Beta and is not recommended for use in production.",
+        "url": "https://mattermost.com/pl/default-beta-plugins",
+        "color": ""
+      }
+    ],
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl7QD3AACgkQ0bVLR6XO/sSlVg/+IRyVgn+GU3HVPVOLu7L/GyOU8zdeqykvFIjod7r3kYlQkAnF+PUFcfqCDmRiCN63LnzZli8lHLaW7u2B8Nh6f9ozinMfoOjCbxg4k2w8HQWoV3QZcLvZbSLvmxce35vQwYZhgVNGWAC56xTzywz8Pb5mOsscTHzn1ifaG34D/4XvIDvSlGLiTxI2t1Z+vOjpyGPRX2WuJ5YLzJ+m3zoqWywOrCgFwjxHHqBT315HE4j0gnOHYRRTCRjTzPV0t/T3QKkorpWcq/e7HFjqp0aoPAgLwzRsrcYFYry6i0RJxWcBKO40fqeEKqVpX7CXshHj6PgJsy1EgsQ8zkxG88hp/ysCD1rfA1aULvB8VW8bsS23ju/FmF+N5yYoGu14j7W5ziZAD1V422n5ksFLo4UMiJ81Jq0bZZxEGQApPVvuXRD3Ei52iiMGUJDyEvOQP7C+W/cOtYx2k1jR2x725FR/9bD+Om70l36PkbeMsXv8IDJY9wZcpU7GY3rEF4vavR3oV+FHrc3IHmIFHc4lmIjsb2jUEBS57u38gLgk56SCNI7OuUMT21oLqPeGluc5QvsxF71rKadU0Ow0ayZYRiL1zIXCnsCvv460AHtrnYxFnuqxlwh0JDdgWKSmQSYRFj1TNuwFIkqKzbQfiSqPv3zcRA8LNowOUgJGDkXeIV2dAck=",
+    "manifest": {
+      "id": "skype4business",
+      "name": "Skype for Business",
+      "description": "Skype for Business plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-skype4business",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-skype4business/issues",
+      "icon_path": "assets/profile.svg",
+      "version": "0.2.0",
+      "min_server_version": "5.10.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/kosgrz/mattermost-plugin-skype4business).",
+        "settings": [
+          {
+            "key": "productType",
+            "display_name": "Skype for Business Product Type",
+            "type": "radio",
+            "help_text": "The product type of your Skype for Business instance.",
+            "placeholder": "",
+            "default": "Server",
+            "options": [
+              {
+                "display_name": "Server",
+                "value": "server"
+              },
+              {
+                "display_name": "Online",
+                "value": "online"
+              }
+            ]
+          },
+          {
+            "key": "Username",
+            "display_name": "Skype for Business Bot Username",
+            "type": "text",
+            "help_text": "Username of your selected bot account. We strongly recommend using a dedicated bot account for this plugin, rather than an existing Skype for Business user account. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Password",
+            "display_name": "Skype for Business Bot Password",
+            "type": "text",
+            "help_text": "Password of your selected bot account. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Domain",
+            "display_name": "Server Domain",
+            "type": "text",
+            "help_text": "The domain of your Skype for Business server instance. For example, contoso.com. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "ClientId",
+            "display_name": "Application ID",
+            "type": "text",
+            "help_text": "Application ID from the Azure Active Directory. Only required for Skype for Business Online. Use this URL to configure the plugin in Azure Active Directory: ```https://SITEURL/plugins/skype4business/api/v1/auth_redirect```",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "updated_at": "2020-05-28T19:23:38.781696714Z"
   }
 ]
