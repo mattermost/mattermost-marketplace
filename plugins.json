@@ -4333,5 +4333,35 @@
       }
     },
     "updated_at": "2020-05-28T19:23:38.781696714Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-welcomebot-v1.2.0.tar.gz",
+    "release_notes_url": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl7ROGgACgkQ0bVLR6XO/sQjhRAAndPX83MNxx2bLc0LUfai/lPf2NkH2hvU0mcUMKOYKfBsoJrFkmxrYklLeS7sxC7mtSsP2Kv9Ihp3YfBUfLqHZ7xjLrc4WS2q8Cvv7HgL77lFTiV+6bo+GjgoexJi+dILGbcAw4c5n8hqH0++EneeqnHCmwrBIM3LSw0+LN37huf9bVtmZAFtQBDviSndGY3TNf7ZfTL74eK6mQhbU9zVsb/wZHHTlJP0S30TkQZkVrFTXESjW/CqGsftqrqGfVUvDlPw6dGkcKD3yzQ1H4+rBVyudBQMwRNMqmvgIKGIB2BEFi3gbal8nrs/pBZhGHdZfY/wZBfaZY+XykVqoqT9uPabiETbO3/yA5CoEZnmlFNBoUMv+N7EBv58Q7r4+Ko1VO8VSAsHEcHaTpH+NGVNmIwaMu2zRhEEicxpUqCe2i1NDVhq0Er5bKv/vrtLfJ81g9ALSfcnCkNKo5lZt6/zJDOY8JER5ODJbwwgfsezHMH+lqUCPGBWzWsQOzT74IGyCFgh8M0DNuym0P66K6dbNatg+1JY8Pse+XxgddTdlhQfFuUfk0b1bPKu3sgG4/HJe/dvfr51Nu3dvwWlU6NY/wM+VLSb3jpwM2ha6/ch+mbwjT/qF9/uGyNtljEl2xfD9jHHCjtczF+kNhYyA0l6MsCaU4bT/LoJxftmLuBFDlI=",
+    "manifest": {
+      "id": "com.mattermost.welcomebot",
+      "name": "Welcome Bot",
+      "description": "This plugin adds a WelcomeBot that helps add new users to channels.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/issues",
+      "version": "1.2.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-welcomebot/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-welcomebot)",
+        "footer": "",
+        "settings": null
+      }
+    },
+    "updated_at": "2020-06-04T15:40:29.252782Z"
   }
 ]
