@@ -4335,17 +4335,19 @@
     "updated_at": "2020-05-28T19:23:38.781696714Z"
   },
   {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
-    "icon_data": "",
-    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-welcomebot-v1.2.0.tar.gz",
-    "release_notes_url": "",
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl7ROGgACgkQ0bVLR6XO/sQjhRAAndPX83MNxx2bLc0LUfai/lPf2NkH2hvU0mcUMKOYKfBsoJrFkmxrYklLeS7sxC7mtSsP2Kv9Ihp3YfBUfLqHZ7xjLrc4WS2q8Cvv7HgL77lFTiV+6bo+GjgoexJi+dILGbcAw4c5n8hqH0++EneeqnHCmwrBIM3LSw0+LN37huf9bVtmZAFtQBDviSndGY3TNf7ZfTL74eK6mQhbU9zVsb/wZHHTlJP0S30TkQZkVrFTXESjW/CqGsftqrqGfVUvDlPw6dGkcKD3yzQ1H4+rBVyudBQMwRNMqmvgIKGIB2BEFi3gbal8nrs/pBZhGHdZfY/wZBfaZY+XykVqoqT9uPabiETbO3/yA5CoEZnmlFNBoUMv+N7EBv58Q7r4+Ko1VO8VSAsHEcHaTpH+NGVNmIwaMu2zRhEEicxpUqCe2i1NDVhq0Er5bKv/vrtLfJ81g9ALSfcnCkNKo5lZt6/zJDOY8JER5ODJbwwgfsezHMH+lqUCPGBWzWsQOzT74IGyCFgh8M0DNuym0P66K6dbNatg+1JY8Pse+XxgddTdlhQfFuUfk0b1bPKu3sgG4/HJe/dvfr51Nu3dvwWlU6NY/wM+VLSb3jpwM2ha6/ch+mbwjT/qF9/uGyNtljEl2xfD9jHHCjtczF+kNhYyA0l6MsCaU4bT/LoJxftmLuBFDlI=",
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-confluence",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjQ2cHgiIHZpZXdCb3g9IjAgMCAyNTYgMjQ2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iOTkuMTQwMDg3JSIgeTE9IjExMi43MDgwODQlIiB4Mj0iMzMuODU4OTgxMiUiIHkyPSIzNy43NTQ5NjA2JSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDA1MkNDIiBvZmZzZXQ9IjE4JSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjY4NEZGIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iMC45MjU2OTE2MyUiIHkxPSItMTIuNTgyMzA3NCUiIHgyPSI2Ni4xODAwNzEzJSIgeTI9IjYyLjMwNTc0NzElIiBpZD0ibGluZWFyR3JhZGllbnQtMiI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMDUyQ0MiIG9mZnNldD0iMTglIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyNjg0RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8Zz4KCQkJCTxwYXRoIGQ9Ik05LjI2MDU0NDg0LDE4Ny4zMjk5NzEgQzYuNjE5Mzk3ODIsMTkxLjYzNzA3MiAzLjY1MzE4NjU1LDE5Ni42MzQ5MzUgMS4xMzM5Mzg2MywyMDAuNjE2OTcyIEMtMS4xMjA5ODM4NSwyMDQuNDI3NTEgMC4wODk1NDg3OTQ1LDIwOS4zNDE5MTEgMy44NTYzNTE3MSwyMTEuNjY5MTU3IEw1Ni42NzkyOTIxLDI0NC4xNzU1ODIgQzU4LjUzMzQ4NTksMjQ1LjMyMDM5MyA2MC43Njk3Njk1LDI0NS42NzI1NyA2Mi44ODYwNjgzLDI0NS4xNTMwNDUgQzY1LjAwMjM2NzIsMjQ0LjYzMzUyMSA2Ni44MjEzNTM2LDI0My4yODU4MjYgNjcuOTM0NjQxNywyNDEuNDEyNTM2IEM3MC4wNDc1NTkzLDIzNy44Nzc0NjIgNzIuNzY5OTcyNCwyMzMuMjg1OTI5IDc1LjczNjE4MzcsMjI4LjM2OTMzMyBDOTYuNjYyMTk0NywxOTMuODMxMjU2IDExNy43MTAxMDUsMTk4LjA1NzA5MSAxNTUuNjYxMzU2LDIxNi4xNzk0MjMgTDIwOC4wMzczMzMsMjQxLjA4NzQ3MSBDMjEwLjAyMDk5NywyNDIuMDMxNjM5IDIxMi4zMDI0MTUsMjQyLjEzMjQ1NyAyMTQuMzYxNjMyLDI0MS4zNjY5NDkgQzIxNi40MjA4NDgsMjQwLjYwMTQ0MSAyMTguMDgyNDA1LDIzOS4wMzQ4MzMgMjE4Ljk2NzYxOCwyMzcuMDI0MTY4IEwyNDQuMTE5NDY0LDE4MC4xMzc5MjUgQzI0NS44OTY0ODMsMTc2LjA3NTA0NiAyNDQuMDg4MzM2LDE3MS4zMzc3IDI0MC4wNTYxNjEsMTY5LjQ5MjA3MSBDMjI5LjAwMzk3NywxNjQuMjkxMDQzIDIwNy4wMjE1MDcsMTUzLjkyOTYyIDE4Ny4yMzMyMjEsMTQ0LjM4MDg1NyBDMTE2LjA0NDE1MSwxMDkuODAyMTQ4IDU1LjU0MTU2NzIsMTEyLjAzNjk2NSA5LjI2MDU0NDg0LDE4Ny4zMjk5NzEgWiIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSI+PC9wYXRoPgoJCQkJPHBhdGggZD0iTTI0Ni4xMTUwNSw1OC4yMzE5NDI4IEMyNDguNzU2MTk3LDUzLjkyNDg0MTUgMjUxLjcyMjQwOCw0OC45MjY5Nzg3IDI1NC4yNDE2NTYsNDQuOTQ0OTQxNiBDMjU2LjQ5NjU3OSw0MS4xMzQ0MDM3IDI1NS4yODYwNDYsMzYuMjIwMDAyNSAyNTEuNTE5MjQzLDMzLjg5Mjc1NzIgTDE5OC42OTYzMDMsMS4zODYzMzIzMSBDMTk2LjgyNjk4LDAuMTI3MjgzODkzIDE5NC41MTg3NDEsLTAuMjk4OTE1NzYyIDE5Mi4zMjMwNTgsMC4yMDk1NTgzMTIgQzE5MC4xMjczNzQsMC43MTgwMzIzODYgMTg4LjI0MTQ2MSwyLjExNTUwOTIyIDE4Ny4xMTU4ODksNC4wNjgxMTIzNiBDMTg1LjAwMjk3MSw3LjYwMzE4NjA3IDE4Mi4yODA1NTgsMTIuMTk0NzE4NiAxNzkuMzE0MzQ3LDE3LjExMTMxNTMgQzE1OC4zODgzMzYsNTEuNjQ5MzkxOCAxMzcuMzQwNDI2LDQ3LjQyMzU1NjUgOTkuMzg5MTc0OCwyOS4zMDEyMjQ3IEw0Ny4xNzU3Mjk5LDQuNTE1MDc1NyBDNDUuMTkyMDY2MSwzLjU3MDkwODI4IDQyLjkxMDY0NzUsMy40NzAwODk3OSA0MC44NTE0MzEyLDQuMjM1NTk3NyBDMzguNzkyMjE0OSw1LjAwMTEwNTYyIDM3LjEzMDY1NzgsNi41Njc3MTQzNCAzNi4yNDU0NDQ1LDguNTc4Mzc4ODEgTDExLjA5MzU5ODMsNjUuNDY0NjIyMyBDOS4zMTY1Nzk0Miw2OS41Mjc1MDEyIDExLjEyNDcyNjcsNzQuMjY0ODQ3MSAxNS4xNTY5MDE0LDc2LjExMDQ3NjUgQzI2LjIwOTA4NTksODEuMzExNTA0NCA0OC4xOTE1NTU3LDkxLjY3MjkyNzQgNjcuOTc5ODQxOCwxMDEuMjIxNjkgQzEzOS4zMzE0NDQsMTM1Ljc1OTc2NiAxOTkuODM0MDI4LDEzMy40NDM2ODMgMjQ2LjExNTA1LDU4LjIzMTk0MjggWiIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0yKSI+PC9wYXRoPgoJCTwvZz4KPC9zdmc+Cg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-confluence-v1.2.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-confluence/releases/tag/v1.2.0",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl7WXkQACgkQ0bVLR6XO/sTDoQ//ff4GxkN3enCag+3bbecGME08Yqn7xWJvPyeg9wsk3a0Nmpb6YuBdcVnp4P4NexC2PqoGnK1ObGCDtGAonuoUjrrpd1PCs7mUI9/RPh1K6QN3eOyLNh5j3biXtIJSon4/kn6OsCy1H8+M7LyRtR2XQu3f49GwaakAdvfwHl+CNRkrDXfuQb6SHZnp6U3br0g4QMZbGS40wqXq+i5pHgTbrC+3J85aTlpirR6LGf3XifwZwKTdIUbZXPFDz+Nch1Z2A1WLD85RgjjXLITmtHH6FLM1huLtC21AFO/6UFp6Mk9ExRt/GlRPvumXa7vdknOzfQ2pZJGrD2B1dINDE9ifOka45cisSksmGcZeG5pDqoTnBiEOYF72TdkvJhjS9PeEWRnJyYYs7Zs9jNdf1W+lVjVctGSgnjeNdMj1tfl9qysJZsdG94/zIG4ikySkEDZYuqkkcO4hmdZ5w9SXYLe2+gfbMMpS1es/Pu61wJ+jZFAYb6vNe4GJlHcg7x9vCE/CsPCdMzpl+F8NLuXTNFTqG3CrEo+ZwIReyU5qT6a4ay1qzRUHicGe2S1E1dXNkZf0lIWUSl24PbTN/g3SIpu+uy0zklFuZUTTJeRibQXHPLDnVqUJq/oKn2N3ddC63Z9McTTq3slq4clk8qTWsv/RE52VQSz1rQj1CITH+NjUiCU=",
     "manifest": {
-      "id": "com.mattermost.welcomebot",
-      "name": "Welcome Bot",
-      "description": "This plugin adds a WelcomeBot that helps add new users to channels.",
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
-      "support_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/issues",
+      "id": "com.mattermost.confluence",
+      "name": "Confluence",
+      "description": "Atlassian Confluence plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-confluence",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-confluence/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-confluence/releases/tag/v1.2.0",
+      "icon_path": "assets/icon.svg",
       "version": "1.2.0",
       "min_server_version": "5.12.0",
       "server": {
@@ -4356,12 +4358,25 @@
         },
         "executable": ""
       },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
       "settings_schema": {
-        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-welcomebot/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-welcomebot)",
+        "header": "",
         "footer": "",
-        "settings": null
+        "settings": [
+          {
+            "key": "Secret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing confluence integrations.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
       }
     },
-    "updated_at": "2020-06-04T15:40:29.252782Z"
+    "updated_at": "2020-06-04T14:56:32.501183Z"
   }
 ]
