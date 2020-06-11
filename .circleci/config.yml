@@ -3,7 +3,7 @@ version: 2.1
 executors:
   build:
     docker:
-      - image: circleci/golang:1.13
+      - image: circleci/golang:1.14
   deploy:
     docker:
       - image: circleci/node:8.10
