@@ -112,6 +112,23 @@ var generatorCmd = &cobra.Command{
 			plugins = append(plugins, releasePlugins...)
 		}
 
+		// Ensure mannally added plugin are still keeped in the database
+		manuallyAdded := []*model.Plugin{}
+		for _, ep := range existingPlugins {
+			found := false
+			for _, p := range plugins {
+				if p.DownloadURL == ep.DownloadURL {
+					found = true
+				}
+			}
+
+			if !found {
+				manuallyAdded = append(manuallyAdded, ep)
+			}
+		}
+
+		plugins = append(plugins, manuallyAdded...)
+
 		err = pluginsToDatabase(dbFile, plugins)
 		if err != nil {
 			return errors.Wrap(err, "failed to write plugins database")
@@ -449,6 +466,22 @@ func pluginsToDatabase(path string, plugins []*model.Plugin) error {
 	if path == "" {
 		return errors.New("database name must not be empty")
 	}
+
+	// Sort plugin before writing to DB.
+	// First ASC by id, then DESC by version.
+	sort.SliceStable(
+		plugins,
+		func(i, j int) bool {
+			switch strings.Compare(plugins[i].Manifest.Id, plugins[j].Manifest.Id) {
+			case -1:
+				return true
+			case 1:
+				return false
+			default:
+				return semver.MustParse(plugins[i].Manifest.Version).GT(semver.MustParse(plugins[j].Manifest.Version))
+			}
+		},
+	)
 
 	file, err := os.OpenFile(path, os.O_RDWR, 0644)
 	if err != nil {
