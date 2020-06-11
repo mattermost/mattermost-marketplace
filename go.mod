@@ -1,6 +1,6 @@
 module github.com/mattermost/mattermost-marketplace
 
-go 1.12
+go 1.14
 
 require (
 	github.com/akrylysov/algnhsa v0.0.0-20190319020909-05b3d192e9a7
