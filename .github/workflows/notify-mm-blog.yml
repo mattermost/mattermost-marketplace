@@ -1,10 +1,10 @@
 name: notify-TODO
 on:
-  push #:
-#    branches:
-#      - producion
-#    paths:
-#      - 'plugins.json'
+  push:
+    branches:
+      - producion
+    paths:
+      - 'plugins.json'
 
 jobs:
   notify:
