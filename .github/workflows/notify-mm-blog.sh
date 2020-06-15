@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
+set -euxo pipefail
 CHANGES=$(git diff HEAD~1 plugins.json)
 if [ -z "$CHANGES" ]
 then
