@@ -1,8 +1,8 @@
-name: notify-TODO
+name: notify-community-server
 on:
   push:
     branches:
-      - producion
+      - production
     paths:
       - 'plugins.json'
 
