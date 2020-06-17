@@ -78,7 +78,7 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 		return nil, nil
 	}
 
-	plugins, err := store.getPlugins(pluginFilter.ServerVersion)
+	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get plugins")
 	}
@@ -114,11 +114,16 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 }
 
 // getPlugins returns all plugins compatible with the given server version, sorted by name ascending.
-func (store *StaticStore) getPlugins(serverVersion string) ([]*model.Plugin, error) {
+// Only returns enterprise plugins, if enterprisePlugins is true.
+func (store *StaticStore) getPlugins(serverVersion string, enterprisePlugins bool) ([]*model.Plugin, error) {
 	var result []*model.Plugin
 	plugins := map[string]*model.Plugin{}
 
 	for _, storePlugin := range store.plugins {
+		if storePlugin.Enterprise && !enterprisePlugins {
+			continue
+		}
+
 		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
 			meetsMinServerVersion, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
 			if err != nil {
