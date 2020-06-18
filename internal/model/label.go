@@ -26,7 +26,7 @@ var BetaLabel Label = Label{
 }
 
 var EnterpriseLabel Label = Label{
-	Name:        "Enterprise",
+	Name:        "Enterprise (E20)",
 	Description: "This plugin only works on servers with an E20 license.",
-	URL:         "https://mattermost.com/pl/TODO",
+	URL:         "https://mattermost.com/pricing/",
 }
