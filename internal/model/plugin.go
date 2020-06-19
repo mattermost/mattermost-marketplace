@@ -17,8 +17,8 @@ type Plugin struct {
 	Labels          []Label                   `json:"labels,omitempty"`
 	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
-	Enterprise      bool                      `json:"enterprise,omitempty"` // Indicated if the plugin is an enterprise plugin
-	UpdatedAt       time.Time                 `json:"updated_at"`           // The point in time this release of the plugin was added to the Plugin Marketplace
+	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
+	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
 }
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.

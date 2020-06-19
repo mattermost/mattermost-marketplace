@@ -142,6 +142,7 @@ func TestPluginsToWriter(t *testing.T) {
       "id": "demo",
       "version": "1.0.0"
     },
+    "enterprise": false,
     "updated_at": "0001-01-01T00:00:00Z"
   },
   {
@@ -154,6 +155,7 @@ func TestPluginsToWriter(t *testing.T) {
       "id": "template",
       "version": "2.0.0"
     },
+    "enterprise": false,
     "updated_at": "0001-01-01T00:00:00Z"
   }
 ]
