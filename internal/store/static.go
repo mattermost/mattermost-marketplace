@@ -114,13 +114,12 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 }
 
 // getPlugins returns all plugins compatible with the given server version, sorted by name ascending.
-// Only returns enterprise plugins, if enterprisePlugins is true.
-func (store *StaticStore) getPlugins(serverVersion string, enterprisePlugins bool) ([]*model.Plugin, error) {
+func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlugins bool) ([]*model.Plugin, error) {
 	var result []*model.Plugin
 	plugins := map[string]*model.Plugin{}
 
 	for _, storePlugin := range store.plugins {
-		if storePlugin.Enterprise && !enterprisePlugins {
+		if storePlugin.Enterprise && !includeEnterprisePlugins {
 			continue
 		}
 
