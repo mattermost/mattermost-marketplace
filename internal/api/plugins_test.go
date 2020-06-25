@@ -219,7 +219,6 @@ func TestPlugins(t *testing.T) {
 			plugin3V1NoMin,
 			plugin3V2Min516,
 			plugin3V3Min517,
-			plugin5Enterprise,
 		}
 
 		t.Run("get plugins, page 0, perPage 2", func(t *testing.T) {
@@ -343,17 +342,56 @@ func TestPlugins(t *testing.T) {
 			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin4V1NoMin}, plugins)
 		})
 
-		t.Run("server version that satisfies all plugins and enterprise plugins is set", func(t *testing.T) {
-			client, tearDown := setupAPI(t, allPlugins)
+		t.Run("enterprise plugin is returned for 5.24.0 without EnterprisePlugins", func(t *testing.T) {
+			client, tearDown := setupAPI(t, []*model.Plugin{plugin5Enterprise})
 			defer tearDown()
 
 			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
 				ServerVersion:     "5.24.0",
 				PerPage:           -1,
+				EnterprisePlugins: false,
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin5Enterprise}, plugins)
+		})
+
+		t.Run("enterprise plugin is returned for 5.24.0 without EnterprisePlugins", func(t *testing.T) {
+			client, tearDown := setupAPI(t, []*model.Plugin{plugin5Enterprise})
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				ServerVersion:     "5.25.0",
+				PerPage:           -1,
+				EnterprisePlugins: false,
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{}, plugins)
+		})
+
+		t.Run("enterprise plugin is returned for 5.25.0 with EnterprisePlugins", func(t *testing.T) {
+			client, tearDown := setupAPI(t, []*model.Plugin{plugin5Enterprise})
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				ServerVersion:     "5.25.0",
+				PerPage:           -1,
 				EnterprisePlugins: true,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise}, plugins)
+			require.Equal(t, []*model.Plugin{plugin5Enterprise}, plugins)
+		})
+
+		t.Run("enterprise plugin is returned for 5.26.0 with EnterprisePlugins", func(t *testing.T) {
+			client, tearDown := setupAPI(t, []*model.Plugin{plugin5Enterprise})
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				ServerVersion:     "5.26.0",
+				PerPage:           -1,
+				EnterprisePlugins: true,
+			})
+			require.NoError(t, err)
+			require.Equal(t, []*model.Plugin{plugin5Enterprise}, plugins)
 		})
 
 		t.Run("invalid server_version format", func(t *testing.T) {

@@ -119,18 +119,27 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 	plugins := map[string]*model.Plugin{}
 
 	for _, storePlugin := range store.plugins {
-		if storePlugin.Enterprise && !includeEnterprisePlugins {
-			continue
-		}
-
-		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
-			meetsMinServerVersion, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
+		if serverVersion != "" {
+			sv, err := semver.Parse(serverVersion)
 			if err != nil {
-				return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
+				return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
 			}
 
-			if !meetsMinServerVersion {
+			// Workaround for https://mattermost.atlassian.net/browse/MM-26507
+			if sv.GE(semver.MustParse("5.25.0")) && storePlugin.Enterprise && !includeEnterprisePlugins {
 				continue
+			}
+
+			if storePlugin.Manifest.MinServerVersion != "" {
+				var meetsMinServerVersion bool
+				meetsMinServerVersion, err = storePlugin.Manifest.MeetMinServerVersion(serverVersion)
+				if err != nil {
+					return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
+				}
+
+				if !meetsMinServerVersion {
+					continue
+				}
 			}
 		}
 
