@@ -12,6 +12,8 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
+var minVersionSupportingEnterpriseFlags = semver.MustParse("5.25.0")
+
 // StaticStore provides access to a store backed by a static set of plugins.
 type StaticStore struct {
 	plugins []*model.Plugin
@@ -131,7 +133,7 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 
 			// Honor enterprise flag for server version >= 5.25.0 only.
 			// Workaround for https://mattermost.atlassian.net/browse/MM-26507
-			minVersionSupportingEnterpriseFlags := semver.MustParse("5.25.0")
+
 			if sv.GE(minVersionSupportingEnterpriseFlags) {
 				continue
 			}
