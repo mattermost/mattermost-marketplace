@@ -355,7 +355,7 @@ func TestPlugins(t *testing.T) {
 			require.Equal(t, []*model.Plugin{plugin5Enterprise}, plugins)
 		})
 
-		t.Run("enterprise plugin is returned for 5.24.0 without EnterprisePlugins", func(t *testing.T) {
+		t.Run("enterprise plugin is not returned for 5.25.0 without EnterprisePlugins", func(t *testing.T) {
 			client, tearDown := setupAPI(t, []*model.Plugin{plugin5Enterprise})
 			defer tearDown()
 
