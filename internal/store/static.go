@@ -119,27 +119,32 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 	plugins := map[string]*model.Plugin{}
 
 	for _, storePlugin := range store.plugins {
-		if serverVersion != "" {
-			sv, err := semver.Parse(serverVersion)
-			if err != nil {
-				return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
-			}
-
-			// Workaround for https://mattermost.atlassian.net/browse/MM-26507
-			if sv.GE(semver.MustParse("5.25.0")) && storePlugin.Enterprise && !includeEnterprisePlugins {
+		if storePlugin.Enterprise && !includeEnterprisePlugins {
+			if serverVersion == "" {
 				continue
-			}
-
-			if storePlugin.Manifest.MinServerVersion != "" {
-				var meetsMinServerVersion bool
-				meetsMinServerVersion, err = storePlugin.Manifest.MeetMinServerVersion(serverVersion)
+			} else {
+				sv, err := semver.Parse(serverVersion)
 				if err != nil {
-					return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
+					return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
 				}
 
-				if !meetsMinServerVersion {
+				// Honor enterprise flag for server version >= 5.25.0 only.
+				// Workaround for https://mattermost.atlassian.net/browse/MM-26507
+				minVersionSupportingEnterpriseFlags := semver.MustParse("5.25.0")
+				if sv.GE(minVersionSupportingEnterpriseFlags) {
 					continue
 				}
+			}
+		}
+
+		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
+			meetsMinServerVersion, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
+			}
+
+			if !meetsMinServerVersion {
+				continue
 			}
 		}
 
