@@ -122,18 +122,18 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 		if storePlugin.Enterprise && !includeEnterprisePlugins {
 			if serverVersion == "" {
 				continue
-			} else {
-				sv, err := semver.Parse(serverVersion)
-				if err != nil {
-					return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
-				}
+			}
 
-				// Honor enterprise flag for server version >= 5.25.0 only.
-				// Workaround for https://mattermost.atlassian.net/browse/MM-26507
-				minVersionSupportingEnterpriseFlags := semver.MustParse("5.25.0")
-				if sv.GE(minVersionSupportingEnterpriseFlags) {
-					continue
-				}
+			sv, err := semver.Parse(serverVersion)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
+			}
+
+			// Honor enterprise flag for server version >= 5.25.0 only.
+			// Workaround for https://mattermost.atlassian.net/browse/MM-26507
+			minVersionSupportingEnterpriseFlags := semver.MustParse("5.25.0")
+			if sv.GE(minVersionSupportingEnterpriseFlags) {
+				continue
 			}
 		}
 
