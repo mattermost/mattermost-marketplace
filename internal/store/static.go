@@ -12,6 +12,8 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
+var minVersionSupportingEnterpriseFlags = semver.MustParse("5.25.0")
+
 // StaticStore provides access to a store backed by a static set of plugins.
 type StaticStore struct {
 	plugins []*model.Plugin
@@ -78,7 +80,7 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 		return nil, nil
 	}
 
-	plugins, err := store.getPlugins(pluginFilter.ServerVersion)
+	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get plugins")
 	}
@@ -114,11 +116,29 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 }
 
 // getPlugins returns all plugins compatible with the given server version, sorted by name ascending.
-func (store *StaticStore) getPlugins(serverVersion string) ([]*model.Plugin, error) {
+func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlugins bool) ([]*model.Plugin, error) {
 	var result []*model.Plugin
 	plugins := map[string]*model.Plugin{}
 
 	for _, storePlugin := range store.plugins {
+		if storePlugin.Enterprise && !includeEnterprisePlugins {
+			if serverVersion == "" {
+				continue
+			}
+
+			sv, err := semver.Parse(serverVersion)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
+			}
+
+			// Honor enterprise flag for server version >= 5.25.0 only.
+			// Workaround for https://mattermost.atlassian.net/browse/MM-26507
+
+			if sv.GE(minVersionSupportingEnterpriseFlags) {
+				continue
+			}
+		}
+
 		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
 			meetsMinServerVersion, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
 			if err != nil {
