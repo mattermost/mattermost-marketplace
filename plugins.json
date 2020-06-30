@@ -4561,5 +4561,131 @@
       }
     },
     "updated_at": "2020-06-16T20:13:23.426740927Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-jitsi",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4wICg0MDM1YTRmYjQ5LCAyMDIwLTA1LTAxKSIKICAgaW5rc2NhcGU6ZXhwb3J0LXlkcGk9IjQwMCIKICAgaW5rc2NhcGU6ZXhwb3J0LXhkcGk9IjQwMCIKICAgaW5rc2NhcGU6ZXhwb3J0LWZpbGVuYW1lPSIvaG9tZS9qZXNwaW5vLy5nb2NvZGUvc3JjL2dpdGh1Yi5jb20vbWF0dGVybW9zdC9tYXR0ZXJtb3N0LXBsdWdpbi1qaXRzaS9hc3NldHMvaWNvbi5wbmciCiAgIHNvZGlwb2RpOmRvY25hbWU9Imljb24uc3ZnIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICB3aWR0aD0iMzc1IgogICBoZWlnaHQ9IjM3NSIKICAgdmlld0JveD0iMCAwIDM3NSAzNzUiPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmcyIgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjAiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9IjQ3IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIyNTYwIgogICAgIGlua3NjYXBlOmN5PSIxOTMuODkyMzQiCiAgICAgaW5rc2NhcGU6Y3g9IjQ5LjY2OTAwNiIKICAgICBpbmtzY2FwZTp6b29tPSIxLjU4NzE3NTEiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlkPSJuYW1lZHZpZXc2IgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEzOTEiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIyNTU2IgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICAgIGdyaWR0b2xlcmFuY2U9IjEwIgogICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiIC8+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhOCI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGRlZnMKICAgICBpZD0iZGVmczYiIC8+CiAgPHJlY3QKICAgICByeT0iNzEuMzEyMzYzIgogICAgIHk9IjAuNTc3MzA4ODkiCiAgICAgeD0iMC42NDcyNzgxMyIKICAgICBoZWlnaHQ9IjM3NC45ODgxNiIKICAgICB3aWR0aD0iMzc1LjEyMTA2IgogICAgIGlkPSJyZWN0ODQwIgogICAgIHN0eWxlPSJmaWxsOiMxN2EwZGI7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjMuMjE2Mzg7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kIiAvPgogIDxwYXRoCiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtzdHJva2Utd2lkdGg6MDtmaWxsLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZSIKICAgICBkPSJtIDIzOS4yMDA4NCwxNi45MDcxMyBjIC0wLjQ3ODA1LDAuMDA0IC0wLjk2MzUsMC4wMjQ4IC0xLjQ1NzAzLDAuMDY0NSAtNi4wOTg5OCwwLjQ4OTU3IC0xMS4zNjk3Myw0LjA0Nzg0IC0xNC4yNTE5NSw5LjYyMTA5IC0xLjEwMDg1LDIuMTI4NjYgLTEuMzgzNDYsNC4wMjE4IC0xLjc2NzU4LDExLjgzMzk5IC0wLjUwNjIsMTAuMjk1NDYgLTAuOTEzMDcsMTMuMzMwNDQgLTIuMDk5NjEsMTUuNjg5NDUgLTEuODY2MTUsMy43MTAyIC04Ljk1MDM1LDguMTE5MzggLTE5LjEzMDg2LDExLjkwNDI5IC03LjA5NzM5LDIuNjM4NjggLTEyLjA0NzQ1LDUuNzY1MyAtMTcuMTA3NDIsMTAuODA2NjUgLTcuMTM2MzEsNy4xMTAwNiAtOS45ODYyMiwxMy42NDUxOCAtMTIuNjE3MTksMjguOTI1NzggLTAuNjQxNTgsMy43MjYzMyAtMS4xNjk4Nyw4LjY5ODY4IC0xLjE3MTg3LDExLjA1MDc4IC0wLjAwMywyLjcxMDY0IC0wLjI3ODUzLDQuNDg3NTEgLTAuNzUzOTEsNC44NTE1NiAtMC40MTI1LDAuMzE1OSAtMi42MzkyMiwxLjA2OTM2IC00Ljk0OTIyLDEuNjc1NzggLTEzLjY3NTkzLDMuNTkwMTkgLTI0Ljk3MTkzLDEwLjM0MTkyIC0zMi40ODI0MSwxOS40MTQwNiAtMy44MDIyMSw0LjU5MjgxIC04LjIwMTksMTMuMTE3NzYgLTkuNTQxMDEsMTguNDg4MjkgLTIuMTEzODMsOC40Nzc2NCAtMi4wNjUzNiwxOS41NjczNSAwLjEyNjk1LDI5LjI5Mjk2IDEuMjc4NTQsNS42NzE4OCAxLjYyNzI5LDguNjkxNzkgMS4wMDk3Niw4Ljc0MjE5IC0wLjI4MjE2LDAuMDIzIC0zLjA3Nzg5LDAuMTEyMTcgLTYuMjEyODksMC4xOTcyNyAtOC45MTYzNywwLjI0MjA3IC0xNC45NDkyNSwzLjI3ODA3IC0yMi42NzU3NzksMTEuNDEyMTEgLTguMzEzNTgsOC43NTIwMiAtMTMuNDY3NTEsMjAuMjQ1ODMgLTE1LjY3Nzc0LDM0Ljk2NDg0IC0wLjk0MTYyLDYuMjcwNyAtMC43OTE2NywyMy44MTM4MyAwLjI4MzIsMzMuMTgzNTkgMS4xNDA0MSw5Ljk0MTA2IDMuMjkwMzQsMTkuODA1NDEgNi4wNjQ0NSwyNy44MzAwOCAxLjM4NDA5LDQuMDAzNzMgNi4xOTM0NywxMy43ODk3MSAxNC4xMjg5MiwyOC43NDQxNCA2LjYxNzA1OSwxMi40Njk5IDEyLjExMjIzOSwyMi41OTA4OSAxMi4yMTA5MzksMjIuNDkyMTkgMC4wOTg3LC0wLjA5ODcgMi43NTg3NCwtMTEuODEwNiA1LjkxMjExLC0yNi4wMjczNCA3LjIwMzk4LC0zMi40Nzg2OSA4LjY4ODcxLC0zNy40MTQxNSAxMy4zOTA2MiwtNDQuNTAzOTEgMy4yNjIwMSwtNC45MTg2MSAzLjQ3MzMsLTQuOTQzOTkgMTEuMDA5NzYsLTEuMzY1MjMgNy43MjgyOSwzLjY2OTg0IDE1LjY5MDk4LDUuODA4MDEgMjUuMTM2NzIsNi43NSA1Ljg4NTUzLDAuNTg2OTQgOC4xNTA5OSwwLjUzNDYyIDE1LjIwODk4LC0wLjM0OTYxIDIwLjgxOTE2LC0yLjYwODI1IDM4LjczMTA5LC0xMS4xMjkxOSA1Mi42OTMzNiwtMjUuMDY2NDEgNS40NTUzNywtNS40NDU1OCA2LjAxNzgxLC01Ljg0MDI4IDkuMzA4NTksLTYuNTIzNDQgMTIuNzYwNDcsLTIuNjQ5MDcgMjcuNDc5ODgsLTE1LjM2NDczIDM2Ljc1LC0zMS43NDgwNCA5LjQ1MzY2LC0xNi43MDc2OSAxNC40MDk1OCwtMzUuNzE1MTMgMTYuMzE0NDYsLTYyLjU3NDIyIDIuMDY3NjQsLTI5LjE1MzkzIC01LjYwMTY4LC00OC40MzIwMSAtMjMuMjQ4MDUsLTU4LjQzMzYgLTEuODQ4NjksLTEuMDQ3OCAtNS4xOTM3NSwtMi40ODI1NSAtNy40MzM1OSwtMy4xODk0NSAtMi4yMzk4MywtMC43MDY5MSAtNC4zMjEwNCwtMS42MTEyOCAtNC42MjUsLTIuMDA5NzYgLTAuNTU2OSwtMC43MzAxMSAtMy4xNzUyNiwtMTAuMzQyNCAtMy4xNjAxNiwtMTEuNjAxNTcgMC4wMDQsLTAuMzcyNTIgMC45MTEzMywtMi4xNzc4NSAyLjAxNTYzLC00LjAxMTcyIDQuNTUwMzksLTcuNTU2NjcgNi44MDI3OSwtMTguNDY4NDEgNS43NSwtMjcuODU3NDIgLTAuNzMwMjEsLTYuNTEyMjEgLTYuMDc4MDMsLTIyLjc3MjYgLTkuOTY2OCwtMzAuMzAyNzMgLTQuMzYxNjIsLTguNDQ1NzEgLTkuODEzNjMsLTEyLjQyODM3IC0xNi45ODQzOCwtMTIuMzcxMSB6IG0gLTAuMTU0MjksMTMuNzIwNzEgYyAzLjI1MDMsMCA2LjQ1MzY0LDYuMDY0NzYgMTEuNTY2NCwyMS44OTg0MyAzLjU3MjM1LDExLjA2MzIgMi41NTMwNCwyMC45NjMzMyAtMy4wNjA1NCwyOS43MjY1NyAtMS4zNjUyNywyLjEzMTI5IC0zLjE3MTQ3LDQuNjA5MzkgLTQuMDE1NjMsNS41MDc4MSBsIC0xLjUzNTE2LDEuNjMyODEgMS44NzExLDQuMDY2NDEgYyAxLjAyOTc1LDIuMjM2NTggMi4zMjg2Miw1LjgyMTggMi44ODQ3Niw3Ljk2NjggMS4wMjY1OCwzLjk1OTU2IDEuMzYwMTEsMTEuMjYzODYgMC42MTkxNCwxMy41NjI1IC0wLjM4OTk5LDEuMjA5ODMgLTAuMTY0ODksMS4yNzcwNyA1LjQ1NTA4LDEuNjA3NDIgMTUuMzMyNTcsMC45MDEyNiAyNC44MzEwNSw4LjkwNzA2IDI5LjA1ODYsMjQuNDk0MTQgMS4yMjA4Myw0LjUwMTIxIDEuMzYxNDIsNi4zNDE3MiAxLjMyODEyLDE3LjMzNTk0IC0wLjA1MTksMTcuMTU1ODkgLTEuOTEzMjksMzAuNDIwNTcgLTYuMjQ2MDksNDQuNTA1ODUgLTYuMTI3MDksMTkuOTE4MjQgLTE2LjgwNjYzLDM1LjAwMjkxIC0zMC4wMjczNSw0Mi40MTYwMiAtNC4wMDU1NiwyLjI0NTk5IC03LjA3ODEzLDIuNDM5ODcgLTkuNjU0MjksMC42MDU0NyAtMC45ODM4NywtMC43MDA2IC0xLjk5MDg3LC0xLjAzODA3IC0yLjIzODI4LC0wLjc1IC0wLjI0NzQyLDAuMjg4MDggLTEuNzcwNSwyLjQxMjY1IC0zLjM4NDc3LDQuNzIyNjYgLTE1LjYxNTYxLDIyLjM0NTczIC00OC42NzA1MiwzNC40Nzc4MSAtNzQuOTc0NjEsMjcuNTE3NTcgLTQuODczOTEsLTEuMjg5NjcgLTE0Ljg3MzIzLC02LjE5NTU0IC0xOC44MjgxMSwtOS4yMzYzMyBsIC0zLjIzMDQ3LC0yLjQ4NDM3IC00LjEzNDc3LDIuODI2MTcgYyAtMTAuODgyNjgsNy40MzU4IC0xNy41OTU2OSwxOS40NTYwMiAtMjIuMTA1NDcsMzkuNTc4MTMgLTAuNzM5NiwzLjMgLTEuNTkyOCw2LjQ3MTMyIC0xLjg5NDUzLDcuMDQ4ODMgLTAuNjQxNzIsMS4yMjgyMiAtMS45MDU2LDEuMzY2MTkgLTIuNzYzNjcsMC4zMDA3OCAtMS40ODE1NCwtMS44Mzk1MiAtNC45NTUzNDksLTkuNjQzNyAtNi42NDI1NzksLTE0LjkyMTg4IC0zLjg1MjUsLTEyLjA1MTgxIC01LjU0Mjg4LC0yNC4xNTU2NyAtNS41ODAwOCwtMzkuOTYwOTQgLTAuMDI2MiwtMTEuMTIxMjUgMC41NDc4MSwtMTUuNzY0MDMgMi44NTU0NywtMjMuMTI4OSAyLjM3Mjg3LC03LjU3Mjk5IDUuMzY2MzcsLTEyLjc3NzgxIDEwLjE2MjEwOSwtMTcuNjY0MDYgNi40MjU5OCwtNi41NDcyNyAxMC4yNDgzNCwtNy43OTU3MyAxNy44MzM5OSwtNS44MzAwOCA0Ljc1OTM2LDEuMjMzMjcgNy45NTQxMiwyLjg5MTU1IDE3Ljc5Mjk3LDkuMjQwMjMgMTIuNjQ4MzUsOC4xNjE1NSAxMy4xNjI2LDguMzQ2NjggMTQuNjM2Nyw1LjI0MDI0IDEuMjYzMjYsLTIuNjYyMTMgMi4yNjY5NCwtNy4yODI2IDEuNjMwODYsLTcuNTA1ODYgLTEuOTYzNywtMC42ODkyNSAtNy4zNzU5OSwtNS4yMzIxIC05LjgwMjczLC04LjIyODUyIC0zLjY4MTU0LC00LjU0NTc4IC04LjM3NzY0LC0xNC4wNDQzMSAtMTAuMjk4ODIsLTIwLjgyODEyIC0yLjgyNDYsLTkuOTczNzkgLTMuMDk1MywtMjIuMjc0ODQgLTAuNjQyNTgsLTI5LjIyNjU3IDMuNzExNDQsLTEwLjUxOTM1IDExLjc1NDU5LC0xOC40MTI2NCAyMy43MTI4OCwtMjMuMjczNDMgNS44MzU0NywtMi4zNzE5OCA5LjUwNTQzLC0zLjM3NzgzIDE4LjI5ODgzLC01LjAwOTc3IDMuOTU5OTksLTAuNzM0OTIgNy4yNjQ1LC0xLjM4MTA1IDcuMzQxOCwtMS40MzU1NSAwLjA3NzMsLTAuMDU0NSAtMC4yODU3MiwtMi4xMDU4OSAtMC44MDY2NCwtNC41NTg1OSAtMS4xNzksLTUuNTUxMjQgLTAuODU5MTQsLTE3Ljk2Njc5IDAuNjMyODEsLTI0LjU1ODU5IDMuMzU2MywtMTQuODI4ODMgNy42NzA5NSwtMTkuOTQzNCAyMS4zMzIwMywtMjUuMjgxMjUgMy40NjUwMSwtMS4zNTM4OSA3LjY1MDc4LC0zLjE0MTIxIDkuMzAwNzgsLTMuOTcyNjYgNy4zNjQ4MSwtMy43MTExOCAxMy45MDI3OCwtOS40NTU5OCAxNi40NTMxMywtMTQuNDU1MDggMS44MDI4NywtMy41MzM5MyAzLjA0MzgxLC0xMC41NzUxNCAzLjQ1MTE3LC0xOS41OTE4IDAuMzgwOSwtOC40MzA5MyAwLjkyMTk0LC05Ljg5ODQzIDMuNjQ4NDQsLTkuODk4NDMgeiBtIC0xMC4wOTE4LDQ3LjYyNSBjIC0wLjE4MjYyLC0wLjA1OTkgLTAuOTcxNzIsMC4zMjY3OSAtMS45MTAxNiwwLjk0OTIyIC0xLjA3MjUsMC43MTEzMyAtNy4wODE1NiwzLjgyMzczIC0xMy4zNTE1Niw2LjkxNjAxIC0xMy45ODI2MSw2Ljg5NjA1IC0xNS44NjA1MSw4LjM4NTE5IC0xNy41NzQyMiwxMy45MjU3OCAtMC42OTQ3NCwyLjI0NjE2IC0xLjQzNzQyLDUuMDcxMDMgLTEuNjUwMzksNi4yNzczNSBsIC0wLjM4NjcyLDIuMTkzMzYgNy43MDUwOCwtMy4yNjE3MiBjIDEyLjcwOTYyLC01LjM3NyAxMy41ODI0NCwtNS44Mjk5MyAxNi4wMTk1MywtOC4zMjYxNyAzLjIzNjA2LC0zLjMxNDYgNi43NTc2MSwtOC42MzM2OSA5LjE2MjExLC0xMy44Mzc5IDEuMTEzOTksLTIuNDExMSAyLjAyNTM5LC00LjU2MjIxIDIuMDI1MzksLTQuNzgxMjUgMCwtMC4wMjc0IC0wLjAxMywtMC4wNDYxIC0wLjAzOTEsLTAuMDU0NyB6IG0gNi4zMDQ2OSwyMC43NzM0MyBjIC0wLjQ0MTg3LDAgLTIuNTcyMDksMS42OTMwNiAtNC43MzQzOCwzLjc2MTcyIC0zLjY0Mzk3LDMuNDg2MTggLTMuOTMxNjQsMy45NDkzMSAtMy45MzE2NCw2LjMzMDA4IDAsMi45NDg4IDEuMTk5OTksNS42MjAyMSAzLjEzMDg2LDYuOTcyNjYgNC4xMTg5NiwyLjg4NTAzIDguMjY5NTMsLTEuNDQ0ODcgOC4yNjk1MywtOC42MjY5NiAwLC0zLjkzODg5IC0xLjQ1Nzk3LC04LjQzNzUgLTIuNzM0MzcsLTguNDM3NSB6IG0gLTIwLjMzNzg5LDExLjQwMDQgYyAtMi44MjI3NCwwIC0xOS4wMjU1OSw3LjM3OTcgLTIwLjk5NjEsOS41NjI1IC0xLjA2MDM1LDEuMTc0NTcgLTEuMTAzMjMsMS41OTk2MiAtMC40NzA3LDQuNjE1MjMgMS40MjY0NSw2LjgwMDYzIDUuMDk5NjMsMTIuNTM2MDggMTAuNTgwMDgsMTYuNTIxNDggMS40Mzk0LDEuMDQ2NzMgMy4wOTUxMiwxLjcwMTE4IDQuMzA0NjksMS43MDExOCAyLjI4ODQ2LDAgOC43NDE2NywtMy4yMTUxNiAxMy4xODU1NCwtNi41NzAzMiAyLjk1Mzc3LC0yLjIzMDExIDYuODY5MTQsLTcuMjIzMjggNi44NjkxNCwtOC43NTk3NiAwLC0wLjM5ODM5IC0wLjgyMDc4LC0xLjA2NDgzIC0xLjgyNDIyLC0xLjQ4MDQ3IC01LjI2MTQzLC0yLjE3OTM2IC04LjUzMTAzLC02LjM2MTk0IC0xMC4xODk0NSwtMTMuMDM5MDYgLTAuMzYxOTUsLTEuNDU3MzEgLTAuOTg3MjYsLTIuNTUwNzggLTEuNDU4OTgsLTIuNTUwNzggeiBtIDQ0LjIyNjU2LDE3LjUyNTM5IGMgLTAuMTY4OTEsMC4wMTA0IC0wLjMyODcyLDAuMDQyOSAtMC40NzY1NiwwLjA5OTYgLTAuOTY5MTMsMC4zNzE4OSAtMi42Nzc3NCw1LjgwMzEgLTIuNjc3NzQsOC41MDk3NiAwLDEuMDUzNjMgMS41MTQ4Miw2LjMzNjI2IDMuMzY1MjQsMTEuNzQwMjQgNS4yOTkyMywxNS40NzU4OCA4LjM1NDY1LDI1LjA1NzA5IDkuNTMzMiwyOS44OTI1NyAxLjMyNDY5LDUuNDM1MDEgMS43MTc1Nyw0Ljc3MDU2IDIuNjQ4NDQsLTQuNDc4NTEgMS41NDE1OSwtMTUuMzE3MjkgMC41NjQxNiwtMjguMTg1MzkgLTIuNjk5MjIsLTM1LjU2NDQ2IC0yLjQwNzg4LC01LjQ0NDYzIC03LjE1OTY3LC0xMC4zNTQ2IC05LjY5MzM2LC0xMC4xOTkyMSB6IG0gLTEzLjU3MjI3LDMuMTE1MjMgYyAtMC4wNjQ0LC0wLjAxMzQgLTAuMTMzODcsLTAuMDAyIC0wLjIxMDkzLDAuMDI3MyAtMS44MDUyNywwLjY5Mjc0IC04LjA0Njk3LDUuMzU2MzcgLTEzLjY3MTg4LDEwLjIxNjggLTEwLjY4NzY3LDkuMjM1MDggLTE5LjA1NjA3LDE0LjEyMjE4IC0yNC4xNTYyNSwxNC4xMDkzOCAtMy4wMzcsLTAuMDA4IC03LjU3ODgzLC0yLjcwNjE3IC0xMi43MjI2NiwtNy41NTg2IGwgLTQuMTcxODcsLTMuOTM1NTQgLTQuMzc1LDAuNjc3NzMgYyAtNi42MTE5NCwxLjAyMjc4IC0xNi43MDE1OCwzLjQ0NDIxIC0yMS42MDE1Niw1LjE4NTU1IC05LjAxMzM4LDMuMjAzMTQgLTE0LjQ4ODQxLDcuMzkzMzcgLTE3LjQwNDMsMTMuMzE2NCAtMS45NDk0NywzLjk1OTkgLTEuOTY4OCw0LjA3NDg1IC0xLjk2NjgsMTIuNzA4OTkgMC4wMDEsNy45MDI4NCAwLjE2MDc2LDkuMjEzMjEgMS43MDcwMywxNC4xMTEzMyAyLjg2MTM0LDkuMDYzODUgNy4yNDkyNiwxNi4zNTIwNiAxMS40NDUzMiwxOS4wMTM2NyAxLjU3NTA3LDAuOTk5MDggMi41NTUwMywxLjEyNDkgNi42NDY0OCwwLjg0NTcgMi42NCwtMC4xODAxNiA4LjA0LC0xLjAwOTMgMTIsLTEuODQxOCA4LjI2MDQxLC0xLjczNjU1IDMyLjA5OTYxLC04LjIxNDQxIDMyLjA5OTYxLC04LjcyMjY1IDAsLTAuNTkyNTIgLTcuNTQ2NjYsLTUuMzI4NiAtMTAuNTgyMDMsLTYuNjQwNjMgLTEwLjM4NDgxLC00LjQ4ODc5IC0yMC4wOTc3MSwtNC42ODg3NiAtMzYuNTQ4ODMsLTAuNzUxOTUgLTMuOTgyOTIsMC45NTMxMyAtNy4yNjI5OSwxLjQyOTMzIC04LjIxMDk0LDEuMTkxNCAtMS43NTI3NSwtMC40Mzk5MSAtMi41NTA5NSwtMi4xNDQ0NiAtMi4wMTE3MSwtNC4yOTI5NiAwLjQ5NDY3LC0xLjk3MDkgOC40NzU0NSwtNy44MzE2NCAxNS42ODc1LC0xMS41MjE0OSAxNy41MDM5MSwtOC45NTU0IDM1LjcwODg2LC0xMC40MTMwOCA1My45NjQ4NCwtNC4zMTgzNiAxMC44NTEwMiwzLjYyMjU5IDE4LjIyMTc4LDcuNzgwNTMgMzYuMDAxOTUsMjAuMzA4NiAyLjMxLDEuNjI3NjQgNC40MTU4MywyLjc0NzI3IDQuNjc5NjksMi40ODYzMiAxLjE5MDM0LC0xLjE3NzE4IC0zLjY3NDQxLC0xOS44MTk1NiAtOS40ODYzMywtMzYuMzU1NDYgLTYuMzEwNTYsLTE3Ljk1NDU2IC02LjM5MzE5LC0xOC4yNjA4OSAtNi40NjI4OSwtMjMuNTY4MzYgLTAuMDQ0MywtMy4zNzUxOSAtMC4xOTc5MSwtNC41OTc0NCAtMC42NDg0NCwtNC42OTE0MSB6IG0gLTQ5LjMzMzk4LDQ4LjQzNzUgYyAtNy4wODI2MywtMC4wNzYxIC03Ljc2ODcyLDAuNDU2MjggLTIuMzI4MTMsMS42NzM4MyA5LjM4MDk2LDIuMDk5MzcgMTcuOTMyMTQsNy4yNTY4MyAyNi4zODA4NiwxNS45MTAxNSA2LjEyNjUzLDYuMjc0ODkgNy42MzQyMyw3LjQxNzkzIDEwLjc5ODgzLDguMTgxNjQgNC4xMjc2OSwwLjk5NjE0IDE1LjA1MzUxLDAuMTk1NzMgMTguOTMxNjQsLTEuMzg2NzEgbCAxLjkzNTU1LC0wLjc4OTA3IC04LjAzMzIsLTYuMDM1MTUgYyAtOS42MDE2NCwtNy4yMTI2MyAtMTMuNjA2MDQsLTkuNzAxMzIgLTIwLjE3NTc5LC0xMi41NDEwMiAtOC41Nzc0NCwtMy43MDc1MSAtMTMuMTA4MzcsLTQuNjM3NCAtMjQuMDgyMDMsLTQuOTQzMzYgLTEuMjczNzEsLTAuMDM1NSAtMi40MTU5MywtMC4wNTk0IC0zLjQyNzczLC0wLjA3MDMgeiBtIDIwLjA3NDIyLDI3LjgyMjI3IC0xNi42MTEzMyw1LjYzNjcxIGMgLTE3LjYyNjY5LDUuOTgxMjYgLTMwLjA2NjQ3LDEwLjU4NzQgLTMwLjk0MTQxLDExLjQ1NzA0IC0wLjI5MTczLDAuMjg5OTYgLTEuMjk5MzksMi40Mzg1MSAtMi4yMzgyOCw0Ljc3NTM5IC00LjE3NjM1LDEwLjM5NDgxIC0xMS41NDAzMywxOC4yNzExNiAtMjMuMDMxMjUsMjQuNjMyODEgLTEuOTgsMS4wOTYxNyAtMy43MTQ1NSwyLjA4ODYxIC0zLjg1NTQ2LDIuMjAzMTIgLTAuNzQyMDYsMC42MDMwMyA4LjM5NjI0LDYuNDk2MTggMTIuNDY4NzQsOC4wNDEwMiAxLjg2MzEyLDAuNzA2NzQgNS42ODEzMywxLjc5MzM5IDguNDg2MzMsMi40MTYwMiA2Ljc2ODUxLDEuNTAyNDMgMTkuNTUzMDEsMS4yMTA0NiAyNi44NzY5NiwtMC42MTUyNCAyMy4zMzY5MiwtNS44MTczOSA0Mi40ODczMywtMjUuNzgwMzggNDQuODYxMzIsLTQ2Ljc2MzY3IGwgMC40MTAxNiwtMy42MjMwNSAtMS43MjQ2MSwtMC4zODQ3NiBjIC01LjcyNjU5LC0xLjI3NTE4IC05Ljg2NzYsLTMuMTkzOTUgLTEyLjcxMjg5LC01Ljg5MDYzIHogbSA0NS4zODA4NiwzLjUwNzgxIGMgLTAuNDk0NTgsLTAuMDE1MSAtMi4xNDQwMywwLjQwNTg3IC0zLjk4MjQyLDEuMDMxMjUgLTIuMTAxMDIsMC43MTQ3MiAtNi4xMTQ3MywxLjc2OTczIC04LjkxNzk3LDIuMzQzNzUgbCAtNS4wOTU3MSwxLjA0Mjk3IC0wLjY1NjI1LDUuNjc1NzggYyAtMC4zNjA4NiwzLjEyMDg0IC0xLjE0Myw3LjQ3Mjc2IC0xLjczODI4LDkuNjcxODcgLTAuODc5NTksMy4yNDk0OSAtMC45NDA4MSw0LjE2OTE3IC0wLjMyNDIyLDQuOTEyMTEgMC40MTcyNywwLjUwMjc5IDEuMDA0NTIsMC45MTQwNyAxLjMwNDY5LDAuOTE0MDcgMS4wMDQ0MSwtMWUtNSA5Ljg2NDI0LC05LjI1MjYyIDEyLjYzODY3LC0xMy4xOTkyMiAzLjI0Nzk5LC00LjYyMDIzIDcuMzM2NywtMTEuOTMyODMgNi45MTAxNiwtMTIuMzU5MzggLTAuMDIwNywtMC4wMjA3IC0wLjA2OCwtMC4wMzEgLTAuMTM4NjcsLTAuMDMzMiB6IG0gLTE0NS44MjQyMSwxNS4zOTI1OCBjIC0xLjM1NjE4LDAgLTUuOTkxMDcsNS44NjY4NiAtOC4yNTk3NywxMC40NTUwNyAtNC42Mzk5OCw5LjM4MzkxIC02LjQ1MzU3LDIwLjk3MjA3IC01LjI2OTUzLDMzLjY2MjExIDAuMzk5MzYsNC4yODAxOSAwLjg4MTE3LDguOTI5NTMgMS4wNzAzMSwxMC4zMzIwNCAwLjE4OTE0LDEuNDAyNSAwLjQzNzM0LDIuNTUwNzggMC41NTI3NCwyLjU1MDc4IDAuMTE1MzksMCAwLjk5Mzk2LC0xLjU1MzY4IDEuOTUzMTIsLTMuNDUxMTggMy4xMzg1MSwtNi4yMDg5NyA4LjQyODQxLC0xMi43MDQxNyAxNC40Mzc1LC0xNy43MzA0NiBsIDIuNjY0MDcsLTIuMjI4NTIgLTEuODQ3NjYsLTEuOTQ1MzEgYyAtMy42Njc5MiwtMy44NjUyNyAtMy45MTIyNywtNC45Mzk4NiAtMy44MjIyNywtMTYuNzc1MzkgMC4wODc5LC0xMS41NjI1NyAtMC4yNDEzOSwtMTQuODY5MTQgLTEuNDc4NTEsLTE0Ljg2OTE0IHogbSAxNS4wMTc1OCw1LjYyODkgYyAtMC4wNzg1LC0wLjAwNCAtMC4xMzQzNiwwLjAwNyAtMC4xNjQwNywwLjAzNzEgLTEuMDA0NzEsMS4wMDMwMyAtMi4zNjk0OSwxNS44OTgwOSAtMS41MzMyLDE2LjczNDM4IDAuMjIsMC4yMiAwLjYzMzU2LDAuMzk4NDMgMC45MTc5NywwLjM5ODQzIDEuMTMxNDMsMCA3LjU5NjI1LC0zLjYyNjc5IDExLjIwODk3LC02LjI4OTA2IGwgMy44MjYxOCwtMi44MjAzMSAtMy4yMjY1NywtMS44MDg1OSBjIC0xLjc3NDU3LC0wLjk5NDc5IC00LjkyMTgsLTIuODk2NDkgLTYuOTk0MTMsLTQuMjI2NTcgLTEuODEzMjksLTEuMTYzODIgLTMuNDg1ODQsLTEuOTk1MDIgLTQuMDM1MTUsLTIuMDI1MzkgeiIKICAgICBpZD0icGF0aDEwMTYtMyIgLz4KPC9zdmc+Cg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jitsi-v2.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-jitsi/releases/tag/v2.0.0",
+    "labels": [
+      {
+        "name": "Beta",
+        "description": "This plugin is currently in Beta and is not recommended for use in production.",
+        "url": "https://mattermost.com/pl/default-beta-plugins",
+        "color": ""
+      }
+    ],
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl77DdoACgkQ0bVLR6XO/sQRpQ//TO3Ty4FBSDPxDtN9NZxVc3bf1jXRx6m5pAF/S90i+fkErf3hQW0hKGv2g8n1K2o7lgSzqiLclYj4glnUdW/HnceqTSfDz86oP8xhAAH55lKmKUVCNnjGQjcCWC18QKALYTPbbvsmB3CZYB/2EDFL0xWiGZnCP4eyj4KxIjCG0TJEJ2lCa7lB4qzBk9jCfBdrytcC3pD1jio5g/ubkeTMVAC22qU171CTUZKDRMel0f0cW/RaEe1Kw6t4iYFcl+r6Wk/CQlcmWjrMhCjQAKEOmLUBap2q+k63MmgtxzVuRuvdfwGdv13vKBcFmxY0/+ZR7L0UG2qOlxa19qOnP4fJgklvG72AiOmQBvHS23ENHeHRfBOt4furcFYPbdlDDCPn5bzj3VvMCNTmLWhftoDHmG/QmEQwxOs8lAwzFJ5Y2hbYnZ5FCoARU3YWe7NJ4hxvJxu/+f0xas36JZQ5MHloBrkBrpVQa2XyKOsCT3MTQgHRykvXCfqxRANOM88FW/PAmFwXMrSNLZ/i15fW7DL2DeG3VHSdlN2366ISK9ndkhAnaUrH4WpfsnUjtLNSCB0JjQYe971uzDqgaty8FjA4MbMYb9j6Q2NAl3JgoowdWMcRFvkabnPJE6+pIGpW5dbSJ6HQaNBpVNsgDmsxHOEKuQcBerALL/NaIdV979cPzo8=",
+    "manifest": {
+      "id": "jitsi",
+      "name": "Jitsi",
+      "description": "Jitsi audio and video conferencing plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-jitsi",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-jitsi/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-jitsi/releases/tag/v2.0.0",
+      "icon_path": "assets/icon.svg",
+      "version": "2.0.0",
+      "min_server_version": "5.2.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "JitsiURL",
+            "display_name": "Jitsi Server URL",
+            "type": "text",
+            "help_text": "The URL for your Jitsi server, for example https://jitsi.example.com. Defaults to https://meet.jit.si, which is the public server provided by Jitsi.",
+            "placeholder": "https://meet.jit.si",
+            "default": "https://meet.jit.si"
+          },
+          {
+            "key": "JitsiEmbedded",
+            "display_name": "Embed Jitsi video inside Mattermost",
+            "type": "bool",
+            "help_text": "(Experimental) When true, Jitsi video is embedded as a floating window inside Mattermost by default. Users can override this setting with '/jitsi settings'",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "JitsiNamingScheme",
+            "display_name": "Jitsi Meeting Names",
+            "type": "radio",
+            "help_text": "Select how meeting names are generated by default. Users can override this setting with '/jitsi settings'.",
+            "placeholder": "",
+            "default": "words",
+            "options": [
+              {
+                "display_name": "Random English words in title case (e.g. PlayfulDragonsObserveCuriously)",
+                "value": "words"
+              },
+              {
+                "display_name": "UUID (universally unique identifier)",
+                "value": "uuid"
+              },
+              {
+                "display_name": "Mattermost context specific names. Combination of team name, channel name and random text in public and private channels; personal meeting name in direct and group messages channels.",
+                "value": "mattermost"
+              },
+              {
+                "display_name": "Allow user to select meeting name",
+                "value": "ask"
+              }
+            ]
+          },
+          {
+            "key": "JitsiJWT",
+            "display_name": "Use JWT Authentication for Jitsi",
+            "type": "bool",
+            "help_text": "(Optional) If your Jitsi server uses JSON Web Tokens (JWT) for authentication, set this value to true.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "JitsiAppID",
+            "display_name": "App ID for JWT Authentication",
+            "type": "text",
+            "help_text": "(Optional) The App ID used for authentication by the Jitsi server and JWT token generator.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "JitsiAppSecret",
+            "display_name": "App Secret for JWT Authentication",
+            "type": "text",
+            "help_text": "(Optional) The App Secret used for authentication by the Jitsi server and JWT token generator.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "JitsiLinkValidTime",
+            "display_name": "Meeting Link Expiry Time (minutes)",
+            "type": "number",
+            "help_text": "(Optional) The number of minutes from when the meeting link is created to when it becomes invalid. Minimum is 1 minute. Only applies if using JWT authentication for your Jitsi server.",
+            "placeholder": "",
+            "default": 30
+          },
+          {
+            "key": "JitsiCompatibilityMode",
+            "display_name": "Enable Compatibility Mode",
+            "type": "bool",
+            "help_text": "(Insecure) If your Jitsi server is not compatible with this plugin, include the JavaScript API hosted on your Jitsi server directly in Mattermost instead of the default API version provided by the plugin. **WARNING:** Enabling this setting can compromise the security of your Mattermost system, if your Jitsi server is not fully trusted and allows direct modification of program files. Use with caution.",
+            "placeholder": "",
+            "default": false
+          }
+        ]
+      }
+    },
+    "updated_at": "2020-06-30T10:10:23.478337756Z"
   }
 ]
