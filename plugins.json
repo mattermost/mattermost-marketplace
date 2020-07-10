@@ -4687,5 +4687,358 @@
       }
     },
     "updated_at": "2020-06-30T10:10:23.478337756Z"
+  },
+  {
+    "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMiIKICAgdmlld0JveD0iMCAwIDE1MCAxNTAiCiAgIGhlaWdodD0iMTUwIgogICB3aWR0aD0iMTUwIj4KICA8ZGVmcwogICAgIGlkPSJkZWZzNCIgLz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIGlkPSJsYXllcjEiPgogICAgPGNpcmNsZQogICAgICAgcj0iNzQuNSIKICAgICAgIGN5PSI3NS4yMjc3MjIiCiAgICAgICBjeD0iNzUuNzQyNTY5IgogICAgICAgaWQ9InBhdGg0MTUzIgogICAgICAgc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICA8L2c+CiAgPGcKICAgICBpZD0ibGF5ZXIyIj4KICAgIDx0ZXh0CiAgICAgICBpZD0idGV4dDQxNTgiCiAgICAgICB5PSI5OC4yOTA2MDQiCiAgICAgICB4PSIxNi4yMzkzMTciCiAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc2l6ZTo0MHB4O2xpbmUtaGVpZ2h0OjEyNSU7Zm9udC1mYW1pbHk6c2Fucy1zZXJpZjtsZXR0ZXItc3BhY2luZzowcHg7d29yZC1zcGFjaW5nOjBweDtmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIgogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHRzcGFuCiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zdHJldGNoOm5vcm1hbDtmb250LXNpemU6ODEuMjVweDtmb250LWZhbWlseTpDYWxpYnJpOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J0NhbGlicmkgQm9sZCc7ZmlsbDojMzM5N2NkO2ZpbGwtb3BhY2l0eToxIgogICAgICAgICB5PSI5OC4yOTA2MDQiCiAgICAgICAgIHg9IjE2LjIzOTMxNyIKICAgICAgICAgaWQ9InRzcGFuNDE2MCI+L2dpZjwvdHNwYW4+PC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-giphy-moussetc-v1.3.0.tar.gz",
+    "release_notes_url": "https://github.com/moussetc/mattermost-plugin-giphy/releases/tag/v1.3.0",
+    "labels": [
+      {
+        "name": "Community",
+        "description": "This plugin is maintained by the Open Source Community.",
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": ""
+      }
+    ],
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8FmIAACgkQ0bVLR6XO/sT2wQ/+LmpsKiFC1da0lIUtPOTAlKEPR8sqgPqvmBmeQOJzgGvqAQ9rF7zW9BIUbFFmOhRTUcX6wj867fNDBX8HPwCg635yUBlnig5EyUVJMACcIa4a5SKZcpjk1ghEcBXG4eIxU1sQI4YlXMf3CttujhO9/2eNqjAYow7adDj1yBaJB1KBvcENEUfqNpaVCo3kng6i7e3Cj0XiG5ceGpImc6g3HTtqRpGGJ3J8PU3EyKCbKCCeQFXL/GcVtycjMgyR8PnHlo/9pV+o8dhwq+hL+cZ0Kh4fPzaEKVtSQrme/Mdl6V79c4bHTav0V4bMGeeo8GHlFoVQGYk9bBai7I4k8Fh2b2nCuN5Fj/dKXEcKRaRmltC9P65CqnEAdh/3TmyqHsVNLnMS6auAXO32rVZzXxF9he1JgBzj+l2BAPML0HLyhT+cW36gytg1UV5klAI5mL3wGUqRJnugfatbqEicDHWwQxcRBTuQA2oC9HC6Gh8HwzrYQ3yjQwvFwIaAUlv3re1gv2lv0mDM14G83IuAb+2+NxHEByAnwTB3wlQOgpq3S964Dgci4gadevoQH3z13Gwt6OlnJmAjEfKZbJZtC3gBaYdUyx9eCBkrPsiKN1XYFU+AOrXevhOzFV1ScJQXwiK1J/gbN69x6G2AN+5+JPpC+huKwEfNg2deAQe0nyssxwQ=",
+    "manifest": {
+      "id": "com.github.moussetc.mattermost.plugin.giphy",
+      "name": "GIF commands",
+      "description": "Add GIF slash commands from Giphy, Gfycat or Tenor",
+      "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
+      "support_url": "https://github.com/moussetc/mattermost-plugin-giphy/issues",
+      "release_notes_url": "https://github.com/moussetc/mattermost-plugin-giphy/releases/tag/v1.3.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.3.0",
+      "min_server_version": "5.20.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": "server/dist/plugin-freebsd-amd64.exe"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Powered by Giphy, Tenor and Gfycat.\n\n * To report an issue, make a suggestion or a contribution, or fork your own version of the plugin, [check the repository](https://github.com/moussetc/mattermost-plugin-giphy).\n",
+        "settings": [
+          {
+            "key": "Provider",
+            "display_name": "GIF Provider",
+            "type": "radio",
+            "help_text": "",
+            "placeholder": "",
+            "default": "gfycat",
+            "options": [
+              {
+                "display_name": "Gfycat (No API Key required)",
+                "value": "gfycat"
+              },
+              {
+                "display_name": "GIPHY (API Key required below)",
+                "value": "giphy"
+              },
+              {
+                "display_name": "Tenor (API Key required below)",
+                "value": "tenor"
+              }
+            ]
+          },
+          {
+            "key": "APIKey",
+            "display_name": "Giphy/Tenor API Key",
+            "type": "text",
+            "help_text": "Configure your own API Key (not required for Gfycat). To get your own API key, follow [these instructions for Giphy](https://developers.giphy.com/docs/api#quick-start-guide) or [these for Tenor](https://tenor.com/developer/keyregistration).",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Rating",
+            "display_name": "Content Rating (GIPHY&Tenor only)",
+            "type": "dropdown",
+            "help_text": "Choose the MPAA-style rating or leave empty to disable filtering.",
+            "placeholder": "",
+            "default": null,
+            "options": [
+              {
+                "display_name": "G",
+                "value": "g"
+              },
+              {
+                "display_name": "PG",
+                "value": "pg"
+              },
+              {
+                "display_name": "PG-13",
+                "value": "pg-13"
+              },
+              {
+                "display_name": "R",
+                "value": "r"
+              }
+            ]
+          },
+          {
+            "key": "RenditionGfycat",
+            "display_name": "Gfycat display style",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from Gfycat (more info [here](https://developers.gfycat.com/api/#best-format-to-use))",
+            "placeholder": "",
+            "default": "gif100px",
+            "options": [
+              {
+                "display_name": "Height set to 100px.",
+                "value": "gif100px"
+              },
+              {
+                "display_name": "Weight <= 1Mb",
+                "value": "max1mbGif"
+              },
+              {
+                "display_name": "Weight <= 2Mb",
+                "value": "max2mbGif"
+              },
+              {
+                "display_name": "Weight <= 5Mb",
+                "value": "max5mbGif"
+              },
+              {
+                "display_name": "Static preview image",
+                "value": "posterUrl"
+              }
+            ]
+          },
+          {
+            "key": "Rendition",
+            "display_name": "GIPHY display style",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from GIPHY (more info [here](https://developers.giphy.com/docs/optional-settings/#rendition-guide)).",
+            "placeholder": "",
+            "default": "fixed_height_small",
+            "options": [
+              {
+                "display_name": "Height set to 200px. Good for mobile use.",
+                "value": "fixed_height"
+              },
+              {
+                "display_name": "Static preview image for fixed_height",
+                "value": "fixed_height_still"
+              },
+              {
+                "display_name": "Height set to 100px. Good for mobile keyboards.",
+                "value": "fixed_height_small"
+              },
+              {
+                "display_name": "Static preview image for fixed_height_small",
+                "value": "fixed_height_small_still"
+              },
+              {
+                "display_name": "Width set to 200px. Good for mobile use.",
+                "value": "fixed_width"
+              },
+              {
+                "display_name": "Static preview image for fixed_width",
+                "value": "fixed_width_still"
+              },
+              {
+                "display_name": "Width set to 100px. Good for mobile keyboards",
+                "value": "fixed_width_small"
+              },
+              {
+                "display_name": "Static preview image for fixed_width_small",
+                "value": "fixed_width_small_still"
+              },
+              {
+                "display_name": "File size under 2mb.",
+                "value": "downsized"
+              },
+              {
+                "display_name": "File size under 8mb.",
+                "value": "downsized_large"
+              },
+              {
+                "display_name": "Static preview image for downsized",
+                "value": "downsized_still"
+              },
+              {
+                "display_name": "Original file size and file dimensions. Good for desktop use.",
+                "value": "original"
+              },
+              {
+                "display_name": "Preview image for original",
+                "value": "original_still"
+              },
+              {
+                "display_name": "Duration set to loop for 15 seconds. Only recommended for this exact use case.",
+                "value": "looping"
+              }
+            ]
+          },
+          {
+            "key": "RenditionTenor",
+            "display_name": "Tenor display style",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from Tenor (more info [here](https://tenor.com/gifapi/documentation#responseobjects-gifformat))",
+            "placeholder": "",
+            "default": "mediumgif",
+            "options": [
+              {
+                "display_name": "Original: High quality GIF format, largest file size available, use this size for GIF shares on desktop",
+                "value": "gif"
+              },
+              {
+                "display_name": "Medium: Small reduction in size of the original format",
+                "value": "mediumgif"
+              },
+              {
+                "display_name": "Tiny: reduced size of the original format, up to 220 pixels wide, good for mobile",
+                "value": "tinygif"
+              }
+            ]
+          },
+          {
+            "key": "Language (GIPHY&Tenor only)",
+            "display_name": "Language",
+            "type": "dropdown",
+            "help_text": "Select the language used to search GIFs (more info [here](https://developers.giphy.com/docs/optional-settings/#language-support)).",
+            "placeholder": "",
+            "default": "en",
+            "options": [
+              {
+                "display_name": "English",
+                "value": "en"
+              },
+              {
+                "display_name": "Español",
+                "value": "es"
+              },
+              {
+                "display_name": "Français",
+                "value": "fr"
+              },
+              {
+                "display_name": "Português",
+                "value": "pt"
+              },
+              {
+                "display_name": "Bahasa Indonesia",
+                "value": "id"
+              },
+              {
+                "display_name": "العربية",
+                "value": "ar"
+              },
+              {
+                "display_name": "Türkçe",
+                "value": "tr"
+              },
+              {
+                "display_name": "ไทย",
+                "value": "th"
+              },
+              {
+                "display_name": "Tiếng Việt",
+                "value": "vi"
+              },
+              {
+                "display_name": "Deutsch",
+                "value": "de"
+              },
+              {
+                "display_name": "Italiano",
+                "value": "it"
+              },
+              {
+                "display_name": "日本語 (にほんご)",
+                "value": "ja"
+              },
+              {
+                "display_name": "Chinese Simplified",
+                "value": "zh-CN"
+              },
+              {
+                "display_name": "Chinese Traditional",
+                "value": "zh-TW"
+              },
+              {
+                "display_name": "русский",
+                "value": "ru"
+              },
+              {
+                "display_name": "한국어",
+                "value": "ko"
+              },
+              {
+                "display_name": "Polszczyzna",
+                "value": "pl"
+              },
+              {
+                "display_name": "Nederlands",
+                "value": "nl"
+              },
+              {
+                "display_name": "Română",
+                "value": "ro"
+              },
+              {
+                "display_name": "magyar",
+                "value": "hu"
+              },
+              {
+                "display_name": "Svenska",
+                "value": "sv"
+              },
+              {
+                "display_name": "čeština",
+                "value": "cs"
+              },
+              {
+                "display_name": "हिन्दी, हिंदी",
+                "value": "hi"
+              },
+              {
+                "display_name": "বাংলা",
+                "value": "bn"
+              },
+              {
+                "display_name": "dansk",
+                "value": "da"
+              },
+              {
+                "display_name": "فارسی",
+                "value": "fa"
+              },
+              {
+                "display_name": "Filipino",
+                "value": "tl"
+              },
+              {
+                "display_name": "suomi",
+                "value": "fi"
+              },
+              {
+                "display_name": "עברית",
+                "value": "he"
+              },
+              {
+                "display_name": "بهاس ملايو",
+                "value": "ms"
+              },
+              {
+                "display_name": "Norsk",
+                "value": "no"
+              },
+              {
+                "display_name": "Українська",
+                "value": "uk"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "updated_at": "2020-07-08T10:03:43.272030437Z"
   }
 ]
