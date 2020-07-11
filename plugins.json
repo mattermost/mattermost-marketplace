@@ -638,6 +638,360 @@
     "updated_at": "2019-04-17T19:49:19Z"
   },
   {
+    "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMiIKICAgdmlld0JveD0iMCAwIDE1MCAxNTAiCiAgIGhlaWdodD0iMTUwIgogICB3aWR0aD0iMTUwIj4KICA8ZGVmcwogICAgIGlkPSJkZWZzNCIgLz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIGlkPSJsYXllcjEiPgogICAgPGNpcmNsZQogICAgICAgcj0iNzQuNSIKICAgICAgIGN5PSI3NS4yMjc3MjIiCiAgICAgICBjeD0iNzUuNzQyNTY5IgogICAgICAgaWQ9InBhdGg0MTUzIgogICAgICAgc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICA8L2c+CiAgPGcKICAgICBpZD0ibGF5ZXIyIj4KICAgIDx0ZXh0CiAgICAgICBpZD0idGV4dDQxNTgiCiAgICAgICB5PSI5OC4yOTA2MDQiCiAgICAgICB4PSIxNi4yMzkzMTciCiAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc2l6ZTo0MHB4O2xpbmUtaGVpZ2h0OjEyNSU7Zm9udC1mYW1pbHk6c2Fucy1zZXJpZjtsZXR0ZXItc3BhY2luZzowcHg7d29yZC1zcGFjaW5nOjBweDtmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIgogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHRzcGFuCiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zdHJldGNoOm5vcm1hbDtmb250LXNpemU6ODEuMjVweDtmb250LWZhbWlseTpDYWxpYnJpOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J0NhbGlicmkgQm9sZCc7ZmlsbDojMzM5N2NkO2ZpbGwtb3BhY2l0eToxIgogICAgICAgICB5PSI5OC4yOTA2MDQiCiAgICAgICAgIHg9IjE2LjIzOTMxNyIKICAgICAgICAgaWQ9InRzcGFuNDE2MCI+L2dpZjwvdHNwYW4+PC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-giphy-moussetc-v1.3.0.tar.gz",
+    "release_notes_url": "https://github.com/moussetc/mattermost-plugin-giphy/releases/tag/v1.3.0",
+    "labels": [
+      {
+        "name": "Community",
+        "description": "This plugin is maintained by the Open Source Community.",
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": ""
+      }
+    ],
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8FmIAACgkQ0bVLR6XO/sT2wQ/+LmpsKiFC1da0lIUtPOTAlKEPR8sqgPqvmBmeQOJzgGvqAQ9rF7zW9BIUbFFmOhRTUcX6wj867fNDBX8HPwCg635yUBlnig5EyUVJMACcIa4a5SKZcpjk1ghEcBXG4eIxU1sQI4YlXMf3CttujhO9/2eNqjAYow7adDj1yBaJB1KBvcENEUfqNpaVCo3kng6i7e3Cj0XiG5ceGpImc6g3HTtqRpGGJ3J8PU3EyKCbKCCeQFXL/GcVtycjMgyR8PnHlo/9pV+o8dhwq+hL+cZ0Kh4fPzaEKVtSQrme/Mdl6V79c4bHTav0V4bMGeeo8GHlFoVQGYk9bBai7I4k8Fh2b2nCuN5Fj/dKXEcKRaRmltC9P65CqnEAdh/3TmyqHsVNLnMS6auAXO32rVZzXxF9he1JgBzj+l2BAPML0HLyhT+cW36gytg1UV5klAI5mL3wGUqRJnugfatbqEicDHWwQxcRBTuQA2oC9HC6Gh8HwzrYQ3yjQwvFwIaAUlv3re1gv2lv0mDM14G83IuAb+2+NxHEByAnwTB3wlQOgpq3S964Dgci4gadevoQH3z13Gwt6OlnJmAjEfKZbJZtC3gBaYdUyx9eCBkrPsiKN1XYFU+AOrXevhOzFV1ScJQXwiK1J/gbN69x6G2AN+5+JPpC+huKwEfNg2deAQe0nyssxwQ=",
+    "manifest": {
+      "id": "com.github.moussetc.mattermost.plugin.giphy",
+      "name": "GIF commands",
+      "description": "Add GIF slash commands from Giphy, Gfycat or Tenor",
+      "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
+      "support_url": "https://github.com/moussetc/mattermost-plugin-giphy/issues",
+      "release_notes_url": "https://github.com/moussetc/mattermost-plugin-giphy/releases/tag/v1.3.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.3.0",
+      "min_server_version": "5.20.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": "server/dist/plugin-freebsd-amd64.exe"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Powered by Giphy, Tenor and Gfycat.\n\n * To report an issue, make a suggestion or a contribution, or fork your own version of the plugin, [check the repository](https://github.com/moussetc/mattermost-plugin-giphy).\n",
+        "settings": [
+          {
+            "key": "Provider",
+            "display_name": "GIF Provider",
+            "type": "radio",
+            "help_text": "",
+            "placeholder": "",
+            "default": "gfycat",
+            "options": [
+              {
+                "display_name": "Gfycat (No API Key required)",
+                "value": "gfycat"
+              },
+              {
+                "display_name": "GIPHY (API Key required below)",
+                "value": "giphy"
+              },
+              {
+                "display_name": "Tenor (API Key required below)",
+                "value": "tenor"
+              }
+            ]
+          },
+          {
+            "key": "APIKey",
+            "display_name": "Giphy/Tenor API Key",
+            "type": "text",
+            "help_text": "Configure your own API Key (not required for Gfycat). To get your own API key, follow [these instructions for Giphy](https://developers.giphy.com/docs/api#quick-start-guide) or [these for Tenor](https://tenor.com/developer/keyregistration).",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Rating",
+            "display_name": "Content Rating (GIPHY&Tenor only)",
+            "type": "dropdown",
+            "help_text": "Choose the MPAA-style rating or leave empty to disable filtering.",
+            "placeholder": "",
+            "default": null,
+            "options": [
+              {
+                "display_name": "G",
+                "value": "g"
+              },
+              {
+                "display_name": "PG",
+                "value": "pg"
+              },
+              {
+                "display_name": "PG-13",
+                "value": "pg-13"
+              },
+              {
+                "display_name": "R",
+                "value": "r"
+              }
+            ]
+          },
+          {
+            "key": "RenditionGfycat",
+            "display_name": "Gfycat display style",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from Gfycat (more info [here](https://developers.gfycat.com/api/#best-format-to-use))",
+            "placeholder": "",
+            "default": "gif100px",
+            "options": [
+              {
+                "display_name": "Height set to 100px.",
+                "value": "gif100px"
+              },
+              {
+                "display_name": "Weight <= 1Mb",
+                "value": "max1mbGif"
+              },
+              {
+                "display_name": "Weight <= 2Mb",
+                "value": "max2mbGif"
+              },
+              {
+                "display_name": "Weight <= 5Mb",
+                "value": "max5mbGif"
+              },
+              {
+                "display_name": "Static preview image",
+                "value": "posterUrl"
+              }
+            ]
+          },
+          {
+            "key": "Rendition",
+            "display_name": "GIPHY display style",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from GIPHY (more info [here](https://developers.giphy.com/docs/optional-settings/#rendition-guide)).",
+            "placeholder": "",
+            "default": "fixed_height_small",
+            "options": [
+              {
+                "display_name": "Height set to 200px. Good for mobile use.",
+                "value": "fixed_height"
+              },
+              {
+                "display_name": "Static preview image for fixed_height",
+                "value": "fixed_height_still"
+              },
+              {
+                "display_name": "Height set to 100px. Good for mobile keyboards.",
+                "value": "fixed_height_small"
+              },
+              {
+                "display_name": "Static preview image for fixed_height_small",
+                "value": "fixed_height_small_still"
+              },
+              {
+                "display_name": "Width set to 200px. Good for mobile use.",
+                "value": "fixed_width"
+              },
+              {
+                "display_name": "Static preview image for fixed_width",
+                "value": "fixed_width_still"
+              },
+              {
+                "display_name": "Width set to 100px. Good for mobile keyboards",
+                "value": "fixed_width_small"
+              },
+              {
+                "display_name": "Static preview image for fixed_width_small",
+                "value": "fixed_width_small_still"
+              },
+              {
+                "display_name": "File size under 2mb.",
+                "value": "downsized"
+              },
+              {
+                "display_name": "File size under 8mb.",
+                "value": "downsized_large"
+              },
+              {
+                "display_name": "Static preview image for downsized",
+                "value": "downsized_still"
+              },
+              {
+                "display_name": "Original file size and file dimensions. Good for desktop use.",
+                "value": "original"
+              },
+              {
+                "display_name": "Preview image for original",
+                "value": "original_still"
+              },
+              {
+                "display_name": "Duration set to loop for 15 seconds. Only recommended for this exact use case.",
+                "value": "looping"
+              }
+            ]
+          },
+          {
+            "key": "RenditionTenor",
+            "display_name": "Tenor display style",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from Tenor (more info [here](https://tenor.com/gifapi/documentation#responseobjects-gifformat))",
+            "placeholder": "",
+            "default": "mediumgif",
+            "options": [
+              {
+                "display_name": "Original: High quality GIF format, largest file size available, use this size for GIF shares on desktop",
+                "value": "gif"
+              },
+              {
+                "display_name": "Medium: Small reduction in size of the original format",
+                "value": "mediumgif"
+              },
+              {
+                "display_name": "Tiny: reduced size of the original format, up to 220 pixels wide, good for mobile",
+                "value": "tinygif"
+              }
+            ]
+          },
+          {
+            "key": "Language (GIPHY&Tenor only)",
+            "display_name": "Language",
+            "type": "dropdown",
+            "help_text": "Select the language used to search GIFs (more info [here](https://developers.giphy.com/docs/optional-settings/#language-support)).",
+            "placeholder": "",
+            "default": "en",
+            "options": [
+              {
+                "display_name": "English",
+                "value": "en"
+              },
+              {
+                "display_name": "Español",
+                "value": "es"
+              },
+              {
+                "display_name": "Français",
+                "value": "fr"
+              },
+              {
+                "display_name": "Português",
+                "value": "pt"
+              },
+              {
+                "display_name": "Bahasa Indonesia",
+                "value": "id"
+              },
+              {
+                "display_name": "العربية",
+                "value": "ar"
+              },
+              {
+                "display_name": "Türkçe",
+                "value": "tr"
+              },
+              {
+                "display_name": "ไทย",
+                "value": "th"
+              },
+              {
+                "display_name": "Tiếng Việt",
+                "value": "vi"
+              },
+              {
+                "display_name": "Deutsch",
+                "value": "de"
+              },
+              {
+                "display_name": "Italiano",
+                "value": "it"
+              },
+              {
+                "display_name": "日本語 (にほんご)",
+                "value": "ja"
+              },
+              {
+                "display_name": "Chinese Simplified",
+                "value": "zh-CN"
+              },
+              {
+                "display_name": "Chinese Traditional",
+                "value": "zh-TW"
+              },
+              {
+                "display_name": "русский",
+                "value": "ru"
+              },
+              {
+                "display_name": "한국어",
+                "value": "ko"
+              },
+              {
+                "display_name": "Polszczyzna",
+                "value": "pl"
+              },
+              {
+                "display_name": "Nederlands",
+                "value": "nl"
+              },
+              {
+                "display_name": "Română",
+                "value": "ro"
+              },
+              {
+                "display_name": "magyar",
+                "value": "hu"
+              },
+              {
+                "display_name": "Svenska",
+                "value": "sv"
+              },
+              {
+                "display_name": "čeština",
+                "value": "cs"
+              },
+              {
+                "display_name": "हिन्दी, हिंदी",
+                "value": "hi"
+              },
+              {
+                "display_name": "বাংলা",
+                "value": "bn"
+              },
+              {
+                "display_name": "dansk",
+                "value": "da"
+              },
+              {
+                "display_name": "فارسی",
+                "value": "fa"
+              },
+              {
+                "display_name": "Filipino",
+                "value": "tl"
+              },
+              {
+                "display_name": "suomi",
+                "value": "fi"
+              },
+              {
+                "display_name": "עברית",
+                "value": "he"
+              },
+              {
+                "display_name": "بهاس ملايو",
+                "value": "ms"
+              },
+              {
+                "display_name": "Norsk",
+                "value": "no"
+              },
+              {
+                "display_name": "Українська",
+                "value": "uk"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-07-08T10:03:43.272030437Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzRweCIgaGVpZ2h0PSI3NHB4IiB2aWV3Qm94PSIwIDAgNzQgNzQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU3LjEgKDgzMDg4KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5hd3Mtc25zPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGNpcmNsZSBpZD0icGF0aC0xIiBjeD0iMzciIGN5PSIzNyIgcj0iMzciPjwvY2lyY2xlPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iLTIwLjcxMzQ4JSIgeTE9IjEyMC43MDQ0MjUlIiB4Mj0iMTIwLjcwNzg3NiUiIHkyPSItMjAuNzE2OTMxNSUiIGlkPSJsaW5lYXJHcmFkaWVudC0zIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0IwMDg0RCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRkY0RjhCIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImF3cy1zbnMiPgogICAgICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgIDx1c2UgaWQ9Ik1hc2siIGZpbGw9IiNEOEQ4RDgiIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICA8ZyBtYXNrPSJ1cmwoI21hc2stMikiPgogICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIC0xLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJQaW5rX0dyYWRpZW50IiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTMpIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHg9IjAiIHk9IjAiIHdpZHRoPSI3NSIgaGVpZ2h0PSI3NSI+PC9yZWN0PgogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJJY29uX1Rlc3QiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC4wMDAwMDAsIDEzLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNDQuNTgsMzcuOTIgTDQ0LjU4LDM4Ljc1IEM0NC41OCwzOC42NSA0NC41OCwzOC41NSA0NC41OCwzOC40NSBDNDQuNTU5ODQxNiwzOC4yNzM5MDg0IDQ0LjU1OTg0MTYsMzguMDk2MDkxNiA0NC41OCwzNy45MiBMNDQuNTgsMzcuOTIgWiIgaWQ9IlBhdGgiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzEuNDUsMTggTDMxLjM1LDE4LjE5IEMzMS4zOTAwMzcxLDE4LjEyODMyMDQgMzEuNDIwMzg5MiwxOC4wNjA4NzE0IDMxLjQ0LDE3Ljk5IEwzMS40NSwxOCBaIiBpZD0iUGF0aCIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMi43OCwxNC41Mjk4NTgxIEMyMS44OSwxNC41Mjk4NTgxIDE0LjAzLDE0LjQ2IDE0LjAzLDE3LjQzIEMxNC4wMjY1NjA4LDE3LjYxODE0ODMgMTQuMDYwNTUyNywxNy44MDUxMDM4IDE0LjEzLDE3Ljk4IEMxNC4xNTkyMzEzLDE4LjA1MTg4MDcgMTQuMTkyNjIxLDE4LjEyMTk5OTIgMTQuMjMsMTguMTkgTDE5LjY3LDMwLjE5IEwxOS42NywzNi40IEMxOS42NywzNy4wMyAxOS45MywzNy40IDIwLjQ4LDM3LjQgTDIwLjc0LDM3LjQgQzIxLjk5NzE3NSwzNy4wNzA5NzY0IDIzLjE2NTM5ODcsMzYuNDY2MzY5NCAyNC4xNiwzNS42MyBMMjQuODMsMzUuMTYgQzI1LjExOTk4MjQsMzQuOTc4Nzc1OCAyNS4yOTcyNTgzLDM0LjY2MTk0MjIgMjUuMywzNC4zMiBMMjUuMywzMC4yMiBMMzEuMzUsMTguMjIgTDMxLjM1LDE4LjIyIEMzMS4zOTAwMzcxLDE4LjE1ODMyMDQgMzEuNDIwMzg5MiwxOC4wOTA4NzE0IDMxLjQ0LDE4LjAyIEMzMS41MDk0NDczLDE3Ljg0NTEwMzggMzEuNTQzNDM5MiwxNy42NTgxNDgzIDMxLjU0LDE3LjQ3IEMzMS41NCwxNC40NiAyMy42OCwxNC41Mjk4NTgxIDIyLjc4LDE0LjUyOTg1ODEgWiBNMjIuNzgsMTYuMzcgQzI2LjMxLDE2LjM3IDI4LjU4LDE2Ljk5IDI5LjM0LDE3LjQzIEMyOC41OCwxNy44NyAyNi4zNCwxOC40OSAyMi43OCwxOC40OSBDMTkuMjIsMTguNDkgMTYuOTksMTcuODcgMTYuMjMsMTcuNDMgQzE3LDE3IDE5LjI1LDE2LjM3IDIyLjc4LDE2LjM3IFogTTIzLjUxLDI5LjM3IEMyMy41MSwyOS41MSAyMy41MSwyOS43NiAyMy41MSwzMC4wMiBMMjMuNTEsMzMuOTMgTDIzLjEyLDM0LjE3IEMyMi41NSwzNC41IDIyLjA1LDM0LjczIDIxLjQ4LDM1LjAzIEwyMS40OCwzMCBDMjEuNDc3NTk5MywyOS44NjI5NDEzIDIxLjQ1MDQ5ODksMjkuNzI3NDM5MSAyMS40LDI5LjYgTDE3LjE0LDE5Ljg2IEMxOC45OTE2MzQyLDIwLjI3MjUxMjggMjAuODgyOTcxOCwyMC40ODA0MjU4IDIyLjc4LDIwLjQ4IEMyNC42MjE5MDk4LDIwLjQ3ODU4MjcgMjYuNDU4NjAyNSwyMC4yODQxODgyIDI4LjI2LDE5LjkgTDIzLjUxLDI5LjM3IFoiIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik00MSw0Mi4xNyBDMzcuMDg1NTQwOCw0NS4wMDMyMDk3IDMyLjM3MjE1MTYsNDYuNTE5NDc4MyAyNy41NCw0Ni41IEMxNi42Niw0Ni41IDcuMzgsMzkuNDMgNS4yLDI5IEM3LjIxNzY2OTM2LDI4LjkwNDAwODcgOC45MjU0NDE2NSwyNy40NzgxNDE0IDkuMzgsMjUuNTEgTDE0LjQ4LDI1LjUxIEwxNC40OCwyMy42MiBMOS40LDIzLjYyIEM5LjAwMzEwMzQxLDIxLjU5NjcxODQgNy4yNzkyMjg2MSwyMC4xMDM3OTMzIDUuMjIsMjAgQzcuMDI5NjYyLDEyLjY2MDgxNTYgMTIuMzI5OTg3OCw2LjY3OTM0OTMzIDE5LjM5ODEzNzcsMy45OTk4NDE2NyBDMjYuNDY2Mjg3NiwxLjMyMDMzNDAxIDM0LjM5OTgyNDksMi4yODQ4OTUwOSA0MC42Miw2LjU4IEw0MS43Niw1IEMzNC44NzEyMDIzLDAuMjQwMTA1NDM2IDI2LjA1Njg5NjIsLTAuNzU0OTk5NTc2IDE4LjI4MDI2NzEsMi4zNDkyMTg0NSBDMTAuNTAzNjM4LDUuNDUzNDM2NDggNC43OTc0NDg0NiwxMi4yNDQ3MjY5IDMuMDgsMjAuNDQgQzEuNDk2NTIyMTEsMjEuMTczNTUzMSAwLjQ4MzEyOTA0NSwyMi43NTk4NjMyIDAuNDgzMTI5MDQ1LDI0LjUwNSBDMC40ODMxMjkwNDUsMjYuMjUwMTM2OCAxLjQ5NjUyMjExLDI3LjgzNjQ0NjkgMy4wOCwyOC41NyBDNS40ODIyMTUyMiw0MC4xNjkxMjA3IDE1LjY5NDc0MTYsNDguNDkwMjgzOSAyNy41NCw0OC41MDAwNDg0IEMzMi43NzU2NDA2LDQ4LjUxMDM0NzkgMzcuODc5OTE1MSw0Ni44NjE0MzYxIDQyLjEyLDQzLjc5IEw0MSw0Mi4xNyBaIE0yLjUsMjQuNSBDMi40OTA4MTUzMSwyMy4yMjg0MzU4IDMuNDM3NTg3MzQsMjIuMTUyNTU4NSA0LjcsMjEuOTk5OTc5OSBMNSwyMS45OTk5Nzk5IEM2LjAxMjA1NTc4LDIxLjk5NTk1MTcgNi45MjY3MTExLDIyLjYwMjQ4MzggNy4zMTY4MTYzOCwyMy41MzYzNDIgQzcuNzA2OTIxNjYsMjQuNDcwMjAwMiA3LjQ5NTUwNzY3LDI1LjU0NzEzMDkgNi43ODEzMDYwMiwyNi4yNjQyMDA4IEM2LjA2NzEwNDM2LDI2Ljk4MTI3MDcgNC45OTEwMjk3MiwyNy4xOTY5OTk0IDQuMDU1NjE1NDcsMjYuODEwNjQwMSBDMy4xMjAyMDEyMSwyNi40MjQyODA5IDIuNTEwMDA4MSwyNS41MTIwNjM5IDIuNTEsMjQuNSBMMi41LDI0LjUgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuODYsMjIgTDQuNzEsMjIgTDQuODYsMjIgWiIgaWQ9IlBhdGgiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNTAsMjkgQzUyLjM2NDU2MzQsMjkuMDAxNDk4MiA1NC4zMjY5NTA1LDI3LjE3MjcwMTMgNTQuNDkxODg5OSwyNC44MTM4OTcxIEM1NC42NTY4Mjk0LDIyLjQ1NTA5MyA1Mi45NjgwNTIxLDIwLjM3MDk4ODMgNTAuNjI2MjkwOSwyMC4wNDMzOTY1IEM0OC4yODQ1Mjk2LDE5LjcxNTgwNDcgNDYuMDg4Njc3LDIxLjI1NjQ4MzkgNDUuNiwyMy41NyBMNDAuNCwyMy41NyBMNDAuNCwxMS4yIEw0My4xLDExLjIgQzQzLjQwMjg1LDEzLjUwODcwNDIgNDUuNDE2OTA2NywxNS4yMDUwNzE4IDQ3Ljc0MzQ5MDUsMTUuMTExMDQ1MSBDNTAuMDcwMDc0NCwxNS4wMTcwMTg1IDUxLjk0MDY3MjEsMTMuMTYzNjU2MyA1Mi4wNTYyMzA2LDEwLjgzODA0MjUgQzUyLjE3MTc4OSw4LjUxMjQyODY5IDUwLjQ5NDEzNzEsNi40ODI3NTYgNDguMTg4MzM1MSw2LjE1ODU0ODY4IEM0NS44ODI1MzMsNS44MzQzNDEzNSA0My43MTAyMjk1LDcuMzIyNjkxMDEgNDMuMTgsOS41OSBMMzkuNSw5LjU0IEMzOS4yNDMzMDY2LDkuNDg1MzU5MTMgMzguOTc1ODkzOCw5LjU1NTM0MTI3IDM4Ljc3ODg3MzEsOS43Mjg3MTk0NCBDMzguNTgxODUyNSw5LjkwMjA5NzYyIDM4LjQ3ODQzOSwxMC4xNTg0NDI2IDM4LjUsMTAuNDIgTDM4LjUsMjMuNTQgTDMwLjgxLDIzLjU0IEwzMC44MSwyNS4zOSBMMzguNSwyNS4zOSBMMzguNSwzOC40NyBDMzguNSwzOS4wMjIyODQ3IDM4Ljk0NzcxNTMsMzkuNDcgMzkuNSwzOS40NyBMNDIuNjQsMzkuNDcgQzQzLjA5NDkwMzksNDEuNzM3ODk3MiA0NS4xOTUwNDM4LDQzLjI5MTU0NiA0Ny40OTY3OTMzLDQzLjA2Mjk3NTMgQzQ5Ljc5ODU0MjcsNDIuODM0NDA0NyA1MS41NTIxMTY4LDQwLjg5ODA3MDUgNTEuNTUyMTE2OCwzOC41ODUgQzUxLjU1MjExNjgsMzYuMjcxOTI5NSA0OS43OTg1NDI3LDM0LjMzNTU5NTMgNDcuNDk2NzkzMywzNC4xMDcwMjQ3IEM0NS4xOTUwNDM4LDMzLjg3ODQ1NCA0My4wOTQ5MDM5LDM1LjQzMjEwMjggNDIuNjQsMzcuNyBMNDAuNDYsMzcuNyBMNDAuNDEsMjUuMzggTDQ1LjYsMjUuMzggQzQ2LjAyMjIyNzgsMjcuNDc3NjUyOCA0Ny44NjAyOTg3LDI4Ljk4OTg4MzkgNTAsMjkgWiBNNTAsMjIgQzUxLjM4MDcxMTksMjIgNTIuNSwyMy4xMTkyODgxIDUyLjUsMjQuNSBDNTIuNSwyNS44ODA3MTE5IDUxLjM4MDcxMTksMjcgNTAsMjcgQzQ4LjYxOTI4ODEsMjcgNDcuNSwyNS44ODA3MTE5IDQ3LjUsMjQuNSBDNDcuNSwyMy4xMTkyODgxIDQ4LjYxOTI4ODEsMjIgNTAsMjIgWiBNNDcuNSw4LjA5IEM0OC41MDgwMDM3LDguMDk0MDgwNjkgNDkuNDE0MTA2NCw4LjcwNTQ5NDUzIDQ5Ljc5NTE1NTIsOS42Mzg3MDkzMSBDNTAuMTc2MjA0MSwxMC41NzE5MjQxIDQ5Ljk1NzAxNzQsMTEuNjQyODE0NCA0OS4yMzk5NTU5LDEyLjM1MTI3MTIgQzQ4LjUyMjg5NDQsMTMuMDU5NzI3OSA0Ny40NDk0MzYxLDEzLjI2NTk3MDkgNDYuNTIwODg5NCwxMi44NzM2ODQgQzQ1LjU5MjM0MjYsMTIuNDgxMzk3MSA0NC45OTE5MTE4LDExLjU2Nzk3OTUgNDUsMTAuNTYgQzQ0Ljk5OTk3ODYsOS44OTYxMzEwNyA0NS4yNjUwNjA4LDkuMjU5NzM5OTMgNDUuNzM2MzYwOSw4Ljc5MjE5NTE1IEM0Ni4yMDc2NjExLDguMzI0NjUwMzcgNDYuODQ2MTUyNSw4LjA2NDY2NzcyIDQ3LjUxLDguMDcgTDQ3LjUsOC4wOSBaIE00NywzNS45OTk5NzY2IEM0OC4zNDE3OTE0LDM1Ljk5NDI1NTYgNDkuNDQ4ODMxNywzNy4wNDg3ODMgNDkuNTA4MjUwMywzOC4zODkyNzA1IEM0OS41Njc2Njg5LDM5LjcyOTc1NzkgNDguNTU4MjczMyw0MC44NzgwOTg3IDQ3LjIyMTIzNiw0MC45OTEwOTY1IEM0NS44ODQxOTg3LDQxLjEwNDA5NDIgNDQuNjk2Mzk2LDQwLjE0MTQ0NjQgNDQuNTI5OTk1NCwzOC44MSBMNDQuNTI5OTk1NCwzOC44MSBDNDQuNTI5OTk1NCwzOC43MSA0NC41Mjk5OTU0LDM4LjYxIDQ0LjUyOTk5NTQsMzguNTEgQzQ0LjUyOTY0NjEsMzguMzMxNjE5IDQ0LjU0OTc3NzksMzguMTUzNzg3NSA0NC41OSwzNy45OCBMNDQuNTksMzcuOTggQzQ0LjgzNjAwMjMsMzYuODQwMzkxMSA0NS44MzQzMTY3LDM2LjAyMDE5OTEgNDcsMzUuOTk5OTc2NiBMNDcsMzUuOTk5OTc2NiBaIiBpZD0iU2hhcGUiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+",
     "download_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS/releases/download/v1.0.2/com.mattermost.aws-sns-1.0.2.tar.gz",
