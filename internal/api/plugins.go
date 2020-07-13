@@ -33,11 +33,17 @@ func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
 	filter := u.Query().Get("filter")
 	serverVersion := u.Query().Get("server_version")
 
+	enterprisePlugins, err := parseBool(u, "enterprise_plugins", false)
+	if err != nil {
+		return nil, err
+	}
+
 	return &model.PluginFilter{
-		Page:          page,
-		PerPage:       perPage,
-		Filter:        filter,
-		ServerVersion: serverVersion,
+		Page:              page,
+		PerPage:           perPage,
+		Filter:            filter,
+		ServerVersion:     serverVersion,
+		EnterprisePlugins: enterprisePlugins,
 	}, nil
 }
 

@@ -18,7 +18,6 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
-	svg "github.com/h2non/go-is-svg"
 	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
@@ -32,7 +31,6 @@ func init() {
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
 	generatorCmd.PersistentFlags().String("database", "plugins.json", "Path to the plugins database to update.")
 
-	generatorCmd.Flags().String("github-token", "", "The optional GitHub token for API requests.")
 	generatorCmd.Flags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
 }
 
@@ -67,7 +65,7 @@ var generatorCmd = &cobra.Command{
 		}
 
 		includePreRelease, _ := command.Flags().GetBool("include-pre-release")
-		githubToken, _ := command.Flags().GetString("github-token")
+		githubToken := os.Getenv("GITHUB_TOKEN")
 
 		var client *github.Client
 
@@ -100,15 +98,6 @@ var generatorCmd = &cobra.Command{
 			"mattermost-plugin-webex",
 		}
 
-		iconPaths := map[string]string{
-			"mattermost-plugin-aws-SNS": "data/icons/aws-sns.svg",
-			"mattermost-plugin-github":  "data/icons/github.svg",
-			"mattermost-plugin-gitlab":  "data/icons/gitlab.svg",
-			"mattermost-plugin-jenkins": "data/icons/jenkins.svg",
-			"mattermost-plugin-jira":    "data/icons/jira.svg",
-			"mattermost-plugin-webex":   "data/icons/webex.svg",
-		}
-
 		plugins := []*model.Plugin{}
 
 		for _, repositoryName := range repositoryNames {
@@ -120,21 +109,25 @@ var generatorCmd = &cobra.Command{
 				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
 			}
 
-			for _, plugin := range releasePlugins {
-				if len(plugin.IconData) == 0 {
-					if iconPath, ok := iconPaths[repositoryName]; ok {
-						var iconData string
-						iconData, err = getIconDataFromPath(iconPath)
-						if err != nil {
-							return errors.Wrapf(err, "failed to fetch icon for repository %s", repositoryName)
-						}
-						plugin.IconData = iconData
-					}
-				}
+			plugins = append(plugins, releasePlugins...)
+		}
 
-				plugins = append(plugins, plugin)
+		// Ensure mannally added plugin are still keeped in the database
+		manuallyAdded := []*model.Plugin{}
+		for _, ep := range existingPlugins {
+			found := false
+			for _, p := range plugins {
+				if p.DownloadURL == ep.DownloadURL {
+					found = true
+				}
+			}
+
+			if !found {
+				manuallyAdded = append(manuallyAdded, ep)
 			}
 		}
+
+		plugins = append(plugins, manuallyAdded...)
 
 		err = pluginsToDatabase(dbFile, plugins)
 		if err != nil {
@@ -436,19 +429,6 @@ func getIconDataFromTarFile(file []byte, path string) (string, error) {
 	return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(iconData)), nil
 }
 
-func getIconDataFromPath(path string) (string, error) {
-	icon, err := ioutil.ReadFile(path)
-	if err != nil {
-		return "", errors.Wrapf(err, "failed to open icon at path %s", path)
-	}
-
-	if !svg.Is(icon) {
-		return "", errors.Wrapf(err, "icon at path %s is not svg", path)
-	}
-
-	return fmt.Sprintf("data:image/svg+xml;base64,%s", base64.StdEncoding.EncodeToString(icon)), nil
-}
-
 // InitCommand parses the log level flag
 func InitCommand(command *cobra.Command) error {
 	debug, err := command.Flags().GetBool("debug")
@@ -486,6 +466,22 @@ func pluginsToDatabase(path string, plugins []*model.Plugin) error {
 	if path == "" {
 		return errors.New("database name must not be empty")
 	}
+
+	// Sort plugin before writing to DB.
+	// First ASC by id, then DESC by version.
+	sort.SliceStable(
+		plugins,
+		func(i, j int) bool {
+			switch strings.Compare(plugins[i].Manifest.Id, plugins[j].Manifest.Id) {
+			case -1:
+				return true
+			case 1:
+				return false
+			default:
+				return semver.MustParse(plugins[i].Manifest.Version).GT(semver.MustParse(plugins[j].Manifest.Version))
+			}
+		},
+	)
 
 	file, err := os.OpenFile(path, os.O_RDWR, 0644)
 	if err != nil {

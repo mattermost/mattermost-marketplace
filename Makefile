@@ -6,6 +6,7 @@ BUILD_HASH_SHORT = $(shell git rev-parse --short HEAD)
 LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildTag=$(BUILD_TAG)"
 LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHash=$(BUILD_HASH)"
 LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHashShort=$(BUILD_HASH_SHORT)"
+LDFLAGS += -X "main.upstreamURL=$(BUILD_UPSTREAM_URL)"
 SLS_STAGE ?= "dev"
 
 ## Checks the code style, tests, builds and bundles.
@@ -73,7 +74,7 @@ deploy-lambda-fast: clean build-lambda
 ## Update plugins.json
 .PHONY: plugins.json
 plugins.json:
-	go run ./cmd/generator --github-token $(GITHUB_TOKEN) --database plugins.json --debug
+	go run ./cmd/generator --database plugins.json --debug
 
 ## Clean all generated files
 .PHONY: clean

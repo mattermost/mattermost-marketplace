@@ -13,6 +13,11 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/store"
 )
 
+var (
+	// upstreamURL may be compiled into the binary by defining $BUILD_UPSTREAM_URL
+	upstreamURL = ""
+)
+
 var logger *logrus.Logger
 
 func main() {
@@ -22,7 +27,7 @@ func main() {
 	}
 }
 
-func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.Store, error) {
+func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.StaticStore, error) {
 	statikFS, err := fs.New()
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to open statik fileystem")
@@ -34,7 +39,7 @@ func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.Store,
 	}
 	defer database.Close()
 
-	statikStore, err := store.New(database, logger)
+	statikStore, err := store.NewStaticFromReader(database, logger)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to initialize store")
 	}
@@ -45,14 +50,25 @@ func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.Store,
 func listenAndServe() error {
 	logger = logrus.New()
 
-	statikStore, err := newStatikStore("/plugins.json", logger)
+	var apiStore store.Store
+	var err error
+	apiStore, err = newStatikStore("/plugins.json", logger)
 	if err != nil {
 		return err
 	}
 
+	if upstreamURL != "" {
+		upstreamStore, err := store.NewProxy(upstreamURL, logger)
+		if err != nil {
+			return errors.Wrap(err, "failed to initialize upstream store")
+		}
+
+		apiStore = store.NewMerged(logger, apiStore, upstreamStore)
+	}
+
 	router := mux.NewRouter()
 	api.Register(router, &api.Context{
-		Store:  statikStore,
+		Store:  apiStore,
 		Logger: logger,
 	})
 
