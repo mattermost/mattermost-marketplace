@@ -27,10 +27,11 @@ func (store *Proxy) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 	client := api.NewClient(store.marketplaceURL)
 
 	plugins, err := client.GetPlugins(&api.GetPluginsRequest{
-		Page:          pluginFilter.Page,
-		PerPage:       pluginFilter.PerPage,
-		Filter:        pluginFilter.Filter,
-		ServerVersion: pluginFilter.ServerVersion,
+		Page:              pluginFilter.Page,
+		PerPage:           pluginFilter.PerPage,
+		Filter:            pluginFilter.Filter,
+		ServerVersion:     pluginFilter.ServerVersion,
+		EnterprisePlugins: pluginFilter.EnterprisePlugins,
 	})
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to reach upstream store")

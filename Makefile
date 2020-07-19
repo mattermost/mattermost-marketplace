@@ -64,17 +64,17 @@ build-lambda: generate
 ## Deploy the lambda stack
 .PHONY: deploy-lambda
 deploy-lambda: clean build-lambda
-	sls deploy --verbose --stage $(SLS_STAGE)
+	serverless deploy --verbose --stage $(SLS_STAGE)
 
 ## Deploy the lambda function only to an existing stack
 .PHONY: deploy-lambda-fast
 deploy-lambda-fast: clean build-lambda
-	sls deploy function -f server --stage $(SLS_STAGE)
+	serverless deploy function -f server --stage $(SLS_STAGE)
 
 ## Update plugins.json
 .PHONY: plugins.json
 plugins.json:
-	go run ./cmd/generator --github-token $(GITHUB_TOKEN) --database plugins.json --debug
+	go run ./cmd/generator --database plugins.json --debug
 
 ## Clean all generated files
 .PHONY: clean

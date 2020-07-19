@@ -102,11 +102,11 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
                 export AWS_ACCESS_KEY_ID=$AWS_STAGING_ACCESS_KEY_ID
                 export AWS_SECRET_ACCESS_KEY=$AWS_STAGING_SECRET_ACCESS_KEY
-                sudo -E sls deploy function -f server --stage staging
+                sudo -E serverless deploy function -f server --stage staging
             elif [ "${CIRCLE_BRANCH}" == "production" ]; then
                 export AWS_ACCESS_KEY_ID=$AWS_PRODUCTION_ACCESS_KEY_ID
                 export AWS_SECRET_ACCESS_KEY=$AWS_PRODUCTION_SECRET_ACCESS_KEY
-                sudo -E sls deploy function -f server --stage production
+                sudo -E serverless deploy function -f server --stage production
             else
                 echo "Unexpected branch ${CIRCLE_BRANCH}"
                 exit 1

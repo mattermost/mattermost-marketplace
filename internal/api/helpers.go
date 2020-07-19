@@ -20,3 +20,17 @@ func parseInt(u *url.URL, name string, defaultValue int) (int, error) {
 
 	return value, nil
 }
+
+func parseBool(u *url.URL, name string, defaultValue bool) (bool, error) {
+	valueStr := u.Query().Get(name)
+	if valueStr == "" {
+		return defaultValue, nil
+	}
+
+	value, err := strconv.ParseBool(valueStr)
+	if err != nil {
+		return false, errors.Wrapf(err, "failed to parse %s as boolean", name)
+	}
+
+	return value, nil
+}

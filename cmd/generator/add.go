@@ -17,8 +17,9 @@ func init() {
 	generatorCmd.AddCommand(addCmd)
 
 	addCmd.Flags().Bool("beta", false, "Mark release as Beta")
-	addCmd.Flags().Bool("official", false, "Mark this plugin as maintanied by Mattermost")
-	addCmd.Flags().Bool("community", false, "Mark this plugin as maintanied by the Open Source Community")
+	addCmd.Flags().Bool("official", false, "Mark this plugin as maintained by Mattermost")
+	addCmd.Flags().Bool("community", false, "Mark this plugin as maintained by the Open Source Community")
+	addCmd.Flags().Bool("enterprise", false, "Mark this plugin as only available to installations with an E20-only plugins license")
 }
 
 var addCmd = &cobra.Command{
@@ -38,6 +39,11 @@ var addCmd = &cobra.Command{
 		}
 
 		community, err := command.Flags().GetBool("community")
+		if err != nil {
+			return err
+		}
+
+		enterprise, err := command.Flags().GetBool("enterprise")
 		if err != nil {
 			return err
 		}
@@ -117,6 +123,10 @@ var addCmd = &cobra.Command{
 			labels = append(labels, model.CommunityLabel)
 		}
 
+		if enterprise {
+			labels = append(labels, model.EnterpriseLabel)
+		}
+
 		plugin := &model.Plugin{
 			HomepageURL:     manifest.HomepageURL,
 			IconData:        iconData,
@@ -125,6 +135,7 @@ var addCmd = &cobra.Command{
 			Labels:          labels,
 			Signature:       signature,
 			Manifest:        manifest,
+			Enterprise:      enterprise,
 			UpdatedAt:       time.Now().In(time.UTC),
 		}
 
