@@ -1,44 +1,14 @@
 [
   {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
+    "homepage_url": "",
     "icon_data": "",
-    "download_url": "https://community-release.mattermost.com/files/whkodtzuz7g5ujqyabfph9ntar/public?h=QtOrQjLdnx08PQWO3go1i7OoXkOV5Yv0CX6RWNg2ADM",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.2.1",
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6glVsACgkQ0bVLR6XO/sRVSRAAlugCGZqOqOdklFlQooGfoHkFGdXHC9bG4TeHwwgayboTdRWjkZhZ2cAog5rSk+QoNWvwlu42F53FftwylczPisobdyn/Gq0mMYwLwzxwFbYN4dADPNhiCDXSYnt6ddyGE/y7KR5fRibL2XVq+uGI9T3Ix7u1RltVAh2dAqiAi2j7jHSoe43D55hAv2XwXm4JKDT/10C+ig/6bHIFTFsV6kstEgH+uf59lNBv9qn38O45TB6ES2BztYYWTwtLDqHmVasKMCjPzVEsnclMp/QWPQpMsbZgCRalM12NaRUldKHYNm0GzHPCL2l3R70lB7T7MmYOvqf/g39vQ2/TG9Vp249xN1WFHYvxu2iKeDLs1M2mDL0x78859QOnFJaok2ohpmZnmQhVA2N4AV3uNoAOIzxtJ9YXIWNCMAwgaJ7nA+ezOC8kROZh0/a/dIkIzg+TFXySiLqgwnjnrPu+qLbK6cvYSCdZLy20rcninu/0WkG3ymuyyKRt0QkblOJLhDj3P1Gy1OVpJVhAiYXbog5Lzxexk/Q4zjWT0ySVIT6GQhDVz8cxCYMaL8HztrLXOEokQjn7Y5cXtm1tuXWrtnMcjJbhn9XaUFSGHCgZe1aKFicVwPWyp6MWyApA5vSWaNo0Nvg3fDPI6F5gyNcYEGLTGWRnlVGgV6gTH+Q3EKU+r1g=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v0.2.2.tar.gz",
+    "release_notes_url": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8USAAACgkQ0bVLR6XO/sQVmQ/+IIKNdxDhIxpnQx8WuxF9nN3RWLBeL8cuv/OU5PjCIPMLKg1r3jHmq8QZ72mKyNY8lhoLjMEqacEMADulqTJA12dqKuSp9E+WSCeXaSu3rhYjZWtf86jjHsH50eWY5StXCXfQsl3jlQvQis36IXoRZ6BbzYnMNTY9Tin0RXqJS5Yod6FgG/i/WpEpwqu9rm9V6RRqgch+mcrfaaXmcJhxrFqlHHyGbchSxzItO0VkP28gGXcgypI+qv/0H1Gkn9KQ6xYq0dlkeY0TE60+Y40iMS1p/4WPIBeYoahvgFO4ugL/f5daXICNTPCnwltoOQw/G/MzKMU8nJ0sy2NvTNSaPV6AcJGroFtNklW7E+Qxg+0MHAXEztPR2Q8xOTqAADXaECJ1Ck7cTjCusYind7zyqEGLNE1JxaNICQMr5NiqckRfckBhm/5hGTo1KLghUlXQCym+jTH/ydPJaLK2Lb9Gks9ZrZ0vGPPGh22WRV6iikfjqhqjCOtd3BiJDTaegOnyE6xOPc2da1VjkrhDwiqCGQw8t0z1JW4eDop4E280rQzU9iAhhYJAVLDdUMGXpyk4RVJFa/Lzf+e5qVIs4IW3LW+k7xpGdFUIAUcPlCoMVMy2Dai8dwAy7DWVpqk8FaQTSYOyo2xwIaoBYwqYL7ITC/jfI5df8lOuo2S3phayR2Q=",
     "manifest": {
-      "id": "com.mattermost.plugin-incident-response",
-      "name": "Incident Response",
-      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
-      "version": "0.2.1",
-      "min_server_version": "5.12.0",
-      "server": {
-        "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
-          "darwin-amd64": "server/dist/plugin-darwin-amd64",
-          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        }
-      },
-      "webapp": {
-        "bundle_path": "webapp/dist/main.js"
-      },
-      "settings_schema": {
-        "header": "",
-        "footer": "",
-        "settings": []
-      }
-    },
-    "updated_at": "2020-04-22T00:00:00Z"
-  },
-  {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
-    "icon_data": "",
-    "download_url": "https://community-daily.mattermost.com/files/hms4jx5jzbnddyeqk5qfsb1zdw/public?h=-JJ70-mWtMnNYwI9aV_2S3phmQvYwGvqmKPj8bR716g",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.2.2",
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6ht38ACgkQ0bVLR6XO/sQCHg/+LcVS6KPtZ39j1WxHuGwWufYdqpgllfkP0eY+dVYd0CPgy8d+wByl0WGBhFNFaS9bKi/4umLzQsIqpW7dUr4y6oBhiDaeVQrDl4JhVFkA1VeipCp+pRVqUV0t7d4v75DcPXgwK7P1ahs0xo4DMFSKpmcZ4B9BtnBTfgqceOQaDS+aSwUfEe/cYVq7oe/K0RITXCcYjcG8x4Jt6unwVHPhd6dlkrLvkcWp0aqXUp4YKEL3/bXB6AsRIzAiunIN8NAzkcaSDXjFOavJw9gi+b1I/zAas6mvUFULXOU5zO/hVUuPmXP5Gppmlp7fmEH+j7oG7VQZpqt2k9ynKUz4EHSgtX2eP5D5M8J/q8UHw4HCViNFIeJCHwZzc0pKOKrRJ12tnfSskugbKTOaRpp3VbyhmiIn+TBqusd2k/fwaMGLdls9ZbL7gJDgkJfxmzCVztxF+vQVylo9nUgXAhSsaBVwUvQAgdqom5YzSbr9O8BpSciG1EZGHq+E/t5a0D1ohrsWcBnmPh+9Ctys+rxtQ3DiiWJp/5xORnyUMELsdWu3XDbcT6SkJD27L1O1t4m/i0NaxCF3N9zYONdWv/ezGulZFhmMbgSqOEf4JHSETLThz52YuV1w/nA3lZi8G+akjxGfOQ9lrJnWLcy6Z0W5afvY2kzG7NXanTPFxyC+KRzajpM=",
-    "manifest": {
-      "id": "com.mattermost.plugin-incident-response",
-      "name": "Incident Response",
-      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "id": "com.mattermost.plugin-channel-export",
+      "name": "Channel Export",
+      "description": "This plugin allows channel export into a human readable format.",
       "version": "0.2.2",
       "min_server_version": "5.12.0",
       "server": {
@@ -46,7 +16,8 @@
           "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        }
+        },
+        "executable": ""
       },
       "webapp": {
         "bundle_path": "webapp/dist/main.js"
@@ -57,97 +28,8 @@
         "settings": []
       }
     },
-    "updated_at": "2020-04-23T00:00:00Z"
-  },
-  {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
-    "icon_data": "",
-    "download_url": "https://community-daily.mattermost.com/files/swotzz4zkjyx9j9ozxgztq5soa/public?h=_7H7EwjuPkSfHMaSZpvJshdOh0-W_-NvQf0d2rjYrTw",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.2.3",
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6h3dEACgkQ0bVLR6XO/sS/3hAAiTLMOkfh1XX7A0WwaalHH0PGdZl/XXfhw0XDS80SDfm4YA006gFEJjrAQdGLIptxxEwWk5EHdPbUrY2I3MmhHcSKGAMnqIUsX2GVgrlRJEmxo/ZURd2uNOs1lg72KV9gwjgJfbhR7ffEOETQISgyqojgw2LyEzr/Tx5EQiiAxEtOUgbJdECJ/tAXbRIXpRjLSV92/HFh7LAQzqpDeRoQF2QZyof20jH322g0GPbP6XWLt7xG5hvgW8KH1ei4FCrduFtzgeR6elYn9LQG4st98MuT/e+oVTlNHgSu3oJfNixsIgFunoAqdnd0KoJrAJP3//sEis+BFlTIyXZ0s06jDyyflPVM4CKOT8YvGNLOEAjaqmYX0F1SoNXYjJ5kARulNZ+UJLYag8smKKRMfMWkM8JbLFc8W0jB7gJvZucJqDbZ5JYndczuufEdgR4J/nxB+/UT3+GqW+ePrmPYKbcd3AJq+XNDmP92FBEKOA2tFE5X18zpIYahZI6LdOMzCShdStmVaFirJAgNXLRfHuzaFPNLLdZzO6iyBuDFj7wf8y+CYEUDaozWwAiQVXVj8iphSPb1omo989QyPeC7z3jhwla9GHGBwv/0CxONAE36uye1Y5r8miLj19l4hkKhmw3dQizYN07lCmCVI1b7EZHxq9VDMPoYDnsmpNKwN2k/yrA=",
-    "manifest": {
-      "id": "com.mattermost.plugin-incident-response",
-      "name": "Incident Response",
-      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
-      "version": "0.2.3",
-      "min_server_version": "5.12.0",
-      "server": {
-        "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
-          "darwin-amd64": "server/dist/plugin-darwin-amd64",
-          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        }
-      },
-      "webapp": {
-        "bundle_path": "webapp/dist/main.js"
-      },
-      "settings_schema": {
-        "header": "",
-        "footer": "",
-        "settings": []
-      }
-    },
-    "updated_at": "2020-04-23T12:00:00Z"
-  },
-  {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
-    "icon_data": "",
-    "download_url": "https://community-daily.mattermost.com/files/d8xgembwpinn5py1gaeo8yppfy/public?h=nmZBpL3MwVkSQw5icnWgQOqtPIyudeMtTmiqRzET5bA",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.3.0",
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6rlZMACgkQ0bVLR6XO/sTibQ/8DEJ+GKrq88np27CZESBBxjXEQyY/9DbCd4mwQ07Ox0Q5qsAT8VDxNiCSENsMHUhG8kL+/wWlDo9yLnek4txFLe4PioHSb18odfOlCbhHBARTKU9MxE3T+oGVqYso6U0qXb5CaYgUsYpZcVFLhvhO6j/YibnNoDUsFvkiKak/4b/IlJIBUclkmUQy362YoCrm4t4qGwDD/FYibbVa6tqoVKl162OMyn8jjzJZUkilA6tIWq710HHYR/FbZkxswrRQUqB9tPDvaIsCmY4ku/1bKAAVjqc/UNxCkxeHIBI+Ayv+xrPQUHy4M68FlE+ZoSCXgg2Ec86BDI7/4QzzyPUvT/M+24MuuDD7oZElVR3BCUyyl8ztJH5vSfEoRkyDbc2t/8Rt/Nq0lVo+hWMcDHzVHqeRKrQTUze9N4A8M71ekeJkzIMhaR/CLRJP4I+hmUnUbe9C3SKc5IlHhjQ5BVTp79EIBDaxvgbRBSelxDQj+po2qdwPaEN84Gb5w1MqQCI+TOFuhmXiahd3RcXppjgHuedOyRQikMO2uI3jc7bORx1CIJkUJU4YGJbPfw2Ll9KMYxHVaXOjMwrDawg8V0r/M1palw7jAZ1tqcprY5zSiMnul8gK1J1qLgBaN7V1+0FY+o8E88knvGqQLCj44OU+m4tN2ULfASD2hElAhfv09q0=",
-    "manifest": {
-      "id": "com.mattermost.plugin-incident-response",
-      "name": "Incident Response",
-      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
-      "version": "0.3.0",
-      "min_server_version": "5.12.0",
-      "server": {
-        "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
-          "darwin-amd64": "server/dist/plugin-darwin-amd64",
-          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        }
-      },
-      "webapp": {
-        "bundle_path": "webapp/dist/main.js"
-      },
-      "settings_schema": {
-        "header": "",
-        "footer": "",
-        "settings": []
-      }
-    },
-    "updated_at": "2020-05-01T00:00:00Z"
-  },
-  {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
-    "icon_data": "",
-    "download_url": "https://community-release.mattermost.com/files/kzyj79xjb7bipxack4ggg414ga/public?h=FviQOEs_tlwXkuajKG0_UL6PgfUdNVO9Y34d2SSR8FE",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.3.1",
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6wBL4ACgkQ0bVLR6XO/sR9fQ/+KcEMNslRyFkuIa4fiBNdSloa2Nvwo4Dmdyr1EOqy3ynWqwQC/WjzkNrAEEpTV4F61LLiXYGc0vnxJCO1LnalCQW9bmszSPuV1/BlZ3Mlg+S/yvDfA4oqUGYw4VrjxUiOoroa9QEqItCsGCNvcF7h/b5cZLVvYiXEykAEmzYPuhF+wp8mt+lskN4G9Cv0AQLIaGezsZ2yzwtCTop8V5pN6pgqlHPWvS+uWEYG0EFOZ5RGhZcgIRNDtbqmWZCtnElrTBH8bSNfBwQ/s8LnPEg2Y+cg7ZfXKVDwArzVFXT1xbIshwvqC2W77BBg+Vs6f+7eCY8OtNZ10h+bQ3Q7hMFYDzll/Oz3IaZtIN5S0kJfW8NGObng/c1+ceGVhkmzjE6z3HEUy63zfEwd7dybyLy3sBG5ow1RavsLpyliEEI4HhPIzR0Vd566qS2D3vuMWEVrROFbTUGuHmo+XN1XJAjw3n8gid+dYYoJhKqsWf0NoMaRAFhhnUQKfmVzafXA0hnh5QM9U7IFkV/RmpbMm9S+Ow/VMY40ZBx+zq9DbBpVx4xeFqmGFUgTHoxtN2M0rOi0hvxqGAI1SNOVXFnG00pTL+2D1pVjYN7QVoUIfDc1wMm7sL8gPXxnnp1ExPjoV0Ce5ZtH0kVLNUsQmPDzWhZhXNk6Sp3nfn0+bufh7nRyXOo=",
-    "manifest": {
-      "id": "com.mattermost.plugin-incident-response",
-      "name": "Incident Response",
-      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
-      "version": "0.3.1",
-      "min_server_version": "5.12.0",
-      "server": {
-        "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
-          "darwin-amd64": "server/dist/plugin-darwin-amd64",
-          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        }
-      },
-      "webapp": {
-        "bundle_path": "webapp/dist/main.js"
-      },
-      "settings_schema": {
-        "header": "",
-        "footer": "",
-        "settings": []
-      }
-    },
-    "updated_at": "2020-05-04T00:00:00Z"
+    "enterprise": false,
+    "updated_at": "2020-07-19T13:20:19.85048Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
@@ -166,7 +48,8 @@
           "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        }
+        },
+        "executable": ""
       },
       "webapp": {
         "bundle_path": "webapp/dist/main.js"
@@ -177,6 +60,167 @@
         "settings": []
       }
     },
+    "enterprise": false,
     "updated_at": "2020-05-29T00:00:00Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
+    "icon_data": "",
+    "download_url": "https://community-release.mattermost.com/files/kzyj79xjb7bipxack4ggg414ga/public?h=FviQOEs_tlwXkuajKG0_UL6PgfUdNVO9Y34d2SSR8FE",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.3.1",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6wBL4ACgkQ0bVLR6XO/sR9fQ/+KcEMNslRyFkuIa4fiBNdSloa2Nvwo4Dmdyr1EOqy3ynWqwQC/WjzkNrAEEpTV4F61LLiXYGc0vnxJCO1LnalCQW9bmszSPuV1/BlZ3Mlg+S/yvDfA4oqUGYw4VrjxUiOoroa9QEqItCsGCNvcF7h/b5cZLVvYiXEykAEmzYPuhF+wp8mt+lskN4G9Cv0AQLIaGezsZ2yzwtCTop8V5pN6pgqlHPWvS+uWEYG0EFOZ5RGhZcgIRNDtbqmWZCtnElrTBH8bSNfBwQ/s8LnPEg2Y+cg7ZfXKVDwArzVFXT1xbIshwvqC2W77BBg+Vs6f+7eCY8OtNZ10h+bQ3Q7hMFYDzll/Oz3IaZtIN5S0kJfW8NGObng/c1+ceGVhkmzjE6z3HEUy63zfEwd7dybyLy3sBG5ow1RavsLpyliEEI4HhPIzR0Vd566qS2D3vuMWEVrROFbTUGuHmo+XN1XJAjw3n8gid+dYYoJhKqsWf0NoMaRAFhhnUQKfmVzafXA0hnh5QM9U7IFkV/RmpbMm9S+Ow/VMY40ZBx+zq9DbBpVx4xeFqmGFUgTHoxtN2M0rOi0hvxqGAI1SNOVXFnG00pTL+2D1pVjYN7QVoUIfDc1wMm7sL8gPXxnnp1ExPjoV0Ce5ZtH0kVLNUsQmPDzWhZhXNk6Sp3nfn0+bufh7nRyXOo=",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-response",
+      "name": "Incident Response",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "version": "0.3.1",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-05-04T00:00:00Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
+    "icon_data": "",
+    "download_url": "https://community-daily.mattermost.com/files/d8xgembwpinn5py1gaeo8yppfy/public?h=nmZBpL3MwVkSQw5icnWgQOqtPIyudeMtTmiqRzET5bA",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.3.0",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6rlZMACgkQ0bVLR6XO/sTibQ/8DEJ+GKrq88np27CZESBBxjXEQyY/9DbCd4mwQ07Ox0Q5qsAT8VDxNiCSENsMHUhG8kL+/wWlDo9yLnek4txFLe4PioHSb18odfOlCbhHBARTKU9MxE3T+oGVqYso6U0qXb5CaYgUsYpZcVFLhvhO6j/YibnNoDUsFvkiKak/4b/IlJIBUclkmUQy362YoCrm4t4qGwDD/FYibbVa6tqoVKl162OMyn8jjzJZUkilA6tIWq710HHYR/FbZkxswrRQUqB9tPDvaIsCmY4ku/1bKAAVjqc/UNxCkxeHIBI+Ayv+xrPQUHy4M68FlE+ZoSCXgg2Ec86BDI7/4QzzyPUvT/M+24MuuDD7oZElVR3BCUyyl8ztJH5vSfEoRkyDbc2t/8Rt/Nq0lVo+hWMcDHzVHqeRKrQTUze9N4A8M71ekeJkzIMhaR/CLRJP4I+hmUnUbe9C3SKc5IlHhjQ5BVTp79EIBDaxvgbRBSelxDQj+po2qdwPaEN84Gb5w1MqQCI+TOFuhmXiahd3RcXppjgHuedOyRQikMO2uI3jc7bORx1CIJkUJU4YGJbPfw2Ll9KMYxHVaXOjMwrDawg8V0r/M1palw7jAZ1tqcprY5zSiMnul8gK1J1qLgBaN7V1+0FY+o8E88knvGqQLCj44OU+m4tN2ULfASD2hElAhfv09q0=",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-response",
+      "name": "Incident Response",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "version": "0.3.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-05-01T00:00:00Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
+    "icon_data": "",
+    "download_url": "https://community-daily.mattermost.com/files/swotzz4zkjyx9j9ozxgztq5soa/public?h=_7H7EwjuPkSfHMaSZpvJshdOh0-W_-NvQf0d2rjYrTw",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.2.3",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6h3dEACgkQ0bVLR6XO/sS/3hAAiTLMOkfh1XX7A0WwaalHH0PGdZl/XXfhw0XDS80SDfm4YA006gFEJjrAQdGLIptxxEwWk5EHdPbUrY2I3MmhHcSKGAMnqIUsX2GVgrlRJEmxo/ZURd2uNOs1lg72KV9gwjgJfbhR7ffEOETQISgyqojgw2LyEzr/Tx5EQiiAxEtOUgbJdECJ/tAXbRIXpRjLSV92/HFh7LAQzqpDeRoQF2QZyof20jH322g0GPbP6XWLt7xG5hvgW8KH1ei4FCrduFtzgeR6elYn9LQG4st98MuT/e+oVTlNHgSu3oJfNixsIgFunoAqdnd0KoJrAJP3//sEis+BFlTIyXZ0s06jDyyflPVM4CKOT8YvGNLOEAjaqmYX0F1SoNXYjJ5kARulNZ+UJLYag8smKKRMfMWkM8JbLFc8W0jB7gJvZucJqDbZ5JYndczuufEdgR4J/nxB+/UT3+GqW+ePrmPYKbcd3AJq+XNDmP92FBEKOA2tFE5X18zpIYahZI6LdOMzCShdStmVaFirJAgNXLRfHuzaFPNLLdZzO6iyBuDFj7wf8y+CYEUDaozWwAiQVXVj8iphSPb1omo989QyPeC7z3jhwla9GHGBwv/0CxONAE36uye1Y5r8miLj19l4hkKhmw3dQizYN07lCmCVI1b7EZHxq9VDMPoYDnsmpNKwN2k/yrA=",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-response",
+      "name": "Incident Response",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "version": "0.2.3",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-04-23T12:00:00Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
+    "icon_data": "",
+    "download_url": "https://community-daily.mattermost.com/files/hms4jx5jzbnddyeqk5qfsb1zdw/public?h=-JJ70-mWtMnNYwI9aV_2S3phmQvYwGvqmKPj8bR716g",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.2.2",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6ht38ACgkQ0bVLR6XO/sQCHg/+LcVS6KPtZ39j1WxHuGwWufYdqpgllfkP0eY+dVYd0CPgy8d+wByl0WGBhFNFaS9bKi/4umLzQsIqpW7dUr4y6oBhiDaeVQrDl4JhVFkA1VeipCp+pRVqUV0t7d4v75DcPXgwK7P1ahs0xo4DMFSKpmcZ4B9BtnBTfgqceOQaDS+aSwUfEe/cYVq7oe/K0RITXCcYjcG8x4Jt6unwVHPhd6dlkrLvkcWp0aqXUp4YKEL3/bXB6AsRIzAiunIN8NAzkcaSDXjFOavJw9gi+b1I/zAas6mvUFULXOU5zO/hVUuPmXP5Gppmlp7fmEH+j7oG7VQZpqt2k9ynKUz4EHSgtX2eP5D5M8J/q8UHw4HCViNFIeJCHwZzc0pKOKrRJ12tnfSskugbKTOaRpp3VbyhmiIn+TBqusd2k/fwaMGLdls9ZbL7gJDgkJfxmzCVztxF+vQVylo9nUgXAhSsaBVwUvQAgdqom5YzSbr9O8BpSciG1EZGHq+E/t5a0D1ohrsWcBnmPh+9Ctys+rxtQ3DiiWJp/5xORnyUMELsdWu3XDbcT6SkJD27L1O1t4m/i0NaxCF3N9zYONdWv/ezGulZFhmMbgSqOEf4JHSETLThz52YuV1w/nA3lZi8G+akjxGfOQ9lrJnWLcy6Z0W5afvY2kzG7NXanTPFxyC+KRzajpM=",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-response",
+      "name": "Incident Response",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "version": "0.2.2",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-04-23T00:00:00Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
+    "icon_data": "",
+    "download_url": "https://community-release.mattermost.com/files/whkodtzuz7g5ujqyabfph9ntar/public?h=QtOrQjLdnx08PQWO3go1i7OoXkOV5Yv0CX6RWNg2ADM",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v0.2.1",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6glVsACgkQ0bVLR6XO/sRVSRAAlugCGZqOqOdklFlQooGfoHkFGdXHC9bG4TeHwwgayboTdRWjkZhZ2cAog5rSk+QoNWvwlu42F53FftwylczPisobdyn/Gq0mMYwLwzxwFbYN4dADPNhiCDXSYnt6ddyGE/y7KR5fRibL2XVq+uGI9T3Ix7u1RltVAh2dAqiAi2j7jHSoe43D55hAv2XwXm4JKDT/10C+ig/6bHIFTFsV6kstEgH+uf59lNBv9qn38O45TB6ES2BztYYWTwtLDqHmVasKMCjPzVEsnclMp/QWPQpMsbZgCRalM12NaRUldKHYNm0GzHPCL2l3R70lB7T7MmYOvqf/g39vQ2/TG9Vp249xN1WFHYvxu2iKeDLs1M2mDL0x78859QOnFJaok2ohpmZnmQhVA2N4AV3uNoAOIzxtJ9YXIWNCMAwgaJ7nA+ezOC8kROZh0/a/dIkIzg+TFXySiLqgwnjnrPu+qLbK6cvYSCdZLy20rcninu/0WkG3ymuyyKRt0QkblOJLhDj3P1Gy1OVpJVhAiYXbog5Lzxexk/Q4zjWT0ySVIT6GQhDVz8cxCYMaL8HztrLXOEokQjn7Y5cXtm1tuXWrtnMcjJbhn9XaUFSGHCgZe1aKFicVwPWyp6MWyApA5vSWaNo0Nvg3fDPI6F5gyNcYEGLTGWRnlVGgV6gTH+Q3EKU+r1g=",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-response",
+      "name": "Incident Response",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "version": "0.2.1",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-04-22T00:00:00Z"
   }
 ]
