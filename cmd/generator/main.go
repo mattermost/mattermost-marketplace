@@ -96,7 +96,6 @@ var generatorCmd = &cobra.Command{
 			"mattermost-plugin-gitlab",
 			"mattermost-plugin-nps",
 			"mattermost-plugin-webex",
-			"mattermost-plugin-todo",
 		}
 
 		plugins := []*model.Plugin{}
