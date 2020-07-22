@@ -1648,10 +1648,52 @@
     "updated_at": "2019-06-12T19:04:44Z"
   },
   {
-    "homepage_url": "",
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
     "icon_data": "",
-    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.2.0.tar.gz",
-    "release_notes_url": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/download/v0.3.0/com.mattermost.plugin-todo-0.3.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/tag/v0.3.0",
+    "labels": [
+      {
+        "name": "Beta",
+        "description": "This plugin is currently in Beta and is not recommended for use in production.",
+        "url": "https://mattermost.com/pl/default-beta-plugins",
+        "color": ""
+      }
+    ],
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8R41QACgkQ0bVLR6XO/sQjNw//XntEUtX86Q/BZ87UtdTbRGSOTFbgCaYou7ALao6aaMa+72S6Occtwsh8pvXjAcoFU013+wdffk6J4xguYlrMHIgMIXPWiVYxEBULAaQ2lpa4fWGHYSHvLhHi7bYAWHiQA2kkL413szdrWdVnseYIP4nDq/rIgog9BpIROJHr0d3xo7wcR+cmLahC/ftpgfjFwaS6e+4TRdAOKmiBFsJXPn3MULVzwDxIvelPFPl3fvL5x7trhD8lVaZF4Q9wESG4uY9078qCjUTn1o/FiryMH7Y3Q494Djp/H6qDD/cE1GkkJqsb5G9+O3B/9NmZSXOrNKu4eovgDUTJKEj5RKehsdhI9bSt67Fyzx/it7SX8ZIQreUXHbWW8Yhir0qCoNVBXUD+mriUwXvHh7ye3HykvsNoxum3xwTpQ2GV5iWZmbpbbFPEvxmoOqKRn7M202zyBcbdInjbA2eFNVul2NXbMlB2t2FgaJaggaTRaXrbFWSxjSmqYSajA/er1ckr/RjVF0zj9nyby7WpDiE5iyJUCj4TQwLyy4DyKtbaU8NSnXNbLwWg17G8PZfKi/nibW1IgbfBJXAlpwXVuSgnNCkxU7/eNeyMIIgVb1J9idduXidwiYcrR6Jev0WxWmVX2hK6NMo7OY4jawg8S9YE2SpUlmE2VnaVEBuQkVDyhm4b4+c=",
+    "manifest": {
+      "id": "com.mattermost.plugin-todo",
+      "name": "Todo",
+      "description": "This plugin makes it easy to keep track of Todo issues and get daily reminders.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-todo/issues",
+      "version": "0.3.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-07-17T08:44:02Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
+    "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/download/v0.2.0/com.mattermost.plugin-todo-0.2.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/tag/v0.2.0",
     "labels": [
       {
         "name": "Beta",
@@ -1685,7 +1727,47 @@
       }
     },
     "enterprise": false,
-    "updated_at": "2020-04-22T18:12:27.541293964Z"
+    "updated_at": "2020-04-21T17:20:23Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
+    "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/download/v0.1.0/com.mattermost.plugin-todo-0.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/tag/v0.1.0",
+    "labels": [
+      {
+        "name": "Beta",
+        "description": "This plugin is currently in Beta and is not recommended for use in production.",
+        "url": "https://mattermost.com/pl/default-beta-plugins",
+        "color": ""
+      }
+    ],
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6f3U4ACgkQ0bVLR6XO/sSGdBAAgRSEXwumxpAvEhc+kuEXd5CmgSlkg9CmM3F5WXkiDSnMmTw8ny7sUJeNyA1mDejDKu1bsTDI4eFqzB7mwDLyQ659LcbXzXSurt0ByKSdH8whZsNPaZzlnatrVOvVC8IKREUw5Axrf7U2mNkwiKxCbmmUdPJqs0m12sOSWgTgxr7hcroFfkTtowzuRviEkWlsnbjM2vnpm6+C03yn7q99VyT2VbbVyrnQRaFrjyPSmt1dbYVofGNxp3PiOU4tw4/SUXZEmyzpQqXb4elTBlTsQSzrSKQXwup8H8vOSNhbl424ywFj9ZIfmILMcWSMYswW8aXeSB/9kULx3AQh5RQ6LpJICBCAywaj+ey4maKheZLv6iVcBNaLL3nopaCISMyotvQIGLts4pRQ6Ory6e8u35mb8QpnRpi6NQqEfrV8n20SC+FgrzRY24rthw0+CB5hWlLTTLESC4TjZu5cKxZ8KQE3mwrm8sMSkI/uNizoLx9SMW11S9A7goMQv/yjB/bJJ9OWOwhgspXSAsXbOGprfTn0QZV97rPwi5bJ+zl2g6u9c2x2K/z4KqhbiI0Bh5kNmtH6qGBRR8yg7z8d3oJbS6iFk6++h7Yh3MNg8YWFEIUIIo8wXfNcCvajuVAfU7G0grjgeT8hIgj+aDEmXuX9a8iuGRqWjzEzqnGejPkT4Hc=",
+    "manifest": {
+      "id": "com.mattermost.plugin-todo",
+      "name": "To Do Plugin",
+      "description": "This plugin makes it easy to keep track of to do items and get daily reminders.",
+      "version": "0.1.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2019-11-28T00:39:38Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-webex",
