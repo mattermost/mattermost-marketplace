@@ -1650,8 +1650,8 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
     "icon_data": "",
-    "download_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/download/v0.3.0/com.mattermost.plugin-todo-0.3.0.tar.gz",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/tag/v0.3.0",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0.tar.gz",
+    "release_notes_url": "",
     "labels": [
       {
         "name": "Beta",
@@ -1687,7 +1687,7 @@
       }
     },
     "enterprise": false,
-    "updated_at": "2020-07-17T08:44:02Z"
+    "updated_at": "2020-07-31T12:27:24.868496179Z"
   },
   {
     "homepage_url": "",
