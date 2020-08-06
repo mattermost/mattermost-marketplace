@@ -106,6 +106,7 @@ workflows:
     jobs:
       - build
       - deploy:
+          context: mattermost-marketplace
           requires:
             - build
           filters:
