@@ -16,16 +16,6 @@ references:
     attach_workspace:
       at: *workspace_root
 
-aliases:
-- &restore_cache
-  restore_cache:
-    key: go-mod-v1-{{ checksum "go.sum" }}
-- &save_cache
-  save_cache:
-    key: go-mod-v1-{{ checksum "go.sum" }}
-    paths:
-    - "/go/pkg/mod"
-
 commands:
   check-uncommitted:
     description: Check for uncommitted changes.
@@ -76,12 +66,10 @@ jobs:
     steps:
       - checkout
       - install-golangci-lint
-      - *restore_cache
       - run: make check-style
       - run: make test
       - run: make build
       - check-uncommitted
-      - *save_cache
       - persist_to_workspace:
           root: *workspace_root
           paths:
