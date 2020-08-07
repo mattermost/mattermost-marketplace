@@ -6,7 +6,7 @@ executors:
       - image: circleci/golang:1.14
   deploy:
     docker:
-      - image: circleci/node:8.10
+      - image: circleci/node:12
 
 references:
   workspace_root: &workspace_root
