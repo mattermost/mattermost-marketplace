@@ -4099,6 +4099,62 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
     "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/download/v1.2.1/mattermost-autolink-1.2.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.2.1",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl82aTQACgkQ0bVLR6XO/sSC6g/+P8q/6jsP8WrmE5Kw1Fg+sxHPh/YJ/b/CkiVUBKte50y+6vJ5rCrwX6gsH6zjdjc4aE2OKf+hXWWf2f1Yd/ldB+rYHCqA/MvCGZwxNfJlkjbKN+b6ylGNDENIlvi9InnYZvqKotZOw2yG6yKAOEkhFIJSV58JPKKGI44VtNawc3Xy/IDtetu35bmd+Rwr/ofvzLzXDyyz2qkGxygpvj+bkU5ALPm5RYHslfWq9ASIo9pLWRk1KGx7lZOyHPKnSBi809NhK/Sokh0cQFxugJ5hgI0gtx+Z1+kNlu6ugyiaLxQPHkCC34dG33p1peuEF83M00IYP/YbxF/oPwhxGpEGwSrSmNzdE7unOe8wZyqjiYeLKkzQHgUXO6jsj5mHacGIZSaCgEOigvFPN0hUWKJQKyw663yI8oEduvhWiUqht5n+y11SuBPoGY1fqg0IkLRYPe5Anv5fIhQc74onuc1jZ9l5lxeKf1qsrrikgz6ltuHA7RuWPb+lh4Ds9tI0pbec/Crcg7KX4unqXMayxK4JrRsFLSPswYeA8EXLQl4SSkovuCETZZt+hQPBTrEQ38WtETsEwJ+lnkrxkvTPMoEx2/To0uONAY+zLk9JAlIXHXj8fjSDjAj/rMpjYRghbHiAdPzquLDJcdXDsuPe5SlvAJT57RXltcWPOTydO6IR5I0=",
+    "manifest": {
+      "id": "mattermost-autolink",
+      "name": "Autolink",
+      "description": "Automatically rewrite text matching a regular expression into a Markdown link.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-autolink/issues",
+      "version": "1.2.1",
+      "min_server_version": "5.16.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file, or using the /autolink command. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-autolink/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-autolink).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableAdminCommand",
+            "display_name": "Enable administration with /autolink command",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "EnableOnUpdate",
+            "display_name": "Apply plugin to updated posts as well as new posts",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "PluginAdmins",
+            "display_name": "Admin User IDs",
+            "type": "text",
+            "help_text": "Comma-separated list of userIDs authorized to administer the plugin in addition to the System Admins.\n \nUser IDs can be found by navigating to **System Console** > **Users**.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-08-14T10:36:13Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+    "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/download/v1.2.0/mattermost-autolink-1.2.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.2.0",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6LZe8ACgkQ0bVLR6XO/sSb6hAAnigt1JsZ02YTjbOfUUlL96PA5+eQT6U4+kILz5B/l4/vROwpNbDxwUshCtM+/t1H4/xy0Rm+QGzOpgzG9wrE+zIPQRM2gS7F5zigpdObo6qG8+9PatMflD8K+b4Hrwo0uOKJtCExzNJwvj/G5w4CgRBWFRIppLF66LqQwboFWrq8dbd4iS3TmsTD5hPeZohqM8mQsPfNrNcKeXzmkkWnc1Z9u7sPL7PSMx8i1qbNfhZ4lM+4UT1UDP6hB56dtTUDVzMWKt5fgzNJR/wxVfTpQ77H1+ZWPuwD7WfudB9Eli7c0AmOwj3nuBwaB4E3IFZRxoMvVy35gy9Fpk/jX7f05dF6GRFc+AJz0XJjhbXuxz6aKt4uZwb7nmW7rLNok93n1zKE0Caq/eF+RgBWbRq4BMaaNXnzTIoo+n7yU5B9CLGfiETYB61RrKJRUWMdgId3TlkCN+lgJGK6PmVarmLNM+ciWipgDD6Gu74OofMU+FbsxOVk2J/tzQf9LmsBckfUhNW0sZBCrZZ2hwdcXR3zWXbKf7kEWS8GJhCgidmUBcCClUwc18BCNb9GYugoRkgltGSB901jnSxD+usfvz4wrZoaYPAo3zv5+/xeSystprISFgmo7YU5kmHvrefGvr0kRlifkd/njOgNFE7P3zCmmXYfHY5d1WDuF+rsfIFHLFs=",
