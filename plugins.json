@@ -1,10 +1,10 @@
 [
   {
-    "homepage_url": "",
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-channel-export",
     "icon_data": "",
-    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v0.2.2.tar.gz",
-    "release_notes_url": "",
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8USAAACgkQ0bVLR6XO/sQVmQ/+IIKNdxDhIxpnQx8WuxF9nN3RWLBeL8cuv/OU5PjCIPMLKg1r3jHmq8QZ72mKyNY8lhoLjMEqacEMADulqTJA12dqKuSp9E+WSCeXaSu3rhYjZWtf86jjHsH50eWY5StXCXfQsl3jlQvQis36IXoRZ6BbzYnMNTY9Tin0RXqJS5Yod6FgG/i/WpEpwqu9rm9V6RRqgch+mcrfaaXmcJhxrFqlHHyGbchSxzItO0VkP28gGXcgypI+qv/0H1Gkn9KQ6xYq0dlkeY0TE60+Y40iMS1p/4WPIBeYoahvgFO4ugL/f5daXICNTPCnwltoOQw/G/MzKMU8nJ0sy2NvTNSaPV6AcJGroFtNklW7E+Qxg+0MHAXEztPR2Q8xOTqAADXaECJ1Ck7cTjCusYind7zyqEGLNE1JxaNICQMr5NiqckRfckBhm/5hGTo1KLghUlXQCym+jTH/ydPJaLK2Lb9Gks9ZrZ0vGPPGh22WRV6iikfjqhqjCOtd3BiJDTaegOnyE6xOPc2da1VjkrhDwiqCGQw8t0z1JW4eDop4E280rQzU9iAhhYJAVLDdUMGXpyk4RVJFa/Lzf+e5qVIs4IW3LW+k7xpGdFUIAUcPlCoMVMy2Dai8dwAy7DWVpqk8FaQTSYOyo2xwIaoBYwqYL7ITC/jfI5df8lOuo2S3phayR2Q=",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-channel-export/releases/download/v0.2.2/com.mattermost.plugin-channel-export-0.2.2.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-channel-export/releases/tag/v0.2.2",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8qv9EACgkQ0bVLR6XO/sQ2thAAhKHvWx9qifDVZKOdG8c7lA74t6mCeQK7QMDCyynXnfjKlQxU3gQWNiNa99KCyn5g5RNbMphhW6mi0Koo9DCMuwk9V+eWXzcxjkaEPKq1Pjw+/tsniXfBbD5iIOTzd5s3CfyN9kEXA7Wi4pq4X9RggsPPgRCzO4oC1X4gim8bn4OwEZT26l5ALILJI0wheWapI/E2LqiPAXLUhsy3aMfnx+swpy0BgE4zef5eA34RdnmpEGfGhKHVylYhanbHbadO7Mv4auGUyqgXI41nZL/GyqnqMVklv+suLWlCMxRyLMSR+l4DvLJth2OiIwmGuGnXQqQJggW13HsZaJHwIU/yIXc9J4pn2YOpRM7FZ+nP1WxfpNdg2vwLdvmf+LbBgwFeo9Xh8vmZ1uoSERYG9Q0g7DcJDz8hvcvYivJDFfpNq8TYskZ21F9u/SBRD/jkXLNIkJ2MwESQxt5MuVXVEEeI44RHN2dqIEoxe5ufDmZcUAlmb3SC2cZHObrJPt8YGo5WO+oViRSD9Ii2JnNg0DsjyZ7Yz8YlyfgOusRX+GuI68KddQ6WUZGA0OES8c44TEr7VSCY0xMlMFLtg8u4ZTFTe6JxfrspSxjB3e2mSjfo4czzO21a40Of4eUa+TDh7oI6h7FaSmO8qj10HOmJSJpWsPHpkuQvUXIjA7+S6ieSrjU=",
     "manifest": {
       "id": "com.mattermost.plugin-channel-export",
       "name": "Channel Export",
@@ -29,7 +29,7 @@
       }
     },
     "enterprise": false,
-    "updated_at": "2020-07-19T13:20:19.85048Z"
+    "updated_at": "2020-08-05T13:26:52Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",

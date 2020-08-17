@@ -84,18 +84,7 @@ var generatorCmd = &cobra.Command{
 		ctx := context.Background()
 
 		repositoryNames := []string{
-			"mattermost-plugin-github",
-			"mattermost-plugin-autolink",
-			"mattermost-plugin-zoom",
-			"mattermost-plugin-jira",
-			"mattermost-plugin-welcomebot",
-			"mattermost-plugin-jenkins",
-			"mattermost-plugin-antivirus",
-			"mattermost-plugin-custom-attributes",
-			"mattermost-plugin-aws-SNS",
-			"mattermost-plugin-gitlab",
-			"mattermost-plugin-nps",
-			"mattermost-plugin-webex",
+			"mattermost-plugin-channel-export",
 		}
 
 		plugins := []*model.Plugin{}
