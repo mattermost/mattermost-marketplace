@@ -23,7 +23,15 @@ Please link to an open source repository and release that should be used for rev
 
 ## Checklist
 <!--
-Go through this checklist and confirm every item. If your plugin doesn't fulfill every item, leave a comment explaining why.
+Go through this checklist and confirm every item.
+
+It's fine, if your plugin doesn't fullfil every item i.e. isn't production ready yet. You can still submit it!
+You can still do code changes while the plugin is in review and fix issues on the fly.
+
+Even if your plugin isn't production ready, it might still still be added to the Marketplace as "Beta".
+See https://developers.mattermost.com/extend/plugins/community-plugin-marketplace/#beta-plugins for more details.
+
+If your plugin isn't production ready, please leave a comment stating if you plan to fulfill the whole checklist or intending to submit a "Beta" plugin.
 -->
 
 **Product requirements**
