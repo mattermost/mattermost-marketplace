@@ -6,7 +6,7 @@ executors:
       - image: circleci/golang:1.14
   deploy:
     docker:
-      - image: circleci/node:8.10
+      - image: circleci/node:12
 
 references:
   workspace_root: &workspace_root
@@ -15,16 +15,6 @@ references:
   attach_workspace: &attach_workspace
     attach_workspace:
       at: *workspace_root
-
-aliases:
-- &restore_cache
-  restore_cache:
-    key: go-mod-v1-{{ checksum "go.sum" }}
-- &save_cache
-  save_cache:
-    key: go-mod-v1-{{ checksum "go.sum" }}
-    paths:
-    - "/go/pkg/mod"
 
 commands:
   check-uncommitted:
@@ -76,7 +66,6 @@ jobs:
     steps:
       - checkout
       - install-golangci-lint
-      - *restore_cache
       - run: make check-style
       - run: make test
       - run:
@@ -86,7 +75,6 @@ jobs:
             fi
             make build
       - check-uncommitted
-      - *save_cache
       - persist_to_workspace:
           root: *workspace_root
           paths:
@@ -127,6 +115,7 @@ workflows:
     jobs:
       - build
       - deploy:
+          context: mattermost-marketplace
           requires:
             - build
           filters:
