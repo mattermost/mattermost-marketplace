@@ -18,7 +18,7 @@
 - @aaronrothschild [One Pager](https://docs.google.com/document/d/1K7LIGRIx6Sf_6G45NXdTomu11gOooxFRRXCEwO2tktg/edit#heading=h.pc1irnjhwvr2)
 - @aaronrothschild [PR/FAQ](https://docs.google.com/document/d/1EBQscdgKe-wBpKNGYLs0sjmYEhkim0c2q6Dp5WwLdFo/edit#heading=h.perm8j7zlw83)
 - @larkox [Integrations 2.0](https://docs.google.com/document/d/1I3DHAPkq3uoS_1HkspPCIUgRucoruEk9E79BrYZoYCI/edit#heading=h.lsoce012579h)
-- @marianunez [Actions] #TODO find link
+- @marianunez [Actions](https://docs.google.com/document/d/138uxYyUdjFFecB-tD3JWV7dTVxBBQjIo-cX7pGblI3E/edit)
 - @aaronrothschild [Nimbella PR/FAQ](https://docs.google.com/document/d/1ie7Qdtr0s8AZ3DsHbrfVh696ApyVEARxVJwy45qEQVg/edit) - command-centric
 
 ### Legacy.
