@@ -19,6 +19,8 @@ All interactive user actions in Cloud Apps result in executing commands.
 - [Interactive commands](#interactive-commands) are Interactive Dialogs, or Bot
   Conversations.
 
+- Dani Q: As raised in the architecture document, do the embedded commands contain the actions on the UI that have been implemented on mobile plugins?
+
 ## Slash Commands.
 **Commands** are traditionally submitted from the message box, by typing a
 `/<trigger>`.
@@ -114,8 +116,19 @@ User-Agent: mattermost-5.xxx
     },
 }
 ```
+
+- Dani Q: Do we need so much handling over the command on client side? At the end of the day, the client should be agnostic on the command, so shouldn't it just send the "raw" part and let the integration handle it the way it wants?
+- Dani Q: context is heavily dependant on the source. For example, an action from the main menu may be agnostic of the current channel. Are we having that in mind?
+- Dani Q: Should we break from the present concept of slash command and work more HTTP oriented? I mean, triggering a command should be the same, whether it is a slash command or a embedded command. Therefore, what we are triggering is not a "/jira create-issue" command. We are triggering a requestURL endpoint, with a source "slash command", a content "/jira create-issue", and some relevant context (in this case, current channel id, current user id and current team id, maybe).
+
 ## Command Request Expansion: 
 - #TODO.
 
 ## Command Response.
 - #TODO.
+
+## Error handling.
+- Dani Q: Endpoint becomes unreachable, or returns an unexpected response (e.g. 500). How do we want to show this? My proposal.
+When a user performs a command, and the command for whatever reason returns an unexpected response (404, 500...), a toast will appear informing the user that there has been an error with the error information.
+Another possibility would be to return a ephemeral message, but that would require that every pluggable location is aware of the current active channel, and sometimes that may not be possible or practical.
+Any event sent from the server side to an endpoint that returns an unexpected response will trigger a log warn message specifying the integration, the integration owner id (if installed by a user), the endpoint, and the error.
