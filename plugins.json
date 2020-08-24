@@ -92,6 +92,98 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM4cHgiIGhlaWdodD0iMzExcHgiIHZpZXdCb3g9IjAgMCAzMzggMzExIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+Z2l0bGFiPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImdpdGxhYiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Imc0NCIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzM3LjE3LDE3Ny44MyBMMzE4LjI2LDExOS43MSBMMjgwLjg0LDQuNDMgQzI3OS45NTY2MDIsMS43OTI1OTE5IDI3Ny40ODY0MjMsMC4wMTQ5MTQ4NDAxIDI3NC43MDUsMC4wMTQ5MTQ4NDAxIEMyNzEuOTIzNTc3LDAuMDE0OTE0ODQwMSAyNjkuNDUzMzk4LDEuNzkyNTkxOSAyNjguNTcsNC40MyBMMjMxLjE1LDExOS42NCBMMTA2LjgyLDExOS42NCBMNjkuNCw0LjQzIEM2OC41MjIwOTY1LDEuNzg5Nzk2NDIgNjYuMDUyMzM1MywwLjAwODMwODEyMTk1IDYzLjI3LDAuMDA4MzA4MTIxOTUgQzYwLjQ4NzY2NDcsMC4wMDgzMDgxMjE5NSA1OC4wMTc5MDM1LDEuNzg5Nzk2NDIgNTcuMTQsNC40MyBMMTkuNzgsMTE5LjY0IEwwLjg3LDE3Ny44MyBDLTAuODUzMzI4OTE3LDE4My4xMjk2OSAxLjAyNzE0ODQ1LDE4OC45MzY1NzIgNS41MywxOTIuMjIgTDE2OSwzMTEgTDMzMi40NCwxOTIuMjIgQzMzNi45NjMzMjUsMTg4Ljk1MTQyMSAzMzguODcxOTU0LDE4My4xNDQ4MzEgMzM3LjE3LDE3Ny44MyIgaWQ9InBhdGg0NiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNi4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRTI0MzI5Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTAiIHBvaW50cz0iNjMgMTkxLjkxIDYzIDE5MS45MSAxMjUuMTYgMC42MyAwLjg3IDAuNjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkM2RDI2Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTgiIHBvaW50cz0iMTUwIDE5MS45MSA4Ny44MiAwLjYzIDAuODIgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDQTMyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuNzUsMC42OSBMMTkuNzUsMC42OSBMMC44NCw1OC44MSBDLTAuODgzMzI4OTE3LDY0LjEwOTY4OTggMC45OTcxNDg0NTEsNjkuOTE2NTcxNiA1LjUsNzMuMiBMMTY5LDE5MiBMMTkuNzUsMC42OSBaIiBpZD0icGF0aDY2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Imc3MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNzgsMTE5LjY5IEw4Ny44OSwxMTkuNjkgTDUwLjQsNC40OSBDNDkuNTE2NjAxNiwxLjg1MjU5MTkgNDcuMDQ2NDIzLDAuMDc0OTE0ODQwMSA0NC4yNjUsMC4wNzQ5MTQ4NDAxIEM0MS40ODM1NzcsMC4wNzQ5MTQ4NDAxIDM5LjAxMzM5ODQsMS44NTI1OTE5IDM4LjEzLDQuNDkgTDAuNzgsMTE5LjY5IFoiIGlkPSJwYXRoNzQiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzc2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0icGF0aDc4IiBwb2ludHM9IjAgMTkxLjkxIDYyLjE2IDAuNjMgMTQ5LjMgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnODAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkNBMzI2Ij4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNDkuMjQsMC42OSBMMTQ5LjI0LDAuNjkgTDE2OC4xNSw1OC44MSBDMTY5Ljg4MzI2MSw2NC4xMDk2Nzk1IDE2OC4wMDA4OTMsNjkuOTIyNDAyMyAxNjMuNDksNzMuMiBMMCwxOTEuOTEgTDE0OS4yLDAuNjkgTDE0OS4yNCwwLjY5IFoiIGlkPSJwYXRoODIiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzg0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTg3LjI4LDExOS42OSBMMC4xOCwxMTkuNjkgTDM3LjYsNC40OSBDMzguNDc3OTAzNSwxLjg0OTc5NjQyIDQwLjk0NzY2NDcsMC4wNjgzMDgxMjE5IDQzLjczLDAuMDY4MzA4MTIxOSBDNDYuNTEyMzM1MywwLjA2ODMwODEyMTkgNDguOTgyMDk2NSwxLjg0OTc5NjQyIDQ5Ljg2LDQuNDkgTDg3LjI4LDExOS42OSBaIiBpZD0icGF0aDg2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/download/v1.2.0/com.github.manland.mattermost-plugin-gitlab-1.2.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/tag/v1.2.0",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl9Duq8ACgkQ0bVLR6XO/sT6EBAAj0lc5celO63p3DFodcVpYWn78Ew6554diwlHM+xG0sJDo6WduIrmDU/6F1S2IGtvtUBOw+kKGBBVq9s0v2jA6v7u5z0EdDSIXiwP9mdIXOyJqtddb8CWBaPbkUfAbib8+LKQ7rNPjsEBzjP4YM60t01NkeRc/9s+X/p+DD5X+xNJpuxMbcmmFQCkeMFRXSSeQwFbLGfGU0xWgEDW07dyk2A43Y2k22Inkfq+rT3ZK6EpvEhilk12I9akoQWzBDE61Un5HRkrsV8PWKFai9hQjRqjhNqQ9QvgEEuRq+bUCSXiQlhekeJn4PQAIBXBRfuKvsbD0iUItEUaguPdJrcmg8tFwK1IeZ9gNaA5gJEpBLhHzFkL5LdQ7pp0dhc6h9hd7eTOERbXSY/ttvPxznHTa0h2RGy20XZzhcjg2dUTa4CfqgzKwqynFM520ac6aBQhiKL8ixlb5MWkuaGEwbLB/vQLm2HsK7aWjYFuCl9QmTEUlu7cXqThBBAPOscR9xrS8C4LXQGWTxOygz56SA7PuXe2BHO9K2fGiJwrlgo4l1qNpRmLW4oOiwXYMZIMVi/CBQZoyxZVF+TYvur5dHILl7/nRC2/DwXEGyQzpfvIGtwmhA+gYK4kJha9XvAjxW1UHMSjVxaUAd2J5qz7e4ctSTxvHQDa57qCgKGg+Qpd2WA=",
+    "manifest": {
+      "id": "com.github.manland.mattermost-plugin-gitlab",
+      "name": "GitLab",
+      "description": "GitLab plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-gitlab/issues",
+      "icon_path": "assets/icon.svg",
+      "version": "1.2.0",
+      "min_server_version": "5.10.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "To set up the GitLab plugin, you need to register a GitLab OAuth app here https://gitlab.com/profile/applications.",
+        "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-gitlab).",
+        "settings": [
+          {
+            "key": "GitlabURL",
+            "display_name": "GitLab URL",
+            "type": "text",
+            "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
+            "placeholder": "https://gitlab.com",
+            "default": "https://gitlab.com"
+          },
+          {
+            "key": "GitlabOAuthClientID",
+            "display_name": "GitLab OAuth Client ID",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitlabOAuthClientSecret",
+            "display_name": "GitLab OAuth Client Secret",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The webhook secret set in GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitlabGroup",
+            "display_name": "GitLab Group",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
+            "placeholder": "groupName",
+            "default": null
+          },
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-08-24T13:03:21Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM4cHgiIGhlaWdodD0iMzExcHgiIHZpZXdCb3g9IjAgMCAzMzggMzExIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+Z2l0bGFiPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImdpdGxhYiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Imc0NCIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzM3LjE3LDE3Ny44MyBMMzE4LjI2LDExOS43MSBMMjgwLjg0LDQuNDMgQzI3OS45NTY2MDIsMS43OTI1OTE5IDI3Ny40ODY0MjMsMC4wMTQ5MTQ4NDAxIDI3NC43MDUsMC4wMTQ5MTQ4NDAxIEMyNzEuOTIzNTc3LDAuMDE0OTE0ODQwMSAyNjkuNDUzMzk4LDEuNzkyNTkxOSAyNjguNTcsNC40MyBMMjMxLjE1LDExOS42NCBMMTA2LjgyLDExOS42NCBMNjkuNCw0LjQzIEM2OC41MjIwOTY1LDEuNzg5Nzk2NDIgNjYuMDUyMzM1MywwLjAwODMwODEyMTk1IDYzLjI3LDAuMDA4MzA4MTIxOTUgQzYwLjQ4NzY2NDcsMC4wMDgzMDgxMjE5NSA1OC4wMTc5MDM1LDEuNzg5Nzk2NDIgNTcuMTQsNC40MyBMMTkuNzgsMTE5LjY0IEwwLjg3LDE3Ny44MyBDLTAuODUzMzI4OTE3LDE4My4xMjk2OSAxLjAyNzE0ODQ1LDE4OC45MzY1NzIgNS41MywxOTIuMjIgTDE2OSwzMTEgTDMzMi40NCwxOTIuMjIgQzMzNi45NjMzMjUsMTg4Ljk1MTQyMSAzMzguODcxOTU0LDE4My4xNDQ4MzEgMzM3LjE3LDE3Ny44MyIgaWQ9InBhdGg0NiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNi4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRTI0MzI5Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTAiIHBvaW50cz0iNjMgMTkxLjkxIDYzIDE5MS45MSAxMjUuMTYgMC42MyAwLjg3IDAuNjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkM2RDI2Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTgiIHBvaW50cz0iMTUwIDE5MS45MSA4Ny44MiAwLjYzIDAuODIgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDQTMyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuNzUsMC42OSBMMTkuNzUsMC42OSBMMC44NCw1OC44MSBDLTAuODgzMzI4OTE3LDY0LjEwOTY4OTggMC45OTcxNDg0NTEsNjkuOTE2NTcxNiA1LjUsNzMuMiBMMTY5LDE5MiBMMTkuNzUsMC42OSBaIiBpZD0icGF0aDY2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Imc3MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNzgsMTE5LjY5IEw4Ny44OSwxMTkuNjkgTDUwLjQsNC40OSBDNDkuNTE2NjAxNiwxLjg1MjU5MTkgNDcuMDQ2NDIzLDAuMDc0OTE0ODQwMSA0NC4yNjUsMC4wNzQ5MTQ4NDAxIEM0MS40ODM1NzcsMC4wNzQ5MTQ4NDAxIDM5LjAxMzM5ODQsMS44NTI1OTE5IDM4LjEzLDQuNDkgTDAuNzgsMTE5LjY5IFoiIGlkPSJwYXRoNzQiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzc2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0icGF0aDc4IiBwb2ludHM9IjAgMTkxLjkxIDYyLjE2IDAuNjMgMTQ5LjMgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnODAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkNBMzI2Ij4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNDkuMjQsMC42OSBMMTQ5LjI0LDAuNjkgTDE2OC4xNSw1OC44MSBDMTY5Ljg4MzI2MSw2NC4xMDk2Nzk1IDE2OC4wMDA4OTMsNjkuOTIyNDAyMyAxNjMuNDksNzMuMiBMMCwxOTEuOTEgTDE0OS4yLDAuNjkgTDE0OS4yNCwwLjY5IFoiIGlkPSJwYXRoODIiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzg0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTg3LjI4LDExOS42OSBMMC4xOCwxMTkuNjkgTDM3LjYsNC40OSBDMzguNDc3OTAzNSwxLjg0OTc5NjQyIDQwLjk0NzY2NDcsMC4wNjgzMDgxMjE5IDQzLjczLDAuMDY4MzA4MTIxOSBDNDYuNTEyMzM1MywwLjA2ODMwODEyMTkgNDguOTgyMDk2NSwxLjg0OTc5NjQyIDQ5Ljg2LDQuNDkgTDg3LjI4LDExOS42OSBaIiBpZD0icGF0aDg2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
     "download_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/download/v1.1.0/com.github.manland.mattermost-plugin-gitlab-1.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/tag/v1.1.0",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl7d56IACgkQ0bVLR6XO/sQFiA/6Ar4IyGHxwvMVlzgNCvOZcYABz0bu41iHzolF37qdJwF1ZKWlC4kraWJSoGjdLznY4SVtBv1q3mLvPfWAaubxsouFMMWT54WQOzRDQfhJulhLPu4Id6HB/TvaKjkLUmNKk3FJi9eQ6zvb2pArmiCNkEVjINIt+f8rAf4ClheGBB/5TOAg/41JfZy0FEIIi/vZVb/9t9qKNrOYocfkWjPR91QF++a4eh8x0y59ZmDDrKBzw2HBD4ldFNzKQGrQJnPhdzQCvOkapydM4mXoASKx8BP4ZdzZj8dPAbI7u4CediI9dtDxk1txjmYICwThwOsTNMp9IX2o+H1dujOAovVgKSJYgu/03dCImz4n+NlRYoI+nnW3frsz2T82Ebsscwb8rLvtfqLdpgRgxJRZYBeBI/u0IGYIU2BvgQoCBCFBoLyxF5/AwTLNYdUyIJAnNIRopt+hJCYMB+59vd7WTMp/2sIOXgJONRpmqAV7ZvcvAgQILntyyzVZ+r2iKrV5kSrJQJds5Vs69dgeYiiLA66W9RKsTyyfkxkaCqq90X11LvUrW4AjtFUq1/iR57Q5E9Rg1pEjaTPenh28Igv9nB63tBmKb5ONnXb7tiOlwgVyQs4pkqsMJqE6o7ca5Nsl9zKSPypBEjX0aA191dh1f8qdmB0LPkXb4j6YkZ/grwGVeX4=",
@@ -990,6 +1082,63 @@
     },
     "enterprise": false,
     "updated_at": "2020-07-08T10:03:43.272030437Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS/",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzRweCIgaGVpZ2h0PSI3NHB4IiB2aWV3Qm94PSIwIDAgNzQgNzQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU3LjEgKDgzMDg4KSAtIGh0dHBzOi8vc2tldGNoLmNvbSAtLT4KICAgIDx0aXRsZT5hd3Mtc25zPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGNpcmNsZSBpZD0icGF0aC0xIiBjeD0iMzciIGN5PSIzNyIgcj0iMzciPjwvY2lyY2xlPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iLTIwLjcxMzQ4JSIgeTE9IjEyMC43MDQ0MjUlIiB4Mj0iMTIwLjcwNzg3NiUiIHkyPSItMjAuNzE2OTMxNSUiIGlkPSJsaW5lYXJHcmFkaWVudC0zIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI0IwMDg0RCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjRkY0RjhCIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImF3cy1zbnMiPgogICAgICAgICAgICA8bWFzayBpZD0ibWFzay0yIiBmaWxsPSJ3aGl0ZSI+CiAgICAgICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgIDx1c2UgaWQ9Ik1hc2siIGZpbGw9IiNEOEQ4RDgiIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgICAgICA8ZyBtYXNrPSJ1cmwoI21hc2stMikiPgogICAgICAgICAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIC0xLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgIDxyZWN0IGlkPSJQaW5rX0dyYWRpZW50IiBmaWxsPSJ1cmwoI2xpbmVhckdyYWRpZW50LTMpIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHg9IjAiIHk9IjAiIHdpZHRoPSI3NSIgaGVpZ2h0PSI3NSI+PC9yZWN0PgogICAgICAgICAgICAgICAgICAgIDxnIGlkPSJJY29uX1Rlc3QiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMC4wMDAwMDAsIDEzLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNDQuNTgsMzcuOTIgTDQ0LjU4LDM4Ljc1IEM0NC41OCwzOC42NSA0NC41OCwzOC41NSA0NC41OCwzOC40NSBDNDQuNTU5ODQxNiwzOC4yNzM5MDg0IDQ0LjU1OTg0MTYsMzguMDk2MDkxNiA0NC41OCwzNy45MiBMNDQuNTgsMzcuOTIgWiIgaWQ9IlBhdGgiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzEuNDUsMTggTDMxLjM1LDE4LjE5IEMzMS4zOTAwMzcxLDE4LjEyODMyMDQgMzEuNDIwMzg5MiwxOC4wNjA4NzE0IDMxLjQ0LDE3Ljk5IEwzMS40NSwxOCBaIiBpZD0iUGF0aCIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMi43OCwxNC41Mjk4NTgxIEMyMS44OSwxNC41Mjk4NTgxIDE0LjAzLDE0LjQ2IDE0LjAzLDE3LjQzIEMxNC4wMjY1NjA4LDE3LjYxODE0ODMgMTQuMDYwNTUyNywxNy44MDUxMDM4IDE0LjEzLDE3Ljk4IEMxNC4xNTkyMzEzLDE4LjA1MTg4MDcgMTQuMTkyNjIxLDE4LjEyMTk5OTIgMTQuMjMsMTguMTkgTDE5LjY3LDMwLjE5IEwxOS42NywzNi40IEMxOS42NywzNy4wMyAxOS45MywzNy40IDIwLjQ4LDM3LjQgTDIwLjc0LDM3LjQgQzIxLjk5NzE3NSwzNy4wNzA5NzY0IDIzLjE2NTM5ODcsMzYuNDY2MzY5NCAyNC4xNiwzNS42MyBMMjQuODMsMzUuMTYgQzI1LjExOTk4MjQsMzQuOTc4Nzc1OCAyNS4yOTcyNTgzLDM0LjY2MTk0MjIgMjUuMywzNC4zMiBMMjUuMywzMC4yMiBMMzEuMzUsMTguMjIgTDMxLjM1LDE4LjIyIEMzMS4zOTAwMzcxLDE4LjE1ODMyMDQgMzEuNDIwMzg5MiwxOC4wOTA4NzE0IDMxLjQ0LDE4LjAyIEMzMS41MDk0NDczLDE3Ljg0NTEwMzggMzEuNTQzNDM5MiwxNy42NTgxNDgzIDMxLjU0LDE3LjQ3IEMzMS41NCwxNC40NiAyMy42OCwxNC41Mjk4NTgxIDIyLjc4LDE0LjUyOTg1ODEgWiBNMjIuNzgsMTYuMzcgQzI2LjMxLDE2LjM3IDI4LjU4LDE2Ljk5IDI5LjM0LDE3LjQzIEMyOC41OCwxNy44NyAyNi4zNCwxOC40OSAyMi43OCwxOC40OSBDMTkuMjIsMTguNDkgMTYuOTksMTcuODcgMTYuMjMsMTcuNDMgQzE3LDE3IDE5LjI1LDE2LjM3IDIyLjc4LDE2LjM3IFogTTIzLjUxLDI5LjM3IEMyMy41MSwyOS41MSAyMy41MSwyOS43NiAyMy41MSwzMC4wMiBMMjMuNTEsMzMuOTMgTDIzLjEyLDM0LjE3IEMyMi41NSwzNC41IDIyLjA1LDM0LjczIDIxLjQ4LDM1LjAzIEwyMS40OCwzMCBDMjEuNDc3NTk5MywyOS44NjI5NDEzIDIxLjQ1MDQ5ODksMjkuNzI3NDM5MSAyMS40LDI5LjYgTDE3LjE0LDE5Ljg2IEMxOC45OTE2MzQyLDIwLjI3MjUxMjggMjAuODgyOTcxOCwyMC40ODA0MjU4IDIyLjc4LDIwLjQ4IEMyNC42MjE5MDk4LDIwLjQ3ODU4MjcgMjYuNDU4NjAyNSwyMC4yODQxODgyIDI4LjI2LDE5LjkgTDIzLjUxLDI5LjM3IFoiIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1ydWxlPSJub256ZXJvIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik00MSw0Mi4xNyBDMzcuMDg1NTQwOCw0NS4wMDMyMDk3IDMyLjM3MjE1MTYsNDYuNTE5NDc4MyAyNy41NCw0Ni41IEMxNi42Niw0Ni41IDcuMzgsMzkuNDMgNS4yLDI5IEM3LjIxNzY2OTM2LDI4LjkwNDAwODcgOC45MjU0NDE2NSwyNy40NzgxNDE0IDkuMzgsMjUuNTEgTDE0LjQ4LDI1LjUxIEwxNC40OCwyMy42MiBMOS40LDIzLjYyIEM5LjAwMzEwMzQxLDIxLjU5NjcxODQgNy4yNzkyMjg2MSwyMC4xMDM3OTMzIDUuMjIsMjAgQzcuMDI5NjYyLDEyLjY2MDgxNTYgMTIuMzI5OTg3OCw2LjY3OTM0OTMzIDE5LjM5ODEzNzcsMy45OTk4NDE2NyBDMjYuNDY2Mjg3NiwxLjMyMDMzNDAxIDM0LjM5OTgyNDksMi4yODQ4OTUwOSA0MC42Miw2LjU4IEw0MS43Niw1IEMzNC44NzEyMDIzLDAuMjQwMTA1NDM2IDI2LjA1Njg5NjIsLTAuNzU0OTk5NTc2IDE4LjI4MDI2NzEsMi4zNDkyMTg0NSBDMTAuNTAzNjM4LDUuNDUzNDM2NDggNC43OTc0NDg0NiwxMi4yNDQ3MjY5IDMuMDgsMjAuNDQgQzEuNDk2NTIyMTEsMjEuMTczNTUzMSAwLjQ4MzEyOTA0NSwyMi43NTk4NjMyIDAuNDgzMTI5MDQ1LDI0LjUwNSBDMC40ODMxMjkwNDUsMjYuMjUwMTM2OCAxLjQ5NjUyMjExLDI3LjgzNjQ0NjkgMy4wOCwyOC41NyBDNS40ODIyMTUyMiw0MC4xNjkxMjA3IDE1LjY5NDc0MTYsNDguNDkwMjgzOSAyNy41NCw0OC41MDAwNDg0IEMzMi43NzU2NDA2LDQ4LjUxMDM0NzkgMzcuODc5OTE1MSw0Ni44NjE0MzYxIDQyLjEyLDQzLjc5IEw0MSw0Mi4xNyBaIE0yLjUsMjQuNSBDMi40OTA4MTUzMSwyMy4yMjg0MzU4IDMuNDM3NTg3MzQsMjIuMTUyNTU4NSA0LjcsMjEuOTk5OTc5OSBMNSwyMS45OTk5Nzk5IEM2LjAxMjA1NTc4LDIxLjk5NTk1MTcgNi45MjY3MTExLDIyLjYwMjQ4MzggNy4zMTY4MTYzOCwyMy41MzYzNDIgQzcuNzA2OTIxNjYsMjQuNDcwMjAwMiA3LjQ5NTUwNzY3LDI1LjU0NzEzMDkgNi43ODEzMDYwMiwyNi4yNjQyMDA4IEM2LjA2NzEwNDM2LDI2Ljk4MTI3MDcgNC45OTEwMjk3MiwyNy4xOTY5OTk0IDQuMDU1NjE1NDcsMjYuODEwNjQwMSBDMy4xMjAyMDEyMSwyNi40MjQyODA5IDIuNTEwMDA4MSwyNS41MTIwNjM5IDIuNTEsMjQuNSBMMi41LDI0LjUgWiIgaWQ9IlNoYXBlIiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuODYsMjIgTDQuNzEsMjIgTDQuODYsMjIgWiIgaWQ9IlBhdGgiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNNTAsMjkgQzUyLjM2NDU2MzQsMjkuMDAxNDk4MiA1NC4zMjY5NTA1LDI3LjE3MjcwMTMgNTQuNDkxODg5OSwyNC44MTM4OTcxIEM1NC42NTY4Mjk0LDIyLjQ1NTA5MyA1Mi45NjgwNTIxLDIwLjM3MDk4ODMgNTAuNjI2MjkwOSwyMC4wNDMzOTY1IEM0OC4yODQ1Mjk2LDE5LjcxNTgwNDcgNDYuMDg4Njc3LDIxLjI1NjQ4MzkgNDUuNiwyMy41NyBMNDAuNCwyMy41NyBMNDAuNCwxMS4yIEw0My4xLDExLjIgQzQzLjQwMjg1LDEzLjUwODcwNDIgNDUuNDE2OTA2NywxNS4yMDUwNzE4IDQ3Ljc0MzQ5MDUsMTUuMTExMDQ1MSBDNTAuMDcwMDc0NCwxNS4wMTcwMTg1IDUxLjk0MDY3MjEsMTMuMTYzNjU2MyA1Mi4wNTYyMzA2LDEwLjgzODA0MjUgQzUyLjE3MTc4OSw4LjUxMjQyODY5IDUwLjQ5NDEzNzEsNi40ODI3NTYgNDguMTg4MzM1MSw2LjE1ODU0ODY4IEM0NS44ODI1MzMsNS44MzQzNDEzNSA0My43MTAyMjk1LDcuMzIyNjkxMDEgNDMuMTgsOS41OSBMMzkuNSw5LjU0IEMzOS4yNDMzMDY2LDkuNDg1MzU5MTMgMzguOTc1ODkzOCw5LjU1NTM0MTI3IDM4Ljc3ODg3MzEsOS43Mjg3MTk0NCBDMzguNTgxODUyNSw5LjkwMjA5NzYyIDM4LjQ3ODQzOSwxMC4xNTg0NDI2IDM4LjUsMTAuNDIgTDM4LjUsMjMuNTQgTDMwLjgxLDIzLjU0IEwzMC44MSwyNS4zOSBMMzguNSwyNS4zOSBMMzguNSwzOC40NyBDMzguNSwzOS4wMjIyODQ3IDM4Ljk0NzcxNTMsMzkuNDcgMzkuNSwzOS40NyBMNDIuNjQsMzkuNDcgQzQzLjA5NDkwMzksNDEuNzM3ODk3MiA0NS4xOTUwNDM4LDQzLjI5MTU0NiA0Ny40OTY3OTMzLDQzLjA2Mjk3NTMgQzQ5Ljc5ODU0MjcsNDIuODM0NDA0NyA1MS41NTIxMTY4LDQwLjg5ODA3MDUgNTEuNTUyMTE2OCwzOC41ODUgQzUxLjU1MjExNjgsMzYuMjcxOTI5NSA0OS43OTg1NDI3LDM0LjMzNTU5NTMgNDcuNDk2NzkzMywzNC4xMDcwMjQ3IEM0NS4xOTUwNDM4LDMzLjg3ODQ1NCA0My4wOTQ5MDM5LDM1LjQzMjEwMjggNDIuNjQsMzcuNyBMNDAuNDYsMzcuNyBMNDAuNDEsMjUuMzggTDQ1LjYsMjUuMzggQzQ2LjAyMjIyNzgsMjcuNDc3NjUyOCA0Ny44NjAyOTg3LDI4Ljk4OTg4MzkgNTAsMjkgWiBNNTAsMjIgQzUxLjM4MDcxMTksMjIgNTIuNSwyMy4xMTkyODgxIDUyLjUsMjQuNSBDNTIuNSwyNS44ODA3MTE5IDUxLjM4MDcxMTksMjcgNTAsMjcgQzQ4LjYxOTI4ODEsMjcgNDcuNSwyNS44ODA3MTE5IDQ3LjUsMjQuNSBDNDcuNSwyMy4xMTkyODgxIDQ4LjYxOTI4ODEsMjIgNTAsMjIgWiBNNDcuNSw4LjA5IEM0OC41MDgwMDM3LDguMDk0MDgwNjkgNDkuNDE0MTA2NCw4LjcwNTQ5NDUzIDQ5Ljc5NTE1NTIsOS42Mzg3MDkzMSBDNTAuMTc2MjA0MSwxMC41NzE5MjQxIDQ5Ljk1NzAxNzQsMTEuNjQyODE0NCA0OS4yMzk5NTU5LDEyLjM1MTI3MTIgQzQ4LjUyMjg5NDQsMTMuMDU5NzI3OSA0Ny40NDk0MzYxLDEzLjI2NTk3MDkgNDYuNTIwODg5NCwxMi44NzM2ODQgQzQ1LjU5MjM0MjYsMTIuNDgxMzk3MSA0NC45OTE5MTE4LDExLjU2Nzk3OTUgNDUsMTAuNTYgQzQ0Ljk5OTk3ODYsOS44OTYxMzEwNyA0NS4yNjUwNjA4LDkuMjU5NzM5OTMgNDUuNzM2MzYwOSw4Ljc5MjE5NTE1IEM0Ni4yMDc2NjExLDguMzI0NjUwMzcgNDYuODQ2MTUyNSw4LjA2NDY2NzcyIDQ3LjUxLDguMDcgTDQ3LjUsOC4wOSBaIE00NywzNS45OTk5NzY2IEM0OC4zNDE3OTE0LDM1Ljk5NDI1NTYgNDkuNDQ4ODMxNywzNy4wNDg3ODMgNDkuNTA4MjUwMywzOC4zODkyNzA1IEM0OS41Njc2Njg5LDM5LjcyOTc1NzkgNDguNTU4MjczMyw0MC44NzgwOTg3IDQ3LjIyMTIzNiw0MC45OTEwOTY1IEM0NS44ODQxOTg3LDQxLjEwNDA5NDIgNDQuNjk2Mzk2LDQwLjE0MTQ0NjQgNDQuNTI5OTk1NCwzOC44MSBMNDQuNTI5OTk1NCwzOC44MSBDNDQuNTI5OTk1NCwzOC43MSA0NC41Mjk5OTU0LDM4LjYxIDQ0LjUyOTk5NTQsMzguNTEgQzQ0LjUyOTY0NjEsMzguMzMxNjE5IDQ0LjU0OTc3NzksMzguMTUzNzg3NSA0NC41OSwzNy45OCBMNDQuNTksMzcuOTggQzQ0LjgzNjAwMjMsMzYuODQwMzkxMSA0NS44MzQzMTY3LDM2LjAyMDE5OTEgNDcsMzUuOTk5OTc2NiBMNDcsMzUuOTk5OTc2NiBaIiBpZD0iU2hhcGUiIGZpbGw9IiNGRkZGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS/releases/download/v1.1.0/com.mattermost.aws-sns-1.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS/releases/tag/v1.1.0",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8fGOIACgkQ0bVLR6XO/sRM7Q//Xnap9/tGDe3+yi8R77JfgLV2j0SACA0vNClpT0W8hMYlw9lBbuIMH3xiMpmWWFn6k79mF/Pwtx1+qBphCag8aTYgyp5SQFLCuj7wYEVxbDhgBcUYB59ecbrpDJ3RqtMt4qZPScwZxXBWG4Tpk356aiPOpvh9v/hoeukn0tjHPL8XJo2cf5kvs8e8P6taR7wkRXkXeOh0xs8YcltfTvbY/LeqfgBW+eTuKelnvwehneYARPCCFEOGoWwe4a3q73mFjVmofYlOkakM9F+ZlUFRXY1Vi0u4GDPCwi5pMcff0QNPUcTYd37L8tT3L/jxCVeyo5utHNzbxyTFG9NkgH7t2siJYCa68q7s5kKhuY1DqpgL3xjHytKADX5iFQvdGAAtYQwvI/TB4YcpAN693sFAARVNkUbiVh4TPyrrpxqGNCK18CGgiTIqJ2tkMEsSV0zAw3VA85W/CfI+j8O6Jg8N0BmwwH0BPqhfIVd3hchchxjXU4HbqugRMi1mWPH3Mc2TJYMnfpmCtC5CI3H0yKGGts3u3YXtEkl1QD8W89FG8LcNmu3URnDZY0L/888hdVwPVkfhFoRK73YLOdjU9b0OvU0edZwEgAZNkpEoP3USOpUQOSFxiPDXAWZeZwzt7uyKMYhPurFILNXzNpibrt6AwlT+v0d1Gt94nEVfUZXMHsQ=",
+    "manifest": {
+      "id": "com.mattermost.aws-sns",
+      "name": "AWS SNS",
+      "description": "Send alert notifications from Amazon AWS CloudWatch to Mattermost channels via AWS SNS.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS/issues",
+      "icon_path": "assets/icon.svg",
+      "version": "1.1.0",
+      "min_server_version": "5.2.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "This plugin is used to receive alert notifications from [Amazon AWS CloudWatch](https://aws.amazon.com/cloudwatch/) to Mattermost channels via AWS SNS.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "TeamChannel",
+            "display_name": "Channel to send notifications to:",
+            "type": "text",
+            "help_text": "The channel to send notifications to, specified in the format `teamname,channelname`. If the specified channel does not exist, the plugin will create the channel for you.\n \nNote: Must be the team and channel handle used in the URL. For example, in the following URL, set the value to `myteam,mychannel`: https://example.com/myteam/channels/mychannel",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "AllowedUserIds",
+            "display_name": "Authorized User IDs:",
+            "type": "text",
+            "help_text": "List of users authorized to accept AWS SNS subscriptions to a Mattermost channel. Must be a comma-separated list of user ID's.\n \nTip: Use the [mattermost user search](https://mattermost.com/pl/cli-mattermost-user-search) CLI command to determine a user ID.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Token",
+            "display_name": "Token:",
+            "type": "generated",
+            "help_text": "Generated token to validate incoming requests from AWS SNS.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-07-27T18:11:08Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-aws-SNS",
@@ -3879,6 +4028,62 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
     "icon_data": "",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/download/v1.2.1/mattermost-autolink-1.2.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.2.1",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl82aTQACgkQ0bVLR6XO/sSC6g/+P8q/6jsP8WrmE5Kw1Fg+sxHPh/YJ/b/CkiVUBKte50y+6vJ5rCrwX6gsH6zjdjc4aE2OKf+hXWWf2f1Yd/ldB+rYHCqA/MvCGZwxNfJlkjbKN+b6ylGNDENIlvi9InnYZvqKotZOw2yG6yKAOEkhFIJSV58JPKKGI44VtNawc3Xy/IDtetu35bmd+Rwr/ofvzLzXDyyz2qkGxygpvj+bkU5ALPm5RYHslfWq9ASIo9pLWRk1KGx7lZOyHPKnSBi809NhK/Sokh0cQFxugJ5hgI0gtx+Z1+kNlu6ugyiaLxQPHkCC34dG33p1peuEF83M00IYP/YbxF/oPwhxGpEGwSrSmNzdE7unOe8wZyqjiYeLKkzQHgUXO6jsj5mHacGIZSaCgEOigvFPN0hUWKJQKyw663yI8oEduvhWiUqht5n+y11SuBPoGY1fqg0IkLRYPe5Anv5fIhQc74onuc1jZ9l5lxeKf1qsrrikgz6ltuHA7RuWPb+lh4Ds9tI0pbec/Crcg7KX4unqXMayxK4JrRsFLSPswYeA8EXLQl4SSkovuCETZZt+hQPBTrEQ38WtETsEwJ+lnkrxkvTPMoEx2/To0uONAY+zLk9JAlIXHXj8fjSDjAj/rMpjYRghbHiAdPzquLDJcdXDsuPe5SlvAJT57RXltcWPOTydO6IR5I0=",
+    "manifest": {
+      "id": "mattermost-autolink",
+      "name": "Autolink",
+      "description": "Automatically rewrite text matching a regular expression into a Markdown link.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-autolink/issues",
+      "version": "1.2.1",
+      "min_server_version": "5.16.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file, or using the /autolink command. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-autolink/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-autolink).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableAdminCommand",
+            "display_name": "Enable administration with /autolink command",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "EnableOnUpdate",
+            "display_name": "Apply plugin to updated posts as well as new posts",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "PluginAdmins",
+            "display_name": "Admin User IDs",
+            "type": "text",
+            "help_text": "Comma-separated list of userIDs authorized to administer the plugin in addition to the System Admins.\n \nUser IDs can be found by navigating to **System Console** > **Users**.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-08-14T10:36:13Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+    "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/download/v1.2.0/mattermost-autolink-1.2.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.2.0",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl6LZe8ACgkQ0bVLR6XO/sSb6hAAnigt1JsZ02YTjbOfUUlL96PA5+eQT6U4+kILz5B/l4/vROwpNbDxwUshCtM+/t1H4/xy0Rm+QGzOpgzG9wrE+zIPQRM2gS7F5zigpdObo6qG8+9PatMflD8K+b4Hrwo0uOKJtCExzNJwvj/G5w4CgRBWFRIppLF66LqQwboFWrq8dbd4iS3TmsTD5hPeZohqM8mQsPfNrNcKeXzmkkWnc1Z9u7sPL7PSMx8i1qbNfhZ4lM+4UT1UDP6hB56dtTUDVzMWKt5fgzNJR/wxVfTpQ77H1+ZWPuwD7WfudB9Eli7c0AmOwj3nuBwaB4E3IFZRxoMvVy35gy9Fpk/jX7f05dF6GRFc+AJz0XJjhbXuxz6aKt4uZwb7nmW7rLNok93n1zKE0Caq/eF+RgBWbRq4BMaaNXnzTIoo+n7yU5B9CLGfiETYB61RrKJRUWMdgId3TlkCN+lgJGK6PmVarmLNM+ciWipgDD6Gu74OofMU+FbsxOVk2J/tzQf9LmsBckfUhNW0sZBCrZZ2hwdcXR3zWXbKf7kEWS8GJhCgidmUBcCClUwc18BCNb9GYugoRkgltGSB901jnSxD+usfvz4wrZoaYPAo3zv5+/xeSystprISFgmo7YU5kmHvrefGvr0kRlifkd/njOgNFE7P3zCmmXYfHY5d1WDuF+rsfIFHLFs=",
@@ -4194,6 +4399,234 @@
     },
     "enterprise": false,
     "updated_at": "2020-05-28T19:23:38.781696714Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTEyIiBoZWlnaHQ9IjkxMiIgdmlld0JveD0iMCAwIDkxMiA5MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjQ1NiIgY3k9IjQ1NiIgcj0iNDU2IiBmaWxsPSIjMkQ4Q0ZGIi8+CjxwYXRoIGQ9Ik0xOTkuNSAzNDkuMTI1QzE5OS41IDMzMy4zODUgMjEyLjI2IDMyMC42MjUgMjI4IDMyMC42MjVINDcwLjI1QzUyOS4yNzUgMzIwLjYyNSA1NzcuMTI1IDM2OC40NzUgNTc3LjEyNSA0MjcuNVY1NjIuODc1QzU3Ny4xMjUgNTc4LjYxNSA1NjQuMzY1IDU5MS4zNzUgNTQ4LjYyNSA1OTEuMzc1SDMwNi4zNzVDMjQ3LjM1IDU5MS4zNzUgMTk5LjUgNTQzLjUyNSAxOTkuNSA0ODQuNVYzNDkuMTI1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NzYuODE1IDU4My44MjlMNjE4LjI5MyA1MzguNjUzQzYxNC43OTcgNTM1Ljk1NSA2MTIuNzUgNTMxLjc4OSA2MTIuNzUgNTI3LjM3M1Y0MTMuMTI3QzYxMi43NSA0MDguNzExIDYxNC43OTcgNDA0LjU0NSA2MTguMjkzIDQwMS44NDdMNjc2LjgxNSAzNTYuNjcxQzY4MS4zNDUgMzUyLjAxNiA2ODcuNjc5IDM0OS4xMjUgNjk0LjY4OCAzNDkuMTI1QzcwOC40NiAzNDkuMTI1IDcxOS42MjUgMzYwLjI5IDcxOS42MjUgMzc0LjA2MlY1NjYuNDM4QzcxOS42MjUgNTgwLjIxIDcwOC40NiA1OTEuMzc1IDY5NC42ODggNTkxLjM3NUM2ODcuNjc5IDU5MS4zNzUgNjgxLjM0NSA1ODguNDg0IDY3Ni44MTUgNTgzLjgyOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/download/v1.4.1/zoom-1.4.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.4.1",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8VwnMACgkQ0bVLR6XO/sQajQ//UsT5DUi8ZpeFK90VtZeyqHdTB3egP0lUoPdZ2zvddDNtol5KJ/xIIMB8+rR4YOktKnDvQhDc2+Jvqcqk4i8kgfSI3upzsZzU1mWETj8QstWeHnWt8xP2MsaG+T/HsVlYTqOfQkZy0RLP6l20s3BdZko6OnT5tyKuvwpSuvJNt+qiAzRLFemtpu1v7F2Bu0rFLZ5lgpYfdkpNKwD3/5jFCSbM1eHkozLwAl0WuSZlgNyJN4jMOREDOIZ8gBCBwvI+gmO7kxzfom0YqHMsdgM3cVUV1cm++w0z1XqtSbPiFQ9YuoJuMJwfrJeWJERdrfIby7ZyknlhMcw2/A1vBsEQAhVnTsgV0DK0q2Z6KjaJ69tuKktxC4urtQEmYxoPfhf96X2ZnO3PBAurqCicM0c9dChuD+HEpQg55lxsIKPmNTqx1bLnq65c+JQgYOBwcF0tY+ZT0VUp4js6/moelsE8QmCRfu3mD1eradSm6nQQU1k+h2pPNZqbXyU1bQjgC1mE0Vw5zJUdf2s0meYgmMTBH2cJ/J4RqoufGaEP+xw10nX58gvlxoGi/Nh/s0o1ADqXkklGjK8J0I/DUexkZp0EA1ZQxQje4P+yTY/wvlw7ko/KDv2UM8J+x9p8BthAOGYb9rfJpxWChjaTPsSAaJw02eu2LYe+RnnaugYzxvsB7Z4=",
+    "manifest": {
+      "id": "zoom",
+      "name": "Zoom",
+      "description": "Zoom audio and video conferencing plugin for Mattermost 5.2+.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-zoom/issues",
+      "icon_path": "assets/profile.svg",
+      "version": "1.4.1",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL to set up the Zoom plugin. See [documentation](https://app.gitbook.com/@mattermost/s/plugin-zoom) to learn more.\n\n```https://SITEURL/plugins/zoom/webhook?secret=WEBHOOKSECRET```",
+        "settings": [
+          {
+            "key": "ZoomURL",
+            "display_name": "Zoom URL",
+            "type": "text",
+            "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://zoom.us",
+            "default": null
+          },
+          {
+            "key": "ZoomAPIURL",
+            "display_name": "Zoom API URL",
+            "type": "text",
+            "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://api.zoom.us/v2",
+            "default": null
+          },
+          {
+            "key": "EnableOAuth",
+            "display_name": "Enable OAuth (Beta)",
+            "type": "bool",
+            "help_text": "When true, OAuth will be used as the authentication means with Zoom. \n When false, JWT will be used as the authentication means with Zoom. \n If you are currently using a JWT Zoom application and switch to OAuth, all users will need to connect their Zoom account using OAuth the next time they try to start a meeting. [More information](https://mattermost.gitbook.io/plugin-zoom/installation/zoom-configuration).",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "OAuthClientID",
+            "display_name": "Zoom OAuth Client ID",
+            "type": "text",
+            "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "OAuthClientSecret",
+            "display_name": "Zoom OAuth Client Secret",
+            "type": "text",
+            "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Token Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "APIKey",
+            "display_name": "API Key",
+            "type": "text",
+            "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "APISecret",
+            "display_name": "API Secret",
+            "type": "text",
+            "help_text": "The API Secret generated by Zoom for your API key.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-07-14T15:08:55Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTEyIiBoZWlnaHQ9IjkxMiIgdmlld0JveD0iMCAwIDkxMiA5MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjQ1NiIgY3k9IjQ1NiIgcj0iNDU2IiBmaWxsPSIjMkQ4Q0ZGIi8+CjxwYXRoIGQ9Ik0xOTkuNSAzNDkuMTI1QzE5OS41IDMzMy4zODUgMjEyLjI2IDMyMC42MjUgMjI4IDMyMC42MjVINDcwLjI1QzUyOS4yNzUgMzIwLjYyNSA1NzcuMTI1IDM2OC40NzUgNTc3LjEyNSA0MjcuNVY1NjIuODc1QzU3Ny4xMjUgNTc4LjYxNSA1NjQuMzY1IDU5MS4zNzUgNTQ4LjYyNSA1OTEuMzc1SDMwNi4zNzVDMjQ3LjM1IDU5MS4zNzUgMTk5LjUgNTQzLjUyNSAxOTkuNSA0ODQuNVYzNDkuMTI1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NzYuODE1IDU4My44MjlMNjE4LjI5MyA1MzguNjUzQzYxNC43OTcgNTM1Ljk1NSA2MTIuNzUgNTMxLjc4OSA2MTIuNzUgNTI3LjM3M1Y0MTMuMTI3QzYxMi43NSA0MDguNzExIDYxNC43OTcgNDA0LjU0NSA2MTguMjkzIDQwMS44NDdMNjc2LjgxNSAzNTYuNjcxQzY4MS4zNDUgMzUyLjAxNiA2ODcuNjc5IDM0OS4xMjUgNjk0LjY4OCAzNDkuMTI1QzcwOC40NiAzNDkuMTI1IDcxOS42MjUgMzYwLjI5IDcxOS42MjUgMzc0LjA2MlY1NjYuNDM4QzcxOS42MjUgNTgwLjIxIDcwOC40NiA1OTEuMzc1IDY5NC42ODggNTkxLjM3NUM2ODcuNjc5IDU5MS4zNzUgNjgxLjM0NSA1ODguNDg0IDY3Ni44MTUgNTgzLjgyOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/download/v1.4.0/zoom-1.4.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.4.0",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl77ESAACgkQ0bVLR6XO/sRIoBAAkyNHpoVJiMmzNRqelb9Z+LEHFJeRVsvtUvnwiQizDbo+AlR3Q7fRKgYsa7yPMhZEshUQWfrs43TnnpoXoVTZMdMIh9D09wdQbwQMJDaLZ4iJWzgmlr5424CHCviBrQemozdpVKyOO0Xh8Z2sBDBEImqrCeKBm5f96NsYre1WS+wYz9dltBJUrLYoj2wrTFLD1GirRGqEbs8Vm6gdee4Jo/yZ+RI6xa7dhBm5dV3YYEOn8eqftKrSTi6+jzJPMvtEnkKvApyZvyqET2Qwr6VJPcL7gbsuPSAtRAGXhhqg+4jZg8gE/rLfHwMUSSmm2O+kXBaaFHKWF1Yo2hufwxHQblvP5CG8Mvx4coVPVr1PNIQmETMq5hJljR9asr77bBFgFCKetS8i2wGdxUp3HbYY1OZAv753DAzyGSu7b+kFj1xEH3whL+9u5gqy72DgGVL7uc4Vk8YnSYOghCx+ATlFpy3rR0Eg3fs7HBSiIVxNh6zHHEPJbQCZfHtKMnv1nkHsYiA/2afBTOLbC59IpMBzQdiXrrTIZcRXEVHoVRtklHaAEmsEZfbgekkXPzvQzdQHnVPqmFX7wnfUztYczJcESNXVxkjmz0WyxC29Ow5OT5ePbDktegR4XwcNEM5+HfZLrzkUm1Mjzuhli9xcVSJHd+Wro0QgD9V9mmLoFsFqLs8=",
+    "manifest": {
+      "id": "zoom",
+      "name": "Zoom",
+      "description": "Zoom audio and video conferencing plugin for Mattermost 5.2+.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-zoom/issues",
+      "icon_path": "assets/profile.svg",
+      "version": "1.4.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL to set up the Zoom plugin. See [documentation](https://app.gitbook.com/@mattermost/s/plugin-zoom) to learn more.\n\n```https://SITEURL/plugins/zoom/webhook?secret=WEBHOOKSECRET```",
+        "settings": [
+          {
+            "key": "ZoomURL",
+            "display_name": "Zoom URL",
+            "type": "text",
+            "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://zoom.us",
+            "default": null
+          },
+          {
+            "key": "ZoomAPIURL",
+            "display_name": "Zoom API URL",
+            "type": "text",
+            "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://api.zoom.us/v2",
+            "default": null
+          },
+          {
+            "key": "EnableOAuth",
+            "display_name": "Enable OAuth (Beta)",
+            "type": "bool",
+            "help_text": "When true, OAuth will be used as the authentication means with Zoom. \n Only Enable OAuth OR Password based authentication. Not both. If you are currently using a JWT Zoom application and switch to OAuth, all users will need to connect their Zoom account using OAuth the next time they try to start a meeting. [More information](https://mattermost.gitbook.io/plugin-zoom/installation/zoom-configuration).",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "OAuthClientID",
+            "display_name": "Zoom OAuth Client ID",
+            "type": "text",
+            "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "OAuthClientSecret",
+            "display_name": "Zoom OAuth Client Secret",
+            "type": "text",
+            "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Token Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnableLegacyAuth",
+            "display_name": "Enable Password based authentication",
+            "type": "bool",
+            "help_text": "When true, user's email and password will be used to authenticate with Zoom. \n Only Enable OAuth OR Password based authentication. Not both. [More information](https://mattermost.gitbook.io/plugin-zoom/installation/zoom-configuration).",
+            "placeholder": "",
+            "default": true
+          },
+          {
+            "key": "APIKey",
+            "display_name": "API Key",
+            "type": "text",
+            "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "APISecret",
+            "display_name": "API Secret",
+            "type": "text",
+            "help_text": "The API Secret generated by Zoom for your API key.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-06-30T08:30:33Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
