@@ -1,16 +1,4 @@
 # Resources.
-* [Glossary.](#glossary)
-* [Prior specs.](#prior-specs)
-
-## Glossary.
-
-### Legacy Terms.
-1. **Integrations** - "legacy" slack-inspired integrations, mostly consisting of slash-commands, webhooks, and slack attachments. Slack attachments support **Post Actions**.
-2. **Interactive Dialogs** 
-3. **Plugin Marketplace**
-4. **Integrations directory**
-
-### New Terms.
 
 ## Prior specs.
 

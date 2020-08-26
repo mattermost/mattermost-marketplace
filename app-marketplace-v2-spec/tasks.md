@@ -33,9 +33,11 @@ Command JSON out design:
 - Know what options are relevant in the context
 
 ### Autocomplete types
-- Date picker
-- Plain text (many versions?)
-- ...
+- Date/time
+- Plain text 
+   - JSON
+   - TODO upload a file
+   - #TODO encodings
 
 ### Command box 
 - Input with (filtered) autocomplete, pre-configured initial state
@@ -45,10 +47,13 @@ Command JSON out design:
 - Button
 - Select
 - On/Off Checkbox
+- Multiselect
+
+
 
 ## Interactive Dialog
-- Mutable upon entering/selecting fields
-- Dynamic list support
+- Mutable upon entering field values
+- Support all autocomplete types
 
 ## Bot Conversation
 - Build on the Settings Panel

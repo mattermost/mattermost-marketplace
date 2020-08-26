@@ -1,14 +1,15 @@
 # Introduction
 
-* [Problem Statement](#problem-statement)
-* [Project Summary](#project-summary)
-* [Objectives](#objectives)
-   + [Full Backwards Compatibility](#full-backwards-compatibility)
-   + [Supported Use Cases](#supported-use-cases)
-   + [Launch App Marketplace](#launch-app-marketplace)
-   + [Scoped **Cloud App** API access](#scoped---cloud-app---api-access)
-   + [Meet **Mattermost Cloud** Operational Requirements](#meet---mattermost-cloud---operational-requirements)
-* [Technical Principles](#technical-principles)
+  * [Problem Statement](#problem-statement)
+  * [Project Summary](#project-summary)
+  * [Objectives](#objectives)
+    + [Full Backwards Compatibility](#full-backwards-compatibility)
+    + [Supported Use Cases](#supported-use-cases)
+    + [Launch App Marketplace](#launch-app-marketplace)
+    + [Scoped **Cloud App** API access](#scoped---cloud-app---api-access)
+    + [Meet **Mattermost Cloud** Operational
+      Requirements](#meet---mattermost-cloud---operational-requirements)
+  * [Technical Principles](#technical-principles)
 
 ## Problem Statement
 
@@ -82,14 +83,14 @@ Go/React **Plugins**.
 3. In Mattermost Cloud, 95% 100ms target response time (first-byte sent to last
    byte received) for user actions (in addition to the upstream R/T time).
 4. Mattermost Cloud-first design for monitoring, logging, introspection
-5. #STRETCH on-prem hostable (dependencies???)
-6. Storage, other service dependencies TBD, encourage the use of props in MM
-   data model?
+5. #STRETCH on-prem hostable, maybe K8s only.
+6. Storage, other service dependencies as a "standard" set of services shared
+   across all apps, but not across MM instances. Encourage the use of props in
+   MM. data model?
 7. Versioning and CI? #TODO
 
 ## Technical Principles
-1. All user actions are commands
-2. Outgoing requests contain a JWT. The JWT provides the Mattermost API token
-   for responding, with the correct scope.
+1. All user actions are functions (basicallu, commands)
+2. MM->App use JWT, App->MM use OAuth2.
 3. Encourage the use of props on User, Channel, Post (any other entities?)
-4. Long-term goal: serverless functions.
+4. "Standard" set of dependency services, deployed per-instance; 
