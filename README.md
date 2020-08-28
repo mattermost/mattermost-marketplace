@@ -54,32 +54,7 @@ make build-lambda
 
 ### Add a new release of a plugin to the Marketplace
 
-If you want added a new release of one of the following plugins:
-- Antivirus
-- Autolink
-- Aws-SNS
-- Custom-attributes
-- GitHub
-- GitLab
-- Jenkins
-- Jira
-- NPS
-- Webex
-- Welcomebot
-- Zoom
-
-run
-```
-make plugins.json
-```
-
-to fetch all new release of all of the above listed plugins from GitHub.
-
-If you run this command multiple times, GitHub might rate limit you. Using an API token does help:
-
-`export GITHUB_TOKEN=<github token>`
-
-To add a release of a plugin that is not on the list above, run
+To add a new release for a plugins, run
 ```
 go run ./cmd/generator/ add $REPOSITORY $VERSION [--official|--community]
 ```
