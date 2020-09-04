@@ -62,7 +62,7 @@ func TestPluginsFromReader(t *testing.T) {
 
 	t.Run("request", func(t *testing.T) {
 		plugin, err := PluginsFromReader(bytes.NewReader([]byte(
-			`[{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1","release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{}},{"homepage_url":"https://github.com/mattermost/mattermost-plugin-starter-template","icon_data":"icon-data2.svg","download_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","signature":"signature2","release_notes_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","manifest":{}}]`,
+			`[{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1","release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{},"arch_bundles":{"linux-amd64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-linux-amd64.tar.gz","signature":"signature for linux"}}},{"homepage_url":"https://github.com/mattermost/mattermost-plugin-starter-template","icon_data":"icon-data2.svg","download_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","signature":"signature2","release_notes_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","manifest":{}}]`,
 		)))
 		require.NoError(t, err)
 		require.Equal(t, []*Plugin{
@@ -73,6 +73,12 @@ func TestPluginsFromReader(t *testing.T) {
 				Signature:       "signature1",
 				ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
 				Manifest:        &mattermostModel.Manifest{},
+				ArchBundles: ArchBundles{
+					LinuxAmd64: &ArchBundleMetadata{
+						DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-linux-amd64.tar.gz",
+						Signature:   "signature for linux",
+					},
+				},
 			},
 			{
 				HomepageURL:     "https://github.com/mattermost/mattermost-plugin-starter-template",
@@ -143,7 +149,8 @@ func TestPluginsToWriter(t *testing.T) {
       "version": "1.0.0"
     },
     "enterprise": false,
-    "updated_at": "0001-01-01T00:00:00Z"
+    "updated_at": "0001-01-01T00:00:00Z",
+    "arch_bundles": {}
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-starter-template",
@@ -156,7 +163,8 @@ func TestPluginsToWriter(t *testing.T) {
       "version": "2.0.0"
     },
     "enterprise": false,
-    "updated_at": "0001-01-01T00:00:00Z"
+    "updated_at": "0001-01-01T00:00:00Z",
+    "arch_bundles": {}
   }
 ]
 `

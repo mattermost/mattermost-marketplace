@@ -27,6 +27,9 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
+const defaultRemotePluginHost = "https://plugins-store.test.mattermost.com/release"
+const defaultGitHubOrg = "mattermost"
+
 func init() {
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
 	generatorCmd.PersistentFlags().String("database", "plugins.json", "Path to the plugins database to update.")
@@ -142,12 +145,17 @@ var generatorCmd = &cobra.Command{
 func getReleasePlugins(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
 	logger := logger.WithField("repository", repositoryName)
 
-	repository, _, err := client.Repositories.Get(ctx, "mattermost", repositoryName)
+	org := os.Getenv("GITHUB_ORG")
+	if org == "" {
+		org = defaultGitHubOrg
+	}
+
+	repository, _, err := client.Repositories.Get(ctx, org, repositoryName)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get repository")
 	}
 
-	releases, err := getReleases(ctx, client, repositoryName, includePreRelease)
+	releases, err := getReleases(ctx, client, org, repositoryName, includePreRelease)
 	if err != nil {
 		return nil, err
 	}
@@ -187,14 +195,14 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 }
 
 // getReleases returns all GitHub releases for the given repository.
-func getReleases(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) ([]*github.RepositoryRelease, error) {
+func getReleases(ctx context.Context, client *github.Client, org, repoName string, includePreRelease bool) ([]*github.RepositoryRelease, error) {
 	var result []*github.RepositoryRelease
 	options := &github.ListOptions{
 		Page:    0,
 		PerPage: 40,
 	}
 	for {
-		releases, resp, err := client.Repositories.ListReleases(ctx, "mattermost", repoName, options)
+		releases, resp, err := client.Repositories.ListReleases(ctx, org, repoName, options)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to get releases for repository %s", repoName)
 		}
@@ -343,6 +351,11 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 	plugin.ReleaseNotesURL = releaseNotesURL
 	plugin.Signature = signature
 	plugin.UpdatedAt = updatedAt
+
+	plugin, err := addArchSpecificBundles(plugin)
+	if err != nil {
+		return nil, err
+	}
 
 	return plugin, nil
 }

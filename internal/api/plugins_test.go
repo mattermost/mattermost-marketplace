@@ -211,6 +211,25 @@ func TestPlugins(t *testing.T) {
 			Enterprise: true,
 		}
 
+		plugin6WithArch := &model.Plugin{
+			HomepageURL: "https://github.com/mattermost/mattermost-plugin-todo",
+			IconData:    "icon-data5.svg",
+			DownloadURL: "https://github.com/mattermost/mattermost-plugin-todo/releases/download/v0.3.0/com.mattermost.plugin-todo-0.3.0.tar.gz",
+			Manifest: &mattermostModel.Manifest{
+				Id:               "com.mattermost.plugin-todo",
+				Name:             "Todo",
+				Version:          "0.3.0",
+				MinServerVersion: "5.12.0",
+			},
+			Signature: "signature6",
+			ArchBundles: model.ArchBundles{
+				LinuxAmd64: &model.ArchBundleMetadata{
+					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-linux-amd64.tar.gz",
+					Signature:   "signature6 for linux",
+				},
+			},
+		}
+
 		allPlugins := []*model.Plugin{
 			plugin1V1Min515,
 			plugin1V2Min515,
@@ -220,6 +239,7 @@ func TestPlugins(t *testing.T) {
 			plugin3V2Min516,
 			plugin3V3Min517,
 			plugin5Enterprise,
+			plugin6WithArch,
 		}
 
 		t.Run("get plugins, page 0, perPage 2", func(t *testing.T) {
@@ -243,7 +263,7 @@ func TestPlugins(t *testing.T) {
 				PerPage: 2,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin3V3Min517}, plugins)
+			require.Equal(t, []*model.Plugin{plugin3V3Min517, plugin6WithArch}, plugins)
 		})
 
 		t.Run("server version that satisfies all plugins", func(t *testing.T) {
@@ -267,7 +287,7 @@ func TestPlugins(t *testing.T) {
 				ServerVersion: "5.15.0",
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin3V1NoMin}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin3V1NoMin, plugin6WithArch}, plugins)
 		})
 
 		t.Run("server version that satisfies no plugin", func(t *testing.T) {
@@ -340,7 +360,7 @@ func TestPlugins(t *testing.T) {
 				PerPage: -1,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin4V1NoMin}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin6WithArch, plugin4V1NoMin}, plugins)
 		})
 
 		t.Run("enterprise plugin is returned for 5.24.0 without EnterprisePlugins", func(t *testing.T) {
@@ -353,7 +373,7 @@ func TestPlugins(t *testing.T) {
 				EnterprisePlugins: false,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise, plugin6WithArch}, plugins)
 		})
 
 		t.Run("enterprise plugin is not returned for 5.25.0 without EnterprisePlugins", func(t *testing.T) {
@@ -366,7 +386,7 @@ func TestPlugins(t *testing.T) {
 				EnterprisePlugins: false,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin6WithArch}, plugins)
 		})
 
 		t.Run("enterprise plugin is returned for 5.25.0 with EnterprisePlugins", func(t *testing.T) {
@@ -379,7 +399,7 @@ func TestPlugins(t *testing.T) {
 				EnterprisePlugins: true,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise, plugin6WithArch}, plugins)
 		})
 
 		t.Run("enterprise plugin is returned for 5.26.0 with EnterprisePlugins", func(t *testing.T) {
@@ -392,7 +412,40 @@ func TestPlugins(t *testing.T) {
 				EnterprisePlugins: true,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise, plugin6WithArch}, plugins)
+		})
+
+		t.Run("arch specific bundle is returned when requested", func(t *testing.T) {
+			client, tearDown := setupAPI(t, allPlugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				ServerVersion: "5.26.0",
+				PerPage:       -1,
+				Filter:        "todo",
+				Architecture:  "linux-amd64",
+			})
+			require.NoError(t, err)
+			require.Len(t, plugins, 1)
+			require.NotEqual(t, plugin6WithArch.DownloadURL, plugins[0].DownloadURL)
+			require.Equal(t, plugin6WithArch.ArchBundles.LinuxAmd64.DownloadURL, plugins[0].DownloadURL)
+			require.Equal(t, plugin6WithArch.ArchBundles.LinuxAmd64.Signature, plugins[0].Signature)
+		})
+
+		t.Run("fall back to default bundle if requested arch not is not found", func(t *testing.T) {
+			client, tearDown := setupAPI(t, allPlugins)
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				ServerVersion: "5.26.0",
+				PerPage:       -1,
+				Filter:        "todo",
+				Architecture:  "windows-amd64",
+			})
+			require.NoError(t, err)
+			require.Len(t, plugins, 1)
+			require.Equal(t, plugin6WithArch.DownloadURL, plugins[0].DownloadURL)
+			require.Equal(t, plugin6WithArch.Signature, plugins[0].Signature)
 		})
 
 		t.Run("invalid server_version format", func(t *testing.T) {

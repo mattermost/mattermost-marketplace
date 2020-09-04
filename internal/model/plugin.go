@@ -19,7 +19,26 @@ type Plugin struct {
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
+	ArchBundles     ArchBundles               `json:"arch_bundles"`
 }
+
+// ArchBundleMetadata holds the necessary data to fetch and verify a plugin built for a specific architecture
+type ArchBundleMetadata struct {
+	DownloadURL string `json:"download_url"`
+	Signature   string `json:"signature"`
+}
+
+type ArchBundles struct {
+	LinuxAmd64   *ArchBundleMetadata `json:"linux-amd64,omitempty" yaml:"linux-amd64,omitempty"`
+	DarwinAmd64  *ArchBundleMetadata `json:"darwin-amd64,omitempty" yaml:"darwin-amd64,omitempty"`
+	WindowsAmd64 *ArchBundleMetadata `json:"windows-amd64,omitempty" yaml:"windows-amd64,omitempty"`
+}
+
+const (
+	LinuxAmd64   = "linux-amd64"
+	DarwinAmd64  = "darwin-amd64"
+	WindowsAmd64 = "windows-amd64"
+)
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.
 func PluginFromReader(reader io.Reader) (*Plugin, error) {
@@ -67,4 +86,5 @@ type PluginFilter struct {
 	Filter            string
 	ServerVersion     string
 	EnterprisePlugins bool
+	Architecture      string
 }
