@@ -66,11 +66,10 @@ go run ./cmd/generator/ add mattermost-plugin-jitsi v2.0.0 --official
 
 Make sure to double check the `diff` of `plugins.json` to ensure the release get added correctly.
 
-After you are satisfied with the changes, run
+After you are satisfied with the changes, run the following to update `data/statik/statik.go` and commit both the changes for `plugin.json` and `data/statik/statik.go`:
 ```
 make generate
 ```
-to update `data/statik/statik.go` and commit both the changes in `plugin.json` and `data/statik/statik.go`.
 
 ### Deploying as a Lambda Function
 
