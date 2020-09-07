@@ -52,19 +52,24 @@ export BUILD_UPSTREAM_URL=https://api.integrations.mattermost.com
 make build-lambda
 ```
 
-### Updating plugins.json
+### Add a new release of a plugin to the Marketplace
 
-To fetch all new release from GitHub, run
-
+To add a new release for a plugins, run
 ```
-make plugins.json
+go run ./cmd/generator/ add $REPOSITORY $VERSION [--official|--community]
 ```
+e.g.
+```
+go run ./cmd/generator/ add mattermost-plugin-jitsi v2.0.0 --official
+```
+`generator add` supports additional flags. See `generator add --help` for more details.
 
-Make sure to double check the `diff` of `plugins.json` to ensure every release get added correctly.
+Make sure to double check the `diff` of `plugins.json` to ensure the release get added correctly.
 
-If you run this command multiple times, GitHub might rate limit you. Using an API token does help:
-
-`export GITHUB_TOKEN=<github token>`
+After you are satisfied with the changes, run the following to update `data/statik/statik.go` and commit both the changes for `plugin.json` and `data/statik/statik.go`:
+```
+make generate
+```
 
 ### Deploying as a Lambda Function
 

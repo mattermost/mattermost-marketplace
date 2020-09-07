@@ -74,6 +74,7 @@ deploy-lambda-fast: clean build-lambda
 ## Update plugins.json
 .PHONY: plugins.json
 plugins.json:
+	@echo "This command is deprecated. Use go run ./cmd/generator/ add instead."
 	go run ./cmd/generator --database plugins.json --debug
 
 ## Clean all generated files
