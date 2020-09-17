@@ -90,6 +90,86 @@
     "updated_at": "2019-08-08T23:17:57Z"
   },
   {
+    "homepage_url": "https://github.com/jespino/mattermost-plugin-recommend",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDUgNDUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1IDQ1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgdmVyc2lvbj0iMS4xIiBpZD0ic3ZnMiI+PG1ldGFkYXRhIGlkPSJtZXRhZGF0YTgiPjxyZGY6UkRGPjxjYzpXb3JrIHJkZjphYm91dD0iIj48ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD48ZGM6dHlwZSByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIi8+PC9jYzpXb3JrPjwvcmRmOlJERj48L21ldGFkYXRhPjxkZWZzIGlkPSJkZWZzNiI+PGNsaXBQYXRoIGlkPSJjbGlwUGF0aDE2IiBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggaWQ9InBhdGgxOCIgZD0iTSAwLDM2IDM2LDM2IDM2LDAgMCwwIDAsMzYgWiIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEuMjUsMCwwLC0xLjI1LDAsNDUpIiBpZD0iZzEwIj48ZyBpZD0iZzEyIj48ZyBjbGlwLXBhdGg9InVybCgjY2xpcFBhdGgxNikiIGlkPSJnMTQiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIsMjApIiBpZD0iZzIwIj48cGF0aCBpZD0icGF0aDIyIiBzdHlsZT0iZmlsbDojZmZjYzRkO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIiBkPSJtIDAsMCBjIDAsLTguODM3IDcuMTY0LC0xNiAxNiwtMTYgOC44MzcsMCAxNiw3LjE2MyAxNiwxNiBDIDMyLDguODM2IDI0LjgzNywxNiAxNiwxNiA3LjE2NCwxNiAwLDguODM2IDAsMCIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNS40MDYzLDI1LjUpIiBpZD0iZzI0Ij48cGF0aCBpZD0icGF0aDI2IiBzdHlsZT0iZmlsbDojNjY0NTAwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIiBkPSJtIDAsMCBjIDAsLTEuMzgxIC0wLjg5NiwtMi41IC0yLC0yLjUgLTEuMTA0LDAgLTIsMS4xMTkgLTIsMi41IDAsMS4zOCAwLjg5NiwyLjUgMiwyLjUgMS4xMDQsMCAyLC0xLjEyIDIsLTIuNSIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNiwyNC41KSIgaWQ9ImcyOCI+PHBhdGggaWQ9InBhdGgzMCIgc3R5bGU9ImZpbGw6IzY2NDUwMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgZD0ibSAwLDAgYyAwLC0xLjM4MSAtMC44OTUsLTIuNSAtMiwtMi41IC0xLjEwNCwwIC0yLDEuMTE5IC0yLDIuNSAwLDEuMzggMC44OTYsMi41IDIsMi41IDEuMTA1LDAgMiwtMS4xMiAyLC0yLjUiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOS42NzA5LDI5LjY2NykiIGlkPSJnMzIiPjxwYXRoIGlkPSJwYXRoMzQiIHN0eWxlPSJmaWxsOiM2NjQ1MDA7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiIGQ9Ik0gMCwwIEMgLTAuMTY0LDAuMDg3IC0wLjMwMywwLjIyMyAtMC4zOTEsMC4zOTggLTAuNjA3LDAuODI3IC0wLjQzMSwxLjMyNSAwLjAwMiwxLjUxMSA0LjI2OCwzLjM0MSA3LjcwMSwxLjU1NCA3Ljg0NSwxLjQ3NyA4LjI3OCwxLjI0NiA4LjQ1MywwLjcyOSA4LjIzNiwwLjMyMyA4LjAyLC0wLjA4MiA3LjQ5NiwtMC4yMjMgNy4wNjMsMC4wMDUgNi45NCwwLjA2OSA0LjIzMSwxLjQzNyAwLjc4NSwtMC4wNDIgMC41MjgsLTAuMTUxIDAuMjM4LC0wLjEyNyAwLDAiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQuNzQyNywxNi40Mjc3KSIgaWQ9ImczNiI+PHBhdGggaWQ9InBhdGgzOCIgc3R5bGU9ImZpbGw6IzY2NDUwMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgZD0iTSAwLDAgQyAtMC4xMzYsMC4xMjcgLTAuMjM2LDAuMjkzIC0wLjI3NiwwLjQ4NiAtMC4zNzUsMC45NTUgLTAuMDc4LDEuMzkyIDAuMzg5LDEuNDYgNC45ODEsMi4xMzggNy44NDEsLTAuNDY5IDcuOTYyLC0wLjU4IDguMzIyLC0wLjkxNCA4LjM1NywtMS40NTcgOC4wNDQsLTEuNzk1IDcuNzMyLC0yLjEzMSA3LjE4OSwtMi4xMzMgNi44MywtMS44MDEgNi43MjYsLTEuNzA5IDQuNDU4LDAuMzA3IDAuNzQ4LC0wLjI0IDAuNDcxLC0wLjI4MSAwLjE5NywtMC4xODQgMCwwIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLjQzMDcsMjUuOTE3KSIgaWQ9Imc0MCI+PHBhdGggaWQ9InBhdGg0MiIgc3R5bGU9ImZpbGw6IzY2NDUwMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgZD0iTSAwLDAgQyAtMC4xNTYsMC4wOTggLTAuMjg2LDAuMjQzIC0wLjM2MiwwLjQyNCAtMC41NDksMC44NjYgLTAuMzM5LDEuMzUyIDAuMTA1LDEuNTA4IDQuNDg2LDMuMDQ0IDcuNzksMS4wMjggNy45MjksMC45NDEgOC4zNDQsMC42ODEgOC40ODMsMC4xNTQgOC4yNCwtMC4yMzcgNy45OTgsLTAuNjI3IDcuNDY0LC0wLjczMiA3LjA0OSwtMC40NzUgNi45MjksLTAuNDAyIDQuMzIxLDEuMTQ2IDAuNzgyLC0wLjA5NSAwLjUxOCwtMC4xODcgMC4yMywtMC4xNDMgMCwwIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3LjI3NjQsMC44NjgyKSIgaWQ9Imc0NCI+PHBhdGggaWQ9InBhdGg0NiIgc3R5bGU9ImZpbGw6I2Y0OTAwYztmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgZD0ibSAwLDAgYyAwLDAgMS4yNjUsMC40MTEgMS40MjksMS4zNTIgMC4xNzMsMC45NzEgLTAuNjI0LDEuMTY3IC0wLjYyNCwxLjE2NyAwLDAgMS4wNDEsMC4yMDggMS4xNzIsMS4zNzYgMC4xMjMsMS4xIC0wLjg2MiwxLjM2MyAtMC44NjIsMS4zNjMgMCwwIDAuOTcsMC40IDEuMDE2LDEuNTM5IDAuMDM4LDAuOTU5IC0wLjk5NSwxLjQyOCAtMC45OTUsMS40MjggMCwwIDUuMDM4LDEuMjIgNS41NTUsMS4zNCAwLjUxNiwwLjEyMSAxLjMyMSwwLjYxNiAxLjA3LDEuNjk1IC0wLjI0OSwxLjA4IC0xLjIwNCwxLjExOCAtMS42OTgsMS4wMDMgLTAuNDk0LC0wLjExNiAtNi43NDQsLTEuNTY3IC04LjksLTIuMDY5IC0wLjIzLC0wLjA1MyAtMS4zMDgsLTAuMzAyIC0xLjQzOSwtMC4zMzQgLTAuNTQsLTAuMTI3IC0wLjc4NSwwLjExMSAtMC40MDUsMC41MTIgMC41MDksMC41MzYgMC44MzMsMS4xMjkgMC45NDcsMi4xMTMgMC4xMTksMS4wMzYgLTAuMjMyLDIuMzE0IC0wLjQzMywyLjgwOSAtMC4zNzQsMC45MjEgLTEuMDA1LDEuNjQ5IC0xLjczNCwxLjg5OSAtMS4xMzgsMC4zOSAtMS45NDYsLTAuMzIxIC0xLjU0MiwtMS41NjEgMC42MDQsLTEuODU1IDAuMjA5LC0zLjM3NSAtMC44MzMsLTQuMjkzIC0yLjQ0OSwtMi4xNTcgLTMuNTg5LC0zLjY5NSAtMi44MywtNi45NzMgMC44MjcsLTMuNTc1IDQuMzc3LC01Ljg3NiA3Ljk1MiwtNS4wNDggQyAtMi45NjUsLTAuNjQgMCwwIDAsMCIvPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4K",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-recommend-v0.4.0.tar.gz",
+    "release_notes_url": "https://github.com/jespino/mattermost-plugin-recommend/blob/master/CHANGELOG.md",
+    "labels": [
+      {
+        "name": "Beta",
+        "description": "This plugin is currently in Beta and is not recommended for use in production.",
+        "url": "https://mattermost.com/pl/default-beta-plugins",
+        "color": ""
+      },
+      {
+        "name": "Community",
+        "description": "This plugin is maintained by the Open Source Community.",
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": ""
+      }
+    ],
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl9ieQIACgkQ0bVLR6XO/sRCZg//WBujXtdpT8tS54dTwlHi3uBx4qSU+byyHsm7OssCDxW7ZirAJfLtMtuUiO9cm6p5n1A0RzeKYTLvj6RGNnNi4XHkjFnp0tGLOZAJP6Yxmp2Soeg9p+TvWVXX6zH1mQyGzWAD4aSruEYpn/aB3KyD8sRW7YYcrrnm861iiLSKCe/CCsAqUp3CyM6+lL41PEFxicyI9PLJ+gM01kXvPmdOnED8GHbLlHrPMswMO7r1LBA+BV/ubMfazSvvGf2FZLMhQ/LMtWR/jUvRQcbT1W17iGbGH/PiTDQlqIxOaNjEqUU8lWZ7h0WkTVjsXKRcyZZsytlBO+wSKHChhA41JaKdhfXDK8saT/8SvOfUsSDJpPzTErgk7+MLV6TN+uQG+6cPdmF8boOJfEgM7v50KQqeN9qf/YjHK3R/a2D5HAG9BJAcmFCwnqOZ7R7Mr8vaVK9gA1v1kCX+ejxnEpk4BNaEPWjJqgeXUuf4jGuHgvKoqBhClI3mOK53nop300/fO2kH8x582R+MvUC/KbT9C0jtutLtYYGCgpgkIAbjOHOFmKPJgs3YjuWK/PdIMDuMuUvQJf65AB8XiWcpkUVCMlifcUdH/N+2hqBfHybo+nyZrbhPpOF1HDSd2HtEwjnEn2stn/0XZekoF0Y5VaMwb3HkHP9hxwtBCJDH+ijlrGOLqNA=",
+    "manifest": {
+      "id": "com.github.jespino.recommend",
+      "name": "Channel Recommender",
+      "description": "This plugin recommends other channels that may be of interest to users",
+      "homepage_url": "https://github.com/jespino/mattermost-plugin-recommend",
+      "support_url": "https://github.com/jespino/mattermost-plugin-recommend/issues",
+      "release_notes_url": "https://github.com/jespino/mattermost-plugin-recommend/blob/master/CHANGELOG.md",
+      "icon_path": "assets/icon.svg",
+      "version": "0.0.4",
+      "min_server_version": "5.16.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "RecommendOnJoinTeam",
+            "display_name": "Recommend at team join",
+            "type": "bool",
+            "help_text": "When user joins to a team, recommend bot is going to recommend interesting channels in that team.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "RecommendOnJoinChannel",
+            "display_name": "Recommend at channel join",
+            "type": "bool",
+            "help_text": "When user joins to a channel, recommend bot is going to recommend other channels in the team based on the people in that channel.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "ActivityThreshold",
+            "display_name": "Activity threashold",
+            "type": "number",
+            "help_text": "When the bot recommends you the most active channels, what is the time (in minutes) that is used to count activity. By default is a week. In instances with a lot of activity we recommend to adjust this to smaller value.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GracePeriod",
+            "display_name": "Grace period",
+            "type": "number",
+            "help_text": "Give a period of time since the user was created before start sending automatic messages on join.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-09-16T21:20:30.161876195Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM4cHgiIGhlaWdodD0iMzExcHgiIHZpZXdCb3g9IjAgMCAzMzggMzExIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+Z2l0bGFiPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImdpdGxhYiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Imc0NCIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzM3LjE3LDE3Ny44MyBMMzE4LjI2LDExOS43MSBMMjgwLjg0LDQuNDMgQzI3OS45NTY2MDIsMS43OTI1OTE5IDI3Ny40ODY0MjMsMC4wMTQ5MTQ4NDAxIDI3NC43MDUsMC4wMTQ5MTQ4NDAxIEMyNzEuOTIzNTc3LDAuMDE0OTE0ODQwMSAyNjkuNDUzMzk4LDEuNzkyNTkxOSAyNjguNTcsNC40MyBMMjMxLjE1LDExOS42NCBMMTA2LjgyLDExOS42NCBMNjkuNCw0LjQzIEM2OC41MjIwOTY1LDEuNzg5Nzk2NDIgNjYuMDUyMzM1MywwLjAwODMwODEyMTk1IDYzLjI3LDAuMDA4MzA4MTIxOTUgQzYwLjQ4NzY2NDcsMC4wMDgzMDgxMjE5NSA1OC4wMTc5MDM1LDEuNzg5Nzk2NDIgNTcuMTQsNC40MyBMMTkuNzgsMTE5LjY0IEwwLjg3LDE3Ny44MyBDLTAuODUzMzI4OTE3LDE4My4xMjk2OSAxLjAyNzE0ODQ1LDE4OC45MzY1NzIgNS41MywxOTIuMjIgTDE2OSwzMTEgTDMzMi40NCwxOTIuMjIgQzMzNi45NjMzMjUsMTg4Ljk1MTQyMSAzMzguODcxOTU0LDE4My4xNDQ4MzEgMzM3LjE3LDE3Ny44MyIgaWQ9InBhdGg0NiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNi4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRTI0MzI5Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTAiIHBvaW50cz0iNjMgMTkxLjkxIDYzIDE5MS45MSAxMjUuMTYgMC42MyAwLjg3IDAuNjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkM2RDI2Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTgiIHBvaW50cz0iMTUwIDE5MS45MSA4Ny44MiAwLjYzIDAuODIgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDQTMyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuNzUsMC42OSBMMTkuNzUsMC42OSBMMC44NCw1OC44MSBDLTAuODgzMzI4OTE3LDY0LjEwOTY4OTggMC45OTcxNDg0NTEsNjkuOTE2NTcxNiA1LjUsNzMuMiBMMTY5LDE5MiBMMTkuNzUsMC42OSBaIiBpZD0icGF0aDY2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Imc3MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNzgsMTE5LjY5IEw4Ny44OSwxMTkuNjkgTDUwLjQsNC40OSBDNDkuNTE2NjAxNiwxLjg1MjU5MTkgNDcuMDQ2NDIzLDAuMDc0OTE0ODQwMSA0NC4yNjUsMC4wNzQ5MTQ4NDAxIEM0MS40ODM1NzcsMC4wNzQ5MTQ4NDAxIDM5LjAxMzM5ODQsMS44NTI1OTE5IDM4LjEzLDQuNDkgTDAuNzgsMTE5LjY5IFoiIGlkPSJwYXRoNzQiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzc2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0icGF0aDc4IiBwb2ludHM9IjAgMTkxLjkxIDYyLjE2IDAuNjMgMTQ5LjMgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnODAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkNBMzI2Ij4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNDkuMjQsMC42OSBMMTQ5LjI0LDAuNjkgTDE2OC4xNSw1OC44MSBDMTY5Ljg4MzI2MSw2NC4xMDk2Nzk1IDE2OC4wMDA4OTMsNjkuOTIyNDAyMyAxNjMuNDksNzMuMiBMMCwxOTEuOTEgTDE0OS4yLDAuNjkgTDE0OS4yNCwwLjY5IFoiIGlkPSJwYXRoODIiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzg0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTg3LjI4LDExOS42OSBMMC4xOCwxMTkuNjkgTDM3LjYsNC40OSBDMzguNDc3OTAzNSwxLjg0OTc5NjQyIDQwLjk0NzY2NDcsMC4wNjgzMDgxMjE5IDQzLjczLDAuMDY4MzA4MTIxOSBDNDYuNTEyMzM1MywwLjA2ODMwODEyMTkgNDguOTgyMDk2NSwxLjg0OTc5NjQyIDQ5Ljg2LDQuNDkgTDg3LjI4LDExOS42OSBaIiBpZD0icGF0aDg2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
     "download_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/download/v1.2.0/com.github.manland.mattermost-plugin-gitlab-1.2.0.tar.gz",
