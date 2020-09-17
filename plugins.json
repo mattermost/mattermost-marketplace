@@ -2045,6 +2045,14 @@
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.4.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/tag/v0.4.0",
+    "labels": [
+      {
+        "name": "Beta",
+        "description": "This plugin is currently in Beta and is not recommended for use in production.",
+        "url": "https://mattermost.com/pl/default-beta-plugins",
+        "color": ""
+      }
+    ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl9jF0AACgkQ0bVLR6XO/sSTzw//e5IAeSA1oQh129ZvR5LavQMivLbdkBC7+rP+qYfAKmRgREoPGt3tUXELZboAUOGZx6JsqS5x/OEAkMnxuiKDyvL6PX3Q7YGmw0Nd16cHcRPZxu9UERg/sPrDmBbr9rUK5TVG212hoRCcZIwkUO9o+gkmkOphGWn3GZor1ZrqOrt/bOEaKrnCNlq8S3wlJVBtZPvdZhxAUs8ED8zYQS7yRg10kp1SpFWuqnxi6q9ie7y+TPebbcVP63+dyIzxWVRlHwFJBeT7UL77YMXp8LBzXy3A++/3eL033VD5aZCUAcmcGw6gt0vPvSlXH1nSOkNdFB+3bq/PlgyetKK9TtTx/Llk36G/Gjt0aAxHfdy3YiR4CB9/qKZ6GtpVGmb4vGjNiQivNzOxI2VVHo7isf1JPi6eeAM6lwaaWFuZnzyfIBmw38TTv6ExMS0jWhbyF2HHbjlffcIC4Bd9lwLUETS6Ib11a56YqeCnNB7Qi6hDLn+Dux4yUh5TDjjvIS3Gho6xinQ1blWLBbJOHC6VIdoepKcJzHfOrxQrN6IO8dzxhxgcUz4DH7uJEKO1Jrn4z9wMfIOv1LakSwL8wtKt+6C/a7R2xBC+dOaDSOkfAQHh5+pk+NbeEPmR7QLmulqsG6J3I/ENI+oBdQVrDBVJs4BKGg7Xo9BTee8JxIs4ARS4GEo=",
     "manifest": {
       "id": "com.mattermost.plugin-todo",
