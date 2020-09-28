@@ -36,7 +36,7 @@ If your plugin isn't production ready, please leave a comment stating whether yo
 
 **Product requirements**
 
-- [ ] The plugin is published under an Apache v2 compatible license (e.g. no GPL, APGL). A list of compatible licenses can be found [here](https://apache.org/legal/resolved.html#category-a).
+- [ ] The plugin is published under an [Open Source license](https://opensource.org/licenses/alphabetical).
 - [ ] The source code is available in a public git repository.
 - [ ] There is a public issue or bug tracker for the plugin, which is linked in the plugin documentation and linked via `support_url` in the manifest.
 - [ ] The plugin provides detailed usage documentation with at least one screenshot of the plugin in action, list of features, and a development guide. This is typically a `README` file or a landing page on the web. The link to the documentation is set as `homepage_url` in the manifest. A great example is the [`README` of the GitHub plugin](https://github.com/mattermost/mattermost-plugin-github/blob/master/README.md).
