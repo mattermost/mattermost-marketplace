@@ -11,8 +11,8 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
-// addArchSpecificBundles includes the arch-specific bundle URLs and signatures in the Marketplace entries.
-func addArchSpecificBundles(plugin *model.Plugin) (*model.Plugin, error) {
+// addPlatformSpecificBundles includes the platform-specific bundle URLs and signatures in the Marketplace entries.
+func addPlatformSpecificBundles(plugin *model.Plugin) (*model.Plugin, error) {
 	if plugin.HomepageURL == "" {
 		return plugin, nil
 	}
@@ -26,14 +26,14 @@ func addArchSpecificBundles(plugin *model.Plugin) (*model.Plugin, error) {
 		remotePluginHost = defaultRemotePluginHost
 	}
 
-	archs, err := checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion)
+	platforms, err := checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion)
 	if err != nil {
 		return nil, err
 	}
 
-	plugin.ArchBundles = model.ArchBundles{}
-	for _, arch := range archs {
-		fname := fmt.Sprintf("%s-%s.tar.gz", pluginWithVersion, arch)
+	plugin.PlatformBundles = model.PlatformBundles{}
+	for _, platform := range platforms {
+		fname := fmt.Sprintf("%s-%s.tar.gz", pluginWithVersion, platform)
 
 		pluginPath := fmt.Sprintf("%s/%s", remotePluginHost, fname)
 		sigPath := pluginPath + ".sig"
@@ -50,31 +50,31 @@ func addArchSpecificBundles(plugin *model.Plugin) (*model.Plugin, error) {
 		}
 		signatureStr := base64.StdEncoding.EncodeToString(signatureBytes)
 
-		meta := &model.ArchBundleMetadata{
+		meta := &model.PlatformBundleMetadata{
 			DownloadURL: pluginPath,
 			Signature:   signatureStr,
 		}
 
-		switch arch {
+		switch platform {
 		case model.LinuxAmd64:
-			plugin.ArchBundles.LinuxAmd64 = meta
+			plugin.PlatformBundles.LinuxAmd64 = meta
 		case model.DarwinAmd64:
-			plugin.ArchBundles.DarwinAmd64 = meta
+			plugin.PlatformBundles.DarwinAmd64 = meta
 		case model.WindowsAmd64:
-			plugin.ArchBundles.WindowsAmd64 = meta
+			plugin.PlatformBundles.WindowsAmd64 = meta
 		}
 	}
 
 	return plugin, nil
 }
 
-// checkIfRemoteBundlesExist checks which arch-specific bundles are available on the remote file server, as well as their signatures.
+// checkIfRemoteBundlesExist checks which platform-specific bundles are available on the remote file server, as well as their signatures.
 func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]string, error) {
 	result := []string{}
 
-	archs := []string{model.LinuxAmd64, model.DarwinAmd64, model.WindowsAmd64}
-	for _, arch := range archs {
-		path := fmt.Sprintf("%s/%s-%s.tar.gz", remotePluginHost, pluginWithVersion, arch)
+	platforms := []string{model.LinuxAmd64, model.DarwinAmd64, model.WindowsAmd64}
+	for _, platform := range platforms {
+		path := fmt.Sprintf("%s/%s-%s.tar.gz", remotePluginHost, pluginWithVersion, platform)
 
 		// Check if plugin bundle exists on remote file server
 		res, err := http.Head(path)
@@ -94,7 +94,7 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 			continue
 		}
 
-		result = append(result, arch)
+		result = append(result, platform)
 	}
 
 	return result, nil

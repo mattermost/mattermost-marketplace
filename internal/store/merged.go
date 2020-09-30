@@ -40,7 +40,7 @@ func (store *Merged) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plug
 			Filter:            pluginFilter.Filter,
 			ServerVersion:     pluginFilter.ServerVersion,
 			EnterprisePlugins: pluginFilter.EnterprisePlugins,
-			Architecture:      pluginFilter.Architecture,
+			Platform:          pluginFilter.Platform,
 		})
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to query store %d", i)

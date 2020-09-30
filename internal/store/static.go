@@ -80,7 +80,7 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 		return nil, nil
 	}
 
-	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins, pluginFilter.Architecture)
+	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins, pluginFilter.Platform)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get plugins")
 	}
@@ -116,7 +116,7 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 }
 
 // getPlugins returns all plugins compatible with the given server version, sorted by name ascending.
-func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlugins bool, architecture string) ([]*model.Plugin, error) {
+func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlugins bool, platform string) ([]*model.Plugin, error) {
 	var result []*model.Plugin
 	plugins := map[string]*model.Plugin{}
 
@@ -150,19 +150,19 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 			}
 		}
 
-		if architecture != "" {
-			var bundle *model.ArchBundleMetadata
+		if platform != "" {
+			var bundle *model.PlatformBundleMetadata
 
 			// We don't want to edit the existing plugin's download_url. Only the response should be edited.
 			newRef := *storePlugin
 
-			switch architecture {
+			switch platform {
 			case model.LinuxAmd64:
-				bundle = newRef.ArchBundles.LinuxAmd64
+				bundle = newRef.PlatformBundles.LinuxAmd64
 			case model.DarwinAmd64:
-				bundle = newRef.ArchBundles.DarwinAmd64
+				bundle = newRef.PlatformBundles.DarwinAmd64
 			case model.WindowsAmd64:
-				bundle = newRef.ArchBundles.WindowsAmd64
+				bundle = newRef.PlatformBundles.WindowsAmd64
 			}
 
 			if bundle != nil {

@@ -139,7 +139,7 @@ var addCmd = &cobra.Command{
 			UpdatedAt:       time.Now().In(time.UTC),
 		}
 
-		plugin, err = addArchSpecificBundles(plugin)
+		plugin, err = addPlatformSpecificBundles(plugin)
 		if err != nil {
 			return err
 		}

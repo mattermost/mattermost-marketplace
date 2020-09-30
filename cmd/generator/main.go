@@ -352,7 +352,7 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 	plugin.Signature = signature
 	plugin.UpdatedAt = updatedAt
 
-	plugin, err := addArchSpecificBundles(plugin)
+	plugin, err := addPlatformSpecificBundles(plugin)
 	if err != nil {
 		return nil, err
 	}

@@ -19,19 +19,19 @@ type Plugin struct {
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
-	ArchBundles     ArchBundles               `json:"arch_bundles"`
+	PlatformBundles PlatformBundles           `json:"platform_bundles"`
 }
 
-// ArchBundleMetadata holds the necessary data to fetch and verify a plugin built for a specific architecture
-type ArchBundleMetadata struct {
+// PlatformBundleMetadata holds the necessary data to fetch and verify a plugin built for a specific platform
+type PlatformBundleMetadata struct {
 	DownloadURL string `json:"download_url"`
 	Signature   string `json:"signature"`
 }
 
-type ArchBundles struct {
-	LinuxAmd64   *ArchBundleMetadata `json:"linux-amd64,omitempty" yaml:"linux-amd64,omitempty"`
-	DarwinAmd64  *ArchBundleMetadata `json:"darwin-amd64,omitempty" yaml:"darwin-amd64,omitempty"`
-	WindowsAmd64 *ArchBundleMetadata `json:"windows-amd64,omitempty" yaml:"windows-amd64,omitempty"`
+type PlatformBundles struct {
+	LinuxAmd64   *PlatformBundleMetadata `json:"linux-amd64,omitempty" yaml:"linux-amd64,omitempty"`
+	DarwinAmd64  *PlatformBundleMetadata `json:"darwin-amd64,omitempty" yaml:"darwin-amd64,omitempty"`
+	WindowsAmd64 *PlatformBundleMetadata `json:"windows-amd64,omitempty" yaml:"windows-amd64,omitempty"`
 }
 
 const (
@@ -86,5 +86,5 @@ type PluginFilter struct {
 	Filter            string
 	ServerVersion     string
 	EnterprisePlugins bool
-	Architecture      string
+	Platform          string
 }
