@@ -50,7 +50,7 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 		switch platform {
 		case model.LinuxAmd64:
 			plugin.Platforms.LinuxAmd64 = bundle
-		case model.DarwinAmd64:
+		case model.OsxAmd64:
 			plugin.Platforms.DarwinAmd64 = bundle
 		case model.WindowsAmd64:
 			plugin.Platforms.WindowsAmd64 = bundle
