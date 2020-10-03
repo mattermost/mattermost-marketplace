@@ -140,6 +140,11 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 		}
 
 		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
+			_, err := semver.Parse(serverVersion)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
+			}
+
 			meetsMinServerVersion, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
 			if err != nil {
 				return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
@@ -158,11 +163,11 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 
 			switch platform {
 			case model.LinuxAmd64:
-				bundle = newRef.PlatformBundles.LinuxAmd64
+				bundle = newRef.Platforms.LinuxAmd64
 			case model.DarwinAmd64:
-				bundle = newRef.PlatformBundles.DarwinAmd64
+				bundle = newRef.Platforms.DarwinAmd64
 			case model.WindowsAmd64:
-				bundle = newRef.PlatformBundles.WindowsAmd64
+				bundle = newRef.Platforms.WindowsAmd64
 			}
 
 			if bundle != nil {

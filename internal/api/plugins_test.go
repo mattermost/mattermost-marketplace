@@ -222,10 +222,18 @@ func TestPlugins(t *testing.T) {
 				MinServerVersion: "5.12.0",
 			},
 			Signature: "signature6",
-			PlatformBundles: model.PlatformBundles{
+			Platforms: model.PlatformBundles{
 				LinuxAmd64: &model.PlatformBundleMetadata{
 					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-linux-amd64.tar.gz",
 					Signature:   "signature6 for linux",
+				},
+				DarwinAmd64: &model.PlatformBundleMetadata{
+					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-osx-amd64.tar.gz",
+					Signature:   "signature6 for darwin",
+				},
+				WindowsAmd64: &model.PlatformBundleMetadata{
+					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-windows-amd64.tar.gz",
+					Signature:   "signature6 for windows",
 				},
 			},
 		}
@@ -428,8 +436,32 @@ func TestPlugins(t *testing.T) {
 			require.NoError(t, err)
 			require.Len(t, plugins, 1)
 			require.NotEqual(t, plugin6WithPlatform.DownloadURL, plugins[0].DownloadURL)
-			require.Equal(t, plugin6WithPlatform.PlatformBundles.LinuxAmd64.DownloadURL, plugins[0].DownloadURL)
-			require.Equal(t, plugin6WithPlatform.PlatformBundles.LinuxAmd64.Signature, plugins[0].Signature)
+			require.Equal(t, plugin6WithPlatform.Platforms.LinuxAmd64.DownloadURL, plugins[0].DownloadURL)
+			require.Equal(t, plugin6WithPlatform.Platforms.LinuxAmd64.Signature, plugins[0].Signature)
+
+			plugins, err = client.GetPlugins(&api.GetPluginsRequest{
+				ServerVersion: "5.26.0",
+				PerPage:       -1,
+				Filter:        "todo",
+				Platform:      "darwin-amd64",
+			})
+			require.NoError(t, err)
+			require.Len(t, plugins, 1)
+			require.NotEqual(t, plugin6WithPlatform.DownloadURL, plugins[0].DownloadURL)
+			require.Equal(t, plugin6WithPlatform.Platforms.DarwinAmd64.DownloadURL, plugins[0].DownloadURL)
+			require.Equal(t, plugin6WithPlatform.Platforms.DarwinAmd64.Signature, plugins[0].Signature)
+
+			plugins, err = client.GetPlugins(&api.GetPluginsRequest{
+				ServerVersion: "5.26.0",
+				PerPage:       -1,
+				Filter:        "todo",
+				Platform:      "windows-amd64",
+			})
+			require.NoError(t, err)
+			require.Len(t, plugins, 1)
+			require.NotEqual(t, plugin6WithPlatform.DownloadURL, plugins[0].DownloadURL)
+			require.Equal(t, plugin6WithPlatform.Platforms.WindowsAmd64.DownloadURL, plugins[0].DownloadURL)
+			require.Equal(t, plugin6WithPlatform.Platforms.WindowsAmd64.Signature, plugins[0].Signature)
 		})
 
 		t.Run("fall back to default bundle if requested platform not is not found", func(t *testing.T) {
@@ -440,7 +472,7 @@ func TestPlugins(t *testing.T) {
 				ServerVersion: "5.26.0",
 				PerPage:       -1,
 				Filter:        "todo",
-				Platform:      "windows-amd64",
+				Platform:      "linux-arm",
 			})
 			require.NoError(t, err)
 			require.Len(t, plugins, 1)

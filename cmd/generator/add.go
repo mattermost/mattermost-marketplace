@@ -3,6 +3,7 @@ package main
 import (
 	"archive/tar"
 	"bytes"
+	"fmt"
 	"time"
 
 	"github.com/blang/semver"
@@ -20,6 +21,7 @@ func init() {
 	addCmd.Flags().Bool("official", false, "Mark this plugin as maintained by Mattermost")
 	addCmd.Flags().Bool("community", false, "Mark this plugin as maintained by the Open Source Community")
 	addCmd.Flags().Bool("enterprise", false, "Mark this plugin as only available to installations with an E20-only plugins license")
+	addCmd.Flags().String("remote-plugin-host", defaultRemotePluginHost, "Server URL hosting plugin bundles, i.e. from S3.")
 }
 
 var addCmd = &cobra.Command{
@@ -78,7 +80,12 @@ var addCmd = &cobra.Command{
 			return errors.Wrapf(err, "%v is an invalid tag. Something like v2.3.4 is expected", tag)
 		}
 
-		bundleURL := "https://plugins-store.test.mattermost.com/release/" + repo + "-" + tag + ".tar.gz"
+		pluginHost, err := command.Flags().GetString("remote-plugin-host")
+		if err != nil {
+			return err
+		}
+
+		bundleURL := fmt.Sprintf("%s/%s-%s.tar.gz", pluginHost, repo, tag)
 		signatureURL := bundleURL + ".sig"
 
 		bundleData, err := downloadBundleData(bundleURL)
@@ -139,7 +146,7 @@ var addCmd = &cobra.Command{
 			UpdatedAt:       time.Now().In(time.UTC),
 		}
 
-		plugin, err = addPlatformSpecificBundles(plugin)
+		plugin, err = addPlatformSpecificBundles(plugin, pluginHost)
 		if err != nil {
 			return err
 		}

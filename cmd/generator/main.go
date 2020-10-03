@@ -35,6 +35,8 @@ func init() {
 	generatorCmd.PersistentFlags().String("database", "plugins.json", "Path to the plugins database to update.")
 
 	generatorCmd.Flags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
+	generatorCmd.Flags().String("github-org", defaultGitHubOrg, "GitHub org that owns the plugin releases.")
+	generatorCmd.Flags().String("remote-plugin-host", defaultRemotePluginHost, "Server URL hosting plugin bundles, i.e. from S3.")
 }
 
 func main() {
@@ -58,6 +60,16 @@ var generatorCmd = &cobra.Command{
 		}
 
 		dbFile, err := command.Flags().GetString("database")
+		if err != nil {
+			return err
+		}
+
+		githubOrg, err := command.Flags().GetString("github-org")
+		if err != nil {
+			return err
+		}
+
+		pluginHost, err := command.Flags().GetString("remote-plugin-host")
 		if err != nil {
 			return err
 		}
@@ -107,11 +119,10 @@ var generatorCmd = &cobra.Command{
 			logger.Debugf("querying repository %s", repositoryName)
 
 			var releasePlugins []*model.Plugin
-			releasePlugins, err = getReleasePlugins(ctx, client, repositoryName, includePreRelease, existingPlugins)
+			releasePlugins, err = getReleasePlugins(ctx, client, githubOrg, repositoryName, pluginHost, includePreRelease, existingPlugins)
 			if err != nil {
 				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
 			}
-
 			plugins = append(plugins, releasePlugins...)
 		}
 
@@ -142,20 +153,15 @@ var generatorCmd = &cobra.Command{
 }
 
 // getReleasePlugins queries GitHub for all releases of the given plugin, sorting by plugin version descending.
-func getReleasePlugins(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
+func getReleasePlugins(ctx context.Context, client *github.Client, githubOrg, repositoryName, pluginHost string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
 	logger := logger.WithField("repository", repositoryName)
 
-	org := os.Getenv("GITHUB_ORG")
-	if org == "" {
-		org = defaultGitHubOrg
-	}
-
-	repository, _, err := client.Repositories.Get(ctx, org, repositoryName)
+	repository, _, err := client.Repositories.Get(ctx, githubOrg, repositoryName)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get repository")
 	}
 
-	releases, err := getReleases(ctx, client, org, repositoryName, includePreRelease)
+	releases, err := getReleases(ctx, client, githubOrg, repositoryName, includePreRelease)
 	if err != nil {
 		return nil, err
 	}
@@ -166,7 +172,7 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 
 	var plugins []*model.Plugin
 	for _, release := range releases {
-		plugin, err := getReleasePlugin(release, repository, existingPlugins)
+		plugin, err := getReleasePlugin(release, repository, existingPlugins, pluginHost)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to get release plugin for %s", release.GetName())
 		}
@@ -228,7 +234,7 @@ func getReleases(ctx context.Context, client *github.Client, org, repoName strin
 	return result, nil
 }
 
-func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repository, existingPlugins []*model.Plugin) (*model.Plugin, error) {
+func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repository, existingPlugins []*model.Plugin, pluginHost string) (*model.Plugin, error) {
 	var releaseName string
 	if release.GetName() == "" {
 		releaseName = release.GetTagName()
@@ -352,7 +358,7 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 	plugin.Signature = signature
 	plugin.UpdatedAt = updatedAt
 
-	plugin, err := addPlatformSpecificBundles(plugin)
+	plugin, err := addPlatformSpecificBundles(plugin, pluginHost)
 	if err != nil {
 		return nil, err
 	}

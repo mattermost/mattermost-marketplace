@@ -10,6 +10,7 @@ import (
 
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.
 type Plugin struct {
+	RepoName        string                    `json:"repo_name"`
 	HomepageURL     string                    `json:"homepage_url"`
 	IconData        string                    `json:"icon_data"` // The base64 encoding of an svg image
 	DownloadURL     string                    `json:"download_url"`
@@ -18,8 +19,8 @@ type Plugin struct {
 	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
+	Platforms       PlatformBundles           `json:"platforms"`
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
-	PlatformBundles PlatformBundles           `json:"platform_bundles"`
 }
 
 // PlatformBundleMetadata holds the necessary data to fetch and verify a plugin built for a specific platform
@@ -37,6 +38,7 @@ type PlatformBundles struct {
 const (
 	LinuxAmd64   = "linux-amd64"
 	DarwinAmd64  = "darwin-amd64"
+	OsxAmd64     = "osx-amd64"
 	WindowsAmd64 = "windows-amd64"
 )
 
