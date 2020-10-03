@@ -153,15 +153,15 @@ var generatorCmd = &cobra.Command{
 }
 
 // getReleasePlugins queries GitHub for all releases of the given plugin, sorting by plugin version descending.
-func getReleasePlugins(ctx context.Context, client *github.Client, githubOrg, repositoryName, pluginHost string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
+func getReleasePlugins(ctx context.Context, client *github.Client, org, repositoryName, pluginHost string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
 	logger := logger.WithField("repository", repositoryName)
 
-	repository, _, err := client.Repositories.Get(ctx, githubOrg, repositoryName)
+	repository, _, err := client.Repositories.Get(ctx, org, repositoryName)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get repository")
 	}
 
-	releases, err := getReleases(ctx, client, githubOrg, repositoryName, includePreRelease)
+	releases, err := getReleases(ctx, client, org, repositoryName, includePreRelease)
 	if err != nil {
 		return nil, err
 	}

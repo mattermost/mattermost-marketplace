@@ -42,18 +42,18 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 		}
 		signatureStr := base64.StdEncoding.EncodeToString(signatureBytes)
 
-		meta := &model.PlatformBundleMetadata{
+		bundle := &model.PlatformBundleMetadata{
 			DownloadURL: pluginPath,
 			Signature:   signatureStr,
 		}
 
 		switch platform {
 		case model.LinuxAmd64:
-			plugin.Platforms.LinuxAmd64 = meta
+			plugin.Platforms.LinuxAmd64 = bundle
 		case model.DarwinAmd64:
-			plugin.Platforms.DarwinAmd64 = meta
+			plugin.Platforms.DarwinAmd64 = bundle
 		case model.WindowsAmd64:
-			plugin.Platforms.WindowsAmd64 = meta
+			plugin.Platforms.WindowsAmd64 = bundle
 		}
 	}
 
