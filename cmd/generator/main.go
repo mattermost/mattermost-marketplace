@@ -311,6 +311,7 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 		logger.Debugf("fetching download url %s", downloadURL)
 
 		plugin = &model.Plugin{}
+		plugin.RepoName = repository.GetName()
 
 		bundleData, err := downloadBundleData(downloadURL)
 		if err != nil {

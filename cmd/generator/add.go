@@ -135,6 +135,7 @@ var addCmd = &cobra.Command{
 		}
 
 		plugin := &model.Plugin{
+			RepoName:        repo,
 			HomepageURL:     manifest.HomepageURL,
 			IconData:        iconData,
 			DownloadURL:     bundleURL,
