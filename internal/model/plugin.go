@@ -8,6 +8,13 @@ import (
 	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 )
 
+type HostingType string
+
+const (
+	OnPrem HostingType = "on-prem"
+	Cloud  HostingType = "cloud"
+)
+
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.
 type Plugin struct {
 	HomepageURL     string                    `json:"homepage_url"`
@@ -18,6 +25,7 @@ type Plugin struct {
 	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
+	Hosting         HostingType               `json:"hosting"`    // Indicated if the plugin is limited to a certain hosting type
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
 }
 
@@ -67,4 +75,5 @@ type PluginFilter struct {
 	Filter            string
 	ServerVersion     string
 	EnterprisePlugins bool
+	Cloud             bool
 }

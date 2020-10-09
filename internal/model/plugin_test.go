@@ -143,6 +143,7 @@ func TestPluginsToWriter(t *testing.T) {
       "version": "1.0.0"
     },
     "enterprise": false,
+    "hosting": "",
     "updated_at": "0001-01-01T00:00:00Z"
   },
   {
@@ -156,6 +157,7 @@ func TestPluginsToWriter(t *testing.T) {
       "version": "2.0.0"
     },
     "enterprise": false,
+    "hosting": "",
     "updated_at": "0001-01-01T00:00:00Z"
   }
 ]

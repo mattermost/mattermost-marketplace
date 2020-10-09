@@ -20,6 +20,8 @@ func init() {
 	addCmd.Flags().Bool("official", false, "Mark this plugin as maintained by Mattermost")
 	addCmd.Flags().Bool("community", false, "Mark this plugin as maintained by the Open Source Community")
 	addCmd.Flags().Bool("enterprise", false, "Mark this plugin as only available to installations with an E20-only plugins license")
+	addCmd.Flags().Bool("cloud", false, "Mark this plugin as only available to cloud installations")
+	addCmd.Flags().Bool("on-prem", false, "Mark this plugin as only available to on-prem installations")
 }
 
 var addCmd = &cobra.Command{
@@ -50,6 +52,20 @@ var addCmd = &cobra.Command{
 
 		if official == community {
 			return errors.New("you must either set the release as a official or as a community plugin")
+		}
+
+		cloud, err := command.Flags().GetBool("cloud")
+		if err != nil {
+			return err
+		}
+
+		onPrem, err := command.Flags().GetBool("on-prem")
+		if err != nil {
+			return err
+		}
+
+		if cloud && onPrem {
+			return errors.New("if you want to make a plugin availed for cloud and on-prem, just drop both flags")
 		}
 
 		beta, err := command.Flags().GetBool("beta")
@@ -137,6 +153,14 @@ var addCmd = &cobra.Command{
 			Manifest:        manifest,
 			Enterprise:      enterprise,
 			UpdatedAt:       time.Now().In(time.UTC),
+		}
+
+		if cloud {
+			plugin.Hosting = model.Cloud
+		}
+
+		if onPrem {
+			plugin.Hosting = model.OnPrem
 		}
 
 		plugins = append(plugins, plugin)
