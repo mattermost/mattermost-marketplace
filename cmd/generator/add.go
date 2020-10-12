@@ -65,7 +65,7 @@ var addCmd = &cobra.Command{
 		}
 
 		if cloud && onPrem {
-			return errors.New("if you want to make a plugin availed for cloud and on-prem, just drop both flags")
+			return errors.New("if you want to make a plugin available for cloud and on-prem, just drop both flags")
 		}
 
 		beta, err := command.Flags().GetBool("beta")
