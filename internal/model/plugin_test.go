@@ -29,7 +29,7 @@ func TestPluginFromReader(t *testing.T) {
 
 	t.Run("request", func(t *testing.T) {
 		plugin, err := PluginFromReader(bytes.NewReader([]byte(
-			`{"repo_name":"mattermost-plugin-demo","homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1", "release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{}}`,
+			`{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1","repo_name":"mattermost-plugin-demo","release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{}}`,
 		)))
 		require.NoError(t, err)
 		require.Equal(t, &Plugin{
@@ -168,12 +168,12 @@ func TestPluginsToWriter(t *testing.T) {
 		err := PluginsToWriter(&b, p)
 		expectedResult := `[
   {
-    "repo_name": "mattermost-plugin-demo",
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-demo",
     "icon_data": "icon-data.svg",
     "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
     "signature": "signature1",
+    "repo_name": "mattermost-plugin-demo",
     "manifest": {
       "id": "demo",
       "version": "1.0.0"
@@ -196,12 +196,12 @@ func TestPluginsToWriter(t *testing.T) {
     "updated_at": "0001-01-01T00:00:00Z"
   },
   {
-    "repo_name": "mattermost-plugin-starter-template",
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-starter-template",
     "icon_data": "icon-data2.svg",
     "download_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
     "signature": "signature2",
+    "repo_name": "mattermost-plugin-starter-template",
     "manifest": {
       "id": "template",
       "version": "2.0.0"
