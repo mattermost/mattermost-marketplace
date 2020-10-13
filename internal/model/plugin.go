@@ -10,13 +10,13 @@ import (
 
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.
 type Plugin struct {
-	RepoName        string                    `json:"repo_name"`
 	HomepageURL     string                    `json:"homepage_url"`
 	IconData        string                    `json:"icon_data"` // The base64 encoding of an svg image
 	DownloadURL     string                    `json:"download_url"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Labels          []Label                   `json:"labels,omitempty"`
 	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
+	RepoName        string                    `json:"repo_name"`
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
 	Platforms       PlatformBundles           `json:"platforms"`
@@ -30,15 +30,14 @@ type PlatformBundleMetadata struct {
 }
 
 type PlatformBundles struct {
-	LinuxAmd64   *PlatformBundleMetadata `json:"linux-amd64,omitempty" yaml:"linux-amd64,omitempty"`
-	DarwinAmd64  *PlatformBundleMetadata `json:"darwin-amd64,omitempty" yaml:"darwin-amd64,omitempty"`
-	WindowsAmd64 *PlatformBundleMetadata `json:"windows-amd64,omitempty" yaml:"windows-amd64,omitempty"`
+	LinuxAmd64   PlatformBundleMetadata `json:"linux-amd64,omitempty" yaml:"linux-amd64,omitempty"`
+	DarwinAmd64  PlatformBundleMetadata `json:"darwin-amd64,omitempty" yaml:"darwin-amd64,omitempty"`
+	WindowsAmd64 PlatformBundleMetadata `json:"windows-amd64,omitempty" yaml:"windows-amd64,omitempty"`
 }
 
 const (
 	LinuxAmd64   = "linux-amd64"
 	DarwinAmd64  = "darwin-amd64"
-	OsxAmd64     = "osx-amd64"
 	WindowsAmd64 = "windows-amd64"
 )
 

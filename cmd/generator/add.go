@@ -21,7 +21,6 @@ func init() {
 	addCmd.Flags().Bool("official", false, "Mark this plugin as maintained by Mattermost")
 	addCmd.Flags().Bool("community", false, "Mark this plugin as maintained by the Open Source Community")
 	addCmd.Flags().Bool("enterprise", false, "Mark this plugin as only available to installations with an E20-only plugins license")
-	addCmd.Flags().String("remote-plugin-host", defaultRemotePluginHost, "Server URL hosting plugin bundles, i.e. from S3.")
 }
 
 var addCmd = &cobra.Command{

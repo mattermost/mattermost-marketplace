@@ -5,18 +5,72 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"strings"
 
 	"github.com/mattermost/mattermost-marketplace/internal/model"
+	"github.com/pkg/errors"
+	"github.com/spf13/cobra"
 )
+
+// OSX-specific bundle URLs are stored in the plugin store as `osx` rather than `darwin`
+const OsxAmd64 = "osx-amd64"
+
+func init() {
+	generatorCmd.AddCommand(migrateCmd)
+}
+
+var migrateCmd = &cobra.Command{
+	Use:     "migrate",
+	Short:   "Migrate existing plugins in plugins.json to the newest structure.",
+	Long:    "The migrate command adds platform-specific bundles to each existing entry.",
+	Example: "generator migrate",
+	RunE: func(command *cobra.Command, args []string) error {
+		dbFile, err := command.Flags().GetString("database")
+		if err != nil {
+			return err
+		}
+
+		pluginHost, err := command.Flags().GetString("remote-plugin-host")
+		if err != nil {
+			return err
+		}
+
+		existingPlugins, err := pluginsFromDatabase(dbFile)
+		if err != nil {
+			return errors.Wrap(err, "failed to read plugins from database")
+		}
+
+		toSave := []*model.Plugin{}
+		for _, orig := range existingPlugins {
+			modified, err := addPlatformSpecificBundles(orig, pluginHost)
+			if err != nil {
+				return errors.Wrapf(err, "failed to add platform-specific bundles for plugin %s-%s", orig.Manifest.Id, orig.Manifest.Version)
+			}
+
+			toSave = append(toSave, modified)
+		}
+
+		err = pluginsToDatabase(dbFile, toSave)
+		if err != nil {
+			return errors.Wrap(err, "failed to write plugins database")
+		}
+		return nil
+	}}
 
 // addPlatformSpecificBundles includes the platform-specific bundle URLs and signatures in the Marketplace entries.
 func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model.Plugin, error) {
-	if plugin.RepoName == "" {
+	if plugin.RepoName == "" && !strings.HasPrefix(plugin.DownloadURL, pluginHost) {
 		return plugin, nil
 	}
 
-	repo := plugin.RepoName
-	pluginWithVersion := fmt.Sprintf("%s-v%s", repo, plugin.Manifest.Version)
+	pluginWithVersion := ""
+	if strings.HasPrefix(plugin.DownloadURL, pluginHost) {
+		pluginPath := strings.TrimPrefix(plugin.DownloadURL, pluginHost+"/")
+		pluginWithVersion = strings.TrimSuffix(pluginPath, ".tar.gz")
+	} else {
+		repo := plugin.RepoName
+		pluginWithVersion = fmt.Sprintf("%s-v%s", repo, plugin.Manifest.Version)
+	}
 
 	platforms, err := checkIfRemoteBundlesExist(pluginHost, pluginWithVersion)
 	if err != nil {
@@ -42,7 +96,7 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 		}
 		signatureStr := base64.StdEncoding.EncodeToString(signatureBytes)
 
-		bundle := &model.PlatformBundleMetadata{
+		bundle := model.PlatformBundleMetadata{
 			DownloadURL: pluginPath,
 			Signature:   signatureStr,
 		}
@@ -50,7 +104,7 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 		switch platform {
 		case model.LinuxAmd64:
 			plugin.Platforms.LinuxAmd64 = bundle
-		case model.OsxAmd64:
+		case OsxAmd64:
 			plugin.Platforms.DarwinAmd64 = bundle
 		case model.WindowsAmd64:
 			plugin.Platforms.WindowsAmd64 = bundle
@@ -64,7 +118,7 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]string, error) {
 	result := []string{}
 
-	platforms := []string{model.LinuxAmd64, model.OsxAmd64, model.WindowsAmd64}
+	platforms := []string{model.LinuxAmd64, OsxAmd64, model.WindowsAmd64}
 	for _, platform := range platforms {
 		path := fmt.Sprintf("%s/%s-%s.tar.gz", remotePluginHost, pluginWithVersion, platform)
 
@@ -74,7 +128,7 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 			return nil, err
 		}
 		if res.StatusCode != http.StatusOK {
-			logger.Infof("Platform-specific bundle not found %s", path)
+			logger.Infof("Platform-specific bundle not found %s %s", pluginWithVersion, path)
 			continue
 		}
 
@@ -85,7 +139,7 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 			return nil, err
 		}
 		if res.StatusCode != http.StatusOK {
-			logger.Infof("Platform-specific bundle signature not found %s", sigPath)
+			logger.Infof("Platform-specific bundle signature not found %s %s", pluginWithVersion, sigPath)
 			continue
 		}
 

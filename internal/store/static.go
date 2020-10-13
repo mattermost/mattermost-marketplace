@@ -156,24 +156,19 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 		}
 
 		if platform != "" {
-			var bundle *model.PlatformBundleMetadata
-
-			// We don't want to edit the existing plugin's download_url. Only the response should be edited.
-			newRef := *storePlugin
-
+			var bundle model.PlatformBundleMetadata
 			switch platform {
 			case model.LinuxAmd64:
-				bundle = newRef.Platforms.LinuxAmd64
+				bundle = storePlugin.Platforms.LinuxAmd64
 			case model.DarwinAmd64:
-				bundle = newRef.Platforms.DarwinAmd64
+				bundle = storePlugin.Platforms.DarwinAmd64
 			case model.WindowsAmd64:
-				bundle = newRef.Platforms.WindowsAmd64
+				bundle = storePlugin.Platforms.WindowsAmd64
 			}
 
-			if bundle != nil {
-				newRef.DownloadURL = bundle.DownloadURL
-				newRef.Signature = bundle.Signature
-				storePlugin = &newRef
+			if bundle.DownloadURL != "" && bundle.Signature != "" {
+				storePlugin.DownloadURL = bundle.DownloadURL
+				storePlugin.Signature = bundle.Signature
 			}
 		}
 

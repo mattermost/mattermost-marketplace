@@ -223,15 +223,15 @@ func TestPlugins(t *testing.T) {
 			},
 			Signature: "signature6",
 			Platforms: model.PlatformBundles{
-				LinuxAmd64: &model.PlatformBundleMetadata{
+				LinuxAmd64: model.PlatformBundleMetadata{
 					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-linux-amd64.tar.gz",
 					Signature:   "signature6 for linux",
 				},
-				DarwinAmd64: &model.PlatformBundleMetadata{
+				DarwinAmd64: model.PlatformBundleMetadata{
 					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-osx-amd64.tar.gz",
 					Signature:   "signature6 for darwin",
 				},
-				WindowsAmd64: &model.PlatformBundleMetadata{
+				WindowsAmd64: model.PlatformBundleMetadata{
 					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-windows-amd64.tar.gz",
 					Signature:   "signature6 for windows",
 				},

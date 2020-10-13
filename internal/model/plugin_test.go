@@ -76,15 +76,15 @@ func TestPluginsFromReader(t *testing.T) {
 				ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
 				Manifest:        &mattermostModel.Manifest{},
 				Platforms: PlatformBundles{
-					LinuxAmd64: &PlatformBundleMetadata{
+					LinuxAmd64: PlatformBundleMetadata{
 						DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-linux-amd64.tar.gz",
 						Signature:   "signature1 for linux",
 					},
-					DarwinAmd64: &PlatformBundleMetadata{
+					DarwinAmd64: PlatformBundleMetadata{
 						DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-darwin-amd64.tar.gz",
 						Signature:   "signature1 for darwin",
 					},
-					WindowsAmd64: &PlatformBundleMetadata{
+					WindowsAmd64: PlatformBundleMetadata{
 						DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-windows-amd64.tar.gz",
 						Signature:   "signature1 for windows",
 					},
@@ -138,15 +138,15 @@ func TestPluginsToWriter(t *testing.T) {
 				Version: "1.0.0",
 			},
 			Platforms: PlatformBundles{
-				LinuxAmd64: &PlatformBundleMetadata{
+				LinuxAmd64: PlatformBundleMetadata{
 					DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-linux-amd64.tar.gz",
 					Signature:   "signature1 for linux",
 				},
-				DarwinAmd64: &PlatformBundleMetadata{
+				DarwinAmd64: PlatformBundleMetadata{
 					DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-darwin-amd64.tar.gz",
 					Signature:   "signature1 for darwin",
 				},
-				WindowsAmd64: &PlatformBundleMetadata{
+				WindowsAmd64: PlatformBundleMetadata{
 					DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-windows-amd64.tar.gz",
 					Signature:   "signature1 for windows",
 				},
@@ -207,7 +207,20 @@ func TestPluginsToWriter(t *testing.T) {
       "version": "2.0.0"
     },
     "enterprise": false,
-    "platforms": {},
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "",
+        "signature": ""
+      },
+      "darwin-amd64": {
+        "download_url": "",
+        "signature": ""
+      },
+      "windows-amd64": {
+        "download_url": "",
+        "signature": ""
+      }
+    },
     "updated_at": "0001-01-01T00:00:00Z"
   }
 ]
