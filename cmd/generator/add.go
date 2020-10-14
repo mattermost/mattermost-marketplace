@@ -79,7 +79,7 @@ var addCmd = &cobra.Command{
 			return errors.Wrapf(err, "%v is an invalid tag. Something like v2.3.4 is expected", tag)
 		}
 
-		pluginHost, err := command.Flags().GetString("remote-plugin-host")
+		pluginHost, err := command.Flags().GetString("remote-plugin-store")
 		if err != nil {
 			return err
 		}

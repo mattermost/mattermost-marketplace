@@ -208,18 +208,9 @@ func TestPluginsToWriter(t *testing.T) {
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "0001-01-01T00:00:00Z"
   }

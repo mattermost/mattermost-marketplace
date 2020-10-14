@@ -25,8 +25,8 @@ type Plugin struct {
 
 // PlatformBundleMetadata holds the necessary data to fetch and verify a plugin built for a specific platform
 type PlatformBundleMetadata struct {
-	DownloadURL string `json:"download_url"`
-	Signature   string `json:"signature"`
+	DownloadURL string `json:"download_url,omitempty"`
+	Signature   string `json:"signature,omitempty"`
 }
 
 type PlatformBundles struct {

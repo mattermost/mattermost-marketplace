@@ -104,18 +104,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-08-08T23:17:57Z"
   },
@@ -416,18 +407,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-08-14T21:16:58Z"
   },
@@ -520,18 +502,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-05T20:45:40Z"
   },
@@ -631,18 +604,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-05-06T13:12:19Z"
   },
@@ -742,18 +706,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-04-17T19:49:19Z"
   },
@@ -1263,18 +1218,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-11T19:41:07Z"
   },
@@ -1428,18 +1374,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-12-19T18:54:49Z"
   },
@@ -1520,18 +1457,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-08-14T21:43:52Z"
   },
@@ -1566,18 +1494,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-03T13:56:22Z"
   },
@@ -1865,18 +1784,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-07-17T14:47:05Z"
   },
@@ -1921,18 +1831,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-07-02T18:28:34Z"
   },
@@ -1977,18 +1878,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-12T19:04:44Z"
   },
@@ -2088,18 +1980,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-10-17T16:37:46Z"
   },
@@ -2144,18 +2027,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-10-04T15:14:32Z"
   },
@@ -2278,18 +2152,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-07-17T17:07:52Z"
   },
@@ -2322,18 +2187,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-07T13:23:00Z"
   },
@@ -2691,18 +2547,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2020-01-30T11:04:00Z"
   },
@@ -2806,18 +2653,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-10-25T22:01:42Z"
   },
@@ -3111,18 +2949,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-10T16:02:41Z"
   },
@@ -3179,18 +3008,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-05-07T16:53:35Z"
   },
@@ -3530,18 +3350,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-12-16T23:27:47Z"
   },
@@ -3629,18 +3440,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-10-14T13:18:52Z"
   },
@@ -3728,18 +3530,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-10-08T21:48:11Z"
   },
@@ -3827,18 +3620,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-09-30T19:18:31Z"
   },
@@ -3926,18 +3710,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-09-12T20:08:08Z"
   },
@@ -4025,18 +3800,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-09-10T18:58:55Z"
   },
@@ -4124,18 +3890,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-08-14T22:53:29Z"
   },
@@ -4196,18 +3953,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-20T11:51:53Z"
   },
@@ -4268,18 +4016,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-14T15:25:44Z"
   },
@@ -4337,18 +4076,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-02-09T06:51:02Z"
   },
@@ -4406,18 +4136,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-01-23T14:39:23Z"
   },
@@ -4475,18 +4196,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-01-06T16:25:15Z"
   },
@@ -4544,18 +4256,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2018-12-18T07:44:40Z"
   },
@@ -4863,18 +4566,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-10-01T17:54:25Z"
   },
@@ -4915,18 +4609,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-08-13T19:36:19Z"
   },
@@ -4958,18 +4643,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-07-17T17:13:11Z"
   },
@@ -5001,18 +4677,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-11T14:04:45Z"
   },
@@ -5512,18 +5179,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-11-05T02:52:17Z"
   },
@@ -5601,18 +5259,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-10-02T20:55:52Z"
   },
@@ -5690,18 +5339,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-12-16T11:08:14Z"
   },
@@ -5778,18 +5418,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-06-07T00:11:20Z"
   },
@@ -5866,18 +5497,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-05-31T19:12:59Z"
   },
@@ -5954,18 +5576,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-05-30T19:12:58Z"
   },
@@ -6042,18 +5655,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2019-01-31T17:19:07Z"
   },
@@ -6130,18 +5734,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2018-12-13T22:29:35Z"
   },
@@ -6218,18 +5813,9 @@
     },
     "enterprise": false,
     "platforms": {
-      "linux-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "darwin-amd64": {
-        "download_url": "",
-        "signature": ""
-      },
-      "windows-amd64": {
-        "download_url": "",
-        "signature": ""
-      }
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
     },
     "updated_at": "2018-12-05T19:24:59Z"
   }

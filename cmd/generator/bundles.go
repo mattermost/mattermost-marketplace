@@ -30,7 +30,7 @@ var migrateCmd = &cobra.Command{
 			return err
 		}
 
-		pluginHost, err := command.Flags().GetString("remote-plugin-host")
+		pluginHost, err := command.Flags().GetString("remote-plugin-store")
 		if err != nil {
 			return err
 		}

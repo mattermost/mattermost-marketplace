@@ -27,13 +27,15 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
-const defaultRemotePluginStore = "https://plugins-store.test.mattermost.com/release"
-const defaultGitHubOrg = "mattermost"
+const (
+	defaultRemotePluginStore = "https://plugins-store.test.mattermost.com/release"
+	defaultGitHubOrg         = "mattermost"
+)
 
 func init() {
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
 	generatorCmd.PersistentFlags().String("database", "plugins.json", "Path to the plugins database to update.")
-	generatorCmd.PersistentFlags().String("remote-plugin-host", defaultRemotePluginStore, "Server URL hosting plugin bundles, i.e. from S3.")
+	generatorCmd.PersistentFlags().String("remote-plugin-store", defaultRemotePluginStore, "Server URL hosting plugin bundles, i.e. from S3.")
 
 	generatorCmd.Flags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
 	generatorCmd.Flags().String("github-org", defaultGitHubOrg, "GitHub organization that owns the plugin releases.")
@@ -69,7 +71,7 @@ var generatorCmd = &cobra.Command{
 			return err
 		}
 
-		pluginHost, err := command.Flags().GetString("remote-plugin-host")
+		pluginHost, err := command.Flags().GetString("remote-plugin-store")
 		if err != nil {
 			return err
 		}
