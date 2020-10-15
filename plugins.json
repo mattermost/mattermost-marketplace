@@ -726,7 +726,7 @@
       }
     ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8FmIAACgkQ0bVLR6XO/sT2wQ/+LmpsKiFC1da0lIUtPOTAlKEPR8sqgPqvmBmeQOJzgGvqAQ9rF7zW9BIUbFFmOhRTUcX6wj867fNDBX8HPwCg635yUBlnig5EyUVJMACcIa4a5SKZcpjk1ghEcBXG4eIxU1sQI4YlXMf3CttujhO9/2eNqjAYow7adDj1yBaJB1KBvcENEUfqNpaVCo3kng6i7e3Cj0XiG5ceGpImc6g3HTtqRpGGJ3J8PU3EyKCbKCCeQFXL/GcVtycjMgyR8PnHlo/9pV+o8dhwq+hL+cZ0Kh4fPzaEKVtSQrme/Mdl6V79c4bHTav0V4bMGeeo8GHlFoVQGYk9bBai7I4k8Fh2b2nCuN5Fj/dKXEcKRaRmltC9P65CqnEAdh/3TmyqHsVNLnMS6auAXO32rVZzXxF9he1JgBzj+l2BAPML0HLyhT+cW36gytg1UV5klAI5mL3wGUqRJnugfatbqEicDHWwQxcRBTuQA2oC9HC6Gh8HwzrYQ3yjQwvFwIaAUlv3re1gv2lv0mDM14G83IuAb+2+NxHEByAnwTB3wlQOgpq3S964Dgci4gadevoQH3z13Gwt6OlnJmAjEfKZbJZtC3gBaYdUyx9eCBkrPsiKN1XYFU+AOrXevhOzFV1ScJQXwiK1J/gbN69x6G2AN+5+JPpC+huKwEfNg2deAQe0nyssxwQ=",
-    "repo_name": "mattermost-plugin-giphy",
+    "repo_name": "mattermost-plugin-giphy-moussetc",
     "manifest": {
       "id": "com.github.moussetc.mattermost.plugin.giphy",
       "name": "GIF commands",

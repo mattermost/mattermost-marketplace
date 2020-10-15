@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"strings"
 
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/pkg/errors"
@@ -59,18 +58,12 @@ var migrateCmd = &cobra.Command{
 
 // addPlatformSpecificBundles includes the platform-specific bundle URLs and signatures in the Marketplace entries.
 func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model.Plugin, error) {
-	if plugin.RepoName == "" && !strings.HasPrefix(plugin.DownloadURL, pluginHost) {
+	if plugin.RepoName == "" {
 		return plugin, nil
 	}
 
-	pluginWithVersion := ""
-	if strings.HasPrefix(plugin.DownloadURL, pluginHost) {
-		pluginPath := strings.TrimPrefix(plugin.DownloadURL, pluginHost+"/")
-		pluginWithVersion = strings.TrimSuffix(pluginPath, ".tar.gz")
-	} else {
-		repo := plugin.RepoName
-		pluginWithVersion = fmt.Sprintf("%s-v%s", repo, plugin.Manifest.Version)
-	}
+	repo := plugin.RepoName
+	pluginWithVersion := fmt.Sprintf("%s-v%s", repo, plugin.Manifest.Version)
 
 	platforms, err := checkIfRemoteBundlesExist(pluginHost, pluginWithVersion)
 	if err != nil {
