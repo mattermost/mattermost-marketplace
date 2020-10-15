@@ -451,7 +451,7 @@ func TestPlugins(t *testing.T) {
 			require.ElementsMatch(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517}, plugins)
 		})
 
-		t.Run("on-prem plugin is not return for on-prem instance", func(t *testing.T) {
+		t.Run("on-prem only plugin is return for on-prem instance", func(t *testing.T) {
 			client, tearDown := setupAPI(t, append(allPlugins, plugin7OnPremOnly))
 			defer tearDown()
 
