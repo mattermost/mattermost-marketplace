@@ -139,13 +139,13 @@ func TestPluginsToWriter(t *testing.T) {
     "icon_data": "icon-data.svg",
     "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
+    "hosting": "on-prem",
     "signature": "signature1",
     "manifest": {
       "id": "demo",
       "version": "1.0.0"
     },
     "enterprise": false,
-    "hosting": "on-prem",
     "updated_at": "0001-01-01T00:00:00Z"
   },
   {
@@ -153,13 +153,13 @@ func TestPluginsToWriter(t *testing.T) {
     "icon_data": "icon-data2.svg",
     "download_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
+    "hosting": "cloud",
     "signature": "signature2",
     "manifest": {
       "id": "template",
       "version": "2.0.0"
     },
     "enterprise": false,
-    "hosting": "cloud",
     "updated_at": "0001-01-01T00:00:00Z"
   }
 ]
