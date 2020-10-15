@@ -4689,6 +4689,71 @@
     "updated_at": "2019-06-11T14:04:45Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-profanity-filter-v1.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter/releases/tag/v1.0.0",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+AFuUACgkQ0bVLR6XO/sTdDQ//dyL/sBx2P+A6M5M2hwRnhAcrMtOt2ye5sbkuxjjN8CB1w4fzTQMuezeVjiwZVY0543nx7dW4NfJr0/ZH5y8IU4BFpzNFWe9ZJamUNDk3zJwIRluGAGa+L6zl2JlHD6aYTEILRf75HOd/9ZenkJLTuKtynmQr0wnFzPMAXv9MjuArsU4rtRcoeuviOaoQy0FyCYWtdOQ8dpCMKTenhfPb7qUehPitvX+rQ83GdL34kcF4GPidV1eS2HqOZsNYKimPphiyT0lTHXbxp+8njg/R/9KDnDzXek8oaZf9o0eIizXW8P3XIgVWhttotnklDMwKtd61Y8wB/U6EP3twPvpzEEN/F5z/U1X1fxTgAd9EnTyCFcBmxxB/GxkviB6YDH5pIajGZvSIsHHKp11PmWXKkAVw/flqFCf/yCN6YzRdNSvgwBSVSbyiv1aqJJb7bj1D0QlYW0/DrmLDTsUWBZhoaxyUgIblRUi4Pd95TgB+13UUaCo4/oXpBlfxYtaRMPSJmvtIJsl9MpXOFi1I5Za1lGaiQTOgHuDftqoWNDqlGAIfiw7tKVm1btayJYyoEUBpEgPC1w6P57e+tcdsHtBuaFLZW+qn+E7w44siZwkg/1NJviIRb5Y68jCnHuFtKabfKr6Gdw+sYuExnPVJjVcGv38mjlcDNy6JqC5qlHMwZ1c=",
+    "manifest": {
+      "id": "mattermost-profanity-filter",
+      "name": "Profanity Filter",
+      "description": "Censor out profanity from user messages in real-time based on a list of words.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter/releases/tag/v1.0.0",
+      "version": "1.0.0",
+      "min_server_version": "5.2.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "RejectPosts",
+            "display_name": "Reject Posts",
+            "type": "bool",
+            "help_text": "If set the plugin will reject posts containing profanity instead of censoring.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WarningMessage",
+            "display_name": "Warning Message",
+            "type": "text",
+            "help_text": "If Reject Posts is enabled, this message will be sent to the user to warn him. Place `%s` where you want to cite the forbidden word in the message. Markdown formatted.",
+            "placeholder": "Ex. Your post has been rejected by the Profanity Filter, because the following word is not allowed: `%s`.",
+            "default": "Your post has been rejected by the Profanity Filter, because the following word is not allowed: `%s`."
+          },
+          {
+            "key": "CensorCharacter",
+            "display_name": "Censor Character",
+            "type": "text",
+            "help_text": "The character(s) to use to censor profanity. Censored words' letters will be replaced with this character. Note that markdown will be interpreted. You can escape markdown character with a backslash. For using `*` you type `\\*`.",
+            "placeholder": "Ex. \\*",
+            "default": "\\*"
+          },
+          {
+            "key": "BadWordsList",
+            "display_name": "Bad words list",
+            "type": "longtext",
+            "help_text": "The words to censor, separated by commas. Accentuation and punctuation insensitive. [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression) are interpreted: if you want to censor characters as `.`, `?`, `*`, `{`, `}`, `[`, `]`, please double-escape them like `\\\\.`",
+            "placeholder": "",
+            "default": "4r5e,5h1t,5hit,a55,anal,anus,ar5e,arrse,arse,ass(es)?,ass[-]?fucker,assfukka,assholes?,asswhole,a_s_s,b!tch,b17ch,b1tch,ballbag,ballsack,bastard,beastial,beastiality,bellend,bestial,bestiality,bi+ch,biatch,bitch,bitcher,bitchers,bitches,bitchin,bitching,bloody,blow[ ]?jobs?,boiolas,bollock,bollok,boner,b[o0][o0]+bs?,breasts,buceta,bugger,bum,bunny fucker,butt,butt[ ]?hole,buttmuch,buttplug,c[0o]cks?,c0cksucker,carpet muncher,cawk,chink,cipa,cl[i1]t,clitoris,clits,cnut,cock-sucker,cockface,cockhead,cockmunch,cockmuncher,cocksucks?,cocksucked,cocksucker,cocksucking,cocksuka,cocksukka,cok,cokmuncher,coksucka,coon,cox,crap,cums?,cummer,cumming,cumshot?,cunilingus,cunillingus,cunnilingus,cunt,cuntlick,cuntlicker,cuntlicking,cunts,cyalis,cyberfuc,cyberfuck,cyberfucked,cyberfucker,cyberfuckers,cyberfucking,d1ck,damn,dick,dickhead,dildo,dildos,dink,dinks,dirsa,dlck,dog-fucker,doggin,dogging,donkeyribber,doosh,duche,dyke,ejaculate,ejaculated,ejaculates,ejaculating,ejaculatings,ejaculation,ejakulate,f[[:space:]]*u[[:space:]]*c[[:space:]]*k,f[[:space:]]*u[[:space:]]*c[[:space:]]*k[[:space:]]*e[[:space:]]*r,f4nny,fag,fagging,faggitt,faggot,faggs,fagot,fagots,fags,fanny,fannyflaps,fannyfucker,fanyy,fatass,fcuk,fcuker,fcuking,feck,fecker,felching,fellate,fellatio,fingerfuck,fingerfucked,fingerfucker,fingerfuckers,fingerfucking,fingerfucks,fistfuck,fistfucked,fistfucker,fistfuckers,fistfucking,fistfuckings,fistfucks,flange,fook,fooker,fuck,fucka,fucked,fucker,fuckers,fuckhead,fuckheads,fuckin,fucking,fuckings,fuckingshitmother[[:space:]]*fucker,fuckme,fucks,fuckwhit,fuckwit,fudge packer,fudgepacker,fuk,fuker,fukker,fukkin,fuks,fukwhit,fukwit,fux,fux0r,f_u_c_k,gangbang,gangbanged,gangbangs,gaylord,gaysex,goatse,God,god-dam,god-damned,goddamn,goddamned,hardcoresex,hell,heshe,hoar,hoare,hoer,homo,hore,horniest,horny,hotsex,jack-off,jackoff,jap,jerk-off,jism,jiz,jizm,jizz,kawk,knob,knobead,knobed,knobend,knobhead,knobjocky,knobjokey,kock,kondum,kondums,kum,kummer,kumming,kums,kunilingus,l3i\\+ch,l3itch,labia,lust,lusting,m0f0,m0fo,m[a4][s5]terb(at[3e]|8),ma5terbate,masochist,master-bate,masterbations?,mo-fo,mof[o0],motha[[:space:]]*fuck,motha[[:space:]]*fuckas?,motha[[:space:]]*fuckaz,motha[[:space:]]*fucked,motha[[:space:]]*fuckers?,motha[[:space:]]*fuckin,motha[[:space:]]*fucking,motha[[:space:]]*fuckings,motha[[:space:]]*fucks,mother[[:space:]]*fuck,mother[[:space:]]*fucked,mother fucker,mother fuckers,mother fuckin,mother fucking,mother fuckings,mother fuckka,mother fucks,mother[[:space:]]*fucker,mother[[:space:]]*fuckers,mother[[:space:]]*fuckin,mother[[:space:]]*fucking,mother[[:space:]]*fuckings,mother[[:space:]]*fuckka,mother[[:space:]]*fucks,muff,mutha,muthafecker,muthafuckker,muther,mutherfucker,n[i1]gg[ea3]r?s?,niggaz,nob,nob jokey,nobhead,nobjocky,nobjokey,numbnuts,nutsack,orgasims?,orgasms?,p[o0]rno?s?,pawn,pecker,penis,penisfucker,phonesex,phuck,phuk,phuked,phuking,phukked,phukking,phuks,phuq,pigfucker,pimpis,piss,pissed,pisser,pissers,pisses,pissflaps,pissin,pissing,pissoff,poop,pornography,prick,pricks,pron,pube,pusse,puss[iy]e?s?,rectum,retard,rimjaw,rimming,s[[:space:]]*h[[:space:]]*i[[:space:]]*t,s\\.o\\.b\\.,sadist,schlong,screwing,scroat,scrote,scrotum,semen,sex,shag,shagger,shaggin,shagging,shemale,sh[i1!][t+]s?,shitdick,shite,shited,shitey,shitfuck,shitfull,shithead,shiting,shitings,shitted,shitter,shitters,shitting,shittings,shitty,skank,sluts?,smegma,smut,snatch,son-of-a-bitch,spac,spunk,t1tt1e5,t1tties,teets,teez,testical,testicle,tits?,titfuck,titt,tittie5,tittiefucker,titties?,tittyfuck,tittywank,titwank,tosser,turd,tw[4a]t,twathead,twatty,twunt,twunter,v14gra,v1gra,vagina,viagra,vulva,w00se,wang,wank,wanker,wanky,whoar,whores?,willies,willy,xrated,x[[:space:]]*x[[:space:]]*x"
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-10-09T07:56:26.221729335Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-memes",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.3.0.tar.gz",
