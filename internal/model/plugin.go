@@ -22,10 +22,10 @@ type Plugin struct {
 	DownloadURL     string                    `json:"download_url"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Labels          []Label                   `json:"labels,omitempty"`
+	Hosting         HostingType               `json:"hosting"`   // Indicated if the plugin is limited to a certain hosting type
 	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
-	Hosting         HostingType               `json:"hosting"`    // Indicated if the plugin is limited to a certain hosting type
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
 }
 
