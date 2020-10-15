@@ -118,6 +118,7 @@ func TestPluginsToWriter(t *testing.T) {
 				Id:      "demo",
 				Version: "1.0.0",
 			},
+			Hosting: OnPrem,
 		}, {
 			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-starter-template",
 			IconData:        "icon-data2.svg",
@@ -128,6 +129,7 @@ func TestPluginsToWriter(t *testing.T) {
 				Id:      "template",
 				Version: "2.0.0",
 			},
+			Hosting: Cloud,
 		}}
 
 		err := PluginsToWriter(&b, p)
@@ -143,7 +145,7 @@ func TestPluginsToWriter(t *testing.T) {
       "version": "1.0.0"
     },
     "enterprise": false,
-    "hosting": "",
+    "hosting": "on-prem",
     "updated_at": "0001-01-01T00:00:00Z"
   },
   {
@@ -157,7 +159,7 @@ func TestPluginsToWriter(t *testing.T) {
       "version": "2.0.0"
     },
     "enterprise": false,
-    "hosting": "",
+    "hosting": "cloud",
     "updated_at": "0001-01-01T00:00:00Z"
   }
 ]
