@@ -32,6 +32,38 @@
     "updated_at": "2020-08-05T13:26:52Z"
   },
   {
+    "homepage_url": "",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-response-v1.0.0.tar.gz",
+    "release_notes_url": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+JpfEACgkQ0bVLR6XO/sQPBg//ZdmfokGNI9gw4EJnSMtlbul4Ey6lu+Ij30Ib7qFHmOLRYDhjfA8+viM52OrUiTaeCfSRHnh3SDNOvXUqCHYpsTTWVzsZ1cSKQHRX3r3sCJRhXcE48T6jwzy+1nIq8EJzZpYzOxBD4v93O0u9WZ0gt+rXxK8JaqleMl2kn3UrmPU16vFzfIZXa5PudALeKspqYKkfOKylCyJQuJikYS4DW6ma6H0+SLgX6xDTR+iGEMd2u+/hdFqhjgwWoKexzRGu7KUtT6ZQzxTJe/Pba+vCMfxGBdtO8+5k5M+THboHoDA1NK4o24wVxl59XUruKpUsFny+tOU/hqXmO0ruK+BaI2TuhAfHGx0mTI3bztJEr2sJ1GI6wwX17e5RGhNSU4a57uUjG9BdcXfv4mOZHahffoMce8IWB85MaoqfAEmUqHInyIIhhW9XJMqTwkzCrGnKjuFOzBdUKHMrRyT+af4s3ISBdMzBOP+IKGyylUFMWJdi0th2dBuIbFKwuhkOGR0rmxFLbEGkxWf+Ta58HwtpkHUvGphKkcqYiU6EEMQC7QYI/pA/U7hIHc5tOLVrstnJGlDVYodpa+8zYGqp7IN1t/Bgn6ZJQvM2XfAz/0RM73xjPbu46k6Owml3B0pkxqvXeRHcmZzcaY9nBaZQ1MFdgUHIw/iFl/fkTBOKSxrWHcY=",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-response",
+      "name": "Incident Response",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "version": "1.0.0",
+      "min_server_version": "5.28.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": false,
+    "updated_at": "2020-10-21T20:20:47.0931614Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/download/v0.6.0/com.mattermost.plugin-incident-response-0.6.0.tar.gz",
