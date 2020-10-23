@@ -36,6 +36,14 @@
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-response-v1.0.0.tar.gz",
     "release_notes_url": "",
+    "labels": [
+      {
+        "name": "Enterprise (E20)",
+        "description": "This plugin only works on servers with an E20 license.",
+        "url": "https://mattermost.com/pricing/",
+        "color": ""
+      }
+    ],
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+JpfEACgkQ0bVLR6XO/sQPBg//ZdmfokGNI9gw4EJnSMtlbul4Ey6lu+Ij30Ib7qFHmOLRYDhjfA8+viM52OrUiTaeCfSRHnh3SDNOvXUqCHYpsTTWVzsZ1cSKQHRX3r3sCJRhXcE48T6jwzy+1nIq8EJzZpYzOxBD4v93O0u9WZ0gt+rXxK8JaqleMl2kn3UrmPU16vFzfIZXa5PudALeKspqYKkfOKylCyJQuJikYS4DW6ma6H0+SLgX6xDTR+iGEMd2u+/hdFqhjgwWoKexzRGu7KUtT6ZQzxTJe/Pba+vCMfxGBdtO8+5k5M+THboHoDA1NK4o24wVxl59XUruKpUsFny+tOU/hqXmO0ruK+BaI2TuhAfHGx0mTI3bztJEr2sJ1GI6wwX17e5RGhNSU4a57uUjG9BdcXfv4mOZHahffoMce8IWB85MaoqfAEmUqHInyIIhhW9XJMqTwkzCrGnKjuFOzBdUKHMrRyT+af4s3ISBdMzBOP+IKGyylUFMWJdi0th2dBuIbFKwuhkOGR0rmxFLbEGkxWf+Ta58HwtpkHUvGphKkcqYiU6EEMQC7QYI/pA/U7hIHc5tOLVrstnJGlDVYodpa+8zYGqp7IN1t/Bgn6ZJQvM2XfAz/0RM73xjPbu46k6Owml3B0pkxqvXeRHcmZzcaY9nBaZQ1MFdgUHIw/iFl/fkTBOKSxrWHcY=",
     "manifest": {
       "id": "com.mattermost.plugin-incident-response",
@@ -61,7 +69,7 @@
       }
     },
     "enterprise": true,
-    "updated_at": "2020-10-21T20:20:47.0931614Z"
+    "updated_at": "2020-10-23T12:00:49.037401752Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response",
