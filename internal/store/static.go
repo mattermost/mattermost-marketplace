@@ -167,8 +167,10 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 			}
 
 			if bundle.DownloadURL != "" && bundle.Signature != "" {
-				storePlugin.DownloadURL = bundle.DownloadURL
-				storePlugin.Signature = bundle.Signature
+				newRef := *storePlugin
+				newRef.DownloadURL = bundle.DownloadURL
+				newRef.Signature = bundle.Signature
+				storePlugin = &newRef
 			}
 		}
 
