@@ -6,9 +6,10 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
+
+	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
 // OSX-specific bundle URLs are stored in the plugin store as `osx` rather than `darwin`
@@ -41,7 +42,8 @@ var migrateCmd = &cobra.Command{
 
 		toSave := []*model.Plugin{}
 		for _, orig := range existingPlugins {
-			modified, err := addPlatformSpecificBundles(orig, pluginHost)
+			var modified *model.Plugin
+			modified, err = addPlatformSpecificBundles(orig, pluginHost)
 			if err != nil {
 				return errors.Wrapf(err, "failed to add platform-specific bundles for plugin %s-%s", orig.Manifest.Id, orig.Manifest.Version)
 			}

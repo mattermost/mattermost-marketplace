@@ -238,6 +238,26 @@ func TestPlugins(t *testing.T) {
 			},
 		}
 
+		plugin7CloudOnly := &model.Plugin{
+			Manifest: &mattermostModel.Manifest{
+				Id:      "antivirus",
+				Name:    "Antivirus",
+				Version: "1.0.0",
+			},
+			Signature: "signature6",
+			Hosting:   model.Cloud,
+		}
+
+		plugin8OnPremOnly := &model.Plugin{
+			Manifest: &mattermostModel.Manifest{
+				Id:      "com.mattermost.plugin-incident-response",
+				Name:    "Incident Response",
+				Version: "1.0.0",
+			},
+			Signature: "signature7",
+			Hosting:   model.OnPrem,
+		}
+
 		allPlugins := []*model.Plugin{
 			plugin1V1Min515,
 			plugin1V2Min515,
@@ -478,6 +498,54 @@ func TestPlugins(t *testing.T) {
 			require.Len(t, plugins, 1)
 			require.Equal(t, plugin6WithPlatform.DownloadURL, plugins[0].DownloadURL)
 			require.Equal(t, plugin6WithPlatform.Signature, plugins[0].Signature)
+		})
+
+		t.Run("cloud only plugin is return for cloud instance", func(t *testing.T) {
+			client, tearDown := setupAPI(t, append(allPlugins, plugin7CloudOnly))
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage: -1,
+				Cloud:   true,
+			})
+			require.NoError(t, err)
+			require.ElementsMatch(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin6WithPlatform, plugin7CloudOnly}, plugins)
+		})
+
+		t.Run("cloud only plugin is not return for on-prem instance", func(t *testing.T) {
+			client, tearDown := setupAPI(t, append(allPlugins, plugin7CloudOnly))
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage: -1,
+				Cloud:   false,
+			})
+			require.NoError(t, err)
+			require.ElementsMatch(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin6WithPlatform, plugin3V3Min517}, plugins)
+		})
+
+		t.Run("on-prem only plugin is not return for cloud instance", func(t *testing.T) {
+			client, tearDown := setupAPI(t, append(allPlugins, plugin8OnPremOnly))
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage: -1,
+				Cloud:   true,
+			})
+			require.NoError(t, err)
+			require.ElementsMatch(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin6WithPlatform, plugin3V3Min517}, plugins)
+		})
+
+		t.Run("on-prem only plugin is return for on-prem instance", func(t *testing.T) {
+			client, tearDown := setupAPI(t, append(allPlugins, plugin8OnPremOnly))
+			defer tearDown()
+
+			plugins, err := client.GetPlugins(&api.GetPluginsRequest{
+				PerPage: -1,
+				Cloud:   false,
+			})
+			require.NoError(t, err)
+			require.ElementsMatch(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin6WithPlatform, plugin8OnPremOnly}, plugins)
 		})
 
 		t.Run("invalid server_version format", func(t *testing.T) {

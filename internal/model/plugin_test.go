@@ -151,6 +151,7 @@ func TestPluginsToWriter(t *testing.T) {
 					Signature:   "signature1 for windows",
 				},
 			},
+			Hosting: OnPrem,
 		}, {
 			RepoName:        "mattermost-plugin-starter-template",
 			HomepageURL:     "https://github.com/mattermost/mattermost-plugin-starter-template",
@@ -163,6 +164,7 @@ func TestPluginsToWriter(t *testing.T) {
 				Version: "2.0.0",
 			},
 			Platforms: PlatformBundles{},
+			Hosting:   Cloud,
 		}}
 
 		err := PluginsToWriter(&b, p)
@@ -172,6 +174,7 @@ func TestPluginsToWriter(t *testing.T) {
     "icon_data": "icon-data.svg",
     "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
+    "hosting": "on-prem",
     "signature": "signature1",
     "repo_name": "mattermost-plugin-demo",
     "manifest": {
@@ -200,6 +203,7 @@ func TestPluginsToWriter(t *testing.T) {
     "icon_data": "icon-data2.svg",
     "download_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
+    "hosting": "cloud",
     "signature": "signature2",
     "repo_name": "mattermost-plugin-starter-template",
     "manifest": {
