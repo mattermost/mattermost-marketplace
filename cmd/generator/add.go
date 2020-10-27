@@ -3,6 +3,7 @@ package main
 import (
 	"archive/tar"
 	"bytes"
+	"fmt"
 	"time"
 
 	"github.com/blang/semver"
@@ -28,7 +29,7 @@ var addCmd = &cobra.Command{
 	Use:   "add [repo] [tag]",
 	Short: "Add a plugin release to the plugins.json database",
 	Long: "The generator commands allows adding a specific plugin release to the database by using this command.\n\n" +
-		"The release has to be built first using the /mb cutplugin command, which also uploads it to https://plugins-store.test.mattermost.com/release/. " +
+		"The release has to be built first using the /mb cutplugin command, which also uploads it to " + defaultRemotePluginStore + "/. " +
 		"This location is used to fetch the plugin release.",
 	Example: `  generator add matterpoll v1.5.1`,
 	Args:    cobra.ExactArgs(2),
@@ -94,7 +95,12 @@ var addCmd = &cobra.Command{
 			return errors.Wrapf(err, "%v is an invalid tag. Something like v2.3.4 is expected", tag)
 		}
 
-		bundleURL := "https://plugins-store.test.mattermost.com/release/" + repo + "-" + tag + ".tar.gz"
+		pluginHost, err := command.Flags().GetString("remote-plugin-store")
+		if err != nil {
+			return err
+		}
+
+		bundleURL := fmt.Sprintf("%s/%s-%s.tar.gz", pluginHost, repo, tag)
 		signatureURL := bundleURL + ".sig"
 
 		bundleData, err := downloadBundleData(bundleURL)
@@ -144,6 +150,7 @@ var addCmd = &cobra.Command{
 		}
 
 		plugin := &model.Plugin{
+			RepoName:        repo,
 			HomepageURL:     manifest.HomepageURL,
 			IconData:        iconData,
 			DownloadURL:     bundleURL,
@@ -153,6 +160,11 @@ var addCmd = &cobra.Command{
 			Manifest:        manifest,
 			Enterprise:      enterprise,
 			UpdatedAt:       time.Now().In(time.UTC),
+		}
+
+		plugin, err = addPlatformSpecificBundles(plugin, pluginHost)
+		if err != nil {
+			return err
 		}
 
 		if cloud {

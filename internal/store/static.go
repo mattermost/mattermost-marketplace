@@ -80,7 +80,7 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 		return nil, nil
 	}
 
-	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins, pluginFilter.Cloud)
+	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins, pluginFilter.Cloud, pluginFilter.Platform)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get plugins")
 	}
@@ -116,7 +116,7 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 }
 
 // getPlugins returns all plugins compatible with the given server version, sorted by name ascending.
-func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlugins bool, isCloud bool) ([]*model.Plugin, error) {
+func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlugins bool, isCloud bool, platform string) ([]*model.Plugin, error) {
 	var result []*model.Plugin
 	plugins := map[string]*model.Plugin{}
 
@@ -148,6 +148,11 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 		}
 
 		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
+			_, err := semver.Parse(serverVersion)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
+			}
+
 			meetsMinServerVersion, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
 			if err != nil {
 				return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
@@ -155,6 +160,25 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 
 			if !meetsMinServerVersion {
 				continue
+			}
+		}
+
+		if platform != "" {
+			var bundle model.PlatformBundleMetadata
+			switch platform {
+			case model.LinuxAmd64:
+				bundle = storePlugin.Platforms.LinuxAmd64
+			case model.DarwinAmd64:
+				bundle = storePlugin.Platforms.DarwinAmd64
+			case model.WindowsAmd64:
+				bundle = storePlugin.Platforms.WindowsAmd64
+			}
+
+			if bundle.DownloadURL != "" && bundle.Signature != "" {
+				newRef := *storePlugin
+				newRef.DownloadURL = bundle.DownloadURL
+				newRef.Signature = bundle.Signature
+				storePlugin = &newRef
 			}
 		}
 
