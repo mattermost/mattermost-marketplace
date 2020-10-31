@@ -8,6 +8,13 @@ import (
 	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
 )
 
+type HostingType string
+
+const (
+	OnPrem HostingType = "on-prem"
+	Cloud  HostingType = "cloud"
+)
+
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.
 type Plugin struct {
 	HomepageURL     string                    `json:"homepage_url"`
@@ -15,11 +22,32 @@ type Plugin struct {
 	DownloadURL     string                    `json:"download_url"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Labels          []Label                   `json:"labels,omitempty"`
+	Hosting         HostingType               `json:"hosting"`   // Indicated if the plugin is limited to a certain hosting type
 	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
+	RepoName        string                    `json:"repo_name"`
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
+	Platforms       PlatformBundles           `json:"platforms"`
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
 }
+
+// PlatformBundleMetadata holds the necessary data to fetch and verify a plugin built for a specific platform
+type PlatformBundleMetadata struct {
+	DownloadURL string `json:"download_url,omitempty"`
+	Signature   string `json:"signature,omitempty"`
+}
+
+type PlatformBundles struct {
+	LinuxAmd64   PlatformBundleMetadata `json:"linux-amd64,omitempty" yaml:"linux-amd64,omitempty"`
+	DarwinAmd64  PlatformBundleMetadata `json:"darwin-amd64,omitempty" yaml:"darwin-amd64,omitempty"`
+	WindowsAmd64 PlatformBundleMetadata `json:"windows-amd64,omitempty" yaml:"windows-amd64,omitempty"`
+}
+
+const (
+	LinuxAmd64   = "linux-amd64"
+	DarwinAmd64  = "darwin-amd64"
+	WindowsAmd64 = "windows-amd64"
+)
 
 // PluginFromReader decodes a json-encoded cluster from the given io.Reader.
 func PluginFromReader(reader io.Reader) (*Plugin, error) {
@@ -67,4 +95,6 @@ type PluginFilter struct {
 	Filter            string
 	ServerVersion     string
 	EnterprisePlugins bool
+	Cloud             bool
+	Platform          string
 }

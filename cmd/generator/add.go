@@ -3,6 +3,7 @@ package main
 import (
 	"archive/tar"
 	"bytes"
+	"fmt"
 	"time"
 
 	"github.com/blang/semver"
@@ -20,13 +21,15 @@ func init() {
 	addCmd.Flags().Bool("official", false, "Mark this plugin as maintained by Mattermost")
 	addCmd.Flags().Bool("community", false, "Mark this plugin as maintained by the Open Source Community")
 	addCmd.Flags().Bool("enterprise", false, "Mark this plugin as only available to installations with an E20-only plugins license")
+	addCmd.Flags().Bool("cloud", false, "Mark this plugin as only available to cloud installations")
+	addCmd.Flags().Bool("on-prem", false, "Mark this plugin as only available to on-prem installations")
 }
 
 var addCmd = &cobra.Command{
 	Use:   "add [repo] [tag]",
 	Short: "Add a plugin release to the plugins.json database",
 	Long: "The generator commands allows adding a specific plugin release to the database by using this command.\n\n" +
-		"The release has to be built first using the /mb cutplugin command, which also uploads it to https://plugins-store.test.mattermost.com/release/. " +
+		"The release has to be built first using the /mb cutplugin command, which also uploads it to " + defaultRemotePluginStore + "/. " +
 		"This location is used to fetch the plugin release.",
 	Example: `  generator add matterpoll v1.5.1`,
 	Args:    cobra.ExactArgs(2),
@@ -50,6 +53,20 @@ var addCmd = &cobra.Command{
 
 		if official == community {
 			return errors.New("you must either set the release as a official or as a community plugin")
+		}
+
+		cloud, err := command.Flags().GetBool("cloud")
+		if err != nil {
+			return err
+		}
+
+		onPrem, err := command.Flags().GetBool("on-prem")
+		if err != nil {
+			return err
+		}
+
+		if cloud && onPrem {
+			return errors.New("if you want to make a plugin available for cloud and on-prem, just drop both flags")
 		}
 
 		beta, err := command.Flags().GetBool("beta")
@@ -78,7 +95,12 @@ var addCmd = &cobra.Command{
 			return errors.Wrapf(err, "%v is an invalid tag. Something like v2.3.4 is expected", tag)
 		}
 
-		bundleURL := "https://plugins-store.test.mattermost.com/release/" + repo + "-" + tag + ".tar.gz"
+		pluginHost, err := command.Flags().GetString("remote-plugin-store")
+		if err != nil {
+			return err
+		}
+
+		bundleURL := fmt.Sprintf("%s/%s-%s.tar.gz", pluginHost, repo, tag)
 		signatureURL := bundleURL + ".sig"
 
 		bundleData, err := downloadBundleData(bundleURL)
@@ -128,6 +150,7 @@ var addCmd = &cobra.Command{
 		}
 
 		plugin := &model.Plugin{
+			RepoName:        repo,
 			HomepageURL:     manifest.HomepageURL,
 			IconData:        iconData,
 			DownloadURL:     bundleURL,
@@ -137,6 +160,19 @@ var addCmd = &cobra.Command{
 			Manifest:        manifest,
 			Enterprise:      enterprise,
 			UpdatedAt:       time.Now().In(time.UTC),
+		}
+
+		plugin, err = addPlatformSpecificBundles(plugin, pluginHost)
+		if err != nil {
+			return err
+		}
+
+		if cloud {
+			plugin.Hosting = model.Cloud
+		}
+
+		if onPrem {
+			plugin.Hosting = model.OnPrem
 		}
 
 		plugins = append(plugins, plugin)

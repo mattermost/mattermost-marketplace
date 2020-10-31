@@ -22,6 +22,7 @@ The following is a playbook for use by Mattermost core committers.
 After a new plugin has been submitted, the assignee of the issue posts the following message:
 ```
 ## Process checklist
+- [ ] Do a legal review of the license file.
 - [ ] Create a private fork under the Mattermost organization; `master` should only contain a `README.md`.
 - [ ] Give submitter read access to the fork.
 - [ ] Create PR to merge upstream into `master`.

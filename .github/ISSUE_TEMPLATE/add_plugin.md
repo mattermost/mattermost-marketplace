@@ -23,12 +23,20 @@ Please link to an open source repository and release that should be used for rev
 
 ## Checklist
 <!--
-Go through this checklist and confirm every item. If your plugin doesn't fulfill every item, leave a comment explaining why.
+Go through this checklist and confirm every item.
+
+It's fine if your plugin doesn't fulfill every item (e.g. it isn't production ready yet). You can still submit it!
+You can also still do code changes while the plugin is in review and fix issues on the fly.
+
+Even if your plugin isn't production-ready, it might still be added to the Marketplace as "Beta".
+See https://developers.mattermost.com/extend/plugins/community-plugin-marketplace/#beta-plugins for more details.
+
+If your plugin isn't production ready, please leave a comment stating whether you plan to fulfill the whole checklist or submit a "Beta" plugin.
 -->
 
 **Product requirements**
 
-- [ ] The plugin is published under an Apache v2 compatible license (e.g. no GPL, APGL). A list of compatible licenses can be found [here](https://apache.org/legal/resolved.html#category-a).
+- [ ] The plugin is published under an [Open Source license](https://opensource.org/licenses/alphabetical).
 - [ ] The source code is available in a public git repository.
 - [ ] There is a public issue or bug tracker for the plugin, which is linked in the plugin documentation and linked via `support_url` in the manifest.
 - [ ] The plugin provides detailed usage documentation with at least one screenshot of the plugin in action, list of features, and a development guide. This is typically a `README` file or a landing page on the web. The link to the documentation is set as `homepage_url` in the manifest. A great example is the [`README` of the GitHub plugin](https://github.com/mattermost/mattermost-plugin-github/blob/master/README.md).

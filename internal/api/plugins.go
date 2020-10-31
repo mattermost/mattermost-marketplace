@@ -32,8 +32,14 @@ func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
 
 	filter := u.Query().Get("filter")
 	serverVersion := u.Query().Get("server_version")
+	platform := u.Query().Get("platform")
 
 	enterprisePlugins, err := parseBool(u, "enterprise_plugins", false)
+	if err != nil {
+		return nil, err
+	}
+
+	cloud, err := parseBool(u, "cloud", false)
 	if err != nil {
 		return nil, err
 	}
@@ -44,6 +50,8 @@ func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
 		Filter:            filter,
 		ServerVersion:     serverVersion,
 		EnterprisePlugins: enterprisePlugins,
+		Cloud:             cloud,
+		Platform:          platform,
 	}, nil
 }
 
