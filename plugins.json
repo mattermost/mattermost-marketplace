@@ -4,7 +4,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/download/v0.1.2/antivirus-0.1.2.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/tag/v0.1.2",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl4fRNUACgkQ0bVLR6XO/sQ6hQ//YERXGn3Geacs+5Vh0abBd3k6B0Cn39ysU8bjjrw43Xv4Zijf/2OzcJVjhyPEvPs80RniLhbqB8OrmqbDye9/8kEj7nH8sOne4s2zJoCG7kTmrgU/Fdue/ZNP+8n17DRwlg14TcSjKs4zrDusqdWmMCAXwBARC2aErqWXBFkYuhv2Q3++JNRbANxhyjBmpe6RSb2IVTYoJXcp3O/aHraNgvsyJlnE9WHvBbA5GtNqzcGxKkucMsmL+jBuhGPmdD+UetzYg2fATTj9L+AePtf0fDJ6mMj9dO+5jwOV9qmIFjKhwmXpa/W7e/1N3KhX89+hDUdPopfDiMfOLkMntu8nWZdxXI+mAT5oP1mofV+UqbKxGodNEba8J7xE1yBbn31xDhKPsDdGBU667oJ2l0p23xDX0Egwsw8elf2XADjV4c5eCXpBmwvlioHldeSZ62Zl2JS+JwujhUUvQwN3E/MVo0YEd0WTL8AS9XTIgzKyfp26Bj9max8nDmWWLgablnQIBOawnmS6sT6BNBG37Iqy6IJ0Nnci2fyZT/mD+KmzyRd4A3b/+NI8ZP0YSFdsZgB7o+3kT5S1gstjGtbmQd/TfqmD+NvKf2P2FshDVPXzO0b6gLl661BrNm/nqQeS/gUsn434gOhZFnvUAPKHBSmmxj96q3qvSulvD1SZj9pBlxM=",
     "repo_name": "mattermost-plugin-antivirus",
     "manifest": {
@@ -65,7 +65,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/download/v0.1.1/antivirus-0.1.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/tag/v0.1.1",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBkcACgkQ0bVLR6XO/sQ0cQ//X4zgcJYdrA/1hsXKsIG9KH6IMPnEBqXY4+HUwVwR1LojsVpEUQ3EE526EuOdIm2lOa58viK9A8turNFK0rBsKm6MlIEDiYkKdBgxuo7ZWBiaqkX1/JsoJ0xXk7HGbIfIOYawmitWS6kq5MhSITmJrPJik9nnTffO71rP+Ddjqcmhpd9HGupCIykB0um96Zs2Y7FISA9hiqM4P1UGJqK2DAsWONXwdMsvO+Dyvp+lgh+wCInZQ3wffyntmbGnYQsWGODOY8wVVnMl2oovM5FpKx9xNQ2Tir3D1p6BbNMdFq47Q4Fwu1FqtpPCPZij7GnH1YZX3CWTfMR5dODhQH5AhVV9qvwpjj8SRts+cu7V+2OYx2mrOGWnQ5XVEcKqjzzGzzYCkfvcawiTknIDUaPsZoGRMWE8uk05pDtqwG+Ntv2jqOwbGSBU0Ll/pcQO+02BWQ0rLfCsYLrgDtPG00E2hS4tn6K8+J/psZD+KUoKCu43V8nyrKM4FxdzwSo+d9+VXkxRDK1NdZ1TPPZaAPKUVtFMhzDQiTEB9X+GG9O8EMRt2PMpuz1s/EmJIdmEATmiCqDMI3/D/mtFXDRBSElq76axIMrmrqe1ms1PLZirrFe8nZJ68NXQ3NT74H5kB3AMvP2bUz3R3z0y6BdTQD7sl31nouITLmR05LnZWU5danU=",
     "repo_name": "mattermost-plugin-antivirus",
     "manifest": {
@@ -2705,7 +2705,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.2.0/com.mattermost.welcomebot-1.2.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.2.0",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl7ROGgACgkQ0bVLR6XO/sQjhRAAndPX83MNxx2bLc0LUfai/lPf2NkH2hvU0mcUMKOYKfBsoJrFkmxrYklLeS7sxC7mtSsP2Kv9Ihp3YfBUfLqHZ7xjLrc4WS2q8Cvv7HgL77lFTiV+6bo+GjgoexJi+dILGbcAw4c5n8hqH0++EneeqnHCmwrBIM3LSw0+LN37huf9bVtmZAFtQBDviSndGY3TNf7ZfTL74eK6mQhbU9zVsb/wZHHTlJP0S30TkQZkVrFTXESjW/CqGsftqrqGfVUvDlPw6dGkcKD3yzQ1H4+rBVyudBQMwRNMqmvgIKGIB2BEFi3gbal8nrs/pBZhGHdZfY/wZBfaZY+XykVqoqT9uPabiETbO3/yA5CoEZnmlFNBoUMv+N7EBv58Q7r4+Ko1VO8VSAsHEcHaTpH+NGVNmIwaMu2zRhEEicxpUqCe2i1NDVhq0Er5bKv/vrtLfJ81g9ALSfcnCkNKo5lZt6/zJDOY8JER5ODJbwwgfsezHMH+lqUCPGBWzWsQOzT74IGyCFgh8M0DNuym0P66K6dbNatg+1JY8Pse+XxgddTdlhQfFuUfk0b1bPKu3sgG4/HJe/dvfr51Nu3dvwWlU6NY/wM+VLSb3jpwM2ha6/ch+mbwjT/qF9/uGyNtljEl2xfD9jHHCjtczF+kNhYyA0l6MsCaU4bT/LoJxftmLuBFDlI=",
     "repo_name": "mattermost-plugin-welcomebot",
     "manifest": {
@@ -2752,7 +2752,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.1.1/com.mattermost.welcomebot-1.1.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.1.1",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBccACgkQ0bVLR6XO/sTBDw//cU8hpOJBouC1XIF48TRPtdLb2KMllDf6Wk35X4AIYWWDCxbqoXQ3eIO9JfhIKRdRHMIs95uMNmmuCCq5nY8+hR3oiAW6KDIuWdlkzuvpiMdvh3R7kWSNNqN7ksKVOwqekD+meKFieW+pPuFMDuAZrRFeGLHobT+zplXmUzJu3o+EapBMN491TO02eUZEZaq68N486Tno+kpn5fSO9EJF3MB8Jnif4trMTUjJMAQW8QDpPzl3Vt8vwiz3RlJyj5bhBav5TBKtbqGtqaay78AbuQjvuIM3Po+9H0S9nw3XS558zANE7mn9qrEIARtC6VhJUddo3sGuYhd50DxmUs0YadNMz+e8xvNCkxmtJdO8vyq4h83dyZRYj47i95Efl8Maq35V+T0OWcsG/ezWIg5SIgZnR94pVN5LJEEATyGnUKj3uwUW0aecT0PYzThq0scEJxJnvTW0+XJ/aRFnlyyVglQhto5hloyhR0M3YeF7meRD82A/6AS6fqb5+EoTWDAzz/25t+F81f6W7YXfu+C8BAZ4bFgKz6ujMPFqXnuHc49B7XBtgjHjn4QTlirZVRW7kMeD4Xa1ueeMy0MY4s1kKQX4WGcobE09NDJkpxIeGaxFhsGS0MzXLD9/Y5Wld8EimbfDIQGk8chh9jFbILgtlwPq16sELrIT8TCh4XoQVYA=",
     "repo_name": "mattermost-plugin-welcomebot",
     "manifest": {
@@ -2797,7 +2797,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.1.0/com.mattermost.welcomebot-1.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.1.0",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "",
     "repo_name": "mattermost-plugin-welcomebot",
     "manifest": {
@@ -2833,7 +2833,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.0.0/com.mattermost.welcomebot-1.0.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.0.0",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQGzBAABCAAdFiEE8/rOReDeZCyL1qjmTHxlYsGSzB8FAl3WrscACgkQTHxlYsGSzB/e/wv/Ti7RyQ4ny2+JI7kMlteLR2VwXcwJeg0f8bXpB9i5bDj6+kimrliuyGZfMSRSer/ShLtsXT67qkYV66SL1ygFrrmk00k+/h6UVjbeiiR/rIxq3LCMzzoHntTHze65mF0Pk/BaQAaead98jE5Ahn2u0wOj12sLS6bK0cmHo5fUC7X+NmseO6zDml4US5nFteUE4ix7VtJZMd3OaBXJBCMHiokWTX8ijyGaGRjTIHTaQ/1aLWl+F+iO8EMhPMDy6LGUC4dEEHHrUntw3vitV3ZkMECRj1TnKHPo5L9egvEc4DBhgq/YBKWGKAG/04WfOJypAA0pMWyen6sJQBycoEPmPNQeQt8La8pPQGoRvVITUUDVC6pOmFYDMM7L2+blGPYqmM9S3wMCKGBKaylEzZFQeuRXdfXcgARk6CBu0KFhcXiwtUGW7gWIRmRYUwZPPDq7epCPlEGWp4McBYTtdd1l0Nq9cjtT0pTzyHFwOmaw5rE0JPVk22MC1XwFnLNbIdEC",
     "repo_name": "mattermost-plugin-welcomebot",
     "manifest": {
