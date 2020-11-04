@@ -74,10 +74,6 @@ var addCmd = &cobra.Command{
 			return err
 		}
 
-		if err = InitCommand(command); err != nil {
-			return err
-		}
-
 		dbFile, err := command.Flags().GetString("database")
 		if err != nil {
 			return err
