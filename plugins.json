@@ -5975,6 +5975,117 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTEyIiBoZWlnaHQ9IjkxMiIgdmlld0JveD0iMCAwIDkxMiA5MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjQ1NiIgY3k9IjQ1NiIgcj0iNDU2IiBmaWxsPSIjMkQ4Q0ZGIi8+CjxwYXRoIGQ9Ik0xOTkuNSAzNDkuMTI1QzE5OS41IDMzMy4zODUgMjEyLjI2IDMyMC42MjUgMjI4IDMyMC42MjVINDcwLjI1QzUyOS4yNzUgMzIwLjYyNSA1NzcuMTI1IDM2OC40NzUgNTc3LjEyNSA0MjcuNVY1NjIuODc1QzU3Ny4xMjUgNTc4LjYxNSA1NjQuMzY1IDU5MS4zNzUgNTQ4LjYyNSA1OTEuMzc1SDMwNi4zNzVDMjQ3LjM1IDU5MS4zNzUgMTk5LjUgNTQzLjUyNSAxOTkuNSA0ODQuNVYzNDkuMTI1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NzYuODE1IDU4My44MjlMNjE4LjI5MyA1MzguNjUzQzYxNC43OTcgNTM1Ljk1NSA2MTIuNzUgNTMxLjc4OSA2MTIuNzUgNTI3LjM3M1Y0MTMuMTI3QzYxMi43NSA0MDguNzExIDYxNC43OTcgNDA0LjU0NSA2MTguMjkzIDQwMS44NDdMNjc2LjgxNSAzNTYuNjcxQzY4MS4zNDUgMzUyLjAxNiA2ODcuNjc5IDM0OS4xMjUgNjk0LjY4OCAzNDkuMTI1QzcwOC40NiAzNDkuMTI1IDcxOS42MjUgMzYwLjI5IDcxOS42MjUgMzc0LjA2MlY1NjYuNDM4QzcxOS42MjUgNTgwLjIxIDcwOC40NiA1OTEuMzc1IDY5NC42ODggNTkxLjM3NUM2ODcuNjc5IDU5MS4zNzUgNjgxLjM0NSA1ODguNDg0IDY3Ni44MTUgNTgzLjgyOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.0-cloud.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.5.0-cloud",
+    "hosting": "cloud",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+i4AMACgkQ0bVLR6XO/sRzHw//bY6vVDoEq6Y/0dVbP6k1jyMbXTGulg+wwhCfIwrJdLvJqTW9jM0XsV+A29pKhXlYa2vCMA+P0tZy9/rK4wQyGWLzO3p33RqG84ArjWPq4LBh2J8lFcIsNE0s2utGbVpwdA4Wi+kGKzIvRgFZpn/QMdnIh+fLhHcF9MAe8kJi9bWs9FjOyXA7GJ9Hk5c64z+STE5vruuxsFPsHACQ3b0RCvTqwDey1Zr/WO2p3IjSuf4zegAKvNhqQ7gXDGkujO14dhaIa5MXbCY/x5MDB4IKfwnXuypTK3suOlIMR5izFP9do0pA9jvAgfq2m+nvZ5brIUX0lHbj7rfCWrnmm8/45vNZk+C/TYxEBELebO7MxXpzoeZCusegxIFEHpP6WtqDUN3V5b6JCY/W+0n0TXParz+qH0YGSV7ZYT0DnAF3SUyOekLMNj79M/ZnLKRIVC6FFrXyQx1MNydanZH95aK3cIMcWk4pa8q9L8Xw+LlVI8DT72hBTBGGahwe7dxVT1VSLEWar3sTF/mqWHSj7CCs6QAUyOx3Pxivc5pq5HAyLSMFXxjezNwPtNrE62WNdBnkOKS7ivbIfZvz7jRimYCAcVffsURh+pUiZx7NmoENDExRS6I3a9FFKfxI8KM2iBvJImI92b2QgYXlTfErEmA53mGkoJ9xPbSApWcMHimyItg=",
+    "repo_name": "mattermost-plugin-zoom",
+    "manifest": {
+      "id": "zoom",
+      "name": "Zoom",
+      "description": "Zoom audio and video conferencing plugin for Mattermost 5.2+.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-zoom/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.5.0-cloud",
+      "icon_path": "assets/profile.svg",
+      "version": "1.5.0-cloud",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL to set up the Zoom plugin. See [documentation](https://app.gitbook.com/@mattermost/s/plugin-zoom) to learn more.\n\n```https://SITEURL/plugins/zoom/webhook?secret=WEBHOOKSECRET```",
+        "settings": [
+          {
+            "key": "ZoomURL",
+            "display_name": "Zoom URL",
+            "type": "text",
+            "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://zoom.us",
+            "default": null
+          },
+          {
+            "key": "ZoomAPIURL",
+            "display_name": "Zoom API URL",
+            "type": "text",
+            "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://api.zoom.us/v2",
+            "default": null
+          },
+          {
+            "key": "AccountLevelApp",
+            "display_name": "OAuth by Account Level App (Beta)",
+            "type": "bool",
+            "help_text": "When true, only an account administrator has to log in. The rest of the users will use their e-mail to log in.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "OAuthClientID",
+            "display_name": "Zoom OAuth Client ID",
+            "type": "text",
+            "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "OAuthClientSecret",
+            "display_name": "Zoom OAuth Client Secret",
+            "type": "text",
+            "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Token Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.0-cloud-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+i4AAACgkQ0bVLR6XO/sQlww/9HyV4c+aABT8gMwwgfEQChg0lamS4W/Dao3dIpkxoMzMi4Ym4R/fmzMfgxPmVkE9Zve5OYUklgdwVvgSE7jM/DYNEo7f3bPe0EMTcy69DKe715oiNinXcQdSmJPx1svxZ8bYo1d7uTOq+uRQyocLY7C1Nkl7zk0nGbn2q8JvReLGg5OrxfdNxh443VAyv3ppCWE6q7LNDTcJiWKjl3m3hn8wE4TLPUcIhoU6mP1+W6zkCewZgGB4EfA+HsbA6X2k4+wNJe5onSQnwlkKwbb3dKz1fDNsgEeNHZKqkYYc2Z5A/gzUSEjrcvIZk2mUxHN1VqLrbNunz7RVeoANTppWc81V6fOD7bBJdwYtifd71aBJeFHVHWomPQ/XC4mHHdKRvv+z1RB8hpWgQngkpiYJyFKLR1E9Z1eFEV3fqbweQIuT82beO9UxabPvevM6Uld5qLaY1/VRKioZQ50jqXjoSFBNJvGfxky3dl+KtFB5GdNtnp0ejSFAj+7l+MtlqdJt8coxEStkHW5+KXxWOXJhgKUVfZdoxbXPIN42P1hy7sNOIHexHQd+OPeLOAjfXcaTFzJ1IeLI96BQw5AjbpRD9UCq67JOJbuk18FdT586Hx69aCrnKsgP79Avp8OBWg+3zQ8zNIG9lpCq/PtDxWJL+Rvo67XhleXrHpmD99H0f5Jw="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.0-cloud-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+i4AEACgkQ0bVLR6XO/sTXbw//aDTy00MOHIqgJ+8ANgodxROVmRb4YDTqsvwUFcLhSbuJ6c1V0tm4V73JcgXtR6/P1ewYFljEQ1QAdjAJBAANy/Njgk5CzxqQzQmMf7JTjjN7ovp/XzkTX5o3Jt5+0qZtZX1yP7M5mAxcTAhDsPNOBP7Vf07s7IpZpu1My5+jbpF0sR9/2NxtIwV1xz513wo6bqG1009erajwmvkusfMwGvNLeuOhCCO1UL7FVD13AXoEqMDptBu61/5IPCcXZslAkck/Ur0kTLGOepXnLnwxFmbx6rJN3PVELs+DDnxbDiOmuO0S9isOHfLWPE3eqnQNtasFP6Cm4/UXSLywKZHheQL4wLfF/pNgs22U3FYx5Gu8LfjelHTdLV7qXonGJWgzmuZ7G+BjmSNxukykAHjG+EaKsRje4CFJyL18Ulc9CKzhXTbUn6gwAMLlnLhI0rdQ9wsSrtbeLEpijysnLNUJLAAOR2fWyaPxfAOdNI7ZPpJcWPxLZ6sD9sDmnnXdolnCWG9A1ku5kH/yyni1nZ9hdlQ4EI/JuLJ2AOvZstO13pPTEBRLEobjFrut5bilIicEEmbZV64+NXUY0E+Vgm/XeA1tBN3JxQKdIL4wGYS5qv/3VVbMK/QEKdIET5+/cpM+g2dE2isni52MvPSGyMUoaOzlZT3r7jgffCt+S4nfOMo="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.0-cloud-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+i3/8ACgkQ0bVLR6XO/sTcxQ/9HwvgDHu1CtC+sfE7YrY8VTbpUJvmxZsWM3X7qIQ3n0FLPDYKXZPf2W0kd6zQOs8dZ2fnOzDM71Ioe3mtCslRD0Q2fEK/83hdulxNY3CKzkWVc+VF0R4GRmvWv1tiY2EaTYdwkrQMJ3j/typc5HMtDqVqdl16N8TMgyIlBA4kcHluFd296ro8+fq2zD0oDrCUGBjVommzX1eLIzG3lcS4HLH3OUJs3DOo0ikOYF/7kJROS2FIzJhUwvEnaLt8UnBNQlaPucKdnGeoKOELV2HEuN1BVnjJ4CJJrxDvqKHUqAOCyR2jszoRCKXHFF0MOfh6PBfGj4kesRfHsi0GTC1v/5Sa/yosRdqOHKe77xrwKIdLBHyEr/NUlAf9sDz+mieS+oZip9UIx8LYnptDJgPoFpZ6J6LXVNFPA42f4ilCuDX59NFT2Sk2yuDrYSXVXqDRZSzayIQw6xctvFgzW5NoRGKkF2mIertd0bs2W1FFfOj1kGDz8VMcrmdZCguBcZi31AkZCQL/nTUnsqQr8rmce0uPHaqlRNzKQ4EQroZnxXt0AUS9Ui7MnBnLWsYsfWulIMFvPgiRo4xJNiKjJlL4/bQCIO9BhTZb0nLH/sRM5KEjbYt/X8VcZk7E7SRPLvejXDl0dICpvgmtaD/9F9mp21lE8GR6GjDqs5IuUHdwgOo="
+      }
+    },
+    "updated_at": "2020-11-04T17:08:58.246876206Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTEyIiBoZWlnaHQ9IjkxMiIgdmlld0JveD0iMCAwIDkxMiA5MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjQ1NiIgY3k9IjQ1NiIgcj0iNDU2IiBmaWxsPSIjMkQ4Q0ZGIi8+CjxwYXRoIGQ9Ik0xOTkuNSAzNDkuMTI1QzE5OS41IDMzMy4zODUgMjEyLjI2IDMyMC42MjUgMjI4IDMyMC42MjVINDcwLjI1QzUyOS4yNzUgMzIwLjYyNSA1NzcuMTI1IDM2OC40NzUgNTc3LjEyNSA0MjcuNVY1NjIuODc1QzU3Ny4xMjUgNTc4LjYxNSA1NjQuMzY1IDU5MS4zNzUgNTQ4LjYyNSA1OTEuMzc1SDMwNi4zNzVDMjQ3LjM1IDU5MS4zNzUgMTk5LjUgNTQzLjUyNSAxOTkuNSA0ODQuNVYzNDkuMTI1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NzYuODE1IDU4My44MjlMNjE4LjI5MyA1MzguNjUzQzYxNC43OTcgNTM1Ljk1NSA2MTIuNzUgNTMxLjc4OSA2MTIuNzUgNTI3LjM3M1Y0MTMuMTI3QzYxMi43NSA0MDguNzExIDYxNC43OTcgNDA0LjU0NSA2MTguMjkzIDQwMS44NDdMNjc2LjgxNSAzNTYuNjcxQzY4MS4zNDUgMzUyLjAxNiA2ODcuNjc5IDM0OS4xMjUgNjk0LjY4OCAzNDkuMTI1QzcwOC40NiAzNDkuMTI1IDcxOS42MjUgMzYwLjI5IDcxOS42MjUgMzc0LjA2MlY1NjYuNDM4QzcxOS42MjUgNTgwLjIxIDcwOC40NiA1OTEuMzc1IDY5NC42ODggNTkxLjM3NUM2ODcuNjc5IDU5MS4zNzUgNjgxLjM0NSA1ODguNDg0IDY3Ni44MTUgNTgzLjgyOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
     "download_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/download/v1.4.1/zoom-1.4.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.4.1",
     "hosting": "",
