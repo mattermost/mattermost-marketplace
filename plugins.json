@@ -2427,6 +2427,14 @@
     "icon_data": "data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9JzE0MCcKICAgIGhlaWdodD0nMTcwJwogICAgdmlld0JveD0nMCAwIDE0IDE3JwogICAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJwogICAgc3R5bGU9J21hcmdpblRvcDogLTFweCcKPgogICAgPHBhdGgKICAgICAgICBkPSdNMTMuNzUgNy44MTE3N0MxMy43NSA5LjE3MTE0IDEzLjQ1NyAxMC40ODM2IDEyLjg3MTEgMTEuNzQ5M0MxMi4yODUyIDEzLjAxNDkgMTEuNDc2NiAxNC4wOTMgMTAuNDQ1MyAxNC45ODM2QzkuNDE0MDYgMTUuODc0MyA4LjI2NTYyIDE2LjQ4MzYgNyAxNi44MTE4QzUuNzM0MzggMTYuNDgzNiA0LjU4NTk0IDE1Ljg3NDMgMy41NTQ2OSAxNC45ODM2QzIuNTIzNDQgMTQuMDkzIDEuNzE0ODQgMTMuMDE0OSAxLjEyODkxIDExLjc0OTNDMC41NDI5NjkgMTAuNDgzNiAwLjI1IDkuMTcxMTQgMC4yNSA3LjgxMTc3VjMuMzExNzdMNyAwLjI4ODMzTDEzLjc1IDMuMzExNzdWNy44MTE3N1pNNyAxNS4zQzcuOTE0MDYgMTUuMDQyMiA4Ljc2OTUzIDE0LjUzODMgOS41NjY0MSAxMy43ODgzQzEwLjM4NjcgMTMuMDM4MyAxMS4wMzEyIDEyLjE0NzcgMTEuNSAxMS4xMTY1QzExLjk5MjIgMTAuMDg1MiAxMi4yMzgzIDkuMDMwNTIgMTIuMjM4MyA3Ljk1MjM5VjQuMjYwOTlMNyAxLjk0MDY3TDEuNzYxNzIgNC4yNjA5OVY3Ljk1MjM5QzEuNzYxNzIgOS4wMzA1MiAxLjk5NjA5IDEwLjA4NTIgMi40NjQ4NCAxMS4xMTY1QzIuOTU3MDMgMTIuMTQ3NyAzLjYwMTU2IDEzLjAzODMgNC4zOTg0NCAxMy43ODgzQzUuMjE4NzUgMTQuNTM4MyA2LjA4NTk0IDE1LjA0MjIgNyAxNS4zWk02LjI2MTcyIDQuNzg4MzNINy43MzgyOFY5LjI4ODMzSDYuMjYxNzJWNC43ODgzM1pNNi4yNjE3MiAxMC44SDcuNzM4MjhWMTIuMzExOEg2LjI2MTcyVjEwLjhaJwogICAgICAgIGZpbGw9J2N1cnJlbnRDb2xvcicKICAgIC8+Cjwvc3ZnPgo=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v1.1.0",
+    "labels": [
+      {
+        "name": "Enterprise (E20)",
+        "description": "This plugin only works on servers with an E20 license.",
+        "url": "https://mattermost.com/pricing/",
+        "color": ""
+      }
+    ],
     "hosting": "",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+gbc0ACgkQ0bVLR6XO/sRB+g//fo8T73j8PdYHwM9wj6glUBnwQBIeV/tuLjWr7e7RhuG8p0aeF5vErZ0bFQT+aDKGlF7E6s/tok3PvouthwjY8pOxgr/R0ReKH93ou1ivVlicn+mglMKIou89ViO1yMhjt2l/sc6pc0muyaHjwmfs9M1I2/nJ0qWkcTP7Dvx8E/EFiXaUYww8TNGqf89FbStdthgg27mVa1xg7J79TRODjCl5W+or+nD51RJzh1dhC+FPWTyGWTNJQ0KaYwOI7txOc0qbOJiDKwX9rbcNG7X1AK6A9GT07gS6IW5c5/ajQNnNJeqdRtbUdeMVk6DK6yEmvKhLUByBR4R3d8FXNUyko5k7QNQF4F4ozn76CuL7Z+JCi0IOWo4H1u+4wRm+kf7TYcOFovCyXsIw8wzcbrGI8+QyeQ2qJuOEk1BcMiMU27s7Hkrm1uQ/F0IlbtKR0wh3sX+tFW5hc4iqMjFSHcy7bsAaIEJ64JdZgrdhrTTS9HXQ5LhtYy+Ar5y5J26WHJ5yjbXcrkuZQ2MAo7marE8RbSPQpmc8S/EEdjm2M37vpf0IHUoMTpgmebDbJMgl1whoKLRKFIpM0+nbDjQKdmInrSUCGQ85J9uDs3wSstVQB1t2ntNEa5kZ9Pv8noVi/NwbsGCJEIJucKyMSySE6gP4ugvtNzFmZg9WZEz/fB6R6Ec=",
     "repo_name": "mattermost-plugin-incident-management",
@@ -2457,7 +2465,7 @@
         "settings": []
       }
     },
-    "enterprise": false,
+    "enterprise": true,
     "platforms": {
       "linux-amd64": {
         "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.0-linux-amd64.tar.gz",
@@ -2472,7 +2480,7 @@
         "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+gbcsACgkQ0bVLR6XO/sTnwhAAjY63w2dJyYB5kqvo8Uv6X7LtBf/dyC2iom0B4Kq+vAmU3IvQunkDw+dyGZGk//P/hsn64feGRkqKi7HLNQlf5Lh204trt0ZsAuaD2Gv7Y6/po0WaLvKfm9RB7FKGACgbQYXyL/kFw18yFxdABj0y2NhAk02SwrhBlKCr3kg749QRtuhq8+uuxnVZW7gLGAciud48qVmo5E2VdoM7iN2mB3iCsQP8vWZYk7H++b1TYtJZmSLP4zGIkPf1vB9XNqRMEaWlbFg8vI+t5NczZVd664HnmQJhhL6ZISBappjyCWexAB7BYke/Or+3GaP3kVZli7BT1NmpRJFq5Xo2wk+SkQ0GQLzV+2bf9XICqYNFHWbVrUJ3zoGW/2O0Fbq2BRAxoDKwf66TvQZdUqp/nICiUrtzPIcAiemguUsD/k4HEptayl/9C7wZQf+6j31zFmy/vI/TtfgTzrLAIZForqzrBRJvUhPi1e5jvCWKJ8V/qvIxAqsscLjuUeFgdVXDXTfc2LREKrkHwpFpiSFCyycq8dN8Yw7b+3obumSL28OObbnywD/ljDPwpk9KlkrtK4/YlC/TkQwpxooL3K5Q77MqVJSA6UaAyMziogKIACFM+HPhYzOIdkKELUXk9PLzWjobF1jaXWlk5/mKI5dlyGdTVxdcDTKnyR/Pov1t+Z/ZjxE="
       }
     },
-    "updated_at": "2020-11-04T18:12:11.568086Z"
+    "updated_at": "2020-11-04T18:24:45.397958Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
