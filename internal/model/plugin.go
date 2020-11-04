@@ -15,6 +15,20 @@ const (
 	Cloud  HostingType = "cloud"
 )
 
+type Maintainer string
+
+const (
+	Mattermost Maintainer = "mattermost"
+	Community  Maintainer = "community"
+)
+
+type Stage string
+
+const (
+	Production Stage = "production"
+	Beta       Stage = "beta"
+)
+
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.
 type Plugin struct {
 	HomepageURL     string                    `json:"homepage_url"`
@@ -22,11 +36,13 @@ type Plugin struct {
 	DownloadURL     string                    `json:"download_url"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Labels          []Label                   `json:"labels,omitempty"`
-	Hosting         HostingType               `json:"hosting"`   // Indicated if the plugin is limited to a certain hosting type
-	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
+	Hosting         HostingType               `json:"hosting"`    // Indicated if the plugin is limited to a certain hosting type
+	Maintainer      Maintainer                `json:"maintainer"` // The maintainer of the plugin
+	Stage           Stage                     `json:"stage"`      // The stage in the software release cycle that the plugin is in
+	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
+	Signature       string                    `json:"signature"`  // A signature of a plugin saved in base64 encoding.
 	RepoName        string                    `json:"repo_name"`
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
-	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
 	Platforms       PlatformBundles           `json:"platforms"`
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
 }
@@ -86,6 +102,20 @@ func PluginsToWriter(w io.Writer, plugins []*Plugin) error {
 	}
 
 	return nil
+}
+
+func (p *Plugin) AddLabels() {
+	if p.Maintainer == Community {
+		p.Labels = append(p.Labels, CommunityLabel)
+	}
+
+	if p.Stage == Beta {
+		p.Labels = append(p.Labels, BetaLabel)
+	}
+
+	if p.Enterprise {
+		p.Labels = append(p.Labels, EnterpriseLabel)
+	}
 }
 
 // PluginFilter describes the parameters used to constrain a set of plugins.

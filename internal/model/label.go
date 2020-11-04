@@ -11,6 +11,7 @@ type Label struct {
 var AllLabels = []Label{
 	CommunityLabel,
 	BetaLabel,
+	EnterpriseLabel,
 }
 
 var CommunityLabel Label = Label{
