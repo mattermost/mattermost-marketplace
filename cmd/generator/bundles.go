@@ -135,7 +135,7 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 			return nil, err
 		}
 		if res.StatusCode != http.StatusOK {
-			logger.Infof("Platform-specific bundle not found %s %s", pluginWithVersion, path)
+			logger.Debugf("Platform-specific bundle not found %s %s", pluginWithVersion, path)
 			continue
 		}
 
@@ -146,7 +146,7 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 			return nil, err
 		}
 		if res.StatusCode != http.StatusOK {
-			logger.Infof("Platform-specific bundle signature not found %s %s", pluginWithVersion, sigPath)
+			logger.Debugf("Platform-specific bundle signature not found %s %s", pluginWithVersion, sigPath)
 			continue
 		}
 
