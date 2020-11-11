@@ -916,6 +916,83 @@
     "updated_at": "2019-04-17T19:49:19Z"
   },
   {
+    "homepage_url": "https://github.com/matterpoll/matterpoll",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjFweCIgaGVpZ2h0PSI2MXB4IiB2aWV3Qm94PSIwIDAgNjEgNjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU5ICg4NjEyNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+TG9nbyBEYXJrPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkNvbG9yZWQtLS0iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODYuMDAwMDAwLCAtMjUwLjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPgogICAgICAgICAgICA8ZyBpZD0iTG9nby1EYXJrIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODYuMDAwMDAwLCAyNTAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjQuNzY5NzQ2MywwLjAwMDEzNTYwMjk3NyBMMjQuNzcwMzczNiwxMS43Njk4Mjc4IEMxNy4wMzk5MjU3LDE0LjE5Nzg2MjMgMTEuNDMyNTIwNSwyMS40MTk5MzkxIDExLjQzMjUyMDUsMjkuOTUxNjk1NSBDMTEuNDMyNTIwNSwzOC40ODM0NTE5IDE3LjAzOTkyNTcsNDUuNzA1NTI4NyAyNC43NzAzNzM2LDQ4LjEzMzU2MzIgTDI0Ljc3LDYwLjQzOCBMMiw2MC40Mzg0MTY5IEMwLjg5NTQzMDUsNjAuNDM4NDE2OSAtMS40MjEwODU0N2UtMTQsNTkuNTQyOTg2NCAtMS4wNjU4MTQxZS0xNCw1OC40Mzg0MTY5IEwwLDI4LjA0NjI3NTQgTDAuMDU4NTkxOTg4MywyOC4wNDYwMjI2IEMwLjkyMzYxNDMyNCwxNC4wMjA1NTA1IDExLjI3MTYxMTMsMi41NjA5NzU5NyAyNC43Njk3NDYzLDAuMDAwMTM1NjAyOTc3IFogTTYwLjgxNDQ4NzgsMjYuODE5MzI3MyBDNjAuOTE5NTkzNywyNy44NDkxNDQ3IDYwLjk3MzQ0MjgsMjguODk0MTMxNSA2MC45NzM0NDI4LDI5Ljk1MTY5NTUgQzYwLjk3MzQ0MjgsNDQuODM1MzUxNiA1MC4zMDc4NjY3LDU3LjIyNzkyOSAzNi4yMDI2OTcxLDU5LjkwMzQ0NSBMMzYuMjAzMDY5MSw0OC4xMzM1NjMyIEM0My45MzM1MTcsNDUuNzA1NTI4NyA0OS41NDA5MjIyLDM4LjQ4MzQ1MTkgNDkuNTQwOTIyMiwyOS45NTE2OTU1IEw0OS41MzksMjkuODQgWiBNMzYuMjAyNjk3MSwtNS4zOTc3OTcwOWUtMDUgQzQ1LjQ5MTA4NzksMS43NjE3OTkyNCA1My4yODc5NTA2LDcuNzM3MzEwNDQgNTcuNTI5ODg1MSwxNS44NjMwNzk3IEw0Ni4wNDA1MDUzLDE4Ljk0MjU1NSBDNDMuNjU5MTAwMywxNS41ODQxOTM3IDQwLjIxNzMyNCwxMy4wMzA2NTM4IDM2LjIwMzA2OTEsMTEuNzY5ODI3OCBaIiBpZD0iQ29tYmluZWQtU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+",
+    "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0.tar.gz",
+    "release_notes_url": "https://github.com/matterpoll/matterpoll/releases/tag/v1.4.0",
+    "labels": [
+      {
+        "name": "Community",
+        "description": "This plugin is maintained by the Open Source Community.",
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": ""
+      }
+    ],
+    "hosting": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+sD4kACgkQ0bVLR6XO/sS9Nw//ZaYt8bv0A2Kl4KEgrE8RPianRNdzUmv5hQ1m7uWk+unBbnzqNLysPUarAN5ZqY4+PMT0NKWRfCtDlQwa+vNvEQq8heU7jHalUSV785ewNlFudmfr8tVzkDFnavqyfBjkNZi3LRXxpo8r5uDcQ/OM+hhiryjSzbTukzbbV4LBip6yz0uDIlK+YVo8bykNzZsszXj9K9h5eVbWE1N5PsT7yNyhFDdlGmlZqDjKfMxxJV1rcvJZNe34swVuhtyU64NH3t3O1+n2R6zYqH2FxGSWp9VWoqJalagPdprw3RE1rxPMLSe4gKJZRhBzhOdrNlgQtHpBGCuEu0hRCtxsavbD13E9nlVIgKmpFj2kjtyk3Yk3CA929MazBZVRLMjGcBEYJpt9i1DtWNPc5ljSnQ7c6rw55ILpI57oVeRH4Yp9iyFRAkbreyyG7rv2TJZkndYgIAqX9gHdvI5rhBsqRtJN3wdDL9pYlrMMrJweh7JNaqwaysogUtrbhJZvc1G92yuzwc9i+R40qX229CsSPsNoUEst0fi45JakrAgiPYT3hS2BfVpXBiQ4R8UCI+JbksdHvZuH/lEn0Jp7kPbHmSNiYHwJHb/nC7zsaNJerw2zPqKPVpKwMWNzHuHdiAFVdB7Jg3u85hMqsIoeWcxpPpufcOAst7cx7ysT1QrOLk5QmPo=",
+    "repo_name": "matterpoll",
+    "manifest": {
+      "id": "com.github.matterpoll.matterpoll",
+      "name": "Matterpoll",
+      "description": "Create polls and surveys directly within Mattermost.",
+      "homepage_url": "https://github.com/matterpoll/matterpoll",
+      "support_url": "https://github.com/matterpoll/matterpoll/issues",
+      "release_notes_url": "https://github.com/matterpoll/matterpoll/releases/tag/v1.4.0",
+      "icon_path": "assets/logo_dark.svg",
+      "version": "1.4.0",
+      "min_server_version": "5.20.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/matterpoll/matterpoll).",
+        "settings": [
+          {
+            "key": "Trigger",
+            "display_name": "Trigger Word",
+            "type": "text",
+            "help_text": "Trigger Word must be unique, and cannot begin with a slash or contain any spaces.",
+            "placeholder": "",
+            "default": "poll"
+          },
+          {
+            "key": "ExperimentalUI",
+            "display_name": "Experimental UI",
+            "type": "bool",
+            "help_text": "When true, Matterpoll will render poll posts with a rich UI. The rich UI is not available on mobile app.",
+            "placeholder": "",
+            "default": false
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+sD4cACgkQ0bVLR6XO/sRedg/+MIiF9vBg6VPX3iL5LkPCWnCVEDG9a6bWF0UZy3witvCzzvXLJh8kThRrTw0vTSBwyBxVgyW1rBayMmNKFFX7aFXgmXS6eoEVhRnS1aPvkqUjr6UslOyWc0orwg9Qk3oCJYPKBApCKLOqcXTBMhxl5vS1d23oc9ruu72LMfMX+LcPFwXGnFgB5dPxjBOS6bwKomBUPejGbxsxUfelPePWXTxB8rQcQbcj90LBSuLnflWVszfgDq0fs+EozOLcS67DK8nMaVA53LQ+LbD70MFWiiX05nMCf8WBkvPCr7t0VtaNrgo+sn0wtqQYONwLq9xR61tnC0J/wYiQt6+Qjkk6pr1qjax2oAuvdCvLaxsIWkL086Aa4BdwTq8uByJVA4f4+z7dX2COHP4RrT/R06chG5x9wkeU2xdSxfQSdbBRV2hgOfFtmqgkSZTW0kGUzIStTiVkNZpuOO8CVyZxusMjmWcI6ubTooKU2ci/BH9EV94UzjHzUnfIdoLZbsl2pAwXkyFTVKTcVr2AV/EFAGjzcPuQ5lQ0rR3FhhPJkzp5tQNNzXIzBGP+90tT4ZnXeoQmdx7WdiQpfJ3gcIHYzKOW5CpsnhWInhcp6zBWGoobfVATEkqsO5tE9gEtCoX7oQlT+TXcOYgZh27+7JU+8IxZPlMi/ibUKBEltek5PLuust0="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+sD4UACgkQ0bVLR6XO/sTXnA/+I4WBS0P6uCZpOti3hRO5/jhwaNm7ZXxtUCc4Cz7esmNXyk+0ujjt4o2TQ64i8fBjbHWq7+fpDypNcHTiCAt0rY+Eo2Fu7rY1io5cghBQvLvnBhiXuPIKhudJCJy/aEezusILa5d1O2IH/+1FBFwX2MKMPJKegA+OLKOTdtPUZz1JyE8M1ZMd9P0K35WOSsM8x/raXxqXvfVnhTIAl8TNqSF0ht+z7Qzc/leDmEJlZz0znTIBqWvFNv3/Z4QJFX4CzM8P3Sebc6oUHd7zFDR7dbavF5b9p/UWASDBUUzaYurGugb0WHxeHEwupT3+Fcpm7yPXOY1EbrSBMG51RgIcBvsCmVv/mUwgPtiNoE3Bk3ejyVlpucu/nSmidG7EC6+w/nELG7fDSoN4aQk7wkliMxXYNlYPyPQ4QLwKXGvqnSW/TDLiHAcKu0AM5PJ3PEkjlQI0xAgEfFompmdoX/lWpZ3WsCA7pSuu3Kxa5dYELMtL04F0LqAhpalDOCYDU0j9SoiSAUliotxakaC0qIVlarMiKIiUWnHsTCVFiJNc52BlUzZhQ7kX0WQt7EAhMLUP0vh2CcmdONmX47L6RU2yynSWiMNUXosgoOz+dOeOz0hygbfTVoEApXzY6vJJSyeELxbqdmobdYGeyXwBO7GP2wvzGrly38wVET19maAYpwA="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+sD4YACgkQ0bVLR6XO/sTWEA/+JWvyZItnrRLT4PQ9zYLGsxjzTHXaVpwbeixIKVqkEVR/2MR/djYa19AghyI8CN0HsrkivgRJx/IW01/WhyO6D6mcgQklmn/O1W39VwjuRgxFm8fBCtLKURlS4F8v22pHnsrZORezAmFDz6GM4O5V4zesEByvkxNhLFR/QnexfC27PqhzxNO6eb2WkldOjqt/82bH11pJVuP2dfykDHDh0zMDtYQltACZNOE+YKvBTNJqaPpUezSSEiXPINt7G9Y8RGwkqYz55tLG4OG2LDmXR3FG5dkVu8ZZ1Ky52C6FEBvV6gcC2tsixHrGXvnZvtckHiyo2Rw/4PYxKztMebkofgAjE6iYk6ct7NcrvDEmoZYFKCINS1ALgD1Nh6PCfUrX0pD1kvW2OBn/SfOclymL0j2OlxhVKRVBsChZ1C17HBx9cNO/AMQzdNuuPrB9ODJsvnrjAIbbxAwsoUOMDl2EHyNK8KOL2SD1uHBEMIOF+wHgYlFCMosj3EOaaK5ovCxF4BH7sGNX1xIuCgMA6OfX/FLGUc7uT85yVinkU23jj6m+ZwE1+ukh7K2LzhaDoAGy0TAfZ28IiWFHLVmcDkz5b+gtf0/CKbawTdeZjbzws7y2D3d1yZ/n62n7mXw36wzFGma0jWWB/xDWQKOISoTZjRHL37sDdeUhE68DpjthQBo="
+      }
+    },
+    "updated_at": "2020-11-11T16:30:14.591412365Z"
+  },
+  {
     "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMiIKICAgdmlld0JveD0iMCAwIDE1MCAxNTAiCiAgIGhlaWdodD0iMTUwIgogICB3aWR0aD0iMTUwIj4KICA8ZGVmcwogICAgIGlkPSJkZWZzNCIgLz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIGlkPSJsYXllcjEiPgogICAgPGNpcmNsZQogICAgICAgcj0iNzQuNSIKICAgICAgIGN5PSI3NS4yMjc3MjIiCiAgICAgICBjeD0iNzUuNzQyNTY5IgogICAgICAgaWQ9InBhdGg0MTUzIgogICAgICAgc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICA8L2c+CiAgPGcKICAgICBpZD0ibGF5ZXIyIj4KICAgIDx0ZXh0CiAgICAgICBpZD0idGV4dDQxNTgiCiAgICAgICB5PSI5OC4yOTA2MDQiCiAgICAgICB4PSIxNi4yMzkzMTciCiAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc2l6ZTo0MHB4O2xpbmUtaGVpZ2h0OjEyNSU7Zm9udC1mYW1pbHk6c2Fucy1zZXJpZjtsZXR0ZXItc3BhY2luZzowcHg7d29yZC1zcGFjaW5nOjBweDtmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIgogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHRzcGFuCiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zdHJldGNoOm5vcm1hbDtmb250LXNpemU6ODEuMjVweDtmb250LWZhbWlseTpDYWxpYnJpOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J0NhbGlicmkgQm9sZCc7ZmlsbDojMzM5N2NkO2ZpbGwtb3BhY2l0eToxIgogICAgICAgICB5PSI5OC4yOTA2MDQiCiAgICAgICAgIHg9IjE2LjIzOTMxNyIKICAgICAgICAgaWQ9InRzcGFuNDE2MCI+L2dpZjwvdHNwYW4+PC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-giphy-moussetc-v1.3.0.tar.gz",
