@@ -64,3 +64,26 @@ func (c *Client) GetPlugins(request *GetPluginsRequest) ([]*model.Plugin, error)
 		return nil, errors.Errorf("failed with status code %d", resp.StatusCode)
 	}
 }
+
+// GetPlugin fetches all the specified version of a single plugin
+func (c *Client) GetPlugin(request *GetPluginsRequest, pluginid string) ([]*model.Plugin, error) {
+	u, err := url.Parse(c.buildURL("/api/v1/plugin/" + pluginid))
+	if err != nil {
+		return nil, err
+	}
+
+	request.ApplyToURL(u)
+
+	resp, err := c.doGet(u.String())
+	if err != nil {
+		return nil, err
+	}
+	defer closeBody(resp)
+
+	switch resp.StatusCode {
+	case http.StatusOK:
+		return model.PluginsFromReader(resp.Body)
+	default:
+		return nil, errors.Errorf("failed with status code %d", resp.StatusCode)
+	}
+}

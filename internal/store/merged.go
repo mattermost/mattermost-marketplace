@@ -32,17 +32,13 @@ func (store *Merged) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plug
 		return store.stores[0].GetPlugins(pluginFilter)
 	}
 
+	filter := *pluginFilter
+	filter.Page = 0
+	filter.PerPage = model.AllPerPage
+
 	plugins := []*model.Plugin{}
 	for i, store := range store.stores {
-		storePlugins, err := store.GetPlugins(&model.PluginFilter{
-			Page:              0,
-			PerPage:           model.AllPerPage,
-			Filter:            pluginFilter.Filter,
-			ServerVersion:     pluginFilter.ServerVersion,
-			EnterprisePlugins: pluginFilter.EnterprisePlugins,
-			Cloud:             pluginFilter.Cloud,
-			Platform:          pluginFilter.Platform,
-		})
+		storePlugins, err := store.GetPlugins(&filter)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to query store %d", i)
 		}
@@ -56,4 +52,32 @@ func (store *Merged) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plug
 	}
 
 	return staticStore.GetPlugins(pluginFilter)
+}
+
+func (store *Merged) GetPlugin(pluginFilter *model.PluginFilter, pluginid string) ([]*model.Plugin, error) {
+	// Short-circuit if only one store is configured.
+	if len(store.stores) == 1 {
+		return store.stores[0].GetPlugin(pluginFilter, pluginid)
+	}
+
+	filter := *pluginFilter
+	filter.Page = 0
+	filter.PerPage = model.AllPerPage
+
+	plugins := []*model.Plugin{}
+	for i, store := range store.stores {
+		storePlugins, err := store.GetPlugin(&filter, pluginid)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to query store %d", i)
+		}
+
+		plugins = append(plugins, storePlugins...)
+	}
+
+	staticStore, err := NewStatic(plugins, store.logger)
+	if err != nil {
+		return nil, errors.Wrap(err, "failed to initialize static store")
+	}
+
+	return staticStore.GetPlugin(pluginFilter, pluginid)
 }
