@@ -74,58 +74,6 @@ func pluginMatchesFilter(plugin *model.Plugin, filter string) bool {
 	return false
 }
 
-// GetPlugin retrieves all known version of a specific plugin compatable with the plugin filter given.
-func (store *StaticStore) GetPlugin(pluginFilter *model.PluginFilter, pluginid string) ([]*model.Plugin, error) {
-	if pluginFilter.PerPage == 0 {
-		return nil, nil
-	}
-
-	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins, pluginFilter.Cloud, pluginFilter.Platform)
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to get plugins")
-	}
-
-	// Sort the final slice by plugin name, ascending
-	sort.SliceStable(
-		plugins,
-		func(i, j int) bool {
-			if plugins[i].Manifest.Id == plugins[j].Manifest.Id {
-				iVersion := semver.MustParse(plugins[i].Manifest.Version)
-				jVersion := semver.MustParse(plugins[j].Manifest.Version)
-				return iVersion.GT(jVersion)
-			}
-			return strings.ToLower(plugins[i].Manifest.Name) < strings.ToLower(plugins[j].Manifest.Name)
-		},
-	)
-
-	var filteredPlugins []*model.Plugin
-	for _, plugin := range plugins {
-		if plugin.Manifest.Id == pluginid {
-			filteredPlugins = append(filteredPlugins, plugin)
-		}
-	}
-	plugins = filteredPlugins
-
-	if len(plugins) == 0 {
-		return nil, nil
-	}
-	if pluginFilter.PerPage == model.AllPerPage {
-		return plugins, nil
-	}
-
-	start := (pluginFilter.Page) * pluginFilter.PerPage
-	end := (pluginFilter.Page + 1) * pluginFilter.PerPage
-	if start >= len(plugins) {
-		return nil, nil
-	}
-	if end > len(plugins) {
-		end = len(plugins)
-	}
-
-	return plugins[start:end], nil
-
-}
-
 // GetPlugins fetches the given page of plugins. The first page is 0.
 func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugin, error) {
 	if pluginFilter.PerPage == 0 {
@@ -137,29 +85,37 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 		return nil, errors.Wrap(err, "failed to get plugins")
 	}
 
-	plugins, err = filterToLatestVersion(plugins)
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to filter to latest version")
+	if !pluginFilter.ReturnAllVersions {
+		plugins, err = filterToLatestVersion(plugins)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to filter to latest version")
+		}
 	}
 
-	// Sort the final slice by plugin name, ascending
+	filter := strings.TrimSpace(pluginFilter.Filter)
+	var filteredPlugins []*model.Plugin
+	for _, plugin := range plugins {
+		if pluginFilter.PluginId != "" && pluginFilter.PluginId != plugin.Manifest.Id {
+			continue
+		}
+		if filter == "" || pluginMatchesFilter(plugin, filter) {
+			filteredPlugins = append(filteredPlugins, plugin)
+		}
+	}
+	plugins = filteredPlugins
+
+	// Sort the final slice by plugin version decending then plugin name ascending.
 	sort.SliceStable(
 		plugins,
 		func(i, j int) bool {
+			if plugins[i].Manifest.Id == plugins[j].Manifest.Id {
+				iVersion := semver.MustParse(plugins[i].Manifest.Version)
+				jVersion := semver.MustParse(plugins[j].Manifest.Version)
+				return iVersion.GT(jVersion)
+			}
 			return strings.ToLower(plugins[i].Manifest.Name) < strings.ToLower(plugins[j].Manifest.Name)
 		},
 	)
-
-	filter := strings.TrimSpace(pluginFilter.Filter)
-	if filter != "" {
-		var filteredPlugins []*model.Plugin
-		for _, plugin := range plugins {
-			if pluginMatchesFilter(plugin, filter) {
-				filteredPlugins = append(filteredPlugins, plugin)
-			}
-		}
-		plugins = filteredPlugins
-	}
 
 	if len(plugins) == 0 {
 		return nil, nil

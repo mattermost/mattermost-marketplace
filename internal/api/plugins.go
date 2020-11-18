@@ -17,9 +17,6 @@ func initPlugins(apiRouter *mux.Router, context *Context) {
 
 	pluginsRouter := apiRouter.PathPrefix("/plugins").Subrouter()
 	pluginsRouter.Handle("", addContext(handleGetPlugins)).Methods(http.MethodGet)
-
-	pluginRouter := apiRouter.PathPrefix("/plugin/{id}").Subrouter()
-	pluginRouter.Handle("", addContext(handleGetPlugin)).Methods(http.MethodGet)
 }
 
 func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
@@ -36,6 +33,7 @@ func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
 	filter := u.Query().Get("filter")
 	serverVersion := u.Query().Get("server_version")
 	platform := u.Query().Get("platform")
+	pluginId := u.Query().Get("plugin_id")
 
 	enterprisePlugins, err := parseBool(u, "enterprise_plugins", false)
 	if err != nil {
@@ -43,6 +41,11 @@ func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
 	}
 
 	cloud, err := parseBool(u, "cloud", false)
+	if err != nil {
+		return nil, err
+	}
+
+	returnAllVersions, err := parseBool(u, "return_all_versions", false)
 	if err != nil {
 		return nil, err
 	}
@@ -55,6 +58,8 @@ func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
 		EnterprisePlugins: enterprisePlugins,
 		Cloud:             cloud,
 		Platform:          platform,
+		PluginId:          pluginId,
+		ReturnAllVersions: returnAllVersions,
 	}, nil
 }
 
@@ -68,39 +73,6 @@ func handleGetPlugins(c *Context, w http.ResponseWriter, r *http.Request) {
 	}
 
 	plugins, err := c.Store.GetPlugins(filter)
-	if err != nil {
-		c.Logger.WithError(err).Error("failed to query plugins")
-		w.WriteHeader(http.StatusInternalServerError)
-		return
-	}
-	if plugins == nil {
-		plugins = []*model.Plugin{}
-	}
-
-	w.Header().Set("Content-Type", "application/json")
-	outputJSON(c, w, plugins)
-}
-
-// handleGetPlugins responds to GET /api/v1/plugin/{id}, returning the specified page of plugin versions.
-func handleGetPlugin(c *Context, w http.ResponseWriter, r *http.Request) {
-	filter, err := parsePluginFilter(r.URL)
-	if err != nil {
-		c.Logger.WithError(err).Error("failed to parse paging parameters")
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
-
-	pluginid, ok := mux.Vars(r)["id"]
-	if !ok {
-		c.Logger.WithError(err).Error("failed to get pluginid from url")
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
-
-	// Remove params that don't apply to us
-	filter.Filter = ""
-
-	plugins, err := c.Store.GetPlugin(filter, pluginid)
 	if err != nil {
 		c.Logger.WithError(err).Error("failed to query plugins")
 		w.WriteHeader(http.StatusInternalServerError)
