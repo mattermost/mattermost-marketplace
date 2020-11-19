@@ -4,7 +4,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/download/v0.1.2/antivirus-0.1.2.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/tag/v0.1.2",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl4fRNUACgkQ0bVLR6XO/sQ6hQ//YERXGn3Geacs+5Vh0abBd3k6B0Cn39ysU8bjjrw43Xv4Zijf/2OzcJVjhyPEvPs80RniLhbqB8OrmqbDye9/8kEj7nH8sOne4s2zJoCG7kTmrgU/Fdue/ZNP+8n17DRwlg14TcSjKs4zrDusqdWmMCAXwBARC2aErqWXBFkYuhv2Q3++JNRbANxhyjBmpe6RSb2IVTYoJXcp3O/aHraNgvsyJlnE9WHvBbA5GtNqzcGxKkucMsmL+jBuhGPmdD+UetzYg2fATTj9L+AePtf0fDJ6mMj9dO+5jwOV9qmIFjKhwmXpa/W7e/1N3KhX89+hDUdPopfDiMfOLkMntu8nWZdxXI+mAT5oP1mofV+UqbKxGodNEba8J7xE1yBbn31xDhKPsDdGBU667oJ2l0p23xDX0Egwsw8elf2XADjV4c5eCXpBmwvlioHldeSZ62Zl2JS+JwujhUUvQwN3E/MVo0YEd0WTL8AS9XTIgzKyfp26Bj9max8nDmWWLgablnQIBOawnmS6sT6BNBG37Iqy6IJ0Nnci2fyZT/mD+KmzyRd4A3b/+NI8ZP0YSFdsZgB7o+3kT5S1gstjGtbmQd/TfqmD+NvKf2P2FshDVPXzO0b6gLl661BrNm/nqQeS/gUsn434gOhZFnvUAPKHBSmmxj96q3qvSulvD1SZj9pBlxM=",
     "repo_name": "mattermost-plugin-antivirus",
     "manifest": {
@@ -65,7 +65,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/download/v0.1.1/antivirus-0.1.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/tag/v0.1.1",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBkcACgkQ0bVLR6XO/sQ0cQ//X4zgcJYdrA/1hsXKsIG9KH6IMPnEBqXY4+HUwVwR1LojsVpEUQ3EE526EuOdIm2lOa58viK9A8turNFK0rBsKm6MlIEDiYkKdBgxuo7ZWBiaqkX1/JsoJ0xXk7HGbIfIOYawmitWS6kq5MhSITmJrPJik9nnTffO71rP+Ddjqcmhpd9HGupCIykB0um96Zs2Y7FISA9hiqM4P1UGJqK2DAsWONXwdMsvO+Dyvp+lgh+wCInZQ3wffyntmbGnYQsWGODOY8wVVnMl2oovM5FpKx9xNQ2Tir3D1p6BbNMdFq47Q4Fwu1FqtpPCPZij7GnH1YZX3CWTfMR5dODhQH5AhVV9qvwpjj8SRts+cu7V+2OYx2mrOGWnQ5XVEcKqjzzGzzYCkfvcawiTknIDUaPsZoGRMWE8uk05pDtqwG+Ntv2jqOwbGSBU0Ll/pcQO+02BWQ0rLfCsYLrgDtPG00E2hS4tn6K8+J/psZD+KUoKCu43V8nyrKM4FxdzwSo+d9+VXkxRDK1NdZ1TPPZaAPKUVtFMhzDQiTEB9X+GG9O8EMRt2PMpuz1s/EmJIdmEATmiCqDMI3/D/mtFXDRBSElq76axIMrmrqe1ms1PLZirrFe8nZJ68NXQ3NT74H5kB3AMvP2bUz3R3z0y6BdTQD7sl31nouITLmR05LnZWU5danU=",
     "repo_name": "mattermost-plugin-antivirus",
     "manifest": {
@@ -914,6 +914,83 @@
       "windows-amd64": {}
     },
     "updated_at": "2019-04-17T19:49:19Z"
+  },
+  {
+    "homepage_url": "https://github.com/matterpoll/matterpoll",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjFweCIgaGVpZ2h0PSI2MXB4IiB2aWV3Qm94PSIwIDAgNjEgNjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU5ICg4NjEyNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+TG9nbyBEYXJrPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkNvbG9yZWQtLS0iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODYuMDAwMDAwLCAtMjUwLjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPgogICAgICAgICAgICA8ZyBpZD0iTG9nby1EYXJrIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODYuMDAwMDAwLCAyNTAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjQuNzY5NzQ2MywwLjAwMDEzNTYwMjk3NyBMMjQuNzcwMzczNiwxMS43Njk4Mjc4IEMxNy4wMzk5MjU3LDE0LjE5Nzg2MjMgMTEuNDMyNTIwNSwyMS40MTk5MzkxIDExLjQzMjUyMDUsMjkuOTUxNjk1NSBDMTEuNDMyNTIwNSwzOC40ODM0NTE5IDE3LjAzOTkyNTcsNDUuNzA1NTI4NyAyNC43NzAzNzM2LDQ4LjEzMzU2MzIgTDI0Ljc3LDYwLjQzOCBMMiw2MC40Mzg0MTY5IEMwLjg5NTQzMDUsNjAuNDM4NDE2OSAtMS40MjEwODU0N2UtMTQsNTkuNTQyOTg2NCAtMS4wNjU4MTQxZS0xNCw1OC40Mzg0MTY5IEwwLDI4LjA0NjI3NTQgTDAuMDU4NTkxOTg4MywyOC4wNDYwMjI2IEMwLjkyMzYxNDMyNCwxNC4wMjA1NTA1IDExLjI3MTYxMTMsMi41NjA5NzU5NyAyNC43Njk3NDYzLDAuMDAwMTM1NjAyOTc3IFogTTYwLjgxNDQ4NzgsMjYuODE5MzI3MyBDNjAuOTE5NTkzNywyNy44NDkxNDQ3IDYwLjk3MzQ0MjgsMjguODk0MTMxNSA2MC45NzM0NDI4LDI5Ljk1MTY5NTUgQzYwLjk3MzQ0MjgsNDQuODM1MzUxNiA1MC4zMDc4NjY3LDU3LjIyNzkyOSAzNi4yMDI2OTcxLDU5LjkwMzQ0NSBMMzYuMjAzMDY5MSw0OC4xMzM1NjMyIEM0My45MzM1MTcsNDUuNzA1NTI4NyA0OS41NDA5MjIyLDM4LjQ4MzQ1MTkgNDkuNTQwOTIyMiwyOS45NTE2OTU1IEw0OS41MzksMjkuODQgWiBNMzYuMjAyNjk3MSwtNS4zOTc3OTcwOWUtMDUgQzQ1LjQ5MTA4NzksMS43NjE3OTkyNCA1My4yODc5NTA2LDcuNzM3MzEwNDQgNTcuNTI5ODg1MSwxNS44NjMwNzk3IEw0Ni4wNDA1MDUzLDE4Ljk0MjU1NSBDNDMuNjU5MTAwMywxNS41ODQxOTM3IDQwLjIxNzMyNCwxMy4wMzA2NTM4IDM2LjIwMzA2OTEsMTEuNzY5ODI3OCBaIiBpZD0iQ29tYmluZWQtU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+",
+    "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0.tar.gz",
+    "release_notes_url": "https://github.com/matterpoll/matterpoll/releases/tag/v1.4.0",
+    "labels": [
+      {
+        "name": "Community",
+        "description": "This plugin is maintained by the Open Source Community.",
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": ""
+      }
+    ],
+    "hosting": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+sD4kACgkQ0bVLR6XO/sS9Nw//ZaYt8bv0A2Kl4KEgrE8RPianRNdzUmv5hQ1m7uWk+unBbnzqNLysPUarAN5ZqY4+PMT0NKWRfCtDlQwa+vNvEQq8heU7jHalUSV785ewNlFudmfr8tVzkDFnavqyfBjkNZi3LRXxpo8r5uDcQ/OM+hhiryjSzbTukzbbV4LBip6yz0uDIlK+YVo8bykNzZsszXj9K9h5eVbWE1N5PsT7yNyhFDdlGmlZqDjKfMxxJV1rcvJZNe34swVuhtyU64NH3t3O1+n2R6zYqH2FxGSWp9VWoqJalagPdprw3RE1rxPMLSe4gKJZRhBzhOdrNlgQtHpBGCuEu0hRCtxsavbD13E9nlVIgKmpFj2kjtyk3Yk3CA929MazBZVRLMjGcBEYJpt9i1DtWNPc5ljSnQ7c6rw55ILpI57oVeRH4Yp9iyFRAkbreyyG7rv2TJZkndYgIAqX9gHdvI5rhBsqRtJN3wdDL9pYlrMMrJweh7JNaqwaysogUtrbhJZvc1G92yuzwc9i+R40qX229CsSPsNoUEst0fi45JakrAgiPYT3hS2BfVpXBiQ4R8UCI+JbksdHvZuH/lEn0Jp7kPbHmSNiYHwJHb/nC7zsaNJerw2zPqKPVpKwMWNzHuHdiAFVdB7Jg3u85hMqsIoeWcxpPpufcOAst7cx7ysT1QrOLk5QmPo=",
+    "repo_name": "matterpoll",
+    "manifest": {
+      "id": "com.github.matterpoll.matterpoll",
+      "name": "Matterpoll",
+      "description": "Create polls and surveys directly within Mattermost.",
+      "homepage_url": "https://github.com/matterpoll/matterpoll",
+      "support_url": "https://github.com/matterpoll/matterpoll/issues",
+      "release_notes_url": "https://github.com/matterpoll/matterpoll/releases/tag/v1.4.0",
+      "icon_path": "assets/logo_dark.svg",
+      "version": "1.4.0",
+      "min_server_version": "5.20.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/matterpoll/matterpoll).",
+        "settings": [
+          {
+            "key": "Trigger",
+            "display_name": "Trigger Word",
+            "type": "text",
+            "help_text": "Trigger Word must be unique, and cannot begin with a slash or contain any spaces.",
+            "placeholder": "",
+            "default": "poll"
+          },
+          {
+            "key": "ExperimentalUI",
+            "display_name": "Experimental UI",
+            "type": "bool",
+            "help_text": "When true, Matterpoll will render poll posts with a rich UI. The rich UI is not available on mobile app.",
+            "placeholder": "",
+            "default": false
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+sD4cACgkQ0bVLR6XO/sRedg/+MIiF9vBg6VPX3iL5LkPCWnCVEDG9a6bWF0UZy3witvCzzvXLJh8kThRrTw0vTSBwyBxVgyW1rBayMmNKFFX7aFXgmXS6eoEVhRnS1aPvkqUjr6UslOyWc0orwg9Qk3oCJYPKBApCKLOqcXTBMhxl5vS1d23oc9ruu72LMfMX+LcPFwXGnFgB5dPxjBOS6bwKomBUPejGbxsxUfelPePWXTxB8rQcQbcj90LBSuLnflWVszfgDq0fs+EozOLcS67DK8nMaVA53LQ+LbD70MFWiiX05nMCf8WBkvPCr7t0VtaNrgo+sn0wtqQYONwLq9xR61tnC0J/wYiQt6+Qjkk6pr1qjax2oAuvdCvLaxsIWkL086Aa4BdwTq8uByJVA4f4+z7dX2COHP4RrT/R06chG5x9wkeU2xdSxfQSdbBRV2hgOfFtmqgkSZTW0kGUzIStTiVkNZpuOO8CVyZxusMjmWcI6ubTooKU2ci/BH9EV94UzjHzUnfIdoLZbsl2pAwXkyFTVKTcVr2AV/EFAGjzcPuQ5lQ0rR3FhhPJkzp5tQNNzXIzBGP+90tT4ZnXeoQmdx7WdiQpfJ3gcIHYzKOW5CpsnhWInhcp6zBWGoobfVATEkqsO5tE9gEtCoX7oQlT+TXcOYgZh27+7JU+8IxZPlMi/ibUKBEltek5PLuust0="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+sD4UACgkQ0bVLR6XO/sTXnA/+I4WBS0P6uCZpOti3hRO5/jhwaNm7ZXxtUCc4Cz7esmNXyk+0ujjt4o2TQ64i8fBjbHWq7+fpDypNcHTiCAt0rY+Eo2Fu7rY1io5cghBQvLvnBhiXuPIKhudJCJy/aEezusILa5d1O2IH/+1FBFwX2MKMPJKegA+OLKOTdtPUZz1JyE8M1ZMd9P0K35WOSsM8x/raXxqXvfVnhTIAl8TNqSF0ht+z7Qzc/leDmEJlZz0znTIBqWvFNv3/Z4QJFX4CzM8P3Sebc6oUHd7zFDR7dbavF5b9p/UWASDBUUzaYurGugb0WHxeHEwupT3+Fcpm7yPXOY1EbrSBMG51RgIcBvsCmVv/mUwgPtiNoE3Bk3ejyVlpucu/nSmidG7EC6+w/nELG7fDSoN4aQk7wkliMxXYNlYPyPQ4QLwKXGvqnSW/TDLiHAcKu0AM5PJ3PEkjlQI0xAgEfFompmdoX/lWpZ3WsCA7pSuu3Kxa5dYELMtL04F0LqAhpalDOCYDU0j9SoiSAUliotxakaC0qIVlarMiKIiUWnHsTCVFiJNc52BlUzZhQ7kX0WQt7EAhMLUP0vh2CcmdONmX47L6RU2yynSWiMNUXosgoOz+dOeOz0hygbfTVoEApXzY6vJJSyeELxbqdmobdYGeyXwBO7GP2wvzGrly38wVET19maAYpwA="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+sD4YACgkQ0bVLR6XO/sTWEA/+JWvyZItnrRLT4PQ9zYLGsxjzTHXaVpwbeixIKVqkEVR/2MR/djYa19AghyI8CN0HsrkivgRJx/IW01/WhyO6D6mcgQklmn/O1W39VwjuRgxFm8fBCtLKURlS4F8v22pHnsrZORezAmFDz6GM4O5V4zesEByvkxNhLFR/QnexfC27PqhzxNO6eb2WkldOjqt/82bH11pJVuP2dfykDHDh0zMDtYQltACZNOE+YKvBTNJqaPpUezSSEiXPINt7G9Y8RGwkqYz55tLG4OG2LDmXR3FG5dkVu8ZZ1Ky52C6FEBvV6gcC2tsixHrGXvnZvtckHiyo2Rw/4PYxKztMebkofgAjE6iYk6ct7NcrvDEmoZYFKCINS1ALgD1Nh6PCfUrX0pD1kvW2OBn/SfOclymL0j2OlxhVKRVBsChZ1C17HBx9cNO/AMQzdNuuPrB9ODJsvnrjAIbbxAwsoUOMDl2EHyNK8KOL2SD1uHBEMIOF+wHgYlFCMosj3EOaaK5ovCxF4BH7sGNX1xIuCgMA6OfX/FLGUc7uT85yVinkU23jj6m+ZwE1+ukh7K2LzhaDoAGy0TAfZ28IiWFHLVmcDkz5b+gtf0/CKbawTdeZjbzws7y2D3d1yZ/n62n7mXw36wzFGma0jWWB/xDWQKOISoTZjRHL37sDdeUhE68DpjthQBo="
+      }
+    },
+    "updated_at": "2020-11-11T16:30:14.591412365Z"
   },
   {
     "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
@@ -2423,6 +2500,126 @@
     "updated_at": "2019-06-12T19:04:44Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response/",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9JzE0MCcKICAgIGhlaWdodD0nMTcwJwogICAgdmlld0JveD0nMCAwIDE0IDE3JwogICAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJwogICAgc3R5bGU9J21hcmdpblRvcDogLTFweCcKPgogICAgPHBhdGgKICAgICAgICBkPSdNMTMuNzUgNy44MTE3N0MxMy43NSA5LjE3MTE0IDEzLjQ1NyAxMC40ODM2IDEyLjg3MTEgMTEuNzQ5M0MxMi4yODUyIDEzLjAxNDkgMTEuNDc2NiAxNC4wOTMgMTAuNDQ1MyAxNC45ODM2QzkuNDE0MDYgMTUuODc0MyA4LjI2NTYyIDE2LjQ4MzYgNyAxNi44MTE4QzUuNzM0MzggMTYuNDgzNiA0LjU4NTk0IDE1Ljg3NDMgMy41NTQ2OSAxNC45ODM2QzIuNTIzNDQgMTQuMDkzIDEuNzE0ODQgMTMuMDE0OSAxLjEyODkxIDExLjc0OTNDMC41NDI5NjkgMTAuNDgzNiAwLjI1IDkuMTcxMTQgMC4yNSA3LjgxMTc3VjMuMzExNzdMNyAwLjI4ODMzTDEzLjc1IDMuMzExNzdWNy44MTE3N1pNNyAxNS4zQzcuOTE0MDYgMTUuMDQyMiA4Ljc2OTUzIDE0LjUzODMgOS41NjY0MSAxMy43ODgzQzEwLjM4NjcgMTMuMDM4MyAxMS4wMzEyIDEyLjE0NzcgMTEuNSAxMS4xMTY1QzExLjk5MjIgMTAuMDg1MiAxMi4yMzgzIDkuMDMwNTIgMTIuMjM4MyA3Ljk1MjM5VjQuMjYwOTlMNyAxLjk0MDY3TDEuNzYxNzIgNC4yNjA5OVY3Ljk1MjM5QzEuNzYxNzIgOS4wMzA1MiAxLjk5NjA5IDEwLjA4NTIgMi40NjQ4NCAxMS4xMTY1QzIuOTU3MDMgMTIuMTQ3NyAzLjYwMTU2IDEzLjAzODMgNC4zOTg0NCAxMy43ODgzQzUuMjE4NzUgMTQuNTM4MyA2LjA4NTk0IDE1LjA0MjIgNyAxNS4zWk02LjI2MTcyIDQuNzg4MzNINy43MzgyOFY5LjI4ODMzSDYuMjYxNzJWNC43ODgzM1pNNi4yNjE3MiAxMC44SDcuNzM4MjhWMTIuMzExOEg2LjI2MTcyVjEwLjhaJwogICAgICAgIGZpbGw9J2N1cnJlbnRDb2xvcicKICAgIC8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v1.1.1",
+    "labels": [
+      {
+        "name": "Enterprise (E20)",
+        "description": "This plugin only works on servers with an E20 license.",
+        "url": "https://mattermost.com/pricing/",
+        "color": ""
+      }
+    ],
+    "hosting": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+kLw8ACgkQ0bVLR6XO/sSN7A//eGJ7EIKBoDQGNvOijvndIyonN8gZRk0wUkOdJ0tOKmt1DoLWYwP1Qy/y7qGBb0L8XVTNLzsoA5IIISqwpZieWf+9+gqSJX15CYl7RNXqiCIAYbdZcIH20nSFhihqZIRDLvuURylYjLR72MHNsk9pHsLeUUDwMjm5dCAUDABe23H10XgY2AjrAWrvJx+VuIiPt/mNs/WvaHbncCWpimeGtP1aKZPrpYpuJ9FwYMKUKF2D5nh7e8/XXw8ZeeV6TCC74RlaVwdvq3HpCpemBhHvHdqtDr+Fle4+f33K/MGx2Q9ZbFjHqqgzz3joJm6IdPq7NXSA58XuqpbWReL4oQ+F/rfT/wxCa5rBnjYOliDeZu2YdzpcQtpFFRV1S/8w0Fgk22Bs5P5kXbSHY+kXCzoEjf2ArwzD8vSth7eTesUvNatPxEQau0wKJXcjYAp+gGb9edBgrRY3JbuLwBf+LtKLWVa8U7oiS37UgywoC8qRl2nGC7tMw46eBI+a32CMAnzHvfpNAdRLj2TJkpg6VQd5nRdmAsIebC3M4P9O8br3XlGNhrC7peIRcUBSfga3Q+VxPhdlInEgyw4miZsTeQh5eT8n4QTDB9QkBwAPNMyH8i/0z4MUVSr8S1/Ni01VV9N2lXdNA/BiceVVfWCKgmDezRnGczKbxiijSVMwdk1MKSY=",
+    "repo_name": "mattermost-plugin-incident-management",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-management",
+      "name": "Incident Management",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-incident-response/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v1.1.1",
+      "icon_path": "assets/incident_plugin_icon.svg",
+      "version": "1.1.1",
+      "min_server_version": "5.28.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": true,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+kLw4ACgkQ0bVLR6XO/sR29A/9GVPItK1gFulfxvbGDozPfSfbU7f/Vo1NU+wrmpjX3Ezq8MkaJkEm27yGjpCCfgR0ZbsWvkUk7CSZ58DxDzp/ucFSvEtRycwTvHJXUx5LdjDiEH5LL0RZJcuMUd4wM/X4fWFlrP5boUzXhcdt3Uxd2nAnQBmazdVTOJRRqhe3RFys7N9Iu9pPJiRM6v5NtBBTkFcNaUVpp8BZjVmny+5ApCt2JCeTyJTmSaGA1oU94KAFgwYtxm2r777AoB0ahbaqy1DQcWiHD/42rCGtjoqusTmqvUmbyUFGqFX37v1//kWBcWmZaOrhZi4UvgQno4Ef+3XKp72ARGmxHDjeELz9azO9froRtKCwwZMEiHPDLwLJmrt9EDezl8LG8vuMJLNLDL22p/wmE3hMRu8eteQ4KDaTLpwMBpexYvPbO/WLyvn6l5KcgY5xGRRnd76JRQb0sAcL66U5Lg0axkxyq2Wp5qTVMXpmu6qwv7ysjU8v4wST8ChYMMEV01OzbzW+3L1CFEcks1tmXhc9z5vx9TXhHNsQtsVxSeG6vuOVQVT8JSfcxn6MWLfnYz7tXyQjyutBBQYfqfpb3ku9L0a/u1h5vdbEQoDyHkE9VtXr7pgDDfW+/BjkxRAkhkGY8r9UqWtP4GaHJO9hIN2MmHEwbO8Eralehwu5c/uWlrFz/BlT2Z4="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.1-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+kLwsACgkQ0bVLR6XO/sS7mQ/+ItTwigzwyM7tz1kiiidgUyYydA0EOv5AYLpyMMTicIzlZTAd4TbWPU3E5s8jCb+R9tXdYOkroRDVg1rCnRstzUgr+07iHbQ9w7PdxlwwpTumzRnoTfHq16NP31RJ9NHm3qBqQXRCiEXsnFw9dK+Fab+1RmPe0zrXa5jXb/+sH5HRgYy2RVs6uXvzDEv+0H/4B9lenmTua4RGCkMfUHP5U9z2E+99rCg6koSCU8JgL+aLWtpJaNmVXJaGUm3zeF3mXNts1I3PX14ZBmhYKYnNQYO7WUnrnFejg/ygWeVpOLuUttDwOwft0RDAxYEmxWSy0jhZtnjgegLZrVx0TeFXykdQd9saamzbkCFHbX3uRLvBAeZ5yTiaw8wr60oy1HF5vNzkqN2LwEpcFYAY/joH+qPUP0BO/SJnMLYVjOk5aG3nM/0wf8IyLV+Mg1KW2WwwZfwXlD34wIziS7VSpq2Z/10inqF+q/ISmUzWMIIHwj2FsJgyMsMzipny4lgAeZjdgaoMZ9kUFLk5Tfp+10xvxDxwn/XK8I0jKPo3lNJ/TpbBvQOVigUZxob97KkSjz/0uw7Lb5NPwEha1p9hzD6Kcrnp/g3RYN+sfl1uZdm1MSqAmJTjMngngl6/K1vGgdrVkxUTmAP/MlH45OW6313yV8C4x+gYYdOCwalmZlpVNJc="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+kLwwACgkQ0bVLR6XO/sS6rBAAjoYp3TvSVDWVaqDeQ8+Z4iA4NsT8op49ZPtHR/EQEdibZl/vV1xkE+8fdNnECjtaLbSrGRU+ZKkYfrbydu+aMvPSEPDtsT6uPol79un45jC2Q1t1KyXlHt6kB90MxuB0x7YZbHXh9CHkkPT8bAQI1x6RW+My/RTM+M0JJ05gSWfxSLlU8vCxDzPt8IhXm1YT4fETNhtSjkIfOD50r2Xsv4pRB/kWmfb5nvZubpL+5vrgkV5Ub9kfZQLHSYA9GoIlPFQ7JCo8PnJXYENEwderIN8w/XrRjlLs9ITK44k2UTusqXOhezycBTwxRIjkAVv9aS0XZbDRdKWzuC8O2eXqagwB9r3G/aqS6dFHJcfsMCAJzrSEqgUDIARzcGeIDAyM1wMcOmZRRpGuDIOreifPynqGJlT2RJ3DENBKJ7GXV028+gaKz9LYq4ZAtVY2bsINA0c9mTbQ/u2yAoeiZmdEQUOfASGYcnfxSSchNR8YfyjzEbYBFw+ImyzKdljP6+SEtx460qLbYxzUq4ASTyA7gRbySA6zTaUKi6fa5Ai6HW3iWmN0OsYRlgD/x3ZZ6yA8b2ONd5EsfXPFxqdYeGn1FRe2WeiK8qDzuFfhS9UbwiSf1Bd1nLvklEIkFZi7Zm5GNfBkh2SHdVY6jt/1al9KiMnRnpY39sKD2kp/RZk9H2g="
+      }
+    },
+    "updated_at": "2020-11-05T18:39:50.424493Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response/",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9JzE0MCcKICAgIGhlaWdodD0nMTcwJwogICAgdmlld0JveD0nMCAwIDE0IDE3JwogICAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJwogICAgc3R5bGU9J21hcmdpblRvcDogLTFweCcKPgogICAgPHBhdGgKICAgICAgICBkPSdNMTMuNzUgNy44MTE3N0MxMy43NSA5LjE3MTE0IDEzLjQ1NyAxMC40ODM2IDEyLjg3MTEgMTEuNzQ5M0MxMi4yODUyIDEzLjAxNDkgMTEuNDc2NiAxNC4wOTMgMTAuNDQ1MyAxNC45ODM2QzkuNDE0MDYgMTUuODc0MyA4LjI2NTYyIDE2LjQ4MzYgNyAxNi44MTE4QzUuNzM0MzggMTYuNDgzNiA0LjU4NTk0IDE1Ljg3NDMgMy41NTQ2OSAxNC45ODM2QzIuNTIzNDQgMTQuMDkzIDEuNzE0ODQgMTMuMDE0OSAxLjEyODkxIDExLjc0OTNDMC41NDI5NjkgMTAuNDgzNiAwLjI1IDkuMTcxMTQgMC4yNSA3LjgxMTc3VjMuMzExNzdMNyAwLjI4ODMzTDEzLjc1IDMuMzExNzdWNy44MTE3N1pNNyAxNS4zQzcuOTE0MDYgMTUuMDQyMiA4Ljc2OTUzIDE0LjUzODMgOS41NjY0MSAxMy43ODgzQzEwLjM4NjcgMTMuMDM4MyAxMS4wMzEyIDEyLjE0NzcgMTEuNSAxMS4xMTY1QzExLjk5MjIgMTAuMDg1MiAxMi4yMzgzIDkuMDMwNTIgMTIuMjM4MyA3Ljk1MjM5VjQuMjYwOTlMNyAxLjk0MDY3TDEuNzYxNzIgNC4yNjA5OVY3Ljk1MjM5QzEuNzYxNzIgOS4wMzA1MiAxLjk5NjA5IDEwLjA4NTIgMi40NjQ4NCAxMS4xMTY1QzIuOTU3MDMgMTIuMTQ3NyAzLjYwMTU2IDEzLjAzODMgNC4zOTg0NCAxMy43ODgzQzUuMjE4NzUgMTQuNTM4MyA2LjA4NTk0IDE1LjA0MjIgNyAxNS4zWk02LjI2MTcyIDQuNzg4MzNINy43MzgyOFY5LjI4ODMzSDYuMjYxNzJWNC43ODgzM1pNNi4yNjE3MiAxMC44SDcuNzM4MjhWMTIuMzExOEg2LjI2MTcyVjEwLjhaJwogICAgICAgIGZpbGw9J2N1cnJlbnRDb2xvcicKICAgIC8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v1.1.0",
+    "labels": [
+      {
+        "name": "Enterprise (E20)",
+        "description": "This plugin only works on servers with an E20 license.",
+        "url": "https://mattermost.com/pricing/",
+        "color": ""
+      }
+    ],
+    "hosting": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+gbc0ACgkQ0bVLR6XO/sRB+g//fo8T73j8PdYHwM9wj6glUBnwQBIeV/tuLjWr7e7RhuG8p0aeF5vErZ0bFQT+aDKGlF7E6s/tok3PvouthwjY8pOxgr/R0ReKH93ou1ivVlicn+mglMKIou89ViO1yMhjt2l/sc6pc0muyaHjwmfs9M1I2/nJ0qWkcTP7Dvx8E/EFiXaUYww8TNGqf89FbStdthgg27mVa1xg7J79TRODjCl5W+or+nD51RJzh1dhC+FPWTyGWTNJQ0KaYwOI7txOc0qbOJiDKwX9rbcNG7X1AK6A9GT07gS6IW5c5/ajQNnNJeqdRtbUdeMVk6DK6yEmvKhLUByBR4R3d8FXNUyko5k7QNQF4F4ozn76CuL7Z+JCi0IOWo4H1u+4wRm+kf7TYcOFovCyXsIw8wzcbrGI8+QyeQ2qJuOEk1BcMiMU27s7Hkrm1uQ/F0IlbtKR0wh3sX+tFW5hc4iqMjFSHcy7bsAaIEJ64JdZgrdhrTTS9HXQ5LhtYy+Ar5y5J26WHJ5yjbXcrkuZQ2MAo7marE8RbSPQpmc8S/EEdjm2M37vpf0IHUoMTpgmebDbJMgl1whoKLRKFIpM0+nbDjQKdmInrSUCGQ85J9uDs3wSstVQB1t2ntNEa5kZ9Pv8noVi/NwbsGCJEIJucKyMSySE6gP4ugvtNzFmZg9WZEz/fB6R6Ec=",
+    "repo_name": "mattermost-plugin-incident-management",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-management",
+      "name": "Incident Management",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-incident-response/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-response/releases/tag/v1.1.0",
+      "icon_path": "assets/incident_plugin_icon.svg",
+      "version": "1.1.0",
+      "min_server_version": "5.28.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": true,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+gbckACgkQ0bVLR6XO/sSuSg//ZB1xdt+zAyhCaSmcFPIKnjPxY0OX4xGJuvMSRLg5Vc4ify4f+KD4PNUfgeNGbA2+36GNNZcwuirsWG6TjJ3J72PNL1oIPSafEGkMescKaELm2xNlBUkwwBlcqmGUr5gXiftAk7EHLM334a4rT6U2aa/PWQ6ZTVNNqnDLZHTC6/FgaMDe0nA+15sF0SFbbuYW1UR1Wqw9LKsiwcaNXrEidFR8raOtvbslQmXYkqVe0ymUR9ARrp4QTl5hHds/pO8MZb2SJb3BHrSbIhtg8ZFAuv8eUndSel/vhvXos1R9a0dLejEExWqMRPftaDATd9co211tNlk8jaFoL0X+REDGrFHqEWO9U//kb/jJf4XT8mdHhmg8qypP2MwsN8gqK0upJUFHYUc6yenDur/EY13rn2GlSUskV1cH2a0R5/PTi0R/zFWoM7AjbrqQ2GUfOqkeou+KA20Ek5JuvXHAKkJ8fCF3id2Ek8nvm4m66IX4R2ugMMXc/cFzjQ3h6zSGErYF7l2Ypv/tPb4/ZDlq2x7/vlnNziw/qwpd9eI4CWwnXkGopWa+7RXVw3PSnAydvPLxJ2PU2cDHsE3td71vfkoYDPoMrx/rzauUa1g5GchqzfsuYNoTgxZIUMiwHNor8QwuiKKpnUaST6+ize4MqX7RVSVvp5bxInFALe3g/u1Fx7E="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+gbcoACgkQ0bVLR6XO/sQKVQ/+O+LVkx1xWsxtvPZUDV78w4URk/4i3rX2Xj6FetyFnS/0rXPKKR6RXXqXPoq3O2mJTWRZ/9aGZ5JCknuhRJHgfvYS/4FDCGxZTx3iWSxkHLJPJcMDlMNVcT5lIruRP6Haj9oAnNxdnuHcnb1DmM0NZkLdjnQAr+rh+CSDsvPCiDI96bw1qA8lCiJWKlGEfBWLw4X930fpqnsfya53F4XuF6NfGu/b0LORdZlMC3YbWNyNVCXrUw6gbvBEqydg8Pqt1zNI1G4lZoLkUznPeaRJo2kfQaVIkxnjo9BmNt7XUkTEzpDrkPHNWnlA88bz7ulomExW46eQF8Dt4Hn95s1ubVR7RXE/AzU93daRkS3WaaL0Tt2YTxvli/Hbx/NgkDIR2fGzftbtD0Fk85jx65NGc/TE/fOsm2BUVigRluyVOCVwxsLPHu9got2b6OBZy6tC/ktDoKW2kbZmaEYZ1rEL+s+kg7CxBjfTt0PSh4t8OC8YvvEaZsehB7tm+JfbdEKcaCLA2+sQje9JVOKhG/xDkLQVlPsnV177WFcOzuKrN/bg5r3NvLjNuSgE3BomZH7HoACYTky3p+0svF6mosYRdh2nxC1F/GJo7bv/wYjSQTQDL7a8EaZfqK/PqDTp3V7YnnkoLWoQFI+BG1oUqwsx2iPiona9RGRuQw8hXwbGlz4="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+gbcsACgkQ0bVLR6XO/sTnwhAAjY63w2dJyYB5kqvo8Uv6X7LtBf/dyC2iom0B4Kq+vAmU3IvQunkDw+dyGZGk//P/hsn64feGRkqKi7HLNQlf5Lh204trt0ZsAuaD2Gv7Y6/po0WaLvKfm9RB7FKGACgbQYXyL/kFw18yFxdABj0y2NhAk02SwrhBlKCr3kg749QRtuhq8+uuxnVZW7gLGAciud48qVmo5E2VdoM7iN2mB3iCsQP8vWZYk7H++b1TYtJZmSLP4zGIkPf1vB9XNqRMEaWlbFg8vI+t5NczZVd664HnmQJhhL6ZISBappjyCWexAB7BYke/Or+3GaP3kVZli7BT1NmpRJFq5Xo2wk+SkQ0GQLzV+2bf9XICqYNFHWbVrUJ3zoGW/2O0Fbq2BRAxoDKwf66TvQZdUqp/nICiUrtzPIcAiemguUsD/k4HEptayl/9C7wZQf+6j31zFmy/vI/TtfgTzrLAIZForqzrBRJvUhPi1e5jvCWKJ8V/qvIxAqsscLjuUeFgdVXDXTfc2LREKrkHwpFpiSFCyycq8dN8Yw7b+3obumSL28OObbnywD/ljDPwpk9KlkrtK4/YlC/TkQwpxooL3K5Q77MqVJSA6UaAyMziogKIACFM+HPhYzOIdkKELUXk9PLzWjobF1jaXWlk5/mKI5dlyGdTVxdcDTKnyR/Pov1t+Z/ZjxE="
+      }
+    },
+    "updated_at": "2020-11-04T18:24:45.397958Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.4.0.tar.gz",
@@ -2705,7 +2902,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.2.0/com.mattermost.welcomebot-1.2.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.2.0",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl7ROGgACgkQ0bVLR6XO/sQjhRAAndPX83MNxx2bLc0LUfai/lPf2NkH2hvU0mcUMKOYKfBsoJrFkmxrYklLeS7sxC7mtSsP2Kv9Ihp3YfBUfLqHZ7xjLrc4WS2q8Cvv7HgL77lFTiV+6bo+GjgoexJi+dILGbcAw4c5n8hqH0++EneeqnHCmwrBIM3LSw0+LN37huf9bVtmZAFtQBDviSndGY3TNf7ZfTL74eK6mQhbU9zVsb/wZHHTlJP0S30TkQZkVrFTXESjW/CqGsftqrqGfVUvDlPw6dGkcKD3yzQ1H4+rBVyudBQMwRNMqmvgIKGIB2BEFi3gbal8nrs/pBZhGHdZfY/wZBfaZY+XykVqoqT9uPabiETbO3/yA5CoEZnmlFNBoUMv+N7EBv58Q7r4+Ko1VO8VSAsHEcHaTpH+NGVNmIwaMu2zRhEEicxpUqCe2i1NDVhq0Er5bKv/vrtLfJ81g9ALSfcnCkNKo5lZt6/zJDOY8JER5ODJbwwgfsezHMH+lqUCPGBWzWsQOzT74IGyCFgh8M0DNuym0P66K6dbNatg+1JY8Pse+XxgddTdlhQfFuUfk0b1bPKu3sgG4/HJe/dvfr51Nu3dvwWlU6NY/wM+VLSb3jpwM2ha6/ch+mbwjT/qF9/uGyNtljEl2xfD9jHHCjtczF+kNhYyA0l6MsCaU4bT/LoJxftmLuBFDlI=",
     "repo_name": "mattermost-plugin-welcomebot",
     "manifest": {
@@ -2752,7 +2949,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.1.1/com.mattermost.welcomebot-1.1.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.1.1",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl3gBccACgkQ0bVLR6XO/sTBDw//cU8hpOJBouC1XIF48TRPtdLb2KMllDf6Wk35X4AIYWWDCxbqoXQ3eIO9JfhIKRdRHMIs95uMNmmuCCq5nY8+hR3oiAW6KDIuWdlkzuvpiMdvh3R7kWSNNqN7ksKVOwqekD+meKFieW+pPuFMDuAZrRFeGLHobT+zplXmUzJu3o+EapBMN491TO02eUZEZaq68N486Tno+kpn5fSO9EJF3MB8Jnif4trMTUjJMAQW8QDpPzl3Vt8vwiz3RlJyj5bhBav5TBKtbqGtqaay78AbuQjvuIM3Po+9H0S9nw3XS558zANE7mn9qrEIARtC6VhJUddo3sGuYhd50DxmUs0YadNMz+e8xvNCkxmtJdO8vyq4h83dyZRYj47i95Efl8Maq35V+T0OWcsG/ezWIg5SIgZnR94pVN5LJEEATyGnUKj3uwUW0aecT0PYzThq0scEJxJnvTW0+XJ/aRFnlyyVglQhto5hloyhR0M3YeF7meRD82A/6AS6fqb5+EoTWDAzz/25t+F81f6W7YXfu+C8BAZ4bFgKz6ujMPFqXnuHc49B7XBtgjHjn4QTlirZVRW7kMeD4Xa1ueeMy0MY4s1kKQX4WGcobE09NDJkpxIeGaxFhsGS0MzXLD9/Y5Wld8EimbfDIQGk8chh9jFbILgtlwPq16sELrIT8TCh4XoQVYA=",
     "repo_name": "mattermost-plugin-welcomebot",
     "manifest": {
@@ -2797,7 +2994,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.1.0/com.mattermost.welcomebot-1.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.1.0",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "",
     "repo_name": "mattermost-plugin-welcomebot",
     "manifest": {
@@ -2833,7 +3030,7 @@
     "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.0.0/com.mattermost.welcomebot-1.0.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.0.0",
-    "hosting": "",
+    "hosting": "on-prem",
     "signature": "iQGzBAABCAAdFiEE8/rOReDeZCyL1qjmTHxlYsGSzB8FAl3WrscACgkQTHxlYsGSzB/e/wv/Ti7RyQ4ny2+JI7kMlteLR2VwXcwJeg0f8bXpB9i5bDj6+kimrliuyGZfMSRSer/ShLtsXT67qkYV66SL1ygFrrmk00k+/h6UVjbeiiR/rIxq3LCMzzoHntTHze65mF0Pk/BaQAaead98jE5Ahn2u0wOj12sLS6bK0cmHo5fUC7X+NmseO6zDml4US5nFteUE4ix7VtJZMd3OaBXJBCMHiokWTX8ijyGaGRjTIHTaQ/1aLWl+F+iO8EMhPMDy6LGUC4dEEHHrUntw3vitV3ZkMECRj1TnKHPo5L9egvEc4DBhgq/YBKWGKAG/04WfOJypAA0pMWyen6sJQBycoEPmPNQeQt8La8pPQGoRvVITUUDVC6pOmFYDMM7L2+blGPYqmM9S3wMCKGBKaylEzZFQeuRXdfXcgARk6CBu0KFhcXiwtUGW7gWIRmRYUwZPPDq7epCPlEGWp4McBYTtdd1l0Nq9cjtT0pTzyHFwOmaw5rE0JPVk22MC1XwFnLNbIdEC",
     "repo_name": "mattermost-plugin-welcomebot",
     "manifest": {
@@ -5971,6 +6168,117 @@
       }
     },
     "updated_at": "2020-05-28T19:23:38.781696714Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTEyIiBoZWlnaHQ9IjkxMiIgdmlld0JveD0iMCAwIDkxMiA5MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjQ1NiIgY3k9IjQ1NiIgcj0iNDU2IiBmaWxsPSIjMkQ4Q0ZGIi8+CjxwYXRoIGQ9Ik0xOTkuNSAzNDkuMTI1QzE5OS41IDMzMy4zODUgMjEyLjI2IDMyMC42MjUgMjI4IDMyMC42MjVINDcwLjI1QzUyOS4yNzUgMzIwLjYyNSA1NzcuMTI1IDM2OC40NzUgNTc3LjEyNSA0MjcuNVY1NjIuODc1QzU3Ny4xMjUgNTc4LjYxNSA1NjQuMzY1IDU5MS4zNzUgNTQ4LjYyNSA1OTEuMzc1SDMwNi4zNzVDMjQ3LjM1IDU5MS4zNzUgMTk5LjUgNTQzLjUyNSAxOTkuNSA0ODQuNVYzNDkuMTI1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NzYuODE1IDU4My44MjlMNjE4LjI5MyA1MzguNjUzQzYxNC43OTcgNTM1Ljk1NSA2MTIuNzUgNTMxLjc4OSA2MTIuNzUgNTI3LjM3M1Y0MTMuMTI3QzYxMi43NSA0MDguNzExIDYxNC43OTcgNDA0LjU0NSA2MTguMjkzIDQwMS44NDdMNjc2LjgxNSAzNTYuNjcxQzY4MS4zNDUgMzUyLjAxNiA2ODcuNjc5IDM0OS4xMjUgNjk0LjY4OCAzNDkuMTI1QzcwOC40NiAzNDkuMTI1IDcxOS42MjUgMzYwLjI5IDcxOS42MjUgMzc0LjA2MlY1NjYuNDM4QzcxOS42MjUgNTgwLjIxIDcwOC40NiA1OTEuMzc1IDY5NC42ODggNTkxLjM3NUM2ODcuNjc5IDU5MS4zNzUgNjgxLjM0NSA1ODguNDg0IDY3Ni44MTUgNTgzLjgyOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.0-cloud.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.5.0-cloud",
+    "hosting": "cloud",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+i4AMACgkQ0bVLR6XO/sRzHw//bY6vVDoEq6Y/0dVbP6k1jyMbXTGulg+wwhCfIwrJdLvJqTW9jM0XsV+A29pKhXlYa2vCMA+P0tZy9/rK4wQyGWLzO3p33RqG84ArjWPq4LBh2J8lFcIsNE0s2utGbVpwdA4Wi+kGKzIvRgFZpn/QMdnIh+fLhHcF9MAe8kJi9bWs9FjOyXA7GJ9Hk5c64z+STE5vruuxsFPsHACQ3b0RCvTqwDey1Zr/WO2p3IjSuf4zegAKvNhqQ7gXDGkujO14dhaIa5MXbCY/x5MDB4IKfwnXuypTK3suOlIMR5izFP9do0pA9jvAgfq2m+nvZ5brIUX0lHbj7rfCWrnmm8/45vNZk+C/TYxEBELebO7MxXpzoeZCusegxIFEHpP6WtqDUN3V5b6JCY/W+0n0TXParz+qH0YGSV7ZYT0DnAF3SUyOekLMNj79M/ZnLKRIVC6FFrXyQx1MNydanZH95aK3cIMcWk4pa8q9L8Xw+LlVI8DT72hBTBGGahwe7dxVT1VSLEWar3sTF/mqWHSj7CCs6QAUyOx3Pxivc5pq5HAyLSMFXxjezNwPtNrE62WNdBnkOKS7ivbIfZvz7jRimYCAcVffsURh+pUiZx7NmoENDExRS6I3a9FFKfxI8KM2iBvJImI92b2QgYXlTfErEmA53mGkoJ9xPbSApWcMHimyItg=",
+    "repo_name": "mattermost-plugin-zoom",
+    "manifest": {
+      "id": "zoom",
+      "name": "Zoom",
+      "description": "Zoom audio and video conferencing plugin for Mattermost 5.2+.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-zoom/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.5.0-cloud",
+      "icon_path": "assets/profile.svg",
+      "version": "1.5.0-cloud",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Use this webhook URL to set up the Zoom plugin. See [documentation](https://app.gitbook.com/@mattermost/s/plugin-zoom) to learn more.\n\n```https://SITEURL/plugins/zoom/webhook?secret=WEBHOOKSECRET```",
+        "settings": [
+          {
+            "key": "ZoomURL",
+            "display_name": "Zoom URL",
+            "type": "text",
+            "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://zoom.us",
+            "default": null
+          },
+          {
+            "key": "ZoomAPIURL",
+            "display_name": "Zoom API URL",
+            "type": "text",
+            "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
+            "placeholder": "https://api.zoom.us/v2",
+            "default": null
+          },
+          {
+            "key": "AccountLevelApp",
+            "display_name": "OAuth by Account Level App (Beta)",
+            "type": "bool",
+            "help_text": "When true, only an account administrator has to log in. The rest of the users will use their e-mail to log in.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "OAuthClientID",
+            "display_name": "Zoom OAuth Client ID",
+            "type": "text",
+            "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "OAuthClientSecret",
+            "display_name": "Zoom OAuth Client Secret",
+            "type": "text",
+            "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Token Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.0-cloud-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+i4AAACgkQ0bVLR6XO/sQlww/9HyV4c+aABT8gMwwgfEQChg0lamS4W/Dao3dIpkxoMzMi4Ym4R/fmzMfgxPmVkE9Zve5OYUklgdwVvgSE7jM/DYNEo7f3bPe0EMTcy69DKe715oiNinXcQdSmJPx1svxZ8bYo1d7uTOq+uRQyocLY7C1Nkl7zk0nGbn2q8JvReLGg5OrxfdNxh443VAyv3ppCWE6q7LNDTcJiWKjl3m3hn8wE4TLPUcIhoU6mP1+W6zkCewZgGB4EfA+HsbA6X2k4+wNJe5onSQnwlkKwbb3dKz1fDNsgEeNHZKqkYYc2Z5A/gzUSEjrcvIZk2mUxHN1VqLrbNunz7RVeoANTppWc81V6fOD7bBJdwYtifd71aBJeFHVHWomPQ/XC4mHHdKRvv+z1RB8hpWgQngkpiYJyFKLR1E9Z1eFEV3fqbweQIuT82beO9UxabPvevM6Uld5qLaY1/VRKioZQ50jqXjoSFBNJvGfxky3dl+KtFB5GdNtnp0ejSFAj+7l+MtlqdJt8coxEStkHW5+KXxWOXJhgKUVfZdoxbXPIN42P1hy7sNOIHexHQd+OPeLOAjfXcaTFzJ1IeLI96BQw5AjbpRD9UCq67JOJbuk18FdT586Hx69aCrnKsgP79Avp8OBWg+3zQ8zNIG9lpCq/PtDxWJL+Rvo67XhleXrHpmD99H0f5Jw="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.0-cloud-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+i4AEACgkQ0bVLR6XO/sTXbw//aDTy00MOHIqgJ+8ANgodxROVmRb4YDTqsvwUFcLhSbuJ6c1V0tm4V73JcgXtR6/P1ewYFljEQ1QAdjAJBAANy/Njgk5CzxqQzQmMf7JTjjN7ovp/XzkTX5o3Jt5+0qZtZX1yP7M5mAxcTAhDsPNOBP7Vf07s7IpZpu1My5+jbpF0sR9/2NxtIwV1xz513wo6bqG1009erajwmvkusfMwGvNLeuOhCCO1UL7FVD13AXoEqMDptBu61/5IPCcXZslAkck/Ur0kTLGOepXnLnwxFmbx6rJN3PVELs+DDnxbDiOmuO0S9isOHfLWPE3eqnQNtasFP6Cm4/UXSLywKZHheQL4wLfF/pNgs22U3FYx5Gu8LfjelHTdLV7qXonGJWgzmuZ7G+BjmSNxukykAHjG+EaKsRje4CFJyL18Ulc9CKzhXTbUn6gwAMLlnLhI0rdQ9wsSrtbeLEpijysnLNUJLAAOR2fWyaPxfAOdNI7ZPpJcWPxLZ6sD9sDmnnXdolnCWG9A1ku5kH/yyni1nZ9hdlQ4EI/JuLJ2AOvZstO13pPTEBRLEobjFrut5bilIicEEmbZV64+NXUY0E+Vgm/XeA1tBN3JxQKdIL4wGYS5qv/3VVbMK/QEKdIET5+/cpM+g2dE2isni52MvPSGyMUoaOzlZT3r7jgffCt+S4nfOMo="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.0-cloud-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+i3/8ACgkQ0bVLR6XO/sTcxQ/9HwvgDHu1CtC+sfE7YrY8VTbpUJvmxZsWM3X7qIQ3n0FLPDYKXZPf2W0kd6zQOs8dZ2fnOzDM71Ioe3mtCslRD0Q2fEK/83hdulxNY3CKzkWVc+VF0R4GRmvWv1tiY2EaTYdwkrQMJ3j/typc5HMtDqVqdl16N8TMgyIlBA4kcHluFd296ro8+fq2zD0oDrCUGBjVommzX1eLIzG3lcS4HLH3OUJs3DOo0ikOYF/7kJROS2FIzJhUwvEnaLt8UnBNQlaPucKdnGeoKOELV2HEuN1BVnjJ4CJJrxDvqKHUqAOCyR2jszoRCKXHFF0MOfh6PBfGj4kesRfHsi0GTC1v/5Sa/yosRdqOHKe77xrwKIdLBHyEr/NUlAf9sDz+mieS+oZip9UIx8LYnptDJgPoFpZ6J6LXVNFPA42f4ilCuDX59NFT2Sk2yuDrYSXVXqDRZSzayIQw6xctvFgzW5NoRGKkF2mIertd0bs2W1FFfOj1kGDz8VMcrmdZCguBcZi31AkZCQL/nTUnsqQr8rmce0uPHaqlRNzKQ4EQroZnxXt0AUS9Ui7MnBnLWsYsfWulIMFvPgiRo4xJNiKjJlL4/bQCIO9BhTZb0nLH/sRM5KEjbYt/X8VcZk7E7SRPLvejXDl0dICpvgmtaD/9F9mp21lE8GR6GjDqs5IuUHdwgOo="
+      }
+    },
+    "updated_at": "2020-11-04T17:08:58.246876206Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
