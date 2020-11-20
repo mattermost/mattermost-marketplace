@@ -18,7 +18,9 @@ func init() {
 	generatorCmd.AddCommand(addCmd)
 
 	addCmd.Flags().Bool("beta", false, "Mark release as Beta")
+	addCmd.Flags().Bool("experimental", false, "Mark release as Experimental")
 	addCmd.Flags().Bool("official", false, "Mark this plugin as maintained by Mattermost")
+	addCmd.Flags().Bool("partner", false, "Mark this plugin as maintained by a Mattermost partner")
 	addCmd.Flags().Bool("community", false, "Mark this plugin as maintained by the Open Source Community")
 	addCmd.Flags().Bool("enterprise", false, "Mark this plugin as only available to installations with an E20-only plugins license")
 	addCmd.Flags().Bool("cloud", false, "Mark this plugin as only available to cloud installations")
@@ -41,6 +43,11 @@ var addCmd = &cobra.Command{
 			return err
 		}
 
+		partner, err := command.Flags().GetBool("partner")
+		if err != nil {
+			return err
+		}
+
 		community, err := command.Flags().GetBool("community")
 		if err != nil {
 			return err
@@ -51,8 +58,10 @@ var addCmd = &cobra.Command{
 			return err
 		}
 
-		if official == community {
-			return errors.New("you must either set the release as a official or as a community plugin")
+		if !((official && !partner && !community) ||
+			(!official && partner && !community) ||
+			(!official && !partner && community)) {
+			return errors.New("you must either set the release as a official or as a partner or as a community plugin")
 		}
 
 		cloud, err := command.Flags().GetBool("cloud")
@@ -72,6 +81,15 @@ var addCmd = &cobra.Command{
 		beta, err := command.Flags().GetBool("beta")
 		if err != nil {
 			return err
+		}
+
+		experimental, err := command.Flags().GetBool("experimental")
+		if err != nil {
+			return err
+		}
+
+		if beta && experimental {
+			return errors.New("can't set the release as both beta and experimental")
 		}
 
 		dbFile, err := command.Flags().GetString("database")
@@ -135,6 +153,14 @@ var addCmd = &cobra.Command{
 		labels := []model.Label{}
 		if beta {
 			labels = append(labels, model.BetaLabel)
+		}
+
+		if experimental {
+			labels = append(labels, model.ExperimentalLabel)
+		}
+
+		if partner {
+			labels = append(labels, model.PartnerLabel)
 		}
 
 		if community {
