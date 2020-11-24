@@ -2500,6 +2500,62 @@
     "updated_at": "2019-06-12T19:04:44Z"
   },
   {
+    "homepage_url": "",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v0.2.2.tar.gz",
+    "release_notes_url": "",
+    "labels": [
+      {
+        "name": "Enterprise (E20)",
+        "description": "This plugin only works on servers with an E20 license.",
+        "url": "https://mattermost.com/pricing/",
+        "color": ""
+      }
+    ],
+    "hosting": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8qv9EACgkQ0bVLR6XO/sQ2thAAhKHvWx9qifDVZKOdG8c7lA74t6mCeQK7QMDCyynXnfjKlQxU3gQWNiNa99KCyn5g5RNbMphhW6mi0Koo9DCMuwk9V+eWXzcxjkaEPKq1Pjw+/tsniXfBbD5iIOTzd5s3CfyN9kEXA7Wi4pq4X9RggsPPgRCzO4oC1X4gim8bn4OwEZT26l5ALILJI0wheWapI/E2LqiPAXLUhsy3aMfnx+swpy0BgE4zef5eA34RdnmpEGfGhKHVylYhanbHbadO7Mv4auGUyqgXI41nZL/GyqnqMVklv+suLWlCMxRyLMSR+l4DvLJth2OiIwmGuGnXQqQJggW13HsZaJHwIU/yIXc9J4pn2YOpRM7FZ+nP1WxfpNdg2vwLdvmf+LbBgwFeo9Xh8vmZ1uoSERYG9Q0g7DcJDz8hvcvYivJDFfpNq8TYskZ21F9u/SBRD/jkXLNIkJ2MwESQxt5MuVXVEEeI44RHN2dqIEoxe5ufDmZcUAlmb3SC2cZHObrJPt8YGo5WO+oViRSD9Ii2JnNg0DsjyZ7Yz8YlyfgOusRX+GuI68KddQ6WUZGA0OES8c44TEr7VSCY0xMlMFLtg8u4ZTFTe6JxfrspSxjB3e2mSjfo4czzO21a40Of4eUa+TDh7oI6h7FaSmO8qj10HOmJSJpWsPHpkuQvUXIjA7+S6ieSrjU=",
+    "repo_name": "mattermost-plugin-channel-export",
+    "manifest": {
+      "id": "com.mattermost.plugin-channel-export",
+      "name": "Channel Export",
+      "description": "This plugin allows channel export into a human readable format.",
+      "version": "0.2.2",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "enterprise": true,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v0.2.2-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8qv9AACgkQ0bVLR6XO/sSWqw/9GLwFOW4vWMVkVwZLZzzl0nLpkobdARD4rHiA+TjADF+xGihOD76uB2XUJIq0nFmXfWHb57HNunSWiBW0oGtlYfHHt8pbcjYSJVh31BHr367eGMpiad2xwy8l9hpdHW9JxoQFhrJgroeWHtj5G3LnGSxRyOWpR4WS/Gde5lH2yFoBrPEV8r1+ouaYjlfMhMnsxwCc9yqt+z5gxKrs3CGAfgnafLc0WnpE/3HTPBiRwJnWVWd0jafV/RvNbRZ1BDbWxhB9uI2jt/6C3UiTXkQ3hz9UMs2WjSZolqABRkvHtwmWk9jbZJkTDxwXyCxF1izU/x8Y5lxqvFh/KYOJy/ZyggGtQkaY97q0pOgBxeLibdKl6+XOixpF8yEfs0Wod3OA1GlPZSxUj0gcLwUSr+YgBethXGPt+CHjWj3RKYSuALFhzh430d3dvwRQmX4oRz+2D4SX+HZ3rhholgl6K6w2t2IEknWF70/LTAU+Pb1Qf2QgsPbAlAJU6+CyIJrILcUDs2UhRbUjRcjCHlp2vzXEBbPVqOvngidZvrQlByEF3BXB7hWoDU2xCwoUvaH2f5afk5sM3kPI9d/OhIV9XBWnqJu8EPzsddeWz3kZpAfWC58/ghXU62jfmfqR5dmX4iX0cPT2Qs2yZ2aPACl5TzBdRtPGJRRLdlDaDAt0n6p3isY="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v0.2.2-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8qv80ACgkQ0bVLR6XO/sTLCg/+IAPPhpWge68vr4s/3V7/AttyJnfIj9JWwpcKUQ6kZQsE+Qscnrefok6yfXASEFKPnjzgQcs660ihvTZNX8PnxST0vkYO6+3WGc8J1LbKgLBVSSjL5jSSxeZHNjtP0rF8nUTBHEfaWwhwyCLsD4zllc4f9DA0aKKU384RX0feWT4i7ztjKy3kKC2jB2ZN/wWyLmJZs+rZEuTLyaOQiAslB9/FsOkYeK1Eii5vpAz3CkqzhBpYbO0hlO5vuS6Ug7lOS9qGMmOPCqS8VGP6YiUsQMZBC9QsXpRVSIqIqXxjDVP2x15t1OOF2iAKZcxCF6OxWvDmUwP5+VS6LfwP19tZzfqY92lKS/9YiKbQjC3s91tMoYpcg5XlRMhTR2oRBLLVom37oU64HPyNFQxiEqzNZzsR1H10Z9rvAgjYzDAf6V/irS+edDVIg7h7wPtD49paHBRFzjbuGYTz+MfAByu+7FogG0eaV60Nid89fZcoXQplB8zR8zeJnz1VEpsg//gGKzD40BMwtOvmEZxUECclmw8odopsSmE3b8lrH+WyyXyd+IS8wj7hJpz0A1DdS+WPyT4e2TVGwdQHK8bVKBdQ2JJhRoln9UiK9KE7q388AW/mBmyEW9kZ8lgMv/EGGp1EXpMsxIgJ15e0Cxi4NX9eRtUl2/ypiANVN//7KO4FoqY="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v0.2.2-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl8qv84ACgkQ0bVLR6XO/sTcaBAAhaV6LsrJDB7mov/NGrEJ+oZ1fzDhOsBd0nuYjxgMZaTBJ/wE97gZvVjc9Gg21pexz5CZW2kIOCqcGymUoNz3RLjRBs8Vz7ayl14YCnS0ZKu9AlRxa2C9h22v0gUEsFfYZMrEAQmE2gTNaXxG20pMD768/rDL1XVQuXcfCzFLEBQVS9XtNdwzwQZS6RazNZ//1R4e6a7yvs7wDYEeNqdfslH1qFKykOyLT65mJ2W+RnDYCy414cV8nuV98QbEqVMtjZZ95VItJoeUg3VLRIEvAZTfkW8xWbvsdYlHid+PcJ5vhJPoL79MIzQ/mXOXGbWCUgY9l5q5Gxkco5l/+jbrrDUfKtM97g9gxq/ecn7Why/G1/6Z5cZvPGj/8AYgSZFD7Fvpx607gq7mhxw6OpImfSi+QJUo3t6nhKDTVMvgIvwoX6kL/5lKxz5IdIpcATr2v77+WFAJR5tqR9L32PQ5nXhXq2LoRQYiMZ1AylC+kQ0VGH8ojXqBWjddgqOBrRSyR/gecyp41dUPFYifwo+cuGRHvkkIOYqeg6awN0LuwXwj8LzMj4GbnlvVPHoNoNMgljAsD94AWbSwZofZ4oBQCIMDStcORszZXkyh3eGJKYBDHz/5cgCisei245Jg8N60OaWMBlSKhgBwj4EVWextmN1e65umildDQtGECi2OPjA="
+      }
+    },
+    "updated_at": "2020-11-24T20:45:34.9149195Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-response/",
     "icon_data": "data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9JzE0MCcKICAgIGhlaWdodD0nMTcwJwogICAgdmlld0JveD0nMCAwIDE0IDE3JwogICAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJwogICAgc3R5bGU9J21hcmdpblRvcDogLTFweCcKPgogICAgPHBhdGgKICAgICAgICBkPSdNMTMuNzUgNy44MTE3N0MxMy43NSA5LjE3MTE0IDEzLjQ1NyAxMC40ODM2IDEyLjg3MTEgMTEuNzQ5M0MxMi4yODUyIDEzLjAxNDkgMTEuNDc2NiAxNC4wOTMgMTAuNDQ1MyAxNC45ODM2QzkuNDE0MDYgMTUuODc0MyA4LjI2NTYyIDE2LjQ4MzYgNyAxNi44MTE4QzUuNzM0MzggMTYuNDgzNiA0LjU4NTk0IDE1Ljg3NDMgMy41NTQ2OSAxNC45ODM2QzIuNTIzNDQgMTQuMDkzIDEuNzE0ODQgMTMuMDE0OSAxLjEyODkxIDExLjc0OTNDMC41NDI5NjkgMTAuNDgzNiAwLjI1IDkuMTcxMTQgMC4yNSA3LjgxMTc3VjMuMzExNzdMNyAwLjI4ODMzTDEzLjc1IDMuMzExNzdWNy44MTE3N1pNNyAxNS4zQzcuOTE0MDYgMTUuMDQyMiA4Ljc2OTUzIDE0LjUzODMgOS41NjY0MSAxMy43ODgzQzEwLjM4NjcgMTMuMDM4MyAxMS4wMzEyIDEyLjE0NzcgMTEuNSAxMS4xMTY1QzExLjk5MjIgMTAuMDg1MiAxMi4yMzgzIDkuMDMwNTIgMTIuMjM4MyA3Ljk1MjM5VjQuMjYwOTlMNyAxLjk0MDY3TDEuNzYxNzIgNC4yNjA5OVY3Ljk1MjM5QzEuNzYxNzIgOS4wMzA1MiAxLjk5NjA5IDEwLjA4NTIgMi40NjQ4NCAxMS4xMTY1QzIuOTU3MDMgMTIuMTQ3NyAzLjYwMTU2IDEzLjAzODMgNC4zOTg0NCAxMy43ODgzQzUuMjE4NzUgMTQuNTM4MyA2LjA4NTk0IDE1LjA0MjIgNyAxNS4zWk02LjI2MTcyIDQuNzg4MzNINy43MzgyOFY5LjI4ODMzSDYuMjYxNzJWNC43ODgzM1pNNi4yNjE3MiAxMC44SDcuNzM4MjhWMTIuMzExOEg2LjI2MTcyVjEwLjhaJwogICAgICAgIGZpbGw9J2N1cnJlbnRDb2xvcicKICAgIC8+Cjwvc3ZnPgo=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.1.1.tar.gz",
