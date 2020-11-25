@@ -15,18 +15,18 @@ const (
 	Cloud  HostingType = "cloud"
 )
 
-type Maintainer string
+type AuthorType string
 
 const (
-	Mattermost Maintainer = "mattermost"
-	Community  Maintainer = "community"
+	Mattermost AuthorType = "mattermost"
+	Community  AuthorType = "community"
 )
 
-type Stage string
+type ReleaseStage string
 
 const (
-	Production Stage = "production"
-	Beta       Stage = "beta"
+	Production ReleaseStage = "production"
+	Beta       ReleaseStage = "beta"
 )
 
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.
@@ -36,11 +36,11 @@ type Plugin struct {
 	DownloadURL     string                    `json:"download_url"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Labels          []Label                   `json:"labels,omitempty"`
-	Hosting         HostingType               `json:"hosting"`    // Indicated if the plugin is limited to a certain hosting type
-	Maintainer      Maintainer                `json:"maintainer"` // The maintainer of the plugin
-	Stage           Stage                     `json:"stage"`      // The stage in the software release cycle that the plugin is in
-	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
-	Signature       string                    `json:"signature"`  // A signature of a plugin saved in base64 encoding.
+	Hosting         HostingType               `json:"hosting"`       // Indicated if the plugin is limited to a certain hosting type
+	AuthorType      AuthorType                `json:"author_type"`   // The maintainer of the plugin
+	ReleaseStage    ReleaseStage              `json:"release_stage"` // The stage in the software release cycle that the plugin is in
+	Enterprise      bool                      `json:"enterprise"`    // Indicated if the plugin is an enterprise plugin
+	Signature       string                    `json:"signature"`     // A signature of a plugin saved in base64 encoding.
 	RepoName        string                    `json:"repo_name"`
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
 	Platforms       PlatformBundles           `json:"platforms"`
@@ -105,11 +105,11 @@ func PluginsToWriter(w io.Writer, plugins []*Plugin) error {
 }
 
 func (p *Plugin) AddLabels() {
-	if p.Maintainer == Community {
+	if p.AuthorType == Community {
 		p.Labels = append(p.Labels, CommunityLabel)
 	}
 
-	if p.Stage == Beta {
+	if p.ReleaseStage == Beta {
 		p.Labels = append(p.Labels, BetaLabel)
 	}
 

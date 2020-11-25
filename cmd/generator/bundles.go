@@ -60,9 +60,9 @@ var migrateCmd = &cobra.Command{
 					case model.EnterpriseLabel:
 						// Just drop it
 					case model.CommunityLabel:
-						modified.Maintainer = model.Community
+						modified.AuthorType = model.Community
 					case model.BetaLabel:
-						modified.Stage = model.Beta
+						modified.ReleaseStage = model.Beta
 					default:
 						// Keep other labels
 						newLabels = append(newLabels, l)
@@ -70,12 +70,12 @@ var migrateCmd = &cobra.Command{
 				}
 				modified.Labels = newLabels
 
-				if modified.Maintainer == "" {
-					modified.Maintainer = model.Mattermost
+				if modified.AuthorType == "" {
+					modified.AuthorType = model.Mattermost
 				}
 
-				if modified.Stage == "" {
-					modified.Stage = model.Production
+				if modified.ReleaseStage == "" {
+					modified.ReleaseStage = model.Production
 				}
 
 				toSave = append(toSave, modified)
