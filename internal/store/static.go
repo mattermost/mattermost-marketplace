@@ -27,6 +27,10 @@ func NewStaticFromReader(reader io.Reader, logger logrus.FieldLogger) (*StaticSt
 		return nil, errors.Wrap(err, "failed to parse stream")
 	}
 
+	for _, p := range plugins {
+		p.AddLabels()
+	}
+
 	return NewStatic(plugins, logger)
 }
 

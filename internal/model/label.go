@@ -27,16 +27,16 @@ var CommunityLabel Label = Label{
 	URL:         "https://mattermost.com/pl/default-community-plugins",
 }
 
-var ExperimentalLabel Label = Label{
-	Name:        "Experimental",
-	Description: "This plugin is marked as experimental and not meant for production use. Use with caution!",
-	URL:         "https://mattermost.com/pl/default-experimental-plugins",
-}
-
 var BetaLabel Label = Label{
 	Name:        "Beta",
 	Description: "This plugin is currently in Beta and is not recommended for use in production.",
 	URL:         "https://mattermost.com/pl/default-beta-plugins",
+}
+
+var ExperimentalLabel Label = Label{
+	Name:        "Experimental",
+	Description: "This plugin is marked as experimental and not meant for production use. Use with caution!",
+	URL:         "https://mattermost.com/pl/default-experimental-plugins",
 }
 
 var EnterpriseLabel Label = Label{

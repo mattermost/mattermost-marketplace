@@ -15,6 +15,22 @@ const (
 	Cloud  HostingType = "cloud"
 )
 
+type AuthorType string
+
+const (
+	Mattermost AuthorType = "mattermost"
+	Partner    AuthorType = "partner"
+	Community  AuthorType = "community"
+)
+
+type ReleaseStage string
+
+const (
+	Production   ReleaseStage = "production"
+	Beta         ReleaseStage = "beta"
+	Experimental ReleaseStage = "experimental"
+)
+
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.
 type Plugin struct {
 	HomepageURL     string                    `json:"homepage_url"`
@@ -22,11 +38,13 @@ type Plugin struct {
 	DownloadURL     string                    `json:"download_url"`
 	ReleaseNotesURL string                    `json:"release_notes_url"`
 	Labels          []Label                   `json:"labels,omitempty"`
-	Hosting         HostingType               `json:"hosting"`   // Indicated if the plugin is limited to a certain hosting type
-	Signature       string                    `json:"signature"` // A signature of a plugin saved in base64 encoding.
+	Hosting         HostingType               `json:"hosting"`       // Indicated if the plugin is limited to a certain hosting type
+	AuthorType      AuthorType                `json:"author_type"`   // The maintainer of the plugin
+	ReleaseStage    ReleaseStage              `json:"release_stage"` // The stage in the software release cycle that the plugin is in
+	Enterprise      bool                      `json:"enterprise"`    // Indicated if the plugin is an enterprise plugin
+	Signature       string                    `json:"signature"`     // A signature of a plugin saved in base64 encoding.
 	RepoName        string                    `json:"repo_name"`
 	Manifest        *mattermostModel.Manifest `json:"manifest"`
-	Enterprise      bool                      `json:"enterprise"` // Indicated if the plugin is an enterprise plugin
 	Platforms       PlatformBundles           `json:"platforms"`
 	UpdatedAt       time.Time                 `json:"updated_at"` // The point in time this release of the plugin was added to the Plugin Marketplace
 }
@@ -86,6 +104,28 @@ func PluginsToWriter(w io.Writer, plugins []*Plugin) error {
 	}
 
 	return nil
+}
+
+func (p *Plugin) AddLabels() {
+	if p.AuthorType == Partner {
+		p.Labels = append(p.Labels, PartnerLabel)
+	}
+
+	if p.AuthorType == Community {
+		p.Labels = append(p.Labels, CommunityLabel)
+	}
+
+	if p.ReleaseStage == Beta {
+		p.Labels = append(p.Labels, BetaLabel)
+	}
+
+	if p.ReleaseStage == Experimental {
+		p.Labels = append(p.Labels, ExperimentalLabel)
+	}
+
+	if p.Enterprise {
+		p.Labels = append(p.Labels, EnterpriseLabel)
+	}
 }
 
 // PluginFilter describes the parameters used to constrain a set of plugins.
