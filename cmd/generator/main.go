@@ -478,6 +478,10 @@ func pluginsFromDatabase(path string) ([]*model.Plugin, error) {
 		return nil, errors.Wrapf(err, "failed to read plugins from database %s", path)
 	}
 
+	for _, p := range plugins {
+		p.AddLabels()
+	}
+
 	return plugins, nil
 }
 

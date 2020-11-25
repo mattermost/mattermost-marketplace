@@ -211,6 +211,10 @@ func TestPlugins(t *testing.T) {
 			Enterprise: true,
 		}
 
+		plugin5EnterpriseWithLabels := &model.Plugin{}
+		*plugin5EnterpriseWithLabels = *plugin5Enterprise
+		plugin5EnterpriseWithLabels.AddLabels()
+
 		plugin6WithPlatform := &model.Plugin{
 			HomepageURL: "https://github.com/mattermost/mattermost-plugin-todo",
 			IconData:    "icon-data5.svg",
@@ -401,7 +405,7 @@ func TestPlugins(t *testing.T) {
 				EnterprisePlugins: false,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise, plugin6WithPlatform}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5EnterpriseWithLabels, plugin6WithPlatform}, plugins)
 		})
 
 		t.Run("enterprise plugin is not returned for 5.25.0 without EnterprisePlugins", func(t *testing.T) {
@@ -427,7 +431,7 @@ func TestPlugins(t *testing.T) {
 				EnterprisePlugins: true,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise, plugin6WithPlatform}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5EnterpriseWithLabels, plugin6WithPlatform}, plugins)
 		})
 
 		t.Run("enterprise plugin is returned for 5.26.0 with EnterprisePlugins", func(t *testing.T) {
@@ -440,7 +444,7 @@ func TestPlugins(t *testing.T) {
 				EnterprisePlugins: true,
 			})
 			require.NoError(t, err)
-			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5Enterprise, plugin6WithPlatform}, plugins)
+			require.Equal(t, []*model.Plugin{plugin1V3Min515, plugin2V1Min516, plugin3V3Min517, plugin5EnterpriseWithLabels, plugin6WithPlatform}, plugins)
 		})
 
 		t.Run("platform specific bundle is returned when requested", func(t *testing.T) {
