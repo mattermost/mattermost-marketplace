@@ -151,25 +151,6 @@ var addCmd = &cobra.Command{
 		}
 
 		labels := []model.Label{}
-		if beta {
-			labels = append(labels, model.BetaLabel)
-		}
-
-		if experimental {
-			labels = append(labels, model.ExperimentalLabel)
-		}
-
-		if partner {
-			labels = append(labels, model.PartnerLabel)
-		}
-
-		if community {
-			labels = append(labels, model.CommunityLabel)
-		}
-
-		if enterprise {
-			labels = append(labels, model.EnterpriseLabel)
-		}
 
 		plugin := &model.Plugin{
 			RepoName:        repo,
@@ -189,12 +170,33 @@ var addCmd = &cobra.Command{
 			return err
 		}
 
-		if cloud {
+		switch {
+		case cloud:
 			plugin.Hosting = model.Cloud
+		case onPrem:
+			plugin.Hosting = model.OnPrem
 		}
 
-		if onPrem {
-			plugin.Hosting = model.OnPrem
+		switch {
+		case beta:
+			plugin.ReleaseStage = model.Beta
+		case experimental:
+			plugin.ReleaseStage = model.Experimental
+		default:
+			plugin.ReleaseStage = model.Production
+		}
+
+		switch {
+		case partner:
+			plugin.AuthorType = model.Partner
+		case community:
+			plugin.AuthorType = model.Community
+		default:
+			plugin.AuthorType = model.Mattermost
+		}
+
+		if enterprise {
+			plugin.Enterprise = true
 		}
 
 		plugins = append(plugins, plugin)
