@@ -49,17 +49,13 @@ func main() {
 }
 
 var generatorCmd = &cobra.Command{
-	Use:   "generator",
-	Short: "Generator is a tool to generate the plugins.json database",
+	Use:               "generator",
+	Short:             "Generator is a tool to generate the plugins.json database",
+	PersistentPreRunE: InitCommand,
 	// SilenceErrors allows us to explicitly log the error returned from generatorCmd below.
 	SilenceErrors: true,
 	RunE: func(command *cobra.Command, args []string) error {
 		command.SilenceUsage = true
-
-		err := InitCommand(command)
-		if err != nil {
-			return err
-		}
 
 		dbFile, err := command.Flags().GetString("database")
 		if err != nil {
@@ -453,7 +449,7 @@ func getIconDataFromTarFile(file []byte, path string) (string, error) {
 }
 
 // InitCommand parses the log level flag
-func InitCommand(command *cobra.Command) error {
+func InitCommand(command *cobra.Command, _ []string) error {
 	debug, err := command.Flags().GetBool("debug")
 	if err != nil {
 		return err

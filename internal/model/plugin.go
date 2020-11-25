@@ -127,4 +127,6 @@ type PluginFilter struct {
 	EnterprisePlugins bool
 	Cloud             bool
 	Platform          string
+	ReturnAllVersions bool
+	PluginId          string
 }
