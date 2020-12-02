@@ -8,6 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
+	"golang.org/x/sync/errgroup"
 
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
@@ -40,15 +41,26 @@ var migrateCmd = &cobra.Command{
 			return errors.Wrap(err, "failed to read plugins from database")
 		}
 
+		var g errgroup.Group
 		toSave := []*model.Plugin{}
 		for _, orig := range existingPlugins {
-			var modified *model.Plugin
-			modified, err = addPlatformSpecificBundles(orig, pluginHost)
-			if err != nil {
-				return errors.Wrapf(err, "failed to add platform-specific bundles for plugin %s-%s", orig.Manifest.Id, orig.Manifest.Version)
-			}
+			orig := orig
 
-			toSave = append(toSave, modified)
+			g.Go(func() error {
+				var modified *model.Plugin
+				modified, err = addPlatformSpecificBundles(orig, pluginHost)
+				if err != nil {
+					return errors.Wrapf(err, "failed to add platform-specific bundles for plugin %s-%s", orig.Manifest.Id, orig.Manifest.Version)
+				}
+
+				toSave = append(toSave, modified)
+
+				return nil
+			})
+		}
+
+		if err = g.Wait(); err != nil {
+			return errors.Wrap(err, "failed to get a migrate a plugin to new structure")
 		}
 
 		err = pluginsToDatabase(dbFile, toSave)
@@ -123,7 +135,7 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 			return nil, err
 		}
 		if res.StatusCode != http.StatusOK {
-			logger.Infof("Platform-specific bundle not found %s %s", pluginWithVersion, path)
+			logger.Debugf("Platform-specific bundle not found %s %s", pluginWithVersion, path)
 			continue
 		}
 
@@ -134,7 +146,7 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 			return nil, err
 		}
 		if res.StatusCode != http.StatusOK {
-			logger.Infof("Platform-specific bundle signature not found %s %s", pluginWithVersion, sigPath)
+			logger.Debugf("Platform-specific bundle signature not found %s %s", pluginWithVersion, sigPath)
 			continue
 		}
 
