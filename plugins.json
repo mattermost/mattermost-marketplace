@@ -3268,6 +3268,57 @@
     "updated_at": "2019-06-07T13:23:00Z"
   },
   {
+    "homepage_url": "https://github.com/monsdar/mattermost-icebreaker-plugin",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-icebreaker-plugin-v2.2.2.tar.gz",
+    "release_notes_url": "https://github.com/monsdar/mattermost-icebreaker-plugin/releases",
+    "labels": [
+      {
+        "name": "Community",
+        "description": "This plugin is maintained by the Open Source Community.",
+        "url": "https://mattermost.com/pl/default-community-plugins",
+        "color": ""
+      }
+    ],
+    "hosting": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+8EucACgkQ0bVLR6XO/sQcphAAmmMEUBysMBuMZx/vjFyMOxhxKpiGfgxHJXUyobJts5D7Yli29g2FPbLLZS869hBll/lA7fLgFt3qmjhxijO1n0UIHBnzSnXH8Ke9NqNjLAGQIT1Ws/jXA+W21uYrIC6FZrMCTfSRPF2/MCM0DJtbTn48Cxhnq9wqlVa7QNcCNNGq8e73CGjV2Prtr1vjjokrR/i0g+R8rB/3+VCqdkJjcCzqAJ+slsIEl0oOOg0P/Emn0FMyaKpZr/bf0xPRcS3MSCXydnAwgzncBYX2PH6gVxjulc8HdR15M03VKuajWj+ix4zOImhMuSaDOFtmHRxFN8ZCb6xWnJp/G8nwt+cmrpzIE0gz9yEfneFdJiH/SIgeDslNkuVi0cK+iP2Yn/KCF/bPh+OExm/ESYKbWPBCpMTZYniTvMBTDTGZtVxn+QOZMH7b1xoQ5YliA8Ee59TMGQyd5nsQxKRIsciQffipVUX2rFYTTQDqK+dsqXGdnyKb5zYYH0s9kV7k2I2SxWl28TXeljlNmXeySsS0L9ByLS/YdVJb6SH+MpQA5Vyxissbggv5JRWSRii/cAptEybem0RvVt36KjEX6ieHYY9k8YpDtM3KOrjWxXPFMPkc6cQTU8qIU1iUcAitWgR+h4LvyCUYZcv/HHQwulMcktWjNGb7YAGf/CtGkIjrVJUmPwU=",
+    "repo_name": "mattermost-icebreaker-plugin",
+    "manifest": {
+      "id": "com.nilsbrinkmann.icebreaker",
+      "name": "Icebreaker Plugin",
+      "description": "This plugin creates a bot which asks random questions",
+      "homepage_url": "https://github.com/monsdar/mattermost-icebreaker-plugin",
+      "support_url": "https://github.com/monsdar/mattermost-icebreaker-plugin/issues",
+      "release_notes_url": "https://github.com/monsdar/mattermost-icebreaker-plugin/releases",
+      "version": "2.2.2",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      }
+    },
+    "enterprise": false,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-icebreaker-plugin-v2.2.2-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+8EuYACgkQ0bVLR6XO/sSo7g/+JdK+GpPDfg0YEFt0wiNkanD6PqFoI9UlKZrIOF6MHq14ilbhoTXua8W/SrpNV/tLv1BRmKure4uplE1wg2Uu6wLEf3DumcrfSeBrzgXlllSbIVowXnbyD4uKNTXl/Z5QgR0ZT3AxZwaZpTxQfSQR1y84LBSW1o4sGKXORfsV03z49Jq9odyHbPULjiyvGi6lZyAAFAOmPr/ITZpgYIsBp7sChXZqvm21UIqIwba+Jm7Ajge7E11kR5q0lzX4ZXY1OBMEOFSGaD7tHRBEIRbQ+80v4EexUW7qqKgKDo0LqxRRw4vGBd4hrkV6JnSj2glXvci9y7kZlCGIR2XhOc4M/nfnAv7IOw6DQurmllIyY4j5Y5/HCz1eIUhWD2SXN1XijSavXEVgueTr0cIRDoiwQ3zm4WUpYmUUu7SCRE1Q/ukRJnfwQ+wRjSbm/BsAlMfrvGaodv6BMYjwPxRfvhBReI8IeifhrB/TXqQLb+YpLKfAbv9wp3mJ7fYLdB9WBlm31bQ6u84xJhknyQO6CMXi6kWRskLQpa49PMmgEiJoYZS31nFdWEftY18v+IOEiW8VQUqt3eEwYevAbPxPBCy9qnEZaFN6yVZAWGbezT6qmm6ejDmyfT9jA9CUq75esLfnY0fl+bxpOFNxaEg/IRdFVP95sGBOtDFE6peZJwhZ4gE="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-icebreaker-plugin-v2.2.2-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+8EuMACgkQ0bVLR6XO/sSBGQ/+J9s0YQntAVG0JrfhFBhb2cQqU8b32ZmT9T2+0l/jTaAMvvCYfBiUBYVmTS2kyMPNnSiTN+PyvLLivYSI9SXDj8k+uNkISowuw4v8aajyz9zo0oZn4mjaNRlbspe7wFmPqDO9A1I9LaMPb66g7s5Xn9Xqx47LvKbp6obxbaVmVnMe+mnK4t2kTOXW0xYXwnc3uCfwNyzV2wav2n47ZmJ0wImPkKe/y3HsYyAAI/xQuWOqW+bS5hfYyLGtdyaw7oJCatBNmmG4GKELJwfKnDVwznUDZ3zzFfJNdfP6nUZIMFO9I1afL92S/IH/TI8k4m17Asx/2Yc3lFVBz+DFN/GDylFjuER0h4KuK+L4AXBAt2lKS7FYtR8/bPGQS7joYqMonOZICMHJeqp4ofvxXOzytkpm8UxTzqE21cOPG1mJzjGbpM/xOuA31Wav/EC+EUezGhuHKvv3pEz3b8GYDbtddfmnOV5oBLz/XPUhoFNSfWsSk78MIsoOrxpadalL5kfak7gfk+Ijhx/EGS72vHpC8SMpgfI4d2zfICMATxAIuloVEiEku2ZkRHVbknZYqs9oTRgJVtM4aZxdsgsXvWDcQ0wQbPCJz+wGyKFVjZZGmN+9NekDtwA+kDdbtNSwVWZ9qcf7ttopNice/tihYKfQNW+u4FCJJA5aC3G+guhqXMM="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-icebreaker-plugin-v2.2.2-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAl+8EuUACgkQ0bVLR6XO/sQFbA/7BNpjxxuEuc2TsZLqzP6BgiMNkKvl21bUG6UEUAnFJ/KyAuCQRfLBfWfGebebdhQGo2cbI6er7ZO4om8llvIgFo2xPC8Z+zw4rPYc8ir7BDkWcSRQrjDOKk0G290RuO5s86E5aqPP9OilzlUO5z6NUGTBPOMEB6NjkQgvgcmAPGxKH/VcVgzvfxv4yRp1Crpj++rQDoaR6FFSls0PZQ1baAyL93FGUhflSSDiAV4JDbqjs8+4ayvvuboOV0uSP2YsXSbPsI+CvIdkV0ZqNTxe5F3JCrfZ9UEugQyqs7hQGev4mKmGd26dJBKubAE+28dDkG17gbBhp5zwECrmIxDzhBxhfKIsIuxYDJ9GWFKfyh9D2EKKg/ueVIy5KHyr0cwdr7NShlQTQhyvy+9SsMxLIGLSsioYt6KEJshvjRJ9fT/jv0C/8QfGDKbwV48y9Z9u61UMYlD/5AbyUu+Aiv7Y+8eUTPxItHKXMh8E3eHFCoHvJFOcm+5zhCrCH8+GMQb9wijg0+f5EcCF8k7G+QMg6IE4qDp+wbXWSwYCbp9WgAb0VkVQMkxXyzbK7MytnuLLwP0g3C2Z2PrASiLpX02NiVVyh7IP0UFGmLmvgmiyb6VLcX83URQG0aBMvkwuS4WZ3H++/A/eUDQNNbn9SOeNwJVXgIVIpE2oUnn8l1r8Bn8="
+      }
+    },
+    "updated_at": "2020-11-23T19:52:34.710703726Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.0.0.tar.gz",
