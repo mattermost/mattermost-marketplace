@@ -35,7 +35,7 @@ var BetaLabel Label = Label{
 
 var ExperimentalLabel Label = Label{
 	Name:        "Experimental",
-	Description: "This plugin is marked as experimental and not meant for production use. Use with caution!",
+	Description: "This plugin is marked as experimental and not meant for production use. Please use with caution.",
 	URL:         "https://mattermost.com/pl/default-experimental-plugins",
 }
 
