@@ -27,7 +27,7 @@ var BetaLabel Label = Label{
 }
 
 var EnterpriseLabel Label = Label{
-	Name:        "Enterprise (Cloud or E20)",
+	Name:        "Enterprise Edition E20" (Self-managed and Mattermost Cloud),
 	Description: "This plugin only works on self-managed deployments using an Enterprise Edition E20 license and Mattermost Cloud workspaces.",
 	URL:         "https://mattermost.com/pricing/",
 }
