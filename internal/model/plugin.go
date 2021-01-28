@@ -138,5 +138,5 @@ type PluginFilter struct {
 	Cloud             bool
 	Platform          string
 	ReturnAllVersions bool
-	PluginId          string
+	PluginID          string
 }
