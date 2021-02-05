@@ -27,10 +27,6 @@ func NewStaticFromReader(reader io.Reader, logger logrus.FieldLogger) (*StaticSt
 		return nil, errors.Wrap(err, "failed to parse stream")
 	}
 
-	for _, p := range plugins {
-		p.AddLabels()
-	}
-
 	return NewStatic(plugins, logger)
 }
 
@@ -99,7 +95,7 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 	filter := strings.TrimSpace(pluginFilter.Filter)
 	var filteredPlugins []*model.Plugin
 	for _, plugin := range plugins {
-		if pluginFilter.PluginId != "" && pluginFilter.PluginId != plugin.Manifest.Id {
+		if pluginFilter.PluginID != "" && pluginFilter.PluginID != plugin.Manifest.Id {
 			continue
 		}
 		if filter == "" || pluginMatchesFilter(plugin, filter) {
@@ -217,6 +213,12 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 			}
 		}
 
+		// Create a copy as we want to modify only the returned one
+		newRef := *storePlugin
+		storePlugin = &newRef
+
+		storePlugin.AddLabels()
+
 		if platform != "" {
 			var bundle model.PlatformBundleMetadata
 			switch platform {
@@ -229,10 +231,8 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 			}
 
 			if bundle.DownloadURL != "" && bundle.Signature != "" {
-				newRef := *storePlugin
-				newRef.DownloadURL = bundle.DownloadURL
-				newRef.Signature = bundle.Signature
-				storePlugin = &newRef
+				storePlugin.DownloadURL = bundle.DownloadURL
+				storePlugin.Signature = bundle.Signature
 			}
 		}
 

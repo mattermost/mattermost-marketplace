@@ -19,14 +19,16 @@ type AuthorType string
 
 const (
 	Mattermost AuthorType = "mattermost"
+	Partner    AuthorType = "partner"
 	Community  AuthorType = "community"
 )
 
 type ReleaseStage string
 
 const (
-	Production ReleaseStage = "production"
-	Beta       ReleaseStage = "beta"
+	Production   ReleaseStage = "production"
+	Beta         ReleaseStage = "beta"
+	Experimental ReleaseStage = "experimental"
 )
 
 // Plugin represents a Mattermost plugin in the Plugin Marketplace.
@@ -105,12 +107,20 @@ func PluginsToWriter(w io.Writer, plugins []*Plugin) error {
 }
 
 func (p *Plugin) AddLabels() {
+	if p.AuthorType == Partner {
+		p.Labels = append(p.Labels, PartnerLabel)
+	}
+
 	if p.AuthorType == Community {
 		p.Labels = append(p.Labels, CommunityLabel)
 	}
 
 	if p.ReleaseStage == Beta {
 		p.Labels = append(p.Labels, BetaLabel)
+	}
+
+	if p.ReleaseStage == Experimental {
+		p.Labels = append(p.Labels, ExperimentalLabel)
 	}
 
 	if p.Enterprise {
@@ -128,5 +138,5 @@ type PluginFilter struct {
 	Cloud             bool
 	Platform          string
 	ReturnAllVersions bool
-	PluginId          string
+	PluginID          string
 }
