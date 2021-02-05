@@ -95,7 +95,7 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 	filter := strings.TrimSpace(pluginFilter.Filter)
 	var filteredPlugins []*model.Plugin
 	for _, plugin := range plugins {
-		if pluginFilter.PluginId != "" && pluginFilter.PluginId != plugin.Manifest.Id {
+		if pluginFilter.PluginID != "" && pluginFilter.PluginID != plugin.Manifest.Id {
 			continue
 		}
 		if filter == "" || pluginMatchesFilter(plugin, filter) {

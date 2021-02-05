@@ -403,7 +403,7 @@ func TestStaticGetPlugins(t *testing.T) {
 			Page:              0,
 			PerPage:           0,
 			Filter:            "",
-			PluginId:          "com.mattermost.demo-plugin",
+			PluginID:          "com.mattermost.demo-plugin",
 			ReturnAllVersions: true,
 		})
 		require.NoError(t, err)
@@ -415,7 +415,7 @@ func TestStaticGetPlugins(t *testing.T) {
 			Page:              0,
 			PerPage:           1,
 			Filter:            "",
-			PluginId:          "com.mattermost.demo-plugin",
+			PluginID:          "com.mattermost.demo-plugin",
 			ReturnAllVersions: true,
 		})
 		require.NoError(t, err)
@@ -427,7 +427,7 @@ func TestStaticGetPlugins(t *testing.T) {
 			Page:              0,
 			PerPage:           10,
 			Filter:            "",
-			PluginId:          "com.mattermost.demo-plugin",
+			PluginID:          "com.mattermost.demo-plugin",
 			ReturnAllVersions: true,
 		})
 		require.NoError(t, err)
@@ -439,7 +439,7 @@ func TestStaticGetPlugins(t *testing.T) {
 			Page:              0,
 			PerPage:           1,
 			Filter:            "",
-			PluginId:          "com.mattermost.demo-plugin",
+			PluginID:          "com.mattermost.demo-plugin",
 			ReturnAllVersions: true,
 		})
 		require.NoError(t, err)
@@ -449,7 +449,7 @@ func TestStaticGetPlugins(t *testing.T) {
 	t.Run("default paging", func(t *testing.T) {
 		actualPlugins, err := staticStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
 			Filter:            "",
-			PluginId:          "com.mattermost.demo-plugin",
+			PluginID:          "com.mattermost.demo-plugin",
 			ReturnAllVersions: true,
 		})
 		require.NoError(t, err)
@@ -459,7 +459,7 @@ func TestStaticGetPlugins(t *testing.T) {
 	t.Run("plugins that satisfy 5.15", func(t *testing.T) {
 		actualPlugins, err := staticStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
 			ServerVersion:     "5.15.0",
-			PluginId:          "com.mattermost.demo-plugin",
+			PluginID:          "com.mattermost.demo-plugin",
 			ReturnAllVersions: true,
 		})
 		require.NoError(t, err)
@@ -469,7 +469,7 @@ func TestStaticGetPlugins(t *testing.T) {
 	t.Run("plugins that satisfy 5.14", func(t *testing.T) {
 		actualPlugins, err := staticStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
 			ServerVersion:     "5.14.0",
-			PluginId:          "com.mattermost.demo-plugin",
+			PluginID:          "com.mattermost.demo-plugin",
 			ReturnAllVersions: true,
 		})
 		require.NoError(t, err)
@@ -479,7 +479,7 @@ func TestStaticGetPlugins(t *testing.T) {
 	t.Run("with a server version that does not satisfy any plugin", func(t *testing.T) {
 		actualPlugins, err := staticStore.GetPlugins(&model.PluginFilter{PerPage: model.AllPerPage,
 			ServerVersion:     "5.13.0",
-			PluginId:          "com.mattermost.demo-plugin",
+			PluginID:          "com.mattermost.demo-plugin",
 			ReturnAllVersions: true,
 		})
 		require.NoError(t, err)
