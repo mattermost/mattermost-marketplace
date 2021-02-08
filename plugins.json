@@ -3404,7 +3404,7 @@
         "settings": []
       }
     },
-    "enterprise": false,
+    "enterprise": true,
     "platforms": {
       "linux-amd64": {
         "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-collaboration-v1.3.2-linux-amd64.tar.gz",
@@ -3456,7 +3456,7 @@
         "settings": []
       }
     },
-    "enterprise": false,
+    "enterprise": true,
     "platforms": {
       "linux-amd64": {
         "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-management-v1.3.1-linux-amd64.tar.gz",
