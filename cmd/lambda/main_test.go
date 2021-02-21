@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func TestNewStatikStore(t *testing.T) {
-	_, err := newStatikStore("/plugins.json", logger)
+func TestNewStaticStore(t *testing.T) {
+	_, err := newStaticStore(logger)
 	require.NoError(t, err)
 }

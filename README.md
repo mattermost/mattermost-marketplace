@@ -66,11 +66,6 @@ go run ./cmd/generator/ add mattermost-plugin-jitsi v2.0.0 --official
 
 Make sure to double check the `diff` of `plugins.json` to ensure the release get added correctly.
 
-After you are satisfied with the changes, run the following to update `data/statik/statik.go` and commit both the changes for `plugin.json` and `data/statik/statik.go`:
-```
-make generate
-```
-
 ### Deploying as a Lambda Function
 
 In addition to running as a standalone server, the Marketplace is also designed to run as a Lambda function, compiling the `plugins.json` database into the binary for immediate access without further configuration.
