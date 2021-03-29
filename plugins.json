@@ -1025,6 +1025,73 @@
     "updated_at": "2019-04-17T19:49:19Z"
   },
   {
+    "homepage_url": "https://mattermost.gitbook.io/circle-ci-plugin",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQ3MSIgaGVpZ2h0PSIyNTAwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNTYgMjU5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KPG1ldGFkYXRhPgo8cmRmOlJERj4KPGNjOldvcmsgcmRmOmFib3V0PSIiPgo8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KPGRjOnR5cGUgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIvPgo8L2NjOldvcms+CjwvcmRmOlJERj4KPC9tZXRhZGF0YT4KPGcgZmlsbD0iIzM0MzQzNCI+CjxjaXJjbGUgY3g9IjEyNi4xNiIgY3k9IjEyOS4wMSIgcj0iMTI2LjY1IiBmaWxsPSIjZmZmIi8+CjxwYXRoIGQ9Im0xNS4wNSAxMDAuMTFjMCAwLjMyNzgxLTAuMzI4NyAwLjk4NDMzLTAuMzI4NyAxLjMxMyAwIDIuOTU0OCAyLjI5ODMgNS41ODE3IDUuNTgxNyA1LjU4MTdoNDYuMjk3YzIuMjk4MyAwIDMuOTQtMS4zMTMgNC45MjUyLTMuMjgzNSA5LjUyMjYtMjEuMDE0IDMwLjUzNy0zNS4xMzMgNTQuNTA0LTM1LjEzMyAzMy4xNjMgMCA2MC4wODcgMjYuOTI0IDYwLjA4NyA2MC4wODcgMCAzMy4xNjMtMjYuOTI0IDYwLjA4Ny02MC4wODcgNjAuMDg3LTI0LjI5NyAwLTQ0Ljk4My0xNC40NDctNTQuNTA0LTM0LjgwNC0wLjk4NTIyLTIuMjk4My0yLjYyNy0zLjYxMjItNC45MjYxLTMuNjEyMmgtNDYuMjk0Yy0yLjk1NTcgMC01LjU4MjYgMi4yOTgzLTUuNTgyNiA1LjU4MjYgMCAwLjMyNzgyIDAgMC45ODQzMyAwLjMyODcgMS4zMTMgMTIuODA1IDQ5LjkwOCA1Ny43ODggODYuNjgzIDExMS4zMSA4Ni42ODMgNjMuMzcgMCAxMTQuOTItNTEuNTUgMTE0LjkyLTExNC45Mi04LjllLTQgLTYzLjM3LTUxLjU1MS0xMTQuOTItMTE0LjkyLTExNC45Mi01My41MTkgMC05OC41MDMgMzYuNzc1LTExMS4zMSA4Ni4wMjZ6Ii8+CjxjaXJjbGUgY3g9IjEyNi43OSIgY3k9IjEyOC45MyIgcj0iMzAuNTkzIi8+CjwvZz4KPC9zdmc+Cg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-circleci-v1.2.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-circleci/releases/tag/v1.2.0",
+    "hosting": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmBhy3EACgkQ0bVLR6XO/sRI7RAAgLYMxVzMPF3WSsgfgl+Qq9bNhZ3HbfoDLiuPzFTdXxJWIRW0uaXEmUnsKDY5U+TUr2aWSGxWcXNf7xxJY7IXJxOI5boo/WHpqfhz/Va2/YJvMHCpEE22cCd8yCZ6RXo2uVPacByT0pfum9lSVCqhQpByPrdG3QzBh/qERHhZRmpspj64snELeiEYl43ZpYyEpvuKioAA4C8Q6r2apj6NqUYCrtmY5Cbqwn2Tm9Gov6wuqsal8cxCcbHvNXkBJhzwY/Ekjdnv2Pg/aCsq6EkQYyl4FCNIBA9gxuLZi7J+9aYSr/WUfdPB0Gg/EK9pj4+Y24lf3nRzxn+aeNgllF5tlvhpkedg80mXHBgPf95xJsIr4C7DM9fzg0dmFhtFsWlKssbeVRk9iLtFoYYHkNVI1KlO/mwlbpsIhU7RBdFosUEofcr/+eQhcv0T1n27HyV5cYXe+mxbnR3PwfNde5kX1FuYeGpG2q+8X+QjWczFEEqFzxIV0rCqTlI8uz73rrNfl6XMTdjtfhUY2PFYAh3vFAdaLTzOcwFzkYfJNlUJq/OQQux+++0AGFo71vMn+VlDo+HlQrbTazBKs8KkcE6GZ+etY5U7r3ms7O1Bz+b8pv75sEymizJSWRKJ+tj7DTQP0ySUGB8t1KExo3Ht7W7GYRMw6SREF2RY29NrTx9lJ00=",
+    "repo_name": "mattermost-plugin-circleci",
+    "manifest": {
+      "id": "com.github.mattermost.plugin-circleci",
+      "name": "CircleCI",
+      "description": "Interact with CircleCI workflows, jobs and builds with slash commands",
+      "homepage_url": "https://mattermost.gitbook.io/circle-ci-plugin",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-circleci/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-circleci/releases/tag/v1.2.0",
+      "icon_path": "assets/circleci.svg",
+      "version": "1.2.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Link your Mattermost instance with your CircleCI projects. Check the [plugin documentation](https://mattermost.gitbook.io/circle-ci-plugin) to learn how to configure it.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "WebhooksSecret",
+            "display_name": "Webhooks Secret:",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing CircleCI integrations.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens. Regenerating the key will log out every user of their CircleCI account.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-circleci-v1.2.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmBhy3AACgkQ0bVLR6XO/sQS/RAAh4qzKBYh1UymYRVQzab6Tu8jzw5aQCT8y7PkCem7lNFEZNlFLyeIX3+jNAIuMQgUe/QtCPnmTXaU0jEcUm+G02BioeN5vZuupLRXrOS5Tk2O+Q2T9ZgHfQ0YggqWByycK2wfW3LBUO5GsdtzVsWLHTur4mrTWTSMykYb+d37oLZ5A+2lccsBfFcbIScBx679ncCzyF+oQg2XWx7lo4jdU8GBoWnfQjUzGcaT3KddZB8FePzoRLlP2NqGtMjEqBhpJgogyeuH/VjSvt+qfmmlQ2y9B33Bvv3OPJ0mR8OsjZOVcvdL89b2ZC5glHjxVhs+mINY3SZ3yqaSrorqFqdasb6YIgrxNEnrE775w5gm0sqrvNMgqeSLwZaz0ybFCLOrqT+mizRr+PTm1Zlcv+d2pl8YtkUGfkLDSvdaWFtYw+peowMPdquPIej+IR6SnP8RQMIEYsnNWkwDAVs01HXiHdS7R8WXJMkpcFzY0mBFcMVtLC5x37CKjBNUgZv0e4QYgLIc/ODNS/ufFjrV7StUvyN6cM8OeNIDHTAhmuGTaUY+vY+7L6CQq/wU2q9FgevEhRProprNLtAcYM2v6czIDhcDB1G65lfyhJXKhpT1KVNt+Z3MunGoiJuvonUQamlt8E6Rhxg/4L2iPSBR7RvDLd4sqI1WQLP0XMW/4LpuUpw="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-circleci-v1.2.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmBhy20ACgkQ0bVLR6XO/sRudA//Ud04p+TFN3ej6wAk9eoTVaksQfRoxWU5ZRg9nzOzsVnEtLoS6iIunJ6M3MUgGI81mbJFxPih09N/G9WJIsZYdmX6rCs9wJUxPFOPH4YsPGZquE5gCRDJLcVLN9TV1iLGlCqCq5UWF9yKFYDHuv33zE+iE20QcT0mm8k3LwpO/bz7fFA4r9zq7Q78T9CIeGIOZ4sVW8N6gMHFHD4OjRMSD6SejRXEBgjtq6qqYTvJ1CwN6JVd8aM/b33avWckZME8Z+PFu2yjD1eqJRx0u37ntZ+rPy5b8ySq3Ok+2MI6Mjw9h4T72VKzggv6yM0o7lrljdllHngMR1ibTRJuQLohiWTAJ+oFH9EwpxcM/Pww+kebGBlMI1dcj6Ta2pmg4nj8aWrfV3LF8/jINWEIobcE9Wsl5RygKWh8Gfe5mPdJm9FzUD2HCNnJ5+Abfb4S5FMlXjktJxZNlVuQ1obPAta42o0G8l7GvLEDdHprGzzKtdbuPyU0rFXm6+F4x5NghXANAH2IGRcYF0rXzwWi7RMgo/y9mtSJq7kk+eU43UKKYwFJNulsyUNKgHpurv80WWwU6V3THdvXtOjh1RSsA+t6sEh6FwcNWJOTm89tsu92ITHIBCf7UrLkElGX8kZa8Leb1bOCJHZOZFuZkhA16giJqy9fgftFbeW2rf1a0Disir4="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-circleci-v1.2.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmBhy24ACgkQ0bVLR6XO/sTmmA//UzFZvZ/63rJeczqM3+kN0WQSyNHi+sSSU1Z6zHSlAvidGllhXNO5PGaRndLiUla2WinwSDyDaswKrrKnBJqUvjhkk1Ltt7IjzdJdWMLd/WG9mVdvf+N4Xu8YHj3OWxyjeBi3PoEJLK3oc6GQUoyCClf/ML2J8LqJqSNcl0ey8QANt9hFJL2y83qGRWI6oi0tkYJzTGv5wenwuWMm1D8nUw1d/IvkmDDfMkz//ktCl9nGcuPOFgkPBNuOXaM8bQszbx4CJQ0Zq77WmlpOAKcJd4yUKafsnffUj1pT85QrHiqo+c+BntmHA0Ifj/aDEPd266nhYK+In1fMQvCtPnNiqg1GpQEQvNLqpa/3q153Y531BBLvCyx5nRZfE3er4dmBE1EL08kA7OZ2Af/PtlhK6R5R7GJ1yIz7PH4MhNALBGH3pcuiHQI7Ht7Vv2S9C5dC6vzZQjUOzxrDwlO45qlCyg9z8QQDHjY7TnAs4ejIHmnmWsrUTKCsF9MCMq73CzsB4NbLdolvipISVAz4SnQVvw9XQFvs01pCN3agvPRnQhpiGnnrnzFbOTdsDWMsxqHw/ZG8lcV0WrzIVYYUUzQxsg/S/TxPjQMUtcKa5LJ0mTurWYhfHamHOodJdJOYFreVUM7NPunJAfSHnlMWvwamYDnLXakzwLaIC9yeatEv6/4="
+      }
+    },
+    "updated_at": "2021-03-29T12:44:12.142462031Z"
+  },
+  {
     "homepage_url": "https://github.com/matterpoll/matterpoll",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNjFweCIgaGVpZ2h0PSI2MXB4IiB2aWV3Qm94PSIwIDAgNjEgNjEiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU5ICg4NjEyNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+TG9nbyBEYXJrPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkNvbG9yZWQtLS0iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xODYuMDAwMDAwLCAtMjUwLjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPgogICAgICAgICAgICA8ZyBpZD0iTG9nby1EYXJrIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxODYuMDAwMDAwLCAyNTAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjQuNzY5NzQ2MywwLjAwMDEzNTYwMjk3NyBMMjQuNzcwMzczNiwxMS43Njk4Mjc4IEMxNy4wMzk5MjU3LDE0LjE5Nzg2MjMgMTEuNDMyNTIwNSwyMS40MTk5MzkxIDExLjQzMjUyMDUsMjkuOTUxNjk1NSBDMTEuNDMyNTIwNSwzOC40ODM0NTE5IDE3LjAzOTkyNTcsNDUuNzA1NTI4NyAyNC43NzAzNzM2LDQ4LjEzMzU2MzIgTDI0Ljc3LDYwLjQzOCBMMiw2MC40Mzg0MTY5IEMwLjg5NTQzMDUsNjAuNDM4NDE2OSAtMS40MjEwODU0N2UtMTQsNTkuNTQyOTg2NCAtMS4wNjU4MTQxZS0xNCw1OC40Mzg0MTY5IEwwLDI4LjA0NjI3NTQgTDAuMDU4NTkxOTg4MywyOC4wNDYwMjI2IEMwLjkyMzYxNDMyNCwxNC4wMjA1NTA1IDExLjI3MTYxMTMsMi41NjA5NzU5NyAyNC43Njk3NDYzLDAuMDAwMTM1NjAyOTc3IFogTTYwLjgxNDQ4NzgsMjYuODE5MzI3MyBDNjAuOTE5NTkzNywyNy44NDkxNDQ3IDYwLjk3MzQ0MjgsMjguODk0MTMxNSA2MC45NzM0NDI4LDI5Ljk1MTY5NTUgQzYwLjk3MzQ0MjgsNDQuODM1MzUxNiA1MC4zMDc4NjY3LDU3LjIyNzkyOSAzNi4yMDI2OTcxLDU5LjkwMzQ0NSBMMzYuMjAzMDY5MSw0OC4xMzM1NjMyIEM0My45MzM1MTcsNDUuNzA1NTI4NyA0OS41NDA5MjIyLDM4LjQ4MzQ1MTkgNDkuNTQwOTIyMiwyOS45NTE2OTU1IEw0OS41MzksMjkuODQgWiBNMzYuMjAyNjk3MSwtNS4zOTc3OTcwOWUtMDUgQzQ1LjQ5MTA4NzksMS43NjE3OTkyNCA1My4yODc5NTA2LDcuNzM3MzEwNDQgNTcuNTI5ODg1MSwxNS44NjMwNzk3IEw0Ni4wNDA1MDUzLDE4Ljk0MjU1NSBDNDMuNjU5MTAwMywxNS41ODQxOTM3IDQwLjIxNzMyNCwxMy4wMzA2NTM4IDM2LjIwMzA2OTEsMTEuNzY5ODI3OCBaIiBpZD0iQ29tYmluZWQtU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+",
     "download_url": "https://plugins-store.test.mattermost.com/release/matterpoll-v1.4.0.tar.gz",
