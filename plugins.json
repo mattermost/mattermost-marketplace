@@ -7491,6 +7491,79 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.2.2.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.2.2",
+    "hosting": "",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmB+wIQACgkQ0bVLR6XO/sS15hAAnigiLovKk1cd88YEd3UwkY5AH0UgTWOee0mfyxHUk1FKpmkjoGuBO9ClK+U9Vx9n7lDxqAZQZU5lpA21PEGZ3XJCnBeeAfQSxNCBQkRukDNuExMOhErCiRkRt6RNvo+WbTXqHMP1AC59mwbQzh6kJ4cZIjxgA1fD8lWliaTyJTmcxnpU01/DpSY62PILd0NxGF1P/L3dJTMhX9d/34CLGRtxdTVMtiO03i6P30SQvDbLRKczmN7ebc77fTcGE39NCdT7rMqVh9m95OutP7CHFs580Pd7dSb4sKeuDgkmJGH0ymKgGCCrzzF5fSiwCmufEN6uImIZZ9Gw+DfcJdq/knLpFF7s6L13N9mHUnpz56TSCWcaccRFrYmrHwxksmUQcOt/i3ld/c8dt2TdD1n9g4lBv5BI0UNllgqG5tSXuMGJAKvB+QDmBRqiFF9TPu6+eTVEy7M6lp9GojneJhxBjd2IQSg6Kn49iNbwaQ7pvnPkjtR4j5QHD58hdfh+NTz66dlMgfSYbvU5bItM0s8LfsqIcM6O7mhuXide8pCCwDhZPOwId7Vu8j02sAp3L50TlDZBsLdU76RvPB4bfQX5pY21bBLpw97dt5DnPvGquVP6308NmKRsmQZe8Pxzr6JZRgt7fx6TRpkfF5R3hwSoQy6XdRTsr47AAuB4x9bnX90=",
+    "repo_name": "mattermost-plugin-autolink",
+    "manifest": {
+      "id": "mattermost-autolink",
+      "name": "Autolink",
+      "description": "Automatically rewrite text matching a regular expression into a Markdown link.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-autolink/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.2.2",
+      "version": "1.2.2",
+      "min_server_version": "5.16.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file, or using the /autolink command. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-autolink/blob/master/README.md).\n\nTo report an issue, make a suggestion or a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-autolink).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableAdminCommand",
+            "display_name": "Enable administration with /autolink command",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "EnableOnUpdate",
+            "display_name": "Apply plugin to updated posts as well as new posts",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "PluginAdmins",
+            "display_name": "Admin User IDs",
+            "type": "text",
+            "help_text": "Comma-separated list of userIDs authorized to administer the plugin in addition to the System Admins.\n \nUser IDs can be found by navigating to **System Console** > **Users**.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "enterprise": false,
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.2.2-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmB+wIIACgkQ0bVLR6XO/sTbWQ//eyMloIxzlcT7EOduz0ugLtzKUQzKKkPGZQWEV7f1S/OT5hdCLWzXEGqvnBwGoMDSnsijYTtVxc64a9A6z+jhiJvXIH5mjef+Ex1d7odPg+NPSOCH2dvCOX+6xW++SflXFjVUOpv2JmoRQDv7zs1yJlvWnhFuGFPOhvulKPAHFyvdc33BIRZe7PJacvZrFgI7GcuNP9Tc3HjEmKSUtiJpIkVXY5nGF1Z5Ow4fgS5BQQwd5ejVfh4IBuOoZFh3JVSCisxL69fi+9xNXGB4KNIOfPiLwMeQvojqAAC6W+MHy/9w/10R2mBZRn26qmxaF14ARsTtsOCOEMnt9O2Dunl09UNdl5Ilpgyr7/fkREMK5hXsgAcvT9TBXp0zK0XDB18Ub3+pl0p+vf6FzhiEcqjBI7S97CTu4ab1DThW4Yj3hdfzNsQKVsYJw0QfcHg7d5fCzDBVUKuek9OXU8KqsPtpeXqXDwJfUSGseq2WMWsKRGhaLRqcTKs6xkRrMvGz5HB0G3wPoOz22inTBrsBBL94PBspk3vgYtkTlUtjYLqHEDGyamGq0DedGttpcMcW1aIILzvGu+l7QJl5uIubbMv2nThppSl3Dp/hyU9FGkLS4bk8Wj6fi3NZUN16sY4j2aYTSYriXXTrY9NdSkZ5KFlm+IFSplljQ0KhBdzc3srVQDs="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.2.2-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmB+wIAACgkQ0bVLR6XO/sT+zA/+M6T5PwKCzpR51zhx3FfMe6Kg7p8YSykUTtswqI6/CLb/3aLYg4dXKrbj4op3lzDlLenKFDu6/Hr42r5xaZGW5erFfdvwU8XVb3kV80dGfDMGWFDvVUcGc7mBNFnlTiE8UeNj6/4EuP1BEQNeHwhw2H/IlAuIeFd7ZzXleXK27goSAWUexwUNGCKnrej8hDzm4nOcwfDMvCu5LUm1A28Xy7//mo2LI7SGrldT3JkR1zJk1auwp20OxoUBLJcY1kd7TodONGaWsagDG1kFfwUNManllKVGKjVlyxN3NR0aWSY+SCJmgMvj1XSl66I7J6Wsr2VxGLKqEYMFlx3e2N12lMYR0oUM6oMEbGd5luRNj5jbkpcXYii9nS8DkwHijQ7+2Aqq3NDcT7A5eGGA84ELLUSRVWO5Fayx+3YJ8MeaG+v6QR0aYVfH4HzOD9N58VrUGBQlFV6bq5bxWPWLUVawLCdF8d0kci/JNOcFtNu5yn/L8RNXzsqPpvlJ1pirWBy/VqU46BlYWvkWqKPA/Fl7BkvNKNWAmgT7ewp5M7GQs4oi1WViUOL689xtZ8czYFUoQHlxyv00ydiQ4vThHmPXzZR+MiIZPdVr8m/EukI/ZyDraWi5QeYwnX+OI1aHKdDmIbTq/RRbPqsmYJTr2P9+3p7XNfJTYW0kCjXQYdM/sxc="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.2.2-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmB+wIEACgkQ0bVLR6XO/sTuIw//YGg6pUBxi7H9BWCqSBot0A/4tR2CT9JYSRHenaSwi8HxmPYNEkjz+tiC3l37rBuYtKMPMwg/njXB8i0FSCEs1/U19tcAyWstR9DNOKl6Lj0f+B6xVITUweOk+ZEqPjaVIebZupVYb1VanlA21HQ4t9o0aKvxOMLpcPY4n3wa0iEH+p/Y7VznmOLlFYdAWpvuStmpGtVS7gn0mQZaD4qwQ4GLINQqsOx0Y4cRw6iQ8sShTaU3lY/ZprbPiX9ilhWZfscSADlV5z8+nS1IGQdbOPUV6EZpm1VMhrfh6zl43FFmIbozAYjMGDSChRg3OXWPEhJa5LqpsFlsJKnDvytPdYZP79f+cKkcQ8D7QddihGbD+Gc/hleStIezOTxjDt5OXGhYlm429CKgY1VmSCX28WhJex87segUFe10YaddGaQz814QHGPv2MMeF4rUTElY3vGgn4ihDNzvcUbUEhHRbxc8lvrYZbNKDUr6PWf97JcWVWSnYqzYIlVXvweW0N9D58Gq+ydvGJxaSDvZLU6dGpi9+7wAvVfZeGLJyQQDBGZDsp6qagH9suZFbfbeDbHCyi8hk5+6iMgBUEkxQqdbj84CAa+ahmpJ6d9fKbMreiThIJ0N0g5JqWWYMUSSAalT3+thNY7bLfMZ3udDHtC8XDCpA2WeUdn4bOJJlMVKhIo="
+      }
+    },
+    "updated_at": "2021-04-20T12:02:30.05078083Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+    "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/download/v1.2.1/mattermost-autolink-1.2.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.2.1",
     "hosting": "",
