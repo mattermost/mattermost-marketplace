@@ -27,11 +27,18 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
+const (
+	defaultRemotePluginStore = "https://plugins-store.test.mattermost.com/release"
+	defaultGitHubOrg         = "mattermost"
+)
+
 func init() {
 	generatorCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
 	generatorCmd.PersistentFlags().String("database", "plugins.json", "Path to the plugins database to update.")
+	generatorCmd.PersistentFlags().String("remote-plugin-store", defaultRemotePluginStore, "Server URL hosting plugin bundles, i.e. from S3.")
 
 	generatorCmd.Flags().Bool("include-pre-release", false, "Whether to include pre-release versions.")
+	generatorCmd.Flags().String("github-org", defaultGitHubOrg, "GitHub organization that owns the plugin releases.")
 }
 
 func main() {
@@ -42,19 +49,25 @@ func main() {
 }
 
 var generatorCmd = &cobra.Command{
-	Use:   "generator",
-	Short: "Generator is a tool to generate the plugins.json database",
+	Use:               "generator",
+	Short:             "Generator is a tool to generate the plugins.json database",
+	PersistentPreRunE: InitCommand,
 	// SilenceErrors allows us to explicitly log the error returned from generatorCmd below.
 	SilenceErrors: true,
 	RunE: func(command *cobra.Command, args []string) error {
 		command.SilenceUsage = true
 
-		err := InitCommand(command)
+		dbFile, err := command.Flags().GetString("database")
 		if err != nil {
 			return err
 		}
 
-		dbFile, err := command.Flags().GetString("database")
+		githubOrg, err := command.Flags().GetString("github-org")
+		if err != nil {
+			return err
+		}
+
+		pluginHost, err := command.Flags().GetString("remote-plugin-store")
 		if err != nil {
 			return err
 		}
@@ -93,7 +106,7 @@ var generatorCmd = &cobra.Command{
 			logger.Debugf("querying repository %s", repositoryName)
 
 			var releasePlugins []*model.Plugin
-			releasePlugins, err = getReleasePlugins(ctx, client, repositoryName, includePreRelease, existingPlugins)
+			releasePlugins, err = getReleasePlugins(ctx, client, githubOrg, repositoryName, pluginHost, includePreRelease, existingPlugins)
 			if err != nil {
 				return errors.Wrapf(err, "failed to release plugin for repository %s", repositoryName)
 			}
@@ -128,15 +141,15 @@ var generatorCmd = &cobra.Command{
 }
 
 // getReleasePlugins queries GitHub for all releases of the given plugin, sorting by plugin version descending.
-func getReleasePlugins(ctx context.Context, client *github.Client, repositoryName string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
+func getReleasePlugins(ctx context.Context, client *github.Client, org, repositoryName, pluginHost string, includePreRelease bool, existingPlugins []*model.Plugin) ([]*model.Plugin, error) {
 	logger := logger.WithField("repository", repositoryName)
 
-	repository, _, err := client.Repositories.Get(ctx, "mattermost", repositoryName)
+	repository, _, err := client.Repositories.Get(ctx, org, repositoryName)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get repository")
 	}
 
-	releases, err := getReleases(ctx, client, repositoryName, includePreRelease)
+	releases, err := getReleases(ctx, client, org, repositoryName, includePreRelease)
 	if err != nil {
 		return nil, err
 	}
@@ -147,7 +160,7 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 
 	var plugins []*model.Plugin
 	for _, release := range releases {
-		plugin, err := getReleasePlugin(release, repository, existingPlugins)
+		plugin, err := getReleasePlugin(release, repository, existingPlugins, pluginHost)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to get release plugin for %s", release.GetName())
 		}
@@ -176,14 +189,14 @@ func getReleasePlugins(ctx context.Context, client *github.Client, repositoryNam
 }
 
 // getReleases returns all GitHub releases for the given repository.
-func getReleases(ctx context.Context, client *github.Client, repoName string, includePreRelease bool) ([]*github.RepositoryRelease, error) {
+func getReleases(ctx context.Context, client *github.Client, org, repoName string, includePreRelease bool) ([]*github.RepositoryRelease, error) {
 	var result []*github.RepositoryRelease
 	options := &github.ListOptions{
 		Page:    0,
 		PerPage: 40,
 	}
 	for {
-		releases, resp, err := client.Repositories.ListReleases(ctx, "mattermost", repoName, options)
+		releases, resp, err := client.Repositories.ListReleases(ctx, org, repoName, options)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to get releases for repository %s", repoName)
 		}
@@ -209,7 +222,7 @@ func getReleases(ctx context.Context, client *github.Client, repoName string, in
 	return result, nil
 }
 
-func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repository, existingPlugins []*model.Plugin) (*model.Plugin, error) {
+func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repository, existingPlugins []*model.Plugin, pluginHost string) (*model.Plugin, error) {
 	var releaseName string
 	if release.GetName() == "" {
 		releaseName = release.GetTagName()
@@ -286,6 +299,7 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 		logger.Debugf("fetching download url %s", downloadURL)
 
 		plugin = &model.Plugin{}
+		plugin.RepoName = repository.GetName()
 
 		bundleData, err := downloadBundleData(downloadURL)
 		if err != nil {
@@ -332,6 +346,11 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 	plugin.ReleaseNotesURL = releaseNotesURL
 	plugin.Signature = signature
 	plugin.UpdatedAt = updatedAt
+
+	plugin, err := addPlatformSpecificBundles(plugin, pluginHost)
+	if err != nil {
+		return nil, err
+	}
 
 	return plugin, nil
 }
@@ -419,7 +438,7 @@ func getIconDataFromTarFile(file []byte, path string) (string, error) {
 }
 
 // InitCommand parses the log level flag
-func InitCommand(command *cobra.Command) error {
+func InitCommand(command *cobra.Command, _ []string) error {
 	debug, err := command.Flags().GetBool("debug")
 	if err != nil {
 		return err

@@ -13,7 +13,7 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/testlib"
 )
 
-func TestProxy(t *testing.T) {
+func TestProxyGetPlugins(t *testing.T) {
 	t.Run("empty stream", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
 		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

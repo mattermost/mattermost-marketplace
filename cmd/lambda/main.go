@@ -1,13 +1,13 @@
 package main
 
 import (
+	"bytes"
+	_ "embed"
+
 	"github.com/akrylysov/algnhsa"
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
-	"github.com/rakyll/statik/fs"
 	"github.com/sirupsen/logrus"
-
-	_ "github.com/mattermost/mattermost-marketplace/data/statik"
 
 	"github.com/mattermost/mattermost-marketplace/internal/api"
 	"github.com/mattermost/mattermost-marketplace/internal/store"
@@ -16,6 +16,9 @@ import (
 var (
 	// upstreamURL may be compiled into the binary by defining $BUILD_UPSTREAM_URL
 	upstreamURL = ""
+
+	//go:embed plugins.json
+	database []byte
 )
 
 var logger *logrus.Logger
@@ -27,24 +30,13 @@ func main() {
 	}
 }
 
-func newStatikStore(statikPath string, logger logrus.FieldLogger) (*store.StaticStore, error) {
-	statikFS, err := fs.New()
-	if err != nil {
-		return nil, errors.Wrap(err, "failed to open statik fileystem")
-	}
-
-	database, err := statikFS.Open(statikPath)
-	if err != nil {
-		return nil, errors.Wrapf(err, "failed to open %s", database)
-	}
-	defer database.Close()
-
-	statikStore, err := store.NewStaticFromReader(database, logger)
+func newStaticStore(logger logrus.FieldLogger) (*store.StaticStore, error) {
+	staticStore, err := store.NewStaticFromReader(bytes.NewReader(database), logger)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to initialize store")
 	}
 
-	return statikStore, nil
+	return staticStore, nil
 }
 
 func listenAndServe() error {
@@ -52,7 +44,7 @@ func listenAndServe() error {
 
 	var apiStore store.Store
 	var err error
-	apiStore, err = newStatikStore("/plugins.json", logger)
+	apiStore, err = newStaticStore(logger)
 	if err != nil {
 		return err
 	}

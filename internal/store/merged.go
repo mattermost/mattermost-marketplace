@@ -32,15 +32,13 @@ func (store *Merged) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plug
 		return store.stores[0].GetPlugins(pluginFilter)
 	}
 
+	filter := *pluginFilter
+	filter.Page = 0
+	filter.PerPage = model.AllPerPage
+
 	plugins := []*model.Plugin{}
 	for i, store := range store.stores {
-		storePlugins, err := store.GetPlugins(&model.PluginFilter{
-			Page:              0,
-			PerPage:           model.AllPerPage,
-			Filter:            pluginFilter.Filter,
-			ServerVersion:     pluginFilter.ServerVersion,
-			EnterprisePlugins: pluginFilter.EnterprisePlugins,
-		})
+		storePlugins, err := store.GetPlugins(&filter)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to query store %d", i)
 		}

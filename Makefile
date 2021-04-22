@@ -9,16 +9,10 @@ LDFLAGS += -X "github.com/mattermost/mattermost-marketplace/internal/api.buildHa
 LDFLAGS += -X "main.upstreamURL=$(BUILD_UPSTREAM_URL)"
 SLS_STAGE ?= "dev"
 
+$(shell cp plugins.json ./cmd/lambda/)
+
 ## Checks the code style, tests, builds and bundles.
 all: check-style test build
-
-## Generate uses statikfs to bundle the plugin.json for use with the lambda function.
-.PHONY: generate
-generate:
-	go get github.com/rakyll/statik@v0.1.6
-	mkdir -p data/static/
-	cp plugins.json data/static/
-	go generate ./...
 
 ## Runs go vet and golangci-lint against all packages.
 .PHONY: check-style
@@ -44,7 +38,7 @@ build: build-server build-lambda
 
 ## Compile the server for the current platform.
 .PHONY: build-server
-build-server: generate
+build-server:
 	go build -ldflags="$(LDFLAGS)" -o dist/marketplace ./cmd/marketplace/
 
 ## Run the Plugin Marketplace
@@ -58,7 +52,7 @@ run-server:
 
 ## Compile the server as a lambda function
 .PHONY: build-lambda
-build-lambda: generate
+build-lambda:
 	GOOS=linux go build -ldflags="-s -w $(LDFLAGS)" -o dist/marketplace-lambda ./cmd/lambda/
 
 ## Deploy the lambda stack
@@ -74,6 +68,7 @@ deploy-lambda-fast: clean build-lambda
 ## Update plugins.json
 .PHONY: plugins.json
 plugins.json:
+	@echo "This command is deprecated. Use go run ./cmd/generator/ add instead."
 	go run ./cmd/generator --database plugins.json --debug
 
 ## Clean all generated files

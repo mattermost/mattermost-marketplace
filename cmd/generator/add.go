@@ -3,6 +3,7 @@ package main
 import (
 	"archive/tar"
 	"bytes"
+	"fmt"
 	"time"
 
 	"github.com/blang/semver"
@@ -17,16 +18,20 @@ func init() {
 	generatorCmd.AddCommand(addCmd)
 
 	addCmd.Flags().Bool("beta", false, "Mark release as Beta")
+	addCmd.Flags().Bool("experimental", false, "Mark release as Experimental")
 	addCmd.Flags().Bool("official", false, "Mark this plugin as maintained by Mattermost")
+	addCmd.Flags().Bool("partner", false, "Mark this plugin as maintained by a Mattermost partner")
 	addCmd.Flags().Bool("community", false, "Mark this plugin as maintained by the Open Source Community")
 	addCmd.Flags().Bool("enterprise", false, "Mark this plugin as only available to installations with an E20-only plugins license")
+	addCmd.Flags().Bool("cloud", false, "Mark this plugin as only available to cloud installations")
+	addCmd.Flags().Bool("on-prem", false, "Mark this plugin as only available to on-prem installations")
 }
 
 var addCmd = &cobra.Command{
 	Use:   "add [repo] [tag]",
 	Short: "Add a plugin release to the plugins.json database",
 	Long: "The generator commands allows adding a specific plugin release to the database by using this command.\n\n" +
-		"The release has to be built first using the /mb cutplugin command, which also uploads it to https://plugins-store.test.mattermost.com/release/. " +
+		"The release has to be built first using the /mb cutplugin command, which also uploads it to " + defaultRemotePluginStore + "/. " +
 		"This location is used to fetch the plugin release.",
 	Example: `  generator add matterpoll v1.5.1`,
 	Args:    cobra.ExactArgs(2),
@@ -34,6 +39,11 @@ var addCmd = &cobra.Command{
 		command.SilenceUsage = true
 
 		official, err := command.Flags().GetBool("official")
+		if err != nil {
+			return err
+		}
+
+		partner, err := command.Flags().GetBool("partner")
 		if err != nil {
 			return err
 		}
@@ -48,8 +58,24 @@ var addCmd = &cobra.Command{
 			return err
 		}
 
-		if official == community {
-			return errors.New("you must either set the release as a official or as a community plugin")
+		if !((official && !partner && !community) ||
+			(!official && partner && !community) ||
+			(!official && !partner && community)) {
+			return errors.New("you must either set the release as a official or as a partner or as a community plugin")
+		}
+
+		cloud, err := command.Flags().GetBool("cloud")
+		if err != nil {
+			return err
+		}
+
+		onPrem, err := command.Flags().GetBool("on-prem")
+		if err != nil {
+			return err
+		}
+
+		if cloud && onPrem {
+			return errors.New("if you want to make a plugin available for cloud and on-prem, just drop both flags")
 		}
 
 		beta, err := command.Flags().GetBool("beta")
@@ -57,8 +83,13 @@ var addCmd = &cobra.Command{
 			return err
 		}
 
-		if err = InitCommand(command); err != nil {
+		experimental, err := command.Flags().GetBool("experimental")
+		if err != nil {
 			return err
+		}
+
+		if beta && experimental {
+			return errors.New("can't set the release as both beta and experimental")
 		}
 
 		dbFile, err := command.Flags().GetString("database")
@@ -78,7 +109,12 @@ var addCmd = &cobra.Command{
 			return errors.Wrapf(err, "%v is an invalid tag. Something like v2.3.4 is expected", tag)
 		}
 
-		bundleURL := "https://plugins-store.test.mattermost.com/release/" + repo + "-" + tag + ".tar.gz"
+		pluginHost, err := command.Flags().GetString("remote-plugin-store")
+		if err != nil {
+			return err
+		}
+
+		bundleURL := fmt.Sprintf("%s/%s-%s.tar.gz", pluginHost, repo, tag)
 		signatureURL := bundleURL + ".sig"
 
 		bundleData, err := downloadBundleData(bundleURL)
@@ -115,19 +151,9 @@ var addCmd = &cobra.Command{
 		}
 
 		labels := []model.Label{}
-		if beta {
-			labels = append(labels, model.BetaLabel)
-		}
-
-		if community {
-			labels = append(labels, model.CommunityLabel)
-		}
-
-		if enterprise {
-			labels = append(labels, model.EnterpriseLabel)
-		}
 
 		plugin := &model.Plugin{
+			RepoName:        repo,
 			HomepageURL:     manifest.HomepageURL,
 			IconData:        iconData,
 			DownloadURL:     bundleURL,
@@ -137,6 +163,40 @@ var addCmd = &cobra.Command{
 			Manifest:        manifest,
 			Enterprise:      enterprise,
 			UpdatedAt:       time.Now().In(time.UTC),
+		}
+
+		plugin, err = addPlatformSpecificBundles(plugin, pluginHost)
+		if err != nil {
+			return err
+		}
+
+		switch {
+		case cloud:
+			plugin.Hosting = model.Cloud
+		case onPrem:
+			plugin.Hosting = model.OnPrem
+		}
+
+		switch {
+		case beta:
+			plugin.ReleaseStage = model.Beta
+		case experimental:
+			plugin.ReleaseStage = model.Experimental
+		default:
+			plugin.ReleaseStage = model.Production
+		}
+
+		switch {
+		case partner:
+			plugin.AuthorType = model.Partner
+		case community:
+			plugin.AuthorType = model.Community
+		default:
+			plugin.AuthorType = model.Mattermost
+		}
+
+		if enterprise {
+			plugin.Enterprise = true
 		}
 
 		plugins = append(plugins, plugin)

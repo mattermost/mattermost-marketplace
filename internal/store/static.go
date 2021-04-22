@@ -80,21 +80,42 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 		return nil, nil
 	}
 
-	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins)
+	plugins, err := store.getPlugins(pluginFilter.ServerVersion, pluginFilter.EnterprisePlugins, pluginFilter.Cloud, pluginFilter.Platform)
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get plugins")
 	}
 
-	filter := strings.TrimSpace(pluginFilter.Filter)
-	if filter != "" {
-		var filteredPlugins []*model.Plugin
-		for _, plugin := range plugins {
-			if pluginMatchesFilter(plugin, filter) {
-				filteredPlugins = append(filteredPlugins, plugin)
-			}
+	if !pluginFilter.ReturnAllVersions {
+		plugins, err = filterToLatestVersion(plugins)
+		if err != nil {
+			return nil, errors.Wrap(err, "failed to filter to latest version")
 		}
-		plugins = filteredPlugins
 	}
+
+	filter := strings.TrimSpace(pluginFilter.Filter)
+	var filteredPlugins []*model.Plugin
+	for _, plugin := range plugins {
+		if pluginFilter.PluginID != "" && pluginFilter.PluginID != plugin.Manifest.Id {
+			continue
+		}
+		if filter == "" || pluginMatchesFilter(plugin, filter) {
+			filteredPlugins = append(filteredPlugins, plugin)
+		}
+	}
+	plugins = filteredPlugins
+
+	// Sort the final slice by plugin version decending then plugin name ascending.
+	sort.SliceStable(
+		plugins,
+		func(i, j int) bool {
+			if plugins[i].Manifest.Id == plugins[j].Manifest.Id {
+				iVersion := semver.MustParse(plugins[i].Manifest.Version)
+				jVersion := semver.MustParse(plugins[j].Manifest.Version)
+				return iVersion.GT(jVersion)
+			}
+			return strings.ToLower(plugins[i].Manifest.Name) < strings.ToLower(plugins[j].Manifest.Name)
+		},
+	)
 
 	if len(plugins) == 0 {
 		return nil, nil
@@ -115,10 +136,39 @@ func (store *StaticStore) GetPlugins(pluginFilter *model.PluginFilter) ([]*model
 	return plugins[start:end], nil
 }
 
+func filterToLatestVersion(plugins []*model.Plugin) ([]*model.Plugin, error) {
+	latestVersionCollector := make(map[string]*model.Plugin)
+	for _, plugin := range plugins {
+		if latestVersionCollector[plugin.Manifest.Id] == nil {
+			latestVersionCollector[plugin.Manifest.Id] = plugin
+			continue
+		}
+
+		lastSeenPluginVersion, err := semver.Parse(latestVersionCollector[plugin.Manifest.Id].Manifest.Version)
+		if err != nil {
+			return nil, errors.Errorf("failed to parse manifest.Version for manifest.Id %s", plugin.Manifest.Id)
+		}
+
+		storePluginVersion := semver.MustParse(plugin.Manifest.Version)
+
+		// Replace the existing plugin if this version is newer, or if it's the same but
+		// appears later in the list.
+		if storePluginVersion.GTE(lastSeenPluginVersion) {
+			latestVersionCollector[plugin.Manifest.Id] = plugin
+		}
+	}
+
+	result := make([]*model.Plugin, 0, len(plugins))
+	for _, plugin := range latestVersionCollector {
+		result = append(result, plugin)
+	}
+
+	return result, nil
+}
+
 // getPlugins returns all plugins compatible with the given server version, sorted by name ascending.
-func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlugins bool) ([]*model.Plugin, error) {
+func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlugins bool, isCloud bool, platform string) ([]*model.Plugin, error) {
 	var result []*model.Plugin
-	plugins := map[string]*model.Plugin{}
 
 	for _, storePlugin := range store.plugins {
 		if storePlugin.Enterprise && !includeEnterprisePlugins {
@@ -139,7 +189,20 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 			}
 		}
 
+		if isCloud && storePlugin.Hosting == model.OnPrem {
+			continue
+		}
+
+		if !isCloud && storePlugin.Hosting == model.Cloud {
+			continue
+		}
+
 		if serverVersion != "" && storePlugin.Manifest.MinServerVersion != "" {
+			_, err := semver.Parse(serverVersion)
+			if err != nil {
+				return nil, errors.Wrapf(err, "failed to parse serverVersion %s", serverVersion)
+			}
+
 			meetsMinServerVersion, err := storePlugin.Manifest.MeetMinServerVersion(serverVersion)
 			if err != nil {
 				return nil, errors.Wrapf(err, "failed to check minServerVersion for manifest.Id %s", storePlugin.Manifest.Id)
@@ -150,36 +213,31 @@ func (store *StaticStore) getPlugins(serverVersion string, includeEnterprisePlug
 			}
 		}
 
-		if plugins[storePlugin.Manifest.Id] == nil {
-			plugins[storePlugin.Manifest.Id] = storePlugin
-			continue
+		// Create a copy as we want to modify only the returned one
+		newRef := *storePlugin
+		storePlugin = &newRef
+
+		storePlugin.AddLabels()
+
+		if platform != "" {
+			var bundle model.PlatformBundleMetadata
+			switch platform {
+			case model.LinuxAmd64:
+				bundle = storePlugin.Platforms.LinuxAmd64
+			case model.DarwinAmd64:
+				bundle = storePlugin.Platforms.DarwinAmd64
+			case model.WindowsAmd64:
+				bundle = storePlugin.Platforms.WindowsAmd64
+			}
+
+			if bundle.DownloadURL != "" && bundle.Signature != "" {
+				storePlugin.DownloadURL = bundle.DownloadURL
+				storePlugin.Signature = bundle.Signature
+			}
 		}
 
-		lastSeenPluginVersion, err := semver.Parse(plugins[storePlugin.Manifest.Id].Manifest.Version)
-		if err != nil {
-			return nil, errors.Errorf("failed to parse manifest.Version for manifest.Id %s", storePlugin.Manifest.Id)
-		}
-
-		storePluginVersion := semver.MustParse(storePlugin.Manifest.Version)
-
-		// Replace the existing plugin if this version is newer, or if it's the same but
-		// appears later in the list.
-		if storePluginVersion.GTE(lastSeenPluginVersion) {
-			plugins[storePlugin.Manifest.Id] = storePlugin
-		}
+		result = append(result, storePlugin)
 	}
-
-	for _, plugin := range plugins {
-		result = append(result, plugin)
-	}
-
-	// Sort the final slice by plugin name, ascending
-	sort.SliceStable(
-		result,
-		func(i, j int) bool {
-			return strings.ToLower(result[i].Manifest.Name) < strings.ToLower(result[j].Manifest.Name)
-		},
-	)
 
 	return result, nil
 }
