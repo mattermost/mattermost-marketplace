@@ -29,8 +29,9 @@ After a new plugin has been submitted, the assignee of the issue posts the follo
 - [ ] Request reviews.
 - [ ] [Cut plugin release](https://developers.mattermost.com/internal/plugin-release-process).
 - [ ] Add release to Marketplace.
-- [ ] Reach out on [Marketing Channel](https://community-release.mattermost.com/private-core/channels/marketing) to tweet about the plugin.
+- [ ] Reach out on the [Marketing Channel](https://community.mattermost.com/private-core/channels/marketing) to tweet about the plugin.
 - [ ] Work with `@hanna.park` regarding swag.
+- [ ] React out to `@eric.nelson` on the [Analytics Channel]https://community.mattermost.com/private-core/channels/analytics-2) to add this plugin to Looker.
 ```
 
 #### Update plugin

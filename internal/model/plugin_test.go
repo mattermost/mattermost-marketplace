@@ -133,6 +133,8 @@ func TestPluginsToWriter(t *testing.T) {
 			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
 			Signature:       "signature1",
 			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
+			AuthorType:      Mattermost,
+			ReleaseStage:    Production,
 			Manifest: &mattermostModel.Manifest{
 				Id:      "demo",
 				Version: "1.0.0",
@@ -159,6 +161,8 @@ func TestPluginsToWriter(t *testing.T) {
 			DownloadURL:     "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
 			Signature:       "signature2",
 			ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
+			AuthorType:      Community,
+			ReleaseStage:    Beta,
 			Manifest: &mattermostModel.Manifest{
 				Id:      "template",
 				Version: "2.0.0",
@@ -175,13 +179,15 @@ func TestPluginsToWriter(t *testing.T) {
     "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
     "hosting": "on-prem",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
     "signature": "signature1",
     "repo_name": "mattermost-plugin-demo",
     "manifest": {
       "id": "demo",
       "version": "1.0.0"
     },
-    "enterprise": false,
     "platforms": {
       "linux-amd64": {
         "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-linux-amd64.tar.gz",
@@ -204,13 +210,15 @@ func TestPluginsToWriter(t *testing.T) {
     "download_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
     "hosting": "cloud",
+    "author_type": "community",
+    "release_stage": "beta",
+    "enterprise": false,
     "signature": "signature2",
     "repo_name": "mattermost-plugin-starter-template",
     "manifest": {
       "id": "template",
       "version": "2.0.0"
     },
-    "enterprise": false,
     "platforms": {
       "linux-amd64": {},
       "darwin-amd64": {},
