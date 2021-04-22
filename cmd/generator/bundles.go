@@ -53,6 +53,31 @@ var migrateCmd = &cobra.Command{
 					return errors.Wrapf(err, "failed to add platform-specific bundles for plugin %s-%s", orig.Manifest.Id, orig.Manifest.Version)
 				}
 
+				// Migrate community label to flag
+				var newLabels []model.Label
+				for _, l := range modified.Labels {
+					switch l {
+					case model.EnterpriseLabel:
+						// Just drop it
+					case model.CommunityLabel:
+						modified.AuthorType = model.Community
+					case model.BetaLabel:
+						modified.ReleaseStage = model.Beta
+					default:
+						// Keep other labels
+						newLabels = append(newLabels, l)
+					}
+				}
+				modified.Labels = newLabels
+
+				if modified.AuthorType == "" {
+					modified.AuthorType = model.Mattermost
+				}
+
+				if modified.ReleaseStage == "" {
+					modified.ReleaseStage = model.Production
+				}
+
 				toSave = append(toSave, modified)
 
 				return nil
