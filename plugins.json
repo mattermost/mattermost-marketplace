@@ -2160,7 +2160,7 @@
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v0.6.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v0.6.0",
-    "hosting": "",
+    "hosting": "cloud",
     "author_type": "mattermost",
     "release_stage": "experimental",
     "enterprise": false,
@@ -2203,7 +2203,7 @@
         "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmCirwwACgkQ0bVLR6XO/sRc4w/8C21DqTrZmFr+6ViT33pMgP8y7QFbnjBCDJOUpdobCxJ9w79ddQM3ZdYzxIeTyxYfKd2rFD/LFjkM9nA2llLVW7f9F9b63QWIAIjE2XwDysFx86eda3N+mA18V3tVgLyG3a0h58n3fIypLxHJfPztimtiipT4OdEEcQvhFYvbbp4bUSUJ7J6eljkqgtyJYgvzf5UN8g1NbNhI0pUCdWbwX9BUJB493/pjNC9FNxNnBLdLT2TnFlxTr3rI598+JLklLISUfc/ahc188UbtwHa9ZBKHpSrFI0yvsJl49h5IhhGRo3Zkg8iKqFufoz1Hv882VPnBwJrH5+awYhrGxo+PhpnRQO1dbwtILfyGIVb1A2g5/ctVOP+mDSaELghah3wqbCZa6fqcfkaZW7sxgwlF8amvw4+QuYRO+xIe9C2CGxVDWiOjzp1dEMjyZniyis3hsA17RAL/9leL6GAMZLlHP+PJw21UV9fQInC4/GWRiciw05kfTzs717NYuykTpI+RedAGHm+ttAjzGC5vxZp6imXq5PQz6TeaeKzwIJQL1wFErbYxxWma9Ma0G45Sya0WTRewm9quzfkKi54TvfqGURuRVDMamIwxhZEgsoMzkR/L9T4jdGfAFd7bkU1VDorFD+vU20jvnlr1DTnJioazMWcaIyTtllKcjIyEbz+eh/E="
       }
     },
-    "updated_at": "2021-05-17T20:26:42.708099Z"
+    "updated_at": "2021-05-17T21:22:35.070648Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-apps",
