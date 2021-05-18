@@ -2156,7 +2156,7 @@
     "updated_at": "2020-11-20T18:12:44.537612606Z"
   },
   {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-apps",
+    "homepage_url": "https://mattermost.com/marketplace/app-framework",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v0.6.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v0.6.0",
@@ -2170,7 +2170,7 @@
       "id": "com.mattermost.apps",
       "name": "Apps",
       "description": "This plugin powers the Mattermost Apps Framework and is required for any Apps to run",
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-apps",
+      "homepage_url": "https://mattermost.com/marketplace/app-framework",
       "support_url": "https://github.com/mattermost/mattermost-plugin-apps/issues",
       "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v0.6.0",
       "version": "0.6.0",
