@@ -2,6 +2,77 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-collaboration/",
     "icon_data": "data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9JzE0MCcKICAgIGhlaWdodD0nMTcwJwogICAgdmlld0JveD0nMCAwIDE0IDE3JwogICAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJwogICAgc3R5bGU9J21hcmdpblRvcDogLTFweCcKPgogICAgPHBhdGgKICAgICAgICBkPSdNMTMuNzUgNy44MTE3N0MxMy43NSA5LjE3MTE0IDEzLjQ1NyAxMC40ODM2IDEyLjg3MTEgMTEuNzQ5M0MxMi4yODUyIDEzLjAxNDkgMTEuNDc2NiAxNC4wOTMgMTAuNDQ1MyAxNC45ODM2QzkuNDE0MDYgMTUuODc0MyA4LjI2NTYyIDE2LjQ4MzYgNyAxNi44MTE4QzUuNzM0MzggMTYuNDgzNiA0LjU4NTk0IDE1Ljg3NDMgMy41NTQ2OSAxNC45ODM2QzIuNTIzNDQgMTQuMDkzIDEuNzE0ODQgMTMuMDE0OSAxLjEyODkxIDExLjc0OTNDMC41NDI5NjkgMTAuNDgzNiAwLjI1IDkuMTcxMTQgMC4yNSA3LjgxMTc3VjMuMzExNzdMNyAwLjI4ODMzTDEzLjc1IDMuMzExNzdWNy44MTE3N1pNNyAxNS4zQzcuOTE0MDYgMTUuMDQyMiA4Ljc2OTUzIDE0LjUzODMgOS41NjY0MSAxMy43ODgzQzEwLjM4NjcgMTMuMDM4MyAxMS4wMzEyIDEyLjE0NzcgMTEuNSAxMS4xMTY1QzExLjk5MjIgMTAuMDg1MiAxMi4yMzgzIDkuMDMwNTIgMTIuMjM4MyA3Ljk1MjM5VjQuMjYwOTlMNyAxLjk0MDY3TDEuNzYxNzIgNC4yNjA5OVY3Ljk1MjM5QzEuNzYxNzIgOS4wMzA1MiAxLjk5NjA5IDEwLjA4NTIgMi40NjQ4NCAxMS4xMTY1QzIuOTU3MDMgMTIuMTQ3NyAzLjYwMTU2IDEzLjAzODMgNC4zOTg0NCAxMy43ODgzQzUuMjE4NzUgMTQuNTM4MyA2LjA4NTk0IDE1LjA0MjIgNyAxNS4zWk02LjI2MTcyIDQuNzg4MzNINy43MzgyOFY5LjI4ODMzSDYuMjYxNzJWNC43ODgzM1pNNi4yNjE3MiAxMC44SDcuNzM4MjhWMTIuMzExOEg2LjI2MTcyVjEwLjhaJwogICAgICAgIGZpbGw9J2N1cnJlbnRDb2xvcicKICAgIC8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-collaboration-v1.12.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-collaboration/releases/tag/v1.12.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": true,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmC6YyUACgkQ0bVLR6XO/sSrLw//ZVqAAb5mye3zhn6z65e+nn0fruCgjkyxOtQ2FE4hMAF+MqbkB4DOinXJxWIkKVVfJUqb6EeEQHoAAEOANVbxuHmmWi35Uhw9HqTL+sJzMXs8wRVKaAp5y3/syow4vdz0dYvw5XHtaP0TKE2lL7rzeV9//KkK5TQX5ob/16UFzo/BCSeG6J4+tN5C24+fFOixccvzp50sKIQKgwcJ/w5SkDIJqpnzOedUkTMGwJsBqLUxMKhnOpIAClF96zrSnPIqQSFMWm186ybMIyrG17PBOsmmIw4+7VirsAj8ZSH2KOXA56xqN1K1E7zHKfB2KgNwDf6c6cioLvBk1ifYXq1janK2cLcGfoFekmL38Wrt6Nk1J5ZsJQb0RXEX/jTQanc3WQGS/dDZqyff9mDQKRKgjxKhiNvxuFmI2EM0qZEcQVhNxsyu5qki5nm6q6/c/mJDIu7tKI9lSgPfn5S0ErZwS8ZV8j0qDD+ubXicRWBspqOaRGbptZQiNaWy/7Pa2edkrlDDxOPGzBP7y3JuAjQc9iXlc5taA6VkJOigBbIr3DhUSfqlMZFShplMAbVpQu94HBdst1yszHygzFWnUviar4flC9BY4lKsUAh/p3BjkLDwj5HEnmAWQXPIL2Xb2EB1HBjLUZAyJmmeXOcBV9e4a/iUeelrEL+xLVBWQ/6V3j0=",
+    "repo_name": "mattermost-plugin-incident-collaboration",
+    "manifest": {
+      "id": "com.mattermost.plugin-incident-management",
+      "name": "Incident Collaboration",
+      "description": "This plugin allows users to coordinate and manage incidents within Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-collaboration/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-incident-collaboration/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-collaboration/releases/tag/v1.12.0",
+      "icon_path": "assets/incident_plugin_icon.svg",
+      "version": "1.12.0",
+      "min_server_version": "5.28.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnabledTeams",
+            "display_name": "Enabled Teams:",
+            "type": "custom",
+            "help_text": "",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnableExperimentalFeatures",
+            "display_name": "Enable Experimental Features:",
+            "type": "bool",
+            "help_text": "Enable experimental features that come with in-progress UI, bugs, and cool stuff.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-collaboration-v1.12.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmC6YyIACgkQ0bVLR6XO/sR1bg/+PEsID+KTMu16TSeKfrrkKttzbu5MooSfhVMYaYI80Iw2ARx22kMaYmcV3GtciSGJ0wLXr9D6bhOaTetVwnYlSlgNtlMiT/PevYrTnT5OYUrYVshreQvvXdRLaHvauJ9jBRwQ/4PpBuaYtCFtwGMYPe3WZgTdSrqgsE6acJQr6iRcKRVgN06ilRaSxiCa7xibW9P9TITjL4TyhA3MiGg78jnQGBclw/0Plnk63BZ3ydvF5p+c695+h93QUDztgbAVoIfAAs4TJm1MsCu0MDlpgp6lmoAcG7pJ2EZUsrfffkKtagXMM//VXnGf5jKJW4YfvtWNZiYHUrNuh+FBXz8CwpApvg4PVIZSVsybcFFpZA11bQ9YDynjLcQDp0sB0zcmYUATcstD9+97w4Ve7A1PX0as3wXUS9vEBk8r/ee1vrgnA4Td077CMHsyX+sm5wMqnZ1OMzPwqF8z4RcarYAIHlQuRS7vQCaLqVwf2stNTsSAC2JMm1HaI8u8Bg9ACRifmA7asmES3yNMV9RLGkNyF3N5MIP0ypUwSyxOvyiltNyZ/snjCo0/um/6I2s1VUJIG/FF1+GkAvlruim/zq1y+SIiWc60q4re3AnMgEupnd+woS2skbP+OMyTDiMNAfqczJSc9KlGewfgdOyZxNssAV+HKe0dFyh0kE3RvtuYDN4="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-collaboration-v1.12.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmC6YyMACgkQ0bVLR6XO/sQm8BAAmaArDZMPL+OHToowFQtsctNNnpaoVceZb1itfP+0ml8OH5Mkl4BPTePNUTzmgvb18blogO87Et+6cGSyj9cyvYOS1ATwaAsMGVvZJ7vveU8Cv1jLKLh0P8Y+lv9nUJY8QADya6tR1Y3+JtrQNNLr6A19bS8nyVusiapbzaf9oITngLJRMHiToaaNz74MVyc8gFhwJunYWo78jyz0/8CFkByjs/dfjCCDgCEJArHmjTypD5YPHkmIOkcmg/SgNSuiXoGv9KxvyOXKxru5mNMcWwpGgxw2YlwXeRggB3GLnh3bbWujf2CqXmC3NIQ3VPm5U9EsPhIWNU4fGh1DdjHA1hqyzu7xZAkhP2QqivOSAXjFttYazhHwwNNdacJFaQlw8DQ6V3ocPqhnMr4Kn0p8/9W0x3QUlpBTQILJSP4nysTWQK4fuvt8L9ef3e+7CNPdV/Ak70cqfGza6V1uJBS4i+fllZEnbi/PHBLV56MPk7MRKt2GXsrgySgdllZH1R3fGVmedICAhkLhvDNBi7MtoYUPTDvAlFLcz3PlxvKUI2QfGRpz5DvqMSUH+2kX0FBztaanpqSNDVyU7kK6aEM0wG5jaibAdVfwXXjBdoc8+MJx0ypZq15wYigOHwSwpOpeAFY0Z0n8XhVBJcZZPgcvMDDG9dI6GZNy2YF4PQW7m4Y="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-collaboration-v1.12.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmC6YyEACgkQ0bVLR6XO/sTf9Q/+Of4kG8oV1jEWrPaUsUJOLRlSjuyqHTXDk63o45Ie+tWAA0fnV6BpTDGCJpgaWh6Ha7W06xnTeXNp9B09lkXGPTF0Nqauji0wMbxKeGwb7l1vDoqDlt/KFpAdvqVYpDpykGtoEaFnJUgekAkgDC53k94ZuWtlrYqEI8n4tnkj0uv2n2pcbi7AzslC4MGL86jbctzen6OyMLjCJEocjd0MSxVXPyYvObvt1Zx0vjgoTZLjxidt8GoW5o6a8TR7DBcDx6LSeAVAbAX21CocEysqnGOVlcvvt2WctSkHGfZBSlg1/DPYWu4xVXGEP+NTiFek7acVJAShiNoermoFO39eIxC+giRQCsNtJB+rD+cnwFGeteQOGbPiy0pC5lIoZg4Fr6YYV6epfs7TzlbSzoSOCzgutKwfhAiN1tJDo1EONpNBbXz6O+Ow1HlJOIx1Iq771UlIK9B00bVT7nNflgf6hHG8757XRLgdEcqxzSqhhm38VdzKNDCxJ4FuIypheeIVUOBcRr1l4FHT/AioYRHnWoHQiJPoqBDIwAzGbxdi8kBWh08DDHrjqvX8jFh2GUDpnLLmI1TMCcav4cTTM6od1XSjOyo+pg4rvzy3LGQbEcYQCkd9xfl328mS7Q/LngPnhfnTTy7uclnOfLM1pT7cOo7+8mLVgnR6wkrHm21gqWM="
+      }
+    },
+    "updated_at": "2021-06-08T14:47:23.438482Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-collaboration/",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9JzE0MCcKICAgIGhlaWdodD0nMTcwJwogICAgdmlld0JveD0nMCAwIDE0IDE3JwogICAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJwogICAgc3R5bGU9J21hcmdpblRvcDogLTFweCcKPgogICAgPHBhdGgKICAgICAgICBkPSdNMTMuNzUgNy44MTE3N0MxMy43NSA5LjE3MTE0IDEzLjQ1NyAxMC40ODM2IDEyLjg3MTEgMTEuNzQ5M0MxMi4yODUyIDEzLjAxNDkgMTEuNDc2NiAxNC4wOTMgMTAuNDQ1MyAxNC45ODM2QzkuNDE0MDYgMTUuODc0MyA4LjI2NTYyIDE2LjQ4MzYgNyAxNi44MTE4QzUuNzM0MzggMTYuNDgzNiA0LjU4NTk0IDE1Ljg3NDMgMy41NTQ2OSAxNC45ODM2QzIuNTIzNDQgMTQuMDkzIDEuNzE0ODQgMTMuMDE0OSAxLjEyODkxIDExLjc0OTNDMC41NDI5NjkgMTAuNDgzNiAwLjI1IDkuMTcxMTQgMC4yNSA3LjgxMTc3VjMuMzExNzdMNyAwLjI4ODMzTDEzLjc1IDMuMzExNzdWNy44MTE3N1pNNyAxNS4zQzcuOTE0MDYgMTUuMDQyMiA4Ljc2OTUzIDE0LjUzODMgOS41NjY0MSAxMy43ODgzQzEwLjM4NjcgMTMuMDM4MyAxMS4wMzEyIDEyLjE0NzcgMTEuNSAxMS4xMTY1QzExLjk5MjIgMTAuMDg1MiAxMi4yMzgzIDkuMDMwNTIgMTIuMjM4MyA3Ljk1MjM5VjQuMjYwOTlMNyAxLjk0MDY3TDEuNzYxNzIgNC4yNjA5OVY3Ljk1MjM5QzEuNzYxNzIgOS4wMzA1MiAxLjk5NjA5IDEwLjA4NTIgMi40NjQ4NCAxMS4xMTY1QzIuOTU3MDMgMTIuMTQ3NyAzLjYwMTU2IDEzLjAzODMgNC4zOTg0NCAxMy43ODgzQzUuMjE4NzUgMTQuNTM4MyA2LjA4NTk0IDE1LjA0MjIgNyAxNS4zWk02LjI2MTcyIDQuNzg4MzNINy43MzgyOFY5LjI4ODMzSDYuMjYxNzJWNC43ODgzM1pNNi4yNjE3MiAxMC44SDcuNzM4MjhWMTIuMzExOEg2LjI2MTcyVjEwLjhaJwogICAgICAgIGZpbGw9J2N1cnJlbnRDb2xvcicKICAgIC8+Cjwvc3ZnPgo=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-collaboration-v1.12.0-alpha.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-incident-collaboration/releases/tag/v1.12.0-alpha.1",
     "hosting": "",
