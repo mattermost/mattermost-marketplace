@@ -2158,6 +2158,56 @@
   {
     "homepage_url": "https://mattermost.com/marketplace/app-framework",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v0.7.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v0.7.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "experimental",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmDIrNwACgkQ0bVLR6XO/sQfKBAAk3sJPeyLfEe0idGAcwRZPZpbbD21kGLzfK0dSDa/snDc0xAWdTRxqUckiFlhLoBTAfbxtSDojMZn/Gu9PEDZ3dXdFKCvUOH9fySNlNIEeY7wa1ILfrYhFmcPPkR0J4ujC3dIz8EhYEV7UWVlpHKSkIrxP2zo/8lt+6pYWtC97rQ+1Zxfk5mw/OiT93iVkXHtDRztOOtNPyGvclh9OZJRg+zslfXLgufaBka3IEDRXTf1mgU20Di51y6NdfwbEpJI1rnWYyuvD+/iYFW/urthuLcf7TW5xhuejB0+RojNJtTRGPxLwoiIRyZEJYgPqMHIZOGh9T4hkjkpfz2ENw9Sd/BmJ6zISFbJyaPCFzUmhbdm1oeODoCUcO2rl6fMBWiQSsbCT+P72vHoUsn+eNnNJ+zHuYFpsXievB83RoGJJqHMWBz3VexM+UltpxD/mlm5lho6bH71k1AATUeJNPZTw6z/yKvJLfb4NqqtzTMBrahp0b9xOjoBIvfTDiBUagzjkr/coleF9YqwsoKi78tefhTGiIWO9CrB9fJUioOqQTP7+9seVtxXlm7Y9Z4uHzQTXbUrZRDMfqCK5evcBt8Cfy1Jrea133RJI+h/jzt84IscAsyRvpq86mgFV7DlBzB+Kx5s6o7dbKKP5UdtBTkkZTZyqjijVKBSsC+t7A4xNAE=",
+    "repo_name": "mattermost-plugin-apps",
+    "manifest": {
+      "id": "com.mattermost.apps",
+      "name": "Apps",
+      "description": "This plugin powers the Mattermost Apps Framework and is required for any Apps to run",
+      "homepage_url": "https://mattermost.com/marketplace/app-framework",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-apps/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v0.7.0",
+      "version": "0.7.0",
+      "min_server_version": "5.35.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "To create your own Mattermost App, check out [the documentation](https://developers.mattermost.com/integrate/apps/)",
+        "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-apps).",
+        "settings": []
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v0.7.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmDIrNsACgkQ0bVLR6XO/sRlAw/+LKoRLwHbkoCCSBs0YRgaGgppaCgDYY7qlhTs4vtFwCFTrIbuhb23LFlf4n0IQe19viZrYV8XP8oRRaML3LAvTtaMw2Jwt+kWTY5wOPu65Beg64y2KjscpaNmBsLX9aqTxLiFP2MhdUDGTFlzct5xhMe5Oc9q8S5Gc3WFtCYSqGi3iZNrBubFgAaakk9SUsLKhMrBl6AriE9XfFTn0hqhQr/ZSywh2aItHmxyxanpe7VidzXh5KLcm+m3CIDGuxwmAXnMxNSa7CNcPkmD09w33Xd4/aA2l7wCUqpXtIoyNEB0PnzfpY7OPLqMvOphE+el8c10y3YvBerrf1Q8GH2SI2taXbd1xnaY3vPOdvMmqQ6i5RAJV6IUMa7t9h/jcfLVkax/N71fW1kbENZsMqDqlQOAjAlrRyrWUtzg0vhZGmrP6AyF3ASeSBwEfFcR9d/35uo9R+t1yYRGX9a9RAlgD4WHAWoKAk5xfP2KAGw/CVE4ntDPk4PBTZ9WgRIOh4rkKopP45/o611Mii9b8V0gfYaeD2QtUnRBU6Gh5bJ1xlQj3EfreW/zDGvfmIO7RyvS28otaa9wBkT5FDU+kXglcCgvqUP/V3nRd5Siw9yGZBMmQXBYla28jd1nrRNX8BgNxePuXURscfGBWTLi1TfmIx3PBPpVjWNFXd8ujPosdCU="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v0.7.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmDIrNgACgkQ0bVLR6XO/sR3mA/+O5PiCv3idnx0G8ALBIvQvfx/I+OpCgWtDm3JifF6KxoHSt926AnYrZ239PGQ1LQ2fqQVQhKIRuVqO/4gQK0yexannrsZrWeOOvupR7z8j+zdTXvD4mLqtnqhOlYCcRpIi/eCZrCVW4U8WXEIJ6bMKSejVE1OjhYBGs8HKvjjabjZh9hrn5eilZoOwMbEOFI/9+KfprWr3PFO5oY0LpJ+g3jTFGxazrOIpcLI+VKKgNgiwEEqQTYlLTW6WS0sbriKnmEUdj9gi4khXu+AzWWh1kRdSc6muIcSQ84ThcIY8aREjyjDilFyeUHQyzBXm0BtDaIaIyb0jIS7qZG+49LG1wHlG6Rtz7KXvQjdqQuNhENGTbhDhc5l5KLO7QfN1WFEsvmkDaMtltPaygbOAcwnkZ26VoNBJ+HDP6vCJFExBqR6YgvVl//v8j532oYOlMxVC9ocR9HQIOWKoj5KHQYb2AVmTu5YH+7UfJxS5j5mvSb3Bl/KLZxlk8tsZB51koxXwBK6myFMmYlQjdCvT/XC39oQezYyUrYOlY1yhgn/D/UArFGwNKPurF9Q4HevjE1/t0d2LLZBDVv8meTL4KO3TXqcuaMBfoHoUle03od0sxcWTY1HIL8B40aXPhSIHteteCPpt6nQcbJylPMPIvuNWCCb6CC2D5GitgI3JgNLQQo="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v0.7.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmDIrNkACgkQ0bVLR6XO/sQuTg/+JftqReK11b5LyAK+IOE46h1Og/Cd2L4AvhW4DVhwMBsl31u/ajiGfwdDjfsCOLOCUuL00BYeb50EWuh/WkxX/FhQrkASyZyEK4BzO+vwMZvs58Pf21OPOlS5TXv1D/XwEem2GWEbx1DoswYFBvn1zJXC9dPs7DcWnBNYEZcEK+Y1JNxOOflLgVLYeyh63FcWT22Wl/raTCismPusy47NahutheOB1uSzVkbzeu2RNq9mxIHwRh/5IgZAgaf9nj6JFSpGhVMzC5cq/coGENjfguc823y7d9HHPjNXxiY4uHApGuIMw/naUksG0RoFgaJF9AKzDJ9PsZhkwnZssTIwp9BlUahrYdLZx5G6OFg+t6B4OVMlaYQQJEo/fRUU6q0if9+9h8aD5ZZAjPJdX2T4WwZUR63C0F91v5SKMY2qUab+L2Rru60waCAHkokv+8GztD0raJaJ17bc2drKwymh++CAvV2LL1jf4L9Bm676qMzMwC8nL63+zlq04J80hANY2+wSQq7phRYoWTji3wTttHCjYVmWpJ1I8qtF/oaeWsf9o7a0MhhayYgMhTxSkS35nrI66Vs1v5Khrm/UFu3eX6Xbo51Kvnf82n5mYflgL5i5pFK+vEX4xQ4itlHmepl+F19gb2TFWYX5OghouqGmc9WcFtA3ryxTD8kUCgXAP94="
+      }
+    },
+    "updated_at": "2021-06-15T13:46:04.831406903Z"
+  },
+  {
+    "homepage_url": "https://mattermost.com/marketplace/app-framework",
+    "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v0.6.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v0.6.0",
     "hosting": "",
