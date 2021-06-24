@@ -5168,6 +5168,60 @@
     "updated_at": "2020-11-23T19:52:34.710703726Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/focalboard",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQxcHgiIGhlaWdodD0iMjQwcHgiIHZpZXdCb3g9IjAgMCAyNDEgMjQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ni4yICg0NDQ5NikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Ymx1ZS1pY29uPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IjA2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjgxLjAwMDAwMCwgLTU3Mi4wMDAwMDApIiBmaWxsPSIjMTg3NUYwIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYyNi4wMDAwMDAsIDUxNy4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMTYuOTA4MTgxLDE1My4xMjc3MDUgQzIxNi45MDgxODEsMTUzLjEyNzcwNSAyMTcuMjgwNTg4LDE2OS40NTI1MjYgMjA1LjkyODc1NCwxODAuNTQzMDM1IEMxOTQuNTc1NDYsMTkxLjYzMzU0NCAxODAuNjMxMzgzLDE5MC42MTk4ODcgMTcxLjU2MDcyMiwxODcuNTU3MDcyIEMxNjIuNDg4NjAyLDE4NC40OTQyNTYgMTUwLjc5NTAzLDE3Ni44NTI1MSAxNDguNTMxMzgxLDE2MS4xNjcwNSBDMTQ2LjI2OTE5MywxNDUuNDgwMTMzIDE1Ni41MDgxODgsMTMyLjczNjYwNyAxNTYuNTA4MTg4LDEzMi43MzY2MDcgTDE3OC44MjA0NjMsMTA1LjA2NjQwNyBMMTkxLjgxNTI2OCw4OS4yNjI5Nzc5IEwyMDIuOTY5OTQ2LDc1LjQ5MTIzMTMgQzIwMi45Njk5NDYsNzUuNDkxMjMxMyAyMDguMDg4NzEzLDY4LjY1MzQxOTMgMjA5LjU0NzY3MSw2Ny4yNDIxNjQ4IEMyMDkuODM2ODM0LDY2Ljk2MjUzNTQgMjEwLjEzMzI5OSw2Ni43NzkwMjg2IDIxMC40MjM5MjMsNjYuNjM3NzU3NiBMMjEwLjYzNTY4Myw2Ni41Mjk5ODM3IEwyMTAuNjczNjU0LDY2LjUxNTQxOTcgQzIxMS4yODcwMyw2Ni4yNTE4MTA4IDIxMS45OTM4NzMsNjYuMTk1MDExIDIxMi42NzU4ODgsNjYuNDI1MTIyNyBDMjEzLjM0MzI5OSw2Ni42NTA4NjUyIDIxMy44NjAyODgsNjcuMTA4MTc1NyAyMTQuMTg3NDIxLDY3LjY3MTgwMzcgTDIxNC4yNTYwNjEsNjcuNzgxMDMzOSBMMjE0LjMxNTkzOCw2Ny45MDYyODQ2IEMyMTQuNDc1MTI0LDY4LjIwNjMwMzYgMjE0LjYwODAyMiw2OC41NDg1NTgzIDIxNC42NzA4Miw2OC45NzA5MTUxIEMyMTQuOTY4NzQ1LDcwLjk3NjM4MiAyMTQuODcwODk3LDc5LjUwOTQ0NzEgMjE0Ljg3MDg5Nyw3OS41MDk0NDcxIEwyMTUuMzQyNjEzLDk3LjIwNDc0MzQgTDIxNi4wMzkyMzIsMTE3LjYzMDc5NSBMMjE2LjkwODE4MSwxNTMuMTI3NzA1IFogTTI0NS43OTA1ODcsNzguMjA0MzI2MSBDMjg3LjA1NzIxMiwxMDguMTU1MjUzIDMwNS45ODI5MTUsMTYyLjUwOTY2OSAyODguNzc0Mjg4LDIxMy4zNDY4NzIgQzI2Ny41OTQxMDQsMjc1LjkxMTAzMSAxOTkuNzA2MjQ1LDMwOS40NjA3MyAxMzcuMTQyOTI1LDI4OC4yODE3MTggQzc0LjU3OTYwNDgsMjY3LjEwMTI1IDQxLjAzMTgxMiwxOTkuMjEzOTM3IDYyLjIxMDU0MDIsMTM2LjY0OTc3OCBDNzkuNDQ4Mjk0Nyw4NS43Mjk1NjAzIDEyNy42MjU0NTksNTQuMDMyNDA1NyAxNzguNjkwNjMyLDU1LjQxNDUzMjIgTDE2Mi4zMjIzMzksNzQuNzU0MTA3NCBDMTMyLjAyODEwNiw4MC4yMzE2MzkgMTA1Ljg3MTQ2LDEwMC45MTk4NDMgOTUuNTkwODQ4OSwxMzEuMjkwMjE1IEM4MC4yOTQ0NTM1LDE3Ni40NzUxMTcgMTA1LjkzMjYyOCwyMjUuOTgyNjI0IDE1Mi44NTU4NDYsMjQxLjg2NjE1NSBDMTk5Ljc3NzYwOCwyNTcuNzUxMTQyIDI1MC4yMTY1MzYsMjMzLjk5ODY2NiAyNjUuNTEyOTMyLDE4OC44MTM3NjQgQzI3NS43NjAwNDYsMTU4LjU0Mzg4NCAyNjcuNjM0ODgyLDEyNi4zMzY5ODggMjQ3LjA1MDM1OSwxMDMuNTk1MjU2IEwyNDUuNzkwNTg3LDc4LjIwNDMyNjEgWiIgaWQ9ImJsdWUtaWNvbiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/focalboard-v0.7.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/focalboard/releases/tag/v0.7.0",
+    "hosting": "cloud",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmDS7gAACgkQ0bVLR6XO/sQufw//QuIE6L6V/CqsMNWyIWmd3wc0CKRpk4FkJRb3GCkPcKEDdie9qdMLJ2J12ddmbfCabmeW1HR+HkRdsQXeFbBbUYI4HADSdbRtHokJclBvuBb0fZv2uSNinhKh9K5HVqKow8vNFAmgDCbFlJeIsB0dvBSntggKui5DxzhtCR5RBtBHOMIrMpMJ0lDEiuvr89NhWOY3Iuh86WpkmEbuw9gKNfg3Q50Vs+pEbIuRHO4WLPz3umw3be4BjLmm7d5ANru2yvB6VSijqbp7qhWDCF1r71Pjwz1kNOt0Gkttt1fxwhI89mFcRuO0wpUjy9sL4aV1/V58jCRiLT5eLw1luv/Dan//Bse2Gti/lzXuMrIivhS5uGxhl6bYriKPqTftW/QMXVEs4ZDD71lM5GVtY+gTiuZExD+UYNZMCtidf+JUvYSj2/WS89Ijz93vEeFUAtdWFtrnRf/B1suzs7LQw1tf1lsEJp8P4ZaGr17ORqeX4/ljbi1NckkuL3JXcCLo7NJNNuqaDMaCQass1n2Me7nKVfkT3pye4bc0CrHxwyr0ei5WqO17xEABGLuKk89yYE0/gzOqe7lLiZdpIWXTqZC1ia2HDeNmwe5KuejFKHGkYtCi8EYlmQVLG2HxsGyPL2swbNP3zHxanWysjGU+vd2CFzrSpCtD5zNVUeaEUe616Rc=",
+    "repo_name": "focalboard",
+    "manifest": {
+      "id": "focalboard",
+      "name": "Focalboard",
+      "description": "This provides focalboard integration with mattermost.",
+      "homepage_url": "https://github.com/mattermost/focalboard",
+      "support_url": "https://github.com/mattermost/focalboard/issues",
+      "release_notes_url": "https://github.com/mattermost/focalboard/releases/tag/v0.7.0",
+      "icon_path": "assets/starter-template-icon.svg",
+      "version": "0.7.0",
+      "min_server_version": "5.36.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/focalboard-v0.7.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmDS7f4ACgkQ0bVLR6XO/sT3Aw//aW6zCj3mpt2VejgX718WIT46fvwKOdUT3hBzdKXYsa5Ag4lc4TD87R8XEYUPLJ5OhxktyGitL2IHYoi+Y1/fpM99FgUB1io+q2PWDZoowufhH9+vs4X9lfL/j+nbFv0PLTOzmZX706jqMUq/kuWTJHLBjyCXJrJZwx8lpgT2W9xVuTHdQcIRhmDKXCCm2EkCCw7cYTAXZVc/u3Kk+kt+ulen8CGwQUnEneb9r7StnDI3Xq8otM4rCVJEnvLlz4sTeUdGLKBX6eIqIcszo96xGJ2p6a4b1LaxOdxMwkUWGDQyE5M7LGcRVHYtZ/XArniRDSn6V+j1opX8VYX8EpXwsYkVpKHLqd8R3RdObvDlnli0i0FOmsVqhUJYVf8Lh0F60Upo2ZcFBzAAjY8Ye4hkPJ/w2d01iQJ6CpcMedwSaGzCiFF51j1EvatQ60nGM3z80GbyATOB98ct4xOW2HGYevVWRnZdMq9tg+HatMLK24OGA9mAz5/yYcbmbvSBtf97yhmoNZ565d1+9y9q86DuGJZA7nXgJ2TtJuSsXWW+vCpXLEoOZSqiC673lglyb/ByhOW7EaHKWL7ix8hyAh5EOHEoIVfMwxFdi9vlX9zvdZAewSAVhh28Hzz1d2LWUVG4Z/1WQaEztqxYi1ZN3bQR3Kjs0/+HVOSmB605xk1S4+0="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/focalboard-v0.7.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmDS7fwACgkQ0bVLR6XO/sSzJg//QxWEv2Y3/1wjP7bOD7MoTPgrRFEY6ROt+cP10D/ktwq1NIPjiquU8CATjULWk7sGpWpM8lG9vO1K4773xE9oud+1U4v5KB+/8zZA0S7NBGNx/NWx5OY4pR5OixHyo7cnKVxDXLY+c/d1Z3zVY0tKYYvHApvUtj/herb5R8FMFSRVp3oyWbUvVIhmeiVftsM7ck82Rm8C1lQ7YR1rxpPD1pgl9+eC72/bzIemYTPDiMPGepEwCGIWuqNJ0jX8Ne3Mm9lPc+VgbaWPiMLhpeJv848jaDw154oUyDzdB5bKpjnysGjXUI/6cPRAddfw65iQy14o85fmPvEygz6RQ9X7nwTLgLlB5/FBk7+uu0G/1L6TM0QaC1cmKZarrqNLdJDdQdQGywovAHDvhTX+Z55910e5l34xuJgPTJt1dZLw4sAQF0sZPTXrQxZrVaRr/MzjU7hzSi0bEZxOhy6Y10swh4JlksF+7YiwWSZIl1LJ+93J7TJYZxvQywwxYY6t+YQDD6T3Rpo0T/Yqy3CGj7xW3NL61xG7ZGywKeVDh1xzkN/reCHY2QWag6J36CoTeppcrB/hvBvUBf4XUG8NGEQAzEGQzDXkwgDMv0IGIyRspvDa7VKfUwgnxddrJPNbqT6IKMrRCxdK2aJpum100MyTmFs9yRsQI81s+Cp/wKYVISI="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/focalboard-v0.7.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmDS7f0ACgkQ0bVLR6XO/sQ/JRAAnoC87dY2MSItAkCdaZwqmE4nWoLE2iFwME/1Etd8WhfCGjXgguWFZkFNotMbOrgSJI6aMuwZMs+gxr0WW2Xv5HWmAdFa2Hbr8b9x/qA4a4j5YJCwTAGJEhiWx5IV7UifS4bKL1gRv59dR6PMXtQSEf9ZY2hUrmPy43UxzzRYTv1PtZqTYW9PJy+yImoT+GLpa3ArnamJmkrMyLZqrn/Fsu3uW6WmH+Ok+wH23pn10i4W2f3jbKUZe/9DI7JRZ+zkXUIxYpoVVYECA4UvCXEv4HpNBoeoC5cAjjplPykK6mJxUxcU5ZsOKsmnHbvs6Wa5SuJDkM87vxrxZyiUEws3hxYDExE1yCbNM9X7mYFabOPcg2FHFP7hMnUSDYUvkVAhDwB7//InqYySN1uR0YechSYnqPrt6BmvnDGKOhEC30k+DHwGRsIz7IiPAiBo1cgJCKIKiTPdyJ6tne3V7kMOuwloJ9/exulI1n9gcrXIeFrzIfeouYVsi+SC4WuZQYFYBCvMdQMtYzy35+b1QjBDRJbQ+bcEPifxXCSR0Kw7p+EPG8f/p3X4O8EKLJxDpD7aT6qyTi5clMViBxCdkRuHq7qEbdoShBNA3kjZvTr7bniU4Jd7DZmvUf+vL4w8pu3h4sdc0+FULOE7PerUlT+B8tzSE9u7vxYawnFQBdXfJ8A="
+      }
+    },
+    "updated_at": "2021-06-24T09:24:16.533009967Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.0.1.tar.gz",
