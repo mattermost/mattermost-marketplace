@@ -1225,6 +1225,396 @@
   },
   {
     "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgd2lkdGg9IjE1MCIKICAgaGVpZ2h0PSIxNTAiCiAgIHZpZXdCb3g9IjAgMCAxNTAgMTUwIgogICBpZD0ic3ZnMiIKICAgdmVyc2lvbj0iMS4xIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjAuMSAoM2JjMmU4MTNmNSwgMjAyMC0wOS0wNykiCiAgIHNvZGlwb2RpOmRvY25hbWU9Imljb24uc3ZnIgogICBpbmtzY2FwZTpleHBvcnQtZmlsZW5hbWU9Ii9ob21lL2Ntb3Vzc2V0L2dvL3dvcmtzcGFjZS9naXRodWIvbW91c3NldGMvbWF0dGVybW9zdC1wbHVnaW4tZ2lwaHkvYXNzZXRzL2ljb24ucG5nIgogICBpbmtzY2FwZTpleHBvcnQteGRwaT0iOTYiCiAgIGlua3NjYXBlOmV4cG9ydC15ZHBpPSI5NiI+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJiYXNlIgogICAgIHBhZ2Vjb2xvcj0ibm9uZSIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSIyLjM0IgogICAgIGlua3NjYXBlOmN4PSItNTMuNTU4MDA3IgogICAgIGlua3NjYXBlOmN5PSIxMzIuODU3MTUiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5pdHM9InB4IgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9ImxheWVyMiIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgZml0LW1hcmdpbi10b3A9IjAiCiAgICAgZml0LW1hcmdpbi1sZWZ0PSIwIgogICAgIGZpdC1tYXJnaW4tcmlnaHQ9IjAiCiAgICAgZml0LW1hcmdpbi1ib3R0b209IjAiCiAgICAgc2hvd2JvcmRlcj0idHJ1ZSIKICAgICBib3JkZXJsYXllcj0iZmFsc2UiCiAgICAgdW5pdHM9InB4IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSIxMDA2IgogICAgIGlua3NjYXBlOndpbmRvdy14PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIwIgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtcm90YXRpb249IjAiIC8+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGcKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDEiPgogICAgPGNpcmNsZQogICAgICAgc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGlkPSJwYXRoNDE1MyIKICAgICAgIGN4PSI3NS43NDI1NjkiCiAgICAgICBjeT0iNzUuMjI3NzIyIgogICAgICAgcj0iNzQuNSIgLz4KICA8L2c+CiAgPGcKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjIiCiAgICAgaW5rc2NhcGU6bGFiZWw9IkxheWVyIDIiPgogICAgPHRleHQKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc2l6ZTo5LjMyODExcHg7bGluZS1oZWlnaHQ6MCU7Zm9udC1mYW1pbHk6c2Fucy1zZXJpZjtsZXR0ZXItc3BhY2luZzowcHg7d29yZC1zcGFjaW5nOjBweDtmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjAuNzc3MzQzcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIHg9IjE2LjU3NzY3MSIKICAgICAgIHk9IjkyLjc1OTQwNyIKICAgICAgIGlkPSJ0ZXh0NDE1OCI+PHRzcGFuCiAgICAgICAgIHNvZGlwb2RpOnJvbGU9ImxpbmUiCiAgICAgICAgIGlkPSJ0c3BhbjQxNjAiCiAgICAgICAgIHg9IjE2LjU3NzY3MSIKICAgICAgICAgeT0iOTIuNzU5NDA3IgogICAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC12YXJpYW50Om5vcm1hbDtmb250LXdlaWdodDpib2xkO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1zaXplOjYzLjE1OTFweDtsaW5lLWhlaWdodDoxLjI1O2ZvbnQtZmFtaWx5OkNhbGlicmk7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjonQ2FsaWJyaSBCb2xkJztmaWxsOiMzMzk3Y2Q7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjAuNzc3MzQzcHgiPi9naWY8L3RzcGFuPjwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-giphy-moussetc-v2.1.0.tar.gz",
+    "release_notes_url": "https://github.com/moussetc/mattermost-plugin-giphy/releases/v2.1.0",
+    "hosting": "",
+    "author_type": "community",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmEJOgAACgkQ0bVLR6XO/sS+qxAAheZR8zPzl70kp6KCFnn25BnzjCun6yA9U3vT3+4ueejxgcePVFLlNf0OQVMqcyCZmsYpugo0X9EqIElJEotplpXKXndQdRdY8RiU/6TA9SB3VlykEeahieIHnIfl4mbX1gshB/6FLKw+HRLkya+Z3K586B9qKq3a4vNhIAoFtJoqDqq+iowSAdSKaJuFlKmFwjB111Tr9gZ5eTqTkutQ5Ljvdtb5vYQszh6Ubp3XTjwQ0fKcKyLlUcg6EAtKAPJIwqh3/pXKwdyd/U9x/QGeYmzUhqs7ocpcCe5PI/hHeyn8dqIosle4sMzQCm+/r9IYTvSoZUSpPKMZtajYDr2OtoTQiVfXdnXWj8D6Pd4dFUtIhV+Gkyi9TCzJYdUDoD7pIIThbbfVFncc1QqCbpQpWenkcIjlzyjcBn1RfJZqXeazgBGl2l8T0uNiL6tCWFLAgTGENiwj4I/wnZpD/5Zghrsj9octjs07fEjXyJsGsLa8vQULnIVge+sXb1JX5qqvYIxjlVPDJLqGNMmxKi6Am9BzC8De3tdqM1DieMCpmWZbIz6QyTG2KPRFg4EAhR+N9HSmM/ISOs43y7E8CgWjiOdkFfq1uB28NhfEDYHzVtzulAwY60SKSbG6+Woq85SJmUd6ge/QEzbKYMNBa/o8MQpxY5vytCuIMOnXdjFOnw4=",
+    "repo_name": "mattermost-plugin-giphy-moussetc",
+    "manifest": {
+      "id": "com.github.moussetc.mattermost.plugin.giphy",
+      "name": "GIF commands",
+      "description": "Add GIF slash commands from Giphy, Gfycat or Tenor",
+      "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
+      "support_url": "https://github.com/moussetc/mattermost-plugin-giphy/issues",
+      "release_notes_url": "https://github.com/moussetc/mattermost-plugin-giphy/releases/v2.1.0",
+      "icon_path": "assets/icon.svg",
+      "version": "2.1.0",
+      "min_server_version": "5.20.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": "server/dist/plugin-freebsd-amd64.exe"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "Powered by GIPHY, Tenor ,and Gfycat.\n\n * To report an issue, make a suggestion or a contribution, or fork your own version of the plugin, [check the repository](https://github.com/moussetc/mattermost-plugin-giphy).\n",
+        "settings": [
+          {
+            "key": "DisplayMode",
+            "display_name": "Display the GIF as:",
+            "type": "radio",
+            "help_text": "It is not yet possible to collapse an embedded image in Mattermost: use the Full URL option if preferred and keep an eye on [this issue](https://github.com/moussetc/mattermost-plugin-giphy/issues/12).\n\n To enable link previews, go to **System Console > Site Configuration > Posts > Enable Link Previews**.",
+            "placeholder": "",
+            "default": "embedded",
+            "options": [
+              {
+                "display_name": "Embedded image (the GIF cannot be collapsed)",
+                "value": "embedded"
+              },
+              {
+                "display_name": "Collapsible image preview (the full URL is displayed, requires link previews to be enabled)",
+                "value": "full_url"
+              }
+            ]
+          },
+          {
+            "key": "Provider",
+            "display_name": "GIF Provider:",
+            "type": "radio",
+            "help_text": "",
+            "placeholder": "",
+            "default": "gfycat",
+            "options": [
+              {
+                "display_name": "Gfycat (No API Key required)",
+                "value": "gfycat"
+              },
+              {
+                "display_name": "GIPHY (API Key required below)",
+                "value": "giphy"
+              },
+              {
+                "display_name": "Tenor (API Key required below)",
+                "value": "tenor"
+              }
+            ]
+          },
+          {
+            "key": "APIKey",
+            "display_name": "GIPHY/Tenor API Key:",
+            "type": "text",
+            "help_text": "Configure your own API key (not required for Gfycat). To get your own API key, follow [these instructions for Giphy](https://developers.giphy.com/docs/api#quick-start-guide) or [these for Tenor](https://tenor.com/developer/keyregistration).",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "Rating",
+            "display_name": "Content Rating (GIPHY and Tenor only):",
+            "type": "dropdown",
+            "help_text": "Choose the MPAA-style rating or leave empty to disable filtering.",
+            "placeholder": "",
+            "default": null,
+            "options": [
+              {
+                "display_name": "G",
+                "value": "g"
+              },
+              {
+                "display_name": "PG",
+                "value": "pg"
+              },
+              {
+                "display_name": "PG-13",
+                "value": "pg-13"
+              },
+              {
+                "display_name": "R",
+                "value": "r"
+              }
+            ]
+          },
+          {
+            "key": "RenditionGfycat",
+            "display_name": "Gfycat display style:",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from Gfycat (more info [here](https://developers.gfycat.com/api/#best-format-to-use)).",
+            "placeholder": "",
+            "default": "gif100px",
+            "options": [
+              {
+                "display_name": "Height set to 100px.",
+                "value": "gif100px"
+              },
+              {
+                "display_name": "Weight <= 1mb.",
+                "value": "max1mbGif"
+              },
+              {
+                "display_name": "Weight <= 2mb.",
+                "value": "max2mbGif"
+              },
+              {
+                "display_name": "Weight <= 5mb.",
+                "value": "max5mbGif"
+              },
+              {
+                "display_name": "Static preview image.",
+                "value": "posterUrl"
+              }
+            ]
+          },
+          {
+            "key": "Rendition",
+            "display_name": "GIPHY display style:",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from GIPHY (more info [here](https://developers.giphy.com/docs/optional-settings/#rendition-guide)).",
+            "placeholder": "",
+            "default": "fixed_height_small",
+            "options": [
+              {
+                "display_name": "Height set to 200px. Good for mobile use.",
+                "value": "fixed_height"
+              },
+              {
+                "display_name": "Static preview image for fixed_height.",
+                "value": "fixed_height_still"
+              },
+              {
+                "display_name": "Height set to 100px. Good for mobile keyboards.",
+                "value": "fixed_height_small"
+              },
+              {
+                "display_name": "Static preview image for fixed_height_small.",
+                "value": "fixed_height_small_still"
+              },
+              {
+                "display_name": "Width set to 200px. Good for mobile use.",
+                "value": "fixed_width"
+              },
+              {
+                "display_name": "Static preview image for fixed_width.",
+                "value": "fixed_width_still"
+              },
+              {
+                "display_name": "Width set to 100px. Good for mobile keyboards.",
+                "value": "fixed_width_small"
+              },
+              {
+                "display_name": "Static preview image for fixed_width_small.",
+                "value": "fixed_width_small_still"
+              },
+              {
+                "display_name": "File size under 2mb.",
+                "value": "downsized"
+              },
+              {
+                "display_name": "File size under 8mb.",
+                "value": "downsized_large"
+              },
+              {
+                "display_name": "Static preview image for downsized.",
+                "value": "downsized_still"
+              },
+              {
+                "display_name": "Original file size and file dimensions. Good for desktop use.",
+                "value": "original"
+              },
+              {
+                "display_name": "Preview image for original.",
+                "value": "original_still"
+              },
+              {
+                "display_name": "Duration set to loop for 15 seconds. Only recommended for this exact use case.",
+                "value": "looping"
+              }
+            ]
+          },
+          {
+            "key": "RenditionTenor",
+            "display_name": "Tenor display style:",
+            "type": "dropdown",
+            "help_text": "Select the style to display GIFs from Tenor (more info [here](https://tenor.com/gifapi/documentation#responseobjects-gifformat)).",
+            "placeholder": "",
+            "default": "mediumgif",
+            "options": [
+              {
+                "display_name": "Original: High quality GIF format, largest file size available. Use this size for GIF shares on desktop.",
+                "value": "gif"
+              },
+              {
+                "display_name": "Medium: Small reduction in size of the original format.",
+                "value": "mediumgif"
+              },
+              {
+                "display_name": "Tiny: Reduced size of the original format, up to 220px wide. Good for mobile.",
+                "value": "tinygif"
+              }
+            ]
+          },
+          {
+            "key": "Language (GIPHY&Tenor only)",
+            "display_name": "Language:",
+            "type": "dropdown",
+            "help_text": "Select the language used to search GIFs (more info [here](https://developers.giphy.com/docs/optional-settings/#language-support)).",
+            "placeholder": "",
+            "default": "en",
+            "options": [
+              {
+                "display_name": "English",
+                "value": "en"
+              },
+              {
+                "display_name": "Español",
+                "value": "es"
+              },
+              {
+                "display_name": "Français",
+                "value": "fr"
+              },
+              {
+                "display_name": "Português",
+                "value": "pt"
+              },
+              {
+                "display_name": "Bahasa Indonesia",
+                "value": "id"
+              },
+              {
+                "display_name": "العربية",
+                "value": "ar"
+              },
+              {
+                "display_name": "Türkçe",
+                "value": "tr"
+              },
+              {
+                "display_name": "ไทย",
+                "value": "th"
+              },
+              {
+                "display_name": "Tiếng Việt",
+                "value": "vi"
+              },
+              {
+                "display_name": "Deutsch",
+                "value": "de"
+              },
+              {
+                "display_name": "Italiano",
+                "value": "it"
+              },
+              {
+                "display_name": "日本語 (にほんご)",
+                "value": "ja"
+              },
+              {
+                "display_name": "Chinese Simplified",
+                "value": "zh-CN"
+              },
+              {
+                "display_name": "Chinese Traditional",
+                "value": "zh-TW"
+              },
+              {
+                "display_name": "русский",
+                "value": "ru"
+              },
+              {
+                "display_name": "한국어",
+                "value": "ko"
+              },
+              {
+                "display_name": "Polszczyzna",
+                "value": "pl"
+              },
+              {
+                "display_name": "Nederlands",
+                "value": "nl"
+              },
+              {
+                "display_name": "Română",
+                "value": "ro"
+              },
+              {
+                "display_name": "magyar",
+                "value": "hu"
+              },
+              {
+                "display_name": "Svenska",
+                "value": "sv"
+              },
+              {
+                "display_name": "čeština",
+                "value": "cs"
+              },
+              {
+                "display_name": "हिन्दी, हिंदी",
+                "value": "hi"
+              },
+              {
+                "display_name": "বাংলা",
+                "value": "bn"
+              },
+              {
+                "display_name": "dansk",
+                "value": "da"
+              },
+              {
+                "display_name": "فارسی",
+                "value": "fa"
+              },
+              {
+                "display_name": "Filipino",
+                "value": "tl"
+              },
+              {
+                "display_name": "suomi",
+                "value": "fi"
+              },
+              {
+                "display_name": "עברית",
+                "value": "he"
+              },
+              {
+                "display_name": "بهاس ملايو",
+                "value": "ms"
+              },
+              {
+                "display_name": "Norsk",
+                "value": "no"
+              },
+              {
+                "display_name": "Українська",
+                "value": "uk"
+              }
+            ]
+          },
+          {
+            "key": "DisablePostingWithoutPreview",
+            "display_name": "Force GIF preview before posting (force /gifs):",
+            "type": "bool",
+            "help_text": "If deactivated, both /gif (no preview before posting) and /gifs (preview) will be available. This option is activated by default to prevent the accidental posting of inappropriate GIFs from a provider that does not allow content rating.",
+            "placeholder": "",
+            "default": true
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-giphy-moussetc-v2.1.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmEJOf0ACgkQ0bVLR6XO/sQTyw/8ChIlDIbvuz1sWF+QOA/wnJcXZF5Ywf3WO2Etvd6c2aRaa46s85Ef17mf5z0HDaD58ytzGEvihIsOJue/hLwKn6k9Me0+P9tgkwhQlaUeBqfEM7FsDRxASyh7ep1sm3i1GrEvw1/eLnOPbWnp7Yv+K9SFZEc1WszAhtX4VHYwzAV8xwekUD13ehTcglQoL4gR3BjzAIonym2AAaDL5YO94uiGj6FOeOTvfG1yF5tGFwM0WaY/EX2S/4yYLEA5ueL+rSYCpMG8qyCu42M5SOiRlikbXItso8hc/ui2AMQncwebtjUNDrz518yKc8bkHs4cED6Zjq+pk/JREQawZIjICOQF6DE0VrXrqIAnadZoZgX0aUKZrP2aMyeO59+v+XeYeWIzgWWTTlUSohlZlJnqvH0NjxOzAUouKUABQfJDMjIiMjkEWCJjB22a/9E8oTfa9lOQfOubX1/XErbPJ+r9tpVfVpIsFBUVo5UHJI7qUYlmE/jqscH7TbypLDds1hWMm+MGiTCSzXqt6YiOaFaM94giTW/mvg+V1BAqg0buCgjPZ1adfOW70xpfqR1V6WU5YSERdhyx16hfFlueXx2g+9kJjcPDyKUr+4c+6KkX5P+VwQj5Uj2iuz2eGstdBgPKQdh2sLycJdcoCSTOmrzOTa3P4t6sdbV197AOQ89syoo="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-giphy-moussetc-v2.1.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmEJOf4ACgkQ0bVLR6XO/sTSUA//QHmW7y9atuzu5yhyvGsbbp7sXe9b6wP30incp8siFiFpoPpjMzCY+9dVioEeEpmNlhda2S9Gwgtk4u0DlnjWu8rf1k1EgT8fej2zGYoo2Bag0Gn7IxOW6G5kJwA72IUvejq/rMOUWPutZVwOcfQnNsrF2nvwTUP5a+/GmGTnSmlS0jEpVcFJhGH+r92t4LUseWhc0/ANzmYsLLkmPafZTb3QKKaD4ejy3HlQ72tIpjzNqvoXu4OXxMg2irNHGJ1vmEVp4F3eJq+ay/89i61dX9YIvhtjjZwoDMKtBuos3cq6GZG2tCqVipVnAh1K99vdfjMo1u2T7/C8iRg5IMiRhJ0QotuwOkKM5kSn9BYSvjMqHE2wfnNsd8JwH2FJotRgk51uLeucmGoNrlUgA3amWrsQ87UG5/86yHVixpIQ+gSNx0/hhoG+gU8JzeqMkmDercsr/T9wDK2FvDUe8HRrkcwltt0kdPck0xT3cicTNX2jflDU3Kc3SOCHsmiib0lz8vMA7+P5tWCSpZhI4FhGJD02CF79qyP+XVeBpQ5jYOIP8QasztyJ38OrSreaw6K9VzFLd3WIEVe4jwDLxQiCj2asrchlFhw9pPHpUsDOWtAe6JlKYsjrwLRc3/xNI102ePUbyvyHG31hdxLA55vQWjWGENgk5GCyJ3vBu5sUCC4="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-giphy-moussetc-v2.1.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmEJOfwACgkQ0bVLR6XO/sSA6g/8D/VGh+dOYY/Idie/ZniN323kPGJHl8p2D0mVnOa9Y4aOOtfqP6EJ65pwVMMe0SrQEu+WTHVICgJs+FMhNWfp9iWZ2PjOXI8Yop6Cln0s1c7H+aWhcwZed0GoehiSmC5ENQX2EwC+3ZURAERbshdlqWQVL8pq8iEnHknkYYcpQmXJdhEYQB5+K072Yvn1dpEC3RxQ8ba9ZS2nDWqA6sdcJ/Z0j7Ubm4oHykebNH4Qvxd42MINPzHjpHzcAz0JaFjoyBXHr2UInrofwFnuz9FpFqRIy85Vv19kIqeU327JBmqQRKDFeJbuO8Ez7dHlHzvaNKoIjNuwYpfljPBfDK+wRHoJDhRxdPpHqHopItJMeqU+uaOKaDvmiNs5pt6RQ9kjGe9plhtp62bZ8C+pd9RFV3hRrbCOIp38Z4tD8yEc5Fsvj4CV5WG2FPVOavE2OdLdhf64OLwlaBH7dOJK/5Uov/2DE2E14wGSqoKpdJ9zO3kHw0jLiA1Zhe2iz9oeABkpn8kHJRscRcAiSn/7xPMVN4FWkkTUmEe/NSXQ4PyVCsxiTr/uSi/44/8hQh1KbzB5qRcOvNIE2X9LCj2diIQTY4SMyQ0A0qSW1ZzX/ySrLnd6+7sdpAgIp584nLGd4xY2oLWnWPbqQC1KeMi2njd7ksUaxp75wLrQh4NsuCfFl0g="
+      }
+    },
+    "updated_at": "2021-08-03T13:11:32.833365925Z"
+  },
+  {
+    "homepage_url": "https://github.com/moussetc/mattermost-plugin-giphy/",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnMiIKICAgdmlld0JveD0iMCAwIDE1MCAxNTAiCiAgIGhlaWdodD0iMTUwIgogICB3aWR0aD0iMTUwIj4KICA8ZGVmcwogICAgIGlkPSJkZWZzNCIgLz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE3Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIGlkPSJsYXllcjEiPgogICAgPGNpcmNsZQogICAgICAgcj0iNzQuNSIKICAgICAgIGN5PSI3NS4yMjc3MjIiCiAgICAgICBjeD0iNzUuNzQyNTY5IgogICAgICAgaWQ9InBhdGg0MTUzIgogICAgICAgc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICA8L2c+CiAgPGcKICAgICBpZD0ibGF5ZXIyIj4KICAgIDx0ZXh0CiAgICAgICBpZD0idGV4dDQxNTgiCiAgICAgICB5PSI5OC4yOTA2MDQiCiAgICAgICB4PSIxNi4yMzkzMTciCiAgICAgICBzdHlsZT0iZm9udC1zdHlsZTpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc2l6ZTo0MHB4O2xpbmUtaGVpZ2h0OjEyNSU7Zm9udC1mYW1pbHk6c2Fucy1zZXJpZjtsZXR0ZXItc3BhY2luZzowcHg7d29yZC1zcGFjaW5nOjBweDtmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjFweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIgogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHRzcGFuCiAgICAgICAgIHN0eWxlPSJmb250LXN0eWxlOm5vcm1hbDtmb250LXZhcmlhbnQ6bm9ybWFsO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zdHJldGNoOm5vcm1hbDtmb250LXNpemU6ODEuMjVweDtmb250LWZhbWlseTpDYWxpYnJpOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246J0NhbGlicmkgQm9sZCc7ZmlsbDojMzM5N2NkO2ZpbGwtb3BhY2l0eToxIgogICAgICAgICB5PSI5OC4yOTA2MDQiCiAgICAgICAgIHg9IjE2LjIzOTMxNyIKICAgICAgICAgaWQ9InRzcGFuNDE2MCI+L2dpZjwvdHNwYW4+PC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-giphy-moussetc-v2.0.0.tar.gz",
     "release_notes_url": "https://github.com/moussetc/mattermost-plugin-giphy/releases/tag/v2.0.0",
@@ -5450,6 +5840,60 @@
       }
     },
     "updated_at": "2020-11-23T19:52:34.710703726Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/focalboard",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQxcHgiIGhlaWdodD0iMjQwcHgiIHZpZXdCb3g9IjAgMCAyNDEgMjQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ni4yICg0NDQ5NikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Ymx1ZS1pY29uPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IjA2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjgxLjAwMDAwMCwgLTU3Mi4wMDAwMDApIiBmaWxsPSIjMTg3NUYwIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYyNi4wMDAwMDAsIDUxNy4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMTYuOTA4MTgxLDE1My4xMjc3MDUgQzIxNi45MDgxODEsMTUzLjEyNzcwNSAyMTcuMjgwNTg4LDE2OS40NTI1MjYgMjA1LjkyODc1NCwxODAuNTQzMDM1IEMxOTQuNTc1NDYsMTkxLjYzMzU0NCAxODAuNjMxMzgzLDE5MC42MTk4ODcgMTcxLjU2MDcyMiwxODcuNTU3MDcyIEMxNjIuNDg4NjAyLDE4NC40OTQyNTYgMTUwLjc5NTAzLDE3Ni44NTI1MSAxNDguNTMxMzgxLDE2MS4xNjcwNSBDMTQ2LjI2OTE5MywxNDUuNDgwMTMzIDE1Ni41MDgxODgsMTMyLjczNjYwNyAxNTYuNTA4MTg4LDEzMi43MzY2MDcgTDE3OC44MjA0NjMsMTA1LjA2NjQwNyBMMTkxLjgxNTI2OCw4OS4yNjI5Nzc5IEwyMDIuOTY5OTQ2LDc1LjQ5MTIzMTMgQzIwMi45Njk5NDYsNzUuNDkxMjMxMyAyMDguMDg4NzEzLDY4LjY1MzQxOTMgMjA5LjU0NzY3MSw2Ny4yNDIxNjQ4IEMyMDkuODM2ODM0LDY2Ljk2MjUzNTQgMjEwLjEzMzI5OSw2Ni43NzkwMjg2IDIxMC40MjM5MjMsNjYuNjM3NzU3NiBMMjEwLjYzNTY4Myw2Ni41Mjk5ODM3IEwyMTAuNjczNjU0LDY2LjUxNTQxOTcgQzIxMS4yODcwMyw2Ni4yNTE4MTA4IDIxMS45OTM4NzMsNjYuMTk1MDExIDIxMi42NzU4ODgsNjYuNDI1MTIyNyBDMjEzLjM0MzI5OSw2Ni42NTA4NjUyIDIxMy44NjAyODgsNjcuMTA4MTc1NyAyMTQuMTg3NDIxLDY3LjY3MTgwMzcgTDIxNC4yNTYwNjEsNjcuNzgxMDMzOSBMMjE0LjMxNTkzOCw2Ny45MDYyODQ2IEMyMTQuNDc1MTI0LDY4LjIwNjMwMzYgMjE0LjYwODAyMiw2OC41NDg1NTgzIDIxNC42NzA4Miw2OC45NzA5MTUxIEMyMTQuOTY4NzQ1LDcwLjk3NjM4MiAyMTQuODcwODk3LDc5LjUwOTQ0NzEgMjE0Ljg3MDg5Nyw3OS41MDk0NDcxIEwyMTUuMzQyNjEzLDk3LjIwNDc0MzQgTDIxNi4wMzkyMzIsMTE3LjYzMDc5NSBMMjE2LjkwODE4MSwxNTMuMTI3NzA1IFogTTI0NS43OTA1ODcsNzguMjA0MzI2MSBDMjg3LjA1NzIxMiwxMDguMTU1MjUzIDMwNS45ODI5MTUsMTYyLjUwOTY2OSAyODguNzc0Mjg4LDIxMy4zNDY4NzIgQzI2Ny41OTQxMDQsMjc1LjkxMTAzMSAxOTkuNzA2MjQ1LDMwOS40NjA3MyAxMzcuMTQyOTI1LDI4OC4yODE3MTggQzc0LjU3OTYwNDgsMjY3LjEwMTI1IDQxLjAzMTgxMiwxOTkuMjEzOTM3IDYyLjIxMDU0MDIsMTM2LjY0OTc3OCBDNzkuNDQ4Mjk0Nyw4NS43Mjk1NjAzIDEyNy42MjU0NTksNTQuMDMyNDA1NyAxNzguNjkwNjMyLDU1LjQxNDUzMjIgTDE2Mi4zMjIzMzksNzQuNzU0MTA3NCBDMTMyLjAyODEwNiw4MC4yMzE2MzkgMTA1Ljg3MTQ2LDEwMC45MTk4NDMgOTUuNTkwODQ4OSwxMzEuMjkwMjE1IEM4MC4yOTQ0NTM1LDE3Ni40NzUxMTcgMTA1LjkzMjYyOCwyMjUuOTgyNjI0IDE1Mi44NTU4NDYsMjQxLjg2NjE1NSBDMTk5Ljc3NzYwOCwyNTcuNzUxMTQyIDI1MC4yMTY1MzYsMjMzLjk5ODY2NiAyNjUuNTEyOTMyLDE4OC44MTM3NjQgQzI3NS43NjAwNDYsMTU4LjU0Mzg4NCAyNjcuNjM0ODgyLDEyNi4zMzY5ODggMjQ3LjA1MDM1OSwxMDMuNTk1MjU2IEwyNDUuNzkwNTg3LDc4LjIwNDMyNjEgWiIgaWQ9ImJsdWUtaWNvbiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/focalboard-v0.8.2.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/focalboard/releases",
+    "hosting": "cloud",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmEJmkEACgkQ0bVLR6XO/sS24RAAm0da+OcMhiZAVfl93bCuilWdM+Kid0gwSfLnKMce7CfcjuooOUJ7wAE8AnGHiLyozqW5gQ8oA+psJbL0OG+IHhbibl2FHnFyjnnqF6cKcUdEWqg4pZcOqGHIQ/feCFNmKN/QNUfPN21qYpWqM6PIsefI7E4ZQ4hg4MwK2TnweY7INLfwAnwibfAbeXH/dgjkvxZOmRQ04BtJQkS4L5dMMJjuXXdKKh+D/v2ZKQJra/tu5Nsq+5m43+3J6b7r2t5aCaZK6Qvhw4KxSzjKWE8zVbJXW2/lXHM6l65YbRXd2xsDcOFseHXcHoYQrshwtfM6UoaTgOYkEUMc5rCn9g2PCmmVw+DH5xaP+lwWuU4sZaHlAOkxwn8QWS9w7M2ezwk7UGkXn/DUYJL+ucpiw16S1LjWN/i+7wFRH1XU9BRu6Y2+yY9d+slyo4RPvLefzFy5GM+stcCFqJo0sBGFILejdsGZ0rpd6EJ/xwbcwNbFhCVdLkun+7jpwDLKMWgej4niJdzPeozfKdDOaqAtf9hcjHVtBX6eJrFeb+ZRr3MT43oen1olvAwXMxfNjtZOptRITjssGgJ3nrStxkOnq9yMrhUMF7910Bh6/YpZbHw66Pm+gVwtCLURDuswU5m3tNJ/sOG7nnhK+pt7mDqzpONTsHd9YOBm0lbI5ObO5ig4k+M=",
+    "repo_name": "focalboard",
+    "manifest": {
+      "id": "focalboard",
+      "name": "Focalboard",
+      "description": "This provides focalboard integration with mattermost.",
+      "homepage_url": "https://github.com/mattermost/focalboard",
+      "support_url": "https://github.com/mattermost/focalboard/issues",
+      "release_notes_url": "https://github.com/mattermost/focalboard/releases",
+      "icon_path": "assets/starter-template-icon.svg",
+      "version": "0.8.2",
+      "min_server_version": "5.37.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "For additional setup steps, please [see here](https://focalboard.com/fwlink/plugin-setup.html)",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/focalboard-v0.8.2-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmEJmj8ACgkQ0bVLR6XO/sTMaw//YLtiTsQV99fnINMJL8mkxHZcIJ6uUb7Zc6l4TbGQjScK6ml5UIjjJpqi19M0tafJ8g51F5PjqBrc8iPpCp0IZt9dpjnE/FE/5uC1eDHI092dJy/G3x+RED70v/hyjopxRWRo7PhxeOQz9y3YOXE8+Bb3ap697fx2eSMuWjn2s/PH+ydqZVMLr0QBDlT+EKPNMQXLgr3DirnzsNdtz0PCJkS7teUYEokkOuamRvxyHCVizmsYTTL3ZwA7enGxQuJKxB+gT7uyhmL12HXQRXka/K8B15jk/Af2SIB8eJ5nIJfYqTXhBDSYqhukoIxjNTVRWfCE/zLnx24FxREPQdNEXtgSLVgg8VcdR+GutWgFAolGba0UnrhOESFe8ryrYS3drVu00sg18xuu7Z248JKZ0V8dIehVAswWdGEKQaPmP0o/Ejy3UCS2csE2VdeWdyyddQeVaePCYlLgGxPWe+eWllgKhGCndN54O7QwDbmaoUOeBbGTZbc+pSbRKWWBM82Elr/1wB++xCV63h0Vo5L4UzswU+Wt/yCqKdLT5yv070vzf/kDXh5U/GOo6MSGE+EhDCJfNsa+rBqtuIofZ1jtROSHujA48YsU5ZGaROaZpZZhQEElo/Gr2itKZH7PClRowc+dB4rKUIMd/ztV44DibrOGv69dJy5yUFPpAo/sNZM="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/focalboard-v0.8.2-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmEJmjwACgkQ0bVLR6XO/sQ78Q//fTrvJHcltCuTLk8RBVTfH56xp2tlO+HEjMm7EFwrUy93wMXzVRxykTyCmGbeedubsfqed7AlwHD9HHB0GNTNjdfrjCsj3UvZKD9lIRgTZGHETKHb2ZQULw1x0fHDl5JhfHWJPtfrxgTlwxA/mc5QV0CyzJKayQOHqn/qj4Rj5aWo2/43nfUR38t93VQvFt1xt5HIHCoeBLfkG6rG9OLMwoQnCUbZEHbPOEd97BEnvWReipTCKUyRqdzv8bNvo7dypZ4ZB9ar0p81/Yfjwjr5hRUKaeAfxbSpb98ziOoIoHYaBlsZM09HGwU67XtUcgJZJZjgdXPXtrCQNMtWpVQTQXWp46vQYCTBGwLb++xMC5xFOwAXvaFD3GmbHPZ5gKDt/rEczmUUgrBcJCR7XUOMCFYnbIBZy77yoI7nWx7dFCU3BRtLG/xzVqx50LvDIV3rb0MLrAYriqfCGismo63FAgnd7Mo66//pF2TOcymQMGulXQGaHKmAtXddBEFsTxE2dxaS5wonAWhMybV0FaDTM5eN7zhpSCi72ak49DGvi3pveBAiAw+KNzNH5Yl9LeQZwk4EWXgh4P+IC5zz2PejbfEmLZIwhWaoRphbM9cjsRxD3YMFkvHi1ivmJ5SUke2q8cYx5gla/HiJJH/xLR7DzeOGRLoLtlmCJRkMoHuoCRA="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/focalboard-v0.8.2-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmEJmj0ACgkQ0bVLR6XO/sRf3BAAjVHFProp5BpCMNFuYo4HBU/nxGcMwmSZcmVjAYZ+Ovg9vZGP29gYfDDIl9I8bHxAVtfY1k4NkotD+1LErFajBGqM3Kmu2LZmY7qN4gr6ZEDbYoWKkR0ocWnF+5MdibglT4eTwq3O0dm37UmZzDYc07tmsBqIn5BaSRMV8lWXg12x+kWuyNXYRDs9wor5MQT9MY5MKmUjzmLH76eL3SFRWgwscEgm3KYpCwhuo4M9VXU/spiqRw/MpBxdPcS9rABzAEkeZ3tOiIb4xZxp5YbZVun12VSmOHa+IQBzLErLMVbGSfwHNQZlz5WWttqu3Hkdt3yW9xadDBnIz738V4lcS3LXLJ4XxgufpuAepftzfF1NqW4sRchhC+ZOOn+fJCTz0RCXKMAKjvqR+dK8aIuG2YI5EVL5W0gShOkEZuVub4bl5kYtbBJSaBv9RbuEPiA8n22T1OiGmyRwi0nBF/BS8LkZ57txy431CE3Fo2g+vqonTShq+dkdP0vc5UlNHQr5WBMn/QaTfNoEmAW2W+a/61l5agiLBq66NC8WpxJX19YyUJzG4uWIIjbSmnuNKEdJkog8YoteJzzgNSKUaAINXy6DwoA64BHH9b2jFTR+OuTuJ92jNuOfZ9/RgwZulQmxuQmUozQxeX3fLj+cDR4qSGUvAkxUeDBHtLWrXnlqiEY="
+      }
+    },
+    "updated_at": "2021-08-03T19:36:52.817195Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
