@@ -24,11 +24,8 @@ Please link to an open source repository and release that should be used for rev
 ## Checklist
 <!--
 Go through this checklist and confirm every item.
-
 It's fine if your plugin doesn't fulfill every item (e.g. it isn't production ready yet). You can still submit it! You can also still do code changes while the plugin is in review and fix issues on the fly.
-
 Even if your plugin isn't production-ready, it might still be added to the Marketplace as "Beta". See https://developers.mattermost.com/extend/plugins/community-plugin-marketplace/#beta-plugins for more details.
-
 If your plugin isn't production-ready, please leave a comment stating whether you plan to fulfill the whole checklist or submit a "Beta" plugin.
 -->
 
@@ -41,7 +38,7 @@ If your plugin isn't production-ready, please leave a comment stating whether yo
 - [ ] For the current release and upcoming ones a changelog has to be published, with a link recorded in the `release_notes_url` property of the `plugin.json` manifest.
 - [ ] The plugin has to be out of Beta and be released with at least v1.0.0.
 - [ ] All configuration is accessible via the Mattermost interface.
-- [ ] The plugin ID defined in the manifest must not collide with the ID of an existing plugin in the Plugin Marketplace. It should follow [the documentation's suggested naming convention](https://developers.mattermost.com/extend/plugins/manifest-reference/#id).
+- [ ] The plugin ID defined in the manifest must not collide with the ID of an existing plugin in the Marketplace. It should follow [the documentation's suggested naming convention](https://developers.mattermost.com/extend/plugins/manifest-reference/#id).
 
 **Technical requirements**
 
