@@ -34,7 +34,6 @@ If your plugin isn't production-ready, please leave a comment stating whether yo
 - [ ] The plugin is published under an [Open Source license](https://opensource.org/licenses/alphabetical).
 - [ ] The source code is available in a public Git repository.
 - [ ] There is a public issue or bug tracker for the plugin, which is linked in the plugin documentation and linked via `support_url` in the manifest.
-- [ ] The plugin provides detailed usage documentation with at least one screenshot of the plugin in action, list of features, and a development guide. This is typically a `README` file or a landing page on the web. The link to the documentation is set as `homepage_url` in the manifest. A great example is the [`README` of the GitHub plugin](https://github.com/mattermost/mattermost-plugin-github/blob/master/README.md).
 - [ ] For the current release and upcoming ones a changelog has to be published, with a link recorded in the `release_notes_url` property of the `plugin.json` manifest.
 - [ ] The plugin has to be out of Beta and be released with at least v1.0.0.
 - [ ] All configuration is accessible via the Mattermost interface.
@@ -54,3 +53,15 @@ If your plugin isn't production-ready, please leave a comment stating whether yo
 
 - [ ] The plugin must set a `min_server_version` in the manifest.
 - [ ] The plugin must work on all Mattermost versions greater than or equal to the `min_server_version`.
+
+**Documentation requirements (checked by a Technical Writer)**
+
+- [ ] The plugin must include detailed usage documentation with at least one screenshot of the plugin in action, list of features, and a development guide. This is typically a `README` file or a landing page on the web. The link to the documentation is set as `homepage_url` in the manifest. A great example is the [`README` of the GitHub plugin](https://github.com/mattermost/mattermost-plugin-github/blob/master/README.md). Typical components of documentation include:
+
+    * Requirements/Prerequisites
+    * Installation steps
+    * Configuration steps
+    * Usage
+    * Troubleshooting
+    * Screenshots (if available)
+    * Link or email address for help/support
