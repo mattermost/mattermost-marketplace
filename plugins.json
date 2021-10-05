@@ -4006,6 +4006,59 @@
     "updated_at": "2019-06-12T19:04:44Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-channel-export/",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v1.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-channel-export/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": true,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFcUpwACgkQ0bVLR6XO/sR77Q//WOrM4W7QhPWRbb7bSOl+l4bZLTabKsgQtNGZZCssQtowA94XZDyLw3aHphl5gHEDXMQp61UklqGj3unNXYv2e5ZVn+bMOhcR8CsgwM2Se2EoveWq7y5KD9XOiudwMUisyeUwvJD4zahV/g9fp88N6d55xSHDL4YoVZp65B0Nh2rbFMV2CjePkza63UXGBJgsp4T/eaRr4LXY5tRSHPwDPkNU4gXKaGw7VEih4GFl9hKzz5E54q+AYcT+nbbhcD1637To7aLL9n5NrXezDc+S8OlJl+Waq1n3r251MkpTKfNB/8PU1+9V1+ivfVmz94F8z2jyzrPPyAyVGxmEUSixgaV4nIWZGm/PqGmRlnUOKsQ4hgjLuWlUobRhxkjqBtDQ4nqc+i9kuBgdwx9/IQ5v+ya/F9EAUHws8xx9UkC9G/mGXR5ZN6LcINZAoNErQhBiRukN/m6alaqYRl4bKzUGlF0Yh1CW44WLAlaqGuEGcE7la4+7XDN6YP0qvsjxhUEqpF6YQ7W08yn9uYPCxJlPFSyQuCyzn2zxHuZnLn0fme2m4ADmEgehVfhlrfW8XaIPU33uuuqhztyN1ovUhAvVu/gDKdr/UpUJqnwn32aExpqzj4AvhEopSxyi1mSTHUNNCE8vqHPkO2rimRyYAu5UJtvwRs7Gd6ZZTExiCC6qrPA=",
+    "repo_name": "mattermost-plugin-channel-export",
+    "manifest": {
+      "id": "com.mattermost.plugin-channel-export",
+      "name": "Channel Export",
+      "description": "This plugin allows channel export into a human readable format.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-channel-export/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-channel-export/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-channel-export/releases/tag/v1.0.0",
+      "version": "1.0.0",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": []
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v1.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFcUpoACgkQ0bVLR6XO/sQsKQ/+NukeVNc413uWp1K/nA1zbjJ7ffKXAi7QhkitVoHspGs0Rhlb8D9vVI51W8zfa5XBJnt+42UmOEHZzcYWt+cWzKcZTTDY075CKKRzlzFPY+SGbYBDw0gQJswL+Qu2j1/ZwERo14z4P0eYSQ4X5AhkvWgudOaHx89iCiSvwYu7IQl1bTXhh+hyDhL9VyZ3m8NJT3E3Vm7RpyMonxGLu1qTzlgkhuKtOpqKoartrYSRTYt4wNFs1uFjFVehm1IhzjpBvS38FBgEwuwP2KY5zecwXIbXS9KYBzEKK8pVs6OfyuiA3WSpYPAzuWlMH7OZNoYnV1OY0Pj9b1qgM2voq/kuDWTPUIAJfOM0Q5vQiC9GVxxWX7EZEFtrH2hmkPGL7ZTaacUPh8ZtaE2m1VF/vX5CPSQuDyseU8+VILVYhwvu37JzX7PMrgpMeYkIMK3VtyQirokzEqeW0/VuPrpLUAmFIDlvBF8MlSN62LNyKYkw64WoTL6IOzW/Rud0chwr9gyZPhalUe4fPY6sRg34dWZv4shlVvaN66TOznTyPoSm9NVMaz2oy6U6HVR5jXD69/pS8W5O/bTQ3sfL5etXcQ41hAdv6uAeP04FbnxK9S2MwvYRowKkBbc2liJyZauU+u+my/FLuiVB0WDJCdYZFD/6sMzHdRYnECnoxapyFseS5xo="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v1.0.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFcUpgACgkQ0bVLR6XO/sTbNA/+IZcdG1EG7MErcrqRLlNP91zIvnbs//cF9Rhm0PD6XqBO2VSyYuQXNzMmf66lAPX1/YB+W6uLBZxAlltqn+/im2ib8YKEhDbEoPFTjij23fRC/oeATnmF0a39yxw0492HBeaA4WeC2pF8EUZO1FDfsymwwwc+4YEzHB7LC3Pf9uIqOI8+FA4UKVjAnbw7qp6/3pESnPGQGhh+kniWE9F2Y/m0f3ifKRzCfzEbTI396LHglohhTvIM83TqTvBoYOnwkRJg/KjuVjV3jWNZsHvu4XrvxZ42h4fGLM8mMp0dkFKvG+++7PPV3GOM3UunyunKqMM6JRp9s8wWjLNw+r4urqkP+4Rn2Vbfl3M6PTeIyM26gv1A0zKqfxgwYiMVs31/RDsqYfQ4ZPw8SDhv7K6EOzwHipb38YtzMU2OpKWGrgZGKqrq83OHuPFo7uKzsNWSR5KNcvB00tbhE9rFxK7+DSQPDKrqzkeRRpVDKi/VQzSqqEUMQGiMzjPCtMZXNXb9rCPN0X0Vx+EtoGRpHwh92LtNtan2y5YAYp87PV/mkXJAl4yXaDCqUR/E0vUqUvXGqIspO+aGRIxLmFDx6NhxABPMxagAcg6VQFH4TtIIR6bSVQPV/G3EPXXlfM05NgFkXN2FS7Xzi0qDLa4YPa6k0rMhRX787HOWWhT9PJDaLBk="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v1.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFcUpkACgkQ0bVLR6XO/sS55g//USGmIXmBVX3V5kNE3rg9G6s47853BNyFdZZHKdSJVtr5eCGK8CznifyJ/0lxIaCBLJHd+5gOcnTY0PLFoXRTaW3fHEHe/nJ90EoIsAEWcF+5AD3GUlE3MD2mkHUu9oFY/FDXm4wWneBur6x2Hm9h9Jza0ZgzMRWwE3a6nZ5SA1CLurvzJ0oMdw0/6+TRE6no89z5ejy7Fq/EgCepX0o1gqmtxcI7534YgnK8FwOo4ut3ATKIo+Uc7opJL6an4EOWkUxZ14AVG16o4kWSyS0Y4zTh8V6wQ7FqLGSXSdl5IVaYYeUfgxsaW/5j7KNQPb/r+Wz5ZbkO3SnOrzFfJfAqbsqvOGD9PjiOvTKcekEWDpeIWvjNXNYR1u2fk6GyDas6QH26WQKPq3DQIXqdHtkfu2Wfsazz9jrU29tVKlzuGw33rjYzCnvpO6Tv5V4p8wA9yPu/6/XC6WEu+UX6/Hh2rB081qGXvX5vd4pJWHH9zVpMXBW/m4Ltnh0tGxdujjMJoUMWqqsV4cYbpsgSOtrcUXwWUp/0/VPRWCF7qvZdUJDBGMpYVYZEPnRnLgGUoVAPBfvELQBTqTIG0NBMX125AC4TwKyF6uJqc1KZJF80AgMRVwMFgZqATnHo/jfNENGiVGsGLNrA7Bfb0aRqj59ODhuCcOHI3ET5Sk+y6C7dTlM="
+      }
+    },
+    "updated_at": "2021-10-05T13:28:43.390134836Z"
+  },
+  {
     "homepage_url": "",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-channel-export-v0.2.2.tar.gz",
