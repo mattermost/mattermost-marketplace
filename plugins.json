@@ -9471,7 +9471,7 @@
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTEyIiBoZWlnaHQ9IjkxMiIgdmlld0JveD0iMCAwIDkxMiA5MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjQ1NiIgY3k9IjQ1NiIgcj0iNDU2IiBmaWxsPSIjMkQ4Q0ZGIi8+CjxwYXRoIGQ9Ik0xOTkuNSAzNDkuMTI1QzE5OS41IDMzMy4zODUgMjEyLjI2IDMyMC42MjUgMjI4IDMyMC42MjVINDcwLjI1QzUyOS4yNzUgMzIwLjYyNSA1NzcuMTI1IDM2OC40NzUgNTc3LjEyNSA0MjcuNVY1NjIuODc1QzU3Ny4xMjUgNTc4LjYxNSA1NjQuMzY1IDU5MS4zNzUgNTQ4LjYyNSA1OTEuMzc1SDMwNi4zNzVDMjQ3LjM1IDU5MS4zNzUgMTk5LjUgNTQzLjUyNSAxOTkuNSA0ODQuNVYzNDkuMTI1WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NzYuODE1IDU4My44MjlMNjE4LjI5MyA1MzguNjUzQzYxNC43OTcgNTM1Ljk1NSA2MTIuNzUgNTMxLjc4OSA2MTIuNzUgNTI3LjM3M1Y0MTMuMTI3QzYxMi43NSA0MDguNzExIDYxNC43OTcgNDA0LjU0NSA2MTguMjkzIDQwMS44NDdMNjc2LjgxNSAzNTYuNjcxQzY4MS4zNDUgMzUyLjAxNiA2ODcuNjc5IDM0OS4xMjUgNjk0LjY4OCAzNDkuMTI1QzcwOC40NiAzNDkuMTI1IDcxOS42MjUgMzYwLjI5IDcxOS42MjUgMzc0LjA2MlY1NjYuNDM4QzcxOS42MjUgNTgwLjIxIDcwOC40NiA1OTEuMzc1IDY5NC42ODggNTkxLjM3NUM2ODcuNjc5IDU5MS4zNzUgNjgxLjM0NSA1ODguNDg0IDY3Ni44MTUgNTgzLjgyOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-zoom-v1.5.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-zoom/releases/tag/v1.5.1",
-    "hosting": "",
+    "hosting": "on-prem",
     "author_type": "mattermost",
     "release_stage": "production",
     "enterprise": false,
@@ -9601,7 +9601,7 @@
         "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFTTCQACgkQ0bVLR6XO/sQUuw/+PLuGuayGdCzPEAQ7m2yrLiRxYY+YaHNuFfG/Q8XwE4gLQk5cENZ8q5dAjmcQHLRxVfmnQGRhDUgEbYI1qIXcztEvFUKAwnyzRFtlCEc88aZKnBWYf0FNNJULCs3egsoG9bndl/IfYvSqyvcYh6/DXAOgo2FG7wU2iOw+mT6SMGB5z1bm3XrtoeR6uuwKc2BYyT38Fom3rmEQjc9eemnPaQ5HZRJbjUhLVcQm114c89sBK7QUJ4MU9xcs1kcPD1l6KtgV+6NwoL+tsUCVUVgNQWfzUyLPOLaFwNUrBX/IpHCHvvq2rrSJvrEmrmdhyHBNwb16MCfA+RC7XkdsyRurhhm7vrrC/SjIEhDvvJwwHULbtv+lfp+whJLG3acizjJLzbtMua6uRo0PrBmWRoLHXT1h1h+VS7TAjAG9eRgCpl0hlw4yiwgDmgBEG/6w4huU12iJC0u6po9DW3XvcBXagFRQHboaPkZtLdHOomi/y9L/Vu6c0oZ0YMPr0HHbVFsQ4bwC1k2ExlpK6gNGis8NAkhkqMkEMbq1I5Z44BNaefZhjJWn/2C6Tf2ki+7PEEnQh4RfQGRJJELXJT1cxKApxE7V3izHa/WSehY0ibI33+vZFCvqHMeIdbBnwbm0KFfjepXTMRJxKYUlS2Cv8uMC294vNeBfrarXY261f/7qhzw="
       }
     },
-    "updated_at": "2021-09-28T17:10:29.057845672Z"
+    "updated_at": "2021-10-06T05:48:52.017186294Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-zoom",
