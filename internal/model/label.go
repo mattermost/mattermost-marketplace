@@ -40,7 +40,7 @@ var ExperimentalLabel Label = Label{
 }
 
 var EnterpriseLabel Label = Label{
-	Name:        "E20, Enterprise, Cloud and Professional",
+	Name:        "Enterprise and Cloud",
 	Description: "This plugin only works on self-managed deployments (E20, Enterprise and Professional) and Mattermost Cloud workspaces.",
 	URL:         "https://mattermost.com/pricing/",
 }
