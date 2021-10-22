@@ -117,6 +117,108 @@
     "updated_at": "2019-08-08T23:17:57Z"
   },
   {
+    "homepage_url": "https://github.com/kosgrz/mattermost-plugin-bitbucket",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2Mi40IDU2LjEzIj4KICAgIDxkZWZzPgogICAgICAgIDxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTJ7ZmlsbDojMjY4NGZmO30uY2xzLTN7ZmlsbDp1cmwoI05ld19HcmFkaWVudF9Td2F0Y2hfMSk7fTwvc3R5bGU+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJOZXdfR3JhZGllbnRfU3dhdGNoXzEiIHgxPSI2NC4wMSIgeTE9IjI0LjAxIiB4Mj0iMzIuOTkiIHkyPSI0OC4yMyIKICAgICAgICAgICAgICAgICAgICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAuMTgiIHN0b3AtY29sb3I9IiMwMDUyY2MiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjY4NGZmIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDx0aXRsZT5CaXRidWNrZXQtaWNvbi1ibHVlPC90aXRsZT4KICAgIDxnIGlkPSJMYXllcl8yIj4KICAgICAgICA8ZyBpZD0iQmx1ZSI+CiAgICAgICAgICAgIDxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSIyNC43IDM3LjI1IDM3Ljc1IDM3LjI1IDQwLjkgMTguODcgMjEuMjMgMTguODcgMjQuNyAzNy4yNSIvPgogICAgICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTIiCiAgICAgICAgICAgICAgICAgIGQ9Ik0yLDBBMiwyLDAsMCwwLDAsMi4zMkw4LjQ5LDUzLjg2YTIuNzIsMi43MiwwLDAsMCwyLjY2LDIuMjdINTEuODhhMiwyLDAsMCwwLDItMS42OEw2Mi4zNywyLjMzQTIsMiwwLDAsMCw2MC40LDBaTTM3Ljc1LDM3LjI1aC0xM0wyMS4yMywxOC44N0g0MC45WiIvPgogICAgICAgICAgICA8cGF0aCBjbGFzcz0iY2xzLTMiCiAgICAgICAgICAgICAgICAgIGQ9Ik01OS42NywxOC44N0g0MC45TDM3Ljc1LDM3LjI1aC0xM0w5LjQsNTUuNDhhMi43MSwyLjcxLDAsMCwwLDEuNzUuNjZINTEuODlhMiwyLDAsMCwwLDItMS42OFoiLz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-bitbucket-v1.1.0.tar.gz",
+    "release_notes_url": "",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFyfxkACgkQ0bVLR6XO/sRBYw/+OsV0li5OTL4AGsMvaGdsRXf1wmzNqXG1mpCI/aSVpbaXHjFcU5XiVTnKvEuHBlh+pXuw1vD9F6w93E6koe6IcP4DgD11T3mnDovyULRvXlgDPy5qATsPpkwNNh9nSqwoOma+cqKIVHGWUJo9+LeYwBYSvlw4KpaFmdfJKN+w1KW3ttqiZgIAwjy5t7VEqA7plubxlPVHlHLf9AVk/zsJFlPik1vgEGxFCvW/panb3ZQGXEI9TiZ3YU4MnpdUsL65KPjv8iQxxyGuiW1oVVO6Ov6Z375hCbiGuHwWKQZ1EZLoD1y4Lyn3mhwhMnOo1hJh772huFbCmbdExjK2FXNOk7B4TcT/uZ6BYhYgeKXQs/fXQGSWyzgOQR+sS1k90QunP1uQLnabJhmivlIOF8+DG1p0aLhg/slAUKH6oMd4cq2uizZL08GX8mfIs569EXWUrhDJZyAIti/V9yphvjPQmxtCJyOai8Gvb7+HdJ9e3aYX+d6KnVTKJpGw1QaF7UOZZlTJND3UZk/0OoupUQW3rwk/gCgZLXsY4jz1NOQuSA7JlHxQIUbYBbZqFIDPbcWZbxNnRJwt05NzoaS+oDry7/gg7qAcqD0mkul8z7UJviRS4zzxIddz43D6h1YDzCg8XBM9mFUuhUY3C6lQLqUNxMP7Qbo+RGBqSPVVgZrXve8=",
+    "repo_name": "mattermost-plugin-bitbucket",
+    "manifest": {
+      "id": "bitbucket",
+      "name": "Bitbucket",
+      "description": "Bitbucket plugin for Mattermost.",
+      "homepage_url": "https://github.com/kosgrz/mattermost-plugin-bitbucket",
+      "support_url": "https://github.com/kosgrz/mattermost-plugin-bitbucket/issues",
+      "icon_path": "assets/icon.svg",
+      "version": "1.1.0",
+      "min_server_version": "5.25.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "To set up the Bitbucket plugin, you need to register a Bitbucket OAuth consumer here https://bitbucket.org/YOURWORKSPACE/workspace/settings/oauth-consumers/new.",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/kosgrz/mattermost-plugin-bitbucket).",
+        "settings": [
+          {
+            "key": "BitbucketOAuthClientID",
+            "display_name": "Bitbucket OAuth Client ID (Key)",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with Bitbucket.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "BitbucketOAuthClientSecret",
+            "display_name": "Bitbucket OAuth Client Secret",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with Bitbucket.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret",
+            "type": "generated",
+            "help_text": "The webhook secret set in Bitbucket.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "BitbucketOrg",
+            "display_name": "Bitbucket Organization",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single Bitbucket organization.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories. Enabling private repositories will require existing users to reconnect their accounts to gain access to private repositories. A message will be automatically be sent to affected users next time they load Mattermost alerting them of this.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-bitbucket-v1.1.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFyfxYACgkQ0bVLR6XO/sSlUg//Xr0MtKZ0GvBgxxf4mIqylXF4f+/TVUO4dw3GPge+AFvwGvSu6T/AaZBJVOKR6uceob0WYti6NTUbFYvIGR75DLMzQNj20YuTUDXm1fLx2ABhkGg0BkdriLhM9/q6XPE3s1mWVqciwAwDmcQ4Avo6n0aUoU2WqEIXEMsz+BcassPfop+aP6JkeWyBq7Re2baNuuj3fe5BJ5mzum9C4NB8Jijt1bCtNNuz+VUBU7NHvRtAhQrRJqfs9gCeHdjJBLw7NgoGp4Hfa9I6D8sOoRaIsyt/JUx0C4bz3PqRpzYwbVRxh29aqW9cUbjJiwffIGqdfFKh5fchtPwjBv4H0kp5YnWFy5dbRvKXexVXG+WPbxb3trNmccc2koonSplsBwz5gyKMRppEUnezKBz8y6SBCXZWlAms/wI8RzH0ajFJT3onzgtngE/hFUOLjeVw152KtuSCgLRopIMjViaO13sK3amOjIxgb1FL5iEtrAgR7j/gaBuJzYlcnPrrJG7Q+b6VOtHee0uybEHjbNBcBbX1VvKl4JgiIetpGKUMMVl/0o+95A10pqFYBA/RP6wyXOQ0cWazGqhc4LyD/5i4ugDgNO4xNcaFHNBlxUuq1FyqaK/pDI+pBDyrP14fTVezxLVK+VGyzJsz4Nb8ATUuXya0gPqFqPxpk4XAlr/FhGfQ3zg="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-bitbucket-v1.1.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFyfxcACgkQ0bVLR6XO/sT9eg/8Db7r50hAtsEm4YzD8xHlZib//3ovRS8pXCsOsU6LvMGMBRHU1qXRPZfCAkjckDYFnAe6+U0kjAko7pnUqDtvbqxD8AuzVf/7gCyJgWPHPJaPRrs8EhGs6WKHpPa3SYiEuCfhw9k1g0xYhKBtdSTaBFzCLKTRoZiVHbNuWdE6fWDWcUsF1Rzd3jdTjNW72q0AWz2izJ3LziC/ZcZR/6VSFvrxY+Zet0wCqlvxm4l2JvvS7UvYTmt1YxvcoXFujwGUN0kK1wb6hcPesAH+qbUg5mRrrRRK10CGoaJyWerAtCRHPldNFfKVk9YbHcv9cMYlOH5gTAtXmPFqnJ5CGU/UMhkRmOGUIppf6CoOt6Tm+VfGVVKkL4THgVE4WBmPTLUhHKLGH2WJzggkN8YuNA2CxdrILIv8IDVqH01Qd8Ni3ra+aD3Hk9IfK6/aXdqmRbjUoftWyt5KXHjADw6njeoF8LV4RS+igdUELp7Lw2zJKH52OYdqCcfXOXkg71/jCaoc2GoggQUPRsDqARiFhHTTg/3ojb1GLAMwVvfVgJ/4ZTWah4qBhExli1lRZixre/2lPaSaK+pzPc6gxbmU6vcHyDQKP568DDf1TOvGzBBzdoq+b2AXSx2WQ/xRM0v6sTuLIvVrXm6Z+gdUnSppiEmQvwl0b2R4cAIodS0qM9y16o4="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-bitbucket-v1.1.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmFyfxUACgkQ0bVLR6XO/sRUAQ/+O3KV9Mfaa6kuV+qrEvvHtKtQtCJdru1jRrPINAA9CMIxY8KdIXGQUyo3Q9fX6QEGyHkJEq1ulWRaKg4gxCmvFxzPx7hEiQLEtyNQT5wxP7FOeY6Q0VzqVqCNZv2ASLIEru2g9khIiveLrdMW8tWngFLm5jBA4hPGFI3rx0zwEnPMXMLs6/+glFuMqHThv4PkVXcwbjKLodb0LKiFRR9hogN9YOhf1u4XneqaM71SCH3h4irG8JcTJCGMIGt+S+Rf3sbc/HsrT/2yjfUs7k/PJMeu9dA8JRAxVIFwP9iKS8R9RFL2YC/rcc1Vg1eyHRykX1FFLC2oQ1Au7CUW8+q7Sxaby8Rr26N1t94jfsGOvlVflhvN8eVU7HGdn9YxepuqTQ0KiGvC8hul1kJtLImUR/9lpMU+20/5mUSx0enkOwpxTK0lFYN2KM+RpXixShWlsNzsRog/r97FxoFjTIQLmoLY9+MEWTZLhAFgSfOPCQ3ULhcfGCVn7FAIL67auVYTKVckOi1wTHP5CMY5pKWXg2rqqGKpKWCWdtcH+K0+7bydwAz1sV2FbU5oVkPkC9FBu76YtDtyCbKPDB2PxZbjE0VAX4z7wmMUo/snkg1WLudjfXMgBXDBp3I7ilbMUGcWge0SXbT+IDqL3ok6rdCRz3FyVuqwBVJiJ5gYFocUnQg="
+      }
+    },
+    "updated_at": "2021-10-22T09:20:18.89214968Z"
+  },
+  {
     "homepage_url": "https://github.com/jespino/mattermost-plugin-recommend",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNDUgNDUiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ1IDQ1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgdmVyc2lvbj0iMS4xIiBpZD0ic3ZnMiI+PG1ldGFkYXRhIGlkPSJtZXRhZGF0YTgiPjxyZGY6UkRGPjxjYzpXb3JrIHJkZjphYm91dD0iIj48ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD48ZGM6dHlwZSByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIi8+PC9jYzpXb3JrPjwvcmRmOlJERj48L21ldGFkYXRhPjxkZWZzIGlkPSJkZWZzNiI+PGNsaXBQYXRoIGlkPSJjbGlwUGF0aDE2IiBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggaWQ9InBhdGgxOCIgZD0iTSAwLDM2IDM2LDM2IDM2LDAgMCwwIDAsMzYgWiIvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIHRyYW5zZm9ybT0ibWF0cml4KDEuMjUsMCwwLC0xLjI1LDAsNDUpIiBpZD0iZzEwIj48ZyBpZD0iZzEyIj48ZyBjbGlwLXBhdGg9InVybCgjY2xpcFBhdGgxNikiIGlkPSJnMTQiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIsMjApIiBpZD0iZzIwIj48cGF0aCBpZD0icGF0aDIyIiBzdHlsZT0iZmlsbDojZmZjYzRkO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIiBkPSJtIDAsMCBjIDAsLTguODM3IDcuMTY0LC0xNiAxNiwtMTYgOC44MzcsMCAxNiw3LjE2MyAxNiwxNiBDIDMyLDguODM2IDI0LjgzNywxNiAxNiwxNiA3LjE2NCwxNiAwLDguODM2IDAsMCIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNS40MDYzLDI1LjUpIiBpZD0iZzI0Ij48cGF0aCBpZD0icGF0aDI2IiBzdHlsZT0iZmlsbDojNjY0NTAwO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lIiBkPSJtIDAsMCBjIDAsLTEuMzgxIC0wLjg5NiwtMi41IC0yLC0yLjUgLTEuMTA0LDAgLTIsMS4xMTkgLTIsMi41IDAsMS4zOCAwLjg5NiwyLjUgMiwyLjUgMS4xMDQsMCAyLC0xLjEyIDIsLTIuNSIvPjwvZz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNiwyNC41KSIgaWQ9ImcyOCI+PHBhdGggaWQ9InBhdGgzMCIgc3R5bGU9ImZpbGw6IzY2NDUwMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgZD0ibSAwLDAgYyAwLC0xLjM4MSAtMC44OTUsLTIuNSAtMiwtMi41IC0xLjEwNCwwIC0yLDEuMTE5IC0yLDIuNSAwLDEuMzggMC44OTYsMi41IDIsMi41IDEuMTA1LDAgMiwtMS4xMiAyLC0yLjUiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOS42NzA5LDI5LjY2NykiIGlkPSJnMzIiPjxwYXRoIGlkPSJwYXRoMzQiIHN0eWxlPSJmaWxsOiM2NjQ1MDA7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmUiIGQ9Ik0gMCwwIEMgLTAuMTY0LDAuMDg3IC0wLjMwMywwLjIyMyAtMC4zOTEsMC4zOTggLTAuNjA3LDAuODI3IC0wLjQzMSwxLjMyNSAwLjAwMiwxLjUxMSA0LjI2OCwzLjM0MSA3LjcwMSwxLjU1NCA3Ljg0NSwxLjQ3NyA4LjI3OCwxLjI0NiA4LjQ1MywwLjcyOSA4LjIzNiwwLjMyMyA4LjAyLC0wLjA4MiA3LjQ5NiwtMC4yMjMgNy4wNjMsMC4wMDUgNi45NCwwLjA2OSA0LjIzMSwxLjQzNyAwLjc4NSwtMC4wNDIgMC41MjgsLTAuMTUxIDAuMjM4LC0wLjEyNyAwLDAiLz48L2c+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTQuNzQyNywxNi40Mjc3KSIgaWQ9ImczNiI+PHBhdGggaWQ9InBhdGgzOCIgc3R5bGU9ImZpbGw6IzY2NDUwMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgZD0iTSAwLDAgQyAtMC4xMzYsMC4xMjcgLTAuMjM2LDAuMjkzIC0wLjI3NiwwLjQ4NiAtMC4zNzUsMC45NTUgLTAuMDc4LDEuMzkyIDAuMzg5LDEuNDYgNC45ODEsMi4xMzggNy44NDEsLTAuNDY5IDcuOTYyLC0wLjU4IDguMzIyLC0wLjkxNCA4LjM1NywtMS40NTcgOC4wNDQsLTEuNzk1IDcuNzMyLC0yLjEzMSA3LjE4OSwtMi4xMzMgNi44MywtMS44MDEgNi43MjYsLTEuNzA5IDQuNDU4LDAuMzA3IDAuNzQ4LC0wLjI0IDAuNDcxLC0wLjI4MSAwLjE5NywtMC4xODQgMCwwIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIwLjQzMDcsMjUuOTE3KSIgaWQ9Imc0MCI+PHBhdGggaWQ9InBhdGg0MiIgc3R5bGU9ImZpbGw6IzY2NDUwMDtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgZD0iTSAwLDAgQyAtMC4xNTYsMC4wOTggLTAuMjg2LDAuMjQzIC0wLjM2MiwwLjQyNCAtMC41NDksMC44NjYgLTAuMzM5LDEuMzUyIDAuMTA1LDEuNTA4IDQuNDg2LDMuMDQ0IDcuNzksMS4wMjggNy45MjksMC45NDEgOC4zNDQsMC42ODEgOC40ODMsMC4xNTQgOC4yNCwtMC4yMzcgNy45OTgsLTAuNjI3IDcuNDY0LC0wLjczMiA3LjA0OSwtMC40NzUgNi45MjksLTAuNDAyIDQuMzIxLDEuMTQ2IDAuNzgyLC0wLjA5NSAwLjUxOCwtMC4xODcgMC4yMywtMC4xNDMgMCwwIi8+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3LjI3NjQsMC44NjgyKSIgaWQ9Imc0NCI+PHBhdGggaWQ9InBhdGg0NiIgc3R5bGU9ImZpbGw6I2Y0OTAwYztmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZSIgZD0ibSAwLDAgYyAwLDAgMS4yNjUsMC40MTEgMS40MjksMS4zNTIgMC4xNzMsMC45NzEgLTAuNjI0LDEuMTY3IC0wLjYyNCwxLjE2NyAwLDAgMS4wNDEsMC4yMDggMS4xNzIsMS4zNzYgMC4xMjMsMS4xIC0wLjg2MiwxLjM2MyAtMC44NjIsMS4zNjMgMCwwIDAuOTcsMC40IDEuMDE2LDEuNTM5IDAuMDM4LDAuOTU5IC0wLjk5NSwxLjQyOCAtMC45OTUsMS40MjggMCwwIDUuMDM4LDEuMjIgNS41NTUsMS4zNCAwLjUxNiwwLjEyMSAxLjMyMSwwLjYxNiAxLjA3LDEuNjk1IC0wLjI0OSwxLjA4IC0xLjIwNCwxLjExOCAtMS42OTgsMS4wMDMgLTAuNDk0LC0wLjExNiAtNi43NDQsLTEuNTY3IC04LjksLTIuMDY5IC0wLjIzLC0wLjA1MyAtMS4zMDgsLTAuMzAyIC0xLjQzOSwtMC4zMzQgLTAuNTQsLTAuMTI3IC0wLjc4NSwwLjExMSAtMC40MDUsMC41MTIgMC41MDksMC41MzYgMC44MzMsMS4xMjkgMC45NDcsMi4xMTMgMC4xMTksMS4wMzYgLTAuMjMyLDIuMzE0IC0wLjQzMywyLjgwOSAtMC4zNzQsMC45MjEgLTEuMDA1LDEuNjQ5IC0xLjczNCwxLjg5OSAtMS4xMzgsMC4zOSAtMS45NDYsLTAuMzIxIC0xLjU0MiwtMS41NjEgMC42MDQsLTEuODU1IDAuMjA5LC0zLjM3NSAtMC44MzMsLTQuMjkzIC0yLjQ0OSwtMi4xNTcgLTMuNTg5LC0zLjY5NSAtMi44MywtNi45NzMgMC44MjcsLTMuNTc1IDQuMzc3LC01Ljg3NiA3Ljk1MiwtNS4wNDggQyAtMi45NjUsLTAuNjQgMCwwIDAsMCIvPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4K",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-recommend-v0.4.0.tar.gz",
