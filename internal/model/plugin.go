@@ -57,13 +57,17 @@ type PlatformBundleMetadata struct {
 
 type PlatformBundles struct {
 	LinuxAmd64   PlatformBundleMetadata `json:"linux-amd64,omitempty" yaml:"linux-amd64,omitempty"`
+	LinuxArm64   PlatformBundleMetadata `json:"linux-arm64,omitempty" yaml:"linux-amd64,omitempty"`
 	DarwinAmd64  PlatformBundleMetadata `json:"darwin-amd64,omitempty" yaml:"darwin-amd64,omitempty"`
+	DarwinArm64  PlatformBundleMetadata `json:"darwin-arm64,omitempty" yaml:"darwin-amd64,omitempty"`
 	WindowsAmd64 PlatformBundleMetadata `json:"windows-amd64,omitempty" yaml:"windows-amd64,omitempty"`
 }
 
 const (
 	LinuxAmd64   = "linux-amd64"
+	LinuxArm64   = "linux-arm64"
 	DarwinAmd64  = "darwin-amd64"
+	DarwinArm64  = "darwin-arm64"
 	WindowsAmd64 = "windows-amd64"
 )
 

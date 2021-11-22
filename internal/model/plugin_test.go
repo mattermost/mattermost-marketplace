@@ -63,7 +63,7 @@ func TestPluginsFromReader(t *testing.T) {
 
 	t.Run("request", func(t *testing.T) {
 		plugin, err := PluginsFromReader(bytes.NewReader([]byte(
-			`[{"repo_name":"mattermost-plugin-demo","homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1","release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{},"platforms":{"linux-amd64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-linux-amd64.tar.gz","signature":"signature1 for linux"},"darwin-amd64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-darwin-amd64.tar.gz","signature":"signature1 for darwin"},"windows-amd64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-windows-amd64.tar.gz","signature":"signature1 for windows"}}},{"repo_name":"mattermost-plugin-starter-template","homepage_url":"https://github.com/mattermost/mattermost-plugin-starter-template","icon_data":"icon-data2.svg","download_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","signature":"signature2","release_notes_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","manifest":{}}]`,
+			`[{"repo_name":"mattermost-plugin-demo","homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1","release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{},"platforms":{"linux-amd64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-linux-amd64.tar.gz","signature":"signature1 for linux"},"linux-arm64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-linux-arm64.tar.gz","signature":"signature1 for linux"},"darwin-amd64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-darwin-amd64.tar.gz","signature":"signature1 for darwin"},"darwin-arm64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-darwin-arm64.tar.gz","signature":"signature1 for darwin"},"windows-amd64":{"download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-windows-amd64.tar.gz","signature":"signature1 for windows"}}},{"repo_name":"mattermost-plugin-starter-template","homepage_url":"https://github.com/mattermost/mattermost-plugin-starter-template","icon_data":"icon-data2.svg","download_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","signature":"signature2","release_notes_url":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","manifest":{}}]`,
 		)))
 		require.NoError(t, err)
 		require.Equal(t, []*Plugin{
@@ -80,8 +80,16 @@ func TestPluginsFromReader(t *testing.T) {
 						DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-linux-amd64.tar.gz",
 						Signature:   "signature1 for linux",
 					},
+					LinuxArm64: PlatformBundleMetadata{
+						DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-linux-arm64.tar.gz",
+						Signature:   "signature1 for linux",
+					},
 					DarwinAmd64: PlatformBundleMetadata{
 						DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-darwin-amd64.tar.gz",
+						Signature:   "signature1 for darwin",
+					},
+					DarwinArm64: PlatformBundleMetadata{
+						DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0-darwin-arm64.tar.gz",
 						Signature:   "signature1 for darwin",
 					},
 					WindowsAmd64: PlatformBundleMetadata{
@@ -144,8 +152,16 @@ func TestPluginsToWriter(t *testing.T) {
 					DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-linux-amd64.tar.gz",
 					Signature:   "signature1 for linux",
 				},
+				LinuxArm64: PlatformBundleMetadata{
+					DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-linux-arm64.tar.gz",
+					Signature:   "signature1 for linux",
+				},
 				DarwinAmd64: PlatformBundleMetadata{
 					DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-darwin-amd64.tar.gz",
+					Signature:   "signature1 for darwin",
+				},
+				DarwinArm64: PlatformBundleMetadata{
+					DownloadURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-darwin-arm64.tar.gz",
 					Signature:   "signature1 for darwin",
 				},
 				WindowsAmd64: PlatformBundleMetadata{
@@ -193,8 +209,16 @@ func TestPluginsToWriter(t *testing.T) {
         "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-linux-amd64.tar.gz",
         "signature": "signature1 for linux"
       },
+      "linux-arm64": {
+        "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-linux-arm64.tar.gz",
+        "signature": "signature1 for linux"
+      },
       "darwin-amd64": {
         "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-darwin-amd64.tar.gz",
+        "signature": "signature1 for darwin"
+      },
+      "darwin-arm64": {
+        "download_url": "https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.plugin.demo-plugin-0.1.0-darwin-arm64.tar.gz",
         "signature": "signature1 for darwin"
       },
       "windows-amd64": {
@@ -221,7 +245,9 @@ func TestPluginsToWriter(t *testing.T) {
     },
     "platforms": {
       "linux-amd64": {},
+      "linux-arm64": {},
       "darwin-amd64": {},
+      "darwin-arm64": {},
       "windows-amd64": {}
     },
     "updated_at": "0001-01-01T00:00:00Z"

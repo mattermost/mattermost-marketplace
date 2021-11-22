@@ -14,7 +14,10 @@ import (
 )
 
 // OSX-specific bundle URLs are stored in the plugin store as `osx` rather than `darwin`
-const OsxAmd64 = "osx-amd64"
+const (
+	OsxAmd64 = "osx-amd64"
+	OsxArm64 = "osx-arm64"
+)
 
 func init() {
 	generatorCmd.AddCommand(migrateCmd)
@@ -136,8 +139,12 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 		switch platform {
 		case model.LinuxAmd64:
 			plugin.Platforms.LinuxAmd64 = bundle
+		case model.LinuxArm64:
+			plugin.Platforms.LinuxArm64 = bundle
 		case OsxAmd64:
 			plugin.Platforms.DarwinAmd64 = bundle
+		case OsxArm64:
+			plugin.Platforms.DarwinArm64 = bundle
 		case model.WindowsAmd64:
 			plugin.Platforms.WindowsAmd64 = bundle
 		}
@@ -150,7 +157,7 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]string, error) {
 	result := []string{}
 
-	platforms := []string{model.LinuxAmd64, OsxAmd64, model.WindowsAmd64}
+	platforms := []string{model.LinuxAmd64, model.LinuxArm64, OsxAmd64, OsxArm64, model.WindowsAmd64}
 	for _, platform := range platforms {
 		path := fmt.Sprintf("%s/%s-%s.tar.gz", remotePluginHost, pluginWithVersion, platform)
 
