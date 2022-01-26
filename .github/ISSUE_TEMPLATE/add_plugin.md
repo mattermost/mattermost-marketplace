@@ -68,3 +68,5 @@ If your plugin isn't production-ready, please leave a comment stating whether yo
     * Troubleshooting
     * Screenshots (if available)
     * Link or email address for help/support
+
+The `plugin.json` file should include formatting consistent with the System Console interface. You can join the [Documentation channel](https://community.mattermost.com/core/channels/documentation) for assistance.
