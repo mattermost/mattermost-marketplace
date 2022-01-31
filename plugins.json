@@ -9260,6 +9260,65 @@
     "updated_at": "2020-07-23T09:55:37.947091143Z"
   },
   {
+    "homepage_url": "https://github.com/mickmister/mattermost-plugin-default-theme",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-default-theme-v0.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mickmister/mattermost-plugin-default-theme/issues/releases/tag/v0.1.0",
+    "hosting": "",
+    "author_type": "community",
+    "release_stage": "beta",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmH3+bUACgkQ0bVLR6XO/sQwVQ//czlDryYTV2UiBhx35Hs3c961krrg1KACGrBR8roPnP7PpEvf160I+thlH/zqYIQ8iSKY0Jjwu4NNNWgKn8NoHtBjtvk1uIhQWzaM9XvJJTRUW+idhRE2+L/TUj8CO1Vub3qenQ7fOOUElYNb5Pekk5OFHeCb7aMmTTT50MmZxjQJrLVrepi9/0jEKgJ3+uJDwlaLxMmyTCIzpq3yBdwwWSfFIdirOPhYlgRUrOsD6gbtBGMpIT4VhNQ5AUQd4LOUPjmtSe05oAmD0eF9ZsZ+hGTFS5Bu+1i/phZ6ky0ufjoSUbU5voHIw0PkRYO+rlxLE/pV/DR/gunR+XsNddphnRSFWvloagMKcVCRWi38i1qhiOgQnOr0CIg9JXanJIMGomxk1tcaWXA5Ngb313JT53zrZF8XWMZBvV7NYmmZcantRQFqWHI/TklHqKXGBM7b5Xg2JCzLQd6d8RRwZWKfbXUzbGrXchsdvUsNqC3z+8PCcDydmk7/PMX9S/0no3xw8tiH9Yu1N9KMmbkroPbaFkjoxxITCE+9/3wSVKAd8x7lzlLrbXwiueAWK9UjL3LFTkfLMvrgY36mpCc4Bq3WR+rierLVlmeUPfdxslGdOvzp+gdpcJ7VlHEvrZMt/KMiuIK69/Emal0rWLtpDauq7eZhjRPCaDsUVVqYSWYhC1Y=",
+    "repo_name": "mattermost-plugin-default-theme",
+    "manifest": {
+      "id": "set-default-theme",
+      "name": "Set Default Theme",
+      "description": "Apply a custom theme to all users when they create their account.",
+      "homepage_url": "https://github.com/mickmister/mattermost-plugin-default-theme",
+      "support_url": "https://github.com/mickmister/mattermost-plugin-default-theme/issues",
+      "release_notes_url": "https://github.com/mickmister/mattermost-plugin-default-theme/issues/releases/tag/v0.1.0",
+      "version": "0.1.0",
+      "min_server_version": "5.26.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "CustomTheme",
+            "display_name": "Default Theme",
+            "type": "longtext",
+            "help_text": "Custom Theme JSON",
+            "placeholder": "",
+            "default": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-default-theme-v0.1.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmH3+bIACgkQ0bVLR6XO/sRLXw/7BRd4XNKoyP7l8D0C3m2oalXVVnuwT7Jueu1QVSU+yV2PkGO6BDV5PwnIwby+Kop6eE/yoZVODpqxihczV2Yw7ZnC5S1bZakWg2BTtrDXELIDpitBzweqiE0560e/zslT+FczmOljgqk5hgvwvvrHyc/CwegM83eGuEYwafr1T1llrcSFCfZEGNE25nVdNCKWillsqlRLBCCpHCGd3Esib3tAOh2wvR5f8P5jqxpOYF2vyiU52sz4RKdYo7Wo9S7B4Cscvi64N94S9hkBmSCXbTiaiEGajB7f2yChx/oCkeyFZ/yHvL4VdRr0vyglmskncqwV4ib2ZuC1OgjMLMtPMxDiU0BF0V7hMsNv0flJXGCLRYYyciGMJbDta24vMuNF6faaNYZmyBGosXPMWroFFplz5UCTMaeOZViEIeHSpC7s+isF0tn60Nc2To1/K5DHHiPmxJoqbHAhbStLHtFwU61XONxIK7eEXGrzG6ZQPtiKDF37p7w9M/xRrmP7EM3fimHkT5ZppSVVTXYOgJ0F2auGZxObpf1qV5XICxYOFBzNti2L7jZFJgLrqfgyzqORCiKNMEFnRCebvVjUgTXZhRh5n9xKdQeyvLxaJ/npzsj4xGCt6Q5WN9gHFBZdpd/tB877zLjBsxiqVd3buX1LmL9NG9hHgVwY5L+gQ04NDiE="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-default-theme-v0.1.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmH3+bQACgkQ0bVLR6XO/sTDtw/+OFgOxe8H7oIuzApYDcjNJYTi89zKUchBLYgcQ9j9FY5PIdBWOpRzwGy/UtgzlzfcDjsnWuP0mzg+4enGz84VjzzB3S6tdlR729Otd6Qi6lVncOqihfXELwrW1BC208H8GjqpH4+nJrmKW4UmFPHONkvV4L4XxY79wY/Xx4MebH7syxLbMvdgOftLu10DN30hYFrAJ3VrY9yanBYN3yadki26q7EaHBu8LsQuLhsEz5DQC9VO9zQ64OI+vim3IDjy/iojk6q1EpGue21nn32tSTWc1+tA/F+rTbQ5/1IGgysE5cDWgtEELHvrBLZNoHY+C8dmsmhRFMVxQFJ8VeHKO4H729Yru1c9qBe4VQPlQizaE3OVhbXxbtgYbqZk/6e2saBFEB40wku0nYOS2eNNIr1dzm320Xr7oZ6lXrpfkt+t6ngL8yRJtz1MhbT378G0+8da0+1cuNzDS4mtMESWkZL6wd5tqfyOQYT8xYQ8pZYTAZqJaFPHmQ1rcKTgpuCYe/E+B8nFVfHwFyQspQtZ+4XTv69ZOgVDXclWi3lB6gBuTQ8XoMT3zjxFL6U6I7dETo6AoGK5QsrDh4OXWp00cUOCbBeeIjuCIMoQTL44huXFL0qUgIzTRDlU4hDxvI54L/kripCoXm4sMjlh/t4VMgesNaTuH/PtHto24jqWSiM="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-default-theme-v0.1.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmH3+bEACgkQ0bVLR6XO/sRlMw//auKEpuGeKNZ0crzl0sHd3EiTOJcVhgc+OFA9NykHFNFGcXOMd/jLecnqj6HiDoca7/00w81Y/kiiaWfKAe+oMSCKm3nxh9+wFlt7/4pCHIJiEM/Jfcy4ZRmcVvW8/OGt6+k4lihdKdoXD9FktTVnFb9K+bgSOI92N7hBJSNUihgXBwySU4wskRqX9zyezVZ+5tKVbKF7hZw2G+DGXikmmZn1cgtiHdU6DbG2YD1Sr3ePdDyf8F4vzbAdI9Nhj8EahjkFwNfxfpy+th8cDzmOzIMfbVcMnTNrRIRIStRqhq4dc6D+YA3CFTVWSlAfezFjn5idlgG/ng0NTMUmxtXINKb5RtxyhzKMn4igZsoKWYVj/o45tnIWfy+ACgwkGAKOIMao9OXC8ZxaV+QQ260L3wx63diKuNEsUao7UR5bQ11JRLy80BiJM9CvJw7k161WhJeMOcHGmxlDhXs+/GQC66lQ6r5XHPPL+eKiZ29ziIP4alnXFWsQIM0pc2hUNcGpJuFAjyL+Ecgr8moCW4Qz6ZyXr5lDod0XWa4qMuh15QPpJdnzyJF6qHufc7TrO5J1hfS9H6wFyT75eVCIa1FDaVOLHMb3U8sDUHx0gDpA1LkNBJvFcU9DfubMOktlBDvZR/K3YQMUJl1JiS2ZFBvQm7Lm3X7vQ4TZVCOR4etPim8="
+      }
+    },
+    "updated_at": "2022-01-31T15:01:36.383367347Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-skype4business",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDI5MS4zNjQgMjkxLjM2NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjkxLjM2NCAyOTEuMzY0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6IzAwQUZGMDsiIGQ9Ik0yODIuOTY2LDE3Ni42MTJjMi4wOTQtOS40OTUsMy4yMDQtMTkuMzA5LDMuMjA0LTI5LjQwNWMwLTc1LjY2MS02Mi4xOTctMTM3LjAxMS0xMzguOTQxLTEzNy4wMTEKCQljLTguMDkzLDAtMTYuMDMyLDAuNjkyLTIzLjc1MiwyLjAwM0MxMTEuMDYxLDQuNDc5LDk2LjM2NywwLDgwLjYxOCwwQzM2LjEwMSwwLDAuMDMyLDM1LjU3NywwLjAzMiw3OS40NzUKCQljMCwxNC42NTcsNC4wNTEsMjguMzg1LDExLjA3LDQwLjE5M2MtMS44NDgsOC44OTQtMi44MTMsMTguMTA3LTIuODEzLDI3LjUzOWMwLDc1LjY4OCw2Mi4xOTcsMTM0Ljc1MywxMzguOTMyLDEzNC43NTMKCQljOC42OTQsMCwxNy4xOTctMC43OTIsMjUuNDM2LTIuMjk0YzExLjM1Miw2LjAwOCwyNC4zMTYsMTEuNjk4LDM4LjA5OSwxMS42OThjNDQuNTA4LDAsODAuNTc3LTM1LjU2OCw4MC41NzctNzkuNDY2CgkJQzI5MS4zMzMsMTk5LjIzNSwyODguMzE5LDE4Ny4yNDUsMjgyLjk2NiwxNzYuNjEyeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yMTAuNiwyMDMuMTMxYy01LjM2Miw3LjYyLTEzLjIxLDEzLjYxLTIzLjU0MiwxNy45MTZjLTEwLjMzMyw0LjM0Mi0yMi41NjgsNi40OTEtMzYuNzI0LDYuNDkxCgkJYy0xNi45NzgsMC0zMC45OC0yLjk1LTQyLjAyMy04Ljg1OGMtNy44MTEtNC4yNDItMTQuMTc0LTkuOTIzLTE5LjA3Mi0xNy4wMDZjLTQuODgtNy4wODMtNy4zMjgtMTMuOTgzLTcuMzI4LTIwLjY5MwoJCWMwLTMuODc4LDEuNDY2LTcuMjEsNC4zOTctOS45NjljMi45MzEtMi43OTUsNi42NzMtNC4xNjksMTEuMTk4LTQuMTY5YzMuNjc4LDAsNi44LDEuMDY1LDkuMzMxLDMuMjQxCgkJYzIuNTQ5LDIuMTU4LDQuNzI1LDUuMzUzLDYuNTA5LDkuNjA0YzIuMTk0LDUuMDUzLDQuNTUyLDkuMjY4LDcuMTEsMTIuNjQ1YzIuNTMxLDMuMzc3LDYuMTE4LDYuMTgxLDEwLjcyNCw4LjM3NQoJCWM0LjYyNSwyLjE3NiwxMC42OTcsMy4yODYsMTguMTk4LDMuMjg2YzEwLjMyNCwwLDE4LjcxNy0yLjIwMywyNS4xODEtNi42MzdjNi40NDUtNC40MTUsOS42ODYtOS45NTksOS42ODYtMTYuNTc4CgkJYzAtNS4yNDQtMS43NDgtOS41MzItNS4yMjYtMTIuNzgyYy0zLjQ4Ny0zLjI3Ny03Ljk4NC01Ljc4MS0xMy41MDEtNy41MDFjLTUuNTA4LTEuNzM5LTEyLjg4Mi0zLjU3OC0yMi4xMzEtNS41MTcKCQljLTEyLjM1NC0yLjY0OS0yMi43MDUtNS43ODEtMzEuMDI1LTkuMzMxYy04LjMzLTMuNTc4LTE0Ljk1Ny04LjQzLTE5LjgzNy0xNC41NzVjLTQuODk4LTYuMTcyLTcuMzM4LTEzLjgxOS03LjMzOC0yMi45NQoJCWMwLTguNzIxLDIuNTc2LTE2LjQ1LDcuNzQ3LTIzLjIxNGM1LjE2Mi02Ljc3MywxMi42MTgtMTEuOTcxLDIyLjQxMy0xNS42MTNjOS43NzctMy42NDEsMjEuMjg1LTUuNDUzLDM0LjQ5NC01LjQ1MwoJCWMxMC41NiwwLDE5LjcsMS4yMTEsMjcuNDExLDMuNjA1YzcuNzExLDIuNDIyLDE0LjA5Myw1LjYyNiwxOS4xNzIsOS42MjNjNS4wODksMy45OTcsOC44MTIsOC4xODQsMTEuMTUyLDEyLjU4MQoJCWMyLjM0OSw0LjM3LDMuNTIzLDguNjg1LDMuNTIzLDEyLjgzNmMwLDMuODE0LTEuNDU3LDcuMjc0LTQuMzg4LDEwLjMyNGMtMi45MzEsMy4wNTktNi41OTEsNC41OTctMTAuOTcsNC41OTcKCQljLTMuOTk3LDAtNy4wMjgtMC45MjktOS4xMDQtMi43NThjLTIuMDc2LTEuODM5LTQuMzI0LTQuODQzLTYuNzM3LTkuMDIyYy0zLjE0MS01Ljk3Mi02Ljg4Mi0xMC42MzMtMTEuMjctMTMuOTc0CgkJYy00LjM4OC0zLjM1LTExLjQxNi01LjAyNS0yMS4xMjEtNS4wMjVjLTguOTg1LDAtMTYuMjUsMS44MDMtMjEuNzY3LDUuNDUzYy01LjUxNywzLjYyMy04LjI4NCw4LjAxMS04LjI4NCwxMy4xMTgKCQljMCwzLjE1LDAuOTU2LDUuODk5LDIuODIyLDguMjAyYzEuODY2LDIuMzIxLDQuNDUyLDQuMjc5LDcuNzU2LDUuOTI3YzMuMjY4LDEuNjU3LDYuNiwyLjk1LDkuOTU5LDMuOTA1CgkJYzMuMzU5LDAuOTM4LDguOTIyLDIuMjk0LDE2LjY3OCw0LjA5N2M5LjY4NiwyLjA4NSwxOC40NzEsNC4zOTcsMjYuMzM3LDYuOTFjNy44NTcsMi41MjIsMTQuNTU3LDUuNTksMjAuMDc0LDkuMTY3CgkJYzUuNTA4LDMuNjA1LDkuODIzLDguMTc1LDEyLjkwOSwxMy42OTJjMy4wODYsNS40OTksNC42NDMsMTIuMjQ0LDQuNjQzLDIwLjIzOEMyMTguNjM5LDE4Ni44OTksMjE1Ljk0NSwxOTUuNTAyLDIxMC42LDIwMy4xMzF6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-skype4business-v0.2.0.tar.gz",
