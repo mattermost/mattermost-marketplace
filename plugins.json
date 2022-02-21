@@ -4431,6 +4431,68 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.5.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/tag/v0.5.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIT2QMACgkQ0bVLR6XO/sS6pw/9FNgp8CLLShPQEiSolp+TiNl4ftv5qn2GnQOh0Rz/P3ojvq3xR3j/uRpJFDxR8d6tM84RxGImELXXkPaMfNefWqxsBOKZa9XCzR37eK51WEOKGijHEnBctQ4mUbCOWKCSmOcUuS+Dt+IHrOHlt9GAdJkqDPuK/lCs6rLWnUJm6nC+Qd/Vn+5mAIjjfSEQnqEklYdXkWs/RGi/3rt+8ztp0CtGVQ1HVRH4IHwORvdRjCR6O8bhybBrk4zG7bvd1Jet61Zp/n1FUsQanOpukBqhGKwdOXu9ehOS1W0PHfy3i5mgrqher+F36D/OxbZocCvKXDQkccBBPMOXiQk/Ab+Kx5m9fhD5d7Kg3AotGvi3z6SCBU+QBAFRfrdr744tjIFuc19cj//zYOP9J8A/8kSGVINajPCe75Cv+EE4Jqvh4tJz/hd5iGjzaTtkDKbn8XI7IYnddoRuvmy/aAj3FL/DvlOemijCalt8TzsaKWuMEgc4RNqRukD7zFpqZcZnYTouL0htlIZwFHZICtDHvo7wXaMHG3steHF62zr+MaIz3zZI/qEbaXIdp4ViuMrxm90gJk3yDckmiKHOmSH4uhDBpHtjG66JW+QzbZi8y9VsdWdjf2xwUZS/wNe1ha28BE/B9Jnvm74IdY+YLKPTBPR4WwQv/h6L8qSJy0bwlBMdLqE=",
+    "repo_name": "mattermost-plugin-todo",
+    "manifest": {
+      "id": "com.mattermost.plugin-todo",
+      "name": "Todo",
+      "description": "This plugin makes it easy to keep track of Todo issues and get daily reminders.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-todo/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/tag/v0.5.1",
+      "version": "0.5.1",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "hide_team_sidebar",
+            "display_name": "Hide team sidebar buttons:",
+            "type": "bool",
+            "help_text": "When true, the buttons in the team sidebar on the left toolbar will be hidden.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.5.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIT2QAACgkQ0bVLR6XO/sSe3w/9GNwtR6ZiCBQ64p2qfyNuz35pVS/mMvs0b845YVhgcrcVEVniFjJtxlLeWqBGpwluIlXHh0NQAcVVQRNnnrnIMQOV29WUhjQClopCJ+hoQiTvYilDuJy32FS8YS6BfUia0RL/dbmyAipg5ELSjulu7aG/um4TKkQuyh6JIlb+jek9wCYlSWrJeKErIlLBphIpq1tA0M+UhaSnOE4qXiA5rGZEko9wiFM9s+jLVlhmVO4AvpaYmGcwXxvRe/bDBMyZc9oe7hUvg3KuOIcDkT92RnpkKoSos85S0mCxvojTkZWsZAUjr2PdOvlZRd4mGF60RSq11gAWENXiYNrWwAbOsKxuWlCuOLaJBwEIXvDy48bp4rHGhahjo6BlfWDdWG/U7pcNOiluYv1e+lK7OGE3qGXLQB881h8uuO+QYlDOsf04iIoGMd3tK3gMuefy98l3MGEZiogj6Czk+mlih/Qm9cozKCBjoPQ1pyg70Q0X5RbwtaxCcNUqgM8eDACwX3CJzTrW/PXqcJ3EUnNduEx6yNCTZaDmKIIiGEPWZTVUxhX8EiBhm1KcecXq5/tms/EkLSlJUCyY123bDKnhbBMScClSJq2mCjm3cuq7XZV85RAHM0dMnIoJpGsDTE/IGkFMjWPgRubAe8DBOaovjZZsV7ruP2foRQGnajOsuDzBDw8="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.5.1-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIT2QEACgkQ0bVLR6XO/sR4Hg//WJz1Mr2xzJY8OJp+SxG+hFHMqP57kqHFWb8o3xTujp6YOWAAQkcf9glQwooZxOp4getaSORrBON3M5g0sLR/fdrrn4yb55ctUJRSBT9Z+sRA3+SDZyf3JKxiSdzOUhuz/vHHfS/ia+70gde7qaFLS8Utxmq9Y/NL9/3MVJgQmGS5hZBOjNVrltwDWTMGIRqYEBn80goFVuVxwlaXaXCOKA+NTo656WX+b704Uggm1VVMoh0j8dsT0JbT0edi7fjwXMIAnJhKRawZwmbMJaRpLhPU643tystlcq4kw4Nw3U+xNwXvswh59GHuWsTmHeTJzJbd++junYyhmswBW67ZVrBiEfUh/Nwet5K4giu8ds65BlmJIe/latz4l1/t+tSYz25vf/bdYAsZP3LKP9hqR38QQaq72FgVRKRythBrtWz15lMnDkO/GKezyPNIrre3Skz9eA99SC4L8a6BFeKZRxEE+hre0ImtbKFW9IW8k2hqUX23rdvslsPJNdjbRtFz6O5OqCcJ8aQsd9VJECAyDmcuACMTT+Akso6eTYPuBqIO0HopxjG+H7f9Y6u3q0HzcACdY5q8PvctnYTBAVE8UdkEAIgLYF5Rf+6Hup0NrLpcWDq3PkBvXpgm571d5XtJ8YfI7KGE3UdYgmtv6PZ4yiKuRtXe4YdxGSai+FoMuRM="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.5.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIT2P4ACgkQ0bVLR6XO/sSZUg/+MEDDHjCd6+0+v1s2WAi474RGnarrmlg79oIRn/aAmd6cFm6E2RoBnPV7vAcICohqcVmPvSnN9jdt8S3m7R1vag8Mh5pGkecjWnFfwRGbn8HTqASI955hwNN0YwgGqaFevGoDWk96k6MejW7oPF3AgeAHk67TXuhpdesor2HTUE04u/PgenT9nuCGBw0behTFsillHlJfuBlytN6DdUPRxUzElfE+WAEeh0ygl0E0UJ3kXEyFJhxR4QMvyEcnhVZjvYfAzqWhA9/XCv5uDgszprXG5ydGqL49YrmDVE2L2LpCwhWTKD9O7pKdG634STIKVOK4006WjihNFcNHo1oYTLvnmSA8edjIabXSs30O6xtG89Mf+rcB+bTsWZzRPQM3UFL4fqCEE1Ebedk9FNmIKFaziFmAUFFSwzpsXKkCOluBxR1Qa7xY9SVoY3JkdE/VCLCebLDPSw92p8HGng3WdcgkIGdJYkJc7LqXzHqMyot5RC8e5p7XVloquWzGv8vDfGaiufMX4fjAdilOo/RPMgrWOnEbUiIkeLbDQiJnCPauXAGYaKcgBtuuYwI6QmQtkoHDSw2RweXXhnrOUrttJt4Hy/eV4I7W1rCo/451E6H3yIQne9e7VrNuYflUVkw3HCeQChB81cvzpjtVmGEnU3VQQeXGofm10okq77ceIOU="
+      }
+    },
+    "updated_at": "2022-02-21T18:27:50.917710927Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-todo",
+    "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.4.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-todo/releases/tag/v0.4.0",
     "hosting": "",
