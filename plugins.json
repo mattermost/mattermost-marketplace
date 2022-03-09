@@ -5711,6 +5711,179 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-github/releases/tag/v2.1.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIoygUACgkQ0bVLR6XO/sTHNA//ZcDKACQicxk1GDinQO2PbXVF6M8GRsYMX/iFHsoSKxknx5BiQtEihOCGAnsSqtZlJpiuoQxTB1BL4NrAxhG6YO3JEZiPv4baXcfUfhKhRduCM1AujyGCv+XB2agzrb50ZkHSNYv6s0KHua/70RV9IRbrKOYtlIFwHISQxS4QRfnCVE49LDmtxYB73GCriGHJYZzyiCMlVNAVHu3CXxdgi4AsXrxwYFHsd5Ezvuy6HjgG82kIzMFBE8YUfaRXru+EI+ixaRkta9XrX7WShPW3Wa7BZYRrJS+5xUMuts1YwOgTzXmpyjrOn36PLvJMxTUiW13ZallXa1iIgw8sEoqJBJhhFEVRrUBmpvz7Dugs1H6rtX6QxRTch50IBnwGLgDPA1bZpwBmhVQxIXbhqIXg/ohoWh/akOA1/fyklaF8m9nidCb9jHb9JoVhPTqREG+vY13HYSWP7HHofFD6Yj+x4Y8u6vdEkJ5sKKY/ivlZ2ALDdCqlBuJakKqYUGqNE4vjFCbJ2eA7t5bN9QYZxhr9pFWiqDhPyAeNT59HgUBUOhCVi/FzcNTyFVW9WDh4oy1D6ZeG/jnzEdB2LUlN0HtkAGDYET1NAorxmv1x/O6BnYBP3do1Mi3PP9GHQER5Wiy7eq3YVZ2QuFX8DUHmYjWU4yj8+rxG5LI4py3d+7f1pf0=",
+    "repo_name": "mattermost-plugin-github",
+    "manifest": {
+      "id": "github",
+      "name": "GitHub",
+      "description": "GitHub plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-github/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-github/releases/tag/v2.1.0",
+      "icon_path": "assets/icon.svg",
+      "version": "2.1.0",
+      "min_server_version": "6.5.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "The GitHub plugin for Mattermost allows users to subscribe to notifications, stay up-to-date with reviews, see the status of pull requests at a glance, and other common GitHub actions - directly from Mattermost. \n \n Instructions for setup are [available here](https://www.mattermost.com/pl/default-github-plugin#configuration).",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-github).",
+        "settings": [
+          {
+            "key": "UsePreregisteredApplication",
+            "display_name": "Use Preregistered OAuth Application:",
+            "type": "bool",
+            "help_text": "When true, instructs the plugin to use the preregistered GitHub OAuth application - application registration steps can be skipped. Requires [Chimera Proxy](https://github.com/mattermost/chimera) URL to be configured for the server. Cannot be used with GitHub enterprise. **This setting is intended to be used with Mattermost Cloud instances only.**",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "GitHubOAuthClientID",
+            "display_name": "GitHub OAuth Client ID:",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with GitHub.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitHubOAuthClientSecret",
+            "display_name": "GitHub OAuth Client Secret:",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with GitHub.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret:",
+            "type": "generated",
+            "help_text": "The webhook secret set in GitHub.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GithubOrg",
+            "display_name": "GitHub Organization:",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnterpriseBaseURL",
+            "display_name": "Enterprise Base URL:",
+            "type": "text",
+            "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnterpriseUploadURL",
+            "display_name": "Enterprise Upload URL:",
+            "type": "text",
+            "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnableLeftSidebar",
+            "display_name": "Display Notification Counters in Left Sidebar",
+            "type": "bool",
+            "help_text": "When false, the counters showing the user how many open/assigned issues they have in Github will not be shown in the Left Hand Sidebar on desktop browsers.",
+            "placeholder": "",
+            "default": true
+          },
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories:",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "ConnectToPrivateByDefault",
+            "display_name": "Connect to private Repositories by default:",
+            "type": "bool",
+            "help_text": "(Optional) When enabled, /github connect command will let users connect to their github account and gain access to private repositories without explicitly mentioning private.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EnableCodePreview",
+            "display_name": "Enable Code Previews:",
+            "type": "dropdown",
+            "help_text": "Allow the plugin to expand permalinks to GitHub files with an actual preview of the linked file.",
+            "placeholder": "",
+            "default": "public",
+            "options": [
+              {
+                "display_name": "Enable for public repositories",
+                "value": "public"
+              },
+              {
+                "display_name": "Enable for public and private repositories. This might leak confidential code into public channels",
+                "value": "privateAndPublic"
+              },
+              {
+                "display_name": "Disable",
+                "value": "disable"
+              }
+            ]
+          },
+          {
+            "key": "EnableWebhookEventLogging",
+            "display_name": "Enable Webhook Event Logging:",
+            "type": "bool",
+            "help_text": "Allow the plugin to log the webhook event. The log level needs to be set to DEBUG.",
+            "placeholder": "",
+            "default": false
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.1.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIoygMACgkQ0bVLR6XO/sSbSQ/9GXz6wfAN9l+UFItwFpNMhUyW4nECkZqS6Bx5bQ7UXIZajL2J0/d5wAtvCYIDeore5ZVjatVdV9wK+gUcsWKM+FxWRWoERJ7PjdReDcznke00FgqaexlV4UrpOj/RpWBdWnl6qaXugpFvupGswKX8rhi/Fx8FV8kFbGYq4/3bmSi/JHWHMKM4QCjl9WAoVy7YVa0oa3yoqZIeOa2xmW1+FDolnqIvdS96/J1CHCLHM54KAknm/7iFboq3tFR8DLPnodTwJDG/QYhRtPh/gqmyhQnxQS5kM6lwfZEytxTE54QNSkdrA0ycQ3DPY9YJJMspjSn8upqqUkg/aSslkZtQehTwn5ROr+eeXI6EPjsV/4SID3f8pACu+qxMFBkYSujDZytQc0VMDq55xqt/TIadxLUjqdE28+rO88eLtk9OP9+vo536BAvmSsj1eFgGZDnp1DMK6Dztn1BOfBS9QPBfzc1h5ZMpz4ksASjaOTzmpGKcf2nML79bPhAYUk52z6mD7GsUk7MeFnBZhnLd+zGwu1SBAWp25bgLhCrQUD6i72tFPaaro2crdYg5rQTAgbJ1phjT8ceLG01QzJGuX5eytRu4YkOT0yHncXVBIIjv91osTcSfCQGfYCylLWlgL+3zWaVR3Iu2ILcXR/u2CKtTAPmV7CvwHaHYA/z4w7Da7/c="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.1.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIoygEACgkQ0bVLR6XO/sQiqA/+NBw34OW+P+J9WiLEBfNFQjjicSvb4ZmEVkWIitUAT6v5zP9dhwtgTnZP+2IkOaZVv3RiVA0lhsMcRtZIEwUm4V4KxpgykM3N+qCXYr58mpcizuu5oS0EkH5Mk3kOcuPcW7VOzDphgDJprfmLDYIV4ugrq3GLCDgiiHTY88O+dMtsAVRqm/W30wCSWBml+M/ljnAE4ivdtWIfWkom0RRiyVbJKUhlvi+d9XgyWySh7U5/l1qN/1JZtCjCUblksSy8eSaC1LOdbttsg6dfGA8qc5G+NDx4PMkkZ+Uhd+9QGbTqRs2GwAqKTPM2WDnAj4w/Rk93vw7m30WdJUectyvNyZs4eERQGBWKCp4yq2mNBd4wGGSk5aFaemsqlknE7fcKpO5hk5fZqpLh9L1rXUa4I9jqpqgKM3SicaLehujYYCUaOhMU7C6MOMxBg2+psIY06eoamGA3FiBotBTqZf/hRMunTpFcnWZQ5Vdr5OYAB4i5c+HEoGeKXqq47rDGVClVlFxX8rdF3imHEzHOUFtqybpxLvlNJ11G4rT55ZD14uqJ8PaeuBu3/Vm56bbEi7r1oXAYAdmeTJEg5uIGzlrSz+js5mHP8fVG4FymOhdQmT/mzs+nQDvFm2I7v+B9Y9UonJ2BpLIcQMKq3ytDkMP48t3pg4GK4HZFY/RGDAHoPdw="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.1.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIoygIACgkQ0bVLR6XO/sSyXw//WuBV4t7VY+FTedet11yIFS4Iq0PZVnd6NwQ+jvUpJTV3DcvqQmfGr7o19VyX/D57WozWCHtGAHO46KA6x5vrL9fvuvQgdUaLGR92vjqk5UFAa48gOAiChdp37/WL02o1g3T90ueCxu6p6fZbeQUT7PjJ5Rx5LilqAxvyMl5APQh53/lAlG3WOT65aR6jhqjlVtapTnfzQDTH+U4tNZbtD3Q1n5/JoIuDKJ8sGKCF84alKHNbPIpjYZc8PtRP4hF6Xjb439Vd2JTQHjFUrVkCKo9RU1fF92Nvw02XTdp6HWpcgJ4Y8eRs1deu9xMz/HPGhlng3GMNTjhM+hSJkGFp7G9tC4afGLR0lpSl6sa2EYuGQHr5enb9VU8BqW0UZf1tZZs1A1ZzI43FXPYtlg8judzZCPR+tZimyiiWZpEpij7rSFw4QNHDBn/SZjJgZDVDFvxYHgUbNCC7U7RhMTsC31gdv80EYyZXbugzLFmwfgFVg2pgAqOShGwfkLYcn+SiJ280a+QgWb7TDemcaqJqthrQR1w35fEszwI9SyjRQWVwKGTWcyUvTOiOB5h6Sn58lQQStCDwlCvtlyp5b9VyOlXyN9QIqSfe61KbxPAjOTMAUqjiYjaYr0QWobk9NzpNUVkZEhnEkwU4E77greVbA/6qG8+p2HCDiVvAOGZb514="
+      }
+    },
+    "updated_at": "2022-03-09T17:26:55.57843Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.0.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-github/releases/tag/v2.0.1",
     "hosting": "",
