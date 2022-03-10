@@ -1,5 +1,92 @@
 [
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.4.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.4.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "beta",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIqUGIACgkQ0bVLR6XO/sT/Ng//dtmR9PxyG3DBOAbq+6hQ2lMoNg8GLd1lkwV8ytmykwlfUUbJtJaItx1OsJQsHQ/RzftNW6rsuV4MqF70ZV/sM0l4ggb96Lry97yHOsD2Fdmn12JlRtdlVWVR5M3D6tvVYVuHkr/V48ZpQ9poTPTmjQqaDJctxiBt3KBypH3KADiWMiEhzjX5qaVPKiEVObQDVGCQynrEXlYWxMYQQYNhBk3QcUlqXqZscEuePsEK7bkxVIznFSNZ6MyMUaqSFHuJbAN6pnG1HmiHYjrvtozlrueXW8NLvGkp6nVXmW1kd38TCtKgRyl3DEMleuicae9UpSYdSWgP2HgSMBG4oujRxcIRQ+pcDK2mTepf2TX63R61BAWxCeT1uCtYQXAG0iIay7HQdIbmp8pFy+kniTVolMXHxN5sYiVqruEencx0uFNprEgOvtCDax2B/SZF1Jwr/QjrK1zE6SF1HxUlYUCQFgMflbqGkpWGB3XcDxWmZHluKwv8w28HfCzlAuhfm2vWxtUHOcFrrb85OwaiQCPAQm8CZv6YDssqfQcQkn29LV8usW0bQNb9Q4OYQlDB0DDusFPJhmYIfca82F1QoiKt2865U+1yJ6zOMsn3GSBIJ599l8anpQt6KMLh9CWut7yi60sMSpjBF2NriRORgirfjHJRV8jAqzW8yqqIbJbdMZA=",
+    "repo_name": "mattermost-plugin-calls",
+    "manifest": {
+      "id": "com.mattermost.calls",
+      "name": "Calls",
+      "description": "Integrates real-time voice communication in Mattermost",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.4.1",
+      "version": "0.4.1",
+      "min_server_version": "6.3.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "ICEHostOverride",
+            "display_name": "ICE Host Override",
+            "type": "text",
+            "help_text": "The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "UDPServerPort",
+            "display_name": "RTC Server Port",
+            "type": "number",
+            "help_text": "The UDP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443
+          },
+          {
+            "key": "ICEServers",
+            "display_name": "ICE Servers",
+            "type": "text",
+            "help_text": "A comma separated list of ICE servers URLs (STUN/TURN) to use.",
+            "placeholder": "stun:example.com:3478",
+            "default": "stun:stun.l.google.com:19302,stun:global.stun.twilio.com:3478"
+          },
+          {
+            "key": "AllowEnableCalls",
+            "display_name": "Allow Enable Calls",
+            "type": "bool",
+            "help_text": "When set to true, it allows channel admins to enable or disable calls in their channels. It also allows participants of DMs/GMs to enable or disable calls.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "DefaultEnabled",
+            "display_name": "Default Enabled Calls",
+            "type": "bool",
+            "help_text": "When set to true, calls will be possible in all channels where they are not explicitly disabled.",
+            "placeholder": "",
+            "default": true
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.4.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmIqUGEACgkQ0bVLR6XO/sSU2g/9HiJIsiAL++SSLNTooIwhzBzQnwKzK3sXxlCJTjNMGkGGXBsdEq7YBCm9+j9GDP113qdTWdzit1CLoSz5Mw/zKGgwA1or2Nx4BmxczwgXY79KJi4Q9ySY+XIs8n0oNE3gs3XV7b4LORueerTLqAOaPjUxYhu1TL0y/WmITd1i/R7xbcxLfI0oo8hymqk3OSa3mNeaBUS/sV4gRwg6sAmd0tDu61LsYN4s3HJ05aiesFzg9OT9fWN2tvx7VdOkR/2xDQnP8neuT0NEXPzaZUiOa5H+6gNkkuYaFSIOrzuXLtYSeD4pR32xilsd6ic4eOi4NzO/7ng1Q+JDNGLEr+bc84pyHScPhHE3l+QZy6HFlRK2Y24SmGepZmiTuQHhBHYRxsoGSxmNBDuFD/UnwIlV9FWWnOr0txhYMLH2hvYo+Xg1vIW/3sD2GME7DzqBowvZ8Qno5poUlV9W+OTWpZo9uQPLuIq7zxin0syiLHvqGrcsWfYkWkKxzwdq7PetrLLql6FVAtZDKnw5kRYaxe8Yn2db2qychzbFYRupbv2ziKviXPpc7MaStJnz8j/fnqTGeioJVowhYMjGtiwVx2ceC3mMBvY18KiBHPPvjCNeN7tumrnyazmrJUUyYIpPD3Wjo9wROtLytaR6juBCrWo3zU53HxxVXjY9JWwcNJ0AuZo="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2022-03-10T19:25:28.759522Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-incident-collaboration/",
     "icon_data": "data:image/svg+xml;base64,PHN2ZwogICAgd2lkdGg9JzE0MCcKICAgIGhlaWdodD0nMTcwJwogICAgdmlld0JveD0nMCAwIDE0IDE3JwogICAgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJwogICAgc3R5bGU9J21hcmdpblRvcDogLTFweCcKPgogICAgPHBhdGgKICAgICAgICBkPSdNMTMuNzUgNy44MTE3N0MxMy43NSA5LjE3MTE0IDEzLjQ1NyAxMC40ODM2IDEyLjg3MTEgMTEuNzQ5M0MxMi4yODUyIDEzLjAxNDkgMTEuNDc2NiAxNC4wOTMgMTAuNDQ1MyAxNC45ODM2QzkuNDE0MDYgMTUuODc0MyA4LjI2NTYyIDE2LjQ4MzYgNyAxNi44MTE4QzUuNzM0MzggMTYuNDgzNiA0LjU4NTk0IDE1Ljg3NDMgMy41NTQ2OSAxNC45ODM2QzIuNTIzNDQgMTQuMDkzIDEuNzE0ODQgMTMuMDE0OSAxLjEyODkxIDExLjc0OTNDMC41NDI5NjkgMTAuNDgzNiAwLjI1IDkuMTcxMTQgMC4yNSA3LjgxMTc3VjMuMzExNzdMNyAwLjI4ODMzTDEzLjc1IDMuMzExNzdWNy44MTE3N1pNNyAxNS4zQzcuOTE0MDYgMTUuMDQyMiA4Ljc2OTUzIDE0LjUzODMgOS41NjY0MSAxMy43ODgzQzEwLjM4NjcgMTMuMDM4MyAxMS4wMzEyIDEyLjE0NzcgMTEuNSAxMS4xMTY1QzExLjk5MjIgMTAuMDg1MiAxMi4yMzgzIDkuMDMwNTIgMTIuMjM4MyA3Ljk1MjM5VjQuMjYwOTlMNyAxLjk0MDY3TDEuNzYxNzIgNC4yNjA5OVY3Ljk1MjM5QzEuNzYxNzIgOS4wMzA1MiAxLjk5NjA5IDEwLjA4NTIgMi40NjQ4NCAxMS4xMTY1QzIuOTU3MDMgMTIuMTQ3NyAzLjYwMTU2IDEzLjAzODMgNC4zOTg0NCAxMy43ODgzQzUuMjE4NzUgMTQuNTM4MyA2LjA4NTk0IDE1LjA0MjIgNyAxNS4zWk02LjI2MTcyIDQuNzg4MzNINy43MzgyOFY5LjI4ODMzSDYuMjYxNzJWNC43ODgzM1pNNi4yNjE3MiAxMC44SDcuNzM4MjhWMTIuMzExOEg2LjI2MTcyVjEwLjhaJwogICAgICAgIGZpbGw9J2N1cnJlbnRDb2xvcicKICAgIC8+Cjwvc3ZnPgo=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-incident-collaboration-v1.15.1-alpha.4.tar.gz",
