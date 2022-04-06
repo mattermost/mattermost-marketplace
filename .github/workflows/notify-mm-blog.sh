@@ -17,7 +17,7 @@ RELEASE_NOTES=$(jq -r .release_notes_url <<< "$JSON")
 
 echo '{
   "username": "Plugin Marketplace",
-  "icon_url": "https://www.mattermost.org/wp-content/uploads/2016/04/icon.png",
+  "icon_url": "https://mattermost.com/wp-content/uploads/2022/02/icon.png",
   "attachments":[{
     "fallback": "'$NAME $VERSION' was added to the Marketplace",
     "title": "'$NAME $VERSION' was added to the Marketplace",
