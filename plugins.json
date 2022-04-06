@@ -3251,6 +3251,93 @@
     "updated_at": "2019-06-11T19:41:07Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.4.8.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.4.8",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "beta",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmJNxtMACgkQ0bVLR6XO/sSk6w//R6X219uKK/zwNLl2C3e7ACc8wKeErL4eDfUcsZufowwawZjBp7hEP6Vi9uz4k4FLNMy85utB3/GofCiUrgjwrzbi0F6z4Tj72D3b3d3WMXmudZUSsbIeX5POXYBHfK/9tGKOlumlDKrdFxk8KHgSSfMhbwmv04BjEOSDXk6S+UKJEB0VxOmQccrMuEVTumdfz5uigJVyU7JQUkLZ+QyPecf5lSTACGyM/lslHtfxCRix3o82hkAqdS24oQFxASReaj4ypWAUDZwBviHrNBjSVW9dhej6dxH6g/L+K0H5yN6zWnIcCjMwSw/OgrTidOWjNmQbtdmEwMgqDBQNg/n0aYMvC3/UUwMF1t3kjCQinNGYCJNAQXzhkr5jN2IZ4ufWPU0L8CH6QhFG8nxq4x0D2tcA617nmP1Rd3WrBiXBT7m8YoD6cDe70KKHzt4XmiGK7lGNpbgcS8ZgRVTycusoTEb8n688BpcksleU8uJlKQEBzR3Y3KRdzw7MjA8fblAo2xBmcAmNUlH6Ia6DiWyab1O2sUlF4CjRPCQB/mb8uiPc/qcivnJCsTVjERNof4FlFl1cyQnZ3Y/MxUvkUE+9IIi7WWegKQSS2KDKlp4+g7F0TqnBuL9SxM75mx6t+pssLKtrCLXUjtc6RjsfIAPdHvx1/4wpRhzmgAIaeurXxG8=",
+    "repo_name": "mattermost-plugin-calls",
+    "manifest": {
+      "id": "com.mattermost.calls",
+      "name": "Calls",
+      "description": "Integrates real-time voice communication in Mattermost",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.4.8",
+      "version": "0.4.8",
+      "min_server_version": "6.3.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "ICEHostOverride",
+            "display_name": "ICE Host Override",
+            "type": "text",
+            "help_text": "The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "UDPServerPort",
+            "display_name": "RTC Server Port",
+            "type": "number",
+            "help_text": "The UDP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443
+          },
+          {
+            "key": "ICEServers",
+            "display_name": "ICE Servers",
+            "type": "text",
+            "help_text": "A comma separated list of ICE servers URLs (STUN/TURN) to use.",
+            "placeholder": "stun:example.com:3478",
+            "default": "stun:stun.global.calls.mattermost.com:3478"
+          },
+          {
+            "key": "AllowEnableCalls",
+            "display_name": "Allow Enable Calls",
+            "type": "bool",
+            "help_text": "When set to true, it allows channel admins to enable or disable calls in their channels. It also allows participants of DMs/GMs to enable or disable calls.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "DefaultEnabled",
+            "display_name": "Default Enabled Calls",
+            "type": "bool",
+            "help_text": "When set to true, calls will be possible in all channels where they are not explicitly disabled.",
+            "placeholder": "",
+            "default": true
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.4.8-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmJNxtIACgkQ0bVLR6XO/sTB4w//UulNBLs5LYFInx2w5jjdjxHOGZ7KzDWgz0SbMLP62d55fWbDtbBqWbU3GU6v4Pdnr2G6WmKlfRGLOSQafufNTEeL0+9dzDEEg1jbz6+s7L6F6viXj+ebYaQE2+sJw9yu15pga/cqTCgLt0IMgwF6cWwHTbT3QGbLGI0DV9vqlXzWZ6tsrN5kkQalVGpqwrn9fjv6gfEQ10ECIG8ThpxheXQtQmeN1a0NrGpEsdE/9gFuMvkMd3QifeK1lgEBDR8+lOV//BVtAHBRLBihB35edUWUgSNT2koJSAQpIsLswvztg6AsBlM2al117XXVsMpGWMdI0BWEm2D2dz9SijtLPR3L4Dr6PwLdcxBWVIhZs2zEXdA9rtmRrZUnggr8RmareYEjLKioue788poWktQT3rXHqPlnGu2nncXUI2NxExcZnTvJhrAhwxlH3f/lkl5vl7EKTAKUyrjZWVw3OdRHA/TepXq5u5km+WpyZCPOKYvMJ8e61PuX5dEf7x4uR904qvJ2ZAouMqPfBvTsXnPN7bADUsCm3o/Jcw04JjZCPyM0hI8c4uHBqsl1qpTg0vQNWk6kbR6vr5Okoq7HJJsjZ40pv6lTK+R6Quhf9b9XxucdOvMB1GnvorAf/fwli3OXA953Hi7Lq34hz88CzcMZafOqYmJuUvvRSqahyrvaDQI="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2022-04-06T17:09:44.841808Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-confluence",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjQ2cHgiIHZpZXdCb3g9IjAgMCAyNTYgMjQ2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIj4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iOTkuMTQwMDg3JSIgeTE9IjExMi43MDgwODQlIiB4Mj0iMzMuODU4OTgxMiUiIHkyPSIzNy43NTQ5NjA2JSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDA1MkNDIiBvZmZzZXQ9IjE4JSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjY4NEZGIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iMC45MjU2OTE2MyUiIHkxPSItMTIuNTgyMzA3NCUiIHgyPSI2Ni4xODAwNzEzJSIgeTI9IjYyLjMwNTc0NzElIiBpZD0ibGluZWFyR3JhZGllbnQtMiI+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMwMDUyQ0MiIG9mZnNldD0iMTglIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiMyNjg0RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8Zz4KCQkJCTxwYXRoIGQ9Ik05LjI2MDU0NDg0LDE4Ny4zMjk5NzEgQzYuNjE5Mzk3ODIsMTkxLjYzNzA3MiAzLjY1MzE4NjU1LDE5Ni42MzQ5MzUgMS4xMzM5Mzg2MywyMDAuNjE2OTcyIEMtMS4xMjA5ODM4NSwyMDQuNDI3NTEgMC4wODk1NDg3OTQ1LDIwOS4zNDE5MTEgMy44NTYzNTE3MSwyMTEuNjY5MTU3IEw1Ni42NzkyOTIxLDI0NC4xNzU1ODIgQzU4LjUzMzQ4NTksMjQ1LjMyMDM5MyA2MC43Njk3Njk1LDI0NS42NzI1NyA2Mi44ODYwNjgzLDI0NS4xNTMwNDUgQzY1LjAwMjM2NzIsMjQ0LjYzMzUyMSA2Ni44MjEzNTM2LDI0My4yODU4MjYgNjcuOTM0NjQxNywyNDEuNDEyNTM2IEM3MC4wNDc1NTkzLDIzNy44Nzc0NjIgNzIuNzY5OTcyNCwyMzMuMjg1OTI5IDc1LjczNjE4MzcsMjI4LjM2OTMzMyBDOTYuNjYyMTk0NywxOTMuODMxMjU2IDExNy43MTAxMDUsMTk4LjA1NzA5MSAxNTUuNjYxMzU2LDIxNi4xNzk0MjMgTDIwOC4wMzczMzMsMjQxLjA4NzQ3MSBDMjEwLjAyMDk5NywyNDIuMDMxNjM5IDIxMi4zMDI0MTUsMjQyLjEzMjQ1NyAyMTQuMzYxNjMyLDI0MS4zNjY5NDkgQzIxNi40MjA4NDgsMjQwLjYwMTQ0MSAyMTguMDgyNDA1LDIzOS4wMzQ4MzMgMjE4Ljk2NzYxOCwyMzcuMDI0MTY4IEwyNDQuMTE5NDY0LDE4MC4xMzc5MjUgQzI0NS44OTY0ODMsMTc2LjA3NTA0NiAyNDQuMDg4MzM2LDE3MS4zMzc3IDI0MC4wNTYxNjEsMTY5LjQ5MjA3MSBDMjI5LjAwMzk3NywxNjQuMjkxMDQzIDIwNy4wMjE1MDcsMTUzLjkyOTYyIDE4Ny4yMzMyMjEsMTQ0LjM4MDg1NyBDMTE2LjA0NDE1MSwxMDkuODAyMTQ4IDU1LjU0MTU2NzIsMTEyLjAzNjk2NSA5LjI2MDU0NDg0LDE4Ny4zMjk5NzEgWiIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSI+PC9wYXRoPgoJCQkJPHBhdGggZD0iTTI0Ni4xMTUwNSw1OC4yMzE5NDI4IEMyNDguNzU2MTk3LDUzLjkyNDg0MTUgMjUxLjcyMjQwOCw0OC45MjY5Nzg3IDI1NC4yNDE2NTYsNDQuOTQ0OTQxNiBDMjU2LjQ5NjU3OSw0MS4xMzQ0MDM3IDI1NS4yODYwNDYsMzYuMjIwMDAyNSAyNTEuNTE5MjQzLDMzLjg5Mjc1NzIgTDE5OC42OTYzMDMsMS4zODYzMzIzMSBDMTk2LjgyNjk4LDAuMTI3MjgzODkzIDE5NC41MTg3NDEsLTAuMjk4OTE1NzYyIDE5Mi4zMjMwNTgsMC4yMDk1NTgzMTIgQzE5MC4xMjczNzQsMC43MTgwMzIzODYgMTg4LjI0MTQ2MSwyLjExNTUwOTIyIDE4Ny4xMTU4ODksNC4wNjgxMTIzNiBDMTg1LjAwMjk3MSw3LjYwMzE4NjA3IDE4Mi4yODA1NTgsMTIuMTk0NzE4NiAxNzkuMzE0MzQ3LDE3LjExMTMxNTMgQzE1OC4zODgzMzYsNTEuNjQ5MzkxOCAxMzcuMzQwNDI2LDQ3LjQyMzU1NjUgOTkuMzg5MTc0OCwyOS4zMDEyMjQ3IEw0Ny4xNzU3Mjk5LDQuNTE1MDc1NyBDNDUuMTkyMDY2MSwzLjU3MDkwODI4IDQyLjkxMDY0NzUsMy40NzAwODk3OSA0MC44NTE0MzEyLDQuMjM1NTk3NyBDMzguNzkyMjE0OSw1LjAwMTEwNTYyIDM3LjEzMDY1NzgsNi41Njc3MTQzNCAzNi4yNDU0NDQ1LDguNTc4Mzc4ODEgTDExLjA5MzU5ODMsNjUuNDY0NjIyMyBDOS4zMTY1Nzk0Miw2OS41Mjc1MDEyIDExLjEyNDcyNjcsNzQuMjY0ODQ3MSAxNS4xNTY5MDE0LDc2LjExMDQ3NjUgQzI2LjIwOTA4NTksODEuMzExNTA0NCA0OC4xOTE1NTU3LDkxLjY3MjkyNzQgNjcuOTc5ODQxOCwxMDEuMjIxNjkgQzEzOS4zMzE0NDQsMTM1Ljc1OTc2NiAxOTkuODM0MDI4LDEzMy40NDM2ODMgMjQ2LjExNTA1LDU4LjIzMTk0MjggWiIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0yKSI+PC9wYXRoPgoJCTwvZz4KPC9zdmc+Cg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-confluence-v1.2.0.tar.gz",
