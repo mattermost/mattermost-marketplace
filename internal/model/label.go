@@ -41,6 +41,6 @@ var ExperimentalLabel Label = Label{
 
 var EnterpriseLabel Label = Label{
 	Name:        "Professional/Enterprise",
-	Description: "This plugin requires a Professional or Enterprise license to run.",
+	Description: "This plugin requires a Professional or Enterprise subscription.",
 	URL:         "https://mattermost.com/pricing/",
 }
