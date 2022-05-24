@@ -3303,6 +3303,101 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.5.3.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.5.3",
+    "hosting": "on-prem",
+    "author_type": "mattermost",
+    "release_stage": "beta",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmKNPBMACgkQ0bVLR6XO/sThCg/+NrLHlxL/pYFnMvv3g/sCAJR/6WwFmcmQJx0MYzG8o1zOZKhgasQ8SNeVA/lGCb67Mta1trNvOO7Hitk7G4Se7r8jFsk0MqQjwMUduUEi4gDBqhoVKj2CsDo7EkvsRazL6GAPVcUEP6LLtOjHRGm6ffE6uLDI0EovCLu39fSphykVLgCWLROGToIJJugXuQjBrnXNHwyEIQTsHCjbpVM4zQSMqNNQWYJxGgebW4HVDBj2t1j9yUgS4tfSae8ebkhS3/SzilfUGSp7rPaHnAU1o3InASMPIbUklyoR2h6J4ZLS+O2MEDxwBhzvlipF55XhbRDmbQM4Q1rKjBFy8DgRHjrszMRp6bN9qKzTohuyxBFlB7WHMMwhjj9rPxZJ50dzcs31BBS6/j+66DQ7tZjEsFq3Cfitc9z2Fzs5S4M/OsutMcuPKTdQnh1w0ngqVT+f1+gPA2mSrT9Rao9CmwWlbGqMvtfOblaIx5xFNWrpiTNVs2UpJjxfVAj3/1xSZEwxvOG7od1CIXEbjunvS0xdFz7hSLf+BXyZtuOwvRs3h9AKhn6At1UXr/cxDaP2DXUmVfTB8zaD5fLrvRMsZJE7MkBerNFrwFsyPsi809+l8uPqqSzE5UZ/OROV41RDSYAvF4vjA/4N0Vlc67Ea7CdgsKu5D7OK3DrYqC8wr6xQUHM=",
+    "repo_name": "mattermost-plugin-calls",
+    "manifest": {
+      "id": "com.mattermost.calls",
+      "name": "Calls",
+      "description": "Integrates real-time voice communication in Mattermost",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.5.3",
+      "version": "0.5.3",
+      "min_server_version": "6.6.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "ICEHostOverride",
+            "display_name": "ICE Host Override",
+            "type": "text",
+            "help_text": "The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "UDPServerPort",
+            "display_name": "RTC Server Port",
+            "type": "number",
+            "help_text": "The UDP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443
+          },
+          {
+            "key": "RTCDServiceURL",
+            "display_name": "RTCD Service URL",
+            "type": "text",
+            "help_text": "The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+            "placeholder": "https://rtcd.example.com",
+            "default": null
+          },
+          {
+            "key": "ICEServers",
+            "display_name": "ICE Servers",
+            "type": "text",
+            "help_text": "A comma separated list of ICE servers URLs (STUN/TURN) to use.",
+            "placeholder": "stun:example.com:3478",
+            "default": "stun:stun.global.calls.mattermost.com:3478"
+          },
+          {
+            "key": "AllowEnableCalls",
+            "display_name": "Allow Enable Calls",
+            "type": "bool",
+            "help_text": "When set to true, it allows channel admins to enable or disable calls in their channels. It also allows participants of DMs/GMs to enable or disable calls.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "DefaultEnabled",
+            "display_name": "Default Enabled Calls",
+            "type": "bool",
+            "help_text": "When set to true, calls will be possible in all channels where they are not explicitly disabled.",
+            "placeholder": "",
+            "default": true
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.5.3-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmKNPBEACgkQ0bVLR6XO/sRYARAAl64MCu4XmAFTx67uPXkd0CdNrwabs2BEUX07UpGMbo3j9jkGpqAWPk8CkvsVUcoB8RydUcPphd4z+l7EVdgNEu6M/Iy4o4lnqSOkD5JtsyJZcQ9oPxKvMCYMGL/16kft2Ar5o7AZnQBgahgSvaHLiHEvcgPsZAToYKJQ78OjqK8eRLh9ChQnfm5P4meP1SHN/h3a9aWZ15o4UstER2NNVwlQhcvHXeWqUhH1gAGRj2SFfYUpT2hUeXsG3e9K1MUtoVyJARqaJerT+8HlKmVNCysTik1I/eh1HJZNICtlNLIcCPoVAoGapJFix7Ktgc+iKp2/0nmZWsdYMMdzS5zgjgmVV83jz5KRU9qhmrT6Joy+Sh9bZTJb7LMGFXYTLBPZKkFZiB3wNyiuScLFCZrRXOb2Ta81ASdvMlEFR0KnYA9Ku6sGAJoMBLlsRa121KudyrCqG2awwxwCMh6DWAL9LCDQ6oNKOXZpU0L7ooiBTLmRzMKhtr1qhj9mgm1qPjLI4/zYvry16BwZGxx7KmBYGV6LILJ7scHEBy6J5bLEzLcXi+9SOpiijA/gpgszqWr0Y/G5HSaR5uCT/ZUmG1WCFfQ/m4NRkyDAIOlwtrqIYZ14EDErLQeHSfEWiiaqzpFMrawnKvrg2k4Rio9ifyZOZS265rAJVfZzzQmTTeUVoHU="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2022-05-24T20:18:39.508011Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+    "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.5.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.5.0",
     "hosting": "on-prem",
