@@ -2763,7 +2763,7 @@
     "homepage_url": "https://mattermost.com/marketplace/app-framework",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v1.1.0.tar.gz",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v1.0.1",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v1.1.0",
     "hosting": "",
     "author_type": "mattermost",
     "release_stage": "production",
@@ -2776,7 +2776,7 @@
       "description": "This plugin powers the Mattermost Apps Framework and is required for any Apps to run",
       "homepage_url": "https://mattermost.com/marketplace/app-framework",
       "support_url": "https://github.com/mattermost/mattermost-plugin-apps/issues",
-      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v1.0.1",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v1.1.0",
       "version": "1.1.0",
       "min_server_version": "6.6.0",
       "server": {
