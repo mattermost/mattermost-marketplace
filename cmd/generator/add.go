@@ -3,11 +3,12 @@ package main
 import (
 	"archive/tar"
 	"bytes"
+	"encoding/json"
 	"fmt"
 	"time"
 
 	"github.com/blang/semver"
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
@@ -127,9 +128,10 @@ var addCmd = &cobra.Command{
 			return errors.Wrap(err, "failed to read manifest from plugin bundle for release")
 		}
 
-		manifest := mattermostModel.ManifestFromJson(bytes.NewReader(manifestData))
-		if manifest == nil {
-			return errors.New("manifest nil after reading from plugin bundle for release")
+		var manifest mattermostModel.Manifest
+		err = json.Unmarshal(manifestData, &manifest)
+		if err != nil {
+			return errors.Wrap(err, "failed to read manifest from plugin bundle for release")
 		}
 
 		err = manifest.IsValid()
@@ -160,7 +162,7 @@ var addCmd = &cobra.Command{
 			ReleaseNotesURL: manifest.ReleaseNotesURL,
 			Labels:          labels,
 			Signature:       signature,
-			Manifest:        manifest,
+			Manifest:        &manifest,
 			Enterprise:      enterprise,
 			UpdatedAt:       time.Now().In(time.UTC),
 		}

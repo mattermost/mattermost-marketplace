@@ -6,6 +6,7 @@ import (
 	"compress/gzip"
 	"context"
 	"encoding/base64"
+	"encoding/json"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -18,7 +19,7 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -321,10 +322,13 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to read manifest from plugin bundle for release %s", releaseName)
 		}
-		plugin.Manifest = mattermostModel.ManifestFromJson(bytes.NewReader(manifestData))
-		if plugin.Manifest == nil {
-			return nil, errors.Errorf("manifest nil after reading from plugin bundle for release %s", releaseName)
+
+		var manifest mattermostModel.Manifest
+		err = json.Unmarshal(manifestData, &manifest)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to read manifest from plugin bundle for release %s", releaseName)
 		}
+		plugin.Manifest = &manifest
 
 		err = plugin.Manifest.IsValid()
 		if err != nil {

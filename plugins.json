@@ -17,8 +17,8 @@
       "version": "0.1.2",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -80,8 +80,8 @@
       "version": "0.1.1",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -139,8 +139,8 @@
       "min_server_version": "5.16.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -214,8 +214,8 @@
       "min_server_version": "5.10.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -324,8 +324,8 @@
       "min_server_version": "5.10.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -431,8 +431,8 @@
       "min_server_version": "5.10.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -538,8 +538,8 @@
       "min_server_version": "5.10.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -645,8 +645,8 @@
       "min_server_version": "5.10.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -743,8 +743,8 @@
       "min_server_version": "5.10.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -840,8 +840,8 @@
       "version": "0.2.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -945,8 +945,8 @@
       "version": "0.1.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -1055,8 +1055,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -1124,8 +1124,8 @@
       "min_server_version": "5.20.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -1195,8 +1195,8 @@
       "min_server_version": "5.20.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": "server/dist/plugin-freebsd-amd64"
@@ -1246,8 +1246,8 @@
       "min_server_version": "5.20.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": "server/dist/plugin-freebsd-amd64.exe"
@@ -1636,8 +1636,8 @@
       "min_server_version": "5.20.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": "server/dist/plugin-freebsd-amd64.exe"
@@ -2000,8 +2000,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2124,8 +2124,8 @@
       "min_server_version": "5.26.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2178,8 +2178,8 @@
       "min_server_version": "5.2.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2253,8 +2253,8 @@
       "min_server_version": "5.2.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2315,8 +2315,8 @@
       "version": "1.0.2",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2394,8 +2394,8 @@
       "version": "1.0.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2469,8 +2469,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2531,8 +2531,8 @@
       "min_server_version": "5.20.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2592,8 +2592,8 @@
       "min_server_version": "5.20.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2650,8 +2650,8 @@
       "version": "1.1.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2690,8 +2690,8 @@
       "version": "1.0.2",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2739,8 +2739,8 @@
       "version": "1.0.1",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2779,8 +2779,8 @@
       "version": "1.0.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2822,8 +2822,8 @@
       "min_server_version": "5.24.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -2947,8 +2947,8 @@
       "min_server_version": "5.26.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3026,8 +3026,8 @@
       "min_server_version": "5.26.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3104,8 +3104,8 @@
       "min_server_version": "5.16.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3166,8 +3166,8 @@
       "min_server_version": "5.16.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3225,8 +3225,8 @@
       "min_server_version": "5.14.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3284,8 +3284,8 @@
       "min_server_version": "5.14.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3334,8 +3334,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3384,8 +3384,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3434,8 +3434,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3496,8 +3496,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3559,8 +3559,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3613,8 +3613,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3667,8 +3667,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3721,8 +3721,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3775,8 +3775,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3829,8 +3829,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3883,8 +3883,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3937,8 +3937,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -3991,8 +3991,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4045,8 +4045,8 @@
       "min_server_version": "5.28.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4098,8 +4098,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4159,8 +4159,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4209,8 +4209,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4263,8 +4263,8 @@
       "min_server_version": "5.11.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4322,8 +4322,8 @@
       "min_server_version": "5.11.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4372,8 +4372,8 @@
       "min_server_version": "5.11.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4424,8 +4424,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4471,8 +4471,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4518,8 +4518,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4556,8 +4556,8 @@
       "min_server_version": "5.10.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4597,8 +4597,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4643,8 +4643,8 @@
       "min_server_version": "5.25.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4784,8 +4784,8 @@
       "min_server_version": "5.25.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -4924,8 +4924,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5050,8 +5050,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5176,8 +5176,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5293,8 +5293,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5399,8 +5399,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5518,8 +5518,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5581,8 +5581,8 @@
       "version": "1.0.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5644,8 +5644,8 @@
       "version": "0.0.3",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5706,8 +5706,8 @@
       "version": "0.0.2",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5773,8 +5773,8 @@
       "min_server_version": "5.26.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -5912,8 +5912,8 @@
       "min_server_version": "5.26.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6050,8 +6050,8 @@
       "min_server_version": "5.14.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6177,8 +6177,8 @@
       "min_server_version": "5.14.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6296,8 +6296,8 @@
       "min_server_version": "5.14.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6398,8 +6398,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6491,8 +6491,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6584,8 +6584,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6677,8 +6677,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6770,8 +6770,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6863,8 +6863,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -6955,8 +6955,8 @@
       "version": "2.0.6",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7021,8 +7021,8 @@
       "version": "2.0.5",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7087,8 +7087,8 @@
       "version": "1.1.1",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7150,8 +7150,8 @@
       "version": "1.1.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7213,8 +7213,8 @@
       "version": "1.0.4",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7276,8 +7276,8 @@
       "version": "1.0.3",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7344,8 +7344,8 @@
       "min_server_version": "5.2.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7479,8 +7479,8 @@
       "min_server_version": "5.16.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7553,8 +7553,8 @@
       "min_server_version": "5.16.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7625,8 +7625,8 @@
       "min_server_version": "5.16.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7681,8 +7681,8 @@
       "min_server_version": "5.16.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7727,8 +7727,8 @@
       "version": "1.1.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7773,8 +7773,8 @@
       "version": "1.0.1",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7810,8 +7810,8 @@
       "version": "1.0.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7851,8 +7851,8 @@
       "min_server_version": "5.2.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7934,8 +7934,8 @@
       "min_server_version": "5.2.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -7984,8 +7984,8 @@
       "min_server_version": "5.2.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8034,8 +8034,8 @@
       "min_server_version": "5.10.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8139,8 +8139,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8276,8 +8276,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8388,8 +8388,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8516,8 +8516,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8652,8 +8652,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8746,8 +8746,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8838,8 +8838,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -8971,8 +8971,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -9054,8 +9054,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -9137,8 +9137,8 @@
       "min_server_version": "5.12.0",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -9219,8 +9219,8 @@
       "version": "1.0.7",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -9301,8 +9301,8 @@
       "version": "1.0.6",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -9383,8 +9383,8 @@
       "version": "1.0.5",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -9465,8 +9465,8 @@
       "version": "1.0.4",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -9547,8 +9547,8 @@
       "version": "1.0.3",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
@@ -9629,8 +9629,8 @@
       "version": "1.0.2",
       "server": {
         "executables": {
-          "linux-amd64": "server/dist/plugin-linux-amd64",
           "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
           "windows-amd64": "server/dist/plugin-windows-amd64.exe"
         },
         "executable": ""
