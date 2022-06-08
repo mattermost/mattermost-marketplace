@@ -3305,7 +3305,7 @@
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.6.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.6.0",
-    "hosting": "on-prem",
+    "hosting": "",
     "author_type": "mattermost",
     "release_stage": "beta",
     "enterprise": false,
