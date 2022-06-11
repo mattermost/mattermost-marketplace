@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 	"github.com/mattermost/mattermost-marketplace/internal/testlib"
