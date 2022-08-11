@@ -3541,6 +3541,133 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.7.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.7.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "beta",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmLxS98ACgkQ0bVLR6XO/sSZoQ/+P0SYU94WNEcJy/5UHoecz+fTXXz4I+IdtB7Yzl1VApVbDSt5jpKb+0Lj1NpvhQ2h2rVgXB1WekmBGFSN9x3GZXwfwcBq3LHjva8ukBazqDP7k3F8F0by87vRcz1nlF+eg0o6lxit6SCGHqVZxupp9vP7TLvulKfHHq3xk+g5XC+28wZ31WIVq0qiAWJf1kjzlawHMnUnz7ScTzKeB3M7dF+H1g4wPoRPPiC4voNNUqSlCw6/sllihKpX3KGkQRC4ds8bWY7lnHBArguyN55bKNDtxWwQkbjjJcA7GeRQKE3QQ2g0cRGVVxIlqZ7u7+lYZnpj1mF8ziLNECrIqpWIVFyNoeeRCg7E9ZXh5lS+SSz1j86moHYIxfDApdw9aVNqPeRycNm5UgrAkl1yM0BVX/ugp5fsNn01de4SWJvSwNXX7wDtjindbJwVMv4VmdnZawrq8WurkVsUfdwVX6OO10OCyHH72j3YPdb4xlBR5fq2oa4z3FDv/EP6V+m+FuQqCGa0ngVB2lMrg5fvG9qxTY8T+wJCrIU+RBED00QT1lUAPm6C25oOV8vUXtkcbBXb8gNcq/ST5ANsgLBw0xie0Ebb0mTVXcWjoGvowAD52rP7egHXg1AxZ/A1x/ytJZ+GmYFef+SD3EtjeoJeOOU6X+vmYGPBoabhdd/D1LyjFXs=",
+    "repo_name": "mattermost-plugin-calls",
+    "manifest": {
+      "id": "com.mattermost.calls",
+      "name": "Calls (Beta)",
+      "description": "Integrates real-time voice communication in Mattermost",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.7.1",
+      "version": "0.7.1",
+      "min_server_version": "6.6.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Calls plugin enables voice calls with screensharing in channels. See [documentation](https://docs.mattermost.com/channels/make-calls.html) to learn more.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "UDPServerPort",
+            "display_name": "RTC Server Port",
+            "type": "number",
+            "help_text": "The UDP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443
+          },
+          {
+            "key": "AllowEnableCalls",
+            "display_name": "Enable on specific channels",
+            "type": "bool",
+            "help_text": "When set to true, Channel Admins can enable or disable calls in their channels. It also allows participants in DMs/GMs to enable or disable calls.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "DefaultEnabled",
+            "display_name": "Enable on all channels",
+            "type": "bool",
+            "help_text": "When set to true, calls can be started in all channels where they're not explicitly disabled.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "MaxCallParticipants",
+            "display_name": "Max call participants",
+            "type": "number",
+            "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, it means unlimited.",
+            "placeholder": "",
+            "default": 0
+          },
+          {
+            "key": "ICEHostOverride",
+            "display_name": "ICE Host Override",
+            "type": "text",
+            "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "ICEServersConfigs",
+            "display_name": "ICE Servers Configurations",
+            "type": "longtext",
+            "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+            "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+            "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]"
+          },
+          {
+            "key": "TURNStaticAuthSecret",
+            "display_name": "TURN Static Auth Secret",
+            "type": "text",
+            "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "TURNCredentialsExpirationMinutes",
+            "display_name": "TURN Credentials Expiration (minutes)",
+            "type": "number",
+            "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+            "placeholder": "",
+            "default": 1440
+          },
+          {
+            "key": "ServerSideTURN",
+            "display_name": "Server Side TURN",
+            "type": "bool",
+            "help_text": "(Optional) When set to true it will pass and use configured TURN candidates to server initiated connections.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "RTCDServiceURL",
+            "display_name": "RTCD service URL",
+            "type": "text",
+            "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+            "placeholder": "https://rtcd.example.com",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.7.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmLxS9wACgkQ0bVLR6XO/sRACA//YgcDyS76UgMo2YldDdkHKJhTjR9tFw5Uj+4I7tBs0IV1avEbGEdsosDLvDfHdHEGI3YAN9eIn748atfQSESzOw7B0IKqlgKYbqvF8SIqvpdHpY0yZm/VEWkg0urEGslIjRIVO7aUIQjBj2v1p5cTCNk1JQPkEJ1/bV3owanpmJxtZrKFzpqrHIqxJhVYUT5AoVv6iLFknTSbnQHvoxSLqQVr0onTZ/l4N7No79uDeYXi6B/EAo5IXwV/0vK0X9i9Uhbj+gyp7FXiSWfvm0n96KfNpxcnR1CbclJYDEq8bjfJfZbaKOROxw0Sb/bd2HFX1E4/aXkO6olQ9RFRCOh+tb9r8EM4QcXnSNNl5f9RR8nZnjKBoj4r0+AH/rbYNlmuUDZsIzjrH8c+AHa6lcauypaE6/RpOZ/FmsAkPRSx5ZZhmzzK4lZa3ne5h+sjr6r37xnYzgduayu0shQLfBLoDs02UQm0nSjnL2d9edntXGPGp8hr8sT2xK3qU8Nc9PdzZjqHHzZTeHeCnJzfzFzRKjWPcp7M24lnQ2SxnqiVxzx6MxRI8+vEIGax9UoTfxGFa2nAVSmXodb5Jn0PdVEwnk7Bcqb5MhTxxgxeiY0fKORzZe1UDp+QBVPBt/of1r1R6qf+xibL6tYyUeO3WrfzQyXB/IzgUOF4tD+6JFbYbfc="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2022-08-08T17:56:55.194042Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+    "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.7.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.7.0",
     "hosting": "",
@@ -10434,6 +10561,82 @@
       }
     },
     "updated_at": "2020-06-30T10:10:23.478337756Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHZpZXdCb3g9IjAgMCA1MiA1MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMjEuNjUxNiIgeT0iNy40NzE5MSIgd2lkdGg9IjI3Ljc2MjIiIGhlaWdodD0iMTQuODk2OCIgZmlsbD0iIzE2NkRFMCIgZmlsbC1vcGFjaXR5PSIwLjEyIi8+CjxwYXRoIGQ9Ik0zOS40OTcyIDI5LjQ1NDZIMjQuNDc5NEMyMy45Mjc3IDI5LjQ1NDYgMjMuNDgwNiAyOS4wMjA0IDIzLjQ4MDYgMjguNDg1QzIzLjQ4MDYgMjcuOTQ5NiAyMy45Mjc3IDI3LjUxNTQgMjQuNDc5NCAyNy41MTU0SDM5LjQ5NzNDNDAuMDQ4OSAyNy41MTU0IDQwLjQ5NjEgMjcuOTQ5NiA0MC40OTYxIDI4LjQ4NUM0MC40OTYxIDI5LjAyMDQgNDAuMDQ4OCAyOS40NTQ2IDM5LjQ5NzIgMjkuNDU0NloiIGZpbGw9IiMxNDVEQkYiLz4KPHBhdGggZD0iTTMyLjc5ODggMzQuMTczNUgyNC40ODc2QzIzLjkzMTQgMzQuMTczNSAyMy40ODA2IDMzLjczOTQgMjMuNDgwNiAzMy4yMDM5QzIzLjQ4MDYgMzIuNjY4NSAyMy45MzE0IDMyLjIzNDQgMjQuNDg3NiAzMi4yMzQ0SDMyLjc5ODlDMzMuMzU1MSAzMi4yMzQ0IDMzLjgwNTkgMzIuNjY4NSAzMy44MDU5IDMzLjIwMzlDMzMuODA1OSAzMy43Mzk0IDMzLjM1NSAzNC4xNzM1IDMyLjc5ODggMzQuMTczNVoiIGZpbGw9IiMxNDVEQkYiLz4KPHBhdGggZD0iTTQ4LjA1NjggNi4xMTc2NUgyMy4yNTg3QzIxLjY0ODEgNi4xMTc2NSAyMC4zMzc4IDcuNDI5MjIgMjAuMzM3OCA5LjA0MTM2VjE2LjU3MjZINC40OTU3OUMyLjc1NDg4IDE2LjU3MjYgMS4zMzg1IDE3Ljk4OSAxLjMzODUgMTkuNzI5OVYzNy41ODlDMS4zMzg1IDQxLjA2OTMgMS4zMzg1IDQwLjc0NjMgMS4zMzg1IDQwLjc0NjNWNDYuNDUyOEMxLjMzODUgNDYuNzk5OCAxLjY3MjQ4IDQ3LjEyMDMgMS45NzMyNSA0Ny4yOTMzQzIuMTIyODYgNDcuMzc5NCAyLjI4OTczIDQ3LjQyMjQgMi40NTY1OSA0Ny40MjI0QzIuNjI1MTEgNDcuNDIyNCAyLjc5MzYyIDQ3LjM3ODUgMi45NDQzIDQ3LjI5MDhMMTEuMjgxIDQwLjc0NjVINDIuMjU3OUM0NC4wMDA0IDQwLjc0NjUgNDUuNDE3OSAzOS4zMzAxIDQ1LjQxNzkgMzcuNTg5MlYyMy44NjNINDguMDU2OEM0OS42Njg5IDIzLjg2MyA1MC45ODA1IDIyLjU1MjYgNTAuOTgwNSAyMC45NDJWOS4wNDEzNkM1MC45ODA1IDcuNDI5MjIgNDkuNjY4OSA2LjExNzY1IDQ4LjA1NjggNi4xMTc2NVpNNDMuNDc4NyAzNy41ODkxQzQzLjQ3ODcgMzguMjQ5NSA0Mi45MTk2IDM4LjgwNzIgNDIuMjU3OSAzOC44MDcySDExLjAxOTRDMTAuODQ4IDM4LjgwNzIgMTAuNjc5OCAzOC44NTI2IDEwLjUzMTcgMzguOTM4OEwzLjI3NzY5IDQ0Ljc2NjZWMzkuNzc2OEMzLjI3NzY5IDM3Ljc3MDYgMy4yNzc2OSAzOS45NTU1IDMuMjc3NjkgMzcuNTg5MVYxOS43M0MzLjI3NzY5IDE5LjA1ODIgMy44MjQxNSAxOC41MTE5IDQuNDk1NzkgMTguNTExOUgyMC4zMzc3VjIwLjk0MkMyMC4zMzc3IDIyLjU1MjYgMjEuNjQ4IDIzLjg2MyAyMy4yNTg2IDIzLjg2M0g0My40Nzg2TDQzLjQ3ODcgMzcuNTg5MVpNNDkuMDQxMyAyMC45NDJDNDkuMDQxMyAyMS40ODM0IDQ4LjU5OTYgMjEuOTIzOCA0OC4wNTY4IDIxLjkyMzhIMjMuMjU4N0MyMi43MTc0IDIxLjkyMzggMjIuMjc3IDIxLjQ4MzQgMjIuMjc3IDIwLjk0MlY5LjA0MTM2QzIyLjI3NyA4LjQ5ODQ5IDIyLjcxNzQgOC4wNTY4NCAyMy4yNTg3IDguMDU2ODRINDguMDU2OEM0OC41OTk3IDguMDU2ODQgNDkuMDQxMyA4LjQ5ODU4IDQ5LjA0MTMgOS4wNDEzNlYyMC45NDJaIiBmaWxsPSIjMTQ1REJGIi8+CjxwYXRoIGQ9Ik00My4wNzEyIDExLjE2MzdINDAuNDE2NEMzOC42NDE4IDExLjE2MzcgMzcuMTQ2IDEyLjM3OTMgMzYuNzE1OSAxNC4wMjJIMzQuNjAyMUMzNC4xNzE3IDEyLjM3OTMgMzIuNjc0OCAxMS4xNjM3IDMwLjg5ODkgMTEuMTYzN0gyOC4yNDRDMjYuMTMzMyAxMS4xNjM3IDI0LjQxNjEgMTIuODgwOSAyNC40MTYxIDE0Ljk5MTZDMjQuNDE2MSAxNy4xMDA4IDI2LjEzMzMgMTguODE2OCAyOC4yNDQgMTguODE2OEgzMC44OTg4QzMyLjY3NDQgMTguODE2OCAzNC4xNzExIDE3LjYwMjQgMzQuNjAxOCAxNS45NjEySDM2LjcxNkMzNy4xNDYzIDE3LjYwMjQgMzguNjQyIDE4LjgxNjggNDAuNDE2MyAxOC44MTY4SDQzLjA3MTFDNDUuMTgxOCAxOC44MTY4IDQ2Ljg5OSAxNy4xMDA4IDQ2Ljg5OSAxNC45OTE2QzQ2Ljg5OTEgMTIuODgwOSA0NS4xODE5IDExLjE2MzcgNDMuMDcxMiAxMS4xNjM3Wk0zMC44OTg4IDE2Ljg3NzdIMjguMjQ0QzI3LjIwMjYgMTYuODc3NyAyNi4zNTUzIDE2LjAzMTYgMjYuMzU1MyAxNC45OTE3QzI2LjM1NTMgMTMuOTUwMiAyNy4yMDI2IDEzLjEwMyAyOC4yNDQgMTMuMTAzSDMwLjg5ODhDMzEuNTg1NSAxMy4xMDMgMzIuMTg2IDEzLjQ3MjYgMzIuNTE2NiAxNC4wMjIxSDMxLjg3MTdDMzEuMzM2MiAxNC4wMjIxIDMwLjkwMjEgMTQuNDU2MyAzMC45MDIxIDE0Ljk5MTdDMzAuOTAyMSAxNS41MjcxIDMxLjMzNjIgMTUuOTYxMyAzMS44NzE3IDE1Ljk2MTNIMzIuNTE1N0MzMi4xODUgMTYuNTA5MiAzMS41ODUgMTYuODc3NyAzMC44OTg4IDE2Ljg3NzdaTTQzLjA3MTIgMTYuODc3N0g0MC40MTY0QzM5LjczMTMgMTYuODc3NyAzOS4xMzIyIDE2LjUwOTMgMzguODAxOCAxNS45NjEzSDM5LjQ0MzVDMzkuOTc5IDE1Ljk2MTMgNDAuNDEzMSAxNS41MjcxIDQwLjQxMzEgMTQuOTkxN0M0MC40MTMxIDE0LjQ1NjMgMzkuOTc5IDE0LjAyMjEgMzkuNDQzNSAxNC4wMjIxSDM4LjgwMDlDMzkuMTMxMSAxMy40NzI1IDM5LjczMDcgMTMuMTAzIDQwLjQxNjQgMTMuMTAzSDQzLjA3MTJDNDQuMTEyNyAxMy4xMDMgNDQuOTU5OSAxMy45NTAyIDQ0Ljk1OTkgMTQuOTkxN0M0NC45NTk5IDE2LjAzMTYgNDQuMTEyNyAxNi44Nzc3IDQzLjA3MTIgMTYuODc3N1oiIGZpbGw9IiMxNDVEQkYiLz4KPGNpcmNsZSBjeD0iMTMuNTI2IiBjeT0iMjguNDYyOCIgcj0iNS43ODk0MyIgc3Ryb2tlPSIjMTQ1REJGIiBzdHJva2Utd2lkdGg9IjEuOTYzNjciLz4KPGNpcmNsZSBjeD0iMTMuNTI2IiBjeT0iMjguNDYyOCIgcj0iNS40MTcwMSIgZmlsbD0iIzE2NkRFMCIgZmlsbC1vcGFjaXR5PSIwLjEyIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.3.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.3.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmLVpVMACgkQ0bVLR6XO/sQNIw//fj9NyslXkCRCbrAox6jrEJ1YU1aflUNiVlzCi4yWrz84dRIVOI+ZWiNDBG7q7j5pjfs6DCElJADQl9JMTi6mnUKhjp3mbZ9CHPRFh+Ekx1zgI3Fb7lt5Anv7qAARcuRCZ+QuUcvgCNtZmWoGGrjfFVLJls+s9jrtIvCuSunCdn767q0ARxrNfZjMOONqvk5ymD3dWwsbE/GKPaOf5xgnMWD2VJ2LByOEIhRVtRljdhWDkspS2NogQY4kD4vE3g8X9YXllJvX7Mdk6sWNtfY9HEB72QH9fMMqtiY4CGQclocAm5QLGfJyXWNqYTxNZCm0IQKKjuuYD2ZiRz8hAFUkbEF5b7jPAnwVydDkMuJIG3/eF53k41EEh3a6L7GK/eb28lA9gzXEJToFvba2dCuztaGbBdsaVmceyTDbRiTxRYU86zLPilMohYe5tp9EwSmmXRwLc2xQqMbYZUZ7jq/zCzYavuPS0PXWWoOKOMM9soClg1VAt+Piym4aqbaHaTQ/CG+gwWXQSoXd+KBeVxXgv4AiWGo4LalYZA5JQju58uVWCppkRl+z/8AQt2mNjmatfYOBW2kOPOr8OURs2KtTpoMdVLZex4wj5NXsznZQ/aWybYnF8tuoiz2yi9nIo4TM3PBOt22N84MzelG3wxCKfdfiZgEYP+s1RiaXScNeb1A=",
+    "repo_name": "mattermost-plugin-autolink",
+    "manifest": {
+      "id": "mattermost-autolink",
+      "name": "Autolink",
+      "description": "Automatically rewrite text matching a regular expression into a Markdown link.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-autolink/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.3.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.3.0",
+      "min_server_version": "5.16.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the `config.json` file, or using the `/autolink` command. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-autolink/blob/master/README.md).\n\n To report an issue, make a suggestion, or contribute, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-autolink).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "enableadmincommand",
+            "display_name": "Enable administration with /autolink command:",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": true
+          },
+          {
+            "key": "enableonupdate",
+            "display_name": "Apply plugin to updated posts as well as new posts:",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "pluginadmins",
+            "display_name": "Admin User IDs:",
+            "type": "text",
+            "help_text": "Comma-separated list of user IDs authorized to administer the plugin in addition to the System Admins.\n \n User IDs can be found by navigating to **System Console > User Management > Users**.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.3.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmLVpU8ACgkQ0bVLR6XO/sS9tg//aT1ANKcUNKkN3sY3ZYqWW7qhE/CKHBXzzgAcZ+QABfWacfvWLWO1QZ7XflmYw9JfvH5V2P7N39lx1UKtEgb4JYCMDbzGDj3fA3ezw1j6IQtlCGCk+K+l4nMzCsrty5aS3Oygp52iFxXb6FNKpQP++ljVtdycvTLmCydOUFq6JEzVtZerei0VV/yQ3c2yjpcZ8BVS8BQ3ze/qsqMYYCfy/nKY1zbrDSIjr2hxgqtjiAQCAdi8yVJ9Fm6wDW3Us2nj2jJJQ0MXXGfBFaRlTCJ4KW1q0nERmLJ9LFNaPQ72daYiKP/o5LNlnEwkNA9Isg2QBwwfz+xJ4eXQbjslb6IqfhsYmG4z3SM2cATHq+wRobJe63ME24fx9pJfXj+joiFM0CE1Vh1w8GBwoJKHWsZHPDpms2iN9byblgtdaGpMFSFBR3uswquEwvq6w2l9SGw487gjAjiFyATvlKQOH+9WJFSVVMKc1yd4wsHcQ+/GkqJHMNDZtmUzsgLMEcN46jmmR0hAzlmsA6Y7I4bfwmE9+KCTUs7tlHLUheE/IHOzf0oMkHSEdxAW/GPoZqoZpUUBVnKpuDlx7rLgP45FeVZRFxFIj9XSrzosrdUa3talOlDCCu2aGKfNujQOpQZxt/2EXX8th96PsSIONFJPgWR3lr3eD05Pfjo7u4UCq8nq38k="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.3.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmLVpVEACgkQ0bVLR6XO/sSxsA/+IAQ+CURsi6DQrF4ZvTqc4KvbfWX2/Y0kqfrzygeNOYkNz0dAQ+hPbqvZFG/l37NMXRQZV/UMV+fgQ42u1gVSNQQ8qCiNIet9z0fJ0iNhETYecsc234NBw7lU/UqWCMpNUbhtiX9kfHF9k1RPpS+Ypi0ofyYqYkS9iD7pBittZaIFH6yTr6v5RMkb0A22JJDjOk3H75s4RKs8AHncSls88LXQLHx/SLzTzljKaZFPQn7P/FLAgevyqPiB2ZoHIURcJZgV78H6sAyub9PZ7XGud6PyUViptNBeN9jj4wEUFA/v2BGiondmToeBawHSq8gO/1t6NTK5b25gAfuVYsmN2IP/KfgWpPDjbufNbwJ55xuKbWxy0fyt96KNsg+lEehZGE1Nnc2wh5YTmkzyjl/PSCJ3xJN5r5pIfJhPnt7ZZB9xZyUG1Mbhx/BQcmDXcAi5d0671Lht4vhTHhHUXk8LOSyDJUW9Uxabc7lELCJ1JkdhhRiv+TbE0saw3bn3JSX+ZQhh8Gbo0M8w2/L7iZ+AUKUPs48NWt3HmtkrO/CQ3LTfFznpUt2XGcRBBnZwn0Cp1cOy4uxH0hI0X8lg96GN3a5U2RyJ4e7X2djBaIoP9vWW91aOQ30PTW3lY46oKFvHlWAVcORc+Lzhea+dPKrvh/Uomdz64pZACewVmdghec4="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.3.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmLVpU4ACgkQ0bVLR6XO/sQ59g/9GGdfIB5W9nxT/J+xewDJ6tQpIqch1rgDftlrOFlLZEQ2QtEK5ESx2VLuiQpsbkUxTTXXHiGP11g0R3SpW+iITyAbbKos1GQ+G95xHu7LxkQfSHExFf89Ak6AeqeXb1wcQRvZt+pSiRVAscIUKw7+zs2GXkOQUgGhHZIhqIqhFepJe0VlkbYjGOGqzYWi3U5cSYYpuO1cdyI7QbqbmZJkCrZKCXSO6mFS6KbLkElCFAvj+hcjz9vnSaq5rNimdIlBTAX9qFWIzcDPoVDErr/AhpKo+yTjqi0Jo7ooIDOZW7dQGbtfPr7QvTnsTU/ZKD9Oe4Eln5LEVAVhU/yFPHGXlQRMFBQx4C7kjjq4ZJeBTihffg4qifVJZRAVa2JeUJ+61N5TMKHopdLcbTqOIh1benqvgb+bE8W2wSICm7FEXXp0YXlZqOcyYmCUGKnQ1906MCvr+pMUL2Iyyc/1ojjQ27uZFtH0uW8hOr6nr4URjc/0uk2xbalt5WG0gHU6jlGewsmCfPTp3WZCGa/rjk1+MGiAEqOk9BKzslb4eRFrpVKu17yqfTmscV/4Z0Yzb9RLfjA9siUjNmV1mMMuEKB6wL+3nmtoTLsdnD1+1KTtBl/GNzB3iTfmoQM45ph1Hq/ML5tsYA5QXLurHKBtYft3tf1JweoRvLKowslukxZgMek="
+      }
+    },
+    "updated_at": "2022-07-18T18:26:36.036294Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
