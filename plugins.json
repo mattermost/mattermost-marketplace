@@ -11470,6 +11470,56 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-memes",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.5.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-memes/releases/tag/v1.5.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmMrfXMACgkQ0bVLR6XO/sTAsQ//Zbms0GhXyvKQHlkS4Wj3D/J8ev6uXV0D9HvwjJVJAnobYsWxRxvIROo+gJqy0yfbPtdYyGjvZy+8/pOLP17cu4YVS1obsiJeY677U+fO7Kh68r93niYQqVvMfhSr7vkEkAtSsS7SA/WDhHQUWdknh1JUTWQw3jLW+fQ2/dK5HTPTV0AEK4NOFqI9vcC7jUNtvVW9MteiRXKx5bMLHmbh+v6onawnBH1tWh0a32B219j4X6ttQChA4TgrGTmHvBi74rMI5bDkVXLHrQOIkPpcmcZHg7pB/KM+95Iaw/diXtbRsbVRyN064J4FP7rwHEzQ7CD0qhLHt3gLWt5K5B1/Ze1rTT0jhG/cd/NmU7dIEG9JGbaTHQxr80q5CoJgHBa9ePDPQWw4KKgVRQAahMPla73wnOq+/Wtsgm+7FYU8HlD75ivg0f21wditj4FPlR5S5XowtBh9g0SaJ6Tv4t61eH0mY6tRpUhqGFbmZLmzEZQkuOK82p2juhx9WLgWihb8SIvzdFJQeA7HJt8RiXCmIORKtnTKzBafpt5jVMCSpOZKInyZgnxUIBhvTlEullBIpDCyA+5DjBYtQp0+w8ybS5hWzZX8c2XNjRpVaWp+nmnDFkLGcPl82c9Afb3i0wF2SUDeWTKciXyd4BjWMzcdiUfJJtwS7gj0JSx5USO9PTk=",
+    "repo_name": "mattermost-plugin-memes",
+    "manifest": {
+      "id": "memes",
+      "name": "Memes",
+      "description": "Gives you the ability to quickly create and post memes via a /meme slash command.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-memes",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-memes/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-memes/releases/tag/v1.5.0",
+      "version": "1.5.0",
+      "min_server_version": "5.2.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-memes).",
+        "settings": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.5.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmMrfXEACgkQ0bVLR6XO/sQINA//dQ6BhnF5wHimQnbvQoIkTsZj3Qhuk/35uKvEzh/7CPrXHAHK6Lzi/OASSvexKgvEsHPnM74CszHv3t85ytcfht7aFWq1ERLA0GzU1QLdMx5WDdsG+mluKB/JdeULJemBXujykHJL/+N1E1p7V82WtWw6SxVsGyGm1tN702uyDjs+X+/d4pTIcGaB0KOv1qgk6ohNrWd8Nj/F+adCZrfuMMDSm8LAz9eMMAJHi0nA+9J8YLGTSOBaQOURnSbx4cRymppU/NlC842oYu7wkOBF9wa95l/4VMrejxxo2w/1omynJ+w4uULjqIW+UH4MMLryorcySWpTnDebvHimtAzRHDeeYuRHTULxJn8SCgUQXBteokF54XkIQJxy24qyJ9XnXkM9JJpWg8ZLQa6Sbu/Fl0iihbdEsZRaBf+ZtAUufurK1nSgl1yy9wkOK96AkUsEfO/zCz4EvRgiXzye30+A7T8nJ3ldA2afOJ4KgDpSbFwDRfrBPTU7VoftNRCZrOXae4F4vpOxrKv3uD9mI4NHBv7cBSp7d6+pL7M5esXVKfuPaYc5hAI77Ph5Y8q/7p4L4TqcCvbk4tSqUkddURVhBSOECIB/uPaeNAA9ckAIykKoZoS+AVuk0HHhp0Jd/4wTIo6PRoQNb5qAPj+JKBV4Es5lhhrlxc7zbLnrZ3u4lGs="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.5.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmMrfW8ACgkQ0bVLR6XO/sSqCw//TP4L2/ysFyjCpZXlyCtDjCrfLhkOgUWoIPB7LFqjby/vW0OfdnsXPFAdU98P9HcsrFMaIMuYN/d8vEd3laV1MnxAQNTb8juJaa3EUe3xaN8bLdnA5HjRjvd9PBu8VJNlk8uwO9FWYGqNCiprQyNtOwu+2I7Tf/6FsVKFOV7EfU15SiowKJ76/wOz1Muec+V/hxyc/i+aLX5u2HrmA+w95OMXM2zA4QT7RcJqHcdemptRnyIkS8EOLsh0+Ndgeocka7k7yLJ6jiV3Deek68OJi/NLdBXUxr0ew3lTkopGpRt5PJmj7mTbKXCrcMRtQyMKRRunIFRsr9rYL+OwoJCc4zNdnF2SkNrmpVta1BwZ6RXFaFdDCJjyXcr5BK7/Gp9fyFLTSNN8tupVRP0D70I98MbydJe2NSARYFzYmNw1WS0tPh0gS+ixqPEfJ0DMtbJgzV0F9/Ce83jUgB99cxDp0PhYYM6EmatBao04M55ZdieiFUvycfAWner2fvC5YoNwGW1TRSPsYB0tG0lPlL9kFT28pNbleBoqqXTDYomAc5lw37pq91t0Z/Z7t3btiNGBK8pwQk4bO783iNYievTPBk8b+T4DzN+y4yhVOSzfGDLDp6IL/qnvRpwfim21RD3lU6HoPYa/OHPFlGVCgQax7ad+FMM0SXGda7ljVYWTiRc="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.5.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmMrfXAACgkQ0bVLR6XO/sRLPxAAjGQ5UZduktkK2G8LprPf1F+TylJdr5iZtMBlNn+R/a2N/Itb9cPInyTZrlV4VLoVYgSM6TqmJ/RjZEJu7h/LzL1SxUgncyNB0KSzndRUV/r7FKmx5NyxmDEv/EvaQHwlgoSDpzoPOMI2O6w/6O+xU/NCayIQW6J6SBAgvo9ZbBF3GL+g0552ZwcQ5Mk9MEL4SFrZX3ROoEel5rzd8cBVUyWmIw6jVr7ION6RA/QitW5bjkbtrZU7m+Qq9CdRlmfp8t5eVlXWLORJknTY3lYVYzvpbicpk9fmWs11rfUnx+EcuDbvSZ6Vfr+TLORLr6ASBEu7Frx4FQx4TucKIPThQBceoiLfjCDpzJH36gHRm4QnbZAZ7tgBtlO9K+3azhUF8ypmOhQvLsvnWKPyxYdghA18MaKF/PBI2dcAnsHRlEZSraYkKptGlux1g9LxFerRDj7U/1SOke+fcLmkbw0W8BWEegul4b5ywY/pcUHRO6+/aYXJnbJDIu4b0S/jKWHe9px4qFMAcitDdZFag4UP4zvBfDc5fEZnNbGtxQeIR1pY/oFEXZ7miO9xEyZ3pVRU3N+/vlkW+5RQl9LILpVvyH8m0xwcxuXIIUtkECCO4fqFkh7DM4GxnY7VgRr3YiwOG022iR2w9kvcZ9tRq5wHCfd9aPrPC/QNZdc2KDLmX9M="
+      }
+    },
+    "updated_at": "2022-09-21T21:14:22.4801906Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-memes",
+    "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.4.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-memes/releases/tag/v1.4.0",
     "hosting": "",
