@@ -3541,6 +3541,133 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.9.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.9.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "beta",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmM/HowACgkQ0bVLR6XO/sRQvg/9E5tNr/4axldbbk29dXRqtinv7LoUxB2/YKxpwZPFI1eE+qK0sAvIULmwg+pCNdo9+FLeIEX4jciyUH8jPdRLwE9QTWwMTtU0OzjHnd+0wbrtqDcm+pQalexb0kqNN6pp8lK0+0RHm33cNCiVHlAP85+IGyJi57aqap5Hem6aQJhT/p65H6OrIEwwSTvi4MNCMKpw5e9pCWmDRtFIGmdwpxw178/qTRDICmfiGQxcnmuOHmpMr8c6Y3tyzu8dqwEOQHFuDcIYVFOIuym1E8txZmwEZEG2/quW96lVIy8u7Tes6O4yJkMgtjgezlPTEMLixhVnerz1xOjtCjdzS2kDBpvRtB9F1NXvK7Q9s9+bbOjR3fkpN4PGZVBeGD7sGb/uKEToTRhL6Pqy7B3TiZL6jsqf6qJfxJMhEwYYfNth4Vg3S+ah//QyurpiYTjSiB3pVekRSOMFfiHA4I7XsHhKh4gpURwoCkQZHUjp8wHHNJA4K2M2Qq5d0oWgdAy1uSLHsr5CwxZnHUW8EVzpsCXoj62fnJCIKLFOuGK9edW8ADvrkqAGekyDHqc8Eey+Hb/KzL/S/s2ev4AiyAhwg5vyZIqSxXH6a+FTQofdaC52DK/gRXOf7kywjU8Aa6SxFimo+wfGOmhlpo7plwECFA+qKbMN7TFE0Sy/sAUKjlbjBCY=",
+    "repo_name": "mattermost-plugin-calls",
+    "manifest": {
+      "id": "com.mattermost.calls",
+      "name": "Calls (Beta)",
+      "description": "Integrates real-time voice communication in Mattermost",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.9.0",
+      "version": "0.9.0",
+      "min_server_version": "6.6.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Calls plugin enables voice calls with screensharing in channels. See [documentation](https://docs.mattermost.com/channels/make-calls.html) to learn more.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "UDPServerPort",
+            "display_name": "RTC Server Port",
+            "type": "number",
+            "help_text": "The UDP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443
+          },
+          {
+            "key": "AllowEnableCalls",
+            "display_name": "Enable on specific channels",
+            "type": "bool",
+            "help_text": "When set to true, Channel Admins can enable or disable calls in their channels. It also allows participants in DMs/GMs to enable or disable calls.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "DefaultEnabled",
+            "display_name": "Enable on all channels",
+            "type": "bool",
+            "help_text": "When set to true, calls can be started in all channels where they're not explicitly disabled.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "MaxCallParticipants",
+            "display_name": "Max call participants",
+            "type": "number",
+            "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, it means unlimited.",
+            "placeholder": "",
+            "default": 0
+          },
+          {
+            "key": "ICEHostOverride",
+            "display_name": "ICE Host Override",
+            "type": "text",
+            "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "ICEServersConfigs",
+            "display_name": "ICE Servers Configurations",
+            "type": "longtext",
+            "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+            "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+            "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]"
+          },
+          {
+            "key": "TURNStaticAuthSecret",
+            "display_name": "TURN Static Auth Secret",
+            "type": "text",
+            "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "TURNCredentialsExpirationMinutes",
+            "display_name": "TURN Credentials Expiration (minutes)",
+            "type": "number",
+            "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+            "placeholder": "",
+            "default": 1440
+          },
+          {
+            "key": "ServerSideTURN",
+            "display_name": "Server Side TURN",
+            "type": "bool",
+            "help_text": "(Optional) When set to true it will pass and use configured TURN candidates to server initiated connections.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "RTCDServiceURL",
+            "display_name": "RTCD service URL",
+            "type": "text",
+            "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+            "placeholder": "https://rtcd.example.com",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.9.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmM/HogACgkQ0bVLR6XO/sTxnw//ZG0tCseYOUUnQJUe6gI46n5dcZbrnc9Xq71FHHhZR9oADqdbpMi2RfrdrsGy8IVmY4jKwEMQTFYxV/6PWNrAFJF2Vl33/tmEVABPvZsh5wTouXY1MS+tOWUA72URrbzpy4MSP7JZ8gzMXWnWVe5oAr3xMCx+fqEkImInI+zoMhP5YsYr9c7rcoobukICMDTaVdNaXKpxCl+bGgCW/R+RES+IvdNEXUTTJEuZwHcO8L/aWASwPWi53ZY0LcmZnb8BnhJTfsSPj/6jwaSdwYizm8iOSgyEn1ki9B7p++s4tCl1UcfvjjaLdFnoZIzP43fDuNDQfhP7hFBXIuCmWwBFriShY2iMtFtqn7w+rltwvxsKo4znhAGi+6DcqeEPYSC0YP8IpHa9FXFOU1Fei+gjcoIqRn3dXfSPr53lNO7ue01HrHq8ibIubZaxao5J544WxXWPVtoR04wjAcDW+fguLVqkdH2JEcYg75oMqUfPPEDX/55F6+oCTlPy22qMFo1GWsp0IR+f16LchsfNWE3oRohSTaT2TvsCq7dsZSTAFkLrmWoxohUqVwNEzhPq0GYofZIijyQ8y2pYHMC71S+jEojttLurGbB6qrArf2knW5CDP4yhXTvDdeWws9wbYmt6ebOBhONQ5Ieo+vPUGGS9OI4+wnJp96oTxFYrED5Dl/8="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2022-10-06T18:31:03.599532Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+    "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.8.1.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.8.1",
     "hosting": "",
@@ -11466,6 +11593,56 @@
       }
     },
     "updated_at": "2020-10-09T07:56:26.221729335Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-memes",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.5.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-memes/releases/tag/v1.5.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmMrfXMACgkQ0bVLR6XO/sTAsQ//Zbms0GhXyvKQHlkS4Wj3D/J8ev6uXV0D9HvwjJVJAnobYsWxRxvIROo+gJqy0yfbPtdYyGjvZy+8/pOLP17cu4YVS1obsiJeY677U+fO7Kh68r93niYQqVvMfhSr7vkEkAtSsS7SA/WDhHQUWdknh1JUTWQw3jLW+fQ2/dK5HTPTV0AEK4NOFqI9vcC7jUNtvVW9MteiRXKx5bMLHmbh+v6onawnBH1tWh0a32B219j4X6ttQChA4TgrGTmHvBi74rMI5bDkVXLHrQOIkPpcmcZHg7pB/KM+95Iaw/diXtbRsbVRyN064J4FP7rwHEzQ7CD0qhLHt3gLWt5K5B1/Ze1rTT0jhG/cd/NmU7dIEG9JGbaTHQxr80q5CoJgHBa9ePDPQWw4KKgVRQAahMPla73wnOq+/Wtsgm+7FYU8HlD75ivg0f21wditj4FPlR5S5XowtBh9g0SaJ6Tv4t61eH0mY6tRpUhqGFbmZLmzEZQkuOK82p2juhx9WLgWihb8SIvzdFJQeA7HJt8RiXCmIORKtnTKzBafpt5jVMCSpOZKInyZgnxUIBhvTlEullBIpDCyA+5DjBYtQp0+w8ybS5hWzZX8c2XNjRpVaWp+nmnDFkLGcPl82c9Afb3i0wF2SUDeWTKciXyd4BjWMzcdiUfJJtwS7gj0JSx5USO9PTk=",
+    "repo_name": "mattermost-plugin-memes",
+    "manifest": {
+      "id": "memes",
+      "name": "Memes",
+      "description": "Gives you the ability to quickly create and post memes via a /meme slash command.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-memes",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-memes/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-memes/releases/tag/v1.5.0",
+      "version": "1.5.0",
+      "min_server_version": "5.2.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-memes).",
+        "settings": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.5.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmMrfXEACgkQ0bVLR6XO/sQINA//dQ6BhnF5wHimQnbvQoIkTsZj3Qhuk/35uKvEzh/7CPrXHAHK6Lzi/OASSvexKgvEsHPnM74CszHv3t85ytcfht7aFWq1ERLA0GzU1QLdMx5WDdsG+mluKB/JdeULJemBXujykHJL/+N1E1p7V82WtWw6SxVsGyGm1tN702uyDjs+X+/d4pTIcGaB0KOv1qgk6ohNrWd8Nj/F+adCZrfuMMDSm8LAz9eMMAJHi0nA+9J8YLGTSOBaQOURnSbx4cRymppU/NlC842oYu7wkOBF9wa95l/4VMrejxxo2w/1omynJ+w4uULjqIW+UH4MMLryorcySWpTnDebvHimtAzRHDeeYuRHTULxJn8SCgUQXBteokF54XkIQJxy24qyJ9XnXkM9JJpWg8ZLQa6Sbu/Fl0iihbdEsZRaBf+ZtAUufurK1nSgl1yy9wkOK96AkUsEfO/zCz4EvRgiXzye30+A7T8nJ3ldA2afOJ4KgDpSbFwDRfrBPTU7VoftNRCZrOXae4F4vpOxrKv3uD9mI4NHBv7cBSp7d6+pL7M5esXVKfuPaYc5hAI77Ph5Y8q/7p4L4TqcCvbk4tSqUkddURVhBSOECIB/uPaeNAA9ckAIykKoZoS+AVuk0HHhp0Jd/4wTIo6PRoQNb5qAPj+JKBV4Es5lhhrlxc7zbLnrZ3u4lGs="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.5.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmMrfW8ACgkQ0bVLR6XO/sSqCw//TP4L2/ysFyjCpZXlyCtDjCrfLhkOgUWoIPB7LFqjby/vW0OfdnsXPFAdU98P9HcsrFMaIMuYN/d8vEd3laV1MnxAQNTb8juJaa3EUe3xaN8bLdnA5HjRjvd9PBu8VJNlk8uwO9FWYGqNCiprQyNtOwu+2I7Tf/6FsVKFOV7EfU15SiowKJ76/wOz1Muec+V/hxyc/i+aLX5u2HrmA+w95OMXM2zA4QT7RcJqHcdemptRnyIkS8EOLsh0+Ndgeocka7k7yLJ6jiV3Deek68OJi/NLdBXUxr0ew3lTkopGpRt5PJmj7mTbKXCrcMRtQyMKRRunIFRsr9rYL+OwoJCc4zNdnF2SkNrmpVta1BwZ6RXFaFdDCJjyXcr5BK7/Gp9fyFLTSNN8tupVRP0D70I98MbydJe2NSARYFzYmNw1WS0tPh0gS+ixqPEfJ0DMtbJgzV0F9/Ce83jUgB99cxDp0PhYYM6EmatBao04M55ZdieiFUvycfAWner2fvC5YoNwGW1TRSPsYB0tG0lPlL9kFT28pNbleBoqqXTDYomAc5lw37pq91t0Z/Z7t3btiNGBK8pwQk4bO783iNYievTPBk8b+T4DzN+y4yhVOSzfGDLDp6IL/qnvRpwfim21RD3lU6HoPYa/OHPFlGVCgQax7ad+FMM0SXGda7ljVYWTiRc="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-memes-v1.5.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmMrfXAACgkQ0bVLR6XO/sRLPxAAjGQ5UZduktkK2G8LprPf1F+TylJdr5iZtMBlNn+R/a2N/Itb9cPInyTZrlV4VLoVYgSM6TqmJ/RjZEJu7h/LzL1SxUgncyNB0KSzndRUV/r7FKmx5NyxmDEv/EvaQHwlgoSDpzoPOMI2O6w/6O+xU/NCayIQW6J6SBAgvo9ZbBF3GL+g0552ZwcQ5Mk9MEL4SFrZX3ROoEel5rzd8cBVUyWmIw6jVr7ION6RA/QitW5bjkbtrZU7m+Qq9CdRlmfp8t5eVlXWLORJknTY3lYVYzvpbicpk9fmWs11rfUnx+EcuDbvSZ6Vfr+TLORLr6ASBEu7Frx4FQx4TucKIPThQBceoiLfjCDpzJH36gHRm4QnbZAZ7tgBtlO9K+3azhUF8ypmOhQvLsvnWKPyxYdghA18MaKF/PBI2dcAnsHRlEZSraYkKptGlux1g9LxFerRDj7U/1SOke+fcLmkbw0W8BWEegul4b5ywY/pcUHRO6+/aYXJnbJDIu4b0S/jKWHe9px4qFMAcitDdZFag4UP4zvBfDc5fEZnNbGtxQeIR1pY/oFEXZ7miO9xEyZ3pVRU3N+/vlkW+5RQl9LILpVvyH8m0xwcxuXIIUtkECCO4fqFkh7DM4GxnY7VgRr3YiwOG022iR2w9kvcZ9tRq5wHCfd9aPrPC/QNZdc2KDLmX9M="
+      }
+    },
+    "updated_at": "2022-09-21T21:14:22.4801906Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-memes",
