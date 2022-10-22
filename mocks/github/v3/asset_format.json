@@ -1,0 +1,7 @@
+{
+    "browser_download_url": "%s",
+    "id": "MATCH_RELEASE_ID",
+    "name": "%s",
+    "created_at": "%s",
+    "updated_at": "%s"
+}

@@ -1,0 +1,10 @@
+{
+    "html_url": "%s",
+    "id": "MATCH_RELEASE_ID",
+    "tag_name": "%s",
+    "name": "%s",
+    "draft": "MATCH_IS_DRAFT",
+    "prerelease": "MATCH_IS_PRERELEASE",
+    "author": "MATCH_AUTHOR_OBJ",
+    "assets": "MATCH_ASSETS_ARR"
+}
