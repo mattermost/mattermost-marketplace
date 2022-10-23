@@ -1,0 +1,8 @@
+{
+    "id": "MATCH_REPO_ID",
+    "name": "%s",
+    "full_name": "%s",
+    "owner": "MATCH_OWNER_OBJ",
+    "organization": "MATCH_ORG_OBJ",
+    "html_url": "%s"
+}
