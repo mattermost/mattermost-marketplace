@@ -101,7 +101,6 @@ func makeHandleRepositoryGet(t *testing.T) func(http.ResponseWriter, *http.Reque
 				responseOwnerJson,
 				responseOrganizationJson,
 				repoHTMLURL)
-			print(response + "\n")
 			w.Write([]byte(response))
 		}
 	}
@@ -244,7 +243,6 @@ func makeHandleReleaseList(t *testing.T, state mockMMApiStateType) func(http.Res
 				}
 			}
 			response = "[\n" + indent(response, "    ", false) + "\n]"
-			print(response + "\n")
 			w.Write([]byte(response))
 		}
 	}
