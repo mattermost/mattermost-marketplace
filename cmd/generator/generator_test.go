@@ -5,12 +5,15 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/google/go-github/v28/github"
 	mocks "github.com/mattermost/mattermost-marketplace/mocks/github/v3"
 )
 
 func TestGenerator(t *testing.T) {
 	client := mocks.MockGitHubClient(t)
 	ctx := context.Background()
+
+	const orgName string = "mattermost"
 
 	t.Run("Check the \"mocked\" GitHub client", func(t *testing.T) {
 		t.Run("Assurance that the client is offline", func(t *testing.T) {
@@ -20,7 +23,7 @@ func TestGenerator(t *testing.T) {
 			actual := strings.Split(strings.ToLower(client.BaseURL.Host), ":")[0]
 
 			if strings.Compare(onlineAPIServer, actual) == 0 {
-				t.Errorf("Client is still expecting to connect to main GitHub API")
+				t.Error("Client is still expecting to connect to main GitHub API")
 			}
 			if (len(actual) > 0) &&
 				(strings.Compare(localhostDigitsServer, actual) != 0) &&
@@ -33,14 +36,56 @@ func TestGenerator(t *testing.T) {
 		t.Run("Get a Repository without erroring", func(t *testing.T) {
 			_, _, err := client.Repositories.Get(ctx, "mattermost", "mattermost-plugin-github")
 			if err != nil {
-				t.Errorf("client.Repositories.Get() errored: " + err.Error())
+				t.Error("client.Repositories.Get() errored: " + err.Error())
 			}
 		})
 		t.Run("List a Repository's Releases without erroring", func(t *testing.T) {
 			_, _, err := client.Repositories.ListReleases(ctx, "mattermost", "mattermost-plugin-github", nil)
 			if err != nil {
-				t.Errorf("client.Repositories.ListReleases() errored: " + err.Error())
+				t.Error("client.Repositories.ListReleases() errored: " + err.Error())
 			}
 		})
+	})
+
+	t.Run("getReleases() returns a list of Releases for a Repository", func(t *testing.T) {
+		interestingRepo := "mattermost-plugin-jira"
+		var releaseList []*github.RepositoryRelease
+		var err error = nil
+		t.Run("Requests a list of Releases", func(t *testing.T) {
+			releaseList, err = getReleases(ctx, client, orgName, interestingRepo, true)
+			if err != nil {
+				t.Errorf("Unable to get repo %s/%s: %s", orgName, interestingRepo, err.Error())
+			}
+			if len(releaseList) == 0 {
+				t.Errorf("Requested for repo %s/%s and got an empty list", orgName, interestingRepo)
+			}
+			var countPreRelease uint = 0
+			for _, rel := range releaseList {
+				if rel.GetPrerelease() {
+					countPreRelease++
+				}
+			}
+			if countPreRelease > 0 {
+				t.Run("Optionally excludes pre-release Releases", func(t *testing.T) {
+					excList, err := getReleases(ctx, client, orgName, interestingRepo, false)
+					lenReleaseList := len(releaseList)
+					if err == nil {
+						lenExcList := len(excList)
+						if lenExcList == lenReleaseList {
+							t.Errorf("Release count the same with and \"without\" pre-release (%d)", lenReleaseList)
+						} else if lenReleaseList != lenExcList+int(countPreRelease) {
+							t.Errorf("Release list count without prereleases expected %d - %d = %d, got %d",
+								lenReleaseList, countPreRelease,
+								lenReleaseList-int(countPreRelease),
+								lenExcList)
+						}
+					}
+				})
+			}
+		})
+	})
+
+	t.Run("getReleasePlugin() functionality tests", func(t *testing.T) {
+		t.Skip("Testing smaller work units first")
 	})
 }
