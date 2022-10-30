@@ -87,5 +87,45 @@ func TestGenerator(t *testing.T) {
 
 	t.Run("getReleasePlugin() functionality tests", func(t *testing.T) {
 		t.Skip("Testing smaller work units first")
+		/*
+		 * inputs: github.RepositoryRelease, github.Repository, array of model.Plugin, name of plugin host
+		 * 1 - process the release to get the release version tag name
+		 * 2 - loop through the release's assets to identify the URL, signature, and most recent update time
+		 * 3 - request the signature from the online version control host
+		 * 4 - loop through the array of model.Plugin parameter to find one with the same download URL
+		 * 5 - compare the matched model.Plugin and release asset
+		 * 6 - if an updated plugin asset is available, download it, read and populate the manifest data for plugin, and extract icon
+		 * 7 - always update the plugin URLs, signature, and updated timestamp
+		 * 8 - populate the platform specific bundle information for the plugin
+		 * 9 - return the model.Plugin as updated
+		 */
+	})
+
+	t.Run("getFromTarFile() seeks and extracts a particular file from a tar file", func(t *testing.T) {
+		t.Skip("Test not yet implemented")
+	})
+
+	t.Run("downloadSignature() downloads a signature file for an artifact", func(t *testing.T) {
+		t.Skip("Test not yet implemented")
+	})
+
+	t.Run("downloadBundleData() downloads and unpacks a bundle file", func(t *testing.T) {
+		t.Skip("Test not yet implemented")
+	})
+
+	t.Run("getIconDataFromTarFile() reads an icon from a bundle file", func(t *testing.T) {
+		t.Skip("Test not yet implemented")
+	})
+
+	t.Run("InitCommand() initializes the command line invocation using its arguments", func(t *testing.T) {
+		t.Skip("Test not yet implemented")
+	})
+
+	t.Run("pluginsFromDatabase() reads plugin information from existing database", func(t *testing.T) {
+		t.Skip("Test not yet implemented")
+	})
+
+	t.Run("pluginsToDatabase() writes plugin information to existing database", func(t *testing.T) {
+		t.Skip("Test not yet implemented")
 	})
 }
