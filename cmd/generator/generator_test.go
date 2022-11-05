@@ -106,7 +106,12 @@ func TestGenerator(t *testing.T) {
 	})
 
 	t.Run("downloadSignature() downloads a signature file for an artifact", func(t *testing.T) {
-		t.Skip("Test not yet implemented")
+		signature, err := downloadSignature(client.BaseURL.String() + "mattermost/mattermost-plugin-github/releases/download/v2.0.0/github-2.0.0.tar.gz.sig")
+		if err != nil {
+			t.Errorf("Unable to get signature file: %s", err.Error())
+		} else if len(signature) == 0 {
+			t.Errorf("0-length signature not expected for test request")
+		}
 	})
 
 	t.Run("downloadBundleData() downloads and unpacks a bundle file", func(t *testing.T) {
