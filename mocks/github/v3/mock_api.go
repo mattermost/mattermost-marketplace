@@ -8,6 +8,8 @@ import (
 	"strings"
 	"testing"
 	"time"
+
+	artifacts "github.com/mattermost/mattermost-marketplace/mocks/artifacts"
 )
 
 // Since the GitHub client doesn't have an interface to generate mocks against,
@@ -26,6 +28,9 @@ const regexpReleaseList = "^" + pathRepository + "(/.+){2}/releases$"
 
 /* The API endpoint regexp for a lookup of a single repository */
 const regexpRepoGet = "^" + pathRepository + "(/.+){2}$"
+
+/* The API endpoint regexp for downloading a release asset */
+const regexpReleaseAssetDownload = "^" + "(/.+){2}/releases/download(/.+){2}$"
 
 /* The regexp to verify a client can accept a JSON response */
 const regexpResponseJson = "application/([^\\s]+\\+)json"
@@ -248,6 +253,51 @@ func makeHandleReleaseList(t *testing.T, state mockMMApiStateType) func(http.Res
 	}
 }
 
+// Provides a test-integrated HTTP handler for accessing release asset files
+func makeHandleReleaseAssetDownload(t *testing.T) func(http.ResponseWriter, *http.Request) {
+	return func(w http.ResponseWriter, r *http.Request) {
+		requestPath := r.URL.Path
+		if match, _ := regexp.MatchString(regexpReleaseAssetDownload, "/user/foo/releases/download/v1.0.0/foo.txt"); !match {
+			if t != nil {
+				t.Errorf("Regex Match Fail")
+			} else {
+				w.WriteHeader(http.StatusInternalServerError)
+			}
+		}
+		if match, _ := regexp.MatchString(regexpReleaseAssetDownload, requestPath); !match {
+			if t != nil {
+				t.Errorf("Request path was not \"/{owner}/{repo}/releases/download/{tag}/{file}\"")
+			} else {
+				w.WriteHeader(http.StatusInternalServerError)
+			}
+		} else {
+			requestPathParts := strings.Split(r.URL.Path, "/")
+			requestOwnerName := requestPathParts[len(requestPathParts)-6]
+			requestRepoName := requestPathParts[len(requestPathParts)-5]
+			requestReleaseTag := requestPathParts[len(requestPathParts)-2]
+			requestReleaseAssetFileName := requestPathParts[len(requestPathParts)-1]
+
+			var response []byte = nil
+
+			if (requestOwnerName == "mattermost") &&
+				(requestRepoName == "mattermost-plugin-github") {
+				if (requestReleaseTag == "v0.0.0") &&
+					(requestReleaseAssetFileName == "github-0.0.0.tar.gz") {
+					response = artifacts.MockGitHubPluginBundle
+				} else if (requestReleaseTag == "v2.0.0") &&
+					(requestReleaseAssetFileName == "github-2.0.0.tar.gz.sig") {
+					response = artifacts.MockGitHubPluginBundleSig
+				}
+			}
+			if response == nil {
+				w.WriteHeader(http.StatusNotFound)
+			} else {
+				w.Write(response)
+			}
+		}
+	}
+}
+
 // Checks the request URL and invokes the appropriate handler for the path
 func makeHandleAPIEndpoints(t *testing.T, state mockMMApiStateType) func(http.ResponseWriter, *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {
@@ -266,6 +316,8 @@ func makeHandleAPIEndpoints(t *testing.T, state mockMMApiStateType) func(http.Re
 			makeHandleReleaseList(t, state)(w, r)
 		} else if match, _ := regexp.MatchString(regexpRepoGet, requestPath); match {
 			makeHandleRepositoryGet(t)(w, r)
+		} else if match, _ := regexp.MatchString(regexpReleaseAssetDownload, requestPath); match {
+			makeHandleReleaseAssetDownload(t)(w, r)
 		} else {
 			if t != nil {
 				t.Errorf("Client requested an API path not mocked")
