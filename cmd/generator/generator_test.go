@@ -115,7 +115,12 @@ func TestGenerator(t *testing.T) {
 	})
 
 	t.Run("downloadBundleData() downloads and unpacks a bundle file", func(t *testing.T) {
-		t.Skip("Test not yet implemented")
+		bundledata, err := downloadBundleData(client.BaseURL.String() + "mattermost/mattermost-plugin-github/releases/download/v0.0.0/github-0.0.0.tar.gz")
+		if err != nil {
+			t.Errorf("Unable to get bundle file: %s", err.Error())
+		} else if len(bundledata) == 0 {
+			t.Errorf("0-length bundle data not expected for test request")
+		}
 	})
 
 	t.Run("getIconDataFromTarFile() reads an icon from a bundle file", func(t *testing.T) {
