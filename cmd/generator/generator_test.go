@@ -5,6 +5,8 @@ import (
 	"bytes"
 	"compress/gzip"
 	"context"
+	"encoding/base64"
+	"io/ioutil"
 	"strings"
 	"testing"
 
@@ -148,7 +150,27 @@ func TestGenerator(t *testing.T) {
 	})
 
 	t.Run("getIconDataFromTarFile() reads an icon from a bundle file", func(t *testing.T) {
-		t.Skip("Test not yet implemented")
+		gzreader, err := gzip.NewReader(bytes.NewReader(artifacts.MockGitHubPluginBundle))
+		if err != nil {
+			t.Skip("unable to load mock bundle file data")
+		}
+		tardata, err := ioutil.ReadAll(gzreader)
+		if err != nil {
+			t.Skip("unable to load mock bundle file data")
+		}
+		icon, err := getIconDataFromTarFile(tardata, "assets/icon.svg")
+		if err != nil {
+			t.Errorf("unsuccessful attempt to read icon.svg from mock bundle")
+		} else if len(icon) == 0 {
+			t.Errorf("0-length bundle icon not expected from mock bundle")
+		}
+		if icon[:26] == "data:image/svg+xml;base64," {
+			dec, _ := base64.RawStdEncoding.DecodeString(icon[26:])
+			decstr := string(dec)
+			if decstr[:15] != "<svg role=\"img\"" {
+				t.Errorf("icon was not successfully unpacked")
+			}
+		}
 	})
 
 	t.Run("InitCommand() initializes the command line invocation using its arguments", func(t *testing.T) {
