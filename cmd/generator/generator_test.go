@@ -170,6 +170,8 @@ func TestGenerator(t *testing.T) {
 			if decstr[:15] != "<svg role=\"img\"" {
 				t.Errorf("icon was not successfully unpacked")
 			}
+		} else {
+			t.Log("icon data memory format has changed")
 		}
 	})
 
