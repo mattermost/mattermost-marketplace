@@ -1,11 +1,15 @@
 package main
 
 import (
+	"archive/tar"
+	"bytes"
+	"compress/gzip"
 	"context"
 	"strings"
 	"testing"
 
 	"github.com/google/go-github/v28/github"
+	artifacts "github.com/mattermost/mattermost-marketplace/mocks/artifacts"
 	mocks "github.com/mattermost/mattermost-marketplace/mocks/github/v3"
 )
 
@@ -102,7 +106,28 @@ func TestGenerator(t *testing.T) {
 	})
 
 	t.Run("getFromTarFile() seeks and extracts a particular file from a tar file", func(t *testing.T) {
-		t.Skip("Test not yet implemented")
+		gzreader, err := gzip.NewReader(bytes.NewReader(artifacts.MockGitHubPluginBundle))
+		if err != nil {
+			t.Skip("unable to load mock gzip file data")
+		}
+		tarreader := tar.NewReader(gzreader)
+		if err != nil {
+			t.Skip("unable to load mock gzip file data")
+		}
+		manifest, err := getFromTarFile(tarreader, "plugin.json")
+		if err != nil {
+			t.Errorf("unsuccessful attempt to read plugin.json manifest from mock bundle")
+		} else if len(manifest) == 0 {
+			t.Errorf("0-length bundle manifest not expected from mock bundle")
+		}
+		icon, err := getFromTarFile(tarreader, "assets/icon.svg")
+		if err != nil {
+			t.Errorf("unsuccessful attempt to read icon.svg from mock bundle")
+		} else if len(icon) == 0 {
+			t.Errorf("0-length bundle icon not expected from mock bundle")
+		} else if bytes.Equal(manifest, icon) {
+			t.Errorf("getFromTarFile() returning same data for different files")
+		}
 	})
 
 	t.Run("downloadSignature() downloads a signature file for an artifact", func(t *testing.T) {
