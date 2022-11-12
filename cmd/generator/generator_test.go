@@ -120,6 +120,8 @@ func TestGenerator(t *testing.T) {
 			t.Errorf("Unable to get bundle file: %s", err.Error())
 		} else if len(bundledata) == 0 {
 			t.Errorf("0-length bundle data not expected for test request")
+		} else if bytes.Equal(bundledata[:2], []byte{0x1f, 0x8b}) {
+			t.Errorf("compressed tarball not unpacked")
 		}
 	})
 
