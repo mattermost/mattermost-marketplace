@@ -112,7 +112,7 @@ func TestGenerator(t *testing.T) {
 		}
 		tarreader := tar.NewReader(gzreader)
 		if err != nil {
-			t.Skip("unable to load mock gzip file data")
+			t.Skip("unable to load mock tar file data")
 		}
 		manifest, err := getFromTarFile(tarreader, "plugin.json")
 		if err != nil {
