@@ -3541,6 +3541,141 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.10.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.10.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "beta",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmNqvyUACgkQ0bVLR6XO/sTjaA/6A5aFNZ7gIprkGS18ni2cFfCur0t7BghIDT4b27sAF6GsAq6yY1JBI2Gr9WatbkM6VLc8/Si6wNBxdUYdQ5PFJw2QORMNT9haDGSXwgTbjPLRLUqM9VgOn9EcLflDJuSqaPL2CoMfBtKjQ3cgVmW13lgZVRIPF80UH4jWrjjwpI/8XSEFwgY6SO56AzmDsjJV0rSEaYC7V1c20H9na1m0Cp9K9I6eaMIYeoR8TOGfCuXsQl2IUP8sW1PIFDnPXt0M6J76pJP2G8WwfYj0zTKmAAw1fHmhvb+o9QQ5kitoTxJBUvnEBwBIvE65Nf5ua4PaoEOCf/rMqa0bvJmYsQL6qI/6arQALidn2mvpX9F+VgRtv22c0IIj9PhbS64zialUwcVyqYBeSIp05TnceFHMJMJ3RdIgKKqgcv0SiqCrVUXXO9eIGlW3qU99YoewiOF1txN/dqzVUzQi5nuLvq3XA5kPFbHl3wl6h3LF5Ip8UcDl+pXMTZKsFWanDDJADQ6A8nOMq2fRx7f/zomQ1qn/0RFExbacy/eLlkqNhmHn8Ce6DItNQ2OITV8RtAw84V2Wp/vvn922CC6/feNiRzUqOPcjrJV6MUfpDvuF8sy7ZQmHBFN85H/RPF3KgUZk0lvN1drQrDMjMxQXNB8nHQdKIn9TXySaidy048z0rSKKRF4=",
+    "repo_name": "mattermost-plugin-calls",
+    "manifest": {
+      "id": "com.mattermost.calls",
+      "name": "Calls (Beta)",
+      "description": "Integrates real-time voice communication in Mattermost",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.10.0",
+      "version": "0.10.0",
+      "min_server_version": "6.6.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Calls plugin enables voice calls with screensharing in channels. See [documentation](https://docs.mattermost.com/channels/make-calls.html) to learn more.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "UDPServerPort",
+            "display_name": "RTC Server Port",
+            "type": "number",
+            "help_text": "The UDP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443
+          },
+          {
+            "key": "AllowEnableCalls",
+            "display_name": "Enable on specific channels",
+            "type": "bool",
+            "help_text": "When set to true, Channel Admins can enable or disable calls in their channels. It also allows participants in DMs/GMs to enable or disable calls.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "DefaultEnabled",
+            "display_name": "Enable on all channels",
+            "type": "bool",
+            "help_text": "When set to true, calls can be started in all channels where they're not explicitly disabled.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "MaxCallParticipants",
+            "display_name": "Max call participants",
+            "type": "number",
+            "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, it means unlimited.",
+            "placeholder": "",
+            "default": 0
+          },
+          {
+            "key": "ICEHostOverride",
+            "display_name": "ICE Host Override",
+            "type": "text",
+            "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "ICEServersConfigs",
+            "display_name": "ICE Servers Configurations",
+            "type": "longtext",
+            "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+            "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+            "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]"
+          },
+          {
+            "key": "TURNStaticAuthSecret",
+            "display_name": "TURN Static Auth Secret",
+            "type": "text",
+            "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "TURNCredentialsExpirationMinutes",
+            "display_name": "TURN Credentials Expiration (minutes)",
+            "type": "number",
+            "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+            "placeholder": "",
+            "default": 1440
+          },
+          {
+            "key": "ServerSideTURN",
+            "display_name": "Server Side TURN",
+            "type": "bool",
+            "help_text": "(Optional) When set to true it will pass and use configured TURN candidates to server initiated connections.",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "AllowScreenSharing",
+            "display_name": "Allow screen sharing",
+            "type": "bool",
+            "help_text": "When set to true it allows call participants to share their screen.",
+            "placeholder": "",
+            "default": true
+          },
+          {
+            "key": "RTCDServiceURL",
+            "display_name": "RTCD service URL",
+            "type": "text",
+            "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+            "placeholder": "https://rtcd.example.com",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.10.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmNqvyEACgkQ0bVLR6XO/sTo/Q//azcWuLORosm7O6eBEqZ+0EnU4Uwj7F9l6hpwl2GOPkgUPm1jNRn8cRspsqPUeyXSXYd+ITxT0LHzTNtO13J1lBYVsMO88B4bwZ0S0grN9rquenFdH+5GlGR/+FLIkB0RWMsIGYGcGJxr3URIsyyQ+05lGTqv1vs/Vtw6C7F2LVDwsmw466K5Lhugj5L88WgbhqoL2LoFYDvt75/BZfD3/afN46wubRnUPrHcC04UdNmSRbzKQlnXBuRuhlMiKC59quuoYCGA1wjwoxiZCZ5ggE0uGTNdCIFNRa20nMaoLDS22TzLR3VwqvWpntMsxe6ejlBKlHPxyI3274eXKCm9BHVf6xKfumeFN+BoTNfKTQWu/tBAZ1aJ2ZZjE/Rji+8FXcQKJC6am0ejtmRTGRwwpGb06tkPdZWezRO1yaAFOfSPg0yKvXr/YDzGIAEfL8k4edwsURZKh8eDnIcitZZS9FeP1GCuidyhNdRvZEreirwhhf5Yt0f1J+2LJ8jKB6oEIqqU+JuUlChxuVr58GmhEFXgIL+/KFDWREsEn2TkF9FpNE3T5ZxwUajlDUDn8tLglxmi8RFF/Z+HoLeJhf7YsvRZWGM1QgFc1l0xPnVqwSyQEkvIoa63fcsZ0XFJdFB5zf4rSrDGXJmRd2D3/4OejI8RlF8eFrqz/EehDBXxZ0A="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2022-11-08T20:50:47.003915Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+    "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.9.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.9.0",
     "hosting": "",
