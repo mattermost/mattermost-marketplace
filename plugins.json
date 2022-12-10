@@ -12552,6 +12552,122 @@
     "updated_at": "2019-06-11T14:04:45Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-hackerone",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iIzAwMDIwMCIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMjIuMzQ3Ljc5M0MyMS40NjYuMjY0IDIwLjQ5NiAwIDE5LjI2MiAwYy0xLjMyMiAwLTIuMzguMjY0LTMuMTc0Ljc5M3MtMS4yMzQgMS4yMzQtMS4yMzQgMi4xMTZ2NTguMDk0YzAgLjcwNS40NCAxLjQgMS4yMzQgMi4wMjhhNS4xNCA1LjE0IDAgMCAwIDMuMDg1Ljk3IDUuMzQgNS4zNCAwIDAgMCAzLjA4NS0uOTdjLjg4LS42MTcgMS4zMjItMS4zMjIgMS4zMjItMi4wMjhWMi45Yy4wODgtLjg4Mi0uMzUzLTEuNTg3LTEuMjM0LTIuMTE2bTcuMzE4IDMwLjVjLS41My41My0uNzkzIDEuMjM0LS42MTcgMi4yOTIuMDg4IDEuMDU4LjUzIDIuMDI4IDEuNCAyLjkuNzkzLjg4MiAxLjc2MyAxLjUgMi44MiAxLjc2M3MxLjg1LjA4OCAyLjM4LS4zNTNsNC42NzItMi45djI2LjAwNmMwIC43MDUuNDQgMS40IDEuMjM0IDIuMDI4czEuODUuOTcgMy4wODUuOTcgMi4yOTItLjM1MyAzLjE3NC0uOTcgMS4zMjItMS4zMjIgMS4zMjItMi4wMjhWMjUuOTE3YzAtLjg4Mi0uNDQtMS41LTEuMzIyLTIuMDI4cy0xLjk0LS43OTMtMy4yNjItLjc5My0yLjI5Mi4yNjQtMy4wODUuNzkzbC0xMS44MTMgNy40MDUiLz48L3N2Zz4=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-hackerone-v1.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-hackerone/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "community",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmN9AroACgkQ0bVLR6XO/sS20w/+PWXWDMbpbjsZnKO3S8Kj1VF6zArkfZ1121/5llMqwofjoox8s0wMA5jgzM8k4wP8Ox2ZvOkNZ49VvZ0aOD8Igo6yRHSJ9o3P0FUiX3XOLDvj4uSZr032NNE6eLcOo74IuntDc4gqpX3P1Tn2+7aroj/Je3/k7Vf9r2tP7AwkJnzlWmlPlG2b2hVabqLw57ZRU8mc9gM6xqrwP9zCzeDxxr1tr86pz1JnRnYXhR9vY65r+F37A2NGFO9xK3hWMfEHCX+ZPOJXdcWMaV8D3ppdex9UlHwMyE4vcy7QRTg7YuHxU9sbyfDodN+UuWaB/XU/hz4/RS9HWojwC95aJDJaRmAsibjd+JKyhMp2m9FTGF3Aw3jHe9F0KEAw4eGzISnW3c+DrjU0n3vFWBxzYVEcFGegBvV+mQlu/bnX3bnBSG6C8/OslEAgG2LDQVmihO1/EwUPOznPWg80ZG1qjI22bVn/0pxY+eBwfFUfTFGqHIoJy9OnTHw76VXmRW+B2uVGKQ8K62fJtGtuAlwTqc2wnZVo1UNz9aroinQKz9+EHDhTRZSXFzi1vzrEq7cNPZQ0wqs8KFD17EOvlMFQAUmWUJWYOrYgeDFAnIDpmPjHEQcWg/o+mTQLMDjOKL400WfkKrU7gu2e5eNU8E3y/Y70ElnUqX8WfZx+05vgtfGmqLU=",
+    "repo_name": "mattermost-plugin-hackerone",
+    "manifest": {
+      "id": "mattermost-plugin-hackerone",
+      "name": "Hackerone Plugin",
+      "description": "Hackerone plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-hackerone",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-hackerone/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-hackerone/releases/tag/v1.0.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.0.0",
+      "min_server_version": "5.37.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "The Hackerone plugin for Mattermost allows users to subscribe to Hackerone notifications, stay up-to-date with all the reports submitted on the Hackerone platform, and other common Hackerone actions - directly from Mattermost. \n \n Instructions for setup are [available here](https://github.com/srkgupta/mattermost-plugin-hackerone#configuration).",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/srkgupta/mattermost-plugin-hackerone).",
+        "settings": [
+          {
+            "key": "HackeroneProgramHandle",
+            "display_name": "Hackerone Program Handle:",
+            "type": "text",
+            "help_text": "Handle of your Hackerone program",
+            "placeholder": "Type the handle of your Hackerone program",
+            "default": null
+          },
+          {
+            "key": "HackeroneApiIdentifier",
+            "display_name": "Hackerone API Identifier:",
+            "type": "text",
+            "help_text": "Type the Hackerone API Identifier here. [Instructions available here](https://docs.hackerone.com/programs/api-tokens.html)",
+            "placeholder": "Paste the Hackerone API Identifier here",
+            "default": null
+          },
+          {
+            "key": "HackeroneApiKey",
+            "display_name": "Hackerone API Token:",
+            "type": "text",
+            "help_text": "Type the Hackerone API Token here. [Instructions available here](https://docs.hackerone.com/programs/api-tokens.html)",
+            "placeholder": "Paste the Hackerone API Token here",
+            "default": null
+          },
+          {
+            "key": "HackeronePollIntervalSeconds",
+            "display_name": "Poll Interval (in seconds):",
+            "type": "number",
+            "help_text": "Interval at which new data will be polled via the Hackerone API. Default: 30 seconds. Minimum: 10 seconds. Max: 3600 seconds.",
+            "placeholder": "Seconds",
+            "default": 30
+          },
+          {
+            "key": "HackeroneSLAPollIntervalSeconds",
+            "display_name": "SLA Poll Interval (in seconds):",
+            "type": "number",
+            "help_text": "Interval at which the plugin will check for missed SLA deadlines. Default: 86400 seconds. Minimum: 3600 seconds.",
+            "placeholder": "Seconds",
+            "default": 86400
+          },
+          {
+            "key": "HackeroneSLANew",
+            "display_name": "SLA for New Reports (in days):",
+            "type": "number",
+            "help_text": "Define the SLA for the expected timeline (in days) for status to be changed for New reports. For example, if the report is not changed from New state to any other state for more than 3 days, it will be shown under missed deadline reports.",
+            "placeholder": "Days",
+            "default": 3
+          },
+          {
+            "key": "HackeroneSLABounty",
+            "display_name": "SLA for Bounty (in days):",
+            "type": "number",
+            "help_text": "Define the SLA for the expected timeline (in days) for bounty to be rewarded for Triaged reports. For example, if a triaged report was not rewarded any bounty for more than 7 days, it will be shown under missed deadline reports.",
+            "placeholder": "Days",
+            "default": 7
+          },
+          {
+            "key": "HackeroneSLATriaged",
+            "display_name": "SLA for Triaged Reports (in days):",
+            "type": "number",
+            "help_text": "Define the SLA for the expected timeline (in days) for status to be changed for Triaged reports. For example, if the report is not changed from Triaged to Resolved for more than 15 days, it will be shown under missed deadline reports.",
+            "placeholder": "Days",
+            "default": 15
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-hackerone-v1.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmN9ArYACgkQ0bVLR6XO/sQqhQ/+M5lWEpcVPYBtR05BGGqOhZPyr8x+jymruvPUXZk83boWRjyQPtEUapNdov93yWdyK7y4vVE5a8ksdo5L30Y4ipBp791Z4VHyf5Xww/KDfWXkGB6NZpPP2ETcZzNaJSkjDDKCz0UjXpBj0PmQ0J+GPvuIyYMMgK091XZhGexrAhE/T+GZXCi2hkIU11X/C7Wparnd8+LAQUtGpdjOsWrATheC0XxOqRSJ4Syru70xJmcxZISP42PQZFR3LrSxhX8q5nLQQqMDIpYjQOWyqlv1sIcNpnRRpG5mCXf8NrcXBrvSwC8cO5PYiDL+7FX0KBB5pAWu4klcUjNXiwDwrpzuVVTJcF/PL31qhITSmk18i6XjIYMecdktoHqN114oIEWrGge+rrhlZoYDaRKmh0KobuBNk5YC6pL3VOo0FTAa1aIi6vP6E/GaDDxtv3xa/XbkjF50o0fygkAylNY40/L546gdK3M2iznj6179MY5ZffRRsIj+xJ5txQHzJvzFibObgt0t4kanb4qgFSYwOukaSaaZnXL2RCKjKUzME/ogFYfxVLk628p6tQd4Wgk573Nwofh3en7ldn6yP+tq1Nv/5gVU3p09EHWs6l7QweRgrI+PdE5cZav/r+NYKhGiouKbQGb6nBpn9YKmSZVYmKZ55BlLtOzLjbqYJjPbnmxhQh0="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-hackerone-v1.0.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmN9ArQACgkQ0bVLR6XO/sShOxAAiLuWeOzsOKzxUSW2zEsGpl9N7gIVUyRXc+AzwELcMPzPHN5309ACAITPPJ3h1eKgRri3LsvTnZePa1uW6w/eiiNlFy31kkx4kKgvJ4+Ez34UZafa9pajOSaJ7f7HsA8tgAZbLBf1a7+9ppTZxhC58bn+kky2NdC/v6iKUpJNMyjGdZJfNAhwAgonU6jLKQSgojfdSqJ6unDJ2mtOY5qfZ70nN3IPutcH8LN7/Sayl3c55EPoqqWGsvdrvdNnNjjA1s5BbxPufJoGj5p3kKZfN4Oun67q1EeZzwbUouxsd7GAzIroBekHbi8Pky5x3j3otDUXgPj5cqQlRVpXB4fnp8JJuhAHBUB+qFId0cXJCAQR+I1dEOsf42V4BOZoBCMFjx8n81AspSHYIw9oDFVSMCKglfkIV2UBaYbwUcMUIdBNNZnXwrhHKRYrJrwlCVgb1RfE4FbIjlDsdlT45g2zaKoRQ9aH1WiFum80uoGliQRTiHXDzCdqkuWL59Onp3cOVrxtLjX78kRBToDloZKrq2bMg1SpybMizj6M0jX6e8RX5vjyArOt7Dt86f6j9ijL0IzysV7sluG9/IpioI/HBW3hr4zJBztD7/LeFLK8+vuN8ZeeQ7ym2ajIp0apZ/ddXMdeB/SM2rFsCqZUBkjhZ6rf0Sj4GuNf+hqYEtN70Lc="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-hackerone-v1.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmN9ArUACgkQ0bVLR6XO/sRJqQ/+NI2jDFNYcFzgF0TWDTZYrAUM/1DSgcxYyxzHW832pXkhCN+/TmfsMuMwPYgpvKialy9knInyDzqn7ZUPRMLz8geAtYIdPnXKaCiWYXGRUxSoBBaN5ecm9UPatxOvUfKJyUhWcFksU/8HWX0Xh2P/bDJZgB8NLA0Mvi/EZcNvtTzDtuWdlpbdn+53bHsmTOsHTvLDmOGs1Oug2S+n729DdS3QQbE0P8MaPzcSizYvF8cmw6pC0/0Jxy7tBe/sYmI6NtE4PJSvaHB29ysG7H0soXb/CYyUoT3pHxMiyKmoEX7SIdV50jguem0eddZOXh/XWiUG6fCSmJOqL2SRASw+HuFxSS7tKmPmIAd0/tlN64ll5rsRFjQ/XH+DyHSgEm9YCRnz06NKlvUyISA1xkVO2RCaaJC/D5QmHFGv8PggcyY+ElH4axfR7gx0HcT3SHybC/I+AoeimrNV9TxK4wmlRvVsPA9UgSpz0EA5iX7ENGsqYFmdW/bA1IXxbHvofCRsvVwvsJ1zH9apGN+dn7uqIc3ADnkArW0KJcHQLBxAS+9r/lVKTCt77G+qXfc0PuyLN2LuhnKoLi/WtTQBi1IwbeYL+Uc1IOMiZZ2FUUSMCSniRmfuACIrTUWZgcHrTxCJ2/vYHl5I0l33cfezcv4fWHqOxmJDoQkZrqWwqj828b0="
+      }
+    },
+    "updated_at": "2022-11-22T17:12:43.947790466Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-profanity-filter-v1.0.0.tar.gz",
