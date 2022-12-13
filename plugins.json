@@ -5754,6 +5754,93 @@
   {
     "homepage_url": "https://mattermost.gitbook.io/microsoft-teams-pluginmsteams-meetings-plugin",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTc0IiBoZWlnaHQ9IjU3NCIgdmlld0JveD0iMCAwIDU3NCA1NzQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zODYuNDMgMjI4LjU3M0g1MTYuNDYzQzUyOC43NDkgMjI4LjU3MyA1MzguNzA4IDIzOC41MTMgNTM4LjcwOCAyNTAuNzc1VjM2OC45OTZDNTM4LjcwOCA0MTQuMDYyIDUwMi4xMDYgNDUwLjU5NSA0NTYuOTU1IDQ1MC41OTVINDU2LjU2OUM0MTEuNDE5IDQ1MC42MDEgMzc0LjgxMSA0MTQuMDczIDM3NC44MDUgMzY5LjAwOFYyNDAuMTc2QzM3NC44MDUgMjMzLjc2OCAzODAuMDEgMjI4LjU3MyAzODYuNDMgMjI4LjU3M1oiIGZpbGw9IiM1MDU5QzkiLz4KPHBhdGggZD0iTTQ3NC4zMTcgMjA1LjIwM0M1MDMuNDEzIDIwNS4yMDMgNTI3IDE4MS42NiA1MjcgMTUyLjYxOEM1MjcgMTIzLjU3NyA1MDMuNDEzIDEwMC4wMzQgNDc0LjMxNyAxMDAuMDM0QzQ0NS4yMjEgMTAwLjAzNCA0MjEuNjM0IDEyMy41NzcgNDIxLjYzNCAxNTIuNjE4QzQyMS42MzQgMTgxLjY2IDQ0NS4yMjEgMjA1LjIwMyA0NzQuMzE3IDIwNS4yMDNaIiBmaWxsPSIjNTA1OUM5Ii8+CjxwYXRoIGQ9Ik0zMTAuNDE1IDIwNS4yMDJDMzUyLjQ0MiAyMDUuMjAyIDM4Ni41MTIgMTcxLjE5NSAzODYuNTEyIDEyOS4yNDdDMzg2LjUxMiA4Ny4yOTgxIDM1Mi40NDIgNTMuMjkxOSAzMTAuNDE1IDUzLjI5MTlDMjY4LjM4NyA1My4yOTE5IDIzNC4zMTcgODcuMjk4MSAyMzQuMzE3IDEyOS4yNDdDMjM0LjMxNyAxNzEuMTk1IDI2OC4zODcgMjA1LjIwMiAzMTAuNDE1IDIwNS4yMDJaIiBmaWxsPSIjN0I4M0VCIi8+CjxwYXRoIGQ9Ik00MTEuODgyIDIyOC41NzNIMTk3LjI0QzE4NS4xMDIgMjI4Ljg3MiAxNzUuNDk5IDIzOC45MjcgMTc1Ljc4MSAyNTEuMDQ0VjM4NS44ODFDMTc0LjA4NiA0NTguNTkxIDIzMS43MTcgNTE4LjkyOCAzMDQuNTYxIDUyMC43MDdDMzc3LjQwNSA1MTguOTI4IDQzNS4wMzYgNDU4LjU5MSA0MzMuMzQyIDM4NS44ODFWMjUxLjA0NEM0MzMuNjIzIDIzOC45MjcgNDI0LjAyIDIyOC44NzIgNDExLjg4MiAyMjguNTczWiIgZmlsbD0iIzdCODNFQiIvPgo8cGF0aCBvcGFjaXR5PSIwLjEiIGQ9Ik0zMTYuMjY4IDIyOC41NzNWNDE3LjUyNkMzMTYuMjEgNDI2LjE5MSAzMTAuOTUgNDMzLjk3NSAzMDIuOTIyIDQzNy4yNzRDMzAwLjM2NiA0MzguMzUyIDI5Ny42MTkgNDM4LjkwOSAyOTQuODQ0IDQzOC45MUgxODYuMDgzQzE4NC41NjEgNDM1LjA1NCAxODMuMTU2IDQzMS4xOTcgMTgxLjk4NSA0MjcuMjI1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMTYuMjY4WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMzA0LjU2MSAyMjguNTczVjQyOS4yMTFDMzA0LjU2MSA0MzEuOTgxIDMwNC4wMDMgNDM0LjcyMiAzMDIuOTIyIDQzNy4yNzRDMjk5LjYxNyA0NDUuMjg3IDI5MS44MTggNDUwLjUzNyAyODMuMTM3IDQ1MC41OTVIMTkxLjU4NUMxODkuNTk1IDQ0Ni43MzkgMTg3LjcyMiA0NDIuODgzIDE4Ni4wODMgNDM4LjkxQzE4NC40NDQgNDM0LjkzNyAxODMuMTU2IDQzMS4xOTcgMTgxLjk4NSA0MjcuMjI1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMDQuNTYxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMzA0LjU2MSAyMjguNTczVjQwNS44NEMzMDQuNDcxIDQxNy42MTMgMjk0LjkzMSA0MjcuMTM1IDI4My4xMzcgNDI3LjIyNUgxODEuOTg1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMDQuNTYxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMjkyLjg1MyAyMjguNTczVjQwNS44NEMyOTIuNzY0IDQxNy42MTMgMjgzLjIyNCA0MjcuMTM1IDI3MS40MjkgNDI3LjIyNUgxODEuOTg1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gyOTIuODUzWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4xIiBkPSJNMzE2LjI2OSAxNjguMTZWMjA0Ljk2OUMzMTQuMjc4IDIwNS4wODUgMzEyLjQwNSAyMDUuMjAyIDMxMC40MTUgMjA1LjIwMkMzMDguNDI0IDIwNS4yMDIgMzA2LjU1MiAyMDUuMDg1IDMwNC41NjEgMjA0Ljk2OUMzMDAuNjEgMjA0LjcwNiAyOTYuNjkgMjA0LjA4MSAyOTIuODU0IDIwMy4wOThDMjY5LjE0NyAxOTcuNDk1IDI0OS41NjEgMTgwLjkgMjQwLjE3MSAxNTguNDZDMjM4LjU1NSAxNTQuNjkyIDIzNy4zMDIgMTUwLjc4IDIzNi40MjQgMTQ2Ljc3NUgyOTQuODQ0QzMwNi42NTggMTQ2LjgyIDMxNi4yMjQgMTU2LjM2OCAzMTYuMjY5IDE2OC4xNloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIG9wYWNpdHk9IjAuMiIgZD0iTTMwNC41NjEgMTc5Ljg0NlYyMDQuOTY5QzMwMC42MSAyMDQuNzA3IDI5Ni42OSAyMDQuMDgyIDI5Mi44NTQgMjAzLjA5OUMyNjkuMTQ3IDE5Ny40OTUgMjQ5LjU2IDE4MC45MDEgMjQwLjE3MSAxNTguNDYxSDI4My4xMzdDMjk0Ljk1MSAxNTguNTA2IDMwNC41MTYgMTY4LjA1NCAzMDQuNTYxIDE3OS44NDZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBvcGFjaXR5PSIwLjIiIGQ9Ik0zMDQuNTYxIDE3OS44NDZWMjA0Ljk2OUMzMDAuNjEgMjA0LjcwNyAyOTYuNjkgMjA0LjA4MiAyOTIuODU0IDIwMy4wOTlDMjY5LjE0NyAxOTcuNDk1IDI0OS41NiAxODAuOTAxIDI0MC4xNzEgMTU4LjQ2MUgyODMuMTM3QzI5NC45NTEgMTU4LjUwNiAzMDQuNTE2IDE2OC4wNTQgMzA0LjU2MSAxNzkuODQ2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMjkyLjg1NCAxNzkuODQ1VjIwMy4wOThDMjY5LjE0NyAxOTcuNDk1IDI0OS41NiAxODAuOSAyNDAuMTcxIDE1OC40NkgyNzEuNDNDMjgzLjI0NCAxNTguNTA1IDI5Mi44MDkgMTY4LjA1MyAyOTIuODU0IDE3OS44NDVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTYuNzUxOCAxNTguNDZIMjcxLjM5NEMyODMuMjQ1IDE1OC40NiAyOTIuODUzIDE2OC4wNSAyOTIuODUzIDE3OS44OFYzOTQuMTE5QzI5Mi44NTMgNDA1Ljk0OSAyODMuMjQ1IDQxNS41MzkgMjcxLjM5NCA0MTUuNTM5SDU2Ljc1MThDNDQuOSA0MTUuNTM5IDM1LjI5MjQgNDA1Ljk0OSAzNS4yOTI0IDM5NC4xMTlWMTc5Ljg4QzM1LjI5MjQgMTY4LjA1IDQ0LjkwMDMgMTU4LjQ2IDU2Ljc1MTggMTU4LjQ2WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPgo8cGF0aCBkPSJNMjIwLjU1IDI0MC4wMDFIMTc3LjY0M1YzNTYuNjIySDE1MC4zMDZWMjQwLjAwMUgxMDcuNTk4VjIxNy4zNzhIMjIwLjU1VjI0MC4wMDFaIiBmaWxsPSJ3aGl0ZSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iODAuMDM1OSIgeTE9IjE0MS43MjQiIHgyPSIyNDcuNjM3IiB5Mj0iNDMyLjU0NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNUE2MkMzIi8+CjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjNEQ1NUJEIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzM5NDBBQiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/releases/tag/v2.1.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOYGpcACgkQ0bVLR6XO/sSVVg//V7Ix3Nmr+nfrg6gbK+WvnEGUagVeumPMY7n6AJtdOE+zMSjCkXn+JLODDmr1WB7de6f4YZX1U7ogrMsAEnXs/zEwz7DSvL3fU4ckxNC6DnzqLubOPoa4l/iAPwd3AlK1/SWKVpSBzSLvbiZJyeJivmwOVmP6mTvB0hqc+CQ8eO6RfXdjc1j0qF7IsXGL4Bhc2MB8ydK0TwnRE4gmS720PDs1aqsDClnGeXjXDoxpI2lLitpSHWrKoAlKswoAqQHGcw/UUI28E/RL1jGQ5ctRFCN3vDm0cwfOzwDr1FTfJ1JQ2eRBf0kyBGVXWCPL4613mpjcBkNnRdrdpfxySqQVti9vcbbkOIFDP0aWaOOFX1XS5DCEl+VTXz60Vc+R84l0B7u2EDexb2+l4NCuwLZv4vvzY02IGTooY4QTqX6teqHCsWLqmllqkpzIAnxvbMxPXFzjK+xO/Rfpm85iffpjTrA1W8hO3t1zv590iz4nj5Q0TboYbIZRV4/IKNVPEIjsPl6LGdvJDad755QpPv9S1CCSwG6TXVTxUj7JGdjaBQ3CHb+gyzSLnV2c7jOWVq5nKZkQ5xUCbI6YJj4AHpVdQaLtjs6eougebvuMwiGsISUv/RUSr7My9DwdS/cueGxX3iD2IZ1ZjbhM+eM4PDMQvUAKfmjW8eP/uEedKYBJGX4=",
+    "repo_name": "mattermost-plugin-msteams-meetings",
+    "manifest": {
+      "id": "com.mattermost.msteamsmeetings",
+      "name": "MS Teams Meetings",
+      "description": "MS Teams Meetings audio and video conferencing plugin for Mattermost 5.2+.",
+      "homepage_url": "https://mattermost.gitbook.io/microsoft-teams-pluginmsteams-meetings-plugin",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/releases/tag/v2.1.0",
+      "icon_path": "assets/profile.svg",
+      "version": "2.1.0",
+      "min_server_version": "5.26.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Please refer to installation instructions [**here**](https://app.gitbook.com/@mattermost/s/microsoft-teams-pluginmsteams-meetings-plugin/setup/installation-and-configuration) for creating a new Application in the Azure Portal.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "OAuth2Authority",
+            "display_name": "Azure - Directory (tenant) ID:",
+            "type": "text",
+            "help_text": "Copy the **Directory (tenant) ID** value from the App Overview Page in the Azure Portal.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "OAuth2ClientId",
+            "display_name": "Azure - Application (client) ID:",
+            "type": "text",
+            "help_text": "Copy the **Application (client) ID** value from the App Overview Page in the Azure Portal.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "OAuth2ClientSecret",
+            "display_name": "Azure - Application (client) Secret:",
+            "type": "text",
+            "help_text": "Copy the **Client Secret Value** (not the ID) that was created on the App's **Certificates and Secrets** tab.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens. Will be auto-generated if left-blank the first time you configure the plugin. Re-generating the key will clear all previously stored access tokens and all users will be required to re-connect to MS Teams.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.1.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOYGpUACgkQ0bVLR6XO/sToCRAAmp8tmZyN0SN500VcyQAl1OIZUFLHOcgpzs9QZEWCjpC8JRq7GEA8jVkFZwBfzQXq4RYyOrDlorJFINVLV0vzE7hpNvuwwmwpUgdSDFG6lxMuFQQFn6a/a+jxdNb7IGTly2edYocYTmOPC046EtZedxKlMQbpnwRllZc68KpThgunmNenmZm8mzzRZ9y0X1+YNH5tStuh04naWCOhaNZOahGSU39WHqJmd5SnFD63nX7jN9teGRwfQ9ZTl8OoORnsj7YdGI4LMLCP8N17nz0rsltSUzXa+x0Zdnkjipz4ZfIswD9QNDOBM8Jwl8C4tNVUUeYlZc+uF3Zh3Eb1MPEIxeStNa5BJn5OgBcuRy7PAbwOPcRyKYkZxjl4JCAcDXo4IcktvqDvGK9cW57xL7Lwq+w30xshDRzPLlhuvc19ZZfCo7/ZDArPk3MimNHtTZRbxRb0sdtrgKy3B/f4RRjItF35t3ymXL0SA6cBrA7KmttADaVQkSzknZ2rLtPX1M8QyFEEf3PM4qfX6DxpcICQlooBMOsWcw2JQflaw86sj2xVrvkDGoiOaZ04ITJKRkZzz65+T5e2DWQ5WzU2hEJP6k0kF0qXwO3bUBKO8Lh8tY4B7lzyMqf7vQC7eWmmgN4URpTYB1yYMsoJN2WRBfp6XNhARRuWSA8l57MKANhPQn8="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.1.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOYGpIACgkQ0bVLR6XO/sRcWQ//alhyKjC7VRGfGjnwQ7gXQbsP4kLtdXJ4m8u4hiZfzKIj66GZqOTwWflrBevySYG823ZzO/6BGTLRhEKOPKFIsZqIxERVhUvQX+sdyttOhwA23GaCpaNA7fmQ0kEnlPOkPiE+tYMMfk/A1fjPyCfLUswy/TlR/yC4a5nsWjjDD+Ja/Ha5paYnaVwDVaDtqIzim7gS/xMt7AzVRcg7PJZ4FkGQWCpjhOV817T3FZFnFwpEWgy7eF3jnxx2ZZcBWznM7kd+6cAF2VUNYLW6mW5s9+EZfNWlpdwD/uvFyU1jn9Y0RXTnfyIe0zVNi2GteHzqF8SPpzpVNFAi6++tUvYQfVW/HWftHVTmNQvGMEv+cDz0YjIgDsCJtTb5zOEOQIpOxqLFZYbyfcOVYNQ/5mDNWmJQ0d2v0s1fBBV0GEwlrMMNE/QeyljP7pYclZuCS+skRSR0V+ELgmJcfxEIAjpxvi39PZToSS+1asBfjaNJvDebGS+PF6lep+WkLbzDBha+r1NC2YUCrLPj+/GBTah6+sZL5Q6eyRphyqn/BvWC5JlhFmGk1WEd7C28VOHV70d5SPjkLiFe/ytSx3WLaz2WIy/xrcCjXr7k5Ks/Jf6Thm3c4ZbwbQIXBeJo9FZLlhkCCAVeExpLXRpPJhDTisRS4TlrlyOgmNRdJztnfnTrRRQ="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.1.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOYGpQACgkQ0bVLR6XO/sQSrg/+KZsHmPa0bisCwb6k+BQiLW2MOpyepsJHYBFQxbPLGb6YsUtrYHdkw/O8LJxoVqkLypKpud96oduIxq1fhVjJJ3MIw12l0D0Z+PPayL+v8aIFE0POJbxUToPRkkHdrmLLDI3yCMrJCzx6Qc1aEt+PTwPGXkLFylvhFgh5KdPbxEyTNSEFmk/gJm0iEpTs+/18suajuZlD0C8L8SIFjoeMEIRvttSAJVqTyKPi0aPFUgpYuVKS0MfRY6CTuaq92qJDn4sczlaIW/W1C23acdzWMjfQlZYud7orfZFDBrh+2Zu2wmz3RQ9PnasjUY8DZsI/et8HXeHU91a2ePZZyxwJ3zyozGvS72e3TkuYPtZDawzBLD/wpn51unDCqrRzi5elqOvULgK4TVU4/eiwpd4GPRLoO5Akp0nQlza03BC9tMd4xBxK9XrDKHQ6aG3U/2LvlP6ajPZzoUOdKFC3G1Cl72cY2GrwUcxFL4txEkDWH2+l9F8kBOSVw1jOyQ+E7umDVcrBEpPc+VZTEXRB8MIQB+YA0wu383k2T6jp4BaNP3qT/0ZLVHCaXtNBqkRujZRTO4qH+MCXDBauI0DtRgrv0vbuZQYC/+nNL2tOr0sl3wSz3TlXzLppGevymYEkMgWEPWEGoZF/NwRvi0SSAaau1sJ12DRmw8CFpCC1NhHKMuE="
+      }
+    },
+    "updated_at": "2022-12-13T11:12:23.371264937Z"
+  },
+  {
+    "homepage_url": "https://mattermost.gitbook.io/microsoft-teams-pluginmsteams-meetings-plugin",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTc0IiBoZWlnaHQ9IjU3NCIgdmlld0JveD0iMCAwIDU3NCA1NzQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zODYuNDMgMjI4LjU3M0g1MTYuNDYzQzUyOC43NDkgMjI4LjU3MyA1MzguNzA4IDIzOC41MTMgNTM4LjcwOCAyNTAuNzc1VjM2OC45OTZDNTM4LjcwOCA0MTQuMDYyIDUwMi4xMDYgNDUwLjU5NSA0NTYuOTU1IDQ1MC41OTVINDU2LjU2OUM0MTEuNDE5IDQ1MC42MDEgMzc0LjgxMSA0MTQuMDczIDM3NC44MDUgMzY5LjAwOFYyNDAuMTc2QzM3NC44MDUgMjMzLjc2OCAzODAuMDEgMjI4LjU3MyAzODYuNDMgMjI4LjU3M1oiIGZpbGw9IiM1MDU5QzkiLz4KPHBhdGggZD0iTTQ3NC4zMTcgMjA1LjIwM0M1MDMuNDEzIDIwNS4yMDMgNTI3IDE4MS42NiA1MjcgMTUyLjYxOEM1MjcgMTIzLjU3NyA1MDMuNDEzIDEwMC4wMzQgNDc0LjMxNyAxMDAuMDM0QzQ0NS4yMjEgMTAwLjAzNCA0MjEuNjM0IDEyMy41NzcgNDIxLjYzNCAxNTIuNjE4QzQyMS42MzQgMTgxLjY2IDQ0NS4yMjEgMjA1LjIwMyA0NzQuMzE3IDIwNS4yMDNaIiBmaWxsPSIjNTA1OUM5Ii8+CjxwYXRoIGQ9Ik0zMTAuNDE1IDIwNS4yMDJDMzUyLjQ0MiAyMDUuMjAyIDM4Ni41MTIgMTcxLjE5NSAzODYuNTEyIDEyOS4yNDdDMzg2LjUxMiA4Ny4yOTgxIDM1Mi40NDIgNTMuMjkxOSAzMTAuNDE1IDUzLjI5MTlDMjY4LjM4NyA1My4yOTE5IDIzNC4zMTcgODcuMjk4MSAyMzQuMzE3IDEyOS4yNDdDMjM0LjMxNyAxNzEuMTk1IDI2OC4zODcgMjA1LjIwMiAzMTAuNDE1IDIwNS4yMDJaIiBmaWxsPSIjN0I4M0VCIi8+CjxwYXRoIGQ9Ik00MTEuODgyIDIyOC41NzNIMTk3LjI0QzE4NS4xMDIgMjI4Ljg3MiAxNzUuNDk5IDIzOC45MjcgMTc1Ljc4MSAyNTEuMDQ0VjM4NS44ODFDMTc0LjA4NiA0NTguNTkxIDIzMS43MTcgNTE4LjkyOCAzMDQuNTYxIDUyMC43MDdDMzc3LjQwNSA1MTguOTI4IDQzNS4wMzYgNDU4LjU5MSA0MzMuMzQyIDM4NS44ODFWMjUxLjA0NEM0MzMuNjIzIDIzOC45MjcgNDI0LjAyIDIyOC44NzIgNDExLjg4MiAyMjguNTczWiIgZmlsbD0iIzdCODNFQiIvPgo8cGF0aCBvcGFjaXR5PSIwLjEiIGQ9Ik0zMTYuMjY4IDIyOC41NzNWNDE3LjUyNkMzMTYuMjEgNDI2LjE5MSAzMTAuOTUgNDMzLjk3NSAzMDIuOTIyIDQzNy4yNzRDMzAwLjM2NiA0MzguMzUyIDI5Ny42MTkgNDM4LjkwOSAyOTQuODQ0IDQzOC45MUgxODYuMDgzQzE4NC41NjEgNDM1LjA1NCAxODMuMTU2IDQzMS4xOTcgMTgxLjk4NSA0MjcuMjI1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMTYuMjY4WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMzA0LjU2MSAyMjguNTczVjQyOS4yMTFDMzA0LjU2MSA0MzEuOTgxIDMwNC4wMDMgNDM0LjcyMiAzMDIuOTIyIDQzNy4yNzRDMjk5LjYxNyA0NDUuMjg3IDI5MS44MTggNDUwLjUzNyAyODMuMTM3IDQ1MC41OTVIMTkxLjU4NUMxODkuNTk1IDQ0Ni43MzkgMTg3LjcyMiA0NDIuODgzIDE4Ni4wODMgNDM4LjkxQzE4NC40NDQgNDM0LjkzNyAxODMuMTU2IDQzMS4xOTcgMTgxLjk4NSA0MjcuMjI1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMDQuNTYxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMzA0LjU2MSAyMjguNTczVjQwNS44NEMzMDQuNDcxIDQxNy42MTMgMjk0LjkzMSA0MjcuMTM1IDI4My4xMzcgNDI3LjIyNUgxODEuOTg1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMDQuNTYxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMjkyLjg1MyAyMjguNTczVjQwNS44NEMyOTIuNzY0IDQxNy42MTMgMjgzLjIyNCA0MjcuMTM1IDI3MS40MjkgNDI3LjIyNUgxODEuOTg1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gyOTIuODUzWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4xIiBkPSJNMzE2LjI2OSAxNjguMTZWMjA0Ljk2OUMzMTQuMjc4IDIwNS4wODUgMzEyLjQwNSAyMDUuMjAyIDMxMC40MTUgMjA1LjIwMkMzMDguNDI0IDIwNS4yMDIgMzA2LjU1MiAyMDUuMDg1IDMwNC41NjEgMjA0Ljk2OUMzMDAuNjEgMjA0LjcwNiAyOTYuNjkgMjA0LjA4MSAyOTIuODU0IDIwMy4wOThDMjY5LjE0NyAxOTcuNDk1IDI0OS41NjEgMTgwLjkgMjQwLjE3MSAxNTguNDZDMjM4LjU1NSAxNTQuNjkyIDIzNy4zMDIgMTUwLjc4IDIzNi40MjQgMTQ2Ljc3NUgyOTQuODQ0QzMwNi42NTggMTQ2LjgyIDMxNi4yMjQgMTU2LjM2OCAzMTYuMjY5IDE2OC4xNloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIG9wYWNpdHk9IjAuMiIgZD0iTTMwNC41NjEgMTc5Ljg0NlYyMDQuOTY5QzMwMC42MSAyMDQuNzA3IDI5Ni42OSAyMDQuMDgyIDI5Mi44NTQgMjAzLjA5OUMyNjkuMTQ3IDE5Ny40OTUgMjQ5LjU2IDE4MC45MDEgMjQwLjE3MSAxNTguNDYxSDI4My4xMzdDMjk0Ljk1MSAxNTguNTA2IDMwNC41MTYgMTY4LjA1NCAzMDQuNTYxIDE3OS44NDZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBvcGFjaXR5PSIwLjIiIGQ9Ik0zMDQuNTYxIDE3OS44NDZWMjA0Ljk2OUMzMDAuNjEgMjA0LjcwNyAyOTYuNjkgMjA0LjA4MiAyOTIuODU0IDIwMy4wOTlDMjY5LjE0NyAxOTcuNDk1IDI0OS41NiAxODAuOTAxIDI0MC4xNzEgMTU4LjQ2MUgyODMuMTM3QzI5NC45NTEgMTU4LjUwNiAzMDQuNTE2IDE2OC4wNTQgMzA0LjU2MSAxNzkuODQ2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMjkyLjg1NCAxNzkuODQ1VjIwMy4wOThDMjY5LjE0NyAxOTcuNDk1IDI0OS41NiAxODAuOSAyNDAuMTcxIDE1OC40NkgyNzEuNDNDMjgzLjI0NCAxNTguNTA1IDI5Mi44MDkgMTY4LjA1MyAyOTIuODU0IDE3OS44NDVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTYuNzUxOCAxNTguNDZIMjcxLjM5NEMyODMuMjQ1IDE1OC40NiAyOTIuODUzIDE2OC4wNSAyOTIuODUzIDE3OS44OFYzOTQuMTE5QzI5Mi44NTMgNDA1Ljk0OSAyODMuMjQ1IDQxNS41MzkgMjcxLjM5NCA0MTUuNTM5SDU2Ljc1MThDNDQuOSA0MTUuNTM5IDM1LjI5MjQgNDA1Ljk0OSAzNS4yOTI0IDM5NC4xMTlWMTc5Ljg4QzM1LjI5MjQgMTY4LjA1IDQ0LjkwMDMgMTU4LjQ2IDU2Ljc1MTggMTU4LjQ2WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPgo8cGF0aCBkPSJNMjIwLjU1IDI0MC4wMDFIMTc3LjY0M1YzNTYuNjIySDE1MC4zMDZWMjQwLjAwMUgxMDcuNTk4VjIxNy4zNzhIMjIwLjU1VjI0MC4wMDFaIiBmaWxsPSJ3aGl0ZSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iODAuMDM1OSIgeTE9IjE0MS43MjQiIHgyPSIyNDcuNjM3IiB5Mj0iNDMyLjU0NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNUE2MkMzIi8+CjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjNEQ1NUJEIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzM5NDBBQiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.0.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/releases/tag/v2.0.0",
     "hosting": "",
