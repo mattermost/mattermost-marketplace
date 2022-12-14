@@ -6165,6 +6165,69 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-nps",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzk2LjkgNDcuNzAwMUwzOTkuNSAxMDAuOEM0NDIuNSAxNDguMyA0NTkuNSAyMTUuNiA0MzguMSAyNzguOUM0MDYuMSAzNzMuMyAzMDAuNyA0MjMgMjAyLjcgMzg5LjhDMTA0LjcgMzU2LjYgNTEuMTAwMiAyNTMuMSA4My4wMDAyIDE1OC43QzEwNC41IDk1LjIwMDEgMTU5LjIgNTIuMDAwMSAyMjIuNSA0MC41MDAxTDI1Ni43IDAuMTAwMDk0QzE1MCAtMi43OTk5MSA0OS4zMDAyIDYzLjQwMDEgMTMuMzAwMiAxNjkuOUMtMzAuOTk5OCAzMDAuNiAzOS4xMDAyIDQ0Mi41IDE2OS45IDQ4Ni43QzMwMC43IDUzMC45IDQ0Mi41IDQ2MC45IDQ4Ni44IDMzMC4xQzUyMi43IDIyMy45IDQ4My4xIDExMC4zIDM5Ni45IDQ3LjcwMDFaIiBmaWxsPSIjMDA1OENDIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzM1LjYgMjA0LjNMMzMzLjggMTMwLjFMMzMyLjMgODcuNDAwMkwzMzEuMyA1MC40MDAyQzMzMS4zIDUwLjQwMDIgMzMxLjUgMzIuNjAwMiAzMzAuOSAyOC40MDAyQzMzMC44IDI3LjUwMDIgMzMwLjUgMjYuODAwMiAzMzAuMiAyNi4yMDAyQzMzMC4yIDI2LjEwMDIgMzMwLjEgMjYuMDAwMiAzMzAuMSAyNS45MDAyQzMzMC4xIDI1LjgwMDIgMzMwIDI1LjcwMDIgMzMwIDI1LjcwMDJDMzI5LjMgMjQuNTAwMiAzMjguMiAyMy42MDAyIDMyNi45IDIzLjEwMDJDMzI1LjUgMjIuNjAwMiAzMjQgMjIuNzAwMiAzMjIuNyAyMy4zMDAySDMyMi42QzMyMi40IDIzLjQwMDIgMzIyLjMgMjMuNDAwMiAzMjIuMiAyMy41MDAyQzMyMS42IDIzLjgwMDIgMzIxIDI0LjIwMDIgMzIwLjQgMjQuODAwMkMzMTcuNCAyNy44MDAyIDMwNi43IDQyLjAwMDIgMzA2LjcgNDIuMDAwMkwyODMuNSA3MC44MDAyTDI1Ni40IDEwMy44TDIwOS45IDE2MS42QzIwOS45IDE2MS42IDE4OC42IDE4OC4yIDE5My4zIDIyMUMxOTggMjUzLjggMjIyLjQgMjY5LjcgMjQxLjMgMjc2LjFDMjYwLjIgMjgyLjUgMjg5LjMgMjg0LjYgMzEyLjkgMjYxLjRDMzM2LjQgMjM4LjQgMzM1LjYgMjA0LjMgMzM1LjYgMjA0LjNaIiBmaWxsPSIjMDA1OENDIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-nps-v1.3.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-nps/releases/tag/v1.3.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOaM/MACgkQ0bVLR6XO/sSCgw/+Pz5MtZEY4GQlb0i2+rIPnxISzlOXJF8PiyYMU/oI7N7ifKJpbziqzO1EZhBkjc8EVBlxiUyXy3tgv5NLS5NZl42o6Fq4aejfi6U/5ocFDXlnMrUtINYuvPHS3wCNYZ7SFtrJCWMPzuHDfS2dKbmyaDIeGZFSUSDlQhrd9sD6hLP93mdVbM3vlNiIyTl7BxO2XyIm44hyMlKG/7NuTwPW7TlREUJiegSn1nM5jrgpvXiqMBZNLv6Wb7Dz6/yFzgcDPrhxyb82/WwAHmCSqTMN9Nmgt6prDGeCxL0udY8lXSr6QvcrM0Qgl/xd/9z8VzkVNc7UCnlzDaeCoJQGE+UBcOZCYHtyrhh+uWL1PPGAXPPzEv2BEbnQGWw9tt9LJG9ni1U0vhXJvdm8ZX5Slp9wC+QV1tLC1tKMZSM+hERQYFAbWRZD0h4CTOzmhus+0Rr62SLVRLvDzicPOmcXJb3G8YK9p0Slq8Xd6VFEdVPl1GJv1wwlBOAipgOJoUmghpOjX9rzWw5fWuAnD/mtPHsAnAAuoc3aW/JC5u4FLK4pA69wB31L0rLU8mznfT9BflWRV860mdqziFXC4xXwpw+xtXUpS7KpMBKTzIRE3TnDf6ILMbNXAzbHpSHXqSK1sVuQbNXqHhGQ1LovB1TRH19itx0xgLKPHcWA9L1O3NoJXYU=",
+    "repo_name": "mattermost-plugin-nps",
+    "manifest": {
+      "id": "com.mattermost.nps",
+      "name": "User Satisfaction Surveys",
+      "description": "This plugin sends quarterly user satisfaction surveys to gather feedback and help improve Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-nps",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-nps/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-nps/releases/tag/v1.3.1",
+      "icon_path": "assets/icon.svg",
+      "version": "1.3.1",
+      "min_server_version": "5.37.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Mattermost sends user satisfaction surveys to gather feedback and improve product quality. [Learn more](!https://mattermost.com/pl/default-nps) about user satisfaction surveys.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableSurvey",
+            "display_name": "Enable User Satisfaction Survey:",
+            "type": "bool",
+            "help_text": "When true, a [user satisfaction survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://about.mattermost.com/default-privacy-policy) for more information on the collection and use of information received through our services.",
+            "placeholder": "",
+            "default": true
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-nps-v1.3.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOaM+4ACgkQ0bVLR6XO/sSUmw//Rnsf0Gff1MItpLGT+yQ4D+7Z6Xi4Ubck3fbfEQJkKKCNt86nMos3p8q9vNvN3h1mYL7KF1Csi/jdY0lrcS1Dx3KGE46iBJxhSuR8oo8zZ267uVzHHsO7BvjvBCNPCZSvhwjYMlb5rK9004ftO0fWqziFnTEgvCCOFFJ4pKGrNyx6Q3vSyIV+xMIi3Uf0bHNqkNZ8VPrzqnvcYrbbtgIvAmkfayl3igW7YWHuEon83g6NeLlBNi/pclzpWC9YqXAVaVz/aSA71saY+DfnMztA/gHhCqbCT6IwIsNniAzDc27Opo9L+tiM4pDt8mJsUyAmXkXwK8Rg3uQf30SlxUoByrKBUb9Ch4ecyOVsxTBHs4n54Y76ARervyo6n7PEkrIzEPovntTQ7xjwPF2ypHaLp+tLwHEbmJ+Bis1A+HQC0NJlc8oLeYUdLM6fkw3dlv1sByaPTWnSAUGZlr7FEaVV17F1DBDgYGVW33LbWr3XPyOTEvm0UgJU2m75Ef4A3wJ55AftZxcgjaS5btMOsh55ZffaLYbUZWPhSWEKVlkrnR2FAv2PSiqAODDAp2yerO2z1K8skW6T9LlAPxc8sIFlMDcgFV97Mc/8Y5AuBALBEhbsDSVxdm/O2dsJVDxFDHO1Hd+TQmMh8IZ3NUsQ+yEsWL7rQQsa5kfoFJTx3znt9Nk="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-nps-v1.3.1-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOaM/AACgkQ0bVLR6XO/sTJUxAAnmtSDWyI/EPoeZuDYP6djV8OV007soXzcElV7bJRJfUcIGbsfXmZewNXRi4IkiqLt0yMC/8BWYNGoF9V6H05PpeA38+8FQE/X8tHtzik6o6lhkdM5HC3nriCz8NIYVq42KDEshHAEUhQDgP9bGLY+z3Hf7eiC4A4bYG7/sw0srkEufioYsy3wboENSXndVQncglN7mx5CvRQl2ZywZ5yNyk6IjUO2nLAeC55kTgcTS8iHCeItX6aSGqFwg8HXoE0+GL/VmHA0pa/mN5MiqIkbcCszU3LYPzyqu7SrtLSxGfIsHtZAXMd0L/6XgNoZiukv1Lbv7fn8pDgtIRvW9ixLd7qD+E2lMdhRe8OCnbKn/6DE3fKMiFPZ9gep9daDffBHZiS0ee/sPIvsCwfuFHrlkCUdOK0K7dpbyrpz/AzfnKOg1grCeMVbGTT19F1x0HGT0l0dtB2C7nVFtQihHVsfDqMXifygmUmuSDS5pUtdDMGy9WZmkuaZIi9HOwKF6IOH8qS9flbaPE4qXFUd5oHK8YgJF/QxD4c6o/FW55l6I8bLwVkVLkTwNBScSvEOY14wYlRnfa8t6LNV9C0h54CEloJi4LwIRdjyOHafZgJLD5IcytIUC+1ssopypInj4pUqX4Xk+TJWMpSz+rFSTFlt8xOacj0bxWAgP07lfKNJ0E="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-nps-v1.3.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOaM/EACgkQ0bVLR6XO/sRyBQ//W0RGzf2qkX3M4+OtdpGv08S8zTtx5LVHP/IpDI/Rt7vgS/rdvTZNjJj+UI98SHEY5qkfLBfDkRNG1V7oZ85wCKFIVkfupcgYvY0xlppFLgtii13854hLglkV8mkmnM846QgC+TkA5WpjeVMnmbHdDNUv6cTptliNnZizyat6bRnkegh+WHDKfqKOBgT10kzXUELhpyj+3yEEMw2P+0nL4gnEhfDkg9C0vLj6MubcKDuTyzlk0F19WHzpRdUGlRGFelLdnFaHVja2+UvDzW72DoFIMw5x0/97TVyDuIgzGdY6PrT55HiaDllcsEvbLOT+xzj4eUhRnuNC+D5kQ2ohTNvzPT6MdbIrVSG7YpO3XvTca6p1r5r1qJl66rj7VtqzVZuYYTPoVACXYWHcwKe5Ffke15aMBLyqGHRWa3T9MJpVBfmHnrCiiSaRw5LLvYBobY/0Rpo/prU/vA6pmHUJ2O/ohFDDFtTmVSUNEdEZaa+8bXE0yu+C0gnvYyf1aGGbJgx4be8v94ucWOTqsdFnx44EiwQVQuV3YKYiwjidVax7pBIlZnbmXVDRCKiufTVhRcj6ENMIhBf7zHC+3q6jTfWXpYgkHoIqNawl57nWqsy/V6PEi3a7rY+NZSb7Ich+iaUDa4/1FB8dw0BIT4Jlz/lKeRDcK6pn0DQGatmCRsA="
+      }
+    },
+    "updated_at": "2022-12-14T21:11:07.486655Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-nps",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzk2LjkgNDcuNzAwMUwzOTkuNSAxMDAuOEM0NDIuNSAxNDguMyA0NTkuNSAyMTUuNiA0MzguMSAyNzguOUM0MDYuMSAzNzMuMyAzMDAuNyA0MjMgMjAyLjcgMzg5LjhDMTA0LjcgMzU2LjYgNTEuMTAwMiAyNTMuMSA4My4wMDAyIDE1OC43QzEwNC41IDk1LjIwMDEgMTU5LjIgNTIuMDAwMSAyMjIuNSA0MC41MDAxTDI1Ni43IDAuMTAwMDk0QzE1MCAtMi43OTk5MSA0OS4zMDAyIDYzLjQwMDEgMTMuMzAwMiAxNjkuOUMtMzAuOTk5OCAzMDAuNiAzOS4xMDAyIDQ0Mi41IDE2OS45IDQ4Ni43QzMwMC43IDUzMC45IDQ0Mi41IDQ2MC45IDQ4Ni44IDMzMC4xQzUyMi43IDIyMy45IDQ4My4xIDExMC4zIDM5Ni45IDQ3LjcwMDFaIiBmaWxsPSIjMDA1OENDIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMzM1LjYgMjA0LjNMMzMzLjggMTMwLjFMMzMyLjMgODcuNDAwMkwzMzEuMyA1MC40MDAyQzMzMS4zIDUwLjQwMDIgMzMxLjUgMzIuNjAwMiAzMzAuOSAyOC40MDAyQzMzMC44IDI3LjUwMDIgMzMwLjUgMjYuODAwMiAzMzAuMiAyNi4yMDAyQzMzMC4yIDI2LjEwMDIgMzMwLjEgMjYuMDAwMiAzMzAuMSAyNS45MDAyQzMzMC4xIDI1LjgwMDIgMzMwIDI1LjcwMDIgMzMwIDI1LjcwMDJDMzI5LjMgMjQuNTAwMiAzMjguMiAyMy42MDAyIDMyNi45IDIzLjEwMDJDMzI1LjUgMjIuNjAwMiAzMjQgMjIuNzAwMiAzMjIuNyAyMy4zMDAySDMyMi42QzMyMi40IDIzLjQwMDIgMzIyLjMgMjMuNDAwMiAzMjIuMiAyMy41MDAyQzMyMS42IDIzLjgwMDIgMzIxIDI0LjIwMDIgMzIwLjQgMjQuODAwMkMzMTcuNCAyNy44MDAyIDMwNi43IDQyLjAwMDIgMzA2LjcgNDIuMDAwMkwyODMuNSA3MC44MDAyTDI1Ni40IDEwMy44TDIwOS45IDE2MS42QzIwOS45IDE2MS42IDE4OC42IDE4OC4yIDE5My4zIDIyMUMxOTggMjUzLjggMjIyLjQgMjY5LjcgMjQxLjMgMjc2LjFDMjYwLjIgMjgyLjUgMjg5LjMgMjg0LjYgMzEyLjkgMjYxLjRDMzM2LjQgMjM4LjQgMzM1LjYgMjA0LjMgMzM1LjYgMjA0LjNaIiBmaWxsPSIjMDA1OENDIi8+Cjwvc3ZnPgo=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-nps-v1.1.0.tar.gz",
     "release_notes_url": "",
     "hosting": "",
