@@ -5754,6 +5754,93 @@
   {
     "homepage_url": "https://mattermost.gitbook.io/microsoft-teams-pluginmsteams-meetings-plugin",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTc0IiBoZWlnaHQ9IjU3NCIgdmlld0JveD0iMCAwIDU3NCA1NzQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zODYuNDMgMjI4LjU3M0g1MTYuNDYzQzUyOC43NDkgMjI4LjU3MyA1MzguNzA4IDIzOC41MTMgNTM4LjcwOCAyNTAuNzc1VjM2OC45OTZDNTM4LjcwOCA0MTQuMDYyIDUwMi4xMDYgNDUwLjU5NSA0NTYuOTU1IDQ1MC41OTVINDU2LjU2OUM0MTEuNDE5IDQ1MC42MDEgMzc0LjgxMSA0MTQuMDczIDM3NC44MDUgMzY5LjAwOFYyNDAuMTc2QzM3NC44MDUgMjMzLjc2OCAzODAuMDEgMjI4LjU3MyAzODYuNDMgMjI4LjU3M1oiIGZpbGw9IiM1MDU5QzkiLz4KPHBhdGggZD0iTTQ3NC4zMTcgMjA1LjIwM0M1MDMuNDEzIDIwNS4yMDMgNTI3IDE4MS42NiA1MjcgMTUyLjYxOEM1MjcgMTIzLjU3NyA1MDMuNDEzIDEwMC4wMzQgNDc0LjMxNyAxMDAuMDM0QzQ0NS4yMjEgMTAwLjAzNCA0MjEuNjM0IDEyMy41NzcgNDIxLjYzNCAxNTIuNjE4QzQyMS42MzQgMTgxLjY2IDQ0NS4yMjEgMjA1LjIwMyA0NzQuMzE3IDIwNS4yMDNaIiBmaWxsPSIjNTA1OUM5Ii8+CjxwYXRoIGQ9Ik0zMTAuNDE1IDIwNS4yMDJDMzUyLjQ0MiAyMDUuMjAyIDM4Ni41MTIgMTcxLjE5NSAzODYuNTEyIDEyOS4yNDdDMzg2LjUxMiA4Ny4yOTgxIDM1Mi40NDIgNTMuMjkxOSAzMTAuNDE1IDUzLjI5MTlDMjY4LjM4NyA1My4yOTE5IDIzNC4zMTcgODcuMjk4MSAyMzQuMzE3IDEyOS4yNDdDMjM0LjMxNyAxNzEuMTk1IDI2OC4zODcgMjA1LjIwMiAzMTAuNDE1IDIwNS4yMDJaIiBmaWxsPSIjN0I4M0VCIi8+CjxwYXRoIGQ9Ik00MTEuODgyIDIyOC41NzNIMTk3LjI0QzE4NS4xMDIgMjI4Ljg3MiAxNzUuNDk5IDIzOC45MjcgMTc1Ljc4MSAyNTEuMDQ0VjM4NS44ODFDMTc0LjA4NiA0NTguNTkxIDIzMS43MTcgNTE4LjkyOCAzMDQuNTYxIDUyMC43MDdDMzc3LjQwNSA1MTguOTI4IDQzNS4wMzYgNDU4LjU5MSA0MzMuMzQyIDM4NS44ODFWMjUxLjA0NEM0MzMuNjIzIDIzOC45MjcgNDI0LjAyIDIyOC44NzIgNDExLjg4MiAyMjguNTczWiIgZmlsbD0iIzdCODNFQiIvPgo8cGF0aCBvcGFjaXR5PSIwLjEiIGQ9Ik0zMTYuMjY4IDIyOC41NzNWNDE3LjUyNkMzMTYuMjEgNDI2LjE5MSAzMTAuOTUgNDMzLjk3NSAzMDIuOTIyIDQzNy4yNzRDMzAwLjM2NiA0MzguMzUyIDI5Ny42MTkgNDM4LjkwOSAyOTQuODQ0IDQzOC45MUgxODYuMDgzQzE4NC41NjEgNDM1LjA1NCAxODMuMTU2IDQzMS4xOTcgMTgxLjk4NSA0MjcuMjI1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMTYuMjY4WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMzA0LjU2MSAyMjguNTczVjQyOS4yMTFDMzA0LjU2MSA0MzEuOTgxIDMwNC4wMDMgNDM0LjcyMiAzMDIuOTIyIDQzNy4yNzRDMjk5LjYxNyA0NDUuMjg3IDI5MS44MTggNDUwLjUzNyAyODMuMTM3IDQ1MC41OTVIMTkxLjU4NUMxODkuNTk1IDQ0Ni43MzkgMTg3LjcyMiA0NDIuODgzIDE4Ni4wODMgNDM4LjkxQzE4NC40NDQgNDM0LjkzNyAxODMuMTU2IDQzMS4xOTcgMTgxLjk4NSA0MjcuMjI1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMDQuNTYxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMzA0LjU2MSAyMjguNTczVjQwNS44NEMzMDQuNDcxIDQxNy42MTMgMjk0LjkzMSA0MjcuMTM1IDI4My4xMzcgNDI3LjIyNUgxODEuOTg1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMDQuNTYxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMjkyLjg1MyAyMjguNTczVjQwNS44NEMyOTIuNzY0IDQxNy42MTMgMjgzLjIyNCA0MjcuMTM1IDI3MS40MjkgNDI3LjIyNUgxODEuOTg1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gyOTIuODUzWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4xIiBkPSJNMzE2LjI2OSAxNjguMTZWMjA0Ljk2OUMzMTQuMjc4IDIwNS4wODUgMzEyLjQwNSAyMDUuMjAyIDMxMC40MTUgMjA1LjIwMkMzMDguNDI0IDIwNS4yMDIgMzA2LjU1MiAyMDUuMDg1IDMwNC41NjEgMjA0Ljk2OUMzMDAuNjEgMjA0LjcwNiAyOTYuNjkgMjA0LjA4MSAyOTIuODU0IDIwMy4wOThDMjY5LjE0NyAxOTcuNDk1IDI0OS41NjEgMTgwLjkgMjQwLjE3MSAxNTguNDZDMjM4LjU1NSAxNTQuNjkyIDIzNy4zMDIgMTUwLjc4IDIzNi40MjQgMTQ2Ljc3NUgyOTQuODQ0QzMwNi42NTggMTQ2LjgyIDMxNi4yMjQgMTU2LjM2OCAzMTYuMjY5IDE2OC4xNloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIG9wYWNpdHk9IjAuMiIgZD0iTTMwNC41NjEgMTc5Ljg0NlYyMDQuOTY5QzMwMC42MSAyMDQuNzA3IDI5Ni42OSAyMDQuMDgyIDI5Mi44NTQgMjAzLjA5OUMyNjkuMTQ3IDE5Ny40OTUgMjQ5LjU2IDE4MC45MDEgMjQwLjE3MSAxNTguNDYxSDI4My4xMzdDMjk0Ljk1MSAxNTguNTA2IDMwNC41MTYgMTY4LjA1NCAzMDQuNTYxIDE3OS44NDZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBvcGFjaXR5PSIwLjIiIGQ9Ik0zMDQuNTYxIDE3OS44NDZWMjA0Ljk2OUMzMDAuNjEgMjA0LjcwNyAyOTYuNjkgMjA0LjA4MiAyOTIuODU0IDIwMy4wOTlDMjY5LjE0NyAxOTcuNDk1IDI0OS41NiAxODAuOTAxIDI0MC4xNzEgMTU4LjQ2MUgyODMuMTM3QzI5NC45NTEgMTU4LjUwNiAzMDQuNTE2IDE2OC4wNTQgMzA0LjU2MSAxNzkuODQ2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMjkyLjg1NCAxNzkuODQ1VjIwMy4wOThDMjY5LjE0NyAxOTcuNDk1IDI0OS41NiAxODAuOSAyNDAuMTcxIDE1OC40NkgyNzEuNDNDMjgzLjI0NCAxNTguNTA1IDI5Mi44MDkgMTY4LjA1MyAyOTIuODU0IDE3OS44NDVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTYuNzUxOCAxNTguNDZIMjcxLjM5NEMyODMuMjQ1IDE1OC40NiAyOTIuODUzIDE2OC4wNSAyOTIuODUzIDE3OS44OFYzOTQuMTE5QzI5Mi44NTMgNDA1Ljk0OSAyODMuMjQ1IDQxNS41MzkgMjcxLjM5NCA0MTUuNTM5SDU2Ljc1MThDNDQuOSA0MTUuNTM5IDM1LjI5MjQgNDA1Ljk0OSAzNS4yOTI0IDM5NC4xMTlWMTc5Ljg4QzM1LjI5MjQgMTY4LjA1IDQ0LjkwMDMgMTU4LjQ2IDU2Ljc1MTggMTU4LjQ2WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPgo8cGF0aCBkPSJNMjIwLjU1IDI0MC4wMDFIMTc3LjY0M1YzNTYuNjIySDE1MC4zMDZWMjQwLjAwMUgxMDcuNTk4VjIxNy4zNzhIMjIwLjU1VjI0MC4wMDFaIiBmaWxsPSJ3aGl0ZSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iODAuMDM1OSIgeTE9IjE0MS43MjQiIHgyPSIyNDcuNjM3IiB5Mj0iNDMyLjU0NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNUE2MkMzIi8+CjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjNEQ1NUJEIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzM5NDBBQiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.1.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/releases/tag/v2.1.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOYGpcACgkQ0bVLR6XO/sSVVg//V7Ix3Nmr+nfrg6gbK+WvnEGUagVeumPMY7n6AJtdOE+zMSjCkXn+JLODDmr1WB7de6f4YZX1U7ogrMsAEnXs/zEwz7DSvL3fU4ckxNC6DnzqLubOPoa4l/iAPwd3AlK1/SWKVpSBzSLvbiZJyeJivmwOVmP6mTvB0hqc+CQ8eO6RfXdjc1j0qF7IsXGL4Bhc2MB8ydK0TwnRE4gmS720PDs1aqsDClnGeXjXDoxpI2lLitpSHWrKoAlKswoAqQHGcw/UUI28E/RL1jGQ5ctRFCN3vDm0cwfOzwDr1FTfJ1JQ2eRBf0kyBGVXWCPL4613mpjcBkNnRdrdpfxySqQVti9vcbbkOIFDP0aWaOOFX1XS5DCEl+VTXz60Vc+R84l0B7u2EDexb2+l4NCuwLZv4vvzY02IGTooY4QTqX6teqHCsWLqmllqkpzIAnxvbMxPXFzjK+xO/Rfpm85iffpjTrA1W8hO3t1zv590iz4nj5Q0TboYbIZRV4/IKNVPEIjsPl6LGdvJDad755QpPv9S1CCSwG6TXVTxUj7JGdjaBQ3CHb+gyzSLnV2c7jOWVq5nKZkQ5xUCbI6YJj4AHpVdQaLtjs6eougebvuMwiGsISUv/RUSr7My9DwdS/cueGxX3iD2IZ1ZjbhM+eM4PDMQvUAKfmjW8eP/uEedKYBJGX4=",
+    "repo_name": "mattermost-plugin-msteams-meetings",
+    "manifest": {
+      "id": "com.mattermost.msteamsmeetings",
+      "name": "MS Teams Meetings",
+      "description": "MS Teams Meetings audio and video conferencing plugin for Mattermost 5.2+.",
+      "homepage_url": "https://mattermost.gitbook.io/microsoft-teams-pluginmsteams-meetings-plugin",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/releases/tag/v2.1.0",
+      "icon_path": "assets/profile.svg",
+      "version": "2.1.0",
+      "min_server_version": "5.26.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Please refer to installation instructions [**here**](https://app.gitbook.com/@mattermost/s/microsoft-teams-pluginmsteams-meetings-plugin/setup/installation-and-configuration) for creating a new Application in the Azure Portal.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "OAuth2Authority",
+            "display_name": "Azure - Directory (tenant) ID:",
+            "type": "text",
+            "help_text": "Copy the **Directory (tenant) ID** value from the App Overview Page in the Azure Portal.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "OAuth2ClientId",
+            "display_name": "Azure - Application (client) ID:",
+            "type": "text",
+            "help_text": "Copy the **Application (client) ID** value from the App Overview Page in the Azure Portal.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "OAuth2ClientSecret",
+            "display_name": "Azure - Application (client) Secret:",
+            "type": "text",
+            "help_text": "Copy the **Client Secret Value** (not the ID) that was created on the App's **Certificates and Secrets** tab.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens. Will be auto-generated if left-blank the first time you configure the plugin. Re-generating the key will clear all previously stored access tokens and all users will be required to re-connect to MS Teams.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.1.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOYGpUACgkQ0bVLR6XO/sToCRAAmp8tmZyN0SN500VcyQAl1OIZUFLHOcgpzs9QZEWCjpC8JRq7GEA8jVkFZwBfzQXq4RYyOrDlorJFINVLV0vzE7hpNvuwwmwpUgdSDFG6lxMuFQQFn6a/a+jxdNb7IGTly2edYocYTmOPC046EtZedxKlMQbpnwRllZc68KpThgunmNenmZm8mzzRZ9y0X1+YNH5tStuh04naWCOhaNZOahGSU39WHqJmd5SnFD63nX7jN9teGRwfQ9ZTl8OoORnsj7YdGI4LMLCP8N17nz0rsltSUzXa+x0Zdnkjipz4ZfIswD9QNDOBM8Jwl8C4tNVUUeYlZc+uF3Zh3Eb1MPEIxeStNa5BJn5OgBcuRy7PAbwOPcRyKYkZxjl4JCAcDXo4IcktvqDvGK9cW57xL7Lwq+w30xshDRzPLlhuvc19ZZfCo7/ZDArPk3MimNHtTZRbxRb0sdtrgKy3B/f4RRjItF35t3ymXL0SA6cBrA7KmttADaVQkSzknZ2rLtPX1M8QyFEEf3PM4qfX6DxpcICQlooBMOsWcw2JQflaw86sj2xVrvkDGoiOaZ04ITJKRkZzz65+T5e2DWQ5WzU2hEJP6k0kF0qXwO3bUBKO8Lh8tY4B7lzyMqf7vQC7eWmmgN4URpTYB1yYMsoJN2WRBfp6XNhARRuWSA8l57MKANhPQn8="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.1.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOYGpIACgkQ0bVLR6XO/sRcWQ//alhyKjC7VRGfGjnwQ7gXQbsP4kLtdXJ4m8u4hiZfzKIj66GZqOTwWflrBevySYG823ZzO/6BGTLRhEKOPKFIsZqIxERVhUvQX+sdyttOhwA23GaCpaNA7fmQ0kEnlPOkPiE+tYMMfk/A1fjPyCfLUswy/TlR/yC4a5nsWjjDD+Ja/Ha5paYnaVwDVaDtqIzim7gS/xMt7AzVRcg7PJZ4FkGQWCpjhOV817T3FZFnFwpEWgy7eF3jnxx2ZZcBWznM7kd+6cAF2VUNYLW6mW5s9+EZfNWlpdwD/uvFyU1jn9Y0RXTnfyIe0zVNi2GteHzqF8SPpzpVNFAi6++tUvYQfVW/HWftHVTmNQvGMEv+cDz0YjIgDsCJtTb5zOEOQIpOxqLFZYbyfcOVYNQ/5mDNWmJQ0d2v0s1fBBV0GEwlrMMNE/QeyljP7pYclZuCS+skRSR0V+ELgmJcfxEIAjpxvi39PZToSS+1asBfjaNJvDebGS+PF6lep+WkLbzDBha+r1NC2YUCrLPj+/GBTah6+sZL5Q6eyRphyqn/BvWC5JlhFmGk1WEd7C28VOHV70d5SPjkLiFe/ytSx3WLaz2WIy/xrcCjXr7k5Ks/Jf6Thm3c4ZbwbQIXBeJo9FZLlhkCCAVeExpLXRpPJhDTisRS4TlrlyOgmNRdJztnfnTrRRQ="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.1.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOYGpQACgkQ0bVLR6XO/sQSrg/+KZsHmPa0bisCwb6k+BQiLW2MOpyepsJHYBFQxbPLGb6YsUtrYHdkw/O8LJxoVqkLypKpud96oduIxq1fhVjJJ3MIw12l0D0Z+PPayL+v8aIFE0POJbxUToPRkkHdrmLLDI3yCMrJCzx6Qc1aEt+PTwPGXkLFylvhFgh5KdPbxEyTNSEFmk/gJm0iEpTs+/18suajuZlD0C8L8SIFjoeMEIRvttSAJVqTyKPi0aPFUgpYuVKS0MfRY6CTuaq92qJDn4sczlaIW/W1C23acdzWMjfQlZYud7orfZFDBrh+2Zu2wmz3RQ9PnasjUY8DZsI/et8HXeHU91a2ePZZyxwJ3zyozGvS72e3TkuYPtZDawzBLD/wpn51unDCqrRzi5elqOvULgK4TVU4/eiwpd4GPRLoO5Akp0nQlza03BC9tMd4xBxK9XrDKHQ6aG3U/2LvlP6ajPZzoUOdKFC3G1Cl72cY2GrwUcxFL4txEkDWH2+l9F8kBOSVw1jOyQ+E7umDVcrBEpPc+VZTEXRB8MIQB+YA0wu383k2T6jp4BaNP3qT/0ZLVHCaXtNBqkRujZRTO4qH+MCXDBauI0DtRgrv0vbuZQYC/+nNL2tOr0sl3wSz3TlXzLppGevymYEkMgWEPWEGoZF/NwRvi0SSAaau1sJ12DRmw8CFpCC1NhHKMuE="
+      }
+    },
+    "updated_at": "2022-12-13T11:12:23.371264937Z"
+  },
+  {
+    "homepage_url": "https://mattermost.gitbook.io/microsoft-teams-pluginmsteams-meetings-plugin",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTc0IiBoZWlnaHQ9IjU3NCIgdmlld0JveD0iMCAwIDU3NCA1NzQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zODYuNDMgMjI4LjU3M0g1MTYuNDYzQzUyOC43NDkgMjI4LjU3MyA1MzguNzA4IDIzOC41MTMgNTM4LjcwOCAyNTAuNzc1VjM2OC45OTZDNTM4LjcwOCA0MTQuMDYyIDUwMi4xMDYgNDUwLjU5NSA0NTYuOTU1IDQ1MC41OTVINDU2LjU2OUM0MTEuNDE5IDQ1MC42MDEgMzc0LjgxMSA0MTQuMDczIDM3NC44MDUgMzY5LjAwOFYyNDAuMTc2QzM3NC44MDUgMjMzLjc2OCAzODAuMDEgMjI4LjU3MyAzODYuNDMgMjI4LjU3M1oiIGZpbGw9IiM1MDU5QzkiLz4KPHBhdGggZD0iTTQ3NC4zMTcgMjA1LjIwM0M1MDMuNDEzIDIwNS4yMDMgNTI3IDE4MS42NiA1MjcgMTUyLjYxOEM1MjcgMTIzLjU3NyA1MDMuNDEzIDEwMC4wMzQgNDc0LjMxNyAxMDAuMDM0QzQ0NS4yMjEgMTAwLjAzNCA0MjEuNjM0IDEyMy41NzcgNDIxLjYzNCAxNTIuNjE4QzQyMS42MzQgMTgxLjY2IDQ0NS4yMjEgMjA1LjIwMyA0NzQuMzE3IDIwNS4yMDNaIiBmaWxsPSIjNTA1OUM5Ii8+CjxwYXRoIGQ9Ik0zMTAuNDE1IDIwNS4yMDJDMzUyLjQ0MiAyMDUuMjAyIDM4Ni41MTIgMTcxLjE5NSAzODYuNTEyIDEyOS4yNDdDMzg2LjUxMiA4Ny4yOTgxIDM1Mi40NDIgNTMuMjkxOSAzMTAuNDE1IDUzLjI5MTlDMjY4LjM4NyA1My4yOTE5IDIzNC4zMTcgODcuMjk4MSAyMzQuMzE3IDEyOS4yNDdDMjM0LjMxNyAxNzEuMTk1IDI2OC4zODcgMjA1LjIwMiAzMTAuNDE1IDIwNS4yMDJaIiBmaWxsPSIjN0I4M0VCIi8+CjxwYXRoIGQ9Ik00MTEuODgyIDIyOC41NzNIMTk3LjI0QzE4NS4xMDIgMjI4Ljg3MiAxNzUuNDk5IDIzOC45MjcgMTc1Ljc4MSAyNTEuMDQ0VjM4NS44ODFDMTc0LjA4NiA0NTguNTkxIDIzMS43MTcgNTE4LjkyOCAzMDQuNTYxIDUyMC43MDdDMzc3LjQwNSA1MTguOTI4IDQzNS4wMzYgNDU4LjU5MSA0MzMuMzQyIDM4NS44ODFWMjUxLjA0NEM0MzMuNjIzIDIzOC45MjcgNDI0LjAyIDIyOC44NzIgNDExLjg4MiAyMjguNTczWiIgZmlsbD0iIzdCODNFQiIvPgo8cGF0aCBvcGFjaXR5PSIwLjEiIGQ9Ik0zMTYuMjY4IDIyOC41NzNWNDE3LjUyNkMzMTYuMjEgNDI2LjE5MSAzMTAuOTUgNDMzLjk3NSAzMDIuOTIyIDQzNy4yNzRDMzAwLjM2NiA0MzguMzUyIDI5Ny42MTkgNDM4LjkwOSAyOTQuODQ0IDQzOC45MUgxODYuMDgzQzE4NC41NjEgNDM1LjA1NCAxODMuMTU2IDQzMS4xOTcgMTgxLjk4NSA0MjcuMjI1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMTYuMjY4WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMzA0LjU2MSAyMjguNTczVjQyOS4yMTFDMzA0LjU2MSA0MzEuOTgxIDMwNC4wMDMgNDM0LjcyMiAzMDIuOTIyIDQzNy4yNzRDMjk5LjYxNyA0NDUuMjg3IDI5MS44MTggNDUwLjUzNyAyODMuMTM3IDQ1MC41OTVIMTkxLjU4NUMxODkuNTk1IDQ0Ni43MzkgMTg3LjcyMiA0NDIuODgzIDE4Ni4wODMgNDM4LjkxQzE4NC40NDQgNDM0LjkzNyAxODMuMTU2IDQzMS4xOTcgMTgxLjk4NSA0MjcuMjI1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMDQuNTYxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMzA0LjU2MSAyMjguNTczVjQwNS44NEMzMDQuNDcxIDQxNy42MTMgMjk0LjkzMSA0MjcuMTM1IDI4My4xMzcgNDI3LjIyNUgxODEuOTg1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gzMDQuNTYxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMjkyLjg1MyAyMjguNTczVjQwNS44NEMyOTIuNzY0IDQxNy42MTMgMjgzLjIyNCA0MjcuMTM1IDI3MS40MjkgNDI3LjIyNUgxODEuOTg1QzE3Ny44ODcgNDEzLjgxNiAxNzUuNzk2IDM5OS44NzcgMTc1Ljc4IDM4NS44NThWMjUxLjAwOUMxNzUuNDk5IDIzOC45MTIgMTg1LjA4NiAyMjguODcyIDE5Ny4yMDUgMjI4LjU3M0gyOTIuODUzWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4xIiBkPSJNMzE2LjI2OSAxNjguMTZWMjA0Ljk2OUMzMTQuMjc4IDIwNS4wODUgMzEyLjQwNSAyMDUuMjAyIDMxMC40MTUgMjA1LjIwMkMzMDguNDI0IDIwNS4yMDIgMzA2LjU1MiAyMDUuMDg1IDMwNC41NjEgMjA0Ljk2OUMzMDAuNjEgMjA0LjcwNiAyOTYuNjkgMjA0LjA4MSAyOTIuODU0IDIwMy4wOThDMjY5LjE0NyAxOTcuNDk1IDI0OS41NjEgMTgwLjkgMjQwLjE3MSAxNTguNDZDMjM4LjU1NSAxNTQuNjkyIDIzNy4zMDIgMTUwLjc4IDIzNi40MjQgMTQ2Ljc3NUgyOTQuODQ0QzMwNi42NTggMTQ2LjgyIDMxNi4yMjQgMTU2LjM2OCAzMTYuMjY5IDE2OC4xNloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIG9wYWNpdHk9IjAuMiIgZD0iTTMwNC41NjEgMTc5Ljg0NlYyMDQuOTY5QzMwMC42MSAyMDQuNzA3IDI5Ni42OSAyMDQuMDgyIDI5Mi44NTQgMjAzLjA5OUMyNjkuMTQ3IDE5Ny40OTUgMjQ5LjU2IDE4MC45MDEgMjQwLjE3MSAxNTguNDYxSDI4My4xMzdDMjk0Ljk1MSAxNTguNTA2IDMwNC41MTYgMTY4LjA1NCAzMDQuNTYxIDE3OS44NDZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBvcGFjaXR5PSIwLjIiIGQ9Ik0zMDQuNTYxIDE3OS44NDZWMjA0Ljk2OUMzMDAuNjEgMjA0LjcwNyAyOTYuNjkgMjA0LjA4MiAyOTIuODU0IDIwMy4wOTlDMjY5LjE0NyAxOTcuNDk1IDI0OS41NiAxODAuOTAxIDI0MC4xNzEgMTU4LjQ2MUgyODMuMTM3QzI5NC45NTEgMTU4LjUwNiAzMDQuNTE2IDE2OC4wNTQgMzA0LjU2MSAxNzkuODQ2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNMjkyLjg1NCAxNzkuODQ1VjIwMy4wOThDMjY5LjE0NyAxOTcuNDk1IDI0OS41NiAxODAuOSAyNDAuMTcxIDE1OC40NkgyNzEuNDNDMjgzLjI0NCAxNTguNTA1IDI5Mi44MDkgMTY4LjA1MyAyOTIuODU0IDE3OS44NDVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTYuNzUxOCAxNTguNDZIMjcxLjM5NEMyODMuMjQ1IDE1OC40NiAyOTIuODUzIDE2OC4wNSAyOTIuODUzIDE3OS44OFYzOTQuMTE5QzI5Mi44NTMgNDA1Ljk0OSAyODMuMjQ1IDQxNS41MzkgMjcxLjM5NCA0MTUuNTM5SDU2Ljc1MThDNDQuOSA0MTUuNTM5IDM1LjI5MjQgNDA1Ljk0OSAzNS4yOTI0IDM5NC4xMTlWMTc5Ljg4QzM1LjI5MjQgMTY4LjA1IDQ0LjkwMDMgMTU4LjQ2IDU2Ljc1MTggMTU4LjQ2WiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPgo8cGF0aCBkPSJNMjIwLjU1IDI0MC4wMDFIMTc3LjY0M1YzNTYuNjIySDE1MC4zMDZWMjQwLjAwMUgxMDcuNTk4VjIxNy4zNzhIMjIwLjU1VjI0MC4wMDFaIiBmaWxsPSJ3aGl0ZSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iODAuMDM1OSIgeTE9IjE0MS43MjQiIHgyPSIyNDcuNjM3IiB5Mj0iNDMyLjU0NyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNUE2MkMzIi8+CjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjNEQ1NUJEIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzM5NDBBQiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-meetings-v2.0.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/releases/tag/v2.0.0",
     "hosting": "",
@@ -12612,6 +12699,122 @@
       "windows-amd64": {}
     },
     "updated_at": "2019-06-11T14:04:45Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-hackerone",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0iIzAwMDIwMCIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMjIuMzQ3Ljc5M0MyMS40NjYuMjY0IDIwLjQ5NiAwIDE5LjI2MiAwYy0xLjMyMiAwLTIuMzguMjY0LTMuMTc0Ljc5M3MtMS4yMzQgMS4yMzQtMS4yMzQgMi4xMTZ2NTguMDk0YzAgLjcwNS40NCAxLjQgMS4yMzQgMi4wMjhhNS4xNCA1LjE0IDAgMCAwIDMuMDg1Ljk3IDUuMzQgNS4zNCAwIDAgMCAzLjA4NS0uOTdjLjg4LS42MTcgMS4zMjItMS4zMjIgMS4zMjItMi4wMjhWMi45Yy4wODgtLjg4Mi0uMzUzLTEuNTg3LTEuMjM0LTIuMTE2bTcuMzE4IDMwLjVjLS41My41My0uNzkzIDEuMjM0LS42MTcgMi4yOTIuMDg4IDEuMDU4LjUzIDIuMDI4IDEuNCAyLjkuNzkzLjg4MiAxLjc2MyAxLjUgMi44MiAxLjc2M3MxLjg1LjA4OCAyLjM4LS4zNTNsNC42NzItMi45djI2LjAwNmMwIC43MDUuNDQgMS40IDEuMjM0IDIuMDI4czEuODUuOTcgMy4wODUuOTcgMi4yOTItLjM1MyAzLjE3NC0uOTcgMS4zMjItMS4zMjIgMS4zMjItMi4wMjhWMjUuOTE3YzAtLjg4Mi0uNDQtMS41LTEuMzIyLTIuMDI4cy0xLjk0LS43OTMtMy4yNjItLjc5My0yLjI5Mi4yNjQtMy4wODUuNzkzbC0xMS44MTMgNy40MDUiLz48L3N2Zz4=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-hackerone-v1.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-hackerone/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "community",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmN9AroACgkQ0bVLR6XO/sS20w/+PWXWDMbpbjsZnKO3S8Kj1VF6zArkfZ1121/5llMqwofjoox8s0wMA5jgzM8k4wP8Ox2ZvOkNZ49VvZ0aOD8Igo6yRHSJ9o3P0FUiX3XOLDvj4uSZr032NNE6eLcOo74IuntDc4gqpX3P1Tn2+7aroj/Je3/k7Vf9r2tP7AwkJnzlWmlPlG2b2hVabqLw57ZRU8mc9gM6xqrwP9zCzeDxxr1tr86pz1JnRnYXhR9vY65r+F37A2NGFO9xK3hWMfEHCX+ZPOJXdcWMaV8D3ppdex9UlHwMyE4vcy7QRTg7YuHxU9sbyfDodN+UuWaB/XU/hz4/RS9HWojwC95aJDJaRmAsibjd+JKyhMp2m9FTGF3Aw3jHe9F0KEAw4eGzISnW3c+DrjU0n3vFWBxzYVEcFGegBvV+mQlu/bnX3bnBSG6C8/OslEAgG2LDQVmihO1/EwUPOznPWg80ZG1qjI22bVn/0pxY+eBwfFUfTFGqHIoJy9OnTHw76VXmRW+B2uVGKQ8K62fJtGtuAlwTqc2wnZVo1UNz9aroinQKz9+EHDhTRZSXFzi1vzrEq7cNPZQ0wqs8KFD17EOvlMFQAUmWUJWYOrYgeDFAnIDpmPjHEQcWg/o+mTQLMDjOKL400WfkKrU7gu2e5eNU8E3y/Y70ElnUqX8WfZx+05vgtfGmqLU=",
+    "repo_name": "mattermost-plugin-hackerone",
+    "manifest": {
+      "id": "mattermost-plugin-hackerone",
+      "name": "Hackerone Plugin",
+      "description": "Hackerone plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-hackerone",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-hackerone/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-hackerone/releases/tag/v1.0.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.0.0",
+      "min_server_version": "5.37.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "The Hackerone plugin for Mattermost allows users to subscribe to Hackerone notifications, stay up-to-date with all the reports submitted on the Hackerone platform, and other common Hackerone actions - directly from Mattermost. \n \n Instructions for setup are [available here](https://github.com/srkgupta/mattermost-plugin-hackerone#configuration).",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/srkgupta/mattermost-plugin-hackerone).",
+        "settings": [
+          {
+            "key": "HackeroneProgramHandle",
+            "display_name": "Hackerone Program Handle:",
+            "type": "text",
+            "help_text": "Handle of your Hackerone program",
+            "placeholder": "Type the handle of your Hackerone program",
+            "default": null
+          },
+          {
+            "key": "HackeroneApiIdentifier",
+            "display_name": "Hackerone API Identifier:",
+            "type": "text",
+            "help_text": "Type the Hackerone API Identifier here. [Instructions available here](https://docs.hackerone.com/programs/api-tokens.html)",
+            "placeholder": "Paste the Hackerone API Identifier here",
+            "default": null
+          },
+          {
+            "key": "HackeroneApiKey",
+            "display_name": "Hackerone API Token:",
+            "type": "text",
+            "help_text": "Type the Hackerone API Token here. [Instructions available here](https://docs.hackerone.com/programs/api-tokens.html)",
+            "placeholder": "Paste the Hackerone API Token here",
+            "default": null
+          },
+          {
+            "key": "HackeronePollIntervalSeconds",
+            "display_name": "Poll Interval (in seconds):",
+            "type": "number",
+            "help_text": "Interval at which new data will be polled via the Hackerone API. Default: 30 seconds. Minimum: 10 seconds. Max: 3600 seconds.",
+            "placeholder": "Seconds",
+            "default": 30
+          },
+          {
+            "key": "HackeroneSLAPollIntervalSeconds",
+            "display_name": "SLA Poll Interval (in seconds):",
+            "type": "number",
+            "help_text": "Interval at which the plugin will check for missed SLA deadlines. Default: 86400 seconds. Minimum: 3600 seconds.",
+            "placeholder": "Seconds",
+            "default": 86400
+          },
+          {
+            "key": "HackeroneSLANew",
+            "display_name": "SLA for New Reports (in days):",
+            "type": "number",
+            "help_text": "Define the SLA for the expected timeline (in days) for status to be changed for New reports. For example, if the report is not changed from New state to any other state for more than 3 days, it will be shown under missed deadline reports.",
+            "placeholder": "Days",
+            "default": 3
+          },
+          {
+            "key": "HackeroneSLABounty",
+            "display_name": "SLA for Bounty (in days):",
+            "type": "number",
+            "help_text": "Define the SLA for the expected timeline (in days) for bounty to be rewarded for Triaged reports. For example, if a triaged report was not rewarded any bounty for more than 7 days, it will be shown under missed deadline reports.",
+            "placeholder": "Days",
+            "default": 7
+          },
+          {
+            "key": "HackeroneSLATriaged",
+            "display_name": "SLA for Triaged Reports (in days):",
+            "type": "number",
+            "help_text": "Define the SLA for the expected timeline (in days) for status to be changed for Triaged reports. For example, if the report is not changed from Triaged to Resolved for more than 15 days, it will be shown under missed deadline reports.",
+            "placeholder": "Days",
+            "default": 15
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-hackerone-v1.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmN9ArYACgkQ0bVLR6XO/sQqhQ/+M5lWEpcVPYBtR05BGGqOhZPyr8x+jymruvPUXZk83boWRjyQPtEUapNdov93yWdyK7y4vVE5a8ksdo5L30Y4ipBp791Z4VHyf5Xww/KDfWXkGB6NZpPP2ETcZzNaJSkjDDKCz0UjXpBj0PmQ0J+GPvuIyYMMgK091XZhGexrAhE/T+GZXCi2hkIU11X/C7Wparnd8+LAQUtGpdjOsWrATheC0XxOqRSJ4Syru70xJmcxZISP42PQZFR3LrSxhX8q5nLQQqMDIpYjQOWyqlv1sIcNpnRRpG5mCXf8NrcXBrvSwC8cO5PYiDL+7FX0KBB5pAWu4klcUjNXiwDwrpzuVVTJcF/PL31qhITSmk18i6XjIYMecdktoHqN114oIEWrGge+rrhlZoYDaRKmh0KobuBNk5YC6pL3VOo0FTAa1aIi6vP6E/GaDDxtv3xa/XbkjF50o0fygkAylNY40/L546gdK3M2iznj6179MY5ZffRRsIj+xJ5txQHzJvzFibObgt0t4kanb4qgFSYwOukaSaaZnXL2RCKjKUzME/ogFYfxVLk628p6tQd4Wgk573Nwofh3en7ldn6yP+tq1Nv/5gVU3p09EHWs6l7QweRgrI+PdE5cZav/r+NYKhGiouKbQGb6nBpn9YKmSZVYmKZ55BlLtOzLjbqYJjPbnmxhQh0="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-hackerone-v1.0.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmN9ArQACgkQ0bVLR6XO/sShOxAAiLuWeOzsOKzxUSW2zEsGpl9N7gIVUyRXc+AzwELcMPzPHN5309ACAITPPJ3h1eKgRri3LsvTnZePa1uW6w/eiiNlFy31kkx4kKgvJ4+Ez34UZafa9pajOSaJ7f7HsA8tgAZbLBf1a7+9ppTZxhC58bn+kky2NdC/v6iKUpJNMyjGdZJfNAhwAgonU6jLKQSgojfdSqJ6unDJ2mtOY5qfZ70nN3IPutcH8LN7/Sayl3c55EPoqqWGsvdrvdNnNjjA1s5BbxPufJoGj5p3kKZfN4Oun67q1EeZzwbUouxsd7GAzIroBekHbi8Pky5x3j3otDUXgPj5cqQlRVpXB4fnp8JJuhAHBUB+qFId0cXJCAQR+I1dEOsf42V4BOZoBCMFjx8n81AspSHYIw9oDFVSMCKglfkIV2UBaYbwUcMUIdBNNZnXwrhHKRYrJrwlCVgb1RfE4FbIjlDsdlT45g2zaKoRQ9aH1WiFum80uoGliQRTiHXDzCdqkuWL59Onp3cOVrxtLjX78kRBToDloZKrq2bMg1SpybMizj6M0jX6e8RX5vjyArOt7Dt86f6j9ijL0IzysV7sluG9/IpioI/HBW3hr4zJBztD7/LeFLK8+vuN8ZeeQ7ym2ajIp0apZ/ddXMdeB/SM2rFsCqZUBkjhZ6rf0Sj4GuNf+hqYEtN70Lc="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-hackerone-v1.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmN9ArUACgkQ0bVLR6XO/sRJqQ/+NI2jDFNYcFzgF0TWDTZYrAUM/1DSgcxYyxzHW832pXkhCN+/TmfsMuMwPYgpvKialy9knInyDzqn7ZUPRMLz8geAtYIdPnXKaCiWYXGRUxSoBBaN5ecm9UPatxOvUfKJyUhWcFksU/8HWX0Xh2P/bDJZgB8NLA0Mvi/EZcNvtTzDtuWdlpbdn+53bHsmTOsHTvLDmOGs1Oug2S+n729DdS3QQbE0P8MaPzcSizYvF8cmw6pC0/0Jxy7tBe/sYmI6NtE4PJSvaHB29ysG7H0soXb/CYyUoT3pHxMiyKmoEX7SIdV50jguem0eddZOXh/XWiUG6fCSmJOqL2SRASw+HuFxSS7tKmPmIAd0/tlN64ll5rsRFjQ/XH+DyHSgEm9YCRnz06NKlvUyISA1xkVO2RCaaJC/D5QmHFGv8PggcyY+ElH4axfR7gx0HcT3SHybC/I+AoeimrNV9TxK4wmlRvVsPA9UgSpz0EA5iX7ENGsqYFmdW/bA1IXxbHvofCRsvVwvsJ1zH9apGN+dn7uqIc3ADnkArW0KJcHQLBxAS+9r/lVKTCt77G+qXfc0PuyLN2LuhnKoLi/WtTQBi1IwbeYL+Uc1IOMiZZ2FUUSMCSniRmfuACIrTUWZgcHrTxCJ2/vYHl5I0l33cfezcv4fWHqOxmJDoQkZrqWwqj828b0="
+      }
+    },
+    "updated_at": "2022-11-22T17:12:43.947790466Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-profanity-filter",
