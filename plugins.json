@@ -3676,7 +3676,7 @@
           "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
           "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.12.0",
           "version": "0.12.0",
-          "min_server_version": "7.6.0",
+          "min_server_version": "7.7.0",
           "server": {
               "executables": {
                   "darwin-amd64": "server/dist/plugin-darwin-amd64",
