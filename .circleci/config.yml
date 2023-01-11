@@ -1,15 +1,15 @@
 version: 2.1
 
 orbs:
-  tools: gotest/tools@0.0.13
+  tools: gotest/tools@0.0.14
 
 executors:
   build:
     docker:
-      - image: circleci/golang:1.16
+      - image: cimg/go:1.18.8
   deploy:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:16
 
 references:
   workspace_root: &workspace_root
@@ -39,8 +39,6 @@ jobs:
     working_directory: *workspace_root
     steps:
       - checkout
-      - tools/install-golangci-lint:
-          version: 1.33.2
       - run: make check-style
       - run: make test
       - run: make build
