@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  tools: gotest/tools@0.0.13
+  tools: gotest/tools@0.0.14
 
 executors:
   build:
@@ -39,8 +39,6 @@ jobs:
     working_directory: *workspace_root
     steps:
       - checkout
-      - tools/install-golangci-lint:
-          version: 1.33.2
       - run: make check-style
       - run: make test
       - run: make build
