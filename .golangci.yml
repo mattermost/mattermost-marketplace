@@ -13,8 +13,6 @@ linters-settings:
     simplify: true
   goimports:
     local-prefixes: github.com/mattermost/mattermost-marketplace
-  golint:
-    min-confidence: 0
   govet:
     check-shadowing: true
     enable-all: true
@@ -27,7 +25,6 @@ linters:
   disable-all: true
   enable:
     # - bodyclose
-    - deadcode
     # - depguard
     - dogsled
     - dupl
@@ -39,24 +36,20 @@ linters:
     - gocyclo
     - gofmt
     - goimports
-    - golint
+    - gosimple      # Linter for Go source code that specializes in simplifying a code
     - gosec
     - gosimple
     - govet
     - ineffassign
-    - interfacer
     # - lll
     - misspell
     - nakedret
-    - scopelint
     - staticcheck
-    - structcheck
     - stylecheck
     - typecheck
     - unconvert
     - unparam
     - unused
-    - varcheck
     - whitespace
 
 issues:
