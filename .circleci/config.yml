@@ -6,10 +6,10 @@ orbs:
 executors:
   build:
     docker:
-      - image: circleci/golang:1.16
+      - image: circleci/golang:1.18.8
   deploy:
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:16
 
 references:
   workspace_root: &workspace_root
