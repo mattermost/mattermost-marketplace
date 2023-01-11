@@ -6,7 +6,7 @@ orbs:
 executors:
   build:
     docker:
-      - image: circleci/golang:1.18.8
+      - image: cimg/go:1.18.8
   deploy:
     docker:
       - image: circleci/node:16
