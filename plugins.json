@@ -2941,6 +2941,131 @@
   {
     "homepage_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJfeDM4XzktZGlnaXRhbC1vY2VhbiI+PGc+PHBhdGggZD0iTTk5LjI4OCw0NjUuNDA5aDY4LjM1M3YtNjguMjU3SDk5LjI4OFY0NjUuNDA5eiBNNDIuMTU3LDM0MC4wMjF2NTcuMTMyaDU3LjEzMXYtNTcuMTMySDQyLjE1N3ogICAgIE00NzQuNTMsMTgyLjYzMmMtMjEuMzMxLTY4LjgxNS03Ni40MjEtMTIzLjYyOC0xNDUuMjM3LTE0NS4yMzZDMTcxLjUzNi0xMS44NTIsMjYuMDIsMTA1LjQ3LDI2LjAyLDI1NS45MDFoODguODUgICAgYzAtOTQuNDE0LDkzLjY3MS0xNjcuNDA0LDE5My4wMDEtMTMxLjQxOWMzNi44MTcsMTMuMjYyLDY2LjMxLDQyLjc1NSw3OS41NzQsNzkuNDgxYzM2LjI2MSw5OS4yMzgtMzYuODIxLDE5Mi43MjItMTMxLjE0MiwxOTIuOTEgICAgdjAuMjc5aC0wLjI3N3Y4OC44NDdDNDA2LjgyNyw0ODUuOTk5LDUyMy44NzEsMzQwLjU3Nyw0NzQuNTMsMTgyLjYzMkw0NzQuNTMsMTgyLjYzMnogTTI1Ni4zMDMsMzk2Ljg3M3YtODguMzg4aC04OC42NjN2ODguNjY3ICAgIGg4OC4zODV2LTAuMjc5SDI1Ni4zMDN6IiBzdHlsZT0iZmlsbDojMDA4MEZGOyIvPjwvZz48L2c+PGcgaWQ9IkxheWVyXzEiLz48L3N2Zz4gCg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.1.tar.gz",
+    "release_notes_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "community",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOQtcAACgkQ0bVLR6XO/sQhKA//aPdytQBSd8Fo/JtbF4anmHLK0j3AyTUEuQA8Qws/FCZ6OmDDx4mTdyccsrxc54fg9vHw1HV1HVTrl9SZdw5xp84PXky5mT/bccqrGQQoCZxR1UYFqAUeGIA9gKE+13UBDPuuh5F52RDiDJq0lauoFq0v5/UbfYSZqQja12fVO2gGGwgBiYUwrBtmwqZswuG4XeLZ9RsoVlUrWIspuNrU3VM0pWDVpwOUqEyFYIZbT5vFMcR10IAqze3tydY9AL+FZZb1PSwcZiXFu0jt8OkYybdD7GP9d3E1K7ecC0VEtWgyvCjEzwCplreFtkLx97OQ38kMyzJv+sU01w2fPXBog3Op8LV3v226kufzxHaV9FKrEpMj8EJoOnHlsufIlQWZ9lOhYtPpa+DT8J9pVD3Iz+bbcCGtrdwVppFONRPo6tmQDIGr7HqcZuXf0cDGU+Nf9yc6yxbQECFOIGJxhllsOZ8BmTP5G/5mfpG5JXELqPOTqVYyWB/qOsyb1ByJvAasp4HF/fOstnecrfjlFaOzoek5SI9dstc5a9c7iVfOanTZR8lgYqBokkhet+irArLgIvhX/73CXg3gXW9LHjz/KtYssfpFCgmmNhGJHNkLRYAaapMgYVzLiSUUZLhIrhHHWWMG9sBdN4s1s/Rc8iHM61e1OSXqR2fGjKEEPlIfaWw=",
+    "repo_name": "mattermost-plugin-digitalocean",
+    "manifest": {
+      "id": "com.github.phillipahereza.mattermost-plugin-digitalocean",
+      "name": "DigitalOcean",
+      "description": "A DigitalOcean plugin for Mattermost.",
+      "homepage_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean",
+      "support_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean/issues",
+      "release_notes_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean/releases/tag/v1.0.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.0.1",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Mattermost plugin for DigitalOcean Teams.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "DOTeamID",
+            "display_name": "Unique DigitalOcean Team Identifier",
+            "type": "text",
+            "help_text": "",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "DOAdmins",
+            "display_name": "DO Admins",
+            "type": "text",
+            "help_text": "Users that are not system admins on Mattermost but have advanced plugin privileges",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "IMAPServer",
+            "display_name": "IMAP Server Address",
+            "type": "text",
+            "help_text": "Enable imap on your email provider. Example of Google's imap server is 'imap.gmail.com:993'. 933 is usually the default port",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "IMAPUsername",
+            "display_name": "IMAP Username",
+            "type": "text",
+            "help_text": "This is the same as your Digital Ocean alerts email. Usually the email address. Something like example@gmail.com.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "IMAPPassword",
+            "display_name": "IMAP Password",
+            "type": "text",
+            "help_text": "",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "CronConfig",
+            "display_name": "Updates schedule",
+            "type": "dropdown",
+            "help_text": "Define how often to check for Monitoring updates and alert channels. Default is 5 minutes.",
+            "placeholder": "",
+            "default": "*/5 * * * *",
+            "options": [
+              {
+                "display_name": "Demo, every minute",
+                "value": "*/1 * * * *"
+              },
+              {
+                "display_name": "Every 5 minutes",
+                "value": "*/5 * * * *"
+              },
+              {
+                "display_name": "Every 10 minutes",
+                "value": "*/10 * * * *"
+              },
+              {
+                "display_name": "Every 30 minutes",
+                "value": "*/30 * * * *"
+              },
+              {
+                "display_name": "Every 1 hour",
+                "value": "*/60 * * * *"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOQtb8ACgkQ0bVLR6XO/sSkGBAAl/RlE5rC8jZtrpSClmzd9B+Yxg7yAYLUA1ubzox8+7WLhhjcMc0Y5nwVeeLHeZVh4eKvtexMnvmZL7n1NHuPF6HHL0pa/VoaKU6OY+JIf3RAyw35S4IOq6A4RA8QJ05Lj/B8S6v9Jug+pKQJ7WmYTWq2ZbVwHGwmHcaP5TUIag+VOfTBFyFYp3N+JkEScndvymE3ebaGNzOdIWhrgPwGeKmdduH7Hvh5hQhHoOEcv+wzO3TK+BKG2+wvg1bmV7lmgdQlu8pS/i6AHiNoAMcjpX0gEV/3W71h7RL0Kzl2r99IP220OqhPX9LTJASB4nQfHGXD5vMXBe39EsAoG+Zr+GhGCl5emENZH2i1slG76Z2kjoXBAtZkA525J468I0YKjpjZTJiYQRxcumOX60y8deZeYoyr5uR5o5G1seboFxWXtaRPA87Y58GyIe72KdGoxyr8oCDM4+1YPS3owLVtRqi9T5lWIeCOqUooOmAGSx7TjVuKzKvl1q37VzkGqACzFReswZQynYUBHWirmd35jFjpQol+NHrBsrS2RkxMlWG0rd721hU+F/z4IjmXveOguZGCMfTR2sWM0OeiEih0I1KXgDAqKEAH9zJCVxntLr3KxUWTaZLNrLanygLHFBx1AoIPcUNnGrfNrKd0ORno8cxXNYxT98a9qSbOmOHey5g="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.1-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOQtbwACgkQ0bVLR6XO/sREJw//fgxIdmxcP6xjcjYBG51d9q0090iX8QT/N5om7kXpOPCkJUm7LgUs9zBNDNtgp0p6LDrON31gOSxgJ/yRXQ/ONxuk8VkqSbu33ab8GBm0ikn75mzRK0u7Y4EbXbaHBWHKvVnLemh3zn1OEIZRfdlkQLCYn++kPPUOHLm2UAuUSJav8JGRFFRFl+chW0LScUl1SdIPwzuocZZ6LCcIT2IA5vPE6Z6bWvnNwgBGvQNPj5zbUf8pWI16daP3neatDk0k35U/47ZFjqrYQMfKgG/F+QPh0w9vOgWSuWTsH5LunKF912bRhlHlqu+YbKXDeLU/vrlNvs9zFusZuHoxWXAJ5iXMS0QDe9n6vN7EZUFZzdscAjN5yeNjqZBgY9SJKQIcsnjMBsCQdhICFrrs52bZvQDgDTOKdXweRUXhzZFPxwq8u6m7kQsx2uSqzf8MyFoNKkNMD5Fx4+LsK01eedTROE6v7pjezUl1zKOhi+EnAX4x86pYnpRMQ6bpmbBZYMgbKNDK60MMPeWjcauPbmynHOjLsGNZISwyOSFPNosPEZyGh/f3by5zz18P3jMG4Rt13+SuNN2aOq0ZLWdM7LN0LvWUXoWEYZaDhCku469Lr3yQNpmyKE1N8R2fbgXak/4OFt+7qyQ68dqQbnSVMQB9R5uFQG41HdlVUwFMyH920lA="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOQtb0ACgkQ0bVLR6XO/sQAUg//Qyi5SeNX3VPNQAKq15nk7Dveqtru0UCwYQAcHNjghy0ay72+nVwdBZwrcxgDfr0wyr3GiHurHqb0/sc1Dj0T5z/K4exA+bzWadgBoCYBfYtnLO1r0iXXaNlemXm/t+sm5IJYNESMMgFRFjSH/g8i4oQjUHhtWP1lLyVKAAuUN2QwGp5JSOwpdnarI3O0Sf5Kas+ofsWob118DNrMjY1//HOilQNXVyoJ0vltSj9qx6DyMmHYhFPHpWkyht+aP0BS2+0icGoRrwnrd6cjR8EsT0DkKfLH7XvAVq98bUwDtWqalgbBgLyBl4xtJrG4j87lIpD0UD3cphJnrtVcsTNLetnZuisevWjiuvTmX13v/pIw9f1gJDgPvzFwud/LMMd7kPZ4YD7e0mr6n3WPV4SK9c2d/qLYNGCpaKJxquDzF1akEnK/UuYC8da1xtxzhMe9z5CD4EdTRsiRyUHVUH+ckoRv3x8CG1B5DGjZEmUf1kA8gO2R8CRDomy9saO/29w6qLVC9pYR169LxfK9IP5o70WxILIhaIjlamczAey3euQfii4rZOZtJd8fvoqLlm1geCDj/fE5hq6MysCXfxx7YpQa7U5MSowtJoAH1b2cFH1ZL+82YPkqwZP0+neHtB9I6gzkYkh/AJrgpd0s4jjJtl7bTSdBvMpQHQqu9/puvg0="
+      }
+    },
+    "updated_at": "2022-12-07T16:01:18.521071Z"
+  },
+  {
+    "homepage_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJfeDM4XzktZGlnaXRhbC1vY2VhbiI+PGc+PHBhdGggZD0iTTk5LjI4OCw0NjUuNDA5aDY4LjM1M3YtNjguMjU3SDk5LjI4OFY0NjUuNDA5eiBNNDIuMTU3LDM0MC4wMjF2NTcuMTMyaDU3LjEzMXYtNTcuMTMySDQyLjE1N3ogICAgIE00NzQuNTMsMTgyLjYzMmMtMjEuMzMxLTY4LjgxNS03Ni40MjEtMTIzLjYyOC0xNDUuMjM3LTE0NS4yMzZDMTcxLjUzNi0xMS44NTIsMjYuMDIsMTA1LjQ3LDI2LjAyLDI1NS45MDFoODguODUgICAgYzAtOTQuNDE0LDkzLjY3MS0xNjcuNDA0LDE5My4wMDEtMTMxLjQxOWMzNi44MTcsMTMuMjYyLDY2LjMxLDQyLjc1NSw3OS41NzQsNzkuNDgxYzM2LjI2MSw5OS4yMzgtMzYuODIxLDE5Mi43MjItMTMxLjE0MiwxOTIuOTEgICAgdjAuMjc5aC0wLjI3N3Y4OC44NDdDNDA2LjgyNyw0ODUuOTk5LDUyMy44NzEsMzQwLjU3Nyw0NzQuNTMsMTgyLjYzMkw0NzQuNTMsMTgyLjYzMnogTTI1Ni4zMDMsMzk2Ljg3M3YtODguMzg4aC04OC42NjN2ODguNjY3ICAgIGg4OC4zODV2LTAuMjc5SDI1Ni4zMDN6IiBzdHlsZT0iZmlsbDojMDA4MEZGOyIvPjwvZz48L2c+PGcgaWQ9IkxheWVyXzEiLz48L3N2Zz4gCg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.0.tar.gz",
     "release_notes_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean/releases/tag/v1.0.0",
     "hosting": "",
