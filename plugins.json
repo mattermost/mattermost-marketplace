@@ -289,6 +289,125 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM4cHgiIGhlaWdodD0iMzExcHgiIHZpZXdCb3g9IjAgMCAzMzggMzExIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+Z2l0bGFiPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImdpdGxhYiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Imc0NCIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzM3LjE3LDE3Ny44MyBMMzE4LjI2LDExOS43MSBMMjgwLjg0LDQuNDMgQzI3OS45NTY2MDIsMS43OTI1OTE5IDI3Ny40ODY0MjMsMC4wMTQ5MTQ4NDAxIDI3NC43MDUsMC4wMTQ5MTQ4NDAxIEMyNzEuOTIzNTc3LDAuMDE0OTE0ODQwMSAyNjkuNDUzMzk4LDEuNzkyNTkxOSAyNjguNTcsNC40MyBMMjMxLjE1LDExOS42NCBMMTA2LjgyLDExOS42NCBMNjkuNCw0LjQzIEM2OC41MjIwOTY1LDEuNzg5Nzk2NDIgNjYuMDUyMzM1MywwLjAwODMwODEyMTk1IDYzLjI3LDAuMDA4MzA4MTIxOTUgQzYwLjQ4NzY2NDcsMC4wMDgzMDgxMjE5NSA1OC4wMTc5MDM1LDEuNzg5Nzk2NDIgNTcuMTQsNC40MyBMMTkuNzgsMTE5LjY0IEwwLjg3LDE3Ny44MyBDLTAuODUzMzI4OTE3LDE4My4xMjk2OSAxLjAyNzE0ODQ1LDE4OC45MzY1NzIgNS41MywxOTIuMjIgTDE2OSwzMTEgTDMzMi40NCwxOTIuMjIgQzMzNi45NjMzMjUsMTg4Ljk1MTQyMSAzMzguODcxOTU0LDE4My4xNDQ4MzEgMzM3LjE3LDE3Ny44MyIgaWQ9InBhdGg0NiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNi4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRTI0MzI5Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTAiIHBvaW50cz0iNjMgMTkxLjkxIDYzIDE5MS45MSAxMjUuMTYgMC42MyAwLjg3IDAuNjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkM2RDI2Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTgiIHBvaW50cz0iMTUwIDE5MS45MSA4Ny44MiAwLjYzIDAuODIgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDQTMyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuNzUsMC42OSBMMTkuNzUsMC42OSBMMC44NCw1OC44MSBDLTAuODgzMzI4OTE3LDY0LjEwOTY4OTggMC45OTcxNDg0NTEsNjkuOTE2NTcxNiA1LjUsNzMuMiBMMTY5LDE5MiBMMTkuNzUsMC42OSBaIiBpZD0icGF0aDY2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Imc3MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNzgsMTE5LjY5IEw4Ny44OSwxMTkuNjkgTDUwLjQsNC40OSBDNDkuNTE2NjAxNiwxLjg1MjU5MTkgNDcuMDQ2NDIzLDAuMDc0OTE0ODQwMSA0NC4yNjUsMC4wNzQ5MTQ4NDAxIEM0MS40ODM1NzcsMC4wNzQ5MTQ4NDAxIDM5LjAxMzM5ODQsMS44NTI1OTE5IDM4LjEzLDQuNDkgTDAuNzgsMTE5LjY5IFoiIGlkPSJwYXRoNzQiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzc2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0icGF0aDc4IiBwb2ludHM9IjAgMTkxLjkxIDYyLjE2IDAuNjMgMTQ5LjMgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnODAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkNBMzI2Ij4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNDkuMjQsMC42OSBMMTQ5LjI0LDAuNjkgTDE2OC4xNSw1OC44MSBDMTY5Ljg4MzI2MSw2NC4xMDk2Nzk1IDE2OC4wMDA4OTMsNjkuOTIyNDAyMyAxNjMuNDksNzMuMiBMMCwxOTEuOTEgTDE0OS4yLDAuNjkgTDE0OS4yNCwwLjY5IFoiIGlkPSJwYXRoODIiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzg0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTg3LjI4LDExOS42OSBMMC4xOCwxMTkuNjkgTDM3LjYsNC40OSBDMzguNDc3OTAzNSwxLjg0OTc5NjQyIDQwLjk0NzY2NDcsMC4wNjgzMDgxMjE5IDQzLjczLDAuMDY4MzA4MTIxOSBDNDYuNTEyMzM1MywwLjA2ODMwODEyMTkgNDguOTgyMDk2NSwxLjg0OTc5NjQyIDQ5Ljg2LDQuNDkgTDg3LjI4LDExOS42OSBaIiBpZD0icGF0aDg2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.6.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/tag/v1.6.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPAXDQACgkQ0bVLR6XO/sQEgA/9Ezmc73fZniJIc5Ogc8puP+eQW847yJP187xStsx7prBmmKhvwaObw5IzuQXNmzZAfwJhAYtZ1vlByPy2d7UGSdUnW4qDTUljRo7NriE8h1i1RP100Unhlcrxrg866yfwrb8rcl4flAu8vncwT23uRjZ8MyKc1cMGV7f7s/VuQ7ZZv4PX253czMnoKC8vq2ELPp0qS7KcAi5Ag0S/NxpHRYfeHn8WBbpCGdBeE0g04hToOOslUoiPJVsNr1so/C7wruJuC06CdE2y3NtC14vP75VS27OucJAiSjxdHlrCFyv2sbsIBiRahPJSoPHZJ7zi6pjzo4LGhmW7CjYMRpCs+woXIAaAMSXp/t3zWeblJHLi7QncrqevDoU+EsQdZF9do+n5SGZqV+tCFXgZAdluIweVqrq9ln6+PqXTd2p4tyt821thVwF3zz6KVjGN/PNca34SKfAoOlS6BBT9b4QdT5QNNBs+EcJuPkT+0ZrxZ5hQUi4fWxc4Zyqu41HwuwtD4TOHAglLDHClaYsMMwxxXy6D2W+S9exFTwtRLq9J7GUZfCNmzZiW8gLYGeiXtg/ibP/aJa8EWUtUx8WG7MBllNBlvQRpG+BOTyrQwwg1xniQG2PTps2Q4UH+/LOnGtGWSw42qAezXsxuuNNXRU/Z5CsOhyzP1XC9yyyDZi4jmmU=",
+    "repo_name": "mattermost-plugin-gitlab",
+    "manifest": {
+      "id": "com.github.manland.mattermost-plugin-gitlab",
+      "name": "GitLab",
+      "description": "GitLab plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-gitlab/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/tag/v1.6.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.6.0",
+      "min_server_version": "6.5.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "To set up the GitLab plugin, you need to register a GitLab OAuth app here https://gitlab.com/-/profile/applications.",
+        "footer": "To report an issue, make a suggestion, or submit a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-gitlab).",
+        "settings": [
+          {
+            "key": "UsePreregisteredApplication",
+            "display_name": "Use Preregistered OAuth Application:",
+            "type": "bool",
+            "help_text": "When true, instructs the plugin to use the preregistered GitLab OAuth application - application registration steps can be skipped. Requires [Chimera Proxy](https://github.com/mattermost/chimera) URL to be configured for the server. Can only be used with official gitlab.com. **This setting is intended to be used with Mattermost Cloud instances only.**",
+            "placeholder": "",
+            "default": false
+          },
+          {
+            "key": "GitlabURL",
+            "display_name": "GitLab URL:",
+            "type": "text",
+            "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com.",
+            "placeholder": "https://gitlab.com",
+            "default": "https://gitlab.com"
+          },
+          {
+            "key": "GitlabOAuthClientID",
+            "display_name": "GitLab OAuth Client ID:",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitlabOAuthClientSecret",
+            "display_name": "GitLab OAuth Client Secret:",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret:",
+            "type": "generated",
+            "help_text": "The webhook secret set in GitLab.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "GitlabGroup",
+            "display_name": "GitLab Group:",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
+            "placeholder": "groupName",
+            "default": null
+          },
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories:",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories.",
+            "placeholder": "",
+            "default": null
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.6.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPAXDIACgkQ0bVLR6XO/sTXWxAAjmk9ewKGhYZBjsyihLX22OShPrlElHPnEXCMmBZ4AvQnJ8uUAIYumYRcOX9NA9Ji5gNbGU/z6CK2N5Eqh3mY8pNDMi0sNwxubz/ICZQvTDLabFWHgAmCdixaCS5Gz6ESU65qTq9Uyahql4BWVDzQLOWP92bY8WoUkfxcz02VhK9/cuvTBk2qRw6QX3Bop6m6JmOeJLxyY3T6vLbC0efIWQGG8RInDzctJ3GGQZD0fs93/QqEjT5OQ+VIN0g2Pya8Ot5eBLLLMbXURN3g3XLeX42R/ILHrRjbH7Rxi0AVzmJTWWt8JfMBHo2F/DlEEEJDwIS9pjo1Tyh6oBahPxw7b1E+qcZogPdoZkCVU7m7FubQdORF8imlcec9AN4XQwGqm4hNHRd3GN1bHZVR71pvpnk+p2OhNDRYYvw1FIpFZVUbArCHdBc0mZobK2hOP5xwpXQAtJwg/9vMCG9WgRqvdv7Rqgw7cIGdB449EYJUnZ41UNhM88JAqZav+lmGMOxO9owTTKI9R2fFVApoyehFk91gpjMN8QUVDAovXVXnsiAPpc38W66jawkGbIyj4H7STltkqAPGS1bgKTqwN0+6DMlnVqIBP8QvADyp8z/9MC+QCcfElj4gWEI81q7KF7kYe3N7t66VgcAnhzQQEN/QZ9ezmvxu4kk+yQyikBjaNnY="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.6.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPAXC8ACgkQ0bVLR6XO/sQXOA//XbKfnJFBtJYKkF1WVxFiZtPGF6F8/YVwJPLSQpKI7F0bn8juqwE+bNe3OhF/zNJSxieNuUQ/SLHk56uEyQgO1hysrsx6H5sPueoONlxzftwC/FJlYgsgQYTDQRZ8T20wS+b2ije5zj8gxNM3IcfcLqsYNXiwIisbnJ8CrxJngeLuXoXUndI8JyA+KL3kIZY4PbZEuP87N4ZgXpDOGX6fq7ChuEjyyMH7qmYH9AG5wuigUc4kz/RKdLLQaXXOsO/vslVatRsC3za36ws2wXy/OK3PTYfsqh/e7IhB+bqleUgNxWQuKuuMK9/1TPFLAqi2ygPETm2bj58EjPbDCFp09IW9o10OQHGimlT8V2Wj+fUKzhIqeWCLTaz8+n9JK2cOZNj+KpEGtrbE70BCPMItFrkfmezGT3EI0+MTgn2Vl/Ii3jTUlAcDIE267T5NLMWmaHTHxOEo8e9yjmXbA70LaeDXMktlX1SjjDw3ULOEqkAm9745R41+FHJ2RlTUeM8DvfMEh5aaaazv9gNlGf/caXCk74gSRkt2D9CNXA7Ptg3dtqRFWXYqM0uojH7LYZWk2fhaVe4gzUXYimcD5snEB6roGnl8khS4atP1XyDISUZ8iCf978Now7YPv2BdcRopZUTmzYUAp7zODqQNFahCNJqv41KzA66wb8DE91A10iM="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.6.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPAXDAACgkQ0bVLR6XO/sQKLQ/+OE38ZOygYiMwszpWtm4nKwcQ6iH6wJMiW9lQntVX17XzoXpTLTbyIjCFOx7eRJ8h+C902s3YXUyl1i9Sd4hHQfvNSaHxfurMnQUgeAzl01ZCkJx1bgqadHv0/8jvk0TbTYv7snrFmXElsxJErWwRC3AhOaPpTHjmej0Gq4hmSOrIArzELT8YENDTj5UOcsSNVZjQgULfLr4CKI+v3U0pSFWisREsIkUJIDyG/PYtUvGodfakgNYalANphyai15F6IXWNvJ0RZ+hfA8IDSEjsvNef1joyk/oaOMoWnxx4HCVwq+Us/YNUrLDmrWrfIHmGrPDIq//XbPWtj6BKhIL3dNSLrz0vmHA14RoecQchpqSsj/QBpVQRgdBuiXeUWZ1qwO+xHYTSFr+2+0m0i3sfwnnmC3HW5p3pWJ9xy802zk61TYf6ix337Oqdc6+COptPKhYXor0GclBPsxVvBdmMVF7h1RN3E55sErtYBZS79N0ZL+ysp3xnhr49Y0YNSdQ6CmjjKM28DRwonWUmLs7XDJtQHv9keS6g33z4JuAE0NSicaxYoXRbGLgrEI3pT38+mQx7fA+TYHyj8NdO9EzBis4K7ujoYfGRUJBX8VX3IOz8lqoIJl9PjPwkUmfagspSRVnQNQgPQsKCIiBw1hkJDApkyEkr375mceI5yh/LSaE="
+      }
+    },
+    "updated_at": "2023-01-12T19:27:21.923981Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM4cHgiIGhlaWdodD0iMzExcHgiIHZpZXdCb3g9IjAgMCAzMzggMzExIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+Z2l0bGFiPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImdpdGxhYiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Imc0NCIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzM3LjE3LDE3Ny44MyBMMzE4LjI2LDExOS43MSBMMjgwLjg0LDQuNDMgQzI3OS45NTY2MDIsMS43OTI1OTE5IDI3Ny40ODY0MjMsMC4wMTQ5MTQ4NDAxIDI3NC43MDUsMC4wMTQ5MTQ4NDAxIEMyNzEuOTIzNTc3LDAuMDE0OTE0ODQwMSAyNjkuNDUzMzk4LDEuNzkyNTkxOSAyNjguNTcsNC40MyBMMjMxLjE1LDExOS42NCBMMTA2LjgyLDExOS42NCBMNjkuNCw0LjQzIEM2OC41MjIwOTY1LDEuNzg5Nzk2NDIgNjYuMDUyMzM1MywwLjAwODMwODEyMTk1IDYzLjI3LDAuMDA4MzA4MTIxOTUgQzYwLjQ4NzY2NDcsMC4wMDgzMDgxMjE5NSA1OC4wMTc5MDM1LDEuNzg5Nzk2NDIgNTcuMTQsNC40MyBMMTkuNzgsMTE5LjY0IEwwLjg3LDE3Ny44MyBDLTAuODUzMzI4OTE3LDE4My4xMjk2OSAxLjAyNzE0ODQ1LDE4OC45MzY1NzIgNS41MywxOTIuMjIgTDE2OSwzMTEgTDMzMi40NCwxOTIuMjIgQzMzNi45NjMzMjUsMTg4Ljk1MTQyMSAzMzguODcxOTU0LDE4My4xNDQ4MzEgMzM3LjE3LDE3Ny44MyIgaWQ9InBhdGg0NiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNi4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRTI0MzI5Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTAiIHBvaW50cz0iNjMgMTkxLjkxIDYzIDE5MS45MSAxMjUuMTYgMC42MyAwLjg3IDAuNjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkM2RDI2Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTgiIHBvaW50cz0iMTUwIDE5MS45MSA4Ny44MiAwLjYzIDAuODIgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDQTMyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuNzUsMC42OSBMMTkuNzUsMC42OSBMMC44NCw1OC44MSBDLTAuODgzMzI4OTE3LDY0LjEwOTY4OTggMC45OTcxNDg0NTEsNjkuOTE2NTcxNiA1LjUsNzMuMiBMMTY5LDE5MiBMMTkuNzUsMC42OSBaIiBpZD0icGF0aDY2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Imc3MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNzgsMTE5LjY5IEw4Ny44OSwxMTkuNjkgTDUwLjQsNC40OSBDNDkuNTE2NjAxNiwxLjg1MjU5MTkgNDcuMDQ2NDIzLDAuMDc0OTE0ODQwMSA0NC4yNjUsMC4wNzQ5MTQ4NDAxIEM0MS40ODM1NzcsMC4wNzQ5MTQ4NDAxIDM5LjAxMzM5ODQsMS44NTI1OTE5IDM4LjEzLDQuNDkgTDAuNzgsMTE5LjY5IFoiIGlkPSJwYXRoNzQiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzc2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0icGF0aDc4IiBwb2ludHM9IjAgMTkxLjkxIDYyLjE2IDAuNjMgMTQ5LjMgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnODAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkNBMzI2Ij4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNDkuMjQsMC42OSBMMTQ5LjI0LDAuNjkgTDE2OC4xNSw1OC44MSBDMTY5Ljg4MzI2MSw2NC4xMDk2Nzk1IDE2OC4wMDA4OTMsNjkuOTIyNDAyMyAxNjMuNDksNzMuMiBMMCwxOTEuOTEgTDE0OS4yLDAuNjkgTDE0OS4yNCwwLjY5IFoiIGlkPSJwYXRoODIiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzg0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTg3LjI4LDExOS42OSBMMC4xOCwxMTkuNjkgTDM3LjYsNC40OSBDMzguNDc3OTAzNSwxLjg0OTc5NjQyIDQwLjk0NzY2NDcsMC4wNjgzMDgxMjE5IDQzLjczLDAuMDY4MzA4MTIxOSBDNDYuNTEyMzM1MywwLjA2ODMwODEyMTkgNDguOTgyMDk2NSwxLjg0OTc5NjQyIDQ5Ljg2LDQuNDkgTDg3LjI4LDExOS42OSBaIiBpZD0icGF0aDg2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.5.2.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/tag/v1.5.2",
     "hosting": "",
@@ -2941,6 +3060,131 @@
   {
     "homepage_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJfeDM4XzktZGlnaXRhbC1vY2VhbiI+PGc+PHBhdGggZD0iTTk5LjI4OCw0NjUuNDA5aDY4LjM1M3YtNjguMjU3SDk5LjI4OFY0NjUuNDA5eiBNNDIuMTU3LDM0MC4wMjF2NTcuMTMyaDU3LjEzMXYtNTcuMTMySDQyLjE1N3ogICAgIE00NzQuNTMsMTgyLjYzMmMtMjEuMzMxLTY4LjgxNS03Ni40MjEtMTIzLjYyOC0xNDUuMjM3LTE0NS4yMzZDMTcxLjUzNi0xMS44NTIsMjYuMDIsMTA1LjQ3LDI2LjAyLDI1NS45MDFoODguODUgICAgYzAtOTQuNDE0LDkzLjY3MS0xNjcuNDA0LDE5My4wMDEtMTMxLjQxOWMzNi44MTcsMTMuMjYyLDY2LjMxLDQyLjc1NSw3OS41NzQsNzkuNDgxYzM2LjI2MSw5OS4yMzgtMzYuODIxLDE5Mi43MjItMTMxLjE0MiwxOTIuOTEgICAgdjAuMjc5aC0wLjI3N3Y4OC44NDdDNDA2LjgyNyw0ODUuOTk5LDUyMy44NzEsMzQwLjU3Nyw0NzQuNTMsMTgyLjYzMkw0NzQuNTMsMTgyLjYzMnogTTI1Ni4zMDMsMzk2Ljg3M3YtODguMzg4aC04OC42NjN2ODguNjY3ICAgIGg4OC4zODV2LTAuMjc5SDI1Ni4zMDN6IiBzdHlsZT0iZmlsbDojMDA4MEZGOyIvPjwvZz48L2c+PGcgaWQ9IkxheWVyXzEiLz48L3N2Zz4gCg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.1.tar.gz",
+    "release_notes_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "community",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOQtcAACgkQ0bVLR6XO/sQhKA//aPdytQBSd8Fo/JtbF4anmHLK0j3AyTUEuQA8Qws/FCZ6OmDDx4mTdyccsrxc54fg9vHw1HV1HVTrl9SZdw5xp84PXky5mT/bccqrGQQoCZxR1UYFqAUeGIA9gKE+13UBDPuuh5F52RDiDJq0lauoFq0v5/UbfYSZqQja12fVO2gGGwgBiYUwrBtmwqZswuG4XeLZ9RsoVlUrWIspuNrU3VM0pWDVpwOUqEyFYIZbT5vFMcR10IAqze3tydY9AL+FZZb1PSwcZiXFu0jt8OkYybdD7GP9d3E1K7ecC0VEtWgyvCjEzwCplreFtkLx97OQ38kMyzJv+sU01w2fPXBog3Op8LV3v226kufzxHaV9FKrEpMj8EJoOnHlsufIlQWZ9lOhYtPpa+DT8J9pVD3Iz+bbcCGtrdwVppFONRPo6tmQDIGr7HqcZuXf0cDGU+Nf9yc6yxbQECFOIGJxhllsOZ8BmTP5G/5mfpG5JXELqPOTqVYyWB/qOsyb1ByJvAasp4HF/fOstnecrfjlFaOzoek5SI9dstc5a9c7iVfOanTZR8lgYqBokkhet+irArLgIvhX/73CXg3gXW9LHjz/KtYssfpFCgmmNhGJHNkLRYAaapMgYVzLiSUUZLhIrhHHWWMG9sBdN4s1s/Rc8iHM61e1OSXqR2fGjKEEPlIfaWw=",
+    "repo_name": "mattermost-plugin-digitalocean",
+    "manifest": {
+      "id": "com.github.phillipahereza.mattermost-plugin-digitalocean",
+      "name": "DigitalOcean",
+      "description": "A DigitalOcean plugin for Mattermost.",
+      "homepage_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean",
+      "support_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean/issues",
+      "release_notes_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean/releases/tag/v1.0.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.0.1",
+      "min_server_version": "5.12.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Mattermost plugin for DigitalOcean Teams.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "DOTeamID",
+            "display_name": "Unique DigitalOcean Team Identifier",
+            "type": "text",
+            "help_text": "",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "DOAdmins",
+            "display_name": "DO Admins",
+            "type": "text",
+            "help_text": "Users that are not system admins on Mattermost but have advanced plugin privileges",
+            "placeholder": "",
+            "default": null
+          },
+          {
+            "key": "IMAPServer",
+            "display_name": "IMAP Server Address",
+            "type": "text",
+            "help_text": "Enable imap on your email provider. Example of Google's imap server is 'imap.gmail.com:993'. 933 is usually the default port",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "IMAPUsername",
+            "display_name": "IMAP Username",
+            "type": "text",
+            "help_text": "This is the same as your Digital Ocean alerts email. Usually the email address. Something like example@gmail.com.",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "IMAPPassword",
+            "display_name": "IMAP Password",
+            "type": "text",
+            "help_text": "",
+            "placeholder": "",
+            "default": ""
+          },
+          {
+            "key": "CronConfig",
+            "display_name": "Updates schedule",
+            "type": "dropdown",
+            "help_text": "Define how often to check for Monitoring updates and alert channels. Default is 5 minutes.",
+            "placeholder": "",
+            "default": "*/5 * * * *",
+            "options": [
+              {
+                "display_name": "Demo, every minute",
+                "value": "*/1 * * * *"
+              },
+              {
+                "display_name": "Every 5 minutes",
+                "value": "*/5 * * * *"
+              },
+              {
+                "display_name": "Every 10 minutes",
+                "value": "*/10 * * * *"
+              },
+              {
+                "display_name": "Every 30 minutes",
+                "value": "*/30 * * * *"
+              },
+              {
+                "display_name": "Every 1 hour",
+                "value": "*/60 * * * *"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOQtb8ACgkQ0bVLR6XO/sSkGBAAl/RlE5rC8jZtrpSClmzd9B+Yxg7yAYLUA1ubzox8+7WLhhjcMc0Y5nwVeeLHeZVh4eKvtexMnvmZL7n1NHuPF6HHL0pa/VoaKU6OY+JIf3RAyw35S4IOq6A4RA8QJ05Lj/B8S6v9Jug+pKQJ7WmYTWq2ZbVwHGwmHcaP5TUIag+VOfTBFyFYp3N+JkEScndvymE3ebaGNzOdIWhrgPwGeKmdduH7Hvh5hQhHoOEcv+wzO3TK+BKG2+wvg1bmV7lmgdQlu8pS/i6AHiNoAMcjpX0gEV/3W71h7RL0Kzl2r99IP220OqhPX9LTJASB4nQfHGXD5vMXBe39EsAoG+Zr+GhGCl5emENZH2i1slG76Z2kjoXBAtZkA525J468I0YKjpjZTJiYQRxcumOX60y8deZeYoyr5uR5o5G1seboFxWXtaRPA87Y58GyIe72KdGoxyr8oCDM4+1YPS3owLVtRqi9T5lWIeCOqUooOmAGSx7TjVuKzKvl1q37VzkGqACzFReswZQynYUBHWirmd35jFjpQol+NHrBsrS2RkxMlWG0rd721hU+F/z4IjmXveOguZGCMfTR2sWM0OeiEih0I1KXgDAqKEAH9zJCVxntLr3KxUWTaZLNrLanygLHFBx1AoIPcUNnGrfNrKd0ORno8cxXNYxT98a9qSbOmOHey5g="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.1-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOQtbwACgkQ0bVLR6XO/sREJw//fgxIdmxcP6xjcjYBG51d9q0090iX8QT/N5om7kXpOPCkJUm7LgUs9zBNDNtgp0p6LDrON31gOSxgJ/yRXQ/ONxuk8VkqSbu33ab8GBm0ikn75mzRK0u7Y4EbXbaHBWHKvVnLemh3zn1OEIZRfdlkQLCYn++kPPUOHLm2UAuUSJav8JGRFFRFl+chW0LScUl1SdIPwzuocZZ6LCcIT2IA5vPE6Z6bWvnNwgBGvQNPj5zbUf8pWI16daP3neatDk0k35U/47ZFjqrYQMfKgG/F+QPh0w9vOgWSuWTsH5LunKF912bRhlHlqu+YbKXDeLU/vrlNvs9zFusZuHoxWXAJ5iXMS0QDe9n6vN7EZUFZzdscAjN5yeNjqZBgY9SJKQIcsnjMBsCQdhICFrrs52bZvQDgDTOKdXweRUXhzZFPxwq8u6m7kQsx2uSqzf8MyFoNKkNMD5Fx4+LsK01eedTROE6v7pjezUl1zKOhi+EnAX4x86pYnpRMQ6bpmbBZYMgbKNDK60MMPeWjcauPbmynHOjLsGNZISwyOSFPNosPEZyGh/f3by5zz18P3jMG4Rt13+SuNN2aOq0ZLWdM7LN0LvWUXoWEYZaDhCku469Lr3yQNpmyKE1N8R2fbgXak/4OFt+7qyQ68dqQbnSVMQB9R5uFQG41HdlVUwFMyH920lA="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmOQtb0ACgkQ0bVLR6XO/sQAUg//Qyi5SeNX3VPNQAKq15nk7Dveqtru0UCwYQAcHNjghy0ay72+nVwdBZwrcxgDfr0wyr3GiHurHqb0/sc1Dj0T5z/K4exA+bzWadgBoCYBfYtnLO1r0iXXaNlemXm/t+sm5IJYNESMMgFRFjSH/g8i4oQjUHhtWP1lLyVKAAuUN2QwGp5JSOwpdnarI3O0Sf5Kas+ofsWob118DNrMjY1//HOilQNXVyoJ0vltSj9qx6DyMmHYhFPHpWkyht+aP0BS2+0icGoRrwnrd6cjR8EsT0DkKfLH7XvAVq98bUwDtWqalgbBgLyBl4xtJrG4j87lIpD0UD3cphJnrtVcsTNLetnZuisevWjiuvTmX13v/pIw9f1gJDgPvzFwud/LMMd7kPZ4YD7e0mr6n3WPV4SK9c2d/qLYNGCpaKJxquDzF1akEnK/UuYC8da1xtxzhMe9z5CD4EdTRsiRyUHVUH+ckoRv3x8CG1B5DGjZEmUf1kA8gO2R8CRDomy9saO/29w6qLVC9pYR169LxfK9IP5o70WxILIhaIjlamczAey3euQfii4rZOZtJd8fvoqLlm1geCDj/fE5hq6MysCXfxx7YpQa7U5MSowtJoAH1b2cFH1ZL+82YPkqwZP0+neHtB9I6gzkYkh/AJrgpd0s4jjJtl7bTSdBvMpQHQqu9/puvg0="
+      }
+    },
+    "updated_at": "2022-12-07T16:01:18.521071Z"
+  },
+  {
+    "homepage_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSJfeDM4XzktZGlnaXRhbC1vY2VhbiI+PGc+PHBhdGggZD0iTTk5LjI4OCw0NjUuNDA5aDY4LjM1M3YtNjguMjU3SDk5LjI4OFY0NjUuNDA5eiBNNDIuMTU3LDM0MC4wMjF2NTcuMTMyaDU3LjEzMXYtNTcuMTMySDQyLjE1N3ogICAgIE00NzQuNTMsMTgyLjYzMmMtMjEuMzMxLTY4LjgxNS03Ni40MjEtMTIzLjYyOC0xNDUuMjM3LTE0NS4yMzZDMTcxLjUzNi0xMS44NTIsMjYuMDIsMTA1LjQ3LDI2LjAyLDI1NS45MDFoODguODUgICAgYzAtOTQuNDE0LDkzLjY3MS0xNjcuNDA0LDE5My4wMDEtMTMxLjQxOWMzNi44MTcsMTMuMjYyLDY2LjMxLDQyLjc1NSw3OS41NzQsNzkuNDgxYzM2LjI2MSw5OS4yMzgtMzYuODIxLDE5Mi43MjItMTMxLjE0MiwxOTIuOTEgICAgdjAuMjc5aC0wLjI3N3Y4OC44NDdDNDA2LjgyNyw0ODUuOTk5LDUyMy44NzEsMzQwLjU3Nyw0NzQuNTMsMTgyLjYzMkw0NzQuNTMsMTgyLjYzMnogTTI1Ni4zMDMsMzk2Ljg3M3YtODguMzg4aC04OC42NjN2ODguNjY3ICAgIGg4OC4zODV2LTAuMjc5SDI1Ni4zMDN6IiBzdHlsZT0iZmlsbDojMDA4MEZGOyIvPjwvZz48L2c+PGcgaWQ9IkxheWVyXzEiLz48L3N2Zz4gCg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-digitalocean-v1.0.0.tar.gz",
     "release_notes_url": "https://github.com/phillipahereza/mattermost-plugin-digitalocean/releases/tag/v1.0.0",
     "hosting": "",
@@ -3706,6 +3950,348 @@
       "windows-amd64": {}
     },
     "updated_at": "2019-06-11T19:41:07Z"
+  },
+  {
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "icon_data": "",
+      "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.12.1.tar.gz",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.12.1",
+      "hosting": "",
+      "author_type": "mattermost",
+      "release_stage": "production",
+      "enterprise": false,
+      "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPAd94ACgkQ0bVLR6XO/sRRJQ/9HR04IVavRTf6U05Oa168RSEuCevxOzd4KetCe18MS2t2w3SO9BV5vIdI4fJgI2yh1OJ6dF1FdhF+uYqfoXee8OEpv7NHqVemOPGst/QzvIGf/trV4aZCa19iE7Kjp0OdA2+w/wDScccIzh6asVW2mAgyIuVIQfuirYZQUxtDbQ61JAfEbIwmdEPn3fRztUoB2kRs2718J+WM6oTACh4KMthZRB9bq4yjEPzWKlMvGhRvQLRd/NhhS0dkuTslF8ssO4zFgYd/J2LMwoWHohUGKwpL9eHhZzKk1VkDg6OpYFVqM4jkTNDTbhq8EcTRNk17kbFb6A/VHyaySOnKyS5mpvGV8qIsrJD9AozngcKplUQNMn+ntdGEZm8EbtHyQA5vfCaMSg7dUom+VFlFiN0lX2O8Nip+xZ74aD9knfsXgMxpAeJDcV95gp9Ag9XAmElJF0biEBJPmzx2cvhm3i8DtXtKukrf3RDKh2kkv3xjzBCqZH7f2+FMftugjB5PWKkxrLj5CtJIyNSpgLOlYSFrz3trxcGdCcjITB2OogLquo0ni92TTiubIlWuYNmgXsRN0J9xAAU3OjbkaPiWDUWd+nBNEUubgOUhqAFGKAAtCFYlmeSfETlVZZRqak1UuCBaf3imFQZgCzuFZEaUfaez/HtRR9JfC0cWJ7eRFL1CDeU=",
+      "repo_name": "mattermost-plugin-calls",
+      "manifest": {
+          "id": "com.mattermost.calls",
+          "name": "Calls",
+          "description": "Integrates real-time voice communication in Mattermost",
+          "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+          "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+          "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.12.1",
+          "version": "0.12.1",
+          "min_server_version": "7.6.0",
+          "server": {
+              "executables": {
+                  "darwin-amd64": "server/dist/plugin-darwin-amd64",
+                  "darwin-arm64": "server/dist/plugin-darwin-arm64",
+                  "freebsd-amd64": "server/dist/plugin-freebsd-amd64",
+                  "linux-amd64": "server/dist/plugin-linux-amd64",
+                  "linux-arm64": "server/dist/plugin-linux-arm64",
+                  "openbsd-amd64": "server/dist/plugin-openbsd-amd64"
+              },
+              "executable": ""
+          },
+          "webapp": {
+              "bundle_path": "webapp/dist/main.js"
+          },
+          "settings_schema": {
+              "header": "Calls plugin enables voice calls with screensharing in channels. See [documentation](https://docs.mattermost.com/channels/make-calls.html) to learn more.",
+              "footer": "",
+              "settings": [
+                  {
+                      "key": "DefaultEnabled",
+                      "display_name": "Test mode",
+                      "type": "custom",
+                      "help_text": "When test mode is enabled, only system admins are able to start calls in channels. This allows testing to confirm calls are working as expected.",
+                      "placeholder": "",
+                      "default": null,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "UDPServerPort",
+                      "display_name": "RTC Server Port",
+                      "type": "number",
+                      "help_text": "The UDP port the RTC server will listen on.",
+                      "placeholder": "8443",
+                      "default": 8443,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "MaxCallParticipants",
+                      "display_name": "Max call participants",
+                      "type": "number",
+                      "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, it means unlimited.",
+                      "placeholder": "",
+                      "default": 0,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ICEHostOverride",
+                      "display_name": "ICE Host Override",
+                      "type": "text",
+                      "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+                      "placeholder": "",
+                      "default": "",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ICEServersConfigs",
+                      "display_name": "ICE Servers Configurations",
+                      "type": "longtext",
+                      "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+                      "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+                      "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "TURNStaticAuthSecret",
+                      "display_name": "TURN Static Auth Secret",
+                      "type": "text",
+                      "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+                      "placeholder": "",
+                      "default": "",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "TURNCredentialsExpirationMinutes",
+                      "display_name": "TURN Credentials Expiration (minutes)",
+                      "type": "number",
+                      "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+                      "placeholder": "",
+                      "default": 1440,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ServerSideTURN",
+                      "display_name": "Server Side TURN",
+                      "type": "bool",
+                      "help_text": "(Optional) When set to true it will pass and use configured TURN candidates to server initiated connections.",
+                      "placeholder": "",
+                      "default": false,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "AllowScreenSharing",
+                      "display_name": "Allow screen sharing",
+                      "type": "bool",
+                      "help_text": "When set to true it allows call participants to share their screen.",
+                      "placeholder": "",
+                      "default": true,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "RTCDServiceURL",
+                      "display_name": "RTCD service URL",
+                      "type": "text",
+                      "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+                      "placeholder": "https://rtcd.example.com",
+                      "default": null,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "EnableRecordings",
+                      "display_name": "Enable call recordings (Beta)",
+                      "type": "bool",
+                      "help_text": "(Optional) When set to true it enables the call recordings functionality.",
+                      "placeholder": "",
+                      "default": false,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "JobServiceURL",
+                      "display_name": "Job service URL",
+                      "type": "text",
+                      "help_text": "The URL to a running calls job service instance used for call recordings.",
+                      "placeholder": "https://calls-job-service.example.com",
+                      "default": null,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "MaxRecordingDuration",
+                      "display_name": "Maximum call recording duration",
+                      "type": "number",
+                      "help_text": "The maximum duration (in minutes) for call recordings. Value must be in the range [15, 180].",
+                      "placeholder": "",
+                      "default": 60,
+                      "hosting": ""
+                  }
+              ]
+          },
+          "props": {
+              "min_rtcd_version": "v0.8.0"
+          }
+      },
+      "platforms": {
+          "linux-amd64": {
+              "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.12.1-linux-amd64.tar.gz",
+              "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPAd9oACgkQ0bVLR6XO/sRzQg/9GlSvx121XVbpDBGpa9FXq3Xv4/VB1nz/7Njry6ldta3RiWocibRHCLbwzJGDcGKbhg/6XMyj7zAAeV5gfViwuKMHjbwlqNDrelLvSDeaOY0wM5DnOt96DzMELaIUFjd8I1guibmB/migFOL4lZCe1LtlIcg5URd1D6NLnYqUGlSHsR1hKSZ1CQsS1unvFZCkE0RnqgEjS8lonYoZw/RGLE85BpZwubOnOVxyv9qpRHe6bScnJAocZsktsnVzUpnXWxI9LOFH7wVAaC8xIQNWOVHSuUb+EvXvSsAFOkczCYk0A6YN/0WlfmnEJAPwzgjbXKbkQ4dubkT6z0pXnG+4IE475tQzOjKcoUwo9W/i0jEhTEVuLx3nO/strYlvtyO2ntANOM3aYGLWbTjw2CJMRcYPM/oKCB7mV7swNz2BIgh57TCTkhD33xL49JA22PZGoA8J3LbyUNW+iOHhSe61afPTSZ4r9/WcAmYFmUmz7ow6FsmSMgCuwpGwsDSqE0MtGsGgoPa3rKUj5xJjBrwm70a2l8oZXq2DrmRIv/JAIl6VlVR4eWYa/EnCBzYK3Q9yEmXcwmNmHGrCIINcxRbkOefdDth+7wDZGJTsybbkKHMnTixvHzHrLZZ1UqpQk3udOB2zpBtDXkpxDaGAMUwJBPOxI6KqbjKFpzVWOSh9iBM="
+          },
+          "darwin-amd64": {},
+          "windows-amd64": {}
+      },
+      "updated_at": "2023-01-12T21:30:15.903739Z"
+  },
+  {
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "icon_data": "",
+      "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.12.0.tar.gz",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.12.0",
+      "hosting": "",
+      "author_type": "mattermost",
+      "release_stage": "production",
+      "enterprise": false,
+      "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmO8WFsACgkQ0bVLR6XO/sQk1g/8DvH3cg1TqNfQ1eigJyqreSqSBpNBjj1hzMtaRuELs0gMOvg/VlT1MDO3A4NKmsFsIggx0aAuSAjnOZCihp8cfIvm3e5YJmaUBJdLRbSDb4usyNlz35DyB8xjytWeZLDKDNO5xNvEj4L6QbtJIwxFczY9/NDcpd0KbqK6Fx+ws6D1l22kTHvE6y9vlc5AZi0LVvyEl60QZnHvddDJmc//vKVc7a7ej6snQ9IAwAlMttDRQ/g7Wbs3LVyWGoP7vTXRM8BbGF0VCfCUXMLKjp9mFK16iPmEp3o09iBcnvk4CeAzjZqaf1At1BO5PC9g8KaBCdjBHSK2IeTPFSj8ZViwqQl8PDK0iHO1SGFTknUw1g+mrG++noiyxaeE45iMd8ZKTJqhVZuMbWdXI+mILxZUFSwjHjxX3rf6G4/Papk/WV6+C95JoP9N2upNyM7wq0ziBqV6SOOYpH3FJqvxIiXOpDn1Qlr6LcPIvV0pH1J5HXdbmi0F5nWYrGJ7q8dpuaHZs8U36b/VqTS77VFPxML2OmYUDst0t5bZIP4KLYAJ8VqH3+OaLs3K368TgY/k8gG4IYLI6hpSJsSI5a2Z4qcN1qMw9DCbYYihj179LZZYhb922tuw84n4LIgeutR0PV29m6/opx4Wpyl+x856Hi8rfi3fCEHdNxnvv2gShPZ8wRc=",
+      "repo_name": "mattermost-plugin-calls",
+      "manifest": {
+          "id": "com.mattermost.calls",
+          "name": "Calls",
+          "description": "Integrates real-time voice communication in Mattermost",
+          "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+          "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+          "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.12.0",
+          "version": "0.12.0",
+          "min_server_version": "7.7.0",
+          "server": {
+              "executables": {
+                  "darwin-amd64": "server/dist/plugin-darwin-amd64",
+                  "darwin-arm64": "server/dist/plugin-darwin-arm64",
+                  "freebsd-amd64": "server/dist/plugin-freebsd-amd64",
+                  "linux-amd64": "server/dist/plugin-linux-amd64",
+                  "linux-arm64": "server/dist/plugin-linux-arm64",
+                  "openbsd-amd64": "server/dist/plugin-openbsd-amd64"
+              },
+              "executable": ""
+          },
+          "webapp": {
+              "bundle_path": "webapp/dist/main.js"
+          },
+          "settings_schema": {
+              "header": "Calls plugin enables voice calls with screensharing in channels. See [documentation](https://docs.mattermost.com/channels/make-calls.html) to learn more.",
+              "footer": "",
+              "settings": [
+                  {
+                      "key": "DefaultEnabled",
+                      "display_name": "Test mode",
+                      "type": "custom",
+                      "help_text": "When test mode is enabled, only system admins are able to start calls in channels. This allows testing to confirm calls are working as expected.",
+                      "placeholder": "",
+                      "default": null,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "UDPServerPort",
+                      "display_name": "RTC Server Port",
+                      "type": "number",
+                      "help_text": "The UDP port the RTC server will listen on.",
+                      "placeholder": "8443",
+                      "default": 8443,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "MaxCallParticipants",
+                      "display_name": "Max call participants",
+                      "type": "number",
+                      "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, it means unlimited.",
+                      "placeholder": "",
+                      "default": 0,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ICEHostOverride",
+                      "display_name": "ICE Host Override",
+                      "type": "text",
+                      "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+                      "placeholder": "",
+                      "default": "",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ICEServersConfigs",
+                      "display_name": "ICE Servers Configurations",
+                      "type": "longtext",
+                      "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+                      "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+                      "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "TURNStaticAuthSecret",
+                      "display_name": "TURN Static Auth Secret",
+                      "type": "text",
+                      "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+                      "placeholder": "",
+                      "default": "",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "TURNCredentialsExpirationMinutes",
+                      "display_name": "TURN Credentials Expiration (minutes)",
+                      "type": "number",
+                      "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+                      "placeholder": "",
+                      "default": 1440,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ServerSideTURN",
+                      "display_name": "Server Side TURN",
+                      "type": "bool",
+                      "help_text": "(Optional) When set to true it will pass and use configured TURN candidates to server initiated connections.",
+                      "placeholder": "",
+                      "default": false,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "AllowScreenSharing",
+                      "display_name": "Allow screen sharing",
+                      "type": "bool",
+                      "help_text": "When set to true it allows call participants to share their screen.",
+                      "placeholder": "",
+                      "default": true,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "RTCDServiceURL",
+                      "display_name": "RTCD service URL",
+                      "type": "text",
+                      "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+                      "placeholder": "https://rtcd.example.com",
+                      "default": null,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "EnableRecordings",
+                      "display_name": "Enable call recordings (Beta)",
+                      "type": "bool",
+                      "help_text": "(Optional) When set to true it enables the call recordings functionality.",
+                      "placeholder": "",
+                      "default": false,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "JobServiceURL",
+                      "display_name": "Job service URL",
+                      "type": "text",
+                      "help_text": "The URL to a running calls job service instance used for call recordings.",
+                      "placeholder": "https://calls-job-service.example.com",
+                      "default": null,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "MaxRecordingDuration",
+                      "display_name": "Maximum call recording duration",
+                      "type": "number",
+                      "help_text": "The maximum duration (in minutes) for call recordings. Value must be in the range [15, 180].",
+                      "placeholder": "",
+                      "default": 60,
+                      "hosting": ""
+                  }
+              ]
+          },
+          "props": {
+              "min_rtcd_version": "v0.8.0"
+          }
+      },
+      "platforms": {
+          "linux-amd64": {
+              "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.12.0-linux-amd64.tar.gz",
+              "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmO8WFcACgkQ0bVLR6XO/sSYlA/+IxIPH0B2jODLHBLeg+Hh2/HDh4AD5/WEn/b4u8tz+rqcSS0+9ChBHpJavP2i/EWwpP04Ni5blBFJggha0RKqJt0qIHc68zWBa3XIHCky/g7JXsrtrdVokUD8otDpHassFRvQHSyDm55Z4APoE0SKijTq0N0HhS49uJgGXE1ZS7cVnrcMK17uwJgwCAWMFI120jlzGJ+SY1yD5so7rZOkmNqZf6RqZuRFwkZHusOpwRQ9AKFakNB+JTl93HyGDaDE/Th5DqV+A+2ogV8R8OYGxuPjFC33Dk/j/rHTx/LH952SiIHxvYp6OItQx5KdO/o9JCXVzbwXV5DHXCCROAV3CZ9MJIKznO9K7oX5QwBOMQ1TQbRkYHI7fhMHASzhow1gR/qCHa+GMCBfA3+SiD3vyQBmLu4/+xSAbNxJVs4hGIBKYf10OvQXTJOe3cI7Fi2YQCXKL4uMZu1iZFkPjSU4sKZ5vExarVxiA24J+UsswD7emYZwu2us58B14omumN+cFKnZUQ9+VrYNeEm/+dchH9Ni/6Pv6DsE22JHkpM2xm4MPMGltCGkv8XgC7hT4OO/q8gskO3BiQIUsqjcWbtqSK13Ru21wxJrLEq9rYXgdSpap9topqp6aVJ8zS06p7dE6Fx79ZkY2MfJKUt551+o9ibTb5Uqkgg/V4soc+MM+5Q="
+          },
+          "darwin-amd64": {},
+          "windows-amd64": {}
+      },
+      "updated_at": "2023-01-09T19:04:09.777252Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
