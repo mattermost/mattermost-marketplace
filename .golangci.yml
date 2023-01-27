@@ -1,5 +1,5 @@
 service:
-  golangci-lint-version: 1.21.0 # Keep this in sync with .circleci/config.yml
+  golangci-lint-version: 1.49.0 # Keep this in sync with .circleci/config.yml
 
 run:
   timeout: 5m
@@ -13,8 +13,6 @@ linters-settings:
     simplify: true
   goimports:
     local-prefixes: github.com/mattermost/mattermost-marketplace
-  golint:
-    min-confidence: 0
   govet:
     check-shadowing: true
     enable-all: true
@@ -27,7 +25,6 @@ linters:
   disable-all: true
   enable:
     # - bodyclose
-    - deadcode
     # - depguard
     - dogsled
     - dupl
@@ -39,24 +36,21 @@ linters:
     - gocyclo
     - gofmt
     - goimports
-    - golint
+    - gosimple      # Linter for Go source code that specializes in simplifying a code
     - gosec
     - gosimple
     - govet
     - ineffassign
-    - interfacer
     # - lll
     - misspell
     - nakedret
-    - scopelint
+    - revive
     - staticcheck
-    - structcheck
     - stylecheck
     - typecheck
     - unconvert
     - unparam
     - unused
-    - varcheck
     - whitespace
 
 issues:
