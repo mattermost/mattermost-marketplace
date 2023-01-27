@@ -39,6 +39,8 @@ jobs:
     working_directory: *workspace_root
     steps:
       - checkout
+      - tools/install-golangci-lint:
+          version: 1.49.0
       - run: make check-style
       - run: make test
       - run: make build
