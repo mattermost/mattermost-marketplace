@@ -19,7 +19,7 @@ func initPlugins(apiRouter *mux.Router, context *Context) {
 	pluginsRouter.Handle("", addContext(handleGetPlugins)).Methods(http.MethodGet)
 }
 
-func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
+func ParsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
 	page, err := parseInt(u, "page", 0)
 	if err != nil {
 		return nil, err
@@ -65,7 +65,7 @@ func parsePluginFilter(u *url.URL) (*model.PluginFilter, error) {
 
 // handleGetPlugins responds to GET /api/v1/plugins, returning the specified page of plugins.
 func handleGetPlugins(c *Context, w http.ResponseWriter, r *http.Request) {
-	filter, err := parsePluginFilter(r.URL)
+	filter, err := ParsePluginFilter(r.URL)
 	if err != nil {
 		c.Logger.WithError(err).Error("failed to parse paging parameters")
 		w.WriteHeader(http.StatusBadRequest)
