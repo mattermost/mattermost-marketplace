@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  tools: gotest/tools@0.0.14
-
 executors:
   build:
     docker:
