@@ -79,3 +79,8 @@ workflows:
           context: mattermost-marketplace
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - master
+                - production
