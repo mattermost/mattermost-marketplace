@@ -53,7 +53,7 @@ jobs:
       - *attach_workspace
       - run:
           name: Install Serverless CLI and dependencies
-          command: sudo npm i -g serverless@"<2.0.0"
+          command: sudo npm i -g serverless@3
       - run:
           name: Deploy Function
           command: |
