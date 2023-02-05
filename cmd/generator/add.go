@@ -10,6 +10,7 @@ import (
 	"github.com/blang/semver"
 	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 	"github.com/pkg/errors"
+	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
 	"github.com/mattermost/mattermost-marketplace/internal/model"
@@ -136,7 +137,10 @@ var addCmd = &cobra.Command{
 
 		err = manifest.IsValid()
 		if err != nil {
-			return errors.Wrap(err, "manifest is invalid")
+			logger.WithFields(logrus.Fields{
+				"id":      manifest.Id,
+				"version": manifest.Version,
+			}).Warn("Plugin manifest is invalid. Double check that the plugin correctly works.")
 		}
 
 		var iconData string
