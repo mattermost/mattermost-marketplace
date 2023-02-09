@@ -4086,6 +4086,187 @@
     "updated_at": "2019-06-11T19:41:07Z"
   },
   {
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "icon_data": "",
+      "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.13.0.tar.gz",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.13.0",
+      "hosting": "",
+      "author_type": "mattermost",
+      "release_stage": "production",
+      "enterprise": false,
+      "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPlaB0ACgkQ0bVLR6XO/sSpBg/8DNtKK2PQs4t4R4qNRqiLhcNpjLyVYDaVxtpEUMojqU37oX0dCFjCRbK1ofeV/0yp9WDWQsIgWRKr2wLLDG2WoHYLWNumFz0bloWa11+TxYAjxntEl+u0lVhsG3CSy7GRe3K6fahFqAqODwdHSvQxdyV+f3TniJPNN/aeI2zIYKvCgvhfV+mgIQ0bUT0gVTrWvFrlts5Xu98sGTcqQC8JXaPNKJngHU+yAPK/lS6W+SKv62+33jUZgROgS+IeC6ArgY2D9Mli7T5N22Z/x3sYecA8RG/HmCXNemcnwSBai33VBN7bWj8dDo4RnydbDfuOGCzhUljc6cJeR2j4KR+jOY7Fcsu03OjryZ4F59MA8dGg7m5k39uGjb/puSl5R5hvoF9N3tQRSjFdfT+9vqOJmLxGd70SCUz4O5+Pp9k6G+0sBA63CqbB0RgfsB/4khBQQUGkBeITpiZNnvcPcEcUsoPV924wyXRLLf/dhJxk6uswSHpveGNTatnB0yx+5r71XXGzvRAHfeK0/hO39NLzwMo6JIeI2uhPsLONlGw2KUqt93RF3ZyBrTwk6wWkuYLwVdf1KoD2h8mxHPQyX2Lqn19ggRCzKP6XfXans3WLz/I1RXmKttaE4moB4bLAXF34b2EzcnPlfNzUzkW+Xw9HURn1XC4WZIMWtasRB17rZ/w=",
+      "repo_name": "mattermost-plugin-calls",
+      "manifest": {
+          "id": "com.mattermost.calls",
+          "name": "Calls",
+          "description": "Integrates real-time voice communication in Mattermost",
+          "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+          "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+          "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.13.0",
+          "version": "0.13.0",
+          "min_server_version": "7.6.0",
+          "server": {
+              "executables": {
+                  "darwin-amd64": "server/dist/plugin-darwin-amd64",
+                  "darwin-arm64": "server/dist/plugin-darwin-arm64",
+                  "freebsd-amd64": "server/dist/plugin-freebsd-amd64",
+                  "linux-amd64": "server/dist/plugin-linux-amd64",
+                  "linux-arm64": "server/dist/plugin-linux-arm64",
+                  "openbsd-amd64": "server/dist/plugin-openbsd-amd64"
+              },
+              "executable": ""
+          },
+          "webapp": {
+              "bundle_path": "webapp/dist/main.js"
+          },
+          "settings_schema": {
+              "header": "Calls plugin enables voice calls with screensharing in channels. See [documentation](https://docs.mattermost.com/channels/make-calls.html) to learn more.",
+              "footer": "",
+              "settings": [
+                  {
+                      "key": "DefaultEnabled",
+                      "display_name": "Test mode",
+                      "type": "custom",
+                      "help_text": "When test mode is enabled, only system admins are able to start calls in channels. This allows testing to confirm calls are working as expected.",
+                      "placeholder": "",
+                      "default": null,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "UDPServerAddress",
+                      "display_name": "RTC Server Address",
+                      "type": "text",
+                      "help_text": "The IP address used by the RTC server to listen on.",
+                      "placeholder": "127.0.0.1",
+                      "default": "",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "UDPServerPort",
+                      "display_name": "RTC Server Port",
+                      "type": "number",
+                      "help_text": "The UDP port the RTC server will listen on.",
+                      "placeholder": "8443",
+                      "default": 8443,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "MaxCallParticipants",
+                      "display_name": "Max call participants",
+                      "type": "number",
+                      "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, it means unlimited.",
+                      "placeholder": "",
+                      "default": 0,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ICEHostOverride",
+                      "display_name": "ICE Host Override",
+                      "type": "text",
+                      "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+                      "placeholder": "",
+                      "default": "",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ICEServersConfigs",
+                      "display_name": "ICE Servers Configurations",
+                      "type": "longtext",
+                      "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+                      "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+                      "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "TURNStaticAuthSecret",
+                      "display_name": "TURN Static Auth Secret",
+                      "type": "text",
+                      "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+                      "placeholder": "",
+                      "default": "",
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "TURNCredentialsExpirationMinutes",
+                      "display_name": "TURN Credentials Expiration (minutes)",
+                      "type": "number",
+                      "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+                      "placeholder": "",
+                      "default": 1440,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "ServerSideTURN",
+                      "display_name": "Server Side TURN",
+                      "type": "bool",
+                      "help_text": "(Optional) When set to true it will pass and use configured TURN candidates to server initiated connections.",
+                      "placeholder": "",
+                      "default": false,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "AllowScreenSharing",
+                      "display_name": "Allow screen sharing",
+                      "type": "bool",
+                      "help_text": "When set to true it allows call participants to share their screen.",
+                      "placeholder": "",
+                      "default": true,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "RTCDServiceURL",
+                      "display_name": "RTCD service URL",
+                      "type": "text",
+                      "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+                      "placeholder": "https://rtcd.example.com",
+                      "default": null,
+                      "hosting": "on-prem"
+                  },
+                  {
+                      "key": "EnableRecordings",
+                      "display_name": "Enable call recordings (Beta)",
+                      "type": "bool",
+                      "help_text": "(Optional) When set to true it enables the call recordings functionality.",
+                      "placeholder": "",
+                      "default": false,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "JobServiceURL",
+                      "display_name": "Job service URL",
+                      "type": "text",
+                      "help_text": "The URL to a running calls job service instance used for call recordings.",
+                      "placeholder": "https://calls-job-service.example.com",
+                      "default": null,
+                      "hosting": ""
+                  },
+                  {
+                      "key": "MaxRecordingDuration",
+                      "display_name": "Maximum call recording duration",
+                      "type": "number",
+                      "help_text": "The maximum duration (in minutes) for call recordings. Value must be in the range [15, 180].",
+                      "placeholder": "",
+                      "default": 60,
+                      "hosting": ""
+                  }
+              ]
+          },
+          "props": {
+              "calls_recorder_version": "v0.2.3",
+              "min_rtcd_version": "v0.9.0"
+          }
+      },
+      "platforms": {
+          "linux-amd64": {
+              "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.13.0-linux-amd64.tar.gz",
+              "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPlaBkACgkQ0bVLR6XO/sQlSw//TaPFLq3WIKTAO+bSpQJ1PZXiW+J5KLukVRgHJR9Zzd3LjcRRQjsHBLIf/tAOTb0xMWHgocXZfAFojH9yFyZoIJpo4f/Vub7Ldr1L3BCQOCBrJtiRf5APer1Pzlp/uMi7/JAj+AzjwDpGn+WjnW0pTqeMyR7G6An3waJseO5LV/CDNLyDA69Cctkj4b3KppjwZmo0VnVzZSfId94fDYbBBD2mkzoVFTLVz1PymW87GScrfvnw5TCc10YaglmmSGEg8imxJUPMuMKQA2FW1tFBsO5PaTSeGIVinP9AuoiBpmZ4lKF9MUz1k6u0+evQhd+qD2UeIUE1/e6VT5NDTBPSoOiJRTKMjwzZLLXQ5gegUjpOQPntmLue5MfCusAEst3CQDl/gJ+ti9WA2+fKEvZHUarIOa64ZDbZmDAfsFC/5iZoTFv1Lh5cvkXb2WplwzZr9/7WgqJeoF7+Y/HSNhPM9HmFsVp5oMmPYJFf+5s76sXbT48dYhNh5f05TDOKzVhLGzUZYV8gcjZO1N1BgT1foqji8ybfVi1wkrqaq7jCPOD7gfAzrHprfnDE5utl6gwBnwY6/6GGRbe+t6Eh4eDiWo/BKH/PBseZA+uL8CNjtY7v1uHkNaMLS7KCGQBWuK6CGp10idkA29N+YKidVDfz+mh/7nDFdkBpr8oiJcvC/4c="
+          },
+          "darwin-amd64": {},
+          "windows-amd64": {}
+      },
+      "updated_at": "2023-02-09T21:57:11.140243Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.12.1.tar.gz",
