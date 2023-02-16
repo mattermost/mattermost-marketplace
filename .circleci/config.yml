@@ -6,7 +6,7 @@ executors:
       - image: cimg/go:1.19
   deploy:
     docker:
-      - image: circleci/node:16
+      - image: circleci/node:12
 
 references:
   workspace_root: &workspace_root

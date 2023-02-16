@@ -331,7 +331,10 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 
 		err = plugin.Manifest.IsValid()
 		if err != nil {
-			return nil, errors.Wrapf(err, "invalid manifest for release %s", releaseName)
+			logger.WithFields(logrus.Fields{
+				"id":      manifest.Id,
+				"version": manifest.Version,
+			}).Warn("Plugin manifest is invalid. Double check that the plugin correctly works.")
 		}
 
 		if plugin.Manifest.IconPath != "" {
