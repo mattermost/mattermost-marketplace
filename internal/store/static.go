@@ -32,7 +32,7 @@ func NewStaticFromReader(reader io.Reader, logger logrus.FieldLogger) (*StaticSt
 
 // NewStatic constructs a new instance of a static store using the given plugins.
 func NewStatic(plugins []*model.Plugin, logger logrus.FieldLogger) (*StaticStore, error) {
-	if err := validatePlugins(plugins); err != nil {
+	if err := validatePlugins(plugins, logger); err != nil {
 		return nil, errors.Wrap(err, "failed to validate plugins")
 	}
 
@@ -42,11 +42,14 @@ func NewStatic(plugins []*model.Plugin, logger logrus.FieldLogger) (*StaticStore
 	}, nil
 }
 
-func validatePlugins(plugins []*model.Plugin) error {
+func validatePlugins(plugins []*model.Plugin, logger logrus.FieldLogger) error {
 	for _, plugin := range plugins {
 		err := plugin.Manifest.IsValid()
 		if err != nil {
-			return errors.Wrapf(err, "invalid manifest for plugin %s", plugin.Manifest.Id)
+			logger.WithFields(logrus.Fields{
+				"id":      plugin.Manifest.Id,
+				"version": plugin.Manifest.Version,
+			}).Warn("Plugin manifest is invalid. Double check that the plugin correctly works.")
 		}
 
 		if plugin.Manifest.Version == "" {
