@@ -66,6 +66,105 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-antivirus",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-antivirus-v1.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQifUYACgkQ0bVLR6XO/sSg3w//YoGAPaWzOU9LjQ5cBtPw8gXfHtDp15pNm/acRkUPNINojoqFTt7ekN31zelRKCUlWwqpfho8DCTDnfeAUHJCypvShy9RQPVtU8AYlAqgzhIaTqYKdWJzi9prevXYLXk4SdXBuGkyel8WrwHenqRkjDXZ1wgjW9NBKHrAvJ6gGPGU1fLGQGrlT9qw+8hr4J/0KBDJPe/EPxINK6ZcsAIkC9tLN/rHXUyt3/SIEIFbYx4oOGTQ2BJtj7J3Bw18Z38PnYcD6grof4VjLL+HsXBvUi+Heyg+wOeZEWHgJjpH0OpWp9KJAJcuzlusNYTJg233izNV2/1owU+aR+C42TsJjKj581lC/acuHQhIjW4B/j/QCFKIYSdVRFX9KPSyE2Yd/f2oS/f5/j4I+08xaQxPJVGIa3sa4P97Uf8TP1O/qDTvzEJyCI6ADcE1TStEJKTBKnksvYFMjATpb21FWP1JDPPect11FDv7W9AiRKUnaIig4VzcxiWvHrmISw7GLfPh5O8HycFY1GDTU4at0aQa30vpVM3i+G3H0Tv/FIuzww3tVzlMc2hcih2A8LMxCicuW7xfOP0vjac+7lBxZmjxLQmlJHxLqrAr4cwlLRSbN70ajEpMl2CglFQz1NZSEyGyGfxq1Ptan4Io1aj+Fb4RVr5hc2riL2LdGFbHq7ATAE8=",
+    "repo_name": "mattermost-plugin-antivirus",
+    "manifest": {
+      "id": "antivirus",
+      "name": "Antivirus",
+      "description": "Antivirus plugin for scanning uploaded files.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-antivirus",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-antivirus/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/tag/v1.0.0",
+      "version": "1.0.0",
+      "min_server_version": "5.37.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Antivirus plugin which uses ClamAV to scan files uploaded to Mattermost. See [documentation here](https://github.com/mattermost/mattermost-plugin-antivirus).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "ConnectionType",
+            "display_name": "Connection Type (Unix/Tcp):",
+            "type": "dropdown",
+            "help_text": "Connection Type.",
+            "placeholder": "",
+            "default": "tcp",
+            "options": [
+              {
+                "display_name": "Tcp",
+                "value": "tcp"
+              },
+              {
+                "display_name": "Unix",
+                "value": "unix"
+              }
+            ],
+            "hosting": ""
+          },
+          {
+            "key": "ClamavHostPort",
+            "display_name": "ClamAV - Host and Port:",
+            "type": "text",
+            "help_text": "The hostname and port to connect to clamd. (required ConnectionType : Tcp)",
+            "placeholder": "localhost:3310",
+            "default": "localhost:3310",
+            "hosting": ""
+          },
+          {
+            "key": "ClamavSocketPath",
+            "display_name": "Socket Path:",
+            "type": "text",
+            "help_text": "Path to socket. (required if connectionType : Unix)",
+            "placeholder": "/tmp/clamd.socket",
+            "default": "/tmp/clamd.socket",
+            "hosting": ""
+          },
+          {
+            "key": "ScanTimeoutSeconds",
+            "display_name": "Scan Timeout (seconds):",
+            "type": "number",
+            "help_text": "How long the virus scan can take before giving up.",
+            "placeholder": "10",
+            "default": 10,
+            "hosting": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-antivirus-v1.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQifUIACgkQ0bVLR6XO/sQM9A/+I4Hd/H7yH3DEZ26q8cgWgDMbjDQd1lJ54Tzduo6nATSZ3v6hz0041VVl8EjgixoY3Hvb93koY6t9e//U38nNFeFqKu9W/i4Ccb8mZ26p4RtIY6wHnDaIHQaSNeNlo4f7SennAxTc/7zeLM4L5xOp0okEbnxU5wtNxnv4Cw/CqFBQ03CA2Pq9REqco74mB5gMTyhJS2aT1G4GQS9CUwHJHsC2bpxX3a8Kpckckr0mUAeb3YwnEljcA+Bollis5Rx8NvR/GrZIMhBPlR84XiyyWBdA1iDTm0UVgI3djntq6N0zCYcPiU29562oap4iqZTOzgCwBXXxtOfUxDLUBL0vGwrOo4smwpcAsX+E2+WKsbGbl5mq73MLEdBp/92Gq9kkspdNkns/5n+0iYghmY1R7wO5HOgkY4S5kdgU3g11WvBGBpb2NkBfsnXcp0pQMUwGPApbULQKcDWuIGEz/wbrPIVCQXO5KGyMKmuRAH2PpNBluwp/ygir74rHYaDEANDWp5wg0JF7LVOQvUyq9xg0vzkaeVgi9Ik46G9tThlgRYJ+BMQ0MiHvzNlj7fulA7QUq4kW/SGI56xn84fU+RIrq8qIZhUsdBFkceQ6scgVxqbqHyko0V3S644Vcc8egMxy8PlMjWt2NTQbGm0cZ/NqDhI0rj1CKnqIx/DDkCWfLCU="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-antivirus-v1.0.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQifUMACgkQ0bVLR6XO/sTE/Q/8Dp4WQ9ik3WtTJNoC1YTESfcfPTNKi45dnHTzeMpoimo7Yb99bHr4QAaedsKcnrBSMXEiltcWPwpkT7honOAck0AvtxrrYSZ5HzUsZogeujrVy2DoIPmEVhVTvNunVprasuL6o6ZnZ4lnc8zUnI9eAOqLEjrtVrEYg8GS65SmSBCEg4/Wu0ZbpEGqEtIdilS6oO6wQyG/LwPgtNkU9o5WMXtwxmfyvT+sN22yC7OXD4ZNtP1NOd6O7Xgk8gC/pb8EXM5UGUFHGRADLNHarH2D3s7f2Dz/aZ7NSvBsHRoobLmOuYRqidhJByLHsIBNtmA3VVan7G+rAkktRYq/SjH1NDph8J1dphSqnvpge37MSJ5wsyPypMTQW0h44+koOZ5R61X9n+eBbqmu/SCO+QTxdpZ5FPqKbNZ5IBIqwXoOvtcFr0i7QnHGOw8WepjZqi5mRWiPcBzovghQIMzXx9zbPZUOXekwA0FZtJfrJ3pEsWbG4vsWV2crKpCMyJ+1/pl3MigXLRbgWbaErCefYa4Yf/LDN2Blxxa1OcqKWnB4p78GH93GUEAqGnrqZDjI1VaSf8+FOdFFL86VWfdOr32+laRGBiQ39Dqv1m6KWwtF88R7mZDcyOtejOn/QB7GwsLPzinMvJi9/h1sFXvwVgC+h9dcxNwPp0saenmp1Lg9voQ="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-antivirus-v1.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQifUEACgkQ0bVLR6XO/sRSthAAh7vg7Do7fwMN1+QQXg73TPy026VoDJgqTGWD2/12oBT9k33ljRq4Qs4fWGxBdrigYpurn2/PH/b66v5g1HXiDKylC7hTtrAgr/BYVdCtbinul+OdZBsyCRnn5dDnD46/czkcn0Yyl+QqAKhzes2cBuWiO+73Smggw+x5qhjUwIzQVtD6wbU0ol27vBPszMGXPmFFDip8/hdFBIraZ8Wnl7cs25QA22cOWduF23s8Z31MtAwPv45Ea49MCfDw2Dgeavja3p2hMCCuAfE0yf2Y/U/x53bfhsikMTH4HkZDc3AzdjJxJVCohrooz/WVaRek5Ad33MZBbET9OGb3q9wnskddvZ/gEoWIcAduoGf8Pa9rzT48o46i8ef2XZeJPFTZpp7ZGT9J0qDXmZXwYo7vVtZ8ldjnc1O7yuBsaJNk/OJ7zYLC8JCf/X6qt0b8O75sFV9m3OxXVOVhSnLuatbpSFulQOcjWk5met/CpF7sDvdPfqmWgZ9BUI/bbPnK7JUSAK6QtWJzrGeKQXFf/JhZ+akkzovxLbG4Nh0N1TgQdnqtpgeGGm23LQ7Dr5HmCW41Grri9MFMa5CtMowXqZ1xMKuEeLBXCjIh7v/xU2ZreLfpEyTPUhNjDvBalC4mlDleqnELSGTZVsFhKvaXSxFUJvRHenqp66/Cpz9nLqNErDg="
+      }
+    },
+    "updated_at": "2023-03-28T05:47:39.800941131Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-antivirus",
+    "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/download/v0.1.2/antivirus-0.1.2.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-antivirus/releases/tag/v0.1.2",
     "hosting": "on-prem",
