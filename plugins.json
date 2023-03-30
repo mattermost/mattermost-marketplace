@@ -6,7 +6,7 @@
     "release_notes_url": "https://github.com/cpanato/mattermost-plugin-alertmanager/releases/tag/v0.4.0",
     "hosting": "",
     "author_type": "community",
-    "release_stage": "beta",
+    "release_stage": "production",
     "enterprise": false,
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmPheDgACgkQ0bVLR6XO/sQXww/9EAiDdkz3nUnfujEIigh2aIxRairSsoeyGAMjjrkLP0M5kAW/7iSbzHb4Fzcjg9kAUvrcEPL6Q5Xv5ZT59+fWF3Bq4Z9Zeb8LnsmQpXUxV93y0ZA56gfPHmviSdGu+l4vLKSk6wM1Go9ho1Rewku9wxXzkjNKu8r5Jlt+jgHQiRqEl7W2tqLfiLOstjg4ygksxrn41J8YvDYH+jMW2tbQjyPnjy+eWgDfG/iLv37J50s2hTbmdiDMhuUxjGx3SUeeF26emvyB6DmdsO8DJKbtH9xHLZvkLHWm5F7Sd/Irf7fE0Qj7woNiInNks4uDXUZaANVa64f+nJTc5ao98WGtyxy8/r/fMUfZCtVhV0/QcnPGw7mKA4Vk4/L/q675BHLLoMxNIsGULwV4K/mxGBAqKzWwMjeRpQPGwy+vLBteVECR8oyENtq1t2nS3uriV049hoBjSdwCItaPvIqFaKkUaVeLjUevdFUyEU2usXcuhUK0gSkYL9wjElDu27pVgOqz+lVJIrHmud3hIQreuMOBotKPjjqERV+auQGvMx/yEw7l4NBxRfZo9P5UW4nIeHGa+SIeYDGdKxJ2VuOBllnwbKfe/5mqqx2eG4/QjpNf/HC7yztUHQJAxCBphk5aZnyDo3VzxPeq/TapmTc3AcpCPCeR5Uo7NCTzWQY3pPE/8z4=",
     "repo_name": "mattermost-plugin-alertmanager",
