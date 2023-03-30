@@ -3749,6 +3749,58 @@
     "updated_at": "2020-11-20T18:12:44.537612606Z"
   },
   {
+    "homepage_url": "https://developers.mattermost.com/integrate/apps",
+    "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v1.2.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v1.2.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQkXccACgkQ0bVLR6XO/sQcJhAAkOSmWIvM4vpFCshBeGYAeqMsZPDTE7tEE2RayKA+itG8Col8PMhG8osNVWKnn1tZf1Hed7Luj4YWD8sTCdFl7gE+ztQxKKVtrjedrMYzhOFGIOo/sQA5KGL02k3dXnd6d7w81cCYGOXe81beclZXJz44KWhoYWzNEzVnjo/RtyWg+zvrxoRPnni8dyYrd1yaxYCchkh64uNqEC0DpofTNGS2VnXDWk6pKXxwzmo079md0so5PUtK2FGj/4XqUfQ6hCe2VkXS5gbNUrn5Im1qdPJUjXXz1nyQugdPh0S3UJ8vHSDpDsBcFtt2YKgBXHrV1YmR7nXbzrikoYmSe9AmgQ0QaHA79LM8xd+xLfWfXbJO6C4FQPcLvALDNoQghkO6KT166gT5xM5Y5kK6VwqkjMRph3zvqdCO3JNAAjyCt1kOj0CIUdeeRgZcRaoDBlULoGst0IQXb6eQyYvdqMt4T0MAk3eAsKI2M9E0X1p8PX9zavXOWqut9YmtjsmBP27cI091OWEF31ZGJlKU+Y9xiYjBbA5g8xj0kNulz1a5vqwZrv7HJDQAZnaoqVPqbrz8lrUWu85t8peb9RHy81eexKV3iXVDGbX1iwBUEr/jSu/1uS/8z7hvKNa8IajCNsjZ/qn1MFk/GIMP3pLIDZx05t042DMszmRbg6vmV5ofGCE=",
+    "repo_name": "mattermost-plugin-apps",
+    "manifest": {
+      "id": "com.mattermost.apps",
+      "name": "Apps",
+      "description": "This plugin powers the Mattermost Apps Framework and is required for any Apps to run",
+      "homepage_url": "https://developers.mattermost.com/integrate/apps",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-apps/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-apps/releases/tag/v1.2.1",
+      "version": "1.2.1",
+      "min_server_version": "7.7.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "To create your own Mattermost App, check out [the documentation](https://developers.mattermost.com/integrate/apps/)",
+        "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-apps).",
+        "settings": []
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v1.2.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQkXcMACgkQ0bVLR6XO/sTzng//R8OlVHBtt7Ip1A8UQilTCn+VFs0mR1GU09omstPn8wJyZ6DN3IUuCpoad1HhKbKPzpZcxam64bw4iH3gB1xfYORcT0bSkaXO8QsUUs1yi42BkHKY4iIGL1ghTToQRnhtMhb7J3neEsVH5L3ChmxU0d3jU1/MgxPmwMbAKNWFhu5HIecG4Y36HmWLzw6G5q1HZGQqtYoT1IHa3L0xbGhBcHrkdshZ+LyKnqFbmNMz3iNI8E/bwPnM7j405TNQKoUvj4w6zeMmnQm+uJbpCn8AEkXlEKpJwbWFGJy/i/uXW6y5XwfdWqOpERoXV3ZCCIR9ODtcESh4Joxk5TT1p2ElFx/zD1xXKqdoRgv0fX7AuGoC/8is3Jy5ouVovUBmYQn3CqyNypv/2qDQ3RpnnDjjH7EUvrZZpnAZcP2u079zxoY/CxbEArclQ8ggw90vo+nHK6vkqWQGroyqlzyoh/Q9HOTqgdJ/t0K5mAfmOlRRoodwL3VKMA39kusHODvnFqMI/gI6wsqHzFsJbexMXWJERUgiDXXvFSB4ZS93A9KJUTPPl+SdQ6T7lQ64xOFXgWSkYGO5i8rlDmOHxPavSUBvLq3m+N+89SodHBury5FYg5M4Hv6OABVGlKHKf0yjqtKhKX6VIV6ZX2RxcQETp2icS/sZdU244r3HLehv+KkijZg="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v1.2.1-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQkXcQACgkQ0bVLR6XO/sQZ4Q//exCGyi/Y6pccEdtIr8iNH8UexFfdddLNcTV2LaUfApyaaMu7TrJZ9Kgrr5CyAdIKBrqX1z+vX4j95BLLUnahsVEM+PUUelvEnSlzvvg2TIz1Pu65sjDKqAEwQtKi+Ayzfga1y6qFLjSNn1a6Lei8L3nLwuP0P+qQ0XQpgXMFKKRYUHsQkeO8zgX8aGAAnuEFRuTHLrOGkl7r9/ocSWdLmsqZzk7pQI4z37D0BDvU5SIMphPpTXAAvCMQwIAzuP2xScIOAZdaJwdVX5PUv5BUlRmJAptP9X9BlLGC01osF5kg8em0ll84EyKnRaZT80tLW5UEnRcAaQhCUB32NnODdTjM/eevTI/MYSmpREMURiB7zYnsv3m1287aX1rIPrunrFqg3Hx8vnQgHz+lKry/FMHV6K8mrpL0uOiDS7WfZFKjRGNQodSnxum3Uy3jRxbdg+x9atHV601iXOCYDIcV3cCNkr3Hyx7KzhXJ2sGcgN4/NSG8gzSD8UhTQI9zA6Whm8XYXdSxsYX3xKVsM4M1i0ohl0e/T+mxEqtMDtJlwvQObu8fthYpAXm9O3AMqXN489cihe2eB3MUVYKD37dA20EJjiUSClhHHQfhNJix9hfi2AZh5qi+EHb1VHdO0f+bc93Eu6H2D2sLa/LzdMJVK3UCr0X4ikkj5FKwY9Z7L7o="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v1.2.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQkXcEACgkQ0bVLR6XO/sQG6xAAnWpgS4EKzlSlmAJlP+ouZUR+i6eRc/ciL7fBSx2ZLIMRj0uleBm52hK12nSu2Aluuz+QGocUFeNCXygGwF6lLJVbACME5JlyT5SmwJudLWho2SWUbB3AuozPYsKeWrgv0lcK+/xRVDpJZveJOQGXl0ptapJ+wTWRClU1S9foU0eXL13lc0mxoyPXoq9GvflfOLSrP9TWH4qf68PJfJPVkQzk5P7jEf2Og19r6ucmnlDjUZfGRs21Nz3/EvAZB2a4NlLaXbH4BuxZ7W9uKxyWWAz1USNjL576xK9u3s7Gbh2YxpliijuVE/syk3td05guNx3LQWFosuqNprm9EQzFiknWgFpO3N6kvQYtmvEH5p5a5mRrBFcqLN9aMq66Wl3RdS4rryt6rUmoJfdpWRY3q1pLHISCzDAwsKUQ6wcbJDg3w1BWdLOYRIKpQyqqe5g+E4UE6ZvaAti2Jrrm63IG03kngbPP4s5/RDzMQZfOED33e7lEkeBrRS8k302KzJUomuV3WelEp4fJik2poQ9XH3uNbO88qf33213mhzEMn5NgTJpDuHTEb67AkDkrqx8k8wLJGun/jC9yxQJ9RYakWU8ouu/1/9ieAiopK4m9wvBkbJgXDXBlQzvp/va6T7sKsFCqgbBIPkjqM3pNx6YLu/f/M89KrP5LOAbu/1aBY1g="
+      }
+    },
+    "updated_at": "2023-03-29T15:55:30.926487178Z"
+  },
+  {
     "homepage_url": "https://mattermost.com/marketplace/app-framework",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-apps-v1.2.0.tar.gz",
@@ -7180,6 +7232,134 @@
       "windows-amd64": {}
     },
     "updated_at": "2019-06-03T13:56:22Z"
+  },
+  {
+    "homepage_url": "https://mattermost.gitbook.io/plugin-mscalendar",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiPgo8cGF0aCBkPSJNMTMxLjU4OSAxNjUuMDExQzEyNC41MSAxNjUuMDExIDExOC44NjkgMTY4LjMzOCAxMTQuNzA0IDE3NC45NzlDMTEwLjUzOSAxODEuNjIgMTA4LjQ1MSAxOTAuNDEzIDEwOC40NTEgMjAxLjM1NkMxMDguNDUxIDIxMi40NjMgMTEwLjUzOSAyMjEuMjQzIDExNC43MDQgMjI3LjY5NkMxMTguODY5IDIzNC4xNjIgMTI0LjMzNSAyMzcuMzc3IDEzMS4wODggMjM3LjM3N0MxMzguMDU1IDIzNy4zNzcgMTQzLjU4MyAyMzQuMjM3IDE0Ny42NiAyMjcuOTU5QzE1MS43MzggMjIxLjY4IDE1My43ODkgMjEyLjk2MyAxNTMuNzg5IDIwMS44MTlDMTUzLjc4OSAxOTAuMiAxNTEuODEzIDE4MS4xNTggMTQ3Ljg0OCAxNzQuNjkxQzE0My44ODMgMTY4LjIzOCAxMzguNDY4IDE2NS4wMTEgMTMxLjU4OSAxNjUuMDExWiIgZmlsbD0iIzAwNzJDNiIvPgo8cGF0aCBkPSJNMzMuMDMyNyA3Mi41MjExVjMyNy4zNTJMMjI2Ljg5MiAzNjhWMzVMMzMuMDMyNyA3Mi41MjExVjcyLjUyMTFaTTE2Mi43NTYgMjQzLjAxN0MxNTQuNTY0IDI1My43OTggMTQzLjg4MyAyNTkuMjAxIDEzMC43IDI1OS4yMDFDMTE3Ljg1NSAyNTkuMjAxIDEwNy40IDI1My45NzMgOTkuMzA3NSAyNDMuNTNDOTEuMjI4IDIzMy4wNzQgODcuMTc1NyAyMTkuNDY2IDg3LjE3NTcgMjAyLjY4MkM4Ny4xNzU3IDE4NC45NTkgOTEuMjc4IDE3MC42MjYgOTkuNDk1MSAxNTkuNjgzQzEwNy43MTIgMTQ4LjczOSAxMTguNTkzIDE0My4yNjEgMTMyLjEzOSAxNDMuMjYxQzE0NC45MzMgMTQzLjI2MSAxNTUuMjg5IDE0OC40ODkgMTYzLjE4MSAxNTguOTdDMTcxLjA4NSAxNjkuNDUxIDE3NS4wMzggMTgzLjI1OCAxNzUuMDM4IDIwMC40MDZDMTc1LjA1IDIxOC4wMjggMTcwLjk0OCAyMzIuMjM2IDE2Mi43NTYgMjQzLjAxN1oiIGZpbGw9IiMwMDcyQzYiLz4KPHJlY3QgeD0iMjYzIiB5PSIxNTgiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMyIgZmlsbD0iIzAwNzJDNiIvPgo8cmVjdCB4PSIyOTEiIHk9IjE1OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIzIiBmaWxsPSIjMDA3MkM2Ii8+CjxyZWN0IHg9IjMxOSIgeT0iMTU4IiB3aWR0aD0iMjIiIGhlaWdodD0iMjMiIGZpbGw9IiMwMDcyQzYiLz4KPHJlY3QgeD0iMjM1IiB5PSIxODgiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMyIgZmlsbD0iIzAwNzJDNiIvPgo8cmVjdCB4PSIyNjMiIHk9IjE4OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIzIiBmaWxsPSIjMDA3MkM2Ii8+CjxyZWN0IHg9IjI5MSIgeT0iMTg4IiB3aWR0aD0iMjIiIGhlaWdodD0iMjMiIGZpbGw9IiMwMDcyQzYiLz4KPHJlY3QgeD0iMzE5IiB5PSIxODgiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMyIgZmlsbD0iIzAwNzJDNiIvPgo8cmVjdCB4PSIyMzUiIHk9IjIxOCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIzIiBmaWxsPSIjMDA3MkM2Ii8+CjxyZWN0IHg9IjI2MyIgeT0iMjE4IiB3aWR0aD0iMjIiIGhlaWdodD0iMjMiIGZpbGw9IiMwMDcyQzYiLz4KPHJlY3QgeD0iMjkxIiB5PSIyMTgiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMyIgZmlsbD0iIzAwNzJDNiIvPgo8cmVjdCB4PSIzMTkiIHk9IjIxOCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIzIiBmaWxsPSIjMDA3MkM2Ii8+CjxyZWN0IHg9IjIzNSIgeT0iMjQ4IiB3aWR0aD0iMjIiIGhlaWdodD0iMjMiIGZpbGw9IiMwMDcyQzYiLz4KPHJlY3QgeD0iMjYzIiB5PSIyNDgiIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMyIgZmlsbD0iIzAwNzJDNiIvPgo8cmVjdCB4PSIyOTEiIHk9IjI0OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIzIiBmaWxsPSIjMDA3MkM2Ii8+CjwvZz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMzQgMTA3SDM1NEMzNTkuNTIzIDEwNyAzNjQgMTExLjQ3NyAzNjQgMTE3VjE0OVYyNjJWMjc5VjI4MkMzNjQgMjg3LjUyMyAzNTkuNTIzIDI5MiAzNTQgMjkySDIzNFYyODBIMzUxVjE0OUgyMzRWMTA3WiIgZmlsbD0iIzAwNzJDNiIvPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMCI+CjxyZWN0IHdpZHRoPSIzMjkuMzYiIGhlaWdodD0iMzMzIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzMuMDMyNyAzNSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-mscalendar-v1.2.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-mscalendar/releases/tag/v1.2.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQjQ7kACgkQ0bVLR6XO/sSQ8A/9HtglzlV1oAMXTOZKOxnKpRd0oMKaD30sXIfFKEIf77Mjq/n+J91UCstRVWIQjvZ1Qq5gOTNW4mns9t8a96LC4SBk3SERjBZHU9E+zxyGskRgXZfFdY5VT7dHKcG1lIGs5aYd2n375JYO9y56v0jIPMm2byPpe+8CyQ4nRHjeRSxlv13t0Zu2UQNeuBShEY+CGr9mKa39GspuVPwH5F/s7LQ+mGn7/IT6Sk/k2nPk4j/G5cgs/zq8yDHbNtn0TowdQ8N4sKZ+nJMeMrZ8CgNnIhFyd8odCRZAwm/yEqOJhtWD9rfBil7clMFQX9/9Gmptvi5XpTHGli1SDq9c/a8k7s4ydl3eM1gujpkDcFuWX8KFctoxyK2B3yEmh9vE21K9jqdLyJ+eXATWXPPRjNXN5EncXcu83PWM7M979mrY0v3uckcEMhmb+BJ/GtAju4Wf9RUwQcF4VgeTB2atsD2oU+ZtLi1lFcchwC837DY+cRYJFZ4ManqayM0qv3KO5BQpk4kF0KTQ2Vikj8FRwCYhxUYgNwvHwzM2W4fvTNCG0N2cWKjyeG5u+q+Na2YlE/1C+5JNByxjQ7949LA0xux9q0aQ10jb94zLsb1cfHZcnYrAspLw45JRMHgwHvlWVmg6x9zGpa8adfdhJKR5ztklhJhj9qucWRtOmkRIFwK2Xaw=",
+    "repo_name": "mattermost-plugin-mscalendar",
+    "manifest": {
+      "id": "com.mattermost.mscalendar",
+      "name": "Microsoft Calendar",
+      "description": "Microsoft Calendar Integration",
+      "homepage_url": "https://mattermost.gitbook.io/plugin-mscalendar",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-mscalendar/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-mscalendar/releases/tag/v1.2.0",
+      "icon_path": "assets/profile.svg",
+      "version": "1.2.0",
+      "min_server_version": "5.37.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "AdminUserIDs",
+            "display_name": "Admin User IDs:",
+            "type": "text",
+            "help_text": "List of users authorized to administer the plugin in addition to the System Admins. Must be a comma-separated list of user IDs.\n \n User IDs can be found in **System Console > User Management > Users**. Select the user's name, and the ID is displayed in the top-right corner of the banner.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "AdminLogLevel",
+            "display_name": "Copy plugin logs to admins, as bot messages:",
+            "type": "dropdown",
+            "help_text": "Select the log level.",
+            "placeholder": "",
+            "default": "none",
+            "options": [
+              {
+                "display_name": "None",
+                "value": "none"
+              },
+              {
+                "display_name": "Debug",
+                "value": "debug"
+              },
+              {
+                "display_name": "Info",
+                "value": "info"
+              },
+              {
+                "display_name": "Warning",
+                "value": "warn"
+              },
+              {
+                "display_name": "Error",
+                "value": "error"
+              }
+            ],
+            "hosting": ""
+          },
+          {
+            "key": "AdminLogVerbose",
+            "display_name": "Display full context for each admin log message:",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "OAuth2Authority",
+            "display_name": "Azure Directory (tenant) ID:",
+            "type": "text",
+            "help_text": "Directory (tenant) ID.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "OAuth2ClientId",
+            "display_name": "Azure Application (client) ID:",
+            "type": "text",
+            "help_text": "Microsoft Office Client ID.",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "OAuth2ClientSecret",
+            "display_name": "Microsoft Office Client Secret:",
+            "type": "text",
+            "help_text": "Microsoft Office Client Secret.",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-mscalendar-v1.2.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQjQ7YACgkQ0bVLR6XO/sTOsg/+LVOT6DbrWYhieyw2hbPCeHpW7GnIGC7uU7Qdxr/0Xh9dvwGjfLcHUp07D9oWWU1p20pSFZo/bP2raUVxlefDGiMEfIrmNI4jKxKAd7YXR4wF39bfUIO6ijsMxJHQTEJLDAnSMhUck3uH3qzxQjg43CUBLkyikvc8kBNg8v7W9pzJgKwZtcXcWpWwNYHcAy81NfOJKbvk+r0LA/7uShANBvW4OXs/F4A7BE1SXhHw9u9nVRo0vDD3iYrPKlgaoiyTnHXnPX2F1O7ThtqKGBR+ixBwRKkwwU1vaXuAiqvYesfFXAl2/3b2AWodfZ/7FaChewdMM5bpGv3BV9oU6xP63Zfupq1Rz9875QqhYwB53m3DtwixUvoo6SovpDOjrdYZf9SUaXZg1YXkgNIoXzdh1RY1I/ZzlGw0MDpQX9Q3ONEsWgTvIZ9H3klBX24lxiuKS2hKy9f78o3/vdZVBfrFMUEHaQXSRaVf20lP3qq/e5nxEvjb4Bqu43s4dwm2IOkicpwrzTpYxGHd9tS02Ro1dKTZtigZWsmKwg+TPURvyV39F6LPm+Q8H7V2nTFcwR7vuBhkT8/bEaqgkFq35D0/PF2O8MUTX9ZBoIx8F5yAEzNT9/KnMiSgnOrwhjwduwfrY5QMFIQ3wEZNaInrZbWHM3pKAaIhLaIPS5yr6mFoBvs="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-mscalendar-v1.2.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQjQ7MACgkQ0bVLR6XO/sTCjhAAlzsuC0/pL1NxSnvw8FOQQ+J9NYxkVR7XouJFBZIwIKMCBN2zi1rQcHPkjHUs2jYnECGu3QRudrcYUrjFppIkQRsllMDz07iM3uvMHRpE5wZUSQclMWnIyIwDMNh21mI5nHaJ2N1rcttacF19THTWgAv8ODd8Gk+U46FCkz3qEdPavyaz3g5VQwrGzQFFpLtHZVl9uQAvUSvzOg56ztUavB4a31me1hr8QbRHlOYNfNhB01fSk6JRVAZtOhibq6KSb1HXbLBrplGW5PPbFjhgYBIIUVztJvbda+a/LE2nMlmYOIZZx971bT8Z3v8GGhIecA1Wq5SRN/xmwWnmaDttaMNznOo83uSbwOQI6qK1HPiP9Uk3WRKAJScxTFPO7o83UDOcq5B9T4Md0/AGZ8TyLbzq4t1YayGYqfN3TQZH8HWjmbSv62W7zL+nhHkgaxuz48LcQudqmt8cDweqKFtgADMVNexE+bO/vKMubgrniz3IF0786M1IQwwdfcQNxjRN9bROCJxIfkeJeeQzDSSKR7X9UEPPkhNzY849EM1HRk2zGONy0Ihz49gxpPKDr0zYxXj/QwyW6L/yvq0xDDXsiink8KpFd22rZLQhN7DjTWwvhJng8K2w7ZIaG1KYrSxKGbUgXpQP3jkxmRm3nrAKaBNFS2j/q5qCY3JZBXSh8uA="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-mscalendar-v1.2.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQjQ7QACgkQ0bVLR6XO/sT9fw/+NLsZvO0wypHHHpap5Cp2aaBHiL25900hlwq29BEvFgMXQkrZR5Re2LeuazLda29fF8iTuxS6OCIP6rdHCi8OiLpFIvqT13WJOojrxtOQPOt5uaSIcsjRp6JeHJfIBZmBFJ1nXNXY3KQ0w+MqXDzfnVqbXcJnJw9wVgDhTd3yGwc10i7LK2PZV/onQuG/K/1SmExER+M5QjrqiKoJQo5CZfeO/TSUNuqZoiZot/+2pH2iS/fVPVtmrgUDQ51UrppNQbL+3CxEu7a4Q5Ws+8KgGn90p9pmuiaVpIWqDSmUOurlLwaaXTwR/AMBL10giaSYJEtlKY5wNq9gAiDzlSguhiNcCzYSAaqXKevdVGPjHhAVKTL9y8uLzJBYidpAPKuxiXeMyV3yMKpffWG2GPuD+5LycTT2xa4a9ofTGuBylolMwcqJE0Kynpgp6Upo1Qe9QmUeIEE10d68rNxzMkeLUdRaGF/CAPZdnvt/7DwamOQH7hALNziE/eoYx5c5Ky4SzY2CAmwobgze0/yn2KE+dJ4o3OYteMO0X5N0VZEW5aLiZfHw9o+maKCE6dmcQcNENolHlohjmaNgzkBbU1a2XSuni35JwiFQgXC0unHW3ZgKj9PhYhSoLmILYRPGaxknlC2iIq7DIWMyQPrtV7gUm9tgEQgQiE5zv4+94SnM9rA="
+      }
+    },
+    "updated_at": "2023-03-28T19:45:41.430399846Z"
   },
   {
     "homepage_url": "https://mattermost.gitbook.io/plugin-mscalendar",
@@ -14427,6 +14607,87 @@
       }
     },
     "updated_at": "2020-06-30T10:10:23.478337756Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTIiIGhlaWdodD0iNTIiIHZpZXdCb3g9IjAgMCA1MiA1MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMjEuNjUxNiIgeT0iNy40NzE5MSIgd2lkdGg9IjI3Ljc2MjIiIGhlaWdodD0iMTQuODk2OCIgZmlsbD0iIzE2NkRFMCIgZmlsbC1vcGFjaXR5PSIwLjEyIi8+CjxwYXRoIGQ9Ik0zOS40OTcyIDI5LjQ1NDZIMjQuNDc5NEMyMy45Mjc3IDI5LjQ1NDYgMjMuNDgwNiAyOS4wMjA0IDIzLjQ4MDYgMjguNDg1QzIzLjQ4MDYgMjcuOTQ5NiAyMy45Mjc3IDI3LjUxNTQgMjQuNDc5NCAyNy41MTU0SDM5LjQ5NzNDNDAuMDQ4OSAyNy41MTU0IDQwLjQ5NjEgMjcuOTQ5NiA0MC40OTYxIDI4LjQ4NUM0MC40OTYxIDI5LjAyMDQgNDAuMDQ4OCAyOS40NTQ2IDM5LjQ5NzIgMjkuNDU0NloiIGZpbGw9IiMxNDVEQkYiLz4KPHBhdGggZD0iTTMyLjc5ODggMzQuMTczNUgyNC40ODc2QzIzLjkzMTQgMzQuMTczNSAyMy40ODA2IDMzLjczOTQgMjMuNDgwNiAzMy4yMDM5QzIzLjQ4MDYgMzIuNjY4NSAyMy45MzE0IDMyLjIzNDQgMjQuNDg3NiAzMi4yMzQ0SDMyLjc5ODlDMzMuMzU1MSAzMi4yMzQ0IDMzLjgwNTkgMzIuNjY4NSAzMy44MDU5IDMzLjIwMzlDMzMuODA1OSAzMy43Mzk0IDMzLjM1NSAzNC4xNzM1IDMyLjc5ODggMzQuMTczNVoiIGZpbGw9IiMxNDVEQkYiLz4KPHBhdGggZD0iTTQ4LjA1NjggNi4xMTc2NUgyMy4yNTg3QzIxLjY0ODEgNi4xMTc2NSAyMC4zMzc4IDcuNDI5MjIgMjAuMzM3OCA5LjA0MTM2VjE2LjU3MjZINC40OTU3OUMyLjc1NDg4IDE2LjU3MjYgMS4zMzg1IDE3Ljk4OSAxLjMzODUgMTkuNzI5OVYzNy41ODlDMS4zMzg1IDQxLjA2OTMgMS4zMzg1IDQwLjc0NjMgMS4zMzg1IDQwLjc0NjNWNDYuNDUyOEMxLjMzODUgNDYuNzk5OCAxLjY3MjQ4IDQ3LjEyMDMgMS45NzMyNSA0Ny4yOTMzQzIuMTIyODYgNDcuMzc5NCAyLjI4OTczIDQ3LjQyMjQgMi40NTY1OSA0Ny40MjI0QzIuNjI1MTEgNDcuNDIyNCAyLjc5MzYyIDQ3LjM3ODUgMi45NDQzIDQ3LjI5MDhMMTEuMjgxIDQwLjc0NjVINDIuMjU3OUM0NC4wMDA0IDQwLjc0NjUgNDUuNDE3OSAzOS4zMzAxIDQ1LjQxNzkgMzcuNTg5MlYyMy44NjNINDguMDU2OEM0OS42Njg5IDIzLjg2MyA1MC45ODA1IDIyLjU1MjYgNTAuOTgwNSAyMC45NDJWOS4wNDEzNkM1MC45ODA1IDcuNDI5MjIgNDkuNjY4OSA2LjExNzY1IDQ4LjA1NjggNi4xMTc2NVpNNDMuNDc4NyAzNy41ODkxQzQzLjQ3ODcgMzguMjQ5NSA0Mi45MTk2IDM4LjgwNzIgNDIuMjU3OSAzOC44MDcySDExLjAxOTRDMTAuODQ4IDM4LjgwNzIgMTAuNjc5OCAzOC44NTI2IDEwLjUzMTcgMzguOTM4OEwzLjI3NzY5IDQ0Ljc2NjZWMzkuNzc2OEMzLjI3NzY5IDM3Ljc3MDYgMy4yNzc2OSAzOS45NTU1IDMuMjc3NjkgMzcuNTg5MVYxOS43M0MzLjI3NzY5IDE5LjA1ODIgMy44MjQxNSAxOC41MTE5IDQuNDk1NzkgMTguNTExOUgyMC4zMzc3VjIwLjk0MkMyMC4zMzc3IDIyLjU1MjYgMjEuNjQ4IDIzLjg2MyAyMy4yNTg2IDIzLjg2M0g0My40Nzg2TDQzLjQ3ODcgMzcuNTg5MVpNNDkuMDQxMyAyMC45NDJDNDkuMDQxMyAyMS40ODM0IDQ4LjU5OTYgMjEuOTIzOCA0OC4wNTY4IDIxLjkyMzhIMjMuMjU4N0MyMi43MTc0IDIxLjkyMzggMjIuMjc3IDIxLjQ4MzQgMjIuMjc3IDIwLjk0MlY5LjA0MTM2QzIyLjI3NyA4LjQ5ODQ5IDIyLjcxNzQgOC4wNTY4NCAyMy4yNTg3IDguMDU2ODRINDguMDU2OEM0OC41OTk3IDguMDU2ODQgNDkuMDQxMyA4LjQ5ODU4IDQ5LjA0MTMgOS4wNDEzNlYyMC45NDJaIiBmaWxsPSIjMTQ1REJGIi8+CjxwYXRoIGQ9Ik00My4wNzEyIDExLjE2MzdINDAuNDE2NEMzOC42NDE4IDExLjE2MzcgMzcuMTQ2IDEyLjM3OTMgMzYuNzE1OSAxNC4wMjJIMzQuNjAyMUMzNC4xNzE3IDEyLjM3OTMgMzIuNjc0OCAxMS4xNjM3IDMwLjg5ODkgMTEuMTYzN0gyOC4yNDRDMjYuMTMzMyAxMS4xNjM3IDI0LjQxNjEgMTIuODgwOSAyNC40MTYxIDE0Ljk5MTZDMjQuNDE2MSAxNy4xMDA4IDI2LjEzMzMgMTguODE2OCAyOC4yNDQgMTguODE2OEgzMC44OTg4QzMyLjY3NDQgMTguODE2OCAzNC4xNzExIDE3LjYwMjQgMzQuNjAxOCAxNS45NjEySDM2LjcxNkMzNy4xNDYzIDE3LjYwMjQgMzguNjQyIDE4LjgxNjggNDAuNDE2MyAxOC44MTY4SDQzLjA3MTFDNDUuMTgxOCAxOC44MTY4IDQ2Ljg5OSAxNy4xMDA4IDQ2Ljg5OSAxNC45OTE2QzQ2Ljg5OTEgMTIuODgwOSA0NS4xODE5IDExLjE2MzcgNDMuMDcxMiAxMS4xNjM3Wk0zMC44OTg4IDE2Ljg3NzdIMjguMjQ0QzI3LjIwMjYgMTYuODc3NyAyNi4zNTUzIDE2LjAzMTYgMjYuMzU1MyAxNC45OTE3QzI2LjM1NTMgMTMuOTUwMiAyNy4yMDI2IDEzLjEwMyAyOC4yNDQgMTMuMTAzSDMwLjg5ODhDMzEuNTg1NSAxMy4xMDMgMzIuMTg2IDEzLjQ3MjYgMzIuNTE2NiAxNC4wMjIxSDMxLjg3MTdDMzEuMzM2MiAxNC4wMjIxIDMwLjkwMjEgMTQuNDU2MyAzMC45MDIxIDE0Ljk5MTdDMzAuOTAyMSAxNS41MjcxIDMxLjMzNjIgMTUuOTYxMyAzMS44NzE3IDE1Ljk2MTNIMzIuNTE1N0MzMi4xODUgMTYuNTA5MiAzMS41ODUgMTYuODc3NyAzMC44OTg4IDE2Ljg3NzdaTTQzLjA3MTIgMTYuODc3N0g0MC40MTY0QzM5LjczMTMgMTYuODc3NyAzOS4xMzIyIDE2LjUwOTMgMzguODAxOCAxNS45NjEzSDM5LjQ0MzVDMzkuOTc5IDE1Ljk2MTMgNDAuNDEzMSAxNS41MjcxIDQwLjQxMzEgMTQuOTkxN0M0MC40MTMxIDE0LjQ1NjMgMzkuOTc5IDE0LjAyMjEgMzkuNDQzNSAxNC4wMjIxSDM4LjgwMDlDMzkuMTMxMSAxMy40NzI1IDM5LjczMDcgMTMuMTAzIDQwLjQxNjQgMTMuMTAzSDQzLjA3MTJDNDQuMTEyNyAxMy4xMDMgNDQuOTU5OSAxMy45NTAyIDQ0Ljk1OTkgMTQuOTkxN0M0NC45NTk5IDE2LjAzMTYgNDQuMTEyNyAxNi44Nzc3IDQzLjA3MTIgMTYuODc3N1oiIGZpbGw9IiMxNDVEQkYiLz4KPGNpcmNsZSBjeD0iMTMuNTI2IiBjeT0iMjguNDYyOCIgcj0iNS43ODk0MyIgc3Ryb2tlPSIjMTQ1REJGIiBzdHJva2Utd2lkdGg9IjEuOTYzNjciLz4KPGNpcmNsZSBjeD0iMTMuNTI2IiBjeT0iMjguNDYyOCIgcj0iNS40MTcwMSIgZmlsbD0iIzE2NkRFMCIgZmlsbC1vcGFjaXR5PSIwLjEyIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.4.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.4.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQjTNgACgkQ0bVLR6XO/sQI1RAAn2bvCUGZzz86u5TJk4axqcD3p5uv+NFrrNLfXqvdxLOwjrPgXWd8eFt6Aq+f0BqJlid4l2uW8a4GRTshv53d709pGmTNaLqy5P3VAUOYMJr9ySZ+9UiysV0fUtKPm5devLtnKm3833Ccp4PldaQSnxlXh0oPs9Pk893WDjBHszcSla41HJXMGHKnlgxo4CYmY5AJzUfrv4DMfI1DPR1ScoK5DHhvFgjQls/7O5AVl7lFORZkYrr3u400mAZNaCu4PhU5uCa56/EvO7qpiHbfqWX7oAKM9wmUU+i7EknQHnyqvdUgYvzc0ectpupZRM6DL6Ej/ybBDJy2cAfsghKAxrXG7ve2841uN+iS2VXf/120O4U8teDV/gpdo8Xto2Mi4IUwLi9799ERJ9ArQX6S0UcVEFzAgPozVIAf3x1iP5O0AjHVu+ul+3TotpP+nAMgO0+2LtBP4l8wFWZ1Hfp6/Am9+7a7VdlOVtbFuKr19aymmiYqZeI5MKeFGewe4MnBRaR0Xi5DHt1YnVrHNENBsE6219cXgJ8nhKLFEaYqGhqxd6pv/XMgSvxp2NBeq5EW0oJ1TMvmKX82lY5Cu4WV1vXXBACxjiNCZftTN87EgYu/59pQO8d7dYwMmSYhZCEX/hP6O/eJOJQROLyamkL6reqO+VUPQKxj6tuQfTBMY1Y=",
+    "repo_name": "mattermost-plugin-autolink",
+    "manifest": {
+      "id": "mattermost-autolink",
+      "name": "Autolink",
+      "description": "Automatically rewrite text matching a regular expression into a Markdown link.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-autolink/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-autolink/releases/tag/v1.4.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.4.0",
+      "min_server_version": "5.16.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the `config.json` file, or using the `/autolink` command. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-autolink/blob/master/README.md).\n\n To report an issue, make a suggestion, or contribute, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-autolink).",
+        "footer": "",
+        "settings": [
+          {
+            "key": "enableadmincommand",
+            "display_name": "Enable administration with /autolink command:",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": true,
+            "hosting": ""
+          },
+          {
+            "key": "enableonupdate",
+            "display_name": "Apply plugin to updated posts as well as new posts:",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "pluginadmins",
+            "display_name": "Admin User IDs:",
+            "type": "text",
+            "help_text": "Comma-separated list of user IDs authorized to administer the plugin in addition to the System Admins.\n \n User IDs can be found by navigating to **System Console > User Management > Users**.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.4.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQjTNYACgkQ0bVLR6XO/sS1Uw//TO0gwdaI1JRzjWwZ23/tLdhNlRnysWhaP9DVdJKojpQcnwerGYkADs+S2lZy9NI3gXEG98MjupQu4t79uowdKRXl16VGcCql9PUG37dbgslfwqsvIdua+vaDWf5DkLHEarOcsNhdEVkppUuORIpmvxXqaWWJ+jXFlFsBRDf/qDGGUKm9P2oTm6Db2B3DjOiKHvIiy3mRSdkp3GZ9Yx2Tyri1P/cTQJYNYkMMGdUvoSlZh1IMlKRBV6NdEdxRVDaoXxzhamHCVoqwwZS2Yt1TXM2z/IOE0wIFzEwKnvLoL/ul8ONydTvXX+myRkOGjtwbdgmP5KMiGwKAph9+WqlaUaIF7/eNtye8nCm076/JTL08ShXrYEBQpdyQ1scqpOIPT+wgSs9gn/FBTROQQXTiYGwWngrtpFrzoKc2jSkVlcy57LTcFQUn4ujgSkZEwcgKtALk5qUf4GtSVpDM7DHszO/AJyl+xWEQW3MgjPEIB86LA0LAuKW0T2kg917dJccU2WNMolH3MwxZwFL3x5b1Go9iYoc76Que7lY6EzFfpGTqX0UhNwDaPedGdmcimkLUxIBdjoiNzYJxlZSN3Kyn7zRZ9rqadP7nW3wIyE2iGwmAKXjzuCCF1llfzR5ZxLR6haKLepd38HRuH6TnbzZpO6EUmm+Yt7V+AqQd2h6KNVw="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.4.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQjTNMACgkQ0bVLR6XO/sQulg//Qcz9G9eet8I2LrplO6qhru6SkZmvdMpK7D6oKExezFCUN3XaLu8ekj36LRLpn7dxX78n/mw/HPPFmoO4TXpWkpPM2e8rrVYwP0i4Xc3Y22MZKSK1GNL32z0VbJOukssjaIYllZNeu5RaosAcHBdqiIQn5eCy2Cz9mxRYRVbbstMdnoM3fNckwGekr8lrUa+gIeaxQ6B1605EFahYmVNZxTb6MVMjJR1woHe4iY0DO3GowIIlpyYSYe5uz5LkHYDrxWQ01KCjSjgNvHBFMMvVafaNUh80vD2PmaLaovN+WPIXb+K8NlVKevH1BfYoUpulvplTXhfftDpH6Og3p10qe9lt+mi5STYwKMgBkVG0Iue/Ia/zYX5vNy5PEAGbZyWv+EuuD+G/SA3MEhhZvuoF0+uhRr5YiPAVO06f3Db5uQxUMYt3j2rQKfparING7QQt3HTNmTbrKdcz6pQM3Ztiqt0ndDkA6e+fjH/+1SvsO160nB+Ah6ceCV3yTYl2mD1CsX9bH41jhH/Ltmgw3+2GGK3YL61zuWYOcCZ5xZIZh2EnZbiA2XOV9//6t2DYgcJWD0yonXsHinCvLsuORx4V8oGAJzaEZG7DqTZQGAXd2bzlqJDUOKAmq/yZigaeMYZHqkBxGBAa7wJbnYoy1/XQdQ7tvqD1TFUuzsEHp6+LHq0="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-autolink-v1.4.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmQjTNUACgkQ0bVLR6XO/sQ6Sw/9EMr5JpXY9b4Js/IirsfVp1lchL6FQXA/TrfhEX4EFHq1hw8oCcRrSopYkYb5RJ8jZr0jSq6j/xWyy2k4/aEp1HoGGGAJtTAMrlW7llC2hDwiECR+Ntl1mf5UzYzZTZoNd9luIlZOD7iXHXANJNrXjsNmCf1pT0oiwZzDD7ag6af0dn7q0iG+XS8guExbSzeCDLprJadmKiIHnV+7q5DvWn69jycHbEDHbkVET+1tmKxbwvvvav1uwb5yrisdCSUlUg7lf8sV3BlOE+gsRm5YO05WOA4G1tlQu+KajCJD4jn9X5h98xOy3hKlEnm4qkyG9YuLWFqLFwpsZqQRXuJlRftY7RRpUrBVDaYXk4JCw8mAksCfpU/ErGysx6NhHlnDMCkV42MDJKXAr9RZjiAFi6OX1BIxiJOcblgMn8/uXH5yxPWu+I8PsUgqFk8xxAL2H2JzR++rjQNyYcaySW41GTPTB2z1b0Dfhky35yEjYRq1zdUjGyKWLYfjbK0sIUOU6XMIrhj2kRl6ZMoRCpuckZToQxTEKEZy0CRr8pbJjKLxVtrZZmdj48juom4/a5yaRc0tdJDWloK+bqMRulTMxvAPAmbdk4ylOHbd6LiPV8TNfYBoNYETFkFJd3D7iwzK7JHn/hJJQCFrgTjrE4n2/B+4hvQ6gFdaclW9mf0ciNs="
+      }
+    },
+    "updated_at": "2023-03-29T15:07:37.480762864Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-autolink",
