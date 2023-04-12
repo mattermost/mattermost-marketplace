@@ -32,7 +32,7 @@ func initHealthCheck(apiRouter *mux.Router, context *Context) {
 
 // handleHealthCheck responds to GET /api/v1/health,
 // returning information about the service and what commit was used to run it.
-func handleHealthCheck(c *Context, w http.ResponseWriter, r *http.Request) {
+func handleHealthCheck(c *Context, w http.ResponseWriter, _ *http.Request) {
 	buildInfo := make(map[string]string)
 	buildInfo["buildHash"] = buildHash
 	buildInfo["buildHashShort"] = buildHashShort
