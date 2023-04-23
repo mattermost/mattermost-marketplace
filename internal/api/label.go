@@ -19,7 +19,7 @@ func initLabels(apiRouter *mux.Router, context *Context) {
 }
 
 // handleGetPlugins responds to GET /api/v1/labels, returning a list of all defined labels.
-func handleGetLabels(c *Context, w http.ResponseWriter, r *http.Request) {
+func handleGetLabels(c *Context, w http.ResponseWriter, _ *http.Request) {
 	response := model.AllLabels
 
 	w.Header().Set("Content-Type", "application/json")
