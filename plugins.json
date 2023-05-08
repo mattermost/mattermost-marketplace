@@ -33,7 +33,8 @@
             "type": "text",
             "help_text": "The hostname and port to connect to clamd",
             "placeholder": "localhost:3310",
-            "default": "localhost:3310"
+            "default": "localhost:3310",
+            "hosting": ""
           },
           {
             "key": "ScanTimeoutSeconds",
@@ -41,7 +42,8 @@
             "type": "number",
             "help_text": "How long the virus scan can take before giving up.",
             "placeholder": "10",
-            "default": 10
+            "default": 10,
+            "hosting": ""
           }
         ]
       }
@@ -96,7 +98,8 @@
             "type": "text",
             "help_text": "The hostname and port to connect to clamd",
             "placeholder": "localhost:3310",
-            "default": "localhost:3310"
+            "default": "localhost:3310",
+            "hosting": ""
           },
           {
             "key": "ScanTimeoutSeconds",
@@ -104,7 +107,8 @@
             "type": "number",
             "help_text": "How long the virus scan can take before giving up.",
             "placeholder": "10",
-            "default": 10
+            "default": 10,
+            "hosting": ""
           }
         ]
       }
@@ -155,7 +159,8 @@
             "type": "bool",
             "help_text": "When user joins to a team, recommend bot is going to recommend interesting channels in that team.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RecommendOnJoinChannel",
@@ -163,7 +168,8 @@
             "type": "bool",
             "help_text": "When user joins to a channel, recommend bot is going to recommend other channels in the team based on the people in that channel.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ActivityThreshold",
@@ -171,7 +177,8 @@
             "type": "number",
             "help_text": "When the bot recommends you the most active channels, what is the time (in minutes) that is used to count activity. By default is a week. In instances with a lot of activity we recommend to adjust this to smaller value.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GracePeriod",
@@ -179,7 +186,8 @@
             "type": "number",
             "help_text": "Give a period of time since the user was created before start sending automatic messages on join.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -233,7 +241,8 @@
             "type": "text",
             "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
             "placeholder": "https://gitlab.com",
-            "default": "https://gitlab.com"
+            "default": "https://gitlab.com",
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientID",
@@ -241,7 +250,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientSecret",
@@ -249,7 +259,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -257,7 +268,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -265,7 +277,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabGroup",
@@ -273,7 +286,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
             "placeholder": "groupName",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -281,7 +295,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -343,7 +358,8 @@
             "type": "text",
             "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
             "placeholder": "https://gitlab.com",
-            "default": "https://gitlab.com"
+            "default": "https://gitlab.com",
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientID",
@@ -351,7 +367,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientSecret",
@@ -359,7 +376,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -367,7 +385,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -375,7 +394,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabGroup",
@@ -383,7 +403,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
             "placeholder": "groupName",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -391,7 +412,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -450,7 +472,8 @@
             "type": "text",
             "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
             "placeholder": "https://gitlab.com",
-            "default": "https://gitlab.com"
+            "default": "https://gitlab.com",
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientID",
@@ -458,7 +481,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientSecret",
@@ -466,7 +490,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -474,7 +499,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -482,7 +508,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabGroup",
@@ -490,7 +517,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
             "placeholder": "groupName",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -498,7 +526,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -557,7 +586,8 @@
             "type": "text",
             "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
             "placeholder": "https://gitlab.com",
-            "default": "https://gitlab.com"
+            "default": "https://gitlab.com",
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientID",
@@ -565,7 +595,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientSecret",
@@ -573,7 +604,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -581,7 +613,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -589,7 +622,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabGroup",
@@ -597,7 +631,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
             "placeholder": "groupName",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -605,7 +640,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -664,7 +700,8 @@
             "type": "text",
             "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
             "placeholder": "https://gitlab.com",
-            "default": "https://gitlab.com"
+            "default": "https://gitlab.com",
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientID",
@@ -672,7 +709,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientSecret",
@@ -680,7 +718,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -688,7 +727,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -696,7 +736,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabGroup",
@@ -704,7 +745,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
             "placeholder": "groupName",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -712,7 +754,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -762,7 +805,8 @@
             "type": "text",
             "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com",
             "placeholder": "https://gitlab.com",
-            "default": "https://gitlab.com"
+            "default": "https://gitlab.com",
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientID",
@@ -770,7 +814,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientSecret",
@@ -778,7 +823,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -786,7 +832,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitLab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -794,7 +841,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabGroup",
@@ -802,7 +850,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
             "placeholder": "groupName",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -810,7 +859,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -859,7 +909,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with Gitlab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientSecret",
@@ -867,7 +918,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with Gitlab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -875,7 +927,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in Gitlab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Username",
@@ -883,7 +936,8 @@
             "type": "username",
             "help_text": "Select the username of the user that the plugin will post with. This can be any user, the name and icon will be overridden when posting.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -891,7 +945,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabGroup",
@@ -899,7 +954,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single Gitlab group.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -907,7 +963,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a Gitlab Enterprise installation. Example: https://gitlab.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -915,7 +972,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -964,7 +1022,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with Gitlab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabOAuthClientSecret",
@@ -972,7 +1031,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with Gitlab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -980,7 +1040,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in Gitlab.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Username",
@@ -988,7 +1049,8 @@
             "type": "username",
             "help_text": "Select the username of the user that the plugin will post with. This can be any user, the name and icon will be overridden when posting.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -996,7 +1058,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitlabGroup",
@@ -1004,7 +1067,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single Gitlab group.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -1012,7 +1076,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a Gitlab Enterprise installation. Example: https://gitlab.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -1020,7 +1085,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories. Enabling private repositories will require existing users to reconnect their accounts to gain access to private repositories. A message will be automatically be sent to affected users next time they load Mattermost alerting them of this.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -1072,7 +1138,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing CircleCI integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -1080,7 +1147,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens. Regenerating the key will log out every user of their CircleCI account.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -1143,7 +1211,8 @@
             "type": "text",
             "help_text": "Trigger Word must be unique, and cannot begin with a slash or contain any spaces.",
             "placeholder": "",
-            "default": "poll"
+            "default": "poll",
+            "hosting": ""
           },
           {
             "key": "ExperimentalUI",
@@ -1151,7 +1220,8 @@
             "type": "bool",
             "help_text": "When true, Matterpoll will render poll posts with a rich UI. The rich UI is not available on mobile app.",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           }
         ]
       }
@@ -1272,7 +1342,8 @@
                 "display_name": "Collapsable image preview (the full URL is displayed, requires links preview to be activated)",
                 "value": "full_url"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "Provider",
@@ -1294,7 +1365,8 @@
                 "display_name": "Tenor (API Key required below)",
                 "value": "tenor"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -1302,7 +1374,8 @@
             "type": "text",
             "help_text": "Configure your own API Key (not required for Gfycat). To get your own API key, follow [these instructions for Giphy](https://developers.giphy.com/docs/api#quick-start-guide) or [these for Tenor](https://tenor.com/developer/keyregistration).",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Rating",
@@ -1328,7 +1401,8 @@
                 "display_name": "R",
                 "value": "r"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "RenditionGfycat",
@@ -1358,7 +1432,8 @@
                 "display_name": "Static preview image",
                 "value": "posterUrl"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "Rendition",
@@ -1424,7 +1499,8 @@
                 "display_name": "Duration set to loop for 15 seconds. Only recommended for this exact use case.",
                 "value": "looping"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "RenditionTenor",
@@ -1446,7 +1522,8 @@
                 "display_name": "Tiny: reduced size of the original format, up to 220 pixels wide, good for mobile",
                 "value": "tinygif"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "Language (GIPHY&Tenor only)",
@@ -1584,7 +1661,8 @@
                 "display_name": "Українська",
                 "value": "uk"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "DisablePostingWithoutPreview",
@@ -1592,7 +1670,8 @@
             "type": "bool",
             "help_text": "If deactivated, both /gif (no preview before posting) and /gifs (preview) will be available. This option is activated by default to prevent the accidental posting of inappropriate GIFs from a provider that does not allow content rating.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -1666,7 +1745,8 @@
                 "display_name": "Tenor (API Key required below)",
                 "value": "tenor"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -1674,7 +1754,8 @@
             "type": "text",
             "help_text": "Configure your own API Key (not required for Gfycat). To get your own API key, follow [these instructions for Giphy](https://developers.giphy.com/docs/api#quick-start-guide) or [these for Tenor](https://tenor.com/developer/keyregistration).",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Rating",
@@ -1700,7 +1781,8 @@
                 "display_name": "R",
                 "value": "r"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "RenditionGfycat",
@@ -1730,7 +1812,8 @@
                 "display_name": "Static preview image",
                 "value": "posterUrl"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "Rendition",
@@ -1796,7 +1879,8 @@
                 "display_name": "Duration set to loop for 15 seconds. Only recommended for this exact use case.",
                 "value": "looping"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "RenditionTenor",
@@ -1818,7 +1902,8 @@
                 "display_name": "Tiny: reduced size of the original format, up to 220 pixels wide, good for mobile",
                 "value": "tinygif"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "Language (GIPHY&Tenor only)",
@@ -1956,7 +2041,8 @@
                 "display_name": "Українська",
                 "value": "uk"
               }
-            ]
+            ],
+            "hosting": ""
           }
         ]
       }
@@ -2019,7 +2105,8 @@
             "type": "text",
             "help_text": "",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "DOAdmins",
@@ -2027,7 +2114,8 @@
             "type": "text",
             "help_text": "Users that are not system admins on Mattermost but have advanced plugin privileges",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "IMAPServer",
@@ -2035,7 +2123,8 @@
             "type": "text",
             "help_text": "Enable imap on your email provider. Example of Google's imap server is 'imap.gmail.com:993'. 933 is usually the default port",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "IMAPUsername",
@@ -2043,7 +2132,8 @@
             "type": "text",
             "help_text": "This is the same as your Digital Ocean alerts email. Usually the email address. Something like example@gmail.com.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "IMAPPassword",
@@ -2051,7 +2141,8 @@
             "type": "text",
             "help_text": "",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "CronConfig",
@@ -2081,7 +2172,8 @@
                 "display_name": "Every 1 hour",
                 "value": "*/60 * * * *"
               }
-            ]
+            ],
+            "hosting": ""
           }
         ]
       }
@@ -2194,7 +2286,8 @@
             "type": "text",
             "help_text": "The channel to send notifications to, specified in the format `teamname,channelname`. If the specified channel does not exist, the plugin will create the channel for you.\n \n Note: Must be the team and channel handle used in the URL. For example, in the following URL, set the value to `myteam,mychannel`: https://example.com/myteam/channels/mychannel.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "AllowedUserIds",
@@ -2202,7 +2295,8 @@
             "type": "text",
             "help_text": "List of users authorized to accept AWS SNS subscriptions to a Mattermost channel. Must be a comma-separated list of user IDs.\n \n Tip: Use the [mattermost user search](https://mattermost.com/pl/cli-mattermost-user-search) CLI command to determine a user ID.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Token",
@@ -2210,7 +2304,8 @@
             "type": "generated",
             "help_text": "Generated token to validate incoming requests from AWS SNS.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -2269,7 +2364,8 @@
             "type": "text",
             "help_text": "The channel to send notifications to, specified in the format `teamname,channelname`. If the specified channel does not exist, the plugin will create the channel for you.\n \nNote: Must be the team and channel handle used in the URL. For example, in the following URL, set the value to `myteam,mychannel`: https://example.com/myteam/channels/mychannel",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "AllowedUserIds",
@@ -2277,7 +2373,8 @@
             "type": "text",
             "help_text": "List of users authorized to accept AWS SNS subscriptions to a Mattermost channel. Must be a comma-separated list of user ID's.\n \nTip: Use the [mattermost user search](https://mattermost.com/pl/cli-mattermost-user-search) CLI command to determine a user ID.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Token",
@@ -2285,7 +2382,8 @@
             "type": "generated",
             "help_text": "Generated token to validate incoming requests from AWS SNS.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -2331,7 +2429,8 @@
             "type": "text",
             "help_text": "The channel to send notifications to, specified in the format `teamname,channelname`. If the specified channel does not exist, the plugin will create the channel for you.\n \nNote: Must be the team and channel handle used in the URL. For example, in the following URL, set the value to `myteam,mychannel`: https://example.com/myteam/channels/mychannel",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "AllowedUserIds",
@@ -2339,7 +2438,8 @@
             "type": "text",
             "help_text": "List of users authorized to accept AWS SNS subscriptions to a Mattermost channel. Must be a comma-separated list of user ID's.\n \nTip: Use the [mattermost user search](https://mattermost.com/pl/cli-mattermost-user-search) CLI command to determine a user ID.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Username",
@@ -2347,7 +2447,8 @@
             "type": "username",
             "help_text": "Select the username that this integration is attached to.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Token",
@@ -2355,7 +2456,8 @@
             "type": "generated",
             "help_text": "Generated token to validate incoming requests from AWS SNS.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -2410,7 +2512,8 @@
             "type": "text",
             "help_text": "The channel to send notifications to, specified in the format `teamname,channelname`. If the specified channel does not exist, the plugin will create the channel for you.\n\nNote: Must be the team and channel handle used in the URL. For example, in the following URL, set the value to `myteam,mychannel`: https://example.com/myteam/channels/mychannel",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "AllowedUserIds",
@@ -2418,7 +2521,8 @@
             "type": "text",
             "help_text": "List of users authorized to accept AWS SNS subscriptions to a Mattermost channel. Must be a comma-separated list of user ID's.\n\nTip: Use the [mattermost user search](https://mattermost.com/pl/cli-mattermost-user-search) CLI command to determine a user ID.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Username",
@@ -2426,7 +2530,8 @@
             "type": "username",
             "help_text": "Select the username that this integration is attached to.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Token",
@@ -2434,7 +2539,8 @@
             "type": "generated",
             "help_text": "Generated token to validate incoming requests from AWS SNS.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -2489,7 +2595,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing confluence integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -2550,7 +2657,8 @@
             "type": "custom",
             "help_text": "",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -2611,7 +2719,8 @@
             "type": "custom",
             "help_text": "",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -2841,7 +2950,8 @@
             "type": "text",
             "help_text": "List of users authorized to administer the plugin in addition to the System Admins. Must be a comma-separated list of user IDs.\n \nUser IDs can be found by navigating to **System Console** > **User Management**. After clicking into a user's name, their ID is on the right-hand side of the blue header.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "AdminLogLevel",
@@ -2871,7 +2981,8 @@
                 "display_name": "Error",
                 "value": "error"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "AdminLogVerbose",
@@ -2879,7 +2990,8 @@
             "type": "bool",
             "help_text": "",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "OAuth2Authority",
@@ -2887,7 +2999,8 @@
             "type": "text",
             "help_text": "Directory (tenant) ID",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "OAuth2ClientId",
@@ -2895,7 +3008,8 @@
             "type": "text",
             "help_text": "Microsoft Office Client ID.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "OAuth2ClientSecret",
@@ -2903,7 +3017,8 @@
             "type": "text",
             "help_text": "Microsoft Office Client Secret.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -2966,7 +3081,8 @@
             "type": "text",
             "help_text": "Copy the **Directory (tenant) ID** value from the App Overview Page in the Azure Portal.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "OAuth2ClientId",
@@ -2974,7 +3090,8 @@
             "type": "text",
             "help_text": "Copy the **Application (client) ID** value from the App Overview Page in the Azure Portal.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "OAuth2ClientSecret",
@@ -2982,7 +3099,8 @@
             "type": "text",
             "help_text": "Copy the **Client Secret** value (not ID) that was created on the App's **Certificates and Secrets** tab",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -3045,7 +3163,8 @@
             "type": "text",
             "help_text": "Directory (tenant) ID",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "OAuth2ClientId",
@@ -3053,7 +3172,8 @@
             "type": "text",
             "help_text": "Microsoft Office Client ID.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "OAuth2ClientSecret",
@@ -3061,7 +3181,8 @@
             "type": "text",
             "help_text": "Microsoft Office Client Secret.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -3123,7 +3244,8 @@
             "type": "bool",
             "help_text": "When true, a [user satisfaction survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://about.mattermost.com/default-privacy-policy) for more information on the collection and use of information received through our services.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -3185,7 +3307,8 @@
             "type": "bool",
             "help_text": "When true, a [user satisfaction survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://about.mattermost.com/default-privacy-policy) for more information on the collection and use of information received through our services.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -3244,7 +3367,8 @@
             "type": "bool",
             "help_text": "When true, a [user satisfaction survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://about.mattermost.com/default-privacy-policy) for more information on the collection and use of information received through our services.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -3303,7 +3427,8 @@
             "type": "bool",
             "help_text": "When true, a [net promoter score survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://mattermost.com/pl/default-nps-privacy-policy) for more information on the collection and use of information received through our services.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -3353,7 +3478,8 @@
             "type": "bool",
             "help_text": "When true, a [net promoter score survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://mattermost.com/pl/default-nps-privacy-policy) for more information on the collection and use of information received through our services.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -3403,7 +3529,8 @@
             "type": "bool",
             "help_text": "When true, a [net promoter score survey](!https://mattermost.com/pl/default-nps) will be sent to all users quarterly. The survey results will be used by Mattermost, Inc. to improve the quality and user experience of the product. Please refer to our [privacy policy](!https://mattermost.com/pl/default-nps-privacy-policy) for more information on the collection and use of information received through our services.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -3515,7 +3642,8 @@
             "type": "custom",
             "help_text": "",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -4117,7 +4245,8 @@
             "type": "bool",
             "help_text": "When true, the buttons in the team sidebar on the left toolbar will be hidden.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -4282,7 +4411,8 @@
             "type": "text",
             "help_text": "The hostname for your team's Webex site. For example: teamsite.webex.com",
             "placeholder": "teamsite.webex.com",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -4341,7 +4471,8 @@
             "type": "text",
             "help_text": "The hostname for your team's Webex site. For example: teamsite.webex.com",
             "placeholder": "teamsite.webex.com",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -4391,7 +4522,8 @@
             "type": "text",
             "help_text": "The hostname for your team's Webex site. For example: teamsite.webex.com",
             "placeholder": "teamsite.webex.com",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -4662,7 +4794,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitHubOAuthClientSecret",
@@ -4670,7 +4803,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -4678,7 +4812,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -4686,7 +4821,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GithubOrg",
@@ -4694,7 +4830,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -4702,7 +4839,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseUploadURL",
@@ -4710,7 +4848,8 @@
             "type": "text",
             "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -4718,7 +4857,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableCodePreview",
@@ -4740,7 +4880,8 @@
                 "display_name": "Disable",
                 "value": "disable"
               }
-            ]
+            ],
+            "hosting": ""
           }
         ]
       }
@@ -4803,7 +4944,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitHubOAuthClientSecret",
@@ -4811,7 +4953,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -4819,7 +4962,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -4827,7 +4971,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GithubOrg",
@@ -4835,7 +4980,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -4843,7 +4989,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseUploadURL",
@@ -4851,7 +4998,8 @@
             "type": "text",
             "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -4859,7 +5007,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableCodePreview",
@@ -4881,7 +5030,8 @@
                 "display_name": "Disable",
                 "value": "disable"
               }
-            ]
+            ],
+            "hosting": ""
           }
         ]
       }
@@ -4943,7 +5093,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitHubOAuthClientSecret",
@@ -4951,7 +5102,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -4959,7 +5111,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -4967,7 +5120,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GithubOrg",
@@ -4975,7 +5129,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -4983,7 +5138,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseUploadURL",
@@ -4991,7 +5147,8 @@
             "type": "text",
             "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -4999,7 +5156,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableCodePreview",
@@ -5007,7 +5165,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to expand permalinks to github files with an actual preview of the linked file.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5069,7 +5228,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitHubOAuthClientSecret",
@@ -5077,7 +5237,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -5085,7 +5246,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -5093,7 +5255,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GithubOrg",
@@ -5101,7 +5264,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -5109,7 +5273,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseUploadURL",
@@ -5117,7 +5282,8 @@
             "type": "text",
             "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -5125,7 +5291,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableCodePreview",
@@ -5133,7 +5300,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to expand permalinks to github files with an actual preview of the linked file.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5195,7 +5363,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitHubOAuthClientSecret",
@@ -5203,7 +5372,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -5211,7 +5381,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -5219,7 +5390,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GithubOrg",
@@ -5227,7 +5399,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -5235,7 +5408,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseUploadURL",
@@ -5243,7 +5417,8 @@
             "type": "text",
             "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -5251,7 +5426,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableCodePreview",
@@ -5259,7 +5435,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to expand permalinks to github files with an actual preview of the linked file.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5312,7 +5489,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitHubOAuthClientSecret",
@@ -5320,7 +5498,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -5328,7 +5507,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -5336,7 +5516,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GithubOrg",
@@ -5344,7 +5525,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -5352,7 +5534,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseUploadURL",
@@ -5360,7 +5543,8 @@
             "type": "text",
             "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -5368,7 +5552,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5418,7 +5603,8 @@
             "type": "text",
             "help_text": "The client ID for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GitHubOAuthClientSecret",
@@ -5426,7 +5612,8 @@
             "type": "text",
             "help_text": "The client secret for the OAuth app registered with GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -5434,7 +5621,8 @@
             "type": "generated",
             "help_text": "The webhook secret set in GitHub.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -5442,7 +5630,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "GithubOrg",
@@ -5450,7 +5639,8 @@
             "type": "text",
             "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseBaseURL",
@@ -5458,7 +5648,8 @@
             "type": "text",
             "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnterpriseUploadURL",
@@ -5466,7 +5657,8 @@
             "type": "text",
             "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnablePrivateRepo",
@@ -5474,7 +5666,8 @@
             "type": "bool",
             "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5534,7 +5727,8 @@
             "type": "text",
             "help_text": "The URL for your Jenkins instance. Must start with http:// or https://. For example: https://jenkins.example.com.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -5542,7 +5736,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5597,7 +5792,8 @@
             "type": "text",
             "help_text": "The URL for your Jenkins instance. Must start with http:// or https://. For example: https://jenkins.example.com.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -5605,7 +5801,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5660,7 +5857,8 @@
             "type": "text",
             "help_text": "The URL for your Jenkins instance. Must start with http:// or https://. For example: https://jenkins.example.com.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Username",
@@ -5668,7 +5866,8 @@
             "type": "username",
             "help_text": "Select the username of the user that the plugin will post with. This can be any user, the name and icon will be overridden when posting.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -5676,7 +5875,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5722,7 +5922,8 @@
             "type": "text",
             "help_text": "Specify the URL with the protocol. Either 'http' or 'https'.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Username",
@@ -5730,7 +5931,8 @@
             "type": "username",
             "help_text": "Select the username of the user that the plugin will post with. This can be any user, the name and icon will be overridden when posting.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -5738,7 +5940,8 @@
             "type": "generated",
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -5749,6 +5952,154 @@
       "windows-amd64": {}
     },
     "updated_at": "2019-05-07T16:53:35Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNzMuMjcgNzUuNzYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMjY4NGZmO30uY2xzLTJ7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fS5jbHMtM3tmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50LTIpO308L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMzQuNjQiIHkxPSIxNS4zNSIgeDI9IjE5IiB5Mj0iMzAuOTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAuMTgiIHN0b3AtY29sb3I9IiMwMDUyY2MiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyNjg0ZmYiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50LTIiIHgxPSIzOC43OCIgeTE9IjYwLjI4IiB4Mj0iNTQuMzkiIHkyPSI0NC42NyIgeGxpbms6aHJlZj0iI2xpbmVhci1ncmFkaWVudCIvPjwvZGVmcz48dGl0bGU+SmlyYSBTb2Z0d2FyZS1pY29uLWJsdWU8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJCbHVlIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik03Mi40LDM1Ljc2LDM5LjgsMy4xNiwzNi42NCwwaDBMMTIuMSwyNC41NGgwTC44OCwzNS43NkEzLDMsMCwwLDAsLjg4LDQwTDIzLjMsNjIuNDIsMzYuNjQsNzUuNzYsNjEuMTgsNTEuMjJsLjM4LS4zOEw3Mi40LDQwQTMsMywwLDAsMCw3Mi40LDM1Ljc2Wk0zNi42NCw0OS4wOGwtMTEuMi0xMS4yLDExLjItMTEuMiwxMS4yLDExLjJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuNjQsMjYuNjhBMTguODYsMTguODYsMCwwLDEsMzYuNTYuMDlMMTIuMDUsMjQuNTksMjUuMzksMzcuOTMsMzYuNjQsMjYuNjhaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDcuODcsMzcuODUsMzYuNjQsNDkuMDhhMTguODYsMTguODYsMCwwLDEsMCwyNi42OGgwTDYxLjIxLDUxLjE5WiIvPjwvZz48L2c+PC9zdmc+",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v3.2.5.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/tag/v3.2.5",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRYqLAACgkQ0bVLR6XO/sSxiA/8DGb9WfmBnAGz1weY3KnStLbr/luQUvboVFB5sd0uVCtmyTPKn+oVAB7ntLtgFb6W6FkpxBcXWnOrwNv35xLiMDP4HdP/wdA5lLQ7ywztNfU7+Ns7+eCDX1WksD/RPxjwoUZYegI5ztgI73tg+nBTCVQr2dji470TFM5YpegNA1Q2sMcIKCpeuAwo97DtJvxfSfy1+07RYBPWnvRMb9owVvEJpGzXf7H6mHeW81u6/U195tQEjkzETC5HbWCIq6dlQoy4pzE01KUvMTVr/3jeQmkYPTgSvd1YSZfcnlZG+hj26RGqRaadZfUhbTG9zNqrouLu/TVLeXWWGf0GQil7/Y4NM7hmE3Z4YiXwbFQIj4bUf2MJYeRcLiSls5t+1vT5U32+J9Z3vdVinYkrC7GPjGntWH6H/LKi5kLFphUeV53wPBhpmJpHv0OLMoDLAriUHUiUZflllD4Fr9N06NEZmrLgFjGbvqFegPwmQnvTrLh66+v0S/QntPuY91lVWQf5h8tt+gHKqF5tcbncFjFlSLXgWwDQVZ1TOYeVfxDJUJPAWJUrxeBCGDYX1bDg9h/Q55U6w0AkS2dna8wQTN75NRPpriKi5SwBo6p6jbEPX7xhcXukhpETa5FNx+bzbCHRVFw0rtqyllqcqaq3QuWClGE7xE8hu5iuV3v5LLQjqtI=",
+    "repo_name": "mattermost-plugin-jira",
+    "manifest": {
+      "id": "jira",
+      "name": "Jira",
+      "description": "Atlassian Jira plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-jira/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/tag/v3.2.5",
+      "icon_path": "assets/icon.svg",
+      "version": "3.2.5",
+      "min_server_version": "6.5.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Please refer to the `/jira` command [**documentation**](https://mattermost.gitbook.io/plugin-jira/setup/installation#step-2-install-app-on-jira-server) to further configure the Jira plugin.",
+        "footer": "Please refer to the `/jira` command [**documentation**](https://mattermost.gitbook.io/plugin-jira/setup/installation#step-2-install-app-on-jira-server) to further configure the Jira plugin. Specifically, [`/jira instance [un-]install`](https://mattermost.gitbook.io/plugin-jira/setup/installation#step-2-install-app-on-jira-server) and [`/jira webhook`](https://mattermost.gitbook.io/plugin-jira/setup/configuration#step-4-required-setup-webhooks-from-jira).",
+        "settings": [
+          {
+            "key": "EnableJiraUI",
+            "display_name": "Allow users to attach and create Jira issues in Mattermost:",
+            "type": "bool",
+            "help_text": "When **false**, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. Select **false** then disable and re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When **true**, install this plugin to your Jira instance with `/jira install` to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
+            "placeholder": "",
+            "default": true,
+            "hosting": ""
+          },
+          {
+            "key": "secret",
+            "display_name": "Webhook Secret:",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "RolesAllowedToEditJiraSubscriptions",
+            "display_name": "Mattermost Roles Allowed to Edit Jira Subscriptions:",
+            "type": "radio",
+            "help_text": "Mattermost users who can subscribe channels to Jira tickets.",
+            "placeholder": "",
+            "default": "system_admin",
+            "options": [
+              {
+                "display_name": "All users",
+                "value": "users"
+              },
+              {
+                "display_name": "Users who can manage channel settings",
+                "value": "channel_admin"
+              },
+              {
+                "display_name": "Users who can manage teams",
+                "value": "team_admin"
+              },
+              {
+                "display_name": "System Admins",
+                "value": "system_admin"
+              }
+            ],
+            "hosting": ""
+          },
+          {
+            "key": "GroupsAllowedToEditJiraSubscriptions",
+            "display_name": "Jira Groups Allowed to Edit Jira Subscriptions:",
+            "type": "text",
+            "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription. Jira groups restrictions are only applicable for a legacy instance installed on Jira 2.4 or earlier.",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "JiraAdminAdditionalHelpText",
+            "display_name": "Additional Help Text to be shown with Jira Help:",
+            "type": "text",
+            "help_text": "Additional Help Text to be shown to the user along with the output of `/jira help` command.",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "HideDecriptionComment",
+            "display_name": "Hide issue descriptions and comments:",
+            "type": "bool",
+            "help_text": "Hide detailed issue descriptions and comments from Subscription and Webhook messages",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "EnableAutocomplete",
+            "display_name": "Enable slash command autocomplete:",
+            "type": "bool",
+            "help_text": "Autocomplete guides users through the available `/jira` slash commands.",
+            "placeholder": "",
+            "default": true,
+            "hosting": ""
+          },
+          {
+            "key": "DisplaySubscriptionNameInNotifications",
+            "display_name": "Display subscription name in notifications:",
+            "type": "bool",
+            "help_text": "Display subscription name in post when a subscription posts to a channel",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v3.2.5-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRYqK0ACgkQ0bVLR6XO/sRcEQ//VU04iUsQ00Xktq6ub6B4w97K71PhxM3DaxpmJEDap24sO1WGeNxYGMAZzI2FAME/YSiRUVI+tePDF3VaMHo3wPvtbzUQQ69UsrDiz3NLZq2CMwhJjCrPL97x059sxsmvYfb0GTY9VieW1JTcRP9gTmv4rIqMlC5a5tw+zznSSLlizM7jkwaXE3R6yzpOMgxih/0FLw8L0ivFB+Ho54wfUakJnxz2+JeARXwJpmeTMI8GyVq7Td7qsYOIDSE/3xthZc4JxPXVKFyVLD8AzYVNncwl3Wwj758kEpNJi4NbkETr5wzq93fU4gEkxl2SvaZD90rpHoMr/7el/XSw5ZY4ZqLoGcmmnHRBJm8mcHQ9PufHxLgvmY2iQJ3F8JBpCXZDugWZ8wyQxZd5z7U0mLyYccYk3PI2eao2Gn6P2PFBppyq4R6mul/gt53PbO408YVip1pPGNlxn6DXTZBrN6l7w/c/kjwZQzxPfRmwGHSFClDDuSihY6rJY17nZKyqKs38G8kDNo2dF/YZoNc0iBZg2pQS2vJCeSv0v73yy88+5KzHFvCePNc6lKjaJjzlr//BTU/z2PXt1vUUmh1L4dHp3tq7H26ENBG0AWDFiFvatYpLKNSv1t8/4h6NvdRHqcIvPGFTZiAbQgVUQTmma+cBKXyKxA9DCvDdP12+j8sB9hg="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v3.2.5-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRYqKsACgkQ0bVLR6XO/sTUKQ//RL0YRDA9ir2owPXunDInH7vyvXQFaDj1Ex+x3voOJdyWqdOXqwEe8w/jEs2x/OUEgQTyetaUV4+9iYkmDa0uB82V42O8EY5F2vv9bRkmI+M/jbK1VUK0KOkTBy4fRP0NHtdQF089tJ+6qzvlDAZHgpqJjFk+n0wO+vEIXKhkzMGYSvRZ/eFu7hTK01MFbTXvyz9F2wTfCwSymqPNi/xkknbpTDcceNY/i4/UV6ku53JpBAANmJEWYGbQhjGqvdGeAEWNIJQyPZfN91utPUwdAYBSc5OhjYqlsYg0qEVrB/Fl2RV+XnWgvHJvVaYjJGbSA4LUw9bEOgRi1aN8wd03TfiMFva85Ad97PEI3Q8G7UmVw6BZroXaba+UbHFBiCi4Ow6fgrmxYoW6ItTJUaSyPOtjdFX7g5rUNJQCbgTNz3/LWQsiSqPpLrJ2IHQlMW4dFgE0Ac27X7ClaC0Gy1JvClbTTOF1mVOMLI9qxGAHoJGJU9Ruebk3Hpo2Y63nMRKTwU+50xAd0XaplUiED8VLQnqypJKDpxIt8/2VgkXJ6v6n6pYbwV2mqGGnG8Ls5Vuew/g+pbOFIL1y4K4B3vQShpVl/GGyP1yjfXydvojY4R98UzFzbrRgbXqxN4Mt80r6NiaCoxE0e/DGya9wJ2FLqfAXDBgTWdJVr7YHfGCbdS8="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v3.2.5-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRYqKwACgkQ0bVLR6XO/sT0Jg//YUwRGp9tONOElutFX1xkGDDVCfgLLC/+m6V7jOL+N/y2KCU6jZ951E6qqsHEIobq9Imt2INXNbfFACOODmaNjiCctz8GGuzMjx0JKN6muyOP8VF3mpg5YTziilHS/DuW1Dkd0ZgwViHPXgoZSgGa6uRlVihWrX0dWgliZAnoLAhYfsIegk/5AaT8UoGy6VU9XGJ/wUMNtV/dDZ3kCKt08I7owYL/cgYkob8nzyVJG/O55S+NlfY9pzjbHwIyWfKuGxJu0id5VpTUbVQDOCmxhxrSfRAV6pIFLP4ZpohQF7oSHox11uFZ8i2FWXxgJ4p5etG/A9R5hUaokadm+0fQKMURf4weu5Wxo/9kDvnEB7I5EuRIkQeKdIHxAj50TRG2VKhncbsn9EIZP58MpNq9T5a8QXbvxhLcGpQHXiPyzoQwff4lcJFH/0YyWTMh3FqDPuK1UNkV8Cbx01QfsQxv1aXq+uTZdLdjPSocIV/N5nhjeDRpszTGgtThJwX1aGJHC00IjTbgAL5oPFXwHTBgMeZsyKbDGvFhXSktkEEriTnUTcAEa/7MYQZWYjotS6+mBls5XIbNqT7kqmIQa2gTi6at3m9AZpwN/punKNoFj+hrRoihIEPIF4OsDF91hWiMZyo1IytBC6hiCndaRj2K43w14VFHvjDR/f9m9216tzk="
+      }
+    },
+    "updated_at": "2023-05-08T08:32:52.747897Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
@@ -5792,7 +6143,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -5801,7 +6153,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "StatsSecret",
@@ -5810,7 +6163,8 @@
             "help_text": "The secret used to access plugin's stats API.",
             "regenerate_help_text": "Regenerates the secret for the stats API endpoint. Regenerating the secret invalidates your existing stats API clients.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -5836,7 +6190,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -5844,7 +6199,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription. Jira groups restrictions are only applicable for a legacy instance installed on Jira 2.4 or earlier.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "JiraAdminAdditionalHelpText",
@@ -5852,7 +6208,8 @@
             "type": "text",
             "help_text": "Additional Help Text to be shown to the user along with the output of `/jira help` command",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "HideDecriptionComment",
@@ -5860,7 +6217,8 @@
             "type": "bool",
             "help_text": "Hide detailed issue descriptions and comments from Subscription and Webhook messages",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "EnableAutocomplete",
@@ -5868,7 +6226,8 @@
             "type": "bool",
             "help_text": "Autocomplete guides users through the available `/jira` slash commands",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -5931,7 +6290,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -5940,7 +6300,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "StatsSecret",
@@ -5949,7 +6310,8 @@
             "help_text": "The secret used to access plugin's stats API.",
             "regenerate_help_text": "Regenerates the secret for the stats API endpoint. Regenerating the secret invalidates your existing stats API clients.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -5975,7 +6337,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -5983,7 +6346,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription. Jira groups restrictions are only applicable for a legacy instance installed on Jira 2.4 or earlier.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "JiraAdminAdditionalHelpText",
@@ -5991,7 +6355,8 @@
             "type": "text",
             "help_text": "Additional Help Text to be shown to the user along with the output of `/jira help` command",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "HideDecriptionComment",
@@ -5999,7 +6364,8 @@
             "type": "bool",
             "help_text": "Hide detailed issue descriptions and comments from Subscription and Webhook messages",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "EnableAutocomplete",
@@ -6007,7 +6373,8 @@
             "type": "bool",
             "help_text": "Autocomplete guides users through the available `/jira` slash commands",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           }
         ]
       }
@@ -6069,7 +6436,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6078,7 +6446,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "StatsSecret",
@@ -6087,7 +6456,8 @@
             "help_text": "The secret used to access plugin's stats API.",
             "regenerate_help_text": "Regenerates the secret for the stats API endpoint. Regenerating the secret invalidates your existing stats API clients.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6113,7 +6483,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6121,7 +6492,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "JiraAdminAdditionalHelpText",
@@ -6129,7 +6501,8 @@
             "type": "text",
             "help_text": "Additional Help Text to be shown to the user along with the output of `/jira help` command",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "HideDecriptionComment",
@@ -6137,7 +6510,8 @@
             "type": "bool",
             "help_text": "Hide detailed issue descriptions and comments from Subscription and Webhook messages",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           }
         ]
       }
@@ -6196,7 +6570,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6205,7 +6580,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "StatsSecret",
@@ -6214,7 +6590,8 @@
             "help_text": "The secret used to access plugin's stats API.",
             "regenerate_help_text": "Regenerates the secret for the stats API endpoint. Regenerating the secret invalidates your existing stats API clients.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6240,7 +6617,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6248,7 +6626,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           },
           {
             "key": "JiraAdminAdditionalHelpText",
@@ -6256,7 +6635,8 @@
             "type": "text",
             "help_text": "Additional Help Text to be shown to the user along with the output of `/jira help` command",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -6315,7 +6695,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6324,7 +6705,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "StatsSecret",
@@ -6333,7 +6715,8 @@
             "help_text": "The secret used to access plugin's stats API.",
             "regenerate_help_text": "Regenerates the secret for the stats API endpoint. Regenerating the secret invalidates your existing stats API clients.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6359,7 +6742,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6367,7 +6751,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -6417,7 +6802,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6426,7 +6812,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6452,7 +6839,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6460,7 +6848,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -6510,7 +6899,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6519,7 +6909,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6545,7 +6936,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6553,7 +6945,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -6603,7 +6996,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6612,7 +7006,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6638,7 +7033,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6646,7 +7042,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -6696,7 +7093,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6705,7 +7103,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6731,7 +7130,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6739,7 +7139,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -6789,7 +7190,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6798,7 +7200,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6824,7 +7227,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6832,7 +7236,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -6882,7 +7287,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6891,7 +7297,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "RolesAllowedToEditJiraSubscriptions",
@@ -6917,7 +7324,8 @@
                 "display_name": "System Admins",
                 "value": "system_admin"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "GroupsAllowedToEditJiraSubscriptions",
@@ -6925,7 +7333,8 @@
             "type": "text",
             "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription.",
             "placeholder": "",
-            "default": ""
+            "default": "",
+            "hosting": ""
           }
         ]
       }
@@ -6974,7 +7383,8 @@
             "type": "username",
             "help_text": "Select the username that this integration is attached to.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableJiraUI",
@@ -6982,7 +7392,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -6991,7 +7402,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing JIRA integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -7040,7 +7452,8 @@
             "type": "username",
             "help_text": "Select the username that this integration is attached to.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableJiraUI",
@@ -7048,7 +7461,8 @@
             "type": "bool",
             "help_text": "When false, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. After changing this setting to false, disable, then re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When true, install this plugin to your Jira instance with '/jira install’ to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -7057,7 +7471,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing JIRA integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -7103,7 +7518,8 @@
             "type": "bool",
             "help_text": "When true, you can configure JIRA webhooks to post message in Mattermost. To help combat phishing attacks, all posts are labelled by a BOT tag.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "UserName",
@@ -7111,7 +7527,8 @@
             "type": "username",
             "help_text": "Select the username that this integration is attached to.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -7120,7 +7537,8 @@
             "help_text": "This secret is used to authenticate to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing JIRA integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -7166,7 +7584,8 @@
             "type": "bool",
             "help_text": "When true, you can configure JIRA webhooks to post message in Mattermost. To help combat phishing attacks, all posts are labelled by a BOT tag.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "UserName",
@@ -7174,7 +7593,8 @@
             "type": "username",
             "help_text": "Select the username that this integration is attached to.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -7183,7 +7603,8 @@
             "help_text": "This secret is used to authenticate to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing JIRA integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -7229,7 +7650,8 @@
             "type": "bool",
             "help_text": "When true, you can configure JIRA webhooks to post message in Mattermost. To help combat phishing attacks, all posts are labelled by a BOT tag.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "UserName",
@@ -7237,7 +7659,8 @@
             "type": "username",
             "help_text": "Select the username that this integration is attached to.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -7246,7 +7669,8 @@
             "help_text": "This secret is used to authenticate to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing JIRA integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -7292,7 +7716,8 @@
             "type": "bool",
             "help_text": "When true, you can configure JIRA webhooks to post message in Mattermost. To help combat phishing attacks, all posts are labelled by a BOT tag.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "UserName",
@@ -7300,7 +7725,8 @@
             "type": "username",
             "help_text": "Select the username that this integration is attached to.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Secret",
@@ -7309,7 +7735,8 @@
             "help_text": "This secret is used to authenticate to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing JIRA integrations.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -7363,7 +7790,8 @@
             "type": "text",
             "help_text": "The URL for your Jitsi server, for example https://jitsi.example.com. Defaults to https://meet.jit.si, which is the public server provided by Jitsi.",
             "placeholder": "https://meet.jit.si",
-            "default": "https://meet.jit.si"
+            "default": "https://meet.jit.si",
+            "hosting": ""
           },
           {
             "key": "JitsiEmbedded",
@@ -7371,7 +7799,8 @@
             "type": "bool",
             "help_text": "(Experimental) When true, Jitsi video is embedded as a floating window inside Mattermost by default. Users can override this setting with '/jitsi settings'",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "JitsiNamingScheme",
@@ -7397,7 +7826,8 @@
                 "display_name": "Allow user to select meeting name",
                 "value": "ask"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "JitsiJWT",
@@ -7405,7 +7835,8 @@
             "type": "bool",
             "help_text": "(Optional) If your Jitsi server uses JSON Web Tokens (JWT) for authentication, set this value to true.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "JitsiAppID",
@@ -7413,7 +7844,8 @@
             "type": "text",
             "help_text": "(Optional) The App ID used for authentication by the Jitsi server and JWT token generator.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "JitsiAppSecret",
@@ -7421,7 +7853,8 @@
             "type": "text",
             "help_text": "(Optional) The App Secret used for authentication by the Jitsi server and JWT token generator.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "JitsiLinkValidTime",
@@ -7429,7 +7862,8 @@
             "type": "number",
             "help_text": "(Optional) The number of minutes from when the meeting link is created to when it becomes invalid. Minimum is 1 minute. Only applies if using JWT authentication for your Jitsi server.",
             "placeholder": "",
-            "default": 30
+            "default": 30,
+            "hosting": ""
           },
           {
             "key": "JitsiCompatibilityMode",
@@ -7437,7 +7871,8 @@
             "type": "bool",
             "help_text": "(Insecure) If your Jitsi server is not compatible with this plugin, include the JavaScript API hosted on your Jitsi server directly in Mattermost instead of the default API version provided by the plugin. **WARNING:** Enabling this setting can compromise the security of your Mattermost system, if your Jitsi server is not fully trusted and allows direct modification of program files. Use with caution.",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           }
         ]
       }
@@ -7495,7 +7930,8 @@
             "type": "bool",
             "help_text": "",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "EnableOnUpdate",
@@ -7503,7 +7939,8 @@
             "type": "bool",
             "help_text": "",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "PluginAdmins",
@@ -7511,7 +7948,8 @@
             "type": "text",
             "help_text": "Comma-separated list of userIDs authorized to administer the plugin in addition to the System Admins.\n \nUser IDs can be found by navigating to **System Console** > **Users**.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -7569,7 +8007,8 @@
             "type": "bool",
             "help_text": "",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "EnableOnUpdate",
@@ -7577,7 +8016,8 @@
             "type": "bool",
             "help_text": "",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "PluginAdmins",
@@ -7585,7 +8025,8 @@
             "type": "text",
             "help_text": "Comma-separated list of userIDs authorized to administer the plugin in addition to the System Admins.\n \nUser IDs can be found by navigating to **System Console** > **Users**.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -7641,7 +8082,8 @@
             "type": "bool",
             "help_text": "",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           }
         ]
       }
@@ -7697,7 +8139,8 @@
             "type": "bool",
             "help_text": "",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           }
         ]
       }
@@ -7743,7 +8186,8 @@
             "type": "bool",
             "help_text": "",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           }
         ]
       }
@@ -7867,7 +8311,8 @@
             "type": "bool",
             "help_text": "If set the plugin will reject posts containing profanity instead of censoring.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WarningMessage",
@@ -7875,7 +8320,8 @@
             "type": "text",
             "help_text": "If Reject Posts is enabled, this message will be sent to the user to warn him. Place `%s` where you want to cite the forbidden word in the message. Markdown formatted.",
             "placeholder": "Ex. Your post has been rejected by the Profanity Filter, because the following word is not allowed: `%s`.",
-            "default": "Your post has been rejected by the Profanity Filter, because the following word is not allowed: `%s`."
+            "default": "Your post has been rejected by the Profanity Filter, because the following word is not allowed: `%s`.",
+            "hosting": ""
           },
           {
             "key": "CensorCharacter",
@@ -7883,7 +8329,8 @@
             "type": "text",
             "help_text": "The character(s) to use to censor profanity. Censored words' letters will be replaced with this character. Note that markdown will be interpreted. You can escape markdown character with a backslash. For using `*` you type `\\*`.",
             "placeholder": "Ex. \\*",
-            "default": "\\*"
+            "default": "\\*",
+            "hosting": ""
           },
           {
             "key": "BadWordsList",
@@ -7891,7 +8338,8 @@
             "type": "longtext",
             "help_text": "The words to censor, separated by commas. Accentuation and punctuation insensitive. [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression) are interpreted: if you want to censor characters as `.`, `?`, `*`, `{`, `}`, `[`, `]`, please double-escape them like `\\\\.`",
             "placeholder": "",
-            "default": "4r5e,5h1t,5hit,a55,anal,anus,ar5e,arrse,arse,ass(es)?,ass[-]?fucker,assfukka,assholes?,asswhole,a_s_s,b!tch,b17ch,b1tch,ballbag,ballsack,bastard,beastial,beastiality,bellend,bestial,bestiality,bi+ch,biatch,bitch,bitcher,bitchers,bitches,bitchin,bitching,bloody,blow[ ]?jobs?,boiolas,bollock,bollok,boner,b[o0][o0]+bs?,breasts,buceta,bugger,bum,bunny fucker,butt,butt[ ]?hole,buttmuch,buttplug,c[0o]cks?,c0cksucker,carpet muncher,cawk,chink,cipa,cl[i1]t,clitoris,clits,cnut,cock-sucker,cockface,cockhead,cockmunch,cockmuncher,cocksucks?,cocksucked,cocksucker,cocksucking,cocksuka,cocksukka,cok,cokmuncher,coksucka,coon,cox,crap,cums?,cummer,cumming,cumshot?,cunilingus,cunillingus,cunnilingus,cunt,cuntlick,cuntlicker,cuntlicking,cunts,cyalis,cyberfuc,cyberfuck,cyberfucked,cyberfucker,cyberfuckers,cyberfucking,d1ck,damn,dick,dickhead,dildo,dildos,dink,dinks,dirsa,dlck,dog-fucker,doggin,dogging,donkeyribber,doosh,duche,dyke,ejaculate,ejaculated,ejaculates,ejaculating,ejaculatings,ejaculation,ejakulate,f[[:space:]]*u[[:space:]]*c[[:space:]]*k,f[[:space:]]*u[[:space:]]*c[[:space:]]*k[[:space:]]*e[[:space:]]*r,f4nny,fag,fagging,faggitt,faggot,faggs,fagot,fagots,fags,fanny,fannyflaps,fannyfucker,fanyy,fatass,fcuk,fcuker,fcuking,feck,fecker,felching,fellate,fellatio,fingerfuck,fingerfucked,fingerfucker,fingerfuckers,fingerfucking,fingerfucks,fistfuck,fistfucked,fistfucker,fistfuckers,fistfucking,fistfuckings,fistfucks,flange,fook,fooker,fuck,fucka,fucked,fucker,fuckers,fuckhead,fuckheads,fuckin,fucking,fuckings,fuckingshitmother[[:space:]]*fucker,fuckme,fucks,fuckwhit,fuckwit,fudge packer,fudgepacker,fuk,fuker,fukker,fukkin,fuks,fukwhit,fukwit,fux,fux0r,f_u_c_k,gangbang,gangbanged,gangbangs,gaylord,gaysex,goatse,God,god-dam,god-damned,goddamn,goddamned,hardcoresex,hell,heshe,hoar,hoare,hoer,homo,hore,horniest,horny,hotsex,jack-off,jackoff,jap,jerk-off,jism,jiz,jizm,jizz,kawk,knob,knobead,knobed,knobend,knobhead,knobjocky,knobjokey,kock,kondum,kondums,kum,kummer,kumming,kums,kunilingus,l3i\\+ch,l3itch,labia,lust,lusting,m0f0,m0fo,m[a4][s5]terb(at[3e]|8),ma5terbate,masochist,master-bate,masterbations?,mo-fo,mof[o0],motha[[:space:]]*fuck,motha[[:space:]]*fuckas?,motha[[:space:]]*fuckaz,motha[[:space:]]*fucked,motha[[:space:]]*fuckers?,motha[[:space:]]*fuckin,motha[[:space:]]*fucking,motha[[:space:]]*fuckings,motha[[:space:]]*fucks,mother[[:space:]]*fuck,mother[[:space:]]*fucked,mother fucker,mother fuckers,mother fuckin,mother fucking,mother fuckings,mother fuckka,mother fucks,mother[[:space:]]*fucker,mother[[:space:]]*fuckers,mother[[:space:]]*fuckin,mother[[:space:]]*fucking,mother[[:space:]]*fuckings,mother[[:space:]]*fuckka,mother[[:space:]]*fucks,muff,mutha,muthafecker,muthafuckker,muther,mutherfucker,n[i1]gg[ea3]r?s?,niggaz,nob,nob jokey,nobhead,nobjocky,nobjokey,numbnuts,nutsack,orgasims?,orgasms?,p[o0]rno?s?,pawn,pecker,penis,penisfucker,phonesex,phuck,phuk,phuked,phuking,phukked,phukking,phuks,phuq,pigfucker,pimpis,piss,pissed,pisser,pissers,pisses,pissflaps,pissin,pissing,pissoff,poop,pornography,prick,pricks,pron,pube,pusse,puss[iy]e?s?,rectum,retard,rimjaw,rimming,s[[:space:]]*h[[:space:]]*i[[:space:]]*t,s\\.o\\.b\\.,sadist,schlong,screwing,scroat,scrote,scrotum,semen,sex,shag,shagger,shaggin,shagging,shemale,sh[i1!][t+]s?,shitdick,shite,shited,shitey,shitfuck,shitfull,shithead,shiting,shitings,shitted,shitter,shitters,shitting,shittings,shitty,skank,sluts?,smegma,smut,snatch,son-of-a-bitch,spac,spunk,t1tt1e5,t1tties,teets,teez,testical,testicle,tits?,titfuck,titt,tittie5,tittiefucker,titties?,tittyfuck,tittywank,titwank,tosser,turd,tw[4a]t,twathead,twatty,twunt,twunter,v14gra,v1gra,vagina,viagra,vulva,w00se,wang,wank,wanker,wanky,whoar,whores?,willies,willy,xrated,x[[:space:]]*x[[:space:]]*x"
+            "default": "4r5e,5h1t,5hit,a55,anal,anus,ar5e,arrse,arse,ass(es)?,ass[-]?fucker,assfukka,assholes?,asswhole,a_s_s,b!tch,b17ch,b1tch,ballbag,ballsack,bastard,beastial,beastiality,bellend,bestial,bestiality,bi+ch,biatch,bitch,bitcher,bitchers,bitches,bitchin,bitching,bloody,blow[ ]?jobs?,boiolas,bollock,bollok,boner,b[o0][o0]+bs?,breasts,buceta,bugger,bum,bunny fucker,butt,butt[ ]?hole,buttmuch,buttplug,c[0o]cks?,c0cksucker,carpet muncher,cawk,chink,cipa,cl[i1]t,clitoris,clits,cnut,cock-sucker,cockface,cockhead,cockmunch,cockmuncher,cocksucks?,cocksucked,cocksucker,cocksucking,cocksuka,cocksukka,cok,cokmuncher,coksucka,coon,cox,crap,cums?,cummer,cumming,cumshot?,cunilingus,cunillingus,cunnilingus,cunt,cuntlick,cuntlicker,cuntlicking,cunts,cyalis,cyberfuc,cyberfuck,cyberfucked,cyberfucker,cyberfuckers,cyberfucking,d1ck,damn,dick,dickhead,dildo,dildos,dink,dinks,dirsa,dlck,dog-fucker,doggin,dogging,donkeyribber,doosh,duche,dyke,ejaculate,ejaculated,ejaculates,ejaculating,ejaculatings,ejaculation,ejakulate,f[[:space:]]*u[[:space:]]*c[[:space:]]*k,f[[:space:]]*u[[:space:]]*c[[:space:]]*k[[:space:]]*e[[:space:]]*r,f4nny,fag,fagging,faggitt,faggot,faggs,fagot,fagots,fags,fanny,fannyflaps,fannyfucker,fanyy,fatass,fcuk,fcuker,fcuking,feck,fecker,felching,fellate,fellatio,fingerfuck,fingerfucked,fingerfucker,fingerfuckers,fingerfucking,fingerfucks,fistfuck,fistfucked,fistfucker,fistfuckers,fistfucking,fistfuckings,fistfucks,flange,fook,fooker,fuck,fucka,fucked,fucker,fuckers,fuckhead,fuckheads,fuckin,fucking,fuckings,fuckingshitmother[[:space:]]*fucker,fuckme,fucks,fuckwhit,fuckwit,fudge packer,fudgepacker,fuk,fuker,fukker,fukkin,fuks,fukwhit,fukwit,fux,fux0r,f_u_c_k,gangbang,gangbanged,gangbangs,gaylord,gaysex,goatse,God,god-dam,god-damned,goddamn,goddamned,hardcoresex,hell,heshe,hoar,hoare,hoer,homo,hore,horniest,horny,hotsex,jack-off,jackoff,jap,jerk-off,jism,jiz,jizm,jizz,kawk,knob,knobead,knobed,knobend,knobhead,knobjocky,knobjokey,kock,kondum,kondums,kum,kummer,kumming,kums,kunilingus,l3i\\+ch,l3itch,labia,lust,lusting,m0f0,m0fo,m[a4][s5]terb(at[3e]|8),ma5terbate,masochist,master-bate,masterbations?,mo-fo,mof[o0],motha[[:space:]]*fuck,motha[[:space:]]*fuckas?,motha[[:space:]]*fuckaz,motha[[:space:]]*fucked,motha[[:space:]]*fuckers?,motha[[:space:]]*fuckin,motha[[:space:]]*fucking,motha[[:space:]]*fuckings,motha[[:space:]]*fucks,mother[[:space:]]*fuck,mother[[:space:]]*fucked,mother fucker,mother fuckers,mother fuckin,mother fucking,mother fuckings,mother fuckka,mother fucks,mother[[:space:]]*fucker,mother[[:space:]]*fuckers,mother[[:space:]]*fuckin,mother[[:space:]]*fucking,mother[[:space:]]*fuckings,mother[[:space:]]*fuckka,mother[[:space:]]*fucks,muff,mutha,muthafecker,muthafuckker,muther,mutherfucker,n[i1]gg[ea3]r?s?,niggaz,nob,nob jokey,nobhead,nobjocky,nobjokey,numbnuts,nutsack,orgasims?,orgasms?,p[o0]rno?s?,pawn,pecker,penis,penisfucker,phonesex,phuck,phuk,phuked,phuking,phukked,phukking,phuks,phuq,pigfucker,pimpis,piss,pissed,pisser,pissers,pisses,pissflaps,pissin,pissing,pissoff,poop,pornography,prick,pricks,pron,pube,pusse,puss[iy]e?s?,rectum,retard,rimjaw,rimming,s[[:space:]]*h[[:space:]]*i[[:space:]]*t,s\\.o\\.b\\.,sadist,schlong,screwing,scroat,scrote,scrotum,semen,sex,shag,shagger,shaggin,shagging,shemale,sh[i1!][t+]s?,shitdick,shite,shited,shitey,shitfuck,shitfull,shithead,shiting,shitings,shitted,shitter,shitters,shitting,shittings,shitty,skank,sluts?,smegma,smut,snatch,son-of-a-bitch,spac,spunk,t1tt1e5,t1tties,teets,teez,testical,testicle,tits?,titfuck,titt,tittie5,tittiefucker,titties?,tittyfuck,tittywank,titwank,tosser,turd,tw[4a]t,twathead,twatty,twunt,twunter,v14gra,v1gra,vagina,viagra,vulva,w00se,wang,wank,wanker,wanky,whoar,whores?,willies,willy,xrated,x[[:space:]]*x[[:space:]]*x",
+            "hosting": ""
           }
         ]
       }
@@ -8063,7 +8511,8 @@
                 "display_name": "Online",
                 "value": "online"
               }
-            ]
+            ],
+            "hosting": ""
           },
           {
             "key": "Username",
@@ -8071,7 +8520,8 @@
             "type": "text",
             "help_text": "Username of your selected bot account. We strongly recommend using a dedicated bot account for this plugin, rather than an existing Skype for Business user account. Only required for Skype for Business Server.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Password",
@@ -8079,7 +8529,8 @@
             "type": "text",
             "help_text": "Password of your selected bot account. Only required for Skype for Business Server.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "Domain",
@@ -8087,7 +8538,8 @@
             "type": "text",
             "help_text": "The domain of your Skype for Business server instance. For example, contoso.com. Only required for Skype for Business Server.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ClientId",
@@ -8095,7 +8547,8 @@
             "type": "text",
             "help_text": "Application ID from the Azure Active Directory. Only required for Skype for Business Online. Use this URL to configure the plugin in Azure Active Directory: ```https://SITEURL/plugins/skype4business/api/v1/auth_redirect```",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -8158,7 +8611,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -8166,7 +8620,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableOAuth",
@@ -8174,7 +8629,8 @@
             "type": "bool",
             "help_text": "When true, OAuth will be used as the authentication means with Zoom. \n When false, JWT will be used as the authentication means with Zoom. \n If you are currently using a JWT Zoom application and switch to OAuth, all users will need to connect their Zoom account using OAuth the next time they try to start a meeting. [More information](https://mattermost.gitbook.io/plugin-zoom/installation/zoom-configuration).",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "AccountLevelApp",
@@ -8182,7 +8638,8 @@
             "type": "bool",
             "help_text": "When true, only an account administrator has to log in. The rest of the users will use their e-mail to log in.",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "OAuthClientID",
@@ -8190,7 +8647,8 @@
             "type": "text",
             "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "OAuthClientSecret",
@@ -8198,7 +8656,8 @@
             "type": "text",
             "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -8207,7 +8666,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -8215,7 +8675,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -8223,7 +8684,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -8232,7 +8694,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -8295,7 +8758,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -8303,7 +8767,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "AccountLevelApp",
@@ -8311,7 +8776,8 @@
             "type": "bool",
             "help_text": "When true, only an account administrator has to log in. The rest of the users will use their e-mail to log in.",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "OAuthClientID",
@@ -8319,7 +8785,8 @@
             "type": "text",
             "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "OAuthClientSecret",
@@ -8327,7 +8794,8 @@
             "type": "text",
             "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -8336,7 +8804,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -8345,7 +8814,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -8407,7 +8877,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -8415,7 +8886,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableOAuth",
@@ -8423,7 +8895,8 @@
             "type": "bool",
             "help_text": "When true, OAuth will be used as the authentication means with Zoom. \n When false, JWT will be used as the authentication means with Zoom. \n If you are currently using a JWT Zoom application and switch to OAuth, all users will need to connect their Zoom account using OAuth the next time they try to start a meeting. [More information](https://mattermost.gitbook.io/plugin-zoom/installation/zoom-configuration).",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "OAuthClientID",
@@ -8431,7 +8904,8 @@
             "type": "text",
             "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "OAuthClientSecret",
@@ -8439,7 +8913,8 @@
             "type": "text",
             "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -8448,7 +8923,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -8456,7 +8932,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -8464,7 +8941,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -8473,7 +8951,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -8535,7 +9014,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -8543,7 +9023,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableOAuth",
@@ -8551,7 +9032,8 @@
             "type": "bool",
             "help_text": "When true, OAuth will be used as the authentication means with Zoom. \n Only Enable OAuth OR Password based authentication. Not both. If you are currently using a JWT Zoom application and switch to OAuth, all users will need to connect their Zoom account using OAuth the next time they try to start a meeting. [More information](https://mattermost.gitbook.io/plugin-zoom/installation/zoom-configuration).",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "OAuthClientID",
@@ -8559,7 +9041,8 @@
             "type": "text",
             "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "OAuthClientSecret",
@@ -8567,7 +9050,8 @@
             "type": "text",
             "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -8576,7 +9060,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableLegacyAuth",
@@ -8584,7 +9069,8 @@
             "type": "bool",
             "help_text": "When true, user's email and password will be used to authenticate with Zoom. \n Only Enable OAuth OR Password based authentication. Not both. [More information](https://mattermost.gitbook.io/plugin-zoom/installation/zoom-configuration).",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -8592,7 +9078,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -8600,7 +9087,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -8609,7 +9097,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -8671,7 +9160,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -8679,7 +9169,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -8687,7 +9178,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -8695,7 +9187,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -8704,7 +9197,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -8765,7 +9259,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -8773,7 +9268,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -8781,7 +9277,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -8789,7 +9286,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -8798,7 +9296,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -8857,7 +9356,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -8865,7 +9365,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableOAuth",
@@ -8873,7 +9374,8 @@
             "type": "bool",
             "help_text": "When true, OAuth will be used as authentication means with Zoom. \n Please enable only either one of OAuth based or Password base authentication.",
             "placeholder": "",
-            "default": false
+            "default": false,
+            "hosting": ""
           },
           {
             "key": "OAuthClientID",
@@ -8881,7 +9383,8 @@
             "type": "text",
             "help_text": "The Client ID for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "OAuthClientSecret",
@@ -8889,7 +9392,8 @@
             "type": "text",
             "help_text": "The Client Secret for the OAuth app registered with Zoom. Leave blank if not using OAuth",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EncryptionKey",
@@ -8898,7 +9402,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens.",
             "regenerate_help_text": "Regenerates the encryption key for Zoom OAuth Token. Regenerating the key invalidates your existing Zoom OAuth.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "EnableLegacyAuth",
@@ -8906,7 +9411,8 @@
             "type": "bool",
             "help_text": "When true, user's email and password will be used to authenticate with Zoom. \n Please enable only either one of OAuth based or Password base authentication.",
             "placeholder": "",
-            "default": true
+            "default": true,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -8914,7 +9420,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -8922,7 +9429,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -8931,7 +9439,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -8990,7 +9499,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -8998,7 +9508,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9006,7 +9517,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9014,7 +9526,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9023,7 +9536,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -9073,7 +9587,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -9081,7 +9596,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9089,7 +9605,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9097,7 +9614,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9106,7 +9624,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -9156,7 +9675,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -9164,7 +9684,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9172,7 +9693,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9180,7 +9702,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9189,7 +9712,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -9238,7 +9762,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -9246,7 +9771,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9254,7 +9780,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9262,7 +9789,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9271,7 +9799,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -9320,7 +9849,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -9328,7 +9858,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9336,7 +9867,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9344,7 +9876,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9353,7 +9886,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -9402,7 +9936,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -9410,7 +9945,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9418,7 +9954,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9426,7 +9963,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9435,7 +9973,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -9484,7 +10023,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -9492,7 +10032,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9500,7 +10041,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9508,7 +10050,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9517,7 +10060,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -9566,7 +10110,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -9574,7 +10119,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9582,7 +10128,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9590,7 +10137,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9599,7 +10147,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
@@ -9648,7 +10197,8 @@
             "type": "text",
             "help_text": "The URL for a self-hosted private cloud or on-premise Zoom server. For example, https://yourzoom.com. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://zoom.us",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "ZoomAPIURL",
@@ -9656,7 +10206,8 @@
             "type": "text",
             "help_text": "The API URL for a self-hosted private cloud or on-premise Zoom server. For example, https://api.yourzoom.com/v2. Leave blank if you're using Zoom's vendor-hosted SaaS service.",
             "placeholder": "https://api.zoom.us/v2",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APIKey",
@@ -9664,7 +10215,8 @@
             "type": "text",
             "help_text": "The API Key generated by Zoom, used to create meetings and pull user data.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "APISecret",
@@ -9672,7 +10224,8 @@
             "type": "text",
             "help_text": "The API Secret generated by Zoom for your API key.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           },
           {
             "key": "WebhookSecret",
@@ -9681,7 +10234,8 @@
             "help_text": "The secret used to authenticate the webhook to Mattermost.",
             "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Zoom plugin.",
             "placeholder": "",
-            "default": null
+            "default": null,
+            "hosting": ""
           }
         ]
       }
