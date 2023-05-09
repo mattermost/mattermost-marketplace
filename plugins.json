@@ -16840,6 +16840,116 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-skype4business",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDI5MS4zNjQgMjkxLjM2NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjkxLjM2NCAyOTEuMzY0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6IzAwQUZGMDsiIGQ9Ik0yODIuOTY2LDE3Ni42MTJjMi4wOTQtOS40OTUsMy4yMDQtMTkuMzA5LDMuMjA0LTI5LjQwNWMwLTc1LjY2MS02Mi4xOTctMTM3LjAxMS0xMzguOTQxLTEzNy4wMTEKCQljLTguMDkzLDAtMTYuMDMyLDAuNjkyLTIzLjc1MiwyLjAwM0MxMTEuMDYxLDQuNDc5LDk2LjM2NywwLDgwLjYxOCwwQzM2LjEwMSwwLDAuMDMyLDM1LjU3NywwLjAzMiw3OS40NzUKCQljMCwxNC42NTcsNC4wNTEsMjguMzg1LDExLjA3LDQwLjE5M2MtMS44NDgsOC44OTQtMi44MTMsMTguMTA3LTIuODEzLDI3LjUzOWMwLDc1LjY4OCw2Mi4xOTcsMTM0Ljc1MywxMzguOTMyLDEzNC43NTMKCQljOC42OTQsMCwxNy4xOTctMC43OTIsMjUuNDM2LTIuMjk0YzExLjM1Miw2LjAwOCwyNC4zMTYsMTEuNjk4LDM4LjA5OSwxMS42OThjNDQuNTA4LDAsODAuNTc3LTM1LjU2OCw4MC41NzctNzkuNDY2CgkJQzI5MS4zMzMsMTk5LjIzNSwyODguMzE5LDE4Ny4yNDUsMjgyLjk2NiwxNzYuNjEyeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yMTAuNiwyMDMuMTMxYy01LjM2Miw3LjYyLTEzLjIxLDEzLjYxLTIzLjU0MiwxNy45MTZjLTEwLjMzMyw0LjM0Mi0yMi41NjgsNi40OTEtMzYuNzI0LDYuNDkxCgkJYy0xNi45NzgsMC0zMC45OC0yLjk1LTQyLjAyMy04Ljg1OGMtNy44MTEtNC4yNDItMTQuMTc0LTkuOTIzLTE5LjA3Mi0xNy4wMDZjLTQuODgtNy4wODMtNy4zMjgtMTMuOTgzLTcuMzI4LTIwLjY5MwoJCWMwLTMuODc4LDEuNDY2LTcuMjEsNC4zOTctOS45NjljMi45MzEtMi43OTUsNi42NzMtNC4xNjksMTEuMTk4LTQuMTY5YzMuNjc4LDAsNi44LDEuMDY1LDkuMzMxLDMuMjQxCgkJYzIuNTQ5LDIuMTU4LDQuNzI1LDUuMzUzLDYuNTA5LDkuNjA0YzIuMTk0LDUuMDUzLDQuNTUyLDkuMjY4LDcuMTEsMTIuNjQ1YzIuNTMxLDMuMzc3LDYuMTE4LDYuMTgxLDEwLjcyNCw4LjM3NQoJCWM0LjYyNSwyLjE3NiwxMC42OTcsMy4yODYsMTguMTk4LDMuMjg2YzEwLjMyNCwwLDE4LjcxNy0yLjIwMywyNS4xODEtNi42MzdjNi40NDUtNC40MTUsOS42ODYtOS45NTksOS42ODYtMTYuNTc4CgkJYzAtNS4yNDQtMS43NDgtOS41MzItNS4yMjYtMTIuNzgyYy0zLjQ4Ny0zLjI3Ny03Ljk4NC01Ljc4MS0xMy41MDEtNy41MDFjLTUuNTA4LTEuNzM5LTEyLjg4Mi0zLjU3OC0yMi4xMzEtNS41MTcKCQljLTEyLjM1NC0yLjY0OS0yMi43MDUtNS43ODEtMzEuMDI1LTkuMzMxYy04LjMzLTMuNTc4LTE0Ljk1Ny04LjQzLTE5LjgzNy0xNC41NzVjLTQuODk4LTYuMTcyLTcuMzM4LTEzLjgxOS03LjMzOC0yMi45NQoJCWMwLTguNzIxLDIuNTc2LTE2LjQ1LDcuNzQ3LTIzLjIxNGM1LjE2Mi02Ljc3MywxMi42MTgtMTEuOTcxLDIyLjQxMy0xNS42MTNjOS43NzctMy42NDEsMjEuMjg1LTUuNDUzLDM0LjQ5NC01LjQ1MwoJCWMxMC41NiwwLDE5LjcsMS4yMTEsMjcuNDExLDMuNjA1YzcuNzExLDIuNDIyLDE0LjA5Myw1LjYyNiwxOS4xNzIsOS42MjNjNS4wODksMy45OTcsOC44MTIsOC4xODQsMTEuMTUyLDEyLjU4MQoJCWMyLjM0OSw0LjM3LDMuNTIzLDguNjg1LDMuNTIzLDEyLjgzNmMwLDMuODE0LTEuNDU3LDcuMjc0LTQuMzg4LDEwLjMyNGMtMi45MzEsMy4wNTktNi41OTEsNC41OTctMTAuOTcsNC41OTcKCQljLTMuOTk3LDAtNy4wMjgtMC45MjktOS4xMDQtMi43NThjLTIuMDc2LTEuODM5LTQuMzI0LTQuODQzLTYuNzM3LTkuMDIyYy0zLjE0MS01Ljk3Mi02Ljg4Mi0xMC42MzMtMTEuMjctMTMuOTc0CgkJYy00LjM4OC0zLjM1LTExLjQxNi01LjAyNS0yMS4xMjEtNS4wMjVjLTguOTg1LDAtMTYuMjUsMS44MDMtMjEuNzY3LDUuNDUzYy01LjUxNywzLjYyMy04LjI4NCw4LjAxMS04LjI4NCwxMy4xMTgKCQljMCwzLjE1LDAuOTU2LDUuODk5LDIuODIyLDguMjAyYzEuODY2LDIuMzIxLDQuNDUyLDQuMjc5LDcuNzU2LDUuOTI3YzMuMjY4LDEuNjU3LDYuNiwyLjk1LDkuOTU5LDMuOTA1CgkJYzMuMzU5LDAuOTM4LDguOTIyLDIuMjk0LDE2LjY3OCw0LjA5N2M5LjY4NiwyLjA4NSwxOC40NzEsNC4zOTcsMjYuMzM3LDYuOTFjNy44NTcsMi41MjIsMTQuNTU3LDUuNTksMjAuMDc0LDkuMTY3CgkJYzUuNTA4LDMuNjA1LDkuODIzLDguMTc1LDEyLjkwOSwxMy42OTJjMy4wODYsNS40OTksNC42NDMsMTIuMjQ0LDQuNjQzLDIwLjIzOEMyMTguNjM5LDE4Ni44OTksMjE1Ljk0NSwxOTUuNTAyLDIxMC42LDIwMy4xMzF6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-skype4business-v1.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-skype4business/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRaom8ACgkQ0bVLR6XO/sQkmw/+MckaMNG97U7Kx1d3mKEH7F/bKyu6ZRwvSPmX9QYOWzxBKQes1xi86g3HSWRV/6heLyoEwl/5YEWAqaapIIcaHqsutOzjJksL+vR+zbK3GgCwUAYo/WFUUUpVjoXSY/p8IIInPnqG2thQgHKa7L+rZKD7Fk6P63g9AcMcsrAdMcppNMjQWv5z8wri9L7LtB+jSoiBBN0i3KQtNC2fppYPknvtNyDeEY7i4ROoxh8cQ9a0ikO7EshlGHNP5KUd/HWlFqhXnNLkh+y+b0Vga3Ewy91FGTRcgMhsXsAw8Kxq/TUZ3UBaLppnt4UlXfup5XM9YkcuYCjGzWTYA9UIxZqB4Vx3Gk/MV71esBF7ndqKGqvCY5M++uEnMRmCFp8hgpFDSVW0VCA925bdBPNNC8La1lCq+zvdTWTlWPNXd7+WyxIVaaGZRv3Op9P2qUfFXv7Cz89rsstrfi68N8HjSa+X2T/7gXSwoom+dG+MZKBud9NKItthjDjwYNTJbuRdrTUdY2HtpG4Wghi+fd8VJ7QVDZTdfjbYYeOqQrp7CQxCQOf2tQA0g7BvpMJFJDf/sePejpsWZUvgHeIuYZTP36b9enR7fJ0r7H0/DjwuzCRfiHOVL+CP5uK7Vz7lqW+7mQuf1sgPlASQmVIeWPSfo8NiVa95XixioC5PzyH8j7MafIs=",
+    "repo_name": "mattermost-plugin-skype4business",
+    "manifest": {
+      "id": "skype4business",
+      "name": "Skype for Business",
+      "description": "Skype for Business plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-skype4business",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-skype4business/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-skype4business/releases/tag/v1.0.0",
+      "icon_path": "assets/profile.svg",
+      "version": "1.0.0",
+      "min_server_version": "5.10.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "To report an issue, make a suggestion, or submit a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-skype4business).",
+        "settings": [
+          {
+            "key": "productType",
+            "display_name": "Skype for Business Product Type:",
+            "type": "radio",
+            "help_text": "The product type of your Skype for Business instance.",
+            "placeholder": "",
+            "default": "Server",
+            "options": [
+              {
+                "display_name": "Server",
+                "value": "server"
+              },
+              {
+                "display_name": "Online",
+                "value": "online"
+              }
+            ],
+            "hosting": ""
+          },
+          {
+            "key": "Username",
+            "display_name": "Skype for Business Bot Username:",
+            "type": "text",
+            "help_text": "Username of your selected bot account. We strongly recommend using a dedicated bot account for this plugin, rather than an existing Skype for Business user account. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "Password",
+            "display_name": "Skype for Business Bot Password:",
+            "type": "text",
+            "help_text": "Password of your selected bot account. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "Domain",
+            "display_name": "Server Domain:",
+            "type": "text",
+            "help_text": "The domain of your Skype for Business server instance. For example: contoso.com. Only required for Skype for Business Server.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "ClientId",
+            "display_name": "Application ID:",
+            "type": "text",
+            "help_text": "Application ID from the Azure Active Directory. Only required for Skype for Business Online. Use this URL to configure the plugin in Azure Active Directory: ```https://SITEURL/plugins/skype4business/api/v1/auth_redirect```.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-skype4business-v1.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRaom0ACgkQ0bVLR6XO/sQq/g/+PyPqeX68tF5d/W5tC9NXegfWLyjGDFlNhkJ4sKek/RfbshraE/J9qutryTvidB/NCsF5Yw3JVLWs8v8yRCv+sLOp/DPJNh4AZ/XPkDJvB8B+udLcdD8gVM/brqcjVAcKoJ53vLYCC8eZiZqWhUxEOAiIZLreNkKGHDERSXmK7IpM/1RZbeB5dxprPCiZWvlSHjUr/+2rY8TvyVsBM16nGZckQ3rzMUW/O8hHQa329FWKY6XmH7wfLrYn13THnwJd2Ejqtzb+gIQ7qzZmDS6N7b52K+SJI2+WEYRFuvE6s2/gfvMuhS+XQdXvZmjbKXFa8hkDCuIsONzF/VAPxH2+DZ/R58hKQFTjZf3yLpF3qfmnN1uBzK2tQQP5IESgMB4V7WnKpC19f1/QlUcA8R5DTMZ5BBW28xXndfz16x3rfsQKiTxGyPqNC6JVPmwOD6u3clI8p4iDgiuyi11FZ43ScyYtk3x5SfWrG081gnUUKvc9bctwQqS7J+ojLazvgB5MfcG6uYZTJFGuzc3AMg0h9p0Q9PfGc9Y0pjbSJuYhyBMPDRWSOpbfuKALKA46GU+dRxUd8oJLpLbavBWXF9O1R9lZKPmZPrA9yapEbLpYqNNdgYZWXXksLpKFJOMZV8thzv0wFZu/jIcqqD4XjBvPq7eGjoq0VBcDV71XvXCZ9eU="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-skype4business-v1.0.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRaomsACgkQ0bVLR6XO/sRt0g//VwpdQOKQq0oSYgrZglvwDe30TUwmU978VS1MbEJSRQKQnaIAzW1RbRLH8NatFL31FSRFub7hbJMmCpitDg2BiAeHcgh/7y5nu8n2KOQ/MRLnvqj9nosOGj7YPuoV4bGU35gZMMOrD2h8YNL4cpqvyht0CPe78zZRdDhm4vS+U3QmpHwFmq/2+QBDi/RhGAzihrCRtUMPUsj61aAxzSDGi8sK3L8J1L+T8uGojuC4BWWEQSj0fEAdYlVMqChM/kuUFuadBkqnS73TVCyO1W73tNzGw5oL85S1/HjCRQPZQJfNoTatbF+JRRXQSPe6QRx+0FSf6sOujne83MtQ9bCiNYxaYCWWtajmeNpAMzmbo/b/Oh3xdH+5+98tnfpqtOcIaatyW7237YkzNskFNZ7LmK6msoD+q36kFeswxOKGvT4Dr2o2625ptjocbCpz4xwKBLKkspNb9kZhChwFiw6H18sb4nLieQqI/R5hvXTM9ezZvv2l+Qgtza5WmWtoqWdq6Z46kER3OR1BkGtg/1B29vNT6wn/+uYhqlI8eGjBq6h8g3moqqVKimI9Dp1NuuGIXwesGuzxE+vCJZlFlUyl9UW8sHN999Vic7zZX2wzF11EE0ElbZxL6ilnV8KEXapDEwTZueVDQNGEMHDdIF+V+8PFkBWzz4qDLbtQmq4VkTQ="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-skype4business-v1.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRaomwACgkQ0bVLR6XO/sTYkQ//e69K9XBQ+9nzNX5dp3e4UJ/q+KvVejqCZ1WDXmH3zZrzjFOFYNz8AhCn7NpbKA27ESQDeo7TsOUVjj80oXreL1pU/a49V7rNFX1e17/MGmF9nDg3dJds+bfb1FaOBMOkrYwzuTt4ZX6UgXQr2UAfm8UuxuddKSnfYyq3ZzVvO4k75M4BnWBjuugoHz1QiXrHpeV00PZuq5FgbvfxW4/gmkqdqa4DVOoEY838qkqZiwWzkhmt33N8ynQ9GwzzF2WqWCrRaE28ovTGFUGktAOos9vKvBIIhdQm9pGrG+wCSChE61azghfVV94qZyMbDvZZ/yHn5RP724Aw2PMGra7BXl6U44Q3mb/hQUnjGkkpiOw+OnejAzprB2TFIRTLaE69/IFOHQlC9A3PmV+CNoVwhvYd8M1Ggn1A36+Xemp8HNHVH/N1uyLVghP/PTPnoczm3px5KWaQphGEBQ1Di+lomAZXIdgGp5ULPZJpDmeZJCOvs7NnAhSJZIPJLS/1OQoX6o1GjwbEAQpcjoYMc36Sr3guem3XVU7zAPI655otOLhnGgYKSplkpU6HMIObJTDAV7G+tLS+94qGEySl8A0CGPNKlxOH3D8g0HW+M5EKTMJ/3wATaxLP+vEapyHircmvvtpmY5RNJWNWz0MIQktsi/7SzETblWM5Bgh5G2bcB7U="
+      }
+    },
+    "updated_at": "2023-05-09T19:48:04.730028913Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-skype4business",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDI5MS4zNjQgMjkxLjM2NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjkxLjM2NCAyOTEuMzY0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggc3R5bGU9ImZpbGw6IzAwQUZGMDsiIGQ9Ik0yODIuOTY2LDE3Ni42MTJjMi4wOTQtOS40OTUsMy4yMDQtMTkuMzA5LDMuMjA0LTI5LjQwNWMwLTc1LjY2MS02Mi4xOTctMTM3LjAxMS0xMzguOTQxLTEzNy4wMTEKCQljLTguMDkzLDAtMTYuMDMyLDAuNjkyLTIzLjc1MiwyLjAwM0MxMTEuMDYxLDQuNDc5LDk2LjM2NywwLDgwLjYxOCwwQzM2LjEwMSwwLDAuMDMyLDM1LjU3NywwLjAzMiw3OS40NzUKCQljMCwxNC42NTcsNC4wNTEsMjguMzg1LDExLjA3LDQwLjE5M2MtMS44NDgsOC44OTQtMi44MTMsMTguMTA3LTIuODEzLDI3LjUzOWMwLDc1LjY4OCw2Mi4xOTcsMTM0Ljc1MywxMzguOTMyLDEzNC43NTMKCQljOC42OTQsMCwxNy4xOTctMC43OTIsMjUuNDM2LTIuMjk0YzExLjM1Miw2LjAwOCwyNC4zMTYsMTEuNjk4LDM4LjA5OSwxMS42OThjNDQuNTA4LDAsODAuNTc3LTM1LjU2OCw4MC41NzctNzkuNDY2CgkJQzI5MS4zMzMsMTk5LjIzNSwyODguMzE5LDE4Ny4yNDUsMjgyLjk2NiwxNzYuNjEyeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yMTAuNiwyMDMuMTMxYy01LjM2Miw3LjYyLTEzLjIxLDEzLjYxLTIzLjU0MiwxNy45MTZjLTEwLjMzMyw0LjM0Mi0yMi41NjgsNi40OTEtMzYuNzI0LDYuNDkxCgkJYy0xNi45NzgsMC0zMC45OC0yLjk1LTQyLjAyMy04Ljg1OGMtNy44MTEtNC4yNDItMTQuMTc0LTkuOTIzLTE5LjA3Mi0xNy4wMDZjLTQuODgtNy4wODMtNy4zMjgtMTMuOTgzLTcuMzI4LTIwLjY5MwoJCWMwLTMuODc4LDEuNDY2LTcuMjEsNC4zOTctOS45NjljMi45MzEtMi43OTUsNi42NzMtNC4xNjksMTEuMTk4LTQuMTY5YzMuNjc4LDAsNi44LDEuMDY1LDkuMzMxLDMuMjQxCgkJYzIuNTQ5LDIuMTU4LDQuNzI1LDUuMzUzLDYuNTA5LDkuNjA0YzIuMTk0LDUuMDUzLDQuNTUyLDkuMjY4LDcuMTEsMTIuNjQ1YzIuNTMxLDMuMzc3LDYuMTE4LDYuMTgxLDEwLjcyNCw4LjM3NQoJCWM0LjYyNSwyLjE3NiwxMC42OTcsMy4yODYsMTguMTk4LDMuMjg2YzEwLjMyNCwwLDE4LjcxNy0yLjIwMywyNS4xODEtNi42MzdjNi40NDUtNC40MTUsOS42ODYtOS45NTksOS42ODYtMTYuNTc4CgkJYzAtNS4yNDQtMS43NDgtOS41MzItNS4yMjYtMTIuNzgyYy0zLjQ4Ny0zLjI3Ny03Ljk4NC01Ljc4MS0xMy41MDEtNy41MDFjLTUuNTA4LTEuNzM5LTEyLjg4Mi0zLjU3OC0yMi4xMzEtNS41MTcKCQljLTEyLjM1NC0yLjY0OS0yMi43MDUtNS43ODEtMzEuMDI1LTkuMzMxYy04LjMzLTMuNTc4LTE0Ljk1Ny04LjQzLTE5LjgzNy0xNC41NzVjLTQuODk4LTYuMTcyLTcuMzM4LTEzLjgxOS03LjMzOC0yMi45NQoJCWMwLTguNzIxLDIuNTc2LTE2LjQ1LDcuNzQ3LTIzLjIxNGM1LjE2Mi02Ljc3MywxMi42MTgtMTEuOTcxLDIyLjQxMy0xNS42MTNjOS43NzctMy42NDEsMjEuMjg1LTUuNDUzLDM0LjQ5NC01LjQ1MwoJCWMxMC41NiwwLDE5LjcsMS4yMTEsMjcuNDExLDMuNjA1YzcuNzExLDIuNDIyLDE0LjA5Myw1LjYyNiwxOS4xNzIsOS42MjNjNS4wODksMy45OTcsOC44MTIsOC4xODQsMTEuMTUyLDEyLjU4MQoJCWMyLjM0OSw0LjM3LDMuNTIzLDguNjg1LDMuNTIzLDEyLjgzNmMwLDMuODE0LTEuNDU3LDcuMjc0LTQuMzg4LDEwLjMyNGMtMi45MzEsMy4wNTktNi41OTEsNC41OTctMTAuOTcsNC41OTcKCQljLTMuOTk3LDAtNy4wMjgtMC45MjktOS4xMDQtMi43NThjLTIuMDc2LTEuODM5LTQuMzI0LTQuODQzLTYuNzM3LTkuMDIyYy0zLjE0MS01Ljk3Mi02Ljg4Mi0xMC42MzMtMTEuMjctMTMuOTc0CgkJYy00LjM4OC0zLjM1LTExLjQxNi01LjAyNS0yMS4xMjEtNS4wMjVjLTguOTg1LDAtMTYuMjUsMS44MDMtMjEuNzY3LDUuNDUzYy01LjUxNywzLjYyMy04LjI4NCw4LjAxMS04LjI4NCwxMy4xMTgKCQljMCwzLjE1LDAuOTU2LDUuODk5LDIuODIyLDguMjAyYzEuODY2LDIuMzIxLDQuNDUyLDQuMjc5LDcuNzU2LDUuOTI3YzMuMjY4LDEuNjU3LDYuNiwyLjk1LDkuOTU5LDMuOTA1CgkJYzMuMzU5LDAuOTM4LDguOTIyLDIuMjk0LDE2LjY3OCw0LjA5N2M5LjY4NiwyLjA4NSwxOC40NzEsNC4zOTcsMjYuMzM3LDYuOTFjNy44NTcsMi41MjIsMTQuNTU3LDUuNTksMjAuMDc0LDkuMTY3CgkJYzUuNTA4LDMuNjA1LDkuODIzLDguMTc1LDEyLjkwOSwxMy42OTJjMy4wODYsNS40OTksNC42NDMsMTIuMjQ0LDQuNjQzLDIwLjIzOEMyMTguNjM5LDE4Ni44OTksMjE1Ljk0NSwxOTUuNTAyLDIxMC42LDIwMy4xMzF6Ii8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-skype4business-v0.3.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-skype4business/releases/tag/v0.3.0",
     "hosting": "",
