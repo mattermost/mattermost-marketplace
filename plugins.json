@@ -9870,6 +9870,58 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
     "icon_data": "",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-welcomebot-v1.3.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.3.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRl6kYACgkQ0bVLR6XO/sTgihAAnnnyeNRuOXCwFJLPPqCAQMN68hkB44uB1oPiL+wbx2V0jfb3EJgMKOpfN1T98AI0Eg0rsKGO/2d3NSAwSow89cq+kAd/5FAQ1SNttwO5S7pY5YUIDVT8UUwsHI2wBXJ2WLwQNhEks564uX4BvAPC2Xxn80QeMH+Vbq6KdhrtEzcKIhq65Sy5rhF4DWMhJyG1d4qLPIGRDRbqBDlAs3Mhd/6mPp5Fsx8vKEa0d/7uJQPjxU+wDYob+KtTQOrwGmSphetmPXEpcp+NSdvI51ZFSIdeXfjCxRGkitf6zEb7EwKvWKOIvOXy0/2dVk0eyb56OtP7+sezd0F/+noOFXErkIQvuk/bKAXNmGGm36jX/g49zyNUlnPN76y+85S4x8odtNgcuf7Nvtmj6jGTnVqfYNu6PC1ta3+F9C/2H6tfN4yIuFWjTQBYMDS0L9aJ/cn3XYzD5qMOspJn0l/5TccFsvjgeLud/R/eqBTi+HKMW8mp0YRxOIRX+kiVLi6jQpuJddK2Fh3IGNJWNEw0PQCqtoBLTsfu38jU7peRQDLiy/krjUfpHhFZRiDAF8407mHd6YtwzsVDvOrGnv2affrDS82e5Akl1tgGDcPbXmS7ood/m4CXHnk+J8gAnHdsBS1h2ZTtaIcth37Se0l4/GbyS+FqOx41Sqt8Vy4RjyfU2nc=",
+    "repo_name": "mattermost-plugin-welcomebot",
+    "manifest": {
+      "id": "com.mattermost.welcomebot",
+      "name": "Welcome Bot",
+      "description": "This plugin adds a WelcomeBot that helps add new users to channels.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.3.0",
+      "version": "1.3.0",
+      "min_server_version": "5.37.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "settings_schema": {
+        "header": "Configure this plugin directly in the config.json file. Learn more [in our documentation](https://github.com/mattermost/mattermost-plugin-welcomebot/blob/master/README.md).\n\n To report an issue, make a suggestion, or submit a contribution, [check the plugin repository](https://github.com/mattermost/mattermost-plugin-welcomebot).",
+        "footer": "",
+        "settings": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-welcomebot-v1.3.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRl6kQACgkQ0bVLR6XO/sQz3w//chGR5Nz/N2pOYkXj9Dgz0iAAMP7F9ssllpxvY0hCDW6ULdpP/YHqs578LbGjOLe0/T3O+fQTfvYyjC2Ot/XDVSgBowbkBT5K/9Nc1kat9pmjw8QgKNTUzLThw8E1bp5wTXWXH8vxvEIBRgxGhaiIqV6NVJxQiqtDZ+2F06ozyDYSJM9dNIP0ZWM128A2oMRNAyEBO3j9XGasWCKJbJKoR9hO2jNHLomwQ07ydLE6ILIIU9jYLq8pmAnEWxCU6CLve/I0vhd1rKcIjZXmY+5ijoqzWCkbBmd8qoPU7u5jZgN0O35C477shfNPXFf1L3hisu3KhfcHGoPIfaui1j4VlfgiwWi6fVZjiL8pttMremDSHTGsHFz+MRATKSwNNAH/phGw0LlaR63AB1muiVWwdkF9ykgg8+PhWZ1fORZUaU6cw1D+pFMrEkuke7em5L5rbGdeyKx3hhUsx/l2mdeFCbTG7+HhUsP21oE/D7AypVP8aIE+MmBU0fdmz0AiJpJEC+snd3K9EnSomOMS56XTFx6eq30f8Nve6gOQVQq2lu/RdwXyiAdYEnHR3UWCqBEMezL/DoCGtCpwzsPy8LLittU47yywrRWRq0ylTHSkHcNG34Cx6JVbnn1jsKzzVxhPciz2fcmw2K7eT4pF3Wzz6MKbOSekFFpCXKPegQFIWaQ="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-welcomebot-v1.3.0-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRl6kIACgkQ0bVLR6XO/sQrBQ//dE63Kvaq1Z+bjLfhzC9NlUcjCF5EN25DsF0qNzXGvQdFhSV8WgELbEn86YJQYV+bcyWt8+zYHD4jcGSnF2kQgRB2/7+kF8TsHfqyF4uSRXW1QUi7qbdbl8whBuSmM0Ukd1PjaQyVxXT0feL/lVyIRMnS943yxPgyole/JttS+RWkeg2Y/S+lNGwCFeJzmNTx89NNofx2U7RcLSWnK4jc6mexIUnzoBnDfZF0NEQ/q/UGyCo5qBuPaXai0X7ZC8tIPHgraRDAFStll9lJj/5dkMbQDQEIM4No483fbCM0RsaGQeFgkmFoo5klj4zu/3iGeJrEZP1kRqTEX+rnVgMxfeaHzLYlUQUrWl2IhE50SNyPDLl0smHIxJGubvWlDrxXQ0/P5df4DnlX8XhjlLQsBDwQdVlEuqfUm9LRoS866eME9oV7Wvj+SK/GFT6rvTUk+kvnIi6USIenqMutwmEFvqGBWYvRnYJXf1zTh3zX6SfpZo2qsP3+vh6CHLMNpb9i0KzEM55LszH6Wzb0Vr4lZfoHICtmJnNr3wpoYhqIpKPxX7NoYmJqXwsx+FKUEjKGwkN1w5B/ATqAScNy1UWmSWaBcvnNAyPYJqhIA9eUVM0rAspH9QzBBWJ1jR+HDnX0gKSO+uWEhGqf0E8M1/McORZhvyznYly9WO7t0BDWVEE="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-welcomebot-v1.3.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmRl6kMACgkQ0bVLR6XO/sRkYA/9E4/kMQTkbaPf6+FDEuNTrYAgcYr8aIq44z6suSD0x+TeGo+RB7x04nvCRyshCl9qR2l9fBglITQp1vHmDpzeB2RULWLqPcWANvTtE7yqtAxNN8ifIO0Mr8nY+/F0iUYjq+eB8mXZutl90c9x5IbP2276aBnute5fL5Qksrae8r05vw3FMq8hFThbIZFHI7rojbNmOB0DEjIbqf1VCH3q+Vmy1BIXqPMGe3JeDOoL8zv0F4TSPc6jaYuL6ce9cd9ffTcLgVXFZ3lXk485I3erBasQ2GQ4O/T8irGkUNibwwkAkNzqICqWI3qsGFKeBh6tbPzXy+3ZlW242P1cUEBQ8x7t/j0HS761tgDhan9GlO3JvSLPlvdAvt+QUgTiQGg7CdNCGtg5Lk/1U4weForrIwLA9CroJ+s0hdqOmFp3YeZOzbPuEBM61de+YIg3uCo8fz6UNxxQp8R2LtO1+zsirjFcoypMiNJa+WDZKYO2T1DxJNH+51/A2xBo5V4tmRoe6+aJPDYWHi392YXY5hCjhGkMdfJb56938+jCV1x2MlMb4ILGdV7q5pNDp3HLqZzQTCCjeFX/SO4Jf7MHVT8jWJEeRJbJ3UNu3tlD059zYl/E+jiaI36hryeweZhIFACAWgtARfjZD+Qm2XWM23wR9Ogu5LiTfQcajm8DCjv32a0="
+      }
+    },
+    "updated_at": "2023-05-18T14:10:03.082645Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-welcomebot",
+    "icon_data": "",
     "download_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/download/v1.2.0/com.mattermost.welcomebot-1.2.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-welcomebot/releases/tag/v1.2.0",
     "hosting": "on-prem",
