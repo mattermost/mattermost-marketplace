@@ -16,31 +16,31 @@ var AllLabels = []Label{
 	EnterpriseLabel,
 }
 
-var PartnerLabel Label = Label{
+var PartnerLabel = Label{
 	Name:        "Partner",
 	Description: "This plugin is maintained by a Mattermost Partner.",
 	URL:         "https://mattermost.com/pl/default-partner-plugins",
 }
-var CommunityLabel Label = Label{
+var CommunityLabel = Label{
 	Name:        "Community",
 	Description: "This plugin is maintained by the Open Source Community.",
 	URL:         "https://mattermost.com/pl/default-community-plugins",
 }
 
-var BetaLabel Label = Label{
+var BetaLabel = Label{
 	Name:        "Beta",
 	Description: "This plugin is currently in Beta and is not recommended for use in production.",
 	URL:         "https://mattermost.com/pl/default-beta-plugins",
 }
 
-var ExperimentalLabel Label = Label{
+var ExperimentalLabel = Label{
 	Name:        "Experimental",
 	Description: "This plugin is marked as experimental and not meant for production use. Please use with caution.",
 	URL:         "https://mattermost.com/pl/default-experimental-plugins",
 }
 
-var EnterpriseLabel Label = Label{
-	Name:        "Enterprise and Cloud",
-	Description: "This plugin only works on self-managed deployments (E20, Enterprise and Professional) and Mattermost Cloud workspaces.",
+var EnterpriseLabel = Label{
+	Name:        "Professional/Enterprise",
+	Description: "This plugin requires a Professional or Enterprise subscription.",
 	URL:         "https://mattermost.com/pricing/",
 }

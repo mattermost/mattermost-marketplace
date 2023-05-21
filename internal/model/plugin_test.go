@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -145,6 +145,7 @@ func TestPluginsToWriter(t *testing.T) {
 			ReleaseStage:    Production,
 			Manifest: &mattermostModel.Manifest{
 				Id:      "demo",
+				Name:    "Demo",
 				Version: "1.0.0",
 			},
 			Platforms: PlatformBundles{
@@ -181,6 +182,7 @@ func TestPluginsToWriter(t *testing.T) {
 			ReleaseStage:    Beta,
 			Manifest: &mattermostModel.Manifest{
 				Id:      "template",
+				Name:    "Template",
 				Version: "2.0.0",
 			},
 			Platforms: PlatformBundles{},
@@ -202,6 +204,7 @@ func TestPluginsToWriter(t *testing.T) {
     "repo_name": "mattermost-plugin-demo",
     "manifest": {
       "id": "demo",
+      "name": "Demo",
       "version": "1.0.0"
     },
     "platforms": {
@@ -241,6 +244,7 @@ func TestPluginsToWriter(t *testing.T) {
     "repo_name": "mattermost-plugin-starter-template",
     "manifest": {
       "id": "template",
+      "name": "Template",
       "version": "2.0.0"
     },
     "platforms": {

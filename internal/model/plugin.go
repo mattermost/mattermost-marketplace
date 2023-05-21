@@ -5,7 +5,7 @@ import (
 	"io"
 	"time"
 
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 )
 
 type HostingType string

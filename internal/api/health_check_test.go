@@ -34,7 +34,7 @@ func TestHealthCheck(t *testing.T) {
 
 	assert.Equal(t, respose.Status, "pass")
 	assert.Equal(t, respose.Version, "1")
-	assert.Equal(t, respose.ReleaseID, "") // This needs to be changed, when the first tag is cut
+	assert.NotEmpty(t, respose.ReleaseID)
 	require.Len(t, respose.Details, 1)
 	require.Len(t, respose.Details["buildInfo"], 2)
 	assert.NotEmpty(t, respose.Details["buildInfo"]["buildHash"])

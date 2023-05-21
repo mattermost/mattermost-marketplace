@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/base64"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 
 	"github.com/pkg/errors"
@@ -125,7 +125,7 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 		}
 		defer res.Body.Close()
 
-		signatureBytes, err := ioutil.ReadAll(res.Body)
+		signatureBytes, err := io.ReadAll(res.Body)
 		if err != nil {
 			return nil, err
 		}
