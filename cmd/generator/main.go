@@ -9,7 +9,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"os"
 	"path"
@@ -332,7 +331,10 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 
 		err = plugin.Manifest.IsValid()
 		if err != nil {
-			return nil, errors.Wrapf(err, "invalid manifest for release %s", releaseName)
+			logger.WithFields(logrus.Fields{
+				"id":      manifest.Id,
+				"version": manifest.Version,
+			}).Warn("Plugin manifest is invalid. Double check that the plugin correctly works.")
 		}
 
 		if plugin.Manifest.IconPath != "" {
@@ -389,7 +391,7 @@ func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 			continue
 		}
 
-		data, err := ioutil.ReadAll(reader)
+		data, err := io.ReadAll(reader)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to read %s in tar file", filepath)
 		}
@@ -412,7 +414,7 @@ func downloadSignature(url string) (string, error) {
 		return "", errors.Errorf("received %d status code while downloading plugin bundle from %v", resp.StatusCode, url)
 	}
 
-	signature, err := ioutil.ReadAll(resp.Body)
+	signature, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return "", errors.Wrapf(err, "failed to read signature from %s", url)
 	}
@@ -435,7 +437,7 @@ func downloadBundleData(url string) ([]byte, error) {
 		return nil, errors.Wrapf(err, "failed to read gzipped plugin bundle")
 	}
 
-	bundleData, err := ioutil.ReadAll(gzBundleReader)
+	bundleData, err := io.ReadAll(gzBundleReader)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed to read plugin bundle")
 	}
