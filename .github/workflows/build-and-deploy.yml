@@ -1,0 +1,50 @@
+name: Build and Publish Marketplace
+on:
+  push:
+
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    container: cimg/go:1.19
+    defaults:
+      run:
+        shell: bash
+    steps:
+    - name: build/checkout-marketplace
+      uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
+      with:
+        repository: mattermost/mattermost-marketplace
+    - name: build/check-style
+      run: make check-style
+    - name: build/test
+      run: make test
+    - name: build/build
+      run: make build
+    - name: build/persist-build
+      uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
+      with:
+        name: marketplace-build
+        path: .
+        retention-days: 2
+
+  deploy:
+    runs-con: ubuntu-22.04
+    container: circleci/node:12
+    needs:
+    - build
+    defaults:
+      run:
+        shell: bash
+    steps:
+    - name: deploy/download-build
+      uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
+      with:
+        name: marketplace-build
+        path: .
+    - name: deploy/master-branch
+      run: |
+        echo "TODO, should run: sudo -E serverless deploy function -f server --stage staging"
+    - name: deploy/production-branch
+      run: |
+        echo "TODO, should run: sudo -E serverless deploy function -f server --stage production"
