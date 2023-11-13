@@ -31,6 +31,7 @@ jobs:
         retention-days: 2
 
   deploy:
+    if: ${{ github.repository == 'mattermost/mattermost' && (github.ref_name == 'master' || github.ref_name == 'production') }}
     runs-on: ubuntu-22.04
     container: node:18
     needs:
@@ -51,13 +52,13 @@ jobs:
         name: marketplace-build
         path: dist/
     - name: deploy/master-branch
-      if: ${{ github.repository == 'mattermost/mattermost' && github.ref_name == 'master' }}
+      if: ${{ github.ref_name == 'master' }}
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_STAGING }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_STAGING }}
       run: echo "serverless deploy function -f server --stage staging"
     - name: deploy/production-branch
-      if: ${{ github.repository == 'mattermost/mattermost' && github.ref_name == 'production' }}
+      if: ${{ github.ref_name == 'production' }}
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_PRODUCTION }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_PRODUCTION }}
