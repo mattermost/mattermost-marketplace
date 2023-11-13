@@ -29,7 +29,7 @@ jobs:
         retention-days: 2
 
   deploy:
-    runs-con: ubuntu-22.04
+    runs-on: ubuntu-22.04
     container: circleci/node:12
     needs:
     - build
