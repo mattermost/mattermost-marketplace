@@ -11,10 +11,10 @@ jobs:
       run:
         shell: bash
     steps:
-    - name: build/checkout-marketplace
+    - name: build/checkout-repo
       uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       with:
-        repository: mattermost/mattermost-marketplace
+        fetch-depth: 0
     - name: build/check-style
       run: make check-style
     - name: build/test
