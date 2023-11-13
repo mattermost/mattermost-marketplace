@@ -38,6 +38,8 @@ jobs:
     defaults:
       run:
         shell: bash
+    env:
+      AWS_DEFAULT_REGION: us-east-1
     steps:
     - name: build/checkout-repo
       uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
@@ -48,10 +50,15 @@ jobs:
       with:
         name: marketplace-build
         path: dist/
-    # TODO add conditions based on branch
     - name: deploy/master-branch
-      if: github.repository == 'mattermost/mattermost' && github.ref_name == 'master'
-      run: serverless deploy function -f server --stage staging"
+      if: ${{ github.repository == 'mattermost/mattermost' && github.ref_name == 'master' }}
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_STAGING }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_STAGING }}
+      run: echo "serverless deploy function -f server --stage staging"
     - name: deploy/production-branch
-      if: github.repository == 'mattermost/mattermost' && github.ref_name == 'production'
-      run: serverless deploy function -f server --stage production"
+      if: ${{ github.repository == 'mattermost/mattermost' && github.ref_name == 'production' }}
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_PRODUCTION }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_PRODUCTION }}
+      run: echo "serverless deploy function -f server --stage production"
