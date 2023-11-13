@@ -50,8 +50,8 @@ jobs:
         path: dist/
     # TODO add conditions based on branch
     - name: deploy/master-branch
-      run: |
-        echo "TODO, should run: serverless deploy function -f server --stage staging"
+      if: github.repository == 'mattermost/mattermost' && github.ref_name == 'master'
+      run: serverless deploy function -f server --stage staging"
     - name: deploy/production-branch
-      run: |
-        echo "TODO, should run: serverless deploy function -f server --stage production"
+      if: github.repository == 'mattermost/mattermost' && github.ref_name == 'production'
+      run: serverless deploy function -f server --stage production"
