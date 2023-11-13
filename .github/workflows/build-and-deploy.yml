@@ -15,6 +15,8 @@ jobs:
       uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       with:
         fetch-depth: 0
+    - name: build/ensure-master-exists
+      run: git branch master origin/master
     - name: build/check-style
       run: make check-style
     - name: build/test
