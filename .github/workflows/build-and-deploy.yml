@@ -30,8 +30,7 @@ jobs:
         retention-days: 2
 
   deploy:
-    #if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'master' || github.ref_name == 'production') }}
-    if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'cld-6549-gha-migration' || github.ref_name == 'production') }}
+    if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'master' || github.ref_name == 'production') }}
     runs-on: ubuntu-22.04
     container: node:20
     needs:
@@ -52,8 +51,7 @@ jobs:
         name: marketplace-build
         path: dist/
     - name: deploy/master-branch
-      #if: ${{ github.ref_name == 'master' }}
-      if: ${{ github.ref_name == 'cld-6549-gha-migration' }}
+      if: ${{ github.ref_name == 'master' }}
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_STAGING }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_STAGING }}
