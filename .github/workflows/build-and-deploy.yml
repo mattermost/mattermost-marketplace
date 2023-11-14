@@ -32,8 +32,8 @@ jobs:
       run: echo "${{ github.ref_name }}, ${{ github.ref }}, ${{ github.event.push.base_ref }}, ${{ github.event.push.ref }}"
 
   deploy:
-    #if: ${{ github.repository == 'mattermost/mattermost' && (github.ref_name == 'master' || github.ref_name == 'production') }}
-    if: ${{ github.repository == 'mattermost/mattermost' && (github.ref_name == 'cld-6549-gha-migration' || github.ref_name == 'production') }}
+    #if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'master' || github.ref_name == 'production') }}
+    if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'cld-6549-gha-migration' || github.ref_name == 'production') }}
     runs-on: ubuntu-22.04
     container: node:18
     needs:
@@ -65,4 +65,4 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_PRODUCTION }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_PRODUCTION }}
-      run: serverless deploy function -f server --stage production
+      run: echo serverless deploy function -f server --stage production
