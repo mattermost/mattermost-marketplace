@@ -28,6 +28,8 @@ jobs:
         name: marketplace-build
         path: dist/
         retention-days: 2
+    - name: test/debug-ref-name
+      run: echo "${{ github.ref_name }}, ${{ github.ref }}, ${{ github.event.push.base_ref }}, ${{ github.event.push.ref }}"
 
   deploy:
     #if: ${{ github.repository == 'mattermost/mattermost' && (github.ref_name == 'master' || github.ref_name == 'production') }}
