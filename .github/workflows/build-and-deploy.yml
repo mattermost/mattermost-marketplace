@@ -28,8 +28,6 @@ jobs:
         name: marketplace-build
         path: dist/
         retention-days: 2
-    - name: test/debug-ref-name
-      run: echo "${{ github.ref_name }}, ${{ github.ref }}, ${{ github.event.push.base_ref }}, ${{ github.event.push.ref }}"
 
   deploy:
     #if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'master' || github.ref_name == 'production') }}
@@ -59,10 +57,13 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_STAGING }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_STAGING }}
-      run: serverless deploy function -f server --stage staging
+      run: |
+        ls
+        ls -la dist/
+        serverless deploy function -f server --stage staging
     - name: deploy/production-branch
       if: ${{ github.ref_name == 'production' }}
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_PRODUCTION }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_PRODUCTION }}
-      run: echo serverless deploy function -f server --stage production
+      run: serverless deploy function -f server --stage production
