@@ -22,6 +22,14 @@ jobs:
       run: make test
     - name: build/build
       run: make build
+    - name: build/check-uncommitted-changes
+      run: |
+        # Asserrt that 'git status --porcelain' does not produce output
+        [ -z "$(git status --porcelain)" ] || {
+          echo "ERROR: uncommitted changes"
+          git status --porcelain
+          exit 1
+        }
     - name: build/persist-build
       uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
       with:
