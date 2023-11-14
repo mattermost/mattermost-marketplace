@@ -24,7 +24,7 @@ jobs:
       run: make build
     - name: build/check-uncommitted-changes
       run: |
-        # Asserrt that 'git status --porcelain' does not produce output
+        # Assert that 'git status --porcelain' does not produce output
         [ -z "$(git status --porcelain)" ] || {
           echo "ERROR: uncommitted changes"
           git status --porcelain
