@@ -33,7 +33,7 @@ jobs:
     #if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'master' || github.ref_name == 'production') }}
     if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'cld-6549-gha-migration' || github.ref_name == 'production') }}
     runs-on: ubuntu-22.04
-    container: node:12
+    container: node:20
     needs:
     - build
     defaults:
@@ -45,7 +45,7 @@ jobs:
     - name: build/checkout-repo
       uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
     - name: deploy/install-dependencies
-      run: npm i -g serverless@"<2.0.0"
+      run: npm i -g "serverless@<4.0.0"
     - name: deploy/download-build
       uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a # v3.0.2
       with:
