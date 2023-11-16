@@ -15,7 +15,7 @@ jobs:
       with:
         fetch-depth: 0
     - name: build/ensure-master-exists
-      run: git rev-parse --verify master || git branch master origin/master
+      run: git rev-parse --verify master >/dev/null 2>&1 || git branch master origin/master
     - name: build/check-style
       run: make check-style
     - name: build/test
