@@ -9234,6 +9234,163 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNzMuMjcgNzUuNzYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMjY4NGZmO30uY2xzLTJ7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fS5jbHMtM3tmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50LTIpO308L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMzQuNjQiIHkxPSIxNS4zNSIgeDI9IjE5IiB5Mj0iMzAuOTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAuMTgiIHN0b3AtY29sb3I9IiMwMDUyY2MiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyNjg0ZmYiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50LTIiIHgxPSIzOC43OCIgeTE9IjYwLjI4IiB4Mj0iNTQuMzkiIHkyPSI0NC42NyIgeGxpbms6aHJlZj0iI2xpbmVhci1ncmFkaWVudCIvPjwvZGVmcz48dGl0bGU+SmlyYSBTb2Z0d2FyZS1pY29uLWJsdWU8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJCbHVlIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik03Mi40LDM1Ljc2LDM5LjgsMy4xNiwzNi42NCwwaDBMMTIuMSwyNC41NGgwTC44OCwzNS43NkEzLDMsMCwwLDAsLjg4LDQwTDIzLjMsNjIuNDIsMzYuNjQsNzUuNzYsNjEuMTgsNTEuMjJsLjM4LS4zOEw3Mi40LDQwQTMsMywwLDAsMCw3Mi40LDM1Ljc2Wk0zNi42NCw0OS4wOGwtMTEuMi0xMS4yLDExLjItMTEuMiwxMS4yLDExLjJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuNjQsMjYuNjhBMTguODYsMTguODYsMCwwLDEsMzYuNTYuMDlMMTIuMDUsMjQuNTksMjUuMzksMzcuOTMsMzYuNjQsMjYuNjhaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDcuODcsMzcuODUsMzYuNjQsNDkuMDhhMTguODYsMTguODYsMCwwLDEsMCwyNi42OGgwTDYxLjIxLDUxLjE5WiIvPjwvZz48L2c+PC9zdmc+",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v4.0.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/tag/v4.0.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmU716sACgkQ0bVLR6XO/sRxlA/+PGHT/wNVsidAM8xl1kxvGm0QJrqwoI8H0xiNqpwg0suCC2QRQjiz3DJrD2ati7q0WDtlcAPtoqjERbuaekguiLV6yi9z6Ul7OskHAiNOxmDPyRhG8YhHYDRAiliIE2hbeIcFqTLcdzG6Mi2ezxoK6KHv1XIUapJquXHPs2uWKheEA8jNPf22nCQ6giK7Praax9rC02/7RotBRuntifZbxr6QIMMfAXrAGnlOPxOUDBVYB97oJpSoDNScIwznbf7Ma447rUtIZU2Yy6gK1njMXJ+cqEsGj0afvhwVYotqOdP1qGjUCPjplaaBUIvQw0465Yhg4+cTYehuva5x1RFrI82/9hknoq9MvTTiGXwS2m/vShfXpL6WUBjXos5oWqRSqupayKeDN80UfGsXqKxrXi/3V9KyyMWE08uHjKRaRuMwF5Hq7PbHGcK3sEWrPyrDmmwqAX2wtmkPFL0ax/Vr2kysQvCQthWE/F+QAfos5U6asYUw/Up/I5yaS0gDcMN9ew5q5K31tJ4HwPnySyHp8QUsaeYw9N/FrMFoAyUe9M0hSE4LVcDteKww7NFGNNdpZFth813EwDSjcO+p9usH0R4C+u3WT1BdcPiIwgJ6BMv8f6nUEthi4h/QuN4O21UBwo3ZZismn/7LoWkY9/ztSyhY/ff3t4a4avCOP+uZLH0=",
+    "repo_name": "mattermost-plugin-jira",
+    "manifest": {
+      "id": "jira",
+      "name": "Jira",
+      "description": "Atlassian Jira plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-jira/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/tag/v4.0.1",
+      "icon_path": "assets/icon.svg",
+      "version": "4.0.1",
+      "min_server_version": "7.8.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Please refer to the `/jira` command [**documentation**](https://mattermost.gitbook.io/plugin-jira/setup/installation#step-2-install-app-on-jira-server) to further configure the Jira plugin.",
+        "footer": "Please refer to the `/jira` command [**documentation**](https://mattermost.gitbook.io/plugin-jira/setup/installation#step-2-install-app-on-jira-server) to further configure the Jira plugin. Specifically, [`/jira instance [un-]install`](https://mattermost.gitbook.io/plugin-jira/setup/installation#step-2-install-app-on-jira-server) and [`/jira webhook`](https://mattermost.gitbook.io/plugin-jira/setup/configuration#step-4-required-setup-webhooks-from-jira).",
+        "settings": [
+          {
+            "key": "EnableJiraUI",
+            "display_name": "Allow users to attach and create Jira issues in Mattermost:",
+            "type": "bool",
+            "help_text": "When **false**, users cannot attach and create Jira issues in Mattermost. Does not affect Jira webhook notifications. Select **false** then disable and re-enable this plugin in **System Console > Plugins > Plugin Management** to reset the plugin state for all users. \n \n When **true**, install this plugin to your Jira instance with `/jira install` to allow users to create and manage issues across Mattermost channels. See [documentation](https://about.mattermost.com/default-jira-plugin-link-application) to learn more.",
+            "placeholder": "",
+            "default": true,
+            "hosting": ""
+          },
+          {
+            "key": "secret",
+            "display_name": "Webhook Secret:",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Jira integrations.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "RolesAllowedToEditJiraSubscriptions",
+            "display_name": "Mattermost Roles Allowed to Edit Jira Subscriptions:",
+            "type": "radio",
+            "help_text": "Mattermost users who can subscribe channels to Jira tickets.",
+            "placeholder": "",
+            "default": "system_admin",
+            "options": [
+              {
+                "display_name": "All users",
+                "value": "users"
+              },
+              {
+                "display_name": "Users who can manage channel settings",
+                "value": "channel_admin"
+              },
+              {
+                "display_name": "Users who can manage teams",
+                "value": "team_admin"
+              },
+              {
+                "display_name": "System Admins",
+                "value": "system_admin"
+              }
+            ],
+            "hosting": ""
+          },
+          {
+            "key": "GroupsAllowedToEditJiraSubscriptions",
+            "display_name": "Jira Groups Allowed to Edit Jira Subscriptions:",
+            "type": "text",
+            "help_text": "Comma separated list of Group Names. List the Jira user groups who can create subscriptions. If none are specified, any Jira user can create a subscription. Jira groups restrictions are only applicable for a legacy instance installed on Jira 2.4 or earlier.",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "SecurityLevelEmptyForJiraSubscriptions",
+            "display_name": "Default Subscription Security Level to Empty:",
+            "type": "bool",
+            "help_text": "Subscriptions will only include issues that have a security level assigned if the appropriate security level has been included as a filter",
+            "placeholder": "",
+            "default": true,
+            "hosting": ""
+          },
+          {
+            "key": "JiraAdminAdditionalHelpText",
+            "display_name": "Additional Help Text to be shown with Jira Help:",
+            "type": "text",
+            "help_text": "Additional Help Text to be shown to the user along with the output of `/jira help` command.",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "HideDecriptionComment",
+            "display_name": "Hide issue descriptions and comments:",
+            "type": "bool",
+            "help_text": "Hide detailed issue descriptions and comments from Subscription and Webhook messages",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "EnableAutocomplete",
+            "display_name": "Enable slash command autocomplete:",
+            "type": "bool",
+            "help_text": "Autocomplete guides users through the available `/jira` slash commands.",
+            "placeholder": "",
+            "default": true,
+            "hosting": ""
+          },
+          {
+            "key": "DisplaySubscriptionNameInNotifications",
+            "display_name": "Display subscription name in notifications:",
+            "type": "bool",
+            "help_text": "Display subscription name in post when a subscription posts to a channel",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v4.0.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmU716MACgkQ0bVLR6XO/sT9eQ//cP9NfGHlBFebCwgXXa017Y/KVDKSzvrO1No6bOInhtHAlO+qxKQB5WZseZQY/fQtOdLmIMgz0K/mCp20C8XKt49Aa5y+8yLA5o5Qns8NlmtIUO0qBBj6S4GHBmZLTUuD3y4ikyRupZLUqaMy2qEDiGQXXd7CUOv0Bl2lN3edjKoKLzrqptVrplrXV/XctBiuWSM+7tue66+QeFK4gwLx3TqMZp5KkUBvg8aVTfyoqGV+B2IpRaYZ3II1J8LLlFYQytGFFv4mV6lU+Pvsrj+6VCIPs4YFCJ29QJjzNiMy9U/Dlg75u7nVPyiJBZImfgN2C827l6wuEwUGslAnK0BjCVrsjva6jzPCjUDI8RWh/3b6r4NlLtw0ow2JNBzTY5bTkKcYgUh9B5u5nldtrUcpbjgzlKzGTu/u3lvF7q75plZpn6eLcl/q8RH6ruOs4VMHnXzJB7ZQrREgdvT26ohasyGgzwL4ND9/oNymqruV0F+VZObRfr2LF3b+kROjqyegaHEXSdOjTjHc+wl31OOnGF50pYYQq4tligyaXZjtw0e8NIaHycuagWOq+/sdI1Sni0TUqRz6Aje6nTTwNQXhX93wRrt7bezDnKFPQ30bsD9URuIWAms9FhyTtyFhkGXFbVrhQ/1zeAcrVvtQ7F2fKRDWzIJT6KhVpQvqjHXyync="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v4.0.1-osx-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmU716UACgkQ0bVLR6XO/sQ3Dw/9G84plJVOFEkWl+FllO+nXeu1rWt5gPafV2ShsLSp4LnHzdoUZ9z+BotAYJ8fLyQ89N1LXnLG3Zg8XoqT1MvqXDPK8DL8fcLfswgwHIzJsVWgNtbt+2+Q5xiCxWaMZMlBqIbfOGOSPw6ecXgIREoo3pRSa071+gBkoMV0sbRaBmFHRsUBmwP0raaKLk8DsfM29S0fXgc39TT4ueF0A4yxoMixSo/rDYsn2dNlOdaxmXvwSw8/SffPk6cFm2nFb9NhzgWciBatvEYSluPAkcNQ5x0+Qhaz2thytlUVSzgUyN955r+bp87jhRByqdTBX7a8y1QMxxlX3KW36zqovvL1K/Od8Y/f5GC+AilwK2PS5EMZH5lb5HUWbJPrb8zQVG+7kj7/PUahyme4ns4FwO01bAonk45X774ZEGnUk3kp/KeeWw9azCl3GgeubxiSs/B+Zq0xbgdA++3l8U63VgbRe2WJjvKJPv1cTkQk97IbqFIWEmvReHg+pb9/NwqtXB52OhwyWDjpvS7/dkZzPG+3kJOfCeqcJndOIGM0SF0QWrhWuOYwacPk9SWS9tIFBbtdShO1T6B4L4qJL9T6Wz4F/mDjFLquf+1vh/vcQy4WvefV4so1/y74JAhj4NKYz6JmJcNeTYmHxfnBPLVqEgPoTVMc7KjRksanWxGAB5TDhEs="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v4.0.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmU716cACgkQ0bVLR6XO/sSzdA//V4ELIjeZa4i2t0kIrpHYl34HDr9hywerBJDu/fNqvhQuq1s1ExNEqBIWoS4H3KlK3stTYIp8wslFFT3JCpx1WNJKgQRSrx9bzM4prMcDE930hgMPckwACguHTQqcvllRYSkLHv5LzYhgLQwXYOddM/PXuvaj/C0slwcKCyt3Wg3asXRBLEIIvuCo/ufKqsGHiTSEHPFZ3/4qMn3ZQTUYXRi1uvT0C3Hrd8r3heRa/SchMzp2siBbDSCJXiMDrDB8f3BichOX/RJYKPpqflePyZmcEBb7Pcvskt58SvZR55iakn1wz0H9WGBxLMK7oeYaOwXO4TtPxza4q+Euc/HmFyTFX40uRNo86afGgdJXExfmp3CbSXHx2UFyyjHV6IC0kHhbMkJj4/8dEiBrMlfuAVDoG61+3cuPbGKlysc6Z6SyftQgJaIXjVUzN8icJyRf+A3/YQBZHhXDMY/e3r41jM2MdWjCLBLVU1FHvNYzab7CWTy19WXrTSZWhOD8EEZ+6eq0QHybtwyvFVgp8h82B/wBGNubyrkUl7+SYx0OZgpQdzmAZN2VAIQ8RnoLI9eIdUyLO6EFg4j3NWLZdqdBv6pnE0PbHrMPU0VSsVQy++wfOm2743RcG34LkAgtkoDUIvkt/3afluNKe1SxIxQ+b9e6ORBh6idk/1AUhG0jppY="
+      }
+    },
+    "updated_at": "2023-11-01T03:01:20.748886Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-jira",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNzMuMjcgNzUuNzYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojMjY4NGZmO30uY2xzLTJ7ZmlsbDp1cmwoI2xpbmVhci1ncmFkaWVudCk7fS5jbHMtM3tmaWxsOnVybCgjbGluZWFyLWdyYWRpZW50LTIpO308L3N0eWxlPjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMzQuNjQiIHkxPSIxNS4zNSIgeDI9IjE5IiB5Mj0iMzAuOTkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAuMTgiIHN0b3AtY29sb3I9IiMwMDUyY2MiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMyNjg0ZmYiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50LTIiIHgxPSIzOC43OCIgeTE9IjYwLjI4IiB4Mj0iNTQuMzkiIHkyPSI0NC42NyIgeGxpbms6aHJlZj0iI2xpbmVhci1ncmFkaWVudCIvPjwvZGVmcz48dGl0bGU+SmlyYSBTb2Z0d2FyZS1pY29uLWJsdWU8L3RpdGxlPjxnIGlkPSJMYXllcl8yIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSJCbHVlIj48cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Ik03Mi40LDM1Ljc2LDM5LjgsMy4xNiwzNi42NCwwaDBMMTIuMSwyNC41NGgwTC44OCwzNS43NkEzLDMsMCwwLDAsLjg4LDQwTDIzLjMsNjIuNDIsMzYuNjQsNzUuNzYsNjEuMTgsNTEuMjJsLjM4LS4zOEw3Mi40LDQwQTMsMywwLDAsMCw3Mi40LDM1Ljc2Wk0zNi42NCw0OS4wOGwtMTEuMi0xMS4yLDExLjItMTEuMiwxMS4yLDExLjJaIi8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNMzYuNjQsMjYuNjhBMTguODYsMTguODYsMCwwLDEsMzYuNTYuMDlMMTIuMDUsMjQuNTksMjUuMzksMzcuOTMsMzYuNjQsMjYuNjhaIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNNDcuODcsMzcuODUsMzYuNjQsNDkuMDhhMTguODYsMTguODYsMCwwLDEsMCwyNi42OGgwTDYxLjIxLDUxLjE5WiIvPjwvZz48L2c+PC9zdmc+",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-jira-v4.0.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-jira/releases/tag/v4.0.0",
     "hosting": "",
