@@ -1,6 +1,6 @@
 service: mattermost-marketplace
 
-frameworkVersion: '>=3.36.0 <4.0.0'
+frameworkVersion: '>=1.28.0 <2.0.0'
 
 provider:
   name: aws
