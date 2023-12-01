@@ -63,13 +63,13 @@ jobs:
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_STAGING }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_STAGING }}
-      run: serverless --verbose deploy function -f server --stage staging
+      run: serverless deploy function -f server --stage staging --verbose
     - name: deploy/production-branch
       if: ${{ github.ref_name == 'production' }}
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.MM_MARKETPLACE_AWS_ACCESS_KEY_ID_PRODUCTION }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_PRODUCTION }}
-      run: serverless --verbose deploy function -f server --stage production
+      run: serverless deploy function -f server --stage production --verbose
     - name: deploy/persist-lambda-artifact
       uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce # v3.1.2
       with:
