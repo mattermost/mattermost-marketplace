@@ -34,6 +34,8 @@ func (store *Proxy) GetPlugins(pluginFilter *model.PluginFilter) ([]*model.Plugi
 		EnterprisePlugins: pluginFilter.EnterprisePlugins,
 		Cloud:             pluginFilter.Cloud,
 		Platform:          pluginFilter.Platform,
+		ReturnAllVersions: pluginFilter.ReturnAllVersions,
+		PluginID:          pluginFilter.PluginID,
 	})
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to reach upstream store")

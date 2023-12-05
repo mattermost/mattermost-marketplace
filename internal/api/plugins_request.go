@@ -14,6 +14,8 @@ type GetPluginsRequest struct {
 	EnterprisePlugins bool
 	Cloud             bool
 	Platform          string
+	ReturnAllVersions bool
+	PluginID          string
 }
 
 // ApplyToURL modifies the given url to include query string parameters for the request.
@@ -26,5 +28,7 @@ func (request *GetPluginsRequest) ApplyToURL(u *url.URL) {
 	q.Add("enterprise_plugins", strconv.FormatBool(request.EnterprisePlugins))
 	q.Add("cloud", strconv.FormatBool(request.Cloud))
 	q.Add("platform", request.Platform)
+	q.Add("return_all_versions", strconv.FormatBool(request.ReturnAllVersions))
+	q.Add("plugin_id", request.PluginID)
 	u.RawQuery = q.Encode()
 }
