@@ -25,7 +25,9 @@ jobs:
       run: make build
     - name: build/build-private-beta
       if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'private-beta') }}
-      run: BUILD_UPSTREAM_URL=https://api.integrations.mattermost.com make build
+      env:
+        BUILD_UPSTREAM_URL: https://api.integrations.mattermost.com
+      run: make build
     - name: build/check-uncommitted-changes
       run: |
         # Assert that 'git status --porcelain' does not produce output
