@@ -66,9 +66,7 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.MM_MARKETPLACE_AWS_SECRET_ACCESS_KEY_STAGING }}
       run: |
         serverless deploy function -f server --stage staging --verbose
-        find ${HOME}/.serverless || :
-        find /__w/_temp/_github_home/.serverless || :
-        env | grep serverless || :
+        find / -name '*.zip' || :
     - name: deploy/production-branch
       if: ${{ github.ref_name == 'production' }}
       env:
