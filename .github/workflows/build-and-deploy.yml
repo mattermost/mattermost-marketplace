@@ -59,6 +59,9 @@ jobs:
       with:
         name: marketplace-build
         path: dist/
+    # Required because of https://github.com/actions/upload-artifact/issues/38
+    - name: deploy/set-artifact-permissions
+      run: chmod +x dist/*
     - name: deploy/master-branch
       if: ${{ github.ref_name == 'cld-6708-test-deploy' }}
       env:
