@@ -6,9 +6,9 @@ import (
 	"compress/gzip"
 	"context"
 	"encoding/base64"
+	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"os"
 	"path"
@@ -18,7 +18,7 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -310,14 +310,20 @@ func getReleasePlugin(release *github.RepositoryRelease, repository *github.Repo
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to read manifest from plugin bundle for release %s", releaseName)
 		}
-		plugin.Manifest = mattermostModel.ManifestFromJson(bytes.NewReader(manifestData))
-		if plugin.Manifest == nil {
-			return nil, errors.Errorf("manifest nil after reading from plugin bundle for release %s", releaseName)
+
+		var manifest mattermostModel.Manifest
+		err = json.Unmarshal(manifestData, &manifest)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to read manifest from plugin bundle for release %s", releaseName)
 		}
+		plugin.Manifest = &manifest
 
 		err = plugin.Manifest.IsValid()
 		if err != nil {
-			return nil, errors.Wrapf(err, "invalid manifest for release %s", releaseName)
+			logger.WithFields(logrus.Fields{
+				"id":      manifest.Id,
+				"version": manifest.Version,
+			}).Warn("Plugin manifest is invalid. Double check that the plugin correctly works.")
 		}
 
 		if plugin.Manifest.IconPath != "" {
@@ -374,7 +380,7 @@ func getFromTarFile(reader *tar.Reader, filepath string) ([]byte, error) {
 			continue
 		}
 
-		data, err := ioutil.ReadAll(reader)
+		data, err := io.ReadAll(reader)
 		if err != nil {
 			return nil, errors.Wrapf(err, "failed to read %s in tar file", filepath)
 		}
@@ -397,7 +403,7 @@ func downloadSignature(url string) (string, error) {
 		return "", errors.Errorf("received %d status code while downloading plugin bundle from %v", resp.StatusCode, url)
 	}
 
-	signature, err := ioutil.ReadAll(resp.Body)
+	signature, err := io.ReadAll(resp.Body)
 	if err != nil {
 		return "", errors.Wrapf(err, "failed to read signature from %s", url)
 	}
@@ -420,7 +426,7 @@ func downloadBundleData(url string) ([]byte, error) {
 		return nil, errors.Wrapf(err, "failed to read gzipped plugin bundle")
 	}
 
-	bundleData, err := ioutil.ReadAll(gzBundleReader)
+	bundleData, err := io.ReadAll(gzBundleReader)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed to read plugin bundle")
 	}

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	mattermostModel "github.com/mattermost/mattermost-server/v5/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
@@ -83,6 +83,7 @@ func TestNewStatic(t *testing.T) {
 				ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
 				Manifest: &mattermostModel.Manifest{
 					Id:      "test",
+					Name:    "Test",
 					Version: "0.1.0",
 				},
 			},
@@ -93,6 +94,7 @@ func TestNewStatic(t *testing.T) {
 				ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
 				Manifest: &mattermostModel.Manifest{
 					Id:      "test",
+					Name:    "Test",
 					Version: "0.1.0",
 				},
 			},
@@ -112,6 +114,7 @@ func TestNewStatic(t *testing.T) {
 				ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0",
 				Manifest: &mattermostModel.Manifest{
 					Id:               "test",
+					Name:             "Test",
 					Version:          "0.1.0",
 					MinServerVersion: "5.23.0",
 				},
@@ -123,6 +126,7 @@ func TestNewStatic(t *testing.T) {
 				ReleaseNotesURL: "https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0",
 				Manifest: &mattermostModel.Manifest{
 					Id:               "test",
+					Name:             "Test",
 					Version:          "0.1.0",
 					MinServerVersion: "5.23.0",
 				},
@@ -158,21 +162,21 @@ func TestNewStaticFromReader(t *testing.T) {
 
 	t.Run("missing manifest version", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
-		store, err := NewStaticFromReader(bytes.NewReader([]byte(`[{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-demo","IconData":"icon-data.svg","DownloadURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","Signature":"c2lnbmF0dXJl","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","Manifest":{"id": "test"}},{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-starter-template","DownloadURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","Signature":"signature2"],"ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","Manifest":{"id": "test"}}]`)), logger)
+		store, err := NewStaticFromReader(bytes.NewReader([]byte(`[{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-demo","IconData":"icon-data.svg","DownloadURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","Signature":"c2lnbmF0dXJl","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","Manifest":{"id": "test", "name": "Test", }},{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-starter-template","DownloadURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","Signature":"signature2"],"ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","Manifest":{"id": "test", "name": "Test"}}]`)), logger)
 		assert.Error(t, err)
 		assert.Nil(t, store)
 	})
 
 	t.Run("missing min_server_version version is valid", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
-		store, err := NewStaticFromReader(bytes.NewReader([]byte(`[{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-demo","IconData":"icon-data.svg","DownloadURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","Signature":"c2lnbmF0dXJl","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","Manifest":{"id": "test", "version": "0.1.0"}},{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-starter-template","DownloadURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","Signature":"signature2","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","Manifest":{"id": "test", "version": "0.1.0"}}]`)), logger)
+		store, err := NewStaticFromReader(bytes.NewReader([]byte(`[{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-demo","IconData":"icon-data.svg","DownloadURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","Signature":"c2lnbmF0dXJl","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","Manifest":{"id": "test", "name": "Test", "version": "0.1.0"}},{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-starter-template","DownloadURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","Signature":"signature2","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","Manifest":{"id": "test", "name": "Test", "version": "0.1.0"}}]`)), logger)
 		assert.NoError(t, err)
 		assert.NotNil(t, store)
 	})
 
 	t.Run("valid stream", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
-		store, err := NewStaticFromReader(bytes.NewReader([]byte(`[{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-demo","IconData":"icon-data.svg","DownloadURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","Signature":"c2lnbmF0dXJl","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","Manifest":{"id": "test", "version": "0.1.0", "min_server_version":"5.23.0"}},{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-starter-template","DownloadURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","Signature":"signature2","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","Manifest":{"id": "test", "version": "0.1.0", "min_server_version":"5.23.0"}}]`)), logger)
+		store, err := NewStaticFromReader(bytes.NewReader([]byte(`[{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-demo","IconData":"icon-data.svg","DownloadURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","Signature":"c2lnbmF0dXJl","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","Manifest":{"id": "test", "name": "Test", "version": "0.1.0", "min_server_version":"5.23.0"}},{"HomepageURL":"https://github.com/mattermost/mattermost-plugin-starter-template","DownloadURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/download/v0.1.0/com.mattermost.plugin-starter-template-0.1.0.tar.gz","Signature":"signature2","ReleaseNotesURL":"https://github.com/mattermost/mattermost-plugin-starter-template/releases/v0.1.0","Manifest":{"id": "test", "name": "Test", "version": "0.1.0", "min_server_version":"5.23.0"}}]`)), logger)
 		assert.NoError(t, err)
 		assert.NotNil(t, store)
 	})
