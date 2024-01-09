@@ -16,7 +16,7 @@
       "description": "Plugin to sync Mattermost channels with Microsoft Teams channels",
       "homepage_url": "https://github.com/mattermost/mattermost-plugin-msteams-sync",
       "support_url": "https://github.com/mattermost/mattermost-plugin-msteams-sync/issues",
-      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-syncreleases/tag/v1.5.3",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-sync/releases/tag/v1.5.3",
       "icon_path": "assets/msteams-sync-icon.svg",
       "version": "1.5.3",
       "min_server_version": "7.8.10",
