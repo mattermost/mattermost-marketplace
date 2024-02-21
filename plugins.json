@@ -1,5 +1,302 @@
 [
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-msteams",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxtYXNrIGlkPSJtYXNrMF8xNV8xMjYiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjUiIHdpZHRoPSI4NyIgaGVpZ2h0PSI4MSI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNODkuNzg2IDVIM1Y4NS41MTJINTcuMjNDNTUuOTM4NyA4Mi4zNjQgNTUuMjc2MiA3OC45OTM2IDU1LjI4IDc1LjU5MUM1NS4yOCA2MS4xNTQgNjYuOTg0IDQ5LjQ1MSA4MS40MjEgNDkuNDUxQzg0LjM0NiA0OS40NTEgODcuMTYgNDkuOTMxIDg5Ljc4NiA1MC44MThWNVoiIGZpbGw9IiNEOUQ5RDkiLz4KPC9tYXNrPgo8ZyBtYXNrPSJ1cmwoI21hc2swXzE1XzEyNikiPgo8cGF0aCBkPSJNNjEuNTM2MSAzNy40NzY3SDgwLjkyMjFDODEuODAxNyAzNy40NzY3IDgyLjY0NTMgMzcuODI2MSA4My4yNjcyIDM4LjQ0OEM4My44ODkyIDM5LjA3IDg0LjIzODYgMzkuOTEzNSA4NC4yMzg2IDQwLjc5MzFWNTguNDUxM0M4NC4yMzg2IDY1LjE4MjggNzguNzgxOCA3MC42Mzg4IDcyLjA1MDMgNzAuNjM4OEg3MS45OTMyQzY1LjI2MTcgNzAuNjQwNSA1OS44MDQgNjUuMTg0NSA1OS44MDMxIDU4LjQ1M1YzOS4yMDk3QzU5LjgwMzEgMzguMjUyNCA2MC41Nzg4IDM3LjQ3NjcgNjEuNTM2MSAzNy40NzY3Wk03NC42Mzg2IDMzLjk4NjRDNzYuNzIxNyAzMy45ODY0IDc4LjcxOTUgMzMuMTU4OCA4MC4xOTI1IDMxLjY4NThDODEuNjY1NSAzMC4yMTI4IDgyLjQ5MyAyOC4yMTUgODIuNDkzIDI2LjEzMTlDODIuNDkzIDI0LjA0ODggODEuNjY1NSAyMi4wNTEgODAuMTkyNSAyMC41NzhDNzguNzE5NSAxOS4xMDUgNzYuNzIxNyAxOC4yNzc0IDc0LjYzODYgMTguMjc3NEM3Mi41NTU0IDE4LjI3NzQgNzAuNTU3NiAxOS4xMDUgNjkuMDg0NiAyMC41NzhDNjcuNjExNiAyMi4wNTEgNjYuNzg0MSAyNC4wNDg4IDY2Ljc4NDEgMjYuMTMxOUM2Ni43ODQxIDI4LjIxNSA2Ny42MTE2IDMwLjIxMjggNjkuMDg0NiAzMS42ODU4QzcwLjU1NzYgMzMuMTU4OCA3Mi41NTU0IDMzLjk4NjQgNzQuNjM4NiAzMy45ODY0WiIgZmlsbD0iIzUwNTlDOSIvPgo8cGF0aCBkPSJNNTAuMjAzOSAzMy45ODY0QzU2LjQ2OTMgMzMuOTg2NCA2MS41NDgyIDI4LjkwNjYgNjEuNTQ4MiAyMi42NDAzQzYxLjU0ODIgMTYuMzc1OCA1Ni40NjkzIDExLjI5NiA1MC4yMDM5IDExLjI5NkM0My45Mzg1IDExLjI5NiAzOC44NTk2IDE2LjM3NDkgMzguODU5NiAyMi42NDEyQzM4Ljg1OTYgMjguOTA2NiA0My45Mzg1IDMzLjk4NjQgNTAuMjAzOSAzMy45ODY0Wk02NS4zMzA4IDM3LjQ3NjdIMzMuMzMxQzMyLjQ2MTggMzcuNDk4IDMxLjYzNjYgMzcuODYzNCAzMS4wMzY3IDM4LjQ5MjdDMzAuNDM2NyAzOS4xMjIgMzAuMTExMSAzOS45NjM3IDMwLjEzMTMgNDAuODMyOVY2MC45NzM5QzI5Ljg3ODggNzEuODMzIDM4LjQ3MDUgODAuODQ1OSA0OS4zMzA1IDgxLjExMTRDNjAuMTkwNSA4MC44NDU5IDY4Ljc4MzEgNzEuODMzIDY4LjUyOTcgNjAuOTczVjQwLjgzMjlDNjguNTQ5NyAzOS45NjM4IDY4LjIyMzkgMzkuMTIyNCA2Ny42MjQgMzguNDkzMkM2Ny4wMjQxIDM3Ljg2NDEgNjYuMTk5IDM3LjQ5ODggNjUuMzMgMzcuNDc3NUw2NS4zMzA4IDM3LjQ3NjdaIiBmaWxsPSIjN0I4M0VCIi8+CjxwYXRoIG9wYWNpdHk9IjAuMSIgZD0iTTUxLjA3NjUgMzcuNDc2N1Y2NS42OTk5QzUxLjA3MjIgNjYuMzMyOCA1MC44ODEgNjYuOTUwMyA1MC41MjcgNjcuNDc1QzUwLjE3MyA2Ny45OTk2IDQ5LjY3MTkgNjguNDA4IDQ5LjA4NjYgNjguNjQ4OUM0OC43MDYxIDY4LjgxMDYgNDguMjk2MiA2OC44OTM2IDQ3Ljg4MiA2OC44OTM2SDMxLjY2NzJDMzEuNDM3NyA2OC4zMjEzIDMxLjIzNCA2Ny43MzkgMzEuMDU2NiA2Ny4xNDg1QzMwLjQ0NTUgNjUuMTQ1NiAzMC4xMzM3IDYzLjA2MzUgMzAuMTMxMyA2MC45Njk1VjQwLjgyODZDMzAuMTEwOSAzOS45NjA2IDMwLjQzNTggMzkuMTIgMzEuMDM0OCAzOC40OTE1QzMxLjYzMzggMzcuODYzIDMyLjQ1NzkgMzcuNDk4IDMzLjMyNTggMzcuNDc2N0g1MS4wNzY1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDkuMzMwNSAzNy40NzY3VjY3LjQ0NTFDNDkuMzMwNSA2Ny44NTg1IDQ5LjI0NzUgNjguMjY4NCA0OS4wODY2IDY4LjY0ODlDNDguODQ1NiA2OS4yMzQyIDQ4LjQzNzEgNjkuNzM1MyA0Ny45MTIzIDcwLjA4OTNDNDcuMzg3NSA3MC40NDMzIDQ2Ljc2OTggNzAuNjM0NSA0Ni4xMzY4IDcwLjYzODhIMzIuNDg3OEMzMi4xODk2IDcwLjA2OSAzMS45MTU4IDY5LjQ4NjcgMzEuNjY3MiA2OC44OTM2QzMxLjQzMjcgNjguMzIzMiAzMS4yMjg5IDY3Ljc0MDYgMzEuMDU2NiA2Ny4xNDg1QzMwLjQ0NTUgNjUuMTQ1NiAzMC4xMzM3IDYzLjA2MzUgMzAuMTMxMyA2MC45Njk1VjQwLjgyODZDMzAuMTEwOSAzOS45NjA2IDMwLjQzNTggMzkuMTIgMzEuMDM0OCAzOC40OTE1QzMxLjYzMzggMzcuODYzIDMyLjQ1NzkgMzcuNDk4IDMzLjMyNTggMzcuNDc2N0g0OS4zMzA1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDkuMzMwNSAzNy40NzY3VjYzLjk1MzlDNDkuMzI0MiA2NC43OTkxIDQ4Ljk4NTcgNjUuNjA3OCA0OC4zODgxIDY2LjIwNTVDNDcuNzkwNiA2Ni44MDMyIDQ2Ljk4MiA2Ny4xNDE5IDQ2LjEzNjggNjcuMTQ4NUgzMS4wNTY2QzMwLjQ0NTUgNjUuMTQ1NiAzMC4xMzM3IDYzLjA2MzUgMzAuMTMxMyA2MC45Njk1VjQwLjgyODZDMzAuMTEwOSAzOS45NjA2IDMwLjQzNTggMzkuMTIgMzEuMDM0OCAzOC40OTE1QzMxLjYzMzggMzcuODYzIDMyLjQ1NzkgMzcuNDk4IDMzLjMyNTggMzcuNDc2N0g0OS4zMzA1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDcuNTg1NCAzNy40NzY3VjYzLjk1MzlDNDcuNTc5IDY0Ljc5OTEgNDcuMjQwNSA2NS42MDc4IDQ2LjY0MyA2Ni4yMDU1QzQ2LjA0NTUgNjYuODAzMiA0NS4yMzY4IDY3LjE0MTkgNDQuMzkxNyA2Ny4xNDg1SDMxLjA1NjZDMzAuNDQ1NSA2NS4xNDU2IDMwLjEzMzcgNjMuMDYzNSAzMC4xMzEzIDYwLjk2OTVWNDAuODI4NkMzMC4xMTA5IDM5Ljk2MDYgMzAuNDM1OCAzOS4xMiAzMS4wMzQ4IDM4LjQ5MTVDMzEuNjMzOCAzNy44NjMgMzIuNDU3OSAzNy40OTggMzMuMzI1OCAzNy40NzY3SDQ3LjU4NTRaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBvcGFjaXR5PSIwLjEiIGQ9Ik01MS4wNzY1IDI4LjQ1MzRWMzMuOTUwOUM1MC43NzkgMzMuOTY4MiA1MC41MDA2IDMzLjk4NTUgNTAuMjAzMSAzMy45ODU1QzQ5LjkwNjUgMzMuOTg1NSA0OS42MjcxIDMzLjk2ODIgNDkuMzMwNSAzMy45NTA5QzQ4Ljc0MTQgMzMuOTExOCA0OC4xNTcyIDMzLjgxODMgNDcuNTg1NCAzMy42NzE2QzQ1Ljg0MjkgMzMuMjU4OSA0NC4yMjI5IDMyLjQzOTYgNDIuODU3OSAzMS4yODA3QzQxLjQ5MjggMzAuMTIxOSA0MC40MjE0IDI4LjY1NjQgMzkuNzMxMyAyNy4wMDRDMzkuNDkwNSAyNi40NDEzIDM5LjMwMzQgMjUuODU2OSAzOS4xNzI3IDI1LjI1ODlINDcuODgyQzQ4LjcyODIgMjUuMjYyMSA0OS41Mzg5IDI1LjU5OTcgNTAuMTM3MyAyNi4xOTgxQzUwLjczNTcgMjYuNzk2NSA1MS4wNzMzIDI3LjYwNzIgNTEuMDc2NSAyOC40NTM0WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDkuMzMwNSAzMC4xOTg2VjMzLjk1MThDNDguNzQxNCAzMy45MTI0IDQ4LjE1NzIgMzMuODE4NiA0Ny41ODU0IDMzLjY3MTZDNDUuODQyOSAzMy4yNTg5IDQ0LjIyMjkgMzIuNDM5NiA0Mi44NTc5IDMxLjI4MDdDNDEuNDkyOCAzMC4xMjE5IDQwLjQyMTQgMjguNjU2NCAzOS43MzEzIDI3LjAwNEg0Ni4xMzY4QzQ2Ljk4MyAyNy4wMDcyIDQ3Ljc5MzYgMjcuMzQ0OSA0OC4zOTE5IDI3Ljk0MzNDNDguOTkwMSAyOC41NDE3IDQ5LjMyNzUgMjkuMzUyNCA0OS4zMzA1IDMwLjE5ODZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBvcGFjaXR5PSIwLjIiIGQ9Ik00OS4zMzA1IDMwLjE5ODZWMzMuOTUxOEM0OC43NDE0IDMzLjkxMjQgNDguMTU3MiAzMy44MTg2IDQ3LjU4NTQgMzMuNjcxNkM0NS44NDI5IDMzLjI1ODkgNDQuMjIyOSAzMi40Mzk2IDQyLjg1NzkgMzEuMjgwN0M0MS40OTI4IDMwLjEyMTkgNDAuNDIxNCAyOC42NTY0IDM5LjczMTMgMjcuMDA0SDQ2LjEzNjhDNDYuOTgzIDI3LjAwNzIgNDcuNzkzNiAyNy4zNDQ5IDQ4LjM5MTkgMjcuOTQzM0M0OC45OTAxIDI4LjU0MTcgNDkuMzI3NSAyOS4zNTI0IDQ5LjMzMDUgMzAuMTk4NloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIG9wYWNpdHk9IjAuMiIgZD0iTTQ3LjU4NTQgMzAuMTk4NlYzMy42NzE2QzQ1Ljg0MyAzMy4yNTg4IDQ0LjIyMyAzMi40Mzk1IDQyLjg1NzkgMzEuMjgwN0M0MS40OTI5IDMwLjEyMTggNDAuNDIxNSAyOC42NTYzIDM5LjczMTMgMjcuMDA0SDQ0LjM5MTdDNDUuMjM3OCAyNy4wMDc1IDQ2LjA0ODMgMjcuMzQ1MiA0Ni42NDY1IDI3Ljk0MzVDNDcuMjQ0NyAyOC41NDE5IDQ3LjU4MjIgMjkuMzUyNSA0Ny41ODU0IDMwLjE5ODZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTIuMzg2NyAyNy4wMDQ5SDQ0LjM4NTZDNDUuMjM0MSAyNy4wMDQ5IDQ2LjA0NzggMjcuMzQxOSA0Ni42NDc5IDI3Ljk0MThDNDcuMjQ3OSAyOC41NDE3IDQ3LjU4NTEgMjkuMzU1MyA0Ny41ODU0IDMwLjIwMzhWNjIuMjAzNkM0Ny41ODU0IDYzLjA1MjIgNDcuMjQ4MiA2My44NjYxIDQ2LjY0ODIgNjQuNDY2MUM0Ni4wNDgxIDY1LjA2NjIgNDUuMjM0MyA2NS40MDMzIDQ0LjM4NTYgNjUuNDAzM0gxMi4zODY3QzExLjUzODEgNjUuNDAzMyAxMC43MjQyIDY1LjA2NjIgMTAuMTI0MSA2NC40NjYxQzkuNTI0MDYgNjMuODY2MSA5LjE4Njk1IDYzLjA1MjIgOS4xODY5NSA2Mi4yMDM2VjMwLjIwMzhDOS4xODY5NSAyOS4zNTUxIDkuNTI0MDYgMjguNTQxMyAxMC4xMjQxIDI3Ljk0MTJDMTAuNzI0MiAyNy4zNDEyIDExLjUzODEgMjcuMDA0IDEyLjM4NjcgMjcuMDA0VjI3LjAwNDlaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMTVfMTI2KSIvPgo8cGF0aCBkPSJNMzYuODA1NyAzOS4xODM3SDMwLjQwODlWNTYuNjAyM0gyNi4zMzRWMzkuMTgzN0gxOS45NjY2VjM1LjgwNUgzNi44MDU3VjM5LjE4MzdaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxwYXRoIGQ9Ik03NC45ODQgODYuMzFWOTEuMjk1TDc1LjM2OCA5MC45Mkw4MS43MjQgODQuNzEzTDgxLjg4OSA4NC41NTFMODEuNzI0IDg0LjM5TDc1LjM2OSA3OC4xNDVMNzQuOTg0IDc3Ljc2N1Y4Mi43NTJDNzMuNDIxNiA4Mi43Mjc2IDcxLjg4OTggODIuMzE0NSA3MC41MjcgODEuNTVDNjkuMTM4OCA4MC43NDUyIDY3Ljk3NjIgNzkuNjAyOSA2Ny4xNDcgNzguMjI5QzY2LjMzNDMgNzYuODM0IDY1LjkxMTMgNzUuMjQ2NCA2NS45MjIgNzMuNjMyQzY1LjkyMiA3Mi4wNzMgNjYuMjgyIDcwLjY1MyA2Ni45OTcgNjkuMzY4TDY3LjA4MSA2OS4yMTdMNjYuOTU4IDY5LjA5N0w2NC42MzcgNjYuODE1TDY0LjQzNiA2Ni42MThMNjQuMjg2IDY2Ljg1N0M2Mi45NzEgNjguOTYxIDYyLjMxMSA3MS4yMjEgNjIuMzExIDczLjYzMkM2Mi4zMTEgNzUuOTE2IDYyLjg5MyA3OC4wNSA2NC4wNTUgODAuMDI5TDY0LjA1NyA4MC4wMzJDNjUuMjAxIDgxLjkxNjUgNjYuNzk3NyA4My40ODU0IDY4LjcwMiA4NC41OTZMNjguNzA1IDg0LjU5OEM3MC42MTg5IDg1LjY5MjggNzIuNzgwMyA4Ni4yODEzIDc0Ljk4NSA4Ni4zMDhMNzQuOTg0IDg2LjMxWk03NS40MzYgNjguOTZWNjQuNTE0Qzc2Ljk5MDcgNjQuNTM3MyA3OC41MTI3IDY0Ljk2MzkgNzkuODUzIDY1Ljc1Mkw3OS44NTcgNjUuNzU0QzgxLjI2NTggNjYuNTMgODIuNDM0MyA2Ny42NzgxIDgzLjIzNSA2OS4wNzNMODMuMjM3IDY5LjA3N0M4NC4wNzQ2IDcwLjQ0ODEgODQuNTExNyA3Mi4wMjYzIDg0LjQ5OSA3My42MzNDODQuNDk5IDc1LjE5MyA4NC4xMzkgNzYuNjEzIDgzLjQyMyA3Ny44OThMODMuMzM5IDc4LjA1TDgzLjQ2NCA3OC4xN0w4NS43ODUgODAuNDE0TDg1Ljk4NSA4MC42MDhMODYuMTM0IDgwLjM3MkM4Ni43NTU5IDc5LjM3NzcgODcuMjM4MSA3OC4zMDI3IDg3LjU2NyA3Ny4xNzdDODcuOTI5IDc2LjAzMyA4OC4xMDkgNzQuODUyIDg4LjEwOSA3My42MzNDODguMTE4MiA3MS4zODI1IDg3LjUxNTggNjkuMTcxNyA4Ni4zNjYgNjcuMjM3TDg2LjM2NCA2Ny4yMzRDODUuMjIgNjUuMzQ5NSA4My42MjMzIDYzLjc4MDcgODEuNzE5IDYyLjY3TDgxLjcxNSA2Mi42NjhDNzkuODAxNCA2MS41NzM0IDc3LjY0MDQgNjAuOTg0OSA3NS40MzYgNjAuOTU4VjU1Ljk3TDc1LjA1MiA1Ni4zNDVMNjguNjk3IDYyLjU1Mkw2OC41MzIgNjIuNzEzTDY4LjY5NiA2Mi44NzVMNzUuMDUyIDY5LjEyTDc1LjQzNiA2OS40OTdWNjguOTZaIiBmaWxsPSIjNDg1MEI5IiBzdHJva2U9IiM0ODUwQjkiIHN0cm9rZS13aWR0aD0iMC41MjMiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xNV8xMjYiIHgxPSIxNS44NTcxIiB5MT0iMjQuNTA0OCIgeDI9IjQwLjkxNDQiIHkyPSI2Ny45MDI2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1QTYyQzMiLz4KPHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiM0RDU1QkQiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzk0MEFCIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-v1.8.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams/releases/tag/v1.8.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmXWH9kACgkQ0bVLR6XO/sTmLg//S+jtgTUvfIU9ldw/RZRtyrbiYrCqxyF92/qw5lPe3E8/T2nNfiVusN0ZtIR6AJxRRA3ALTbO2fDuGAi+B8TJQWcIwGrBiuZR+dDer8eRNy+1Y6Uk0wQBRIcM/P6OwmctUizcg8+B+7Tc9vuy1rVTwIdO1J8uOCanTmGkY4JDUF5cAwW8gHpEVn5m6vpZIyLAbCz6t/QIXoNUMrIzNUxSYvHmbwlUZ7MUXh3QXFrq0ev429U/ELvLf7Agw9lFRb06L6saxGSss3PM+s/UCIwy/M5ZuUiqLx1XU+Z7vW+JNZXQoAboQ30dpuTCxt30xWifNNwpXg076DoEcyDZq1tUZeoj3G+XKhsLTGuEpAT4EA7CWz4rSZuboZKyjYaSpiRTzA3j5HzaaYZPZyprbFn4NSVbenxOjwqvi8FVyYVs+v2ZaRlPcDgwpVCcrNX6QTDDp0KHOoVUoAxCz1MuYXAEhMlvbfU2MGgK4yaI+kzOGtxHvJN/py6nT92ooZD6seRVF4cyWSZfV3xZxdguLvcoeoxUKhmigARm016ysN6bT3Hzlv+afHaLIAyDYS2NbECg0w4J1Txn5MutBtlW/7+iw9rjEGyNmjImeqyV9wTs3Gtink+BfM1Yq+1E9buCWzFaDw1pw4FEvUuWlpPO5jOAQ/MdzGyqYt+fYpWUxGynOJ0=",
+    "repo_name": "mattermost-plugin-msteams",
+    "manifest": {
+      "id": "com.mattermost.msteams-sync",
+      "name": "MS Teams",
+      "description": "Plugin to sync Mattermost channels with Microsoft Teams channels",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-msteams",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-msteams/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams/releases/tag/v1.8.1",
+      "icon_path": "assets/icon.svg",
+      "version": "1.8.1",
+      "min_server_version": "7.8.10",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "tenantId",
+            "display_name": "Tenant ID",
+            "type": "text",
+            "help_text": "Microsoft Teams Tenant ID",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "clientId",
+            "display_name": "Client ID",
+            "type": "text",
+            "help_text": "Microsoft Teams Client ID",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "clientSecret",
+            "display_name": "Client Secret",
+            "type": "text",
+            "help_text": "Microsoft Teams Client Secret",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "encryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "webhookSecret",
+            "display_name": "Webhook secret",
+            "type": "generated",
+            "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "certificatePublic",
+            "display_name": "Certificate Public",
+            "type": "longtext",
+            "help_text": "Certificate public part",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "certificateKey",
+            "display_name": "Certificate Key",
+            "type": "longtext",
+            "help_text": "Certificate private key",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "evaluationAPI",
+            "display_name": "Use the evaluation API pay model",
+            "type": "bool",
+            "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "syncUsers",
+            "display_name": "Sync users",
+            "type": "number",
+            "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
+            "placeholder": "",
+            "default": 0,
+            "hosting": ""
+          },
+          {
+            "key": "syncGuestUsers",
+            "display_name": "Sync guest users",
+            "type": "bool",
+            "help_text": "Set the value to 'true' to sync MS Teams guest users",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "syncDirectMessages",
+            "display_name": "Sync direct and group messages",
+            "type": "bool",
+            "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "syncLinkedChannels",
+            "display_name": "Sync linked channels",
+            "type": "bool",
+            "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "syncReactions",
+            "display_name": "Sync reactions",
+            "type": "bool",
+            "help_text": "Sync reactions on messages",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "syncFileAttachments",
+            "display_name": "Sync file attachments",
+            "type": "bool",
+            "help_text": "Sync file attachments on messages",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "enabledTeams",
+            "display_name": "Enabled Teams",
+            "type": "text",
+            "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "promptIntervalForDMsAndGMs",
+            "display_name": "Prompt interval for DMs and GMs (in hours)",
+            "type": "number",
+            "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
+            "placeholder": "",
+            "default": 0,
+            "hosting": ""
+          },
+          {
+            "key": "maxSizeForCompleteDownload",
+            "display_name": "Maximum size of attachments to support complete one time download (in MB)",
+            "type": "number",
+            "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
+            "placeholder": "",
+            "default": 20,
+            "hosting": ""
+          },
+          {
+            "key": "bufferSizeForFileStreaming",
+            "display_name": "Buffer size for streaming files (in MB)",
+            "type": "number",
+            "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
+            "placeholder": "",
+            "default": 20,
+            "hosting": ""
+          },
+          {
+            "key": "connectedUsersAllowed",
+            "display_name": "Max Connected Users",
+            "type": "number",
+            "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
+            "placeholder": "",
+            "default": 1000,
+            "hosting": ""
+          },
+          {
+            "key": "automaticallyPromoteSyntheticUsers",
+            "display_name": "Automatically Promote Synthetic Users",
+            "type": "bool",
+            "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "disableSyncMsg",
+            "display_name": "Disable using the sync msg infrastructure for tracking message changes",
+            "type": "bool",
+            "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "syntheticUserAuthService",
+            "display_name": "Synthetic User Auth Service",
+            "type": "dropdown",
+            "help_text": "Select the authentication service to use when creating synthetic users. This should match the service used for member user access to Mattermost. Default is 'SAML'.",
+            "placeholder": "",
+            "default": "saml",
+            "options": [
+              {
+                "display_name": "SAML",
+                "value": "saml"
+              },
+              {
+                "display_name": "AD/LDAP",
+                "value": "ldap"
+              }
+            ],
+            "hosting": ""
+          },
+          {
+            "key": "syntheticUserAuthData",
+            "display_name": "Synthetic User Auth Data",
+            "type": "dropdown",
+            "help_text": "Select the MS Teams user property to use as the authentication identifier. For AD/LDAP and SAML, the identifier's value should match the value provided by the ID Attribute. ",
+            "placeholder": "",
+            "default": "ID",
+            "options": [
+              {
+                "display_name": "ID",
+                "value": "ID"
+              },
+              {
+                "display_name": "Mail",
+                "value": "Mail"
+              },
+              {
+                "display_name": "User Principal Name",
+                "value": "UserPrincipalName"
+              }
+            ],
+            "hosting": ""
+          },
+          {
+            "key": "appManifestDownload",
+            "display_name": "Download Manifest",
+            "type": "custom",
+            "help_text": "",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          },
+          {
+            "key": "ConnectedUsersReportDownload",
+            "display_name": "Download Report",
+            "type": "custom",
+            "help_text": "",
+            "placeholder": "",
+            "default": "",
+            "hosting": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-v1.8.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmXWH9UACgkQ0bVLR6XO/sTrhxAAkNG/BL7f5k0WQB4nJkGxx0UF2pM7zLZOrVRu20OqG0025UQZPlzdeS1feuRrW5n12aIxQPZW+In7JZtpoCytwRPVZbzCYv5BOhDo4lehkFZ6m8Ws3Llp6z+OaKd7ZS+NnfWXcyhD8acnLZcNJywI7+Y7BW+yzz5UGiGNg5JVNXgaBpZHcDrp/MbD90xgBVYuO5HyLWccjAITQO1M1ErbD2Etk8eLYqXmAdVc3X/A6RkQglx/w8kgQLgDmNANFEFgg/Iv7aN/7sQJTOYa0K20y3gthUYKys13Oz7Hrs04JeM9XZZBliCFVX7yEJt+B47rwl8RSdBbsS67xsqw4PeHpkSsQk8B0lN52wCjQJa5HYtA/QNmaAC9+EBqpCmM7oVjQSaQb//TJsC8RyNLGXsuTW6pXfurdry0hTMQEonqvtX7zA9NQW9wUy77WDKtCnlgwQV9rI2yJ5+KjJ0JX1PhclMTwREeNb/q20k+I8N7nVbJ9yEfeUtxMB0IDvCM4t5ogWtRnoZUYT4YM8z70G6R/vghD+Vk1FAu3hYdRrLywJDUvQzVWYnqCsX8/UB3j4CnhSX9YH0WLdFLbl97htB5cINVEyGn0Lr8Esbb94mysYcKBd0zm2NHXE6Cu0STz1tn1PWuiNazvo3SGZvPvEvyEYVv9nc5u23SMqlG7xoZTms="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2024-02-21T16:08:58.639966Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-msteams-sync",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxtYXNrIGlkPSJtYXNrMF8xNV8xMjYiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjUiIHdpZHRoPSI4NyIgaGVpZ2h0PSI4MSI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNODkuNzg2IDVIM1Y4NS41MTJINTcuMjNDNTUuOTM4NyA4Mi4zNjQgNTUuMjc2MiA3OC45OTM2IDU1LjI4IDc1LjU5MUM1NS4yOCA2MS4xNTQgNjYuOTg0IDQ5LjQ1MSA4MS40MjEgNDkuNDUxQzg0LjM0NiA0OS40NTEgODcuMTYgNDkuOTMxIDg5Ljc4NiA1MC44MThWNVoiIGZpbGw9IiNEOUQ5RDkiLz4KPC9tYXNrPgo8ZyBtYXNrPSJ1cmwoI21hc2swXzE1XzEyNikiPgo8cGF0aCBkPSJNNjEuNTM2MSAzNy40NzY3SDgwLjkyMjFDODEuODAxNyAzNy40NzY3IDgyLjY0NTMgMzcuODI2MSA4My4yNjcyIDM4LjQ0OEM4My44ODkyIDM5LjA3IDg0LjIzODYgMzkuOTEzNSA4NC4yMzg2IDQwLjc5MzFWNTguNDUxM0M4NC4yMzg2IDY1LjE4MjggNzguNzgxOCA3MC42Mzg4IDcyLjA1MDMgNzAuNjM4OEg3MS45OTMyQzY1LjI2MTcgNzAuNjQwNSA1OS44MDQgNjUuMTg0NSA1OS44MDMxIDU4LjQ1M1YzOS4yMDk3QzU5LjgwMzEgMzguMjUyNCA2MC41Nzg4IDM3LjQ3NjcgNjEuNTM2MSAzNy40NzY3Wk03NC42Mzg2IDMzLjk4NjRDNzYuNzIxNyAzMy45ODY0IDc4LjcxOTUgMzMuMTU4OCA4MC4xOTI1IDMxLjY4NThDODEuNjY1NSAzMC4yMTI4IDgyLjQ5MyAyOC4yMTUgODIuNDkzIDI2LjEzMTlDODIuNDkzIDI0LjA0ODggODEuNjY1NSAyMi4wNTEgODAuMTkyNSAyMC41NzhDNzguNzE5NSAxOS4xMDUgNzYuNzIxNyAxOC4yNzc0IDc0LjYzODYgMTguMjc3NEM3Mi41NTU0IDE4LjI3NzQgNzAuNTU3NiAxOS4xMDUgNjkuMDg0NiAyMC41NzhDNjcuNjExNiAyMi4wNTEgNjYuNzg0MSAyNC4wNDg4IDY2Ljc4NDEgMjYuMTMxOUM2Ni43ODQxIDI4LjIxNSA2Ny42MTE2IDMwLjIxMjggNjkuMDg0NiAzMS42ODU4QzcwLjU1NzYgMzMuMTU4OCA3Mi41NTU0IDMzLjk4NjQgNzQuNjM4NiAzMy45ODY0WiIgZmlsbD0iIzUwNTlDOSIvPgo8cGF0aCBkPSJNNTAuMjAzOSAzMy45ODY0QzU2LjQ2OTMgMzMuOTg2NCA2MS41NDgyIDI4LjkwNjYgNjEuNTQ4MiAyMi42NDAzQzYxLjU0ODIgMTYuMzc1OCA1Ni40NjkzIDExLjI5NiA1MC4yMDM5IDExLjI5NkM0My45Mzg1IDExLjI5NiAzOC44NTk2IDE2LjM3NDkgMzguODU5NiAyMi42NDEyQzM4Ljg1OTYgMjguOTA2NiA0My45Mzg1IDMzLjk4NjQgNTAuMjAzOSAzMy45ODY0Wk02NS4zMzA4IDM3LjQ3NjdIMzMuMzMxQzMyLjQ2MTggMzcuNDk4IDMxLjYzNjYgMzcuODYzNCAzMS4wMzY3IDM4LjQ5MjdDMzAuNDM2NyAzOS4xMjIgMzAuMTExMSAzOS45NjM3IDMwLjEzMTMgNDAuODMyOVY2MC45NzM5QzI5Ljg3ODggNzEuODMzIDM4LjQ3MDUgODAuODQ1OSA0OS4zMzA1IDgxLjExMTRDNjAuMTkwNSA4MC44NDU5IDY4Ljc4MzEgNzEuODMzIDY4LjUyOTcgNjAuOTczVjQwLjgzMjlDNjguNTQ5NyAzOS45NjM4IDY4LjIyMzkgMzkuMTIyNCA2Ny42MjQgMzguNDkzMkM2Ny4wMjQxIDM3Ljg2NDEgNjYuMTk5IDM3LjQ5ODggNjUuMzMgMzcuNDc3NUw2NS4zMzA4IDM3LjQ3NjdaIiBmaWxsPSIjN0I4M0VCIi8+CjxwYXRoIG9wYWNpdHk9IjAuMSIgZD0iTTUxLjA3NjUgMzcuNDc2N1Y2NS42OTk5QzUxLjA3MjIgNjYuMzMyOCA1MC44ODEgNjYuOTUwMyA1MC41MjcgNjcuNDc1QzUwLjE3MyA2Ny45OTk2IDQ5LjY3MTkgNjguNDA4IDQ5LjA4NjYgNjguNjQ4OUM0OC43MDYxIDY4LjgxMDYgNDguMjk2MiA2OC44OTM2IDQ3Ljg4MiA2OC44OTM2SDMxLjY2NzJDMzEuNDM3NyA2OC4zMjEzIDMxLjIzNCA2Ny43MzkgMzEuMDU2NiA2Ny4xNDg1QzMwLjQ0NTUgNjUuMTQ1NiAzMC4xMzM3IDYzLjA2MzUgMzAuMTMxMyA2MC45Njk1VjQwLjgyODZDMzAuMTEwOSAzOS45NjA2IDMwLjQzNTggMzkuMTIgMzEuMDM0OCAzOC40OTE1QzMxLjYzMzggMzcuODYzIDMyLjQ1NzkgMzcuNDk4IDMzLjMyNTggMzcuNDc2N0g1MS4wNzY1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDkuMzMwNSAzNy40NzY3VjY3LjQ0NTFDNDkuMzMwNSA2Ny44NTg1IDQ5LjI0NzUgNjguMjY4NCA0OS4wODY2IDY4LjY0ODlDNDguODQ1NiA2OS4yMzQyIDQ4LjQzNzEgNjkuNzM1MyA0Ny45MTIzIDcwLjA4OTNDNDcuMzg3NSA3MC40NDMzIDQ2Ljc2OTggNzAuNjM0NSA0Ni4xMzY4IDcwLjYzODhIMzIuNDg3OEMzMi4xODk2IDcwLjA2OSAzMS45MTU4IDY5LjQ4NjcgMzEuNjY3MiA2OC44OTM2QzMxLjQzMjcgNjguMzIzMiAzMS4yMjg5IDY3Ljc0MDYgMzEuMDU2NiA2Ny4xNDg1QzMwLjQ0NTUgNjUuMTQ1NiAzMC4xMzM3IDYzLjA2MzUgMzAuMTMxMyA2MC45Njk1VjQwLjgyODZDMzAuMTEwOSAzOS45NjA2IDMwLjQzNTggMzkuMTIgMzEuMDM0OCAzOC40OTE1QzMxLjYzMzggMzcuODYzIDMyLjQ1NzkgMzcuNDk4IDMzLjMyNTggMzcuNDc2N0g0OS4zMzA1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDkuMzMwNSAzNy40NzY3VjYzLjk1MzlDNDkuMzI0MiA2NC43OTkxIDQ4Ljk4NTcgNjUuNjA3OCA0OC4zODgxIDY2LjIwNTVDNDcuNzkwNiA2Ni44MDMyIDQ2Ljk4MiA2Ny4xNDE5IDQ2LjEzNjggNjcuMTQ4NUgzMS4wNTY2QzMwLjQ0NTUgNjUuMTQ1NiAzMC4xMzM3IDYzLjA2MzUgMzAuMTMxMyA2MC45Njk1VjQwLjgyODZDMzAuMTEwOSAzOS45NjA2IDMwLjQzNTggMzkuMTIgMzEuMDM0OCAzOC40OTE1QzMxLjYzMzggMzcuODYzIDMyLjQ1NzkgMzcuNDk4IDMzLjMyNTggMzcuNDc2N0g0OS4zMzA1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDcuNTg1NCAzNy40NzY3VjYzLjk1MzlDNDcuNTc5IDY0Ljc5OTEgNDcuMjQwNSA2NS42MDc4IDQ2LjY0MyA2Ni4yMDU1QzQ2LjA0NTUgNjYuODAzMiA0NS4yMzY4IDY3LjE0MTkgNDQuMzkxNyA2Ny4xNDg1SDMxLjA1NjZDMzAuNDQ1NSA2NS4xNDU2IDMwLjEzMzcgNjMuMDYzNSAzMC4xMzEzIDYwLjk2OTVWNDAuODI4NkMzMC4xMTA5IDM5Ljk2MDYgMzAuNDM1OCAzOS4xMiAzMS4wMzQ4IDM4LjQ5MTVDMzEuNjMzOCAzNy44NjMgMzIuNDU3OSAzNy40OTggMzMuMzI1OCAzNy40NzY3SDQ3LjU4NTRaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBvcGFjaXR5PSIwLjEiIGQ9Ik01MS4wNzY1IDI4LjQ1MzRWMzMuOTUwOUM1MC43NzkgMzMuOTY4MiA1MC41MDA2IDMzLjk4NTUgNTAuMjAzMSAzMy45ODU1QzQ5LjkwNjUgMzMuOTg1NSA0OS42MjcxIDMzLjk2ODIgNDkuMzMwNSAzMy45NTA5QzQ4Ljc0MTQgMzMuOTExOCA0OC4xNTcyIDMzLjgxODMgNDcuNTg1NCAzMy42NzE2QzQ1Ljg0MjkgMzMuMjU4OSA0NC4yMjI5IDMyLjQzOTYgNDIuODU3OSAzMS4yODA3QzQxLjQ5MjggMzAuMTIxOSA0MC40MjE0IDI4LjY1NjQgMzkuNzMxMyAyNy4wMDRDMzkuNDkwNSAyNi40NDEzIDM5LjMwMzQgMjUuODU2OSAzOS4xNzI3IDI1LjI1ODlINDcuODgyQzQ4LjcyODIgMjUuMjYyMSA0OS41Mzg5IDI1LjU5OTcgNTAuMTM3MyAyNi4xOTgxQzUwLjczNTcgMjYuNzk2NSA1MS4wNzMzIDI3LjYwNzIgNTEuMDc2NSAyOC40NTM0WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggb3BhY2l0eT0iMC4yIiBkPSJNNDkuMzMwNSAzMC4xOTg2VjMzLjk1MThDNDguNzQxNCAzMy45MTI0IDQ4LjE1NzIgMzMuODE4NiA0Ny41ODU0IDMzLjY3MTZDNDUuODQyOSAzMy4yNTg5IDQ0LjIyMjkgMzIuNDM5NiA0Mi44NTc5IDMxLjI4MDdDNDEuNDkyOCAzMC4xMjE5IDQwLjQyMTQgMjguNjU2NCAzOS43MzEzIDI3LjAwNEg0Ni4xMzY4QzQ2Ljk4MyAyNy4wMDcyIDQ3Ljc5MzYgMjcuMzQ0OSA0OC4zOTE5IDI3Ljk0MzNDNDguOTkwMSAyOC41NDE3IDQ5LjMyNzUgMjkuMzUyNCA0OS4zMzA1IDMwLjE5ODZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBvcGFjaXR5PSIwLjIiIGQ9Ik00OS4zMzA1IDMwLjE5ODZWMzMuOTUxOEM0OC43NDE0IDMzLjkxMjQgNDguMTU3MiAzMy44MTg2IDQ3LjU4NTQgMzMuNjcxNkM0NS44NDI5IDMzLjI1ODkgNDQuMjIyOSAzMi40Mzk2IDQyLjg1NzkgMzEuMjgwN0M0MS40OTI4IDMwLjEyMTkgNDAuNDIxNCAyOC42NTY0IDM5LjczMTMgMjcuMDA0SDQ2LjEzNjhDNDYuOTgzIDI3LjAwNzIgNDcuNzkzNiAyNy4zNDQ5IDQ4LjM5MTkgMjcuOTQzM0M0OC45OTAxIDI4LjU0MTcgNDkuMzI3NSAyOS4zNTI0IDQ5LjMzMDUgMzAuMTk4NloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIG9wYWNpdHk9IjAuMiIgZD0iTTQ3LjU4NTQgMzAuMTk4NlYzMy42NzE2QzQ1Ljg0MyAzMy4yNTg4IDQ0LjIyMyAzMi40Mzk1IDQyLjg1NzkgMzEuMjgwN0M0MS40OTI5IDMwLjEyMTggNDAuNDIxNSAyOC42NTYzIDM5LjczMTMgMjcuMDA0SDQ0LjM5MTdDNDUuMjM3OCAyNy4wMDc1IDQ2LjA0ODMgMjcuMzQ1MiA0Ni42NDY1IDI3Ljk0MzVDNDcuMjQ0NyAyOC41NDE5IDQ3LjU4MjIgMjkuMzUyNSA0Ny41ODU0IDMwLjE5ODZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTIuMzg2NyAyNy4wMDQ5SDQ0LjM4NTZDNDUuMjM0MSAyNy4wMDQ5IDQ2LjA0NzggMjcuMzQxOSA0Ni42NDc5IDI3Ljk0MThDNDcuMjQ3OSAyOC41NDE3IDQ3LjU4NTEgMjkuMzU1MyA0Ny41ODU0IDMwLjIwMzhWNjIuMjAzNkM0Ny41ODU0IDYzLjA1MjIgNDcuMjQ4MiA2My44NjYxIDQ2LjY0ODIgNjQuNDY2MUM0Ni4wNDgxIDY1LjA2NjIgNDUuMjM0MyA2NS40MDMzIDQ0LjM4NTYgNjUuNDAzM0gxMi4zODY3QzExLjUzODEgNjUuNDAzMyAxMC43MjQyIDY1LjA2NjIgMTAuMTI0MSA2NC40NjYxQzkuNTI0MDYgNjMuODY2MSA5LjE4Njk1IDYzLjA1MjIgOS4xODY5NSA2Mi4yMDM2VjMwLjIwMzhDOS4xODY5NSAyOS4zNTUxIDkuNTI0MDYgMjguNTQxMyAxMC4xMjQxIDI3Ljk0MTJDMTAuNzI0MiAyNy4zNDEyIDExLjUzODEgMjcuMDA0IDEyLjM4NjcgMjcuMDA0VjI3LjAwNDlaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfMTVfMTI2KSIvPgo8cGF0aCBkPSJNMzYuODA1NyAzOS4xODM3SDMwLjQwODlWNTYuNjAyM0gyNi4zMzRWMzkuMTgzN0gxOS45NjY2VjM1LjgwNUgzNi44MDU3VjM5LjE4MzdaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxwYXRoIGQ9Ik03NC45ODQgODYuMzFWOTEuMjk1TDc1LjM2OCA5MC45Mkw4MS43MjQgODQuNzEzTDgxLjg4OSA4NC41NTFMODEuNzI0IDg0LjM5TDc1LjM2OSA3OC4xNDVMNzQuOTg0IDc3Ljc2N1Y4Mi43NTJDNzMuNDIxNiA4Mi43Mjc2IDcxLjg4OTggODIuMzE0NSA3MC41MjcgODEuNTVDNjkuMTM4OCA4MC43NDUyIDY3Ljk3NjIgNzkuNjAyOSA2Ny4xNDcgNzguMjI5QzY2LjMzNDMgNzYuODM0IDY1LjkxMTMgNzUuMjQ2NCA2NS45MjIgNzMuNjMyQzY1LjkyMiA3Mi4wNzMgNjYuMjgyIDcwLjY1MyA2Ni45OTcgNjkuMzY4TDY3LjA4MSA2OS4yMTdMNjYuOTU4IDY5LjA5N0w2NC42MzcgNjYuODE1TDY0LjQzNiA2Ni42MThMNjQuMjg2IDY2Ljg1N0M2Mi45NzEgNjguOTYxIDYyLjMxMSA3MS4yMjEgNjIuMzExIDczLjYzMkM2Mi4zMTEgNzUuOTE2IDYyLjg5MyA3OC4wNSA2NC4wNTUgODAuMDI5TDY0LjA1NyA4MC4wMzJDNjUuMjAxIDgxLjkxNjUgNjYuNzk3NyA4My40ODU0IDY4LjcwMiA4NC41OTZMNjguNzA1IDg0LjU5OEM3MC42MTg5IDg1LjY5MjggNzIuNzgwMyA4Ni4yODEzIDc0Ljk4NSA4Ni4zMDhMNzQuOTg0IDg2LjMxWk03NS40MzYgNjguOTZWNjQuNTE0Qzc2Ljk5MDcgNjQuNTM3MyA3OC41MTI3IDY0Ljk2MzkgNzkuODUzIDY1Ljc1Mkw3OS44NTcgNjUuNzU0QzgxLjI2NTggNjYuNTMgODIuNDM0MyA2Ny42NzgxIDgzLjIzNSA2OS4wNzNMODMuMjM3IDY5LjA3N0M4NC4wNzQ2IDcwLjQ0ODEgODQuNTExNyA3Mi4wMjYzIDg0LjQ5OSA3My42MzNDODQuNDk5IDc1LjE5MyA4NC4xMzkgNzYuNjEzIDgzLjQyMyA3Ny44OThMODMuMzM5IDc4LjA1TDgzLjQ2NCA3OC4xN0w4NS43ODUgODAuNDE0TDg1Ljk4NSA4MC42MDhMODYuMTM0IDgwLjM3MkM4Ni43NTU5IDc5LjM3NzcgODcuMjM4MSA3OC4zMDI3IDg3LjU2NyA3Ny4xNzdDODcuOTI5IDc2LjAzMyA4OC4xMDkgNzQuODUyIDg4LjEwOSA3My42MzNDODguMTE4MiA3MS4zODI1IDg3LjUxNTggNjkuMTcxNyA4Ni4zNjYgNjcuMjM3TDg2LjM2NCA2Ny4yMzRDODUuMjIgNjUuMzQ5NSA4My42MjMzIDYzLjc4MDcgODEuNzE5IDYyLjY3TDgxLjcxNSA2Mi42NjhDNzkuODAxNCA2MS41NzM0IDc3LjY0MDQgNjAuOTg0OSA3NS40MzYgNjAuOTU4VjU1Ljk3TDc1LjA1MiA1Ni4zNDVMNjguNjk3IDYyLjU1Mkw2OC41MzIgNjIuNzEzTDY4LjY5NiA2Mi44NzVMNzUuMDUyIDY5LjEyTDc1LjQzNiA2OS40OTdWNjguOTZaIiBmaWxsPSIjNDg1MEI5IiBzdHJva2U9IiM0ODUwQjkiIHN0cm9rZS13aWR0aD0iMC41MjMiLz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xNV8xMjYiIHgxPSIxNS44NTcxIiB5MT0iMjQuNTA0OCIgeDI9IjQwLjkxNDQiIHkyPSI2Ny45MDI2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1QTYyQzMiLz4KPHN0b3Agb2Zmc2V0PSIwLjUiIHN0b3AtY29sb3I9IiM0RDU1QkQiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzk0MEFCIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-msteams-sync-v1.7.1.tar.gz",
