@@ -2,6 +2,155 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM4cHgiIGhlaWdodD0iMzExcHgiIHZpZXdCb3g9IjAgMCAzMzggMzExIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+Z2l0bGFiPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImdpdGxhYiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Imc0NCIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzM3LjE3LDE3Ny44MyBMMzE4LjI2LDExOS43MSBMMjgwLjg0LDQuNDMgQzI3OS45NTY2MDIsMS43OTI1OTE5IDI3Ny40ODY0MjMsMC4wMTQ5MTQ4NDAxIDI3NC43MDUsMC4wMTQ5MTQ4NDAxIEMyNzEuOTIzNTc3LDAuMDE0OTE0ODQwMSAyNjkuNDUzMzk4LDEuNzkyNTkxOSAyNjguNTcsNC40MyBMMjMxLjE1LDExOS42NCBMMTA2LjgyLDExOS42NCBMNjkuNCw0LjQzIEM2OC41MjIwOTY1LDEuNzg5Nzk2NDIgNjYuMDUyMzM1MywwLjAwODMwODEyMTk1IDYzLjI3LDAuMDA4MzA4MTIxOTUgQzYwLjQ4NzY2NDcsMC4wMDgzMDgxMjE5NSA1OC4wMTc5MDM1LDEuNzg5Nzk2NDIgNTcuMTQsNC40MyBMMTkuNzgsMTE5LjY0IEwwLjg3LDE3Ny44MyBDLTAuODUzMzI4OTE3LDE4My4xMjk2OSAxLjAyNzE0ODQ1LDE4OC45MzY1NzIgNS41MywxOTIuMjIgTDE2OSwzMTEgTDMzMi40NCwxOTIuMjIgQzMzNi45NjMzMjUsMTg4Ljk1MTQyMSAzMzguODcxOTU0LDE4My4xNDQ4MzEgMzM3LjE3LDE3Ny44MyIgaWQ9InBhdGg0NiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNi4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRTI0MzI5Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTAiIHBvaW50cz0iNjMgMTkxLjkxIDYzIDE5MS45MSAxMjUuMTYgMC42MyAwLjg3IDAuNjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkM2RDI2Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTgiIHBvaW50cz0iMTUwIDE5MS45MSA4Ny44MiAwLjYzIDAuODIgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDQTMyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuNzUsMC42OSBMMTkuNzUsMC42OSBMMC44NCw1OC44MSBDLTAuODgzMzI4OTE3LDY0LjEwOTY4OTggMC45OTcxNDg0NTEsNjkuOTE2NTcxNiA1LjUsNzMuMiBMMTY5LDE5MiBMMTkuNzUsMC42OSBaIiBpZD0icGF0aDY2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Imc3MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNzgsMTE5LjY5IEw4Ny44OSwxMTkuNjkgTDUwLjQsNC40OSBDNDkuNTE2NjAxNiwxLjg1MjU5MTkgNDcuMDQ2NDIzLDAuMDc0OTE0ODQwMSA0NC4yNjUsMC4wNzQ5MTQ4NDAxIEM0MS40ODM1NzcsMC4wNzQ5MTQ4NDAxIDM5LjAxMzM5ODQsMS44NTI1OTE5IDM4LjEzLDQuNDkgTDAuNzgsMTE5LjY5IFoiIGlkPSJwYXRoNzQiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzc2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0icGF0aDc4IiBwb2ludHM9IjAgMTkxLjkxIDYyLjE2IDAuNjMgMTQ5LjMgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnODAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkNBMzI2Ij4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNDkuMjQsMC42OSBMMTQ5LjI0LDAuNjkgTDE2OC4xNSw1OC44MSBDMTY5Ljg4MzI2MSw2NC4xMDk2Nzk1IDE2OC4wMDA4OTMsNjkuOTIyNDAyMyAxNjMuNDksNzMuMiBMMCwxOTEuOTEgTDE0OS4yLDAuNjkgTDE0OS4yNCwwLjY5IFoiIGlkPSJwYXRoODIiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzg0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTg3LjI4LDExOS42OSBMMC4xOCwxMTkuNjkgTDM3LjYsNC40OSBDMzguNDc3OTAzNSwxLjg0OTc5NjQyIDQwLjk0NzY2NDcsMC4wNjgzMDgxMjE5IDQzLjczLDAuMDY4MzA4MTIxOSBDNDYuNTEyMzM1MywwLjA2ODMwODEyMTkgNDguOTgyMDk2NSwxLjg0OTc5NjQyIDQ5Ljg2LDQuNDkgTDg3LjI4LDExOS42OSBaIiBpZD0icGF0aDg2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.8.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/tag/v1.8.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmXU70wACgkQ0bVLR6XO/sT05Q//Ysn1WHJ9uNx24foURjiq7+PQHnk2GBddqweLiSWLaBQPtBVNxJjbWHJz0JQohrAzenyCLaO2zIcnsAMb3zaJ5TcKFakWfzT6bkqL7me3+JWXo+N27Ne2gTIser1eu+Dw3AlEs/poOfGmHK9+ovi9rQG+qTfdSeLZ1vqhVNhHDgX2JeahIFHyIo9lXkDyDEcVuavwmiJAVj1LrzxK7VbMwDO/9YHgnces0Bf9hx+mqHqafecica5VSfGAR3DG+p80DaC7ehHNZyf1GZZ3GnOERs6v0jTSFHTxDi2PUx2+MA9xPnxDmFc7ud/mA+UBUmBNqpA9xIXoE1wXVLgpl4e9qJpRZdYXfyxVpeORMBwlm3uHUXYSVMTg5A9v1Sw9mgqCDzM8tYHq9g/bY2BqVDr57YLCbbTgfeo61cfrvpZRUQwHZRIWcGDH6gqAPsBiWM0rETlZ6lSSY7JBpjvPMBdU75USa7coebis1aFTyq1hiljj7nZeaKyRvVN4+ZuIUYkcl9VoBbYvpgGYDSJ54/bw2ROa9Dixl10kiCxPW65OUIZ+cTIEPvNejKxOsLBOIBn77kzW+pmQeWT9yxgYA8+aq7fkKIh3ERhw6t2LYsCX5mIaV84MUM9OkUtO6EvMlaIK5OZ/5SsnL80Xh+E3fiFgXSfbc1SVJsuKiYkblns5Xrs=",
+    "repo_name": "mattermost-plugin-gitlab",
+    "manifest": {
+      "id": "com.github.manland.mattermost-plugin-gitlab",
+      "name": "GitLab",
+      "description": "GitLab plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-gitlab/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/tag/v1.8.1",
+      "icon_path": "assets/icon.svg",
+      "version": "1.8.1",
+      "min_server_version": "7.1.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "To set up the GitLab plugin, you need to register a GitLab OAuth app here https://gitlab.com/-/profile/applications.",
+        "footer": "To report an issue, make a suggestion, or submit a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-gitlab).",
+        "settings": [
+          {
+            "key": "UsePreregisteredApplication",
+            "display_name": "Use Preregistered OAuth Application:",
+            "type": "bool",
+            "help_text": "When true, instructs the plugin to use the preregistered GitLab OAuth application - application registration steps can be skipped. Requires [Chimera Proxy](https://github.com/mattermost/chimera) URL to be configured for the server. Can only be used with official gitlab.com. **This setting is intended to be used with Mattermost Cloud instances only.**",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "GitlabURL",
+            "display_name": "GitLab URL:",
+            "type": "text",
+            "help_text": "The base URL for using the plugin with a GitLab installation. Examples: https://gitlab.com or https://gitlab.example.com.",
+            "placeholder": "https://gitlab.com",
+            "default": "https://gitlab.com",
+            "hosting": ""
+          },
+          {
+            "key": "GitlabOAuthClientID",
+            "display_name": "GitLab OAuth Client ID:",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "GitlabOAuthClientSecret",
+            "display_name": "GitLab OAuth Client Secret:",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with GitLab.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "WebhookSecret",
+            "display_name": "Webhook Secret:",
+            "type": "generated",
+            "help_text": "The webhook secret set in GitLab.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "GitlabGroup",
+            "display_name": "GitLab Group:",
+            "type": "text",
+            "help_text": "(Optional) Set to lock the plugin to a single GitLab group.",
+            "placeholder": "groupName",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "EnablePrivateRepo",
+            "display_name": "Enable Private Repositories:",
+            "type": "bool",
+            "help_text": "(Optional) Allow the plugin to work with private repositories for subscriptions.",
+            "placeholder": "",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "EnableCodePreview",
+            "display_name": "Enable Code Previews:",
+            "type": "dropdown",
+            "help_text": "Allow the plugin to expand permalinks to GitLab files with an actual preview of the linked file.",
+            "placeholder": "",
+            "default": "public",
+            "options": [
+              {
+                "display_name": "Enable for public projects",
+                "value": "public"
+              },
+              {
+                "display_name": "Enable for public and private projects. This might leak confidential code into public channels",
+                "value": "privateAndPublic"
+              },
+              {
+                "display_name": "Disable",
+                "value": "disable"
+              }
+            ],
+            "hosting": ""
+          }
+        ]
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.8.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmXU70oACgkQ0bVLR6XO/sSrFQ/+J4EgmVgtCCDNmnSu3ep725qXLS+3GMmQKmAYrxFpxBTjXyhfdrw7HHR7QVk8U6zRIwP45zkxFHjoq6jC9KtfYT8CE62scpxc7jUhIercLdlwPrsAPocjHkCwy197egh3tWO/h1tEYCyHQ4N/YSmBKisJX/SgxRpQIQ1PmlWyRvvkN/7+VUzvsnVVzP+srrmuMoqXsR3YffBCFp3Rae4doLtrLPD7NEHI7FoDFqorad91N0h5wdSF81jp9aA3ClFCONBu4MODO/nU3zMXKJ6xhajMfXuSFYP1twopnjcRQAJOfA20ZYfqEO5Y5PX+nsep4ysYuMNhvcHLmu8lV26ZR1UsRbgp66DEFnuWrd+10dXw6huYouFML2gsFznatYI4NuwbOsZU65OuQMbQycac3y+qdZ7rr22zQzfJOLMCsM5WbNUh/oBLmE6www8kZJBZQuzqbg4o/8xKNXYOK00w8D0BKdrMmSCF+tDWh0wDOEfUREpDYgS1xsMcso4FlJzsopxuOdUREx+qcBINWli2K0Y3rmGu9y/lZzUytMiMz9SKlhkM6mXs5LL19ByIAOKFuykkzlb8KCP9hP1gX1Z5TYVow/Cn5jSdp9kDhskiw6Cmd7UNzvslr8cycl4bVAnPyx3cIfeA30+aIu0nItVKDUB0P6BSCcMjvPWCg/9sAIA="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.8.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmXU70YACgkQ0bVLR6XO/sQ7ahAAg45su/93qFuovV8fdxq13GZ+VBKRu/hsY/+gdO4Xs2qWnmpb4QinSFLWrNchiiVXreUhZGtHuwrRClVTSZViLc6wPVao0FpPwD7mx3bCwxowTJq9pik91n5plF3VVrNt9aChNuyXZbvCzBFx3ddiSgYSJ9U8n69MWk23+pBFyD6v0yzsPaRK5bS+swUHKN1LF7G+HdV3Rhf6rRcevsC2utoUk27KufpZFC+m8gVwZT+QvJOBseG8M6imNMag5MvZah3GDz3ND3eusUXmfMFtr5fFWnhYQW3Y0NNyc8oxX28HmRbqYHRwpEN0QU1sWNeq4CoIcoRVNb7W3acZTB14WeAGn+973ZuB6XAowUPLsPclxZv/xaLr62wv+TN2OhBjGaOV98sDU72XE5ujSeT/6kaay7rKyov6+RQlICVXf0wIyH4TNy+A98RD2QA87TgH5XIWc3shQ9qf3c6WNeNlI6GD9UorAv4fKXjqQCCRwlUqzCS7JlPwR1cBpIwxFd8OTs1DeWqcLp7iT6RIFJxGujO8L4rsOy9DYyr/JkzI6cc2z9A20+a5MIE+C9jd6dL83g8svfZmvdPOsOlLyuZtpc+IPUyny+0B31G5Fb24fJxNoSloKKN54jtjpS6a1ty2Nh9sDu3rK+BW7hbuopLGzOxFBFNAW8fZ11P/wQreMAo="
+      }
+    },
+    "updated_at": "2024-02-21T08:25:44.38088178Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-gitlab",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM4cHgiIGhlaWdodD0iMzExcHgiIHZpZXdCb3g9IjAgMCAzMzggMzExIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1Ny4xICg4MzA4OCkgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+Z2l0bGFiPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9ImdpdGxhYiIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9Imc0NCIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMzM3LjE3LDE3Ny44MyBMMzE4LjI2LDExOS43MSBMMjgwLjg0LDQuNDMgQzI3OS45NTY2MDIsMS43OTI1OTE5IDI3Ny40ODY0MjMsMC4wMTQ5MTQ4NDAxIDI3NC43MDUsMC4wMTQ5MTQ4NDAxIEMyNzEuOTIzNTc3LDAuMDE0OTE0ODQwMSAyNjkuNDUzMzk4LDEuNzkyNTkxOSAyNjguNTcsNC40MyBMMjMxLjE1LDExOS42NCBMMTA2LjgyLDExOS42NCBMNjkuNCw0LjQzIEM2OC41MjIwOTY1LDEuNzg5Nzk2NDIgNjYuMDUyMzM1MywwLjAwODMwODEyMTk1IDYzLjI3LDAuMDA4MzA4MTIxOTUgQzYwLjQ4NzY2NDcsMC4wMDgzMDgxMjE5NSA1OC4wMTc5MDM1LDEuNzg5Nzk2NDIgNTcuMTQsNC40MyBMMTkuNzgsMTE5LjY0IEwwLjg3LDE3Ny44MyBDLTAuODUzMzI4OTE3LDE4My4xMjk2OSAxLjAyNzE0ODQ1LDE4OC45MzY1NzIgNS41MywxOTIuMjIgTDE2OSwzMTEgTDMzMi40NCwxOTIuMjIgQzMzNi45NjMzMjUsMTg4Ljk1MTQyMSAzMzguODcxOTU0LDE4My4xNDQ4MzEgMzM3LjE3LDE3Ny44MyIgaWQ9InBhdGg0NiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNDgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEwNi4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRTI0MzI5Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTAiIHBvaW50cz0iNjMgMTkxLjkxIDYzIDE5MS45MSAxMjUuMTYgMC42MyAwLjg3IDAuNjMiPjwvcG9seWdvbj4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzU2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxOS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkM2RDI2Ij4KICAgICAgICAgICAgICAgIDxwb2x5Z29uIGlkPSJwYXRoNTgiIHBvaW50cz0iMTUwIDE5MS45MSA4Ny44MiAwLjYzIDAuODIgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnNjQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDQTMyNiI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTkuNzUsMC42OSBMMTkuNzUsMC42OSBMMC44NCw1OC44MSBDLTAuODgzMzI4OTE3LDY0LjEwOTY4OTggMC45OTcxNDg0NTEsNjkuOTE2NTcxNiA1LjUsNzMuMiBMMTY5LDE5MiBMMTkuNzUsMC42OSBaIiBpZD0icGF0aDY2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPGcgaWQ9Imc3MiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTkuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTAuNzgsMTE5LjY5IEw4Ny44OSwxMTkuNjkgTDUwLjQsNC40OSBDNDkuNTE2NjAxNiwxLjg1MjU5MTkgNDcuMDQ2NDIzLDAuMDc0OTE0ODQwMSA0NC4yNjUsMC4wNzQ5MTQ4NDAxIEM0MS40ODM1NzcsMC4wNzQ5MTQ4NDAxIDM5LjAxMzM5ODQsMS44NTI1OTE5IDM4LjEzLDQuNDkgTDAuNzgsMTE5LjY5IFoiIGlkPSJwYXRoNzQiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzc2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjkuMDAwMDAwLCAxMTkuMDAwMDAwKSIgZmlsbD0iI0ZDNkQyNiI+CiAgICAgICAgICAgICAgICA8cG9seWdvbiBpZD0icGF0aDc4IiBwb2ludHM9IjAgMTkxLjkxIDYyLjE2IDAuNjMgMTQ5LjMgMC42MyI+PC9wb2x5Z29uPgogICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDxnIGlkPSJnODAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE2OS4wMDAwMDAsIDExOS4wMDAwMDApIiBmaWxsPSIjRkNBMzI2Ij4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNDkuMjQsMC42OSBMMTQ5LjI0LDAuNjkgTDE2OC4xNSw1OC44MSBDMTY5Ljg4MzI2MSw2NC4xMDk2Nzk1IDE2OC4wMDA4OTMsNjkuOTIyNDAyMyAxNjMuNDksNzMuMiBMMCwxOTEuOTEgTDE0OS4yLDAuNjkgTDE0OS4yNCwwLjY5IFoiIGlkPSJwYXRoODIiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8ZyBpZD0iZzg0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAwLjAwMDAwMCkiIGZpbGw9IiNFMjQzMjkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTg3LjI4LDExOS42OSBMMC4xOCwxMTkuNjkgTDM3LjYsNC40OSBDMzguNDc3OTAzNSwxLjg0OTc5NjQyIDQwLjk0NzY2NDcsMC4wNjgzMDgxMjE5IDQzLjczLDAuMDY4MzA4MTIxOSBDNDYuNTEyMzM1MywwLjA2ODMwODEyMTkgNDguOTgyMDk2NSwxLjg0OTc5NjQyIDQ5Ljg2LDQuNDkgTDg3LjI4LDExOS42OSBaIiBpZD0icGF0aDg2Ij48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-gitlab-v1.8.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-gitlab/releases/tag/v1.8.0",
     "hosting": "",
@@ -9291,200 +9440,6 @@
       "windows-amd64": {}
     },
     "updated_at": "2022-04-06T17:09:44.841808Z"
-  },
-  {
-    "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
-    "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
-    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.2.0.tar.gz",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-github/releases/tag/v2.2.0",
-    "hosting": "",
-    "author_type": "mattermost",
-    "release_stage": "production",
-    "enterprise": false,
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmXLiRYACgkQ0bVLR6XO/sQ8Vg//QntaWaO44dAwQoYrdj0b/hTa95ibOn6f1QUOBveMDuOqRof+6ZnavDMXZg3WYYcAVZLhym/+jCKZs5jI4WsZm8fDDo4Um0AS+2KL2dXHo70qhP4xwHWEVeT0ERE53E8NiSd8G+14O38Shrkd6CYCmUhrKcSQhoFYp36nIMXqmJAsXUAiHPtyz1wgnAIYcjHVSFw6ifhsKVp+R+xo3sI+asY/Ulrrj5pjfuUYBz4/CuPMIQeyLdep8FRizWCvssFsuf0PrfTxKpqGo+fMAj9OWHtHP8muJ4LaWPfLz0MXcmyRBf9s8XYexcMvjdTr4ccIGmfOoIyIgndVQ95a0Of4Jea3sUXNPf37MrmYgCHfKOI968aUP7Hi0md1mImdFYstKILWL8nd0PjXZPfsXmjWGKNJeRXy+e5PwavEsbCRuvJgH8cyGPFAKqKaazJC/3FcJsLZVqCJn1J3ShbMJdc6Fvkay7EWao0aoVbGB/+bsmMUY+faWf0zjNQBv4PIzwXm3eugASgYMi693GN1bIV1yzZodckrzFM8fqunRgWuxAB3IoYDp5SQoHGQ6kjB9zgRX8Cj+qUSPb+759/zMWDUOoVr9xY0YnyWlp3y/6Sus1GwCt0FOJAXvxbl9lGz0Vd5GuMkb0sKQLKd60/ocF83osZxylISBIJYRJ7zD+cXpa8=",
-    "repo_name": "mattermost-plugin-github",
-    "manifest": {
-      "id": "github",
-      "name": "GitHub",
-      "description": "GitHub plugin for Mattermost.",
-      "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
-      "support_url": "https://github.com/mattermost/mattermost-plugin-github/issues",
-      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-github/releases/tag/v2.2.0",
-      "icon_path": "assets/icon.svg",
-      "version": "2.2.0",
-      "min_server_version": "7.1.0",
-      "server": {
-        "executables": {
-          "darwin-amd64": "server/dist/plugin-darwin-amd64",
-          "darwin-arm64": "server/dist/plugin-darwin-arm64",
-          "linux-amd64": "server/dist/plugin-linux-amd64",
-          "linux-arm64": "server/dist/plugin-linux-arm64",
-          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
-        },
-        "executable": ""
-      },
-      "webapp": {
-        "bundle_path": "webapp/dist/main.js"
-      },
-      "settings_schema": {
-        "header": "The GitHub plugin for Mattermost allows users to subscribe to notifications, stay up-to-date with reviews, see the status of pull requests at a glance, and other common GitHub actions - directly from Mattermost. \n \n Instructions for setup are [available here](https://www.mattermost.com/pl/default-github-plugin#configuration).",
-        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost/mattermost-plugin-github).",
-        "settings": [
-          {
-            "key": "UsePreregisteredApplication",
-            "display_name": "Use Preregistered OAuth Application:",
-            "type": "bool",
-            "help_text": "Set to false if using GitHub Enterprise. When true, instructs the plugin to use the preregistered GitHub OAuth application - application registration steps can be skipped. Requires [Chimera Proxy](https://github.com/mattermost/chimera) URL to be configured for the server. Cannot be used with GitHub enterprise. **This setting is intended to be used with Mattermost Cloud instances only.**",
-            "placeholder": "",
-            "default": false,
-            "hosting": ""
-          },
-          {
-            "key": "GitHubOAuthClientID",
-            "display_name": "GitHub OAuth Client ID:",
-            "type": "text",
-            "help_text": "The client ID for the OAuth app registered with GitHub.",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "GitHubOAuthClientSecret",
-            "display_name": "GitHub OAuth Client Secret:",
-            "type": "text",
-            "help_text": "The client secret for the OAuth app registered with GitHub.",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "WebhookSecret",
-            "display_name": "Webhook Secret:",
-            "type": "generated",
-            "help_text": "The webhook secret set in GitHub.",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "EncryptionKey",
-            "display_name": "At Rest Encryption Key:",
-            "type": "generated",
-            "help_text": "The AES encryption key used to encrypt stored access tokens.",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "GithubOrg",
-            "display_name": "GitHub Organization:",
-            "type": "text",
-            "help_text": "(Optional) Set to lock the plugin to a single GitHub organization.",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "EnterpriseBaseURL",
-            "display_name": "Enterprise Base URL:",
-            "type": "text",
-            "help_text": "(Optional) The base URL for using the plugin with a GitHub Enterprise installation. Example: https://github.example.com",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "EnterpriseUploadURL",
-            "display_name": "Enterprise Upload URL:",
-            "type": "text",
-            "help_text": "(Optional) The upload URL for using the plugin with a GitHub Enterprise installation. This is often the same as your Base URL.",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "EnableLeftSidebar",
-            "display_name": "Display Notification Counters in Left Sidebar",
-            "type": "bool",
-            "help_text": "When false, the counters showing the user how many open/assigned issues they have in Github will not be shown in the Left Hand Sidebar on desktop browsers.",
-            "placeholder": "",
-            "default": true,
-            "hosting": ""
-          },
-          {
-            "key": "EnablePrivateRepo",
-            "display_name": "Enable Private Repositories:",
-            "type": "bool",
-            "help_text": "(Optional) Allow the plugin to work with private repositories. When enabled, existing users must reconnect their accounts to gain access to private repositories. Affected users will be notified by the plugin once private repositories are enabled.",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "ConnectToPrivateByDefault",
-            "display_name": "Connect to private Repositories by default:",
-            "type": "bool",
-            "help_text": "(Optional) When enabled, /github connect command will let users connect to their github account and gain access to private repositories without explicitly mentioning private.",
-            "placeholder": "",
-            "default": null,
-            "hosting": ""
-          },
-          {
-            "key": "EnableCodePreview",
-            "display_name": "Enable Code Previews:",
-            "type": "dropdown",
-            "help_text": "Allow the plugin to expand permalinks to GitHub files with an actual preview of the linked file.",
-            "placeholder": "",
-            "default": "public",
-            "options": [
-              {
-                "display_name": "Enable for public repositories",
-                "value": "public"
-              },
-              {
-                "display_name": "Enable for public and private repositories. This might leak confidential code into public channels",
-                "value": "privateAndPublic"
-              },
-              {
-                "display_name": "Disable",
-                "value": "disable"
-              }
-            ],
-            "hosting": ""
-          },
-          {
-            "key": "EnableWebhookEventLogging",
-            "display_name": "Enable Webhook Event Logging:",
-            "type": "bool",
-            "help_text": "Allow the plugin to log the webhook event. The log level needs to be set to DEBUG.",
-            "placeholder": "",
-            "default": false,
-            "hosting": ""
-          },
-          {
-            "key": "ShowAuthorInCommitNotification",
-            "display_name": "Show Author in commit notification:",
-            "type": "bool",
-            "help_text": "In `Pushes` event notification, show commit author instead of commit committer.",
-            "placeholder": "",
-            "default": false,
-            "hosting": ""
-          }
-        ]
-      }
-    },
-    "platforms": {
-      "linux-amd64": {
-        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.2.0-linux-amd64.tar.gz",
-        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmXLiQwACgkQ0bVLR6XO/sSJyhAAi6O0LKTxORJsmSSj6auxGoDYxdinGfAIccyRzG8/pjTMBzLynvBIa/Bi1jvy6KZX4aYoGH8LE0l11KTioYOVXjkpFB8N8adoW9BSKnNnxmrSeadCx8Eu8QMKXW3MKJj5V+Z3ZWgAY0TiYiMeQ1Dw5U/Zzo3AJ8qldPQTwugZUS92V1sWx/EPwQkG5jhAowPobEr6RQqwTgA98YD/2p2SxfpRXWvjCAtfxpCQjGIxgm0Q56BsiowHTT2ebCUAXe15495c5+TmQuV8mH5CX4bWtMDHcQGktEoUL7r/23OAy88LyIHefeBdJSPJ9VnqVVOzp77X8eEz7Al6Bywc0MMWWGqDOClS8x/Q+na9B7Ijor0iHVFNab4JEpl2MhOjx34XpiIjSpyuPnBFT84TB+2WzPHFSoyOifKGONqEP2tYl/YLnuXl6tY1cMD7Up2/fmcuXGHJRQpVhLlfVQXsiZI5V8ntWKJgEE/xnj11l6kZ6HSOvFMGGAMICmzdPSD4RkCkhcQpJzVxtRrEuojAt2lhWq3RUZexfW7/URfW/93PJGzV+gHNystVbW3ZY9bzFmLAaSBSwQrqf+M9rcseiiUvHJRTqbD9KIbbLiH7kuTWnAU6cB1NcpCHgb8qvzWTw933IhG9DD+Lpqhlkhwb8y0t8s4D++j6wYS2dsKgIjqUmrQ="
-      },
-      "darwin-amd64": {},
-      "windows-amd64": {
-        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.2.0-windows-amd64.tar.gz",
-        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmXLiRIACgkQ0bVLR6XO/sSfCQ/6Aj1uAEbi3UtNK+p0LXRBjoE20hi0beod4OpQtEMkW6Spv2tn0Dz8nreptKWBW2Fk27p+GpfKQzxSjJxb2bu+Viljn+ANXdxIBetR9LGjQDLtZ1q/LYey0mMqRbkMsgZBPRyhc+iy7u4Eae1cXfBhrRJ12OK92GmHu5zd+hz0p1j5tuRKXxpzLnNKmoh5CZS7q5HsG/ILoQHUKAN/QjHGrZXjB+QARMBQSWqDNqClvVX245Pa4LNEfbCuiPNV3k6Shj+zLYGHBt6SYDo8lZTQDRZkyk4UH+VYE8HaB0AbU9ABIsi4NjpXmXdzH42DpuRclC0eL+LPpAz6lCL01hnTW7KQcRB2/e7YaPPrywtMPNpjmdRpmSJpq3Q0wSeDzn5M9rIlfNnV12TzlY3drjiXqiTAhBrn1brKzJ6sdiRMgF63eenGmnITfGdCIDmpYtYAqBPPZ52OU/G+T97bsGOE9QQ34AmNJqFqhsE6Z601EeqFG1Tw3BtCQ9PKtFfV+rRMDby/cQgROyyX2xHBSZofr7dClBC7iLTRkE0RhgJPX+Jd0ilqkb1+waoiY6EeTPXpPlYW7Srk6lPms0emv2I+3JOM64JatWZ9uzT6V0/5Hdt0HXX8Wpgn1cwEryJk9K/SH/DrswONpv4GRidhp7YKLy7eq3j7JczO5qyKfrlRGSI="
-      }
-    },
-    "updated_at": "2024-02-14T09:55:13.732899573Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
