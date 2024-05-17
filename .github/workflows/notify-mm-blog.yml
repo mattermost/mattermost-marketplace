@@ -17,12 +17,11 @@ jobs:
         shell: bash
         run: |
           .github/workflows/notify-mm-blog.sh
-      - name: Notify channel 1
+      - name: Notify "Community Configuration" channel on community
         uses: mattermost/action-mattermost-notify@master
         env:
-          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_1 }}
-      - name: Notify channel 2
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MM_COMMUNITY_COMMUNITY_CONFIGURATION_INCOMING_WEBHOOK }}
+      - name: Notify "Announcements" channel on hub
         uses: mattermost/action-mattermost-notify@master
         env:
-          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_2 }}
-
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MM_HUB_ANNOUNCEMENTS_INCOMING_WEBHOOK }}
