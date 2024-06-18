@@ -2304,6 +2304,365 @@
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMiIgZmlsbD0iIzNEQjg4NyIvPgo8cGF0aCBkPSJNMjMgMjBDMjMgMTkuNDU2IDIyLjg2NCAxOC45NiAyMi41OTIgMTguNTEyQzIyLjMyIDE4LjA0OCAyMS45NTIgMTcuNjggMjEuNDg4IDE3LjQwOEMyMS4wNCAxNy4xMzYgMjAuNTQ0IDE3IDIwIDE3VjE1LjAwOEMyMC45MTIgMTUuMDA4IDIxLjc0NCAxNS4yMzIgMjIuNDk2IDE1LjY4QzIzLjI2NCAxNi4xMjggMjMuODcyIDE2LjczNiAyNC4zMiAxNy41MDRDMjQuNzY4IDE4LjI1NiAyNC45OTIgMTkuMDg4IDI0Ljk5MiAyMEgyM1pNMjcuMDA4IDIwQzI3LjAwOCAxOC43MzYgMjYuNjg4IDE3LjU2IDI2LjA0OCAxNi40NzJDMjUuNDI0IDE1LjQxNiAyNC41ODQgMTQuNTc2IDIzLjUyOCAxMy45NTJDMjIuNDQgMTMuMzEyIDIxLjI2NCAxMi45OTIgMjAgMTIuOTkyVjExQzIxLjYzMiAxMSAyMy4xNDQgMTEuNDA4IDI0LjUzNiAxMi4yMjRDMjUuODk2IDEzLjAyNCAyNi45NzYgMTQuMDk2IDI3Ljc3NiAxNS40NEMyOC41OTIgMTYuODQ4IDI5IDE4LjM2OCAyOSAyMEgyNy4wMDhaTTI3Ljk5MiAyMy41MDRDMjguMjY0IDIzLjUwNCAyOC40OTYgMjMuNiAyOC42ODggMjMuNzkyQzI4Ljg5NiAyMy45ODQgMjkgMjQuMjE2IDI5IDI0LjQ4OFYyNy45OTJDMjkgMjguMjY0IDI4Ljg5NiAyOC40OTYgMjguNjg4IDI4LjY4OEMyOC40OTYgMjguODk2IDI4LjI2NCAyOSAyNy45OTIgMjlDMjUuNjg4IDI5IDIzLjQ4IDI4LjU1MiAyMS4zNjggMjcuNjU2QzE5LjMzNiAyNi44MDggMTcuNTM2IDI1LjYgMTUuOTY4IDI0LjAzMkMxNC40IDIyLjQ2NCAxMy4xOTIgMjAuNjY0IDEyLjM0NCAxOC42MzJDMTEuNDQ4IDE2LjUyIDExIDE0LjMxMiAxMSAxMi4wMDhDMTEgMTEuNzM2IDExLjA5NiAxMS41MDQgMTEuMjg4IDExLjMxMkMxMS40OTYgMTEuMTA0IDExLjczNiAxMSAxMi4wMDggMTFIMTUuNTEyQzE1Ljc4NCAxMSAxNi4wMTYgMTEuMTA0IDE2LjIwOCAxMS4zMTJDMTYuNCAxMS41MDQgMTYuNDk2IDExLjczNiAxNi40OTYgMTIuMDA4QzE2LjQ5NiAxMy4xOTIgMTYuNjg4IDE0LjM3NiAxNy4wNzIgMTUuNTZDMTcuMTM2IDE1LjczNiAxNy4xNDQgMTUuOTIgMTcuMDk2IDE2LjExMkMxNy4wNDggMTYuMjg4IDE2Ljk2IDE2LjQ0OCAxNi44MzIgMTYuNTkyTDE0LjYyNCAxOC44QzE1LjM0NCAyMC4yMDggMTYuMjY0IDIxLjQ4IDE3LjM4NCAyMi42MTZDMTguNTIgMjMuNzM2IDE5Ljc5MiAyNC42NTYgMjEuMiAyNS4zNzZMMjMuNDA4IDIzLjE2OEMyMy41NTIgMjMuMDQgMjMuNzEyIDIyLjk1MiAyMy44ODggMjIuOTA0QzI0LjA4IDIyLjg1NiAyNC4yNjQgMjIuODY0IDI0LjQ0IDIyLjkyOEMyNS42MjQgMjMuMzEyIDI2LjgwOCAyMy41MDQgMjcuOTkyIDIzLjUwNFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.28.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.28.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmZrPW8ACgkQ0bVLR6XO/sQDnQ//TW5CeBtRV74AcUVK6QSFBr8EKEmvOc60dpzT+eh78PSkdWk3D9LA+Xa7f0Viswa8nu5exH1Kw6idw3vVXv/EsIK4IMnXojTr6E31Dl1F0qDjvKDkhVwQ3xI3NNeQwLFU4Jvslthg8P0UASP5ZSYNPORLP56GHTK4n+L680c7F3YcDIbt8fc7CXxtTvEpq4ctPGwl5D8HOVkMwQ6GKlOQHNcxbuGZ21eyYVCQx7jeAbg5yAHGpM5Ev4bIcgR09jmt/soYVTnGDJ/z3w+zuexPvWfCowyrqDWUqT2Pjp/DwPKoRe1aKesqZL4SExzalH7Zqh+8zvOs01bw6FWie85nnWjIXOCPKGQDiIfzFFYafZv6vWciDCh5omlQAEbr0WDRHTDJg3yq8gT6GmF0SViEiMkgK0+UqTJyBVdBi7XKrrYqCATnHbJNr5asl6BKIPqZu83LLQitNmNU2zg8UyzJLBH+M77EZ4+TlIMgBRn4+xOHrlJb6Ewsm9Od1hLyXj99vCYyzCUozeQJ5zFYXWq/hsxbpEkmouKqAOgdNIBM4LclzkJlbPbtXn/9AYnt73SBM33ETNRscDR5kbunVfFGRELkmBK7nBjCKMT8KwKMC2RpS6Ir+apxNmuqinazzeMmV/K/QqDJs3v2ajxVVXz+03BsOLWDvt44rrCzIi7AJOY=",
+    "repo_name": "mattermost-plugin-calls",
+    "manifest": {
+      "id": "com.mattermost.calls",
+      "name": "Calls",
+      "description": "Integrates real-time voice communication in Mattermost",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.28.1",
+      "icon_path": "assets/plugin_icon.svg",
+      "version": "0.28.1",
+      "min_server_version": "9.5.0",
+      "server": {
+        "executables": {
+          "freebsd-amd64": "server/dist/plugin-freebsd-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "openbsd-amd64": "server/dist/plugin-openbsd-amd64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Calls plugin enables voice calls with screensharing in channels. See [documentation](https://docs.mattermost.com/channels/make-calls.html) to learn more.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "DefaultEnabled",
+            "display_name": "Test mode",
+            "type": "custom",
+            "help_text": "When test mode is enabled, only system admins are able to start calls in channels. This allows testing to confirm calls are working as expected.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "UDPServerAddress",
+            "display_name": "RTC Server Address (UDP)",
+            "type": "text",
+            "help_text": "The local IP address used by the RTC server to listen on for UDP connections.",
+            "placeholder": "127.0.0.1",
+            "default": "",
+            "hosting": "on-prem"
+          },
+          {
+            "key": "TCPServerAddress",
+            "display_name": "RTC Server Address (TCP)",
+            "type": "text",
+            "help_text": "The local IP address used by the RTC server to listen on for TCP connections.",
+            "placeholder": "127.0.0.1",
+            "default": "",
+            "hosting": "on-prem"
+          },
+          {
+            "key": "UDPServerPort",
+            "display_name": "RTC Server Port (UDP)",
+            "type": "number",
+            "help_text": "The UDP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "TCPServerPort",
+            "display_name": "RTC Server Port (TCP)",
+            "type": "number",
+            "help_text": "The TCP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "ICEHostOverride",
+            "display_name": "ICE Host Override",
+            "type": "text",
+            "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+            "placeholder": "",
+            "default": "",
+            "hosting": "on-prem"
+          },
+          {
+            "key": "ICEHostPortOverride",
+            "display_name": "ICE Host Port Override",
+            "type": "number",
+            "help_text": "(Optional) A port number to be used as an override for host candidates in place of the one used to listen on.\nNote: this port will apply to both UDP and TCP host candidates",
+            "placeholder": "",
+            "default": null,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "RTCDServiceURL",
+            "display_name": "RTCD service URL",
+            "type": "text",
+            "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+            "placeholder": "https://rtcd.example.com",
+            "default": null,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "MaxCallParticipants",
+            "display_name": "Max call participants",
+            "type": "number",
+            "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, it means unlimited.",
+            "placeholder": "",
+            "default": 0,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "ICEServersConfigs",
+            "display_name": "ICE Servers Configurations",
+            "type": "longtext",
+            "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+            "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+            "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]",
+            "hosting": "on-prem"
+          },
+          {
+            "key": "TURNStaticAuthSecret",
+            "display_name": "TURN Static Auth Secret",
+            "type": "text",
+            "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+            "placeholder": "",
+            "default": "",
+            "hosting": "on-prem"
+          },
+          {
+            "key": "TURNCredentialsExpirationMinutes",
+            "display_name": "TURN Credentials Expiration (minutes)",
+            "type": "number",
+            "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+            "placeholder": "",
+            "default": 1440,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "ServerSideTURN",
+            "display_name": "Server Side TURN",
+            "type": "bool",
+            "help_text": "(Optional) When set to on it will pass and use configured TURN candidates to server initiated connections.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "AllowScreenSharing",
+            "display_name": "Allow screen sharing",
+            "type": "bool",
+            "help_text": "When set to true it allows call participants to share their screen.",
+            "placeholder": "",
+            "default": true,
+            "hosting": ""
+          },
+          {
+            "key": "EnableSimulcast",
+            "display_name": "Enable simulcast for screen sharing (Experimental)",
+            "type": "bool",
+            "help_text": "When set to true it enables simulcast for screen sharing. This can help to improve screen sharing quality.",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "EnableRecordings",
+            "display_name": "Enable call recordings (Beta)",
+            "type": "bool",
+            "help_text": "(Optional) When set to true, call recordings are enabled.",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "JobServiceURL",
+            "display_name": "Job service URL",
+            "type": "text",
+            "help_text": "The URL to a running calls job service instance used for call recordings.",
+            "placeholder": "https://calls-job-service.example.com",
+            "default": null,
+            "hosting": ""
+          },
+          {
+            "key": "MaxRecordingDuration",
+            "display_name": "Maximum call recording duration",
+            "type": "number",
+            "help_text": "The maximum duration (in minutes) for call recordings. Value must be in the range [15, 180].",
+            "placeholder": "",
+            "default": 60,
+            "hosting": ""
+          },
+          {
+            "key": "RecordingQuality",
+            "display_name": "Call recording quality",
+            "type": "dropdown",
+            "help_text": "The audio and video quality of call recordings.\n Note: this setting can affect the overall performance of the job service and the number of concurrent recording jobs that can be run.",
+            "placeholder": "",
+            "default": "medium",
+            "options": [
+              {
+                "display_name": "Low",
+                "value": "low"
+              },
+              {
+                "display_name": "Medium",
+                "value": "medium"
+              },
+              {
+                "display_name": "High",
+                "value": "high"
+              }
+            ],
+            "hosting": "on-prem"
+          },
+          {
+            "key": "EnableTranscriptions",
+            "display_name": "Enable call transcriptions (Experimental)",
+            "type": "bool",
+            "help_text": "(Optional) When set to true, post-call transcriptions are enabled.",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "TranscriberModelSize",
+            "display_name": "Call transcriber model size",
+            "type": "dropdown",
+            "help_text": "The speech-to-text model size to use for post-call transcriptions. Heavier models will produce more accurate results at the expense of processing time and resources usage.",
+            "placeholder": "",
+            "default": "base",
+            "options": [
+              {
+                "display_name": "Tiny",
+                "value": "tiny"
+              },
+              {
+                "display_name": "Base",
+                "value": "base"
+              },
+              {
+                "display_name": "Small",
+                "value": "small"
+              }
+            ],
+            "hosting": "on-prem"
+          },
+          {
+            "key": "TranscriberNumThreads",
+            "display_name": "Call transcriber threads",
+            "type": "number",
+            "help_text": "The number of threads used by the post-call transcriber. This must be in the range [1, numCPUs].",
+            "placeholder": "",
+            "default": 2,
+            "hosting": ""
+          },
+          {
+            "key": "EnableLiveCaptions",
+            "display_name": "Enable live captions (Experimental)",
+            "type": "bool",
+            "help_text": "(Optional) When set to true, live captions are enabled.",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          },
+          {
+            "key": "LiveCaptionsModelSize",
+            "display_name": "Live captions: Model size",
+            "type": "dropdown",
+            "help_text": "The speech-to-text model size to use for live captions. Heavier models will produce more accurate results at the expense of processing time and resources usage.",
+            "placeholder": "",
+            "default": "tiny",
+            "options": [
+              {
+                "display_name": "Tiny",
+                "value": "tiny"
+              },
+              {
+                "display_name": "Base",
+                "value": "base"
+              },
+              {
+                "display_name": "Small",
+                "value": "small"
+              }
+            ],
+            "hosting": "on-prem"
+          },
+          {
+            "key": "LiveCaptionsNumTranscribers",
+            "display_name": "Live captions: Number of transcribers used per call",
+            "type": "number",
+            "help_text": "The number of separate live-captions transcribers for each call. Each transcribes one audio stream at a time. The product of LiveCaptionsNumTranscribers * LiveCaptionsNumThreadsPerTranscriber must be in the range [1, numCPUs].",
+            "placeholder": "",
+            "default": 1,
+            "hosting": ""
+          },
+          {
+            "key": "LiveCaptionsNumThreadsPerTranscriber",
+            "display_name": "Live captions: Number of threads per transcriber",
+            "type": "number",
+            "help_text": "The number of threads per live-captions transcriber. The product of LiveCaptionsNumTranscribers * LiveCaptionsNumThreadsPerTranscriber must be in the range [1, numCPUs].",
+            "placeholder": "",
+            "default": 2,
+            "hosting": ""
+          },
+          {
+            "key": "LiveCaptionsLanguage",
+            "display_name": "Live captions language",
+            "type": "text",
+            "help_text": "The language passed to the live captions transcriber. Should be a 2-letter ISO 639 Set 1 language code, e.g. 'en'. If blank, will be set to English 'en' as default.",
+            "placeholder": "",
+            "default": "en",
+            "hosting": ""
+          },
+          {
+            "key": "EnableIPv6",
+            "display_name": "(Experimental) Enable IPv6 support",
+            "type": "bool",
+            "help_text": "When set to true the RTC service will work in dual-stack mode, listening for IPv6 connections and generating candidates in addition to IPv4 ones.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "on-prem"
+          },
+          {
+            "key": "EnableRinging",
+            "display_name": "Enable call ringing (Beta)",
+            "type": "bool",
+            "help_text": "When set to true, ringing functionality is enabled: participants in DM and GM channels will receive a desktop alert and a ringing notification when a call is started. Changing this setting requires a plugin restart.",
+            "placeholder": "",
+            "default": false,
+            "hosting": ""
+          }
+        ]
+      },
+      "props": {
+        "calls_recorder_version": "v0.7.2",
+        "calls_transcriber_version": "v0.2.2",
+        "min_offloader_version": "v0.8.0",
+        "min_rtcd_version": "v0.12.0"
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.28.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmZrPW4ACgkQ0bVLR6XO/sSoFhAAhMOcPP4v5RCni/fhgsJLFmOP7Rb4scLocdVXpfs7y1Pd+JfuruqN31UGFoW3Nm/Cp6uOH/GhtfeyCmizc53TRQ31CsncLh6mc6qH8t/9lZePi7zwDEzzhQH/Xy0gQ/233Dd0vPMuKlLDTjEnyP2D9kPLRZAOqA3vFm2Jnnb7MYHx2xGNJO01XDoRfDh8LxYpN+T0AYISNtqvZGhCAnCa7nOc9zhbZCZK1h13HHlqraj7e01QcLSGU1uIyY6z6tZlSO6fDMAc20SyY5ByDQ6CGIPOmYR5TiAFy+iqwgDwVvTeSAChqU10Vo1b8g1lhKMlSmyQwBX2snEVf3OGldKlSrotYBZigHpmtUkU+qdNuzO8K9f9WFV5OxKL+0L4qdcqlk91Czeac8RYtJ5XP9Q3CqIIXXKpNpTs7Ek92Zco0XjubM52fjytpB2gwJa7TElnepERh2HfaDEri+dubx/ftcrOfjxJURHYIY8tgd+1sMPW+eR/nfZfnUJmLxFJg4xvcA0RFPtw8bh0UjzdnkftC1siuTv6Z5JwkGCUPMi9eBRQWYjGIp7E7MnsfhYtMz2V8Y+zqpbsoqMTqXKjZVlpWatvhpe1A/JHDbDWQaln+Ror+LXCu6wOUjXqFml01Ak2EhHrDnPst0ZAw4K93NMz+cUOEfuFmVYu0Fz7q90qb44="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2024-06-13T19:00:38.152328Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
     "icon_data": "",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.27.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v0.27.0",
