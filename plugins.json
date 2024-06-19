@@ -2311,7 +2311,7 @@
     "author_type": "mattermost",
     "release_stage": "production",
     "enterprise": false,
-    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmZrPW8ACgkQ0bVLR6XO/sQDnQ//TW5CeBtRV74AcUVK6QSFBr8EKEmvOc60dpzT+eh78PSkdWk3D9LA+Xa7f0Viswa8nu5exH1Kw6idw3vVXv/EsIK4IMnXojTr6E31Dl1F0qDjvKDkhVwQ3xI3NNeQwLFU4Jvslthg8P0UASP5ZSYNPORLP56GHTK4n+L680c7F3YcDIbt8fc7CXxtTvEpq4ctPGwl5D8HOVkMwQ6GKlOQHNcxbuGZ21eyYVCQx7jeAbg5yAHGpM5Ev4bIcgR09jmt/soYVTnGDJ/z3w+zuexPvWfCowyrqDWUqT2Pjp/DwPKoRe1aKesqZL4SExzalH7Zqh+8zvOs01bw6FWie85nnWjIXOCPKGQDiIfzFFYafZv6vWciDCh5omlQAEbr0WDRHTDJg3yq8gT6GmF0SViEiMkgK0+UqTJyBVdBi7XKrrYqCATnHbJNr5asl6BKIPqZu83LLQitNmNU2zg8UyzJLBH+M77EZ4+TlIMgBRn4+xOHrlJb6Ewsm9Od1hLyXj99vCYyzCUozeQJ5zFYXWq/hsxbpEkmouKqAOgdNIBM4LclzkJlbPbtXn/9AYnt73SBM33ETNRscDR5kbunVfFGRELkmBK7nBjCKMT8KwKMC2RpS6Ir+apxNmuqinazzeMmV/K/QqDJs3v2ajxVVXz+03BsOLWDvt44rrCzIi7AJOY=",
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmZsnHsACgkQ0bVLR6XO/sTDqg//QHtm8i63COX0d6G3ygVw1PW7wPKYRJKYjm4Oc7dMNU+PVpb4mCaCOl0dsgj/6OpP/SWh993XZ1DbJtdnqg7+ii61zJjIdC3K3EvF+v9svAnH53fgtNg3H8tVgzp8a9atGRlQHO2t4fllSCuBOd/9rXhYBuLuWNfv6A6G6d33R/UIQJhztdycz3zKA31iAwqcOhWFQRbztwLycp2ka+KMC9hDJgMqdAeCUu5ImiSutuUITqaEwV4Pm9ylFUpjatuDk3EihY6pN+caUr4ngcXxxoyglIjn8rzLI4Sg9ZI+yzD3m7/o8IiYlIdmYEbQiuLL11E8FotL9edL8n12nrn922iyeBlcW5Bdou/pUqpF1OQ+mTCYs6EMjxEIEdZgXC0mQThFAtTOze479v3ji+11ZTEtRjVV/2MQcE7npiOr9fEYJBgEhRdMelTCObs8XsG2xsIkZAnrOCTMPPELVhWhnDnd2WnkuiKFUkAQMPw5vOaeVLENewAYY8wCZgx3MNURC5tZ3pWOUPdtLYLLiXV2Q/Vpj0+Kw1D+cF6NftSjPVWjLT9CEO2ZgcnNYMbiG8BTEalbscwXYnfr1/qvovyNB4lGS28p/8hR6Mocd8a/paLtSMcmnowrvEXVbDbCpoofiQh/6oAwQlJDg06pIG6PuuSnEPpjY4ziKb2SARvTkeQ=",
     "repo_name": "mattermost-plugin-calls",
     "manifest": {
       "id": "com.mattermost.calls",
@@ -2654,12 +2654,12 @@
     "platforms": {
       "linux-amd64": {
         "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-calls-v0.28.1-linux-amd64.tar.gz",
-        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmZrPW4ACgkQ0bVLR6XO/sSoFhAAhMOcPP4v5RCni/fhgsJLFmOP7Rb4scLocdVXpfs7y1Pd+JfuruqN31UGFoW3Nm/Cp6uOH/GhtfeyCmizc53TRQ31CsncLh6mc6qH8t/9lZePi7zwDEzzhQH/Xy0gQ/233Dd0vPMuKlLDTjEnyP2D9kPLRZAOqA3vFm2Jnnb7MYHx2xGNJO01XDoRfDh8LxYpN+T0AYISNtqvZGhCAnCa7nOc9zhbZCZK1h13HHlqraj7e01QcLSGU1uIyY6z6tZlSO6fDMAc20SyY5ByDQ6CGIPOmYR5TiAFy+iqwgDwVvTeSAChqU10Vo1b8g1lhKMlSmyQwBX2snEVf3OGldKlSrotYBZigHpmtUkU+qdNuzO8K9f9WFV5OxKL+0L4qdcqlk91Czeac8RYtJ5XP9Q3CqIIXXKpNpTs7Ek92Zco0XjubM52fjytpB2gwJa7TElnepERh2HfaDEri+dubx/ftcrOfjxJURHYIY8tgd+1sMPW+eR/nfZfnUJmLxFJg4xvcA0RFPtw8bh0UjzdnkftC1siuTv6Z5JwkGCUPMi9eBRQWYjGIp7E7MnsfhYtMz2V8Y+zqpbsoqMTqXKjZVlpWatvhpe1A/JHDbDWQaln+Ror+LXCu6wOUjXqFml01Ak2EhHrDnPst0ZAw4K93NMz+cUOEfuFmVYu0Fz7q90qb44="
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmZsnHsACgkQ0bVLR6XO/sRyxQ//SDzpYSmbSHf03nSrU6liye6pQnr5xeNlWJuDn63B6VmNKrbrafFPnwamaeqqhgQdbJ7v7/iOB0WfIZUewKppxIi+l6RPiHg5lZjeTDIRTzUr60XyttW+IJWNc3h5pytAjW118Jd2V92+JImaPn8OE1wQDezbEunWXutkND4qFP+IZr4IsDl74xlpeRswZ2J4ODFaCcDCh0jPXSalXsApe43DM2kUXcJ6Z/qgvyeCHtp7teIYFhRB2laNgZTRWImGp9KNtEOJcw0p2HrsSkAMFLqhHNWmz91WwH1BFtBANcT9rpnGWDSHEmNDWOdwvxumL1Lkv6nfnytrrIrRUDxwKizsRcQRCZBeYgnwon/ExYn3RriyJnKbsDnbMTfOZOqkQBpx00fhxluBfQLQAmBU2MMPRxJCfr5mzMeOooIE+UIIrQdLvfrFm52E6cJV8uZKYsxWbavmM7Pq2Wr+BVASHmDwgBmXRunFIxQRGGLND2KS/pYR1Wlg+4KrA48BrRTibiwNPopkxX+PzxNzFAgPOxPkf1gwVDEaHE2LGLdcsnzpZDjtIilXEHdml7QlXCuiwbglv20sTGBvMWIP5cypKEB+4OnRFylD91CH1URvUeYqr0CnX2jIqJGtm0gLvIuqwyETcMu/M0Nw2WISmNv1lJLklIbBA7pcvlvnsSD+faw="
       },
       "darwin-amd64": {},
       "windows-amd64": {}
     },
-    "updated_at": "2024-06-13T19:00:38.152328Z"
+    "updated_at": "2024-06-19T07:52:36.744180154Z"
   },
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
