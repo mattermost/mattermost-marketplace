@@ -28,7 +28,7 @@ import (
 )
 
 const (
-	defaultRemotePluginStore = "https://plugins-store.test.mattermost.com/release"
+	defaultRemotePluginStore = "https://plugins.releases.mattermost.com/release"
 	defaultGitHubOrg         = "mattermost"
 )
 
