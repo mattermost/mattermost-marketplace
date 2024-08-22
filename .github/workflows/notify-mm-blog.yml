@@ -21,8 +21,9 @@ jobs:
         uses: mattermost/action-mattermost-notify@b7d118e440bf2749cd18a4a8c88e7092e696257a #v2.0.0
         with:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_1 }}
+          PAYLOAD: $(cat mattermost.json)
       - name: Notify channel 2
         uses: mattermost/action-mattermost-notify@b7d118e440bf2749cd18a4a8c88e7092e696257a #v2.0.0
         with:
           MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL_2 }}
-
+          PAYLOAD: $(cat mattermost.json)
