@@ -41,6 +41,6 @@ var ExperimentalLabel = Label{
 
 var EnterpriseLabel = Label{
 	Name:        "Enterprise",
-	Description: "This plugin requires an Mattermost Enterprise license.",
+	Description: "This plugin requires a Mattermost Enterprise license.",
 	URL:         "https://mattermost.com/pricing/",
 }
