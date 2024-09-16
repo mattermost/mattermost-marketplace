@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-22.04
-    container: cimg/go:1.22
+    container: cimg/go:1.19
     defaults:
       run:
         shell: bash
