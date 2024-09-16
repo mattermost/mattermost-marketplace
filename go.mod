@@ -5,7 +5,7 @@ go 1.22
 toolchain go1.22.6
 
 require (
-	github.com/akrylysov/algnhsa v0.0.0-20190319020909-05b3d192e9a7
+	github.com/akrylysov/algnhsa v1.1.0
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/google/go-github/v28 v28.0.0
 	github.com/gorilla/mux v1.8.1
@@ -19,7 +19,7 @@ require (
 )
 
 require (
-	github.com/aws/aws-lambda-go v1.9.0 // indirect
+	github.com/aws/aws-lambda-go v1.47.0 // indirect
 	github.com/blang/semver/v4 v4.0.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/dyatlov/go-opengraph/opengraph v0.0.0-20220524092352-606d7b1e5f8a // indirect
