@@ -34,8 +34,8 @@ func closeBody(r *http.Response) {
 	}
 }
 
-func (c *Client) buildURL(urlPath string, args ...interface{}) string {
-	return fmt.Sprintf("%s/%s", strings.TrimRight(c.Address, "/"), strings.TrimLeft(fmt.Sprintf(urlPath, args...), "/"))
+func (c *Client) buildURL(urlPath string) string {
+	return fmt.Sprintf("%s/%s", strings.TrimRight(c.Address, "/"), strings.TrimLeft(urlPath, "/"))
 }
 
 func (c *Client) doGet(u string) (*http.Response, error) {

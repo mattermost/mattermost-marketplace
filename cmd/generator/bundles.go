@@ -25,7 +25,7 @@ var migrateCmd = &cobra.Command{
 	Short:   "Migrate existing plugins in plugins.json to the newest structure.",
 	Long:    "The migrate command adds platform-specific bundles to each existing entry.",
 	Example: "generator migrate",
-	RunE: func(command *cobra.Command, args []string) error {
+	RunE: func(command *cobra.Command, _ []string) error {
 		dbFile, err := command.Flags().GetString("database")
 		if err != nil {
 			return err

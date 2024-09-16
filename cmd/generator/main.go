@@ -18,7 +18,7 @@ import (
 
 	"github.com/blang/semver"
 	"github.com/google/go-github/v28/github"
-	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
+	mattermostModel "github.com/mattermost/mattermost/server/public/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
@@ -54,7 +54,7 @@ var generatorCmd = &cobra.Command{
 	PersistentPreRunE: InitCommand,
 	// SilenceErrors allows us to explicitly log the error returned from generatorCmd below.
 	SilenceErrors: true,
-	RunE: func(command *cobra.Command, args []string) error {
+	RunE: func(command *cobra.Command, _ []string) error {
 		command.SilenceUsage = true
 
 		dbFile, err := command.Flags().GetString("database")
