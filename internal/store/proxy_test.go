@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	mattermostModel "github.com/mattermost/mattermost/server/public/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 
 	"github.com/mattermost/mattermost-marketplace/internal/api"
 	"github.com/mattermost/mattermost-marketplace/internal/model"
@@ -18,7 +18,7 @@ import (
 func TestProxyGetPlugins(t *testing.T) {
 	t.Run("empty stream", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
-		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusOK)
 		}))
 		t.Cleanup(ts.Close)
@@ -35,7 +35,7 @@ func TestProxyGetPlugins(t *testing.T) {
 
 	t.Run("empty stream with error", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
-		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusOK)
 			_, err := w.Write([]byte(`{"invalid":`))
 			require.NoError(t, err)
@@ -54,7 +54,7 @@ func TestProxyGetPlugins(t *testing.T) {
 
 	t.Run("valid stream", func(t *testing.T) {
 		logger := testlib.MakeLogger(t)
-		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, _ *http.Request) {
+		ts := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusOK)
 			_, err := w.Write([]byte(`[{"homepage_url":"https://github.com/mattermost/mattermost-plugin-demo","icon_data":"icon-data.svg","download_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/download/v0.1.0/com.mattermost.demo-plugin-0.1.0.tar.gz","signature":"signature1", "release_notes_url":"https://github.com/mattermost/mattermost-plugin-demo/releases/v0.1.0","manifest":{}}]`))
 			require.NoError(t, err)

@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/blang/semver"
-	mattermostModel "github.com/mattermost/mattermost/server/public/model"
+	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"

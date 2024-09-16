@@ -14,7 +14,7 @@ linters-settings:
   goimports:
     local-prefixes: github.com/mattermost/mattermost-marketplace
   govet:
-    shadow: true
+    check-shadowing: true
     enable-all: true
     disable:
       - fieldalignment
