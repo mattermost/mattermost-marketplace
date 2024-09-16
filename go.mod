@@ -1,13 +1,15 @@
 module github.com/mattermost/mattermost-marketplace
 
-go 1.21
+go 1.22
+
+toolchain go1.22.6
 
 require (
 	github.com/akrylysov/algnhsa v0.0.0-20190319020909-05b3d192e9a7
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/google/go-github/v28 v28.0.0
 	github.com/gorilla/mux v1.8.1
-	github.com/mattermost/mattermost/server/public v0.1.7-0.20240813064912-e5842e67a8a1
+	github.com/mattermost/mattermost/server/public v0.1.7-0.20240912172357-70fe2abea67e
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.6.1
