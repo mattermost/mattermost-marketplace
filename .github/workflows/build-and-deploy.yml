@@ -52,6 +52,10 @@ jobs:
     env:
       AWS_DEFAULT_REGION: us-east-1
     steps:
+    - name: deploy/checkout-repo
+      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+      with:
+        fetch-depth: 0      
     - name: deploy/install-dependencies
       run: npm i -g "serverless@<4.0.0"
     - name: deploy/download-build
