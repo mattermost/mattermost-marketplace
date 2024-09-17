@@ -38,6 +38,7 @@ jobs:
         name: marketplace-build
         path: dist/mattermost-marketplace.zip
         retention-days: 2
+        compression-level: 0
 
   deploy:
     if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'master' || github.ref_name == 'production') }}
@@ -51,15 +52,13 @@ jobs:
     env:
       AWS_DEFAULT_REGION: us-east-1
     steps:
-    - name: build/checkout-repo
-      uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
     - name: deploy/install-dependencies
       run: npm i -g "serverless@<4.0.0"
     - name: deploy/download-build
       uses: actions/download-artifact@65a9edc5881444af0b9093a5e628f2fe47ea3b2e # v4.1.7
       with:
         name: marketplace-build
-        path: dist/mattermost-marketplace.zip
+        path: dist
     # Required because of https://github.com/actions/upload-artifact/issues/38
     - name: deploy/set-artifact-permissions
       run: chmod +x dist/*
