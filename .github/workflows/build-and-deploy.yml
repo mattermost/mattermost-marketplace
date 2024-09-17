@@ -38,6 +38,7 @@ jobs:
         name: marketplace-build
         path: dist/mattermost-marketplace.zip
         retention-days: 2
+        compression-level: 0
 
   deploy:
     if: ${{ github.repository == 'mattermost/mattermost-marketplace' && (github.ref_name == 'master' || github.ref_name == 'production') }}
@@ -58,7 +59,6 @@ jobs:
       with:
         name: marketplace-build
         path: dist
-        merge-multiple: true
     # Required because of https://github.com/actions/upload-artifact/issues/38
     - name: deploy/set-artifact-permissions
       run: chmod +x dist/*
