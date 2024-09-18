@@ -6,24 +6,24 @@ provider:
   name: aws
   stage: ${opt:stage, 'dev'}
   region: us-east-1
-  runtime: go1.x
+  runtime: provided.al2023
+  architecture: x86_64
   timeout: 5
   memorySize: 512
 
 package:
-  exclude:
-    - ./**
-  include:
-    - ./dist/**
+  individually: true
 
 functions:
   server:
-    handler: dist/marketplace-lambda
+    handler: bootstrap # newer runtimes require that the binary name is bootstrap and present in the root of the zip
     # Proxy all HTTP requests to the lambda function
     events:
       - http:
           path: /{proxy+}
           method: any
+    package:
+      artifact: dist/mattermost-marketplace.zip # override the default artifact to point to the zip file we packaged
 
 resources:
   Resources:
