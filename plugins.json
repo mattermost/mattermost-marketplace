@@ -2468,6 +2468,918 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMiIgZmlsbD0iIzNEQjg4NyIvPgo8cGF0aCBkPSJNMjMgMjBDMjMgMTkuNDU2IDIyLjg2NCAxOC45NiAyMi41OTIgMTguNTEyQzIyLjMyIDE4LjA0OCAyMS45NTIgMTcuNjggMjEuNDg4IDE3LjQwOEMyMS4wNCAxNy4xMzYgMjAuNTQ0IDE3IDIwIDE3VjE1LjAwOEMyMC45MTIgMTUuMDA4IDIxLjc0NCAxNS4yMzIgMjIuNDk2IDE1LjY4QzIzLjI2NCAxNi4xMjggMjMuODcyIDE2LjczNiAyNC4zMiAxNy41MDRDMjQuNzY4IDE4LjI1NiAyNC45OTIgMTkuMDg4IDI0Ljk5MiAyMEgyM1pNMjcuMDA4IDIwQzI3LjAwOCAxOC43MzYgMjYuNjg4IDE3LjU2IDI2LjA0OCAxNi40NzJDMjUuNDI0IDE1LjQxNiAyNC41ODQgMTQuNTc2IDIzLjUyOCAxMy45NTJDMjIuNDQgMTMuMzEyIDIxLjI2NCAxMi45OTIgMjAgMTIuOTkyVjExQzIxLjYzMiAxMSAyMy4xNDQgMTEuNDA4IDI0LjUzNiAxMi4yMjRDMjUuODk2IDEzLjAyNCAyNi45NzYgMTQuMDk2IDI3Ljc3NiAxNS40NEMyOC41OTIgMTYuODQ4IDI5IDE4LjM2OCAyOSAyMEgyNy4wMDhaTTI3Ljk5MiAyMy41MDRDMjguMjY0IDIzLjUwNCAyOC40OTYgMjMuNiAyOC42ODggMjMuNzkyQzI4Ljg5NiAyMy45ODQgMjkgMjQuMjE2IDI5IDI0LjQ4OFYyNy45OTJDMjkgMjguMjY0IDI4Ljg5NiAyOC40OTYgMjguNjg4IDI4LjY4OEMyOC40OTYgMjguODk2IDI4LjI2NCAyOSAyNy45OTIgMjlDMjUuNjg4IDI5IDIzLjQ4IDI4LjU1MiAyMS4zNjggMjcuNjU2QzE5LjMzNiAyNi44MDggMTcuNTM2IDI1LjYgMTUuOTY4IDI0LjAzMkMxNC40IDIyLjQ2NCAxMy4xOTIgMjAuNjY0IDEyLjM0NCAxOC42MzJDMTEuNDQ4IDE2LjUyIDExIDE0LjMxMiAxMSAxMi4wMDhDMTEgMTEuNzM2IDExLjA5NiAxMS41MDQgMTEuMjg4IDExLjMxMkMxMS40OTYgMTEuMTA0IDExLjczNiAxMSAxMi4wMDggMTFIMTUuNTEyQzE1Ljc4NCAxMSAxNi4wMTYgMTEuMTA0IDE2LjIwOCAxMS4zMTJDMTYuNCAxMS41MDQgMTYuNDk2IDExLjczNiAxNi40OTYgMTIuMDA4QzE2LjQ5NiAxMy4xOTIgMTYuNjg4IDE0LjM3NiAxNy4wNzIgMTUuNTZDMTcuMTM2IDE1LjczNiAxNy4xNDQgMTUuOTIgMTcuMDk2IDE2LjExMkMxNy4wNDggMTYuMjg4IDE2Ljk2IDE2LjQ0OCAxNi44MzIgMTYuNTkyTDE0LjYyNCAxOC44QzE1LjM0NCAyMC4yMDggMTYuMjY0IDIxLjQ4IDE3LjM4NCAyMi42MTZDMTguNTIgMjMuNzM2IDE5Ljc5MiAyNC42NTYgMjEuMiAyNS4zNzZMMjMuNDA4IDIzLjE2OEMyMy41NTIgMjMuMDQgMjMuNzEyIDIyLjk1MiAyMy44ODggMjIuOTA0QzI0LjA4IDIyLjg1NiAyNC4yNjQgMjIuODY0IDI0LjQ0IDIyLjkyOEMyNS42MjQgMjMuMzEyIDI2LjgwOCAyMy41MDQgMjcuOTkyIDIzLjUwNFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-calls-v1.2.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v1.2.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmcJVycACgkQ0bVLR6XO/sSOLQ/8C+sWwmh/U2FlgGd3MHl0i3t2BubJVgd8vv7cm8Xq6DFFOVlWiVitEghKuQVbh0b8pTChc2AvDZ77EwkCNFI/KNlp8HBLPQAI4MpypseXGAUBlt5T2L0VTwBtdCYPDDphNg2JwUqRKcnWo2WgjriihqiBKOahyG4kYFJxa/kuBYKJSQ0hW1W8CEXBX42uBBfHqqi5ho2cqTTbrCJBYJDsydIQ/PqZ0y2KznYHOifrrZcTsulNZoSAyGPJph0Mdu1Dvqea8C7b96rxrGEF5YLEIE7TTF/Olvcvg2iJvlWvx0939rVdlngovhmVTAYihTwwQYRFG11D9shq1KQOhUgpm71PbXH26Oe4UzQvbjNlkenphTJq2j0xa74hkB43DFVbMTRRL/Ou365O/Doy8MOl1AgNlq24uW4SOwJu2NJhsfgT4rWBaSszJm8FBgfqZkUqzBlHEgEhQrJkWiLZIxX/NRBm4DAzYOuMHo03c0qNjC7c717T+T1oUHjYv0PauJUBu+XQcsbT3kn7fZE5H9gBlPcmXqHS/ewlFtqccj9M2cQaCkTZflsj4WdZURsxSDTk7K+QfcvSUTBzQ6AlikN1Kg3F8o5RaREK0n2zgfqgi/kAcsM6k1ftSmHfN/DzVSmupRYQK7gZG6r4OpPP1RYmlog1xHI888cLYJqgcTUBn/Y=",
+    "repo_name": "mattermost-plugin-calls",
+    "manifest": {
+      "id": "com.mattermost.calls",
+      "name": "Calls",
+      "description": "Integrates real-time voice communication in Mattermost",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-calls/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v1.2.0",
+      "icon_path": "assets/plugin_icon.svg",
+      "version": "1.2.0",
+      "min_server_version": "10.0.0",
+      "server": {
+        "executables": {
+          "freebsd-amd64": "server/dist/plugin-freebsd-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "openbsd-amd64": "server/dist/plugin-openbsd-amd64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Calls plugin enables voice calls with screensharing in channels. See [documentation](https://mattermost.com/pl/calls-make?utm_source=mattermost&utm_medium=in-product&utm_content=calls_admin_settings) to learn more.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "DefaultEnabled",
+            "display_name": "Test mode",
+            "type": "custom",
+            "help_text": "When test mode is enabled, only system admins are able to start calls in channels. This allows testing to confirm calls are working as expected.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "UDPServerAddress",
+            "display_name": "RTC Server Address (UDP)",
+            "type": "text",
+            "help_text": "The local IP address used by the RTC server to listen on for UDP connections.",
+            "placeholder": "127.0.0.1",
+            "default": "",
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "TCPServerAddress",
+            "display_name": "RTC Server Address (TCP)",
+            "type": "text",
+            "help_text": "The local IP address used by the RTC server to listen on for TCP connections.",
+            "placeholder": "127.0.0.1",
+            "default": "",
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "UDPServerPort",
+            "display_name": "RTC Server Port (UDP)",
+            "type": "number",
+            "help_text": "The UDP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "TCPServerPort",
+            "display_name": "RTC Server Port (TCP)",
+            "type": "number",
+            "help_text": "The TCP port the RTC server will listen on.",
+            "placeholder": "8443",
+            "default": 8443,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "ICEHostOverride",
+            "display_name": "ICE Host Override",
+            "type": "text",
+            "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+            "placeholder": "",
+            "default": "",
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "ICEHostPortOverride",
+            "display_name": "ICE Host Port Override",
+            "type": "number",
+            "help_text": "(Optional) A port number to be used as an override for host candidates in place of the one used to listen on.\nNote: this port will apply to both UDP and TCP host candidates",
+            "placeholder": "",
+            "default": null,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "RTCDServiceURL",
+            "display_name": "RTCD service URL",
+            "type": "text",
+            "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+            "placeholder": "https://rtcd.example.com",
+            "default": null,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "MaxCallParticipants",
+            "display_name": "Max call participants",
+            "type": "number",
+            "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, an unlimited number of participants can join.",
+            "placeholder": "",
+            "default": 0,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "ICEServersConfigs",
+            "display_name": "ICE Servers Configurations",
+            "type": "longtext",
+            "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+            "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+            "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]",
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "TURNStaticAuthSecret",
+            "display_name": "TURN Static Auth Secret",
+            "type": "text",
+            "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+            "placeholder": "",
+            "default": "",
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "TURNCredentialsExpirationMinutes",
+            "display_name": "TURN Credentials Expiration (minutes)",
+            "type": "number",
+            "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+            "placeholder": "",
+            "default": 1440,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "ServerSideTURN",
+            "display_name": "Server Side TURN",
+            "type": "bool",
+            "help_text": "(Optional) When enabled, it will pass and use the configured TURN candidates to server initiated connections.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "AllowScreenSharing",
+            "display_name": "Allow screen sharing",
+            "type": "bool",
+            "help_text": "When set to true, call participants can share their screen.",
+            "placeholder": "",
+            "default": true,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableSimulcast",
+            "display_name": "Enable simulcast for screen sharing (Experimental)",
+            "type": "bool",
+            "help_text": "When set to true, simulcast for screen sharing is enabled. This can help to improve screen sharing quality.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableRecordings",
+            "display_name": "Enable call recordings",
+            "type": "bool",
+            "help_text": "(Optional) When set to true, call recordings are enabled.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "JobServiceURL",
+            "display_name": "Job service URL",
+            "type": "text",
+            "help_text": "The URL to a running calls job service instance used for call recordings.",
+            "placeholder": "https://calls-job-service.example.com",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MaxRecordingDuration",
+            "display_name": "Maximum call recording duration",
+            "type": "number",
+            "help_text": "The maximum duration (in minutes) for call recordings. Value must be in the range [15, 180].",
+            "placeholder": "",
+            "default": 60,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "RecordingQuality",
+            "display_name": "Call recording quality",
+            "type": "dropdown",
+            "help_text": "The audio and video quality of call recordings.\n Note: this setting can affect the overall performance of the job service and the number of concurrent recording jobs that can be run.",
+            "placeholder": "",
+            "default": "medium",
+            "options": [
+              {
+                "display_name": "Low",
+                "value": "low"
+              },
+              {
+                "display_name": "Medium",
+                "value": "medium"
+              },
+              {
+                "display_name": "High",
+                "value": "high"
+              }
+            ],
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "EnableTranscriptions",
+            "display_name": "Enable call transcriptions (Experimental)",
+            "type": "bool",
+            "help_text": "(Optional) When set to true, post-call transcriptions are enabled.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "TranscribeAPI",
+            "display_name": "Call transcriber API",
+            "type": "dropdown",
+            "help_text": "The speech-to-text API to use for post-call transcriptions.",
+            "placeholder": "",
+            "default": "whisper.cpp",
+            "options": [
+              {
+                "display_name": "Whisper.CPP",
+                "value": "whisper.cpp"
+              },
+              {
+                "display_name": "Azure AI",
+                "value": "azure"
+              }
+            ],
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "TranscriberModelSize",
+            "display_name": "Call transcriber model size",
+            "type": "dropdown",
+            "help_text": "The speech-to-text model size to use for post-call transcriptions. Heavier models will produce more accurate results at the expense of processing time and resources usage.",
+            "placeholder": "",
+            "default": "base",
+            "options": [
+              {
+                "display_name": "Tiny",
+                "value": "tiny"
+              },
+              {
+                "display_name": "Base",
+                "value": "base"
+              },
+              {
+                "display_name": "Small",
+                "value": "small"
+              }
+            ],
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "TranscribeAPIAzureSpeechKey",
+            "display_name": "Azure Speech Services API Key",
+            "type": "text",
+            "help_text": "The API key for Azure Speech Services",
+            "placeholder": "",
+            "default": "",
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "TranscribeAPIAzureSpeechRegion",
+            "display_name": "Azure Speech Services API Region",
+            "type": "text",
+            "help_text": "The API region for Azure Speech Services",
+            "placeholder": "",
+            "default": "",
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "TranscriberNumThreads",
+            "display_name": "Call transcriber threads",
+            "type": "number",
+            "help_text": "The number of threads used by the post-call transcriber. This must be in the range [1, numCPUs].",
+            "placeholder": "",
+            "default": 2,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableLiveCaptions",
+            "display_name": "Enable live captions (Experimental)",
+            "type": "bool",
+            "help_text": "(Optional) When set to true, live captions are enabled.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "LiveCaptionsModelSize",
+            "display_name": "Live captions: Model size",
+            "type": "dropdown",
+            "help_text": "The speech-to-text model size to use for live captions. Heavier models will produce more accurate results at the expense of processing time and resources usage.",
+            "placeholder": "",
+            "default": "tiny",
+            "options": [
+              {
+                "display_name": "Tiny",
+                "value": "tiny"
+              },
+              {
+                "display_name": "Base",
+                "value": "base"
+              },
+              {
+                "display_name": "Small",
+                "value": "small"
+              }
+            ],
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "LiveCaptionsNumTranscribers",
+            "display_name": "Live captions: Number of transcribers used per call",
+            "type": "number",
+            "help_text": "The number of separate live-captions transcribers for each call. Each transcribes one audio stream at a time. The product of LiveCaptionsNumTranscribers * LiveCaptionsNumThreadsPerTranscriber must be in the range [1, numCPUs].",
+            "placeholder": "",
+            "default": 1,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "LiveCaptionsNumThreadsPerTranscriber",
+            "display_name": "Live captions: Number of threads per transcriber",
+            "type": "number",
+            "help_text": "The number of threads per live-captions transcriber. The product of LiveCaptionsNumTranscribers * LiveCaptionsNumThreadsPerTranscriber must be in the range [1, numCPUs].",
+            "placeholder": "",
+            "default": 2,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "LiveCaptionsLanguage",
+            "display_name": "Live captions language",
+            "type": "text",
+            "help_text": "The language passed to the live captions transcriber. Should be a 2-letter ISO 639 Set 1 language code, e.g. 'en'. If blank, will be set to English 'en' as default.",
+            "placeholder": "",
+            "default": "en",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableIPv6",
+            "display_name": "Enable IPv6 support (Experimental)",
+            "type": "bool",
+            "help_text": "When set to true, the RTC service will work in dual-stack mode, listening for IPv6 connections and generating candidates in addition to IPv4 ones.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "on-prem",
+            "secret": false
+          },
+          {
+            "key": "EnableRinging",
+            "display_name": "Enable call ringing",
+            "type": "bool",
+            "help_text": "When set to true, ringing functionality is enabled: participants in direct or group messages will receive a desktop alert and a ringing notification when a call is started. Changing this setting requires a plugin restart.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableAV1",
+            "display_name": "Enable AV1 codec for screen sharing (Experimental)",
+            "type": "bool",
+            "help_text": "When set to true it enables using the AV1 codec to encode screen sharing tracks. This can result in improved screen sharing quality for clients that support it.\nNote: this setting won't apply when EnableSimulcast is true.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableDCSignaling",
+            "display_name": "Use data channels for signaling (Experimental)",
+            "type": "bool",
+            "help_text": "When set to true, clients will use WebRTC data channels for signaling of new media tracks. This can result in a more efficient and less race-prone process, especially in case of frequent WebSocket disconnections.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": [
+          {
+            "key": "GeneralSettings",
+            "title": "",
+            "subtitle": "",
+            "settings": [
+              {
+                "key": "DefaultEnabled",
+                "display_name": "Test mode",
+                "type": "custom",
+                "help_text": "When test mode is enabled, only system admins are able to start calls in channels. This allows testing to confirm calls are working as expected.",
+                "placeholder": "",
+                "default": null,
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "MaxCallParticipants",
+                "display_name": "Max call participants",
+                "type": "number",
+                "help_text": "The maximum number of participants that can join a call. If left empty, or set to 0, an unlimited number of participants can join.",
+                "placeholder": "",
+                "default": 0,
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "AllowScreenSharing",
+                "display_name": "Allow screen sharing",
+                "type": "bool",
+                "help_text": "When set to true, call participants can share their screen.",
+                "placeholder": "",
+                "default": true,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "EnableSimulcast",
+                "display_name": "Enable simulcast for screen sharing (Experimental)",
+                "type": "bool",
+                "help_text": "When set to true, simulcast for screen sharing is enabled. This can help to improve screen sharing quality.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "EnableRinging",
+                "display_name": "Enable call ringing",
+                "type": "bool",
+                "help_text": "When set to true, ringing functionality is enabled: participants in direct or group messages will receive a desktop alert and a ringing notification when a call is started. Changing this setting requires a plugin restart.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "EnableAV1",
+                "display_name": "Enable AV1 codec for screen sharing (Experimental)",
+                "type": "bool",
+                "help_text": "When set to true it enables using the AV1 codec to encode screen sharing tracks. This can result in improved screen sharing quality for clients that support it.\nNote: this setting won't apply when EnableSimulcast is true.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "EnableDCSignaling",
+                "display_name": "Use data channels for signaling (Experimental)",
+                "type": "bool",
+                "help_text": "When set to true, clients will use WebRTC data channels for signaling of new media tracks. This can result in a more efficient and less race-prone process, especially in case of frequent WebSocket disconnections.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "",
+                "secret": false
+              }
+            ],
+            "header": "",
+            "footer": "",
+            "custom": true
+          },
+          {
+            "key": "RTCDService",
+            "title": "",
+            "subtitle": "",
+            "settings": [
+              {
+                "key": "RTCDServiceURL",
+                "display_name": "RTCD service URL",
+                "type": "text",
+                "help_text": "(Optional) The URL to a running RTCD service instance that should host the calls. When set (non empty) all calls will be handled by the external service.",
+                "placeholder": "https://rtcd.example.com",
+                "default": null,
+                "hosting": "on-prem",
+                "secret": false
+              }
+            ],
+            "header": "",
+            "footer": "",
+            "custom": true
+          },
+          {
+            "key": "RTCServer",
+            "title": "",
+            "subtitle": "",
+            "settings": [
+              {
+                "key": "UDPServerAddress",
+                "display_name": "RTC Server Address (UDP)",
+                "type": "text",
+                "help_text": "The local IP address used by the RTC server to listen on for UDP connections.",
+                "placeholder": "127.0.0.1",
+                "default": "",
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "TCPServerAddress",
+                "display_name": "RTC Server Address (TCP)",
+                "type": "text",
+                "help_text": "The local IP address used by the RTC server to listen on for TCP connections.",
+                "placeholder": "127.0.0.1",
+                "default": "",
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "UDPServerPort",
+                "display_name": "RTC Server Port (UDP)",
+                "type": "number",
+                "help_text": "The UDP port the RTC server will listen on.",
+                "placeholder": "8443",
+                "default": 8443,
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "TCPServerPort",
+                "display_name": "RTC Server Port (TCP)",
+                "type": "number",
+                "help_text": "The TCP port the RTC server will listen on.",
+                "placeholder": "8443",
+                "default": 8443,
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "EnableIPv6",
+                "display_name": "(Experimental) Enable IPv6 support",
+                "type": "bool",
+                "help_text": "When set to true, the RTC service will work in dual-stack mode, listening for IPv6 connections and generating candidates in addition to IPv4 ones.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "on-prem",
+                "secret": false
+              }
+            ],
+            "header": "",
+            "footer": "",
+            "custom": true
+          },
+          {
+            "key": "ICEAndTURN",
+            "title": "",
+            "subtitle": "",
+            "settings": [
+              {
+                "key": "ICEHostOverride",
+                "display_name": "ICE Host Override",
+                "type": "text",
+                "help_text": "(Optional) The IP (or hostname) to be used as the host ICE candidate. If empty, it defaults to resolving via STUN.",
+                "placeholder": "",
+                "default": "",
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "ICEHostPortOverride",
+                "display_name": "ICE Host Port Override",
+                "type": "number",
+                "help_text": "(Optional) A port number to be used as an override for host candidates in place of the one used to listen on.\nNote: this port will apply to both UDP and TCP host candidates",
+                "placeholder": "",
+                "default": null,
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "ICEServersConfigs",
+                "display_name": "ICE Servers Configurations",
+                "type": "longtext",
+                "help_text": "(Optional) A list of ICE servers (STUN/TURN) configurations to use. This field should contain a valid JSON array.",
+                "placeholder": "[{\n \"urls\":[\"turn:turnserver.example.org:3478\"],\n \"username\": \"webrtc\",\n \"credential\": \"turnpassword\"\n}]",
+                "default": "[{\"urls\":[\"stun:stun.global.calls.mattermost.com:3478\"]}]",
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "TURNStaticAuthSecret",
+                "display_name": "TURN Static Auth Secret",
+                "type": "text",
+                "help_text": "(Optional) The secret key used to generate TURN short-lived authentication credentials.",
+                "placeholder": "",
+                "default": "",
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "TURNCredentialsExpirationMinutes",
+                "display_name": "TURN Credentials Expiration (minutes)",
+                "type": "number",
+                "help_text": "(Optional) The number of minutes that the generated TURN credentials will be valid for.",
+                "placeholder": "",
+                "default": 1440,
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "ServerSideTURN",
+                "display_name": "Server Side TURN",
+                "type": "bool",
+                "help_text": "(Optional) When enabled, it will pass and use the configured TURN candidates to server initiated connections.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "on-prem",
+                "secret": false
+              }
+            ],
+            "header": "",
+            "footer": "",
+            "custom": true
+          },
+          {
+            "key": "CallRecordings",
+            "title": "",
+            "subtitle": "",
+            "settings": [
+              {
+                "key": "EnableRecordings",
+                "display_name": "Enable call recordings",
+                "type": "bool",
+                "help_text": "(Optional) When set to true, call recordings are enabled.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "JobServiceURL",
+                "display_name": "Job service URL",
+                "type": "text",
+                "help_text": "The URL to a running calls job service instance used for call recordings.",
+                "placeholder": "https://calls-job-service.example.com",
+                "default": null,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "MaxRecordingDuration",
+                "display_name": "Maximum call recording duration",
+                "type": "number",
+                "help_text": "The maximum duration (in minutes) for call recordings. Value must be in the range [15, 180].",
+                "placeholder": "",
+                "default": 60,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "RecordingQuality",
+                "display_name": "Call recording quality",
+                "type": "dropdown",
+                "help_text": "The audio and video quality of call recordings.\n Note: this setting can affect the overall performance of the job service and the number of concurrent recording jobs that can be run.",
+                "placeholder": "",
+                "default": "medium",
+                "options": [
+                  {
+                    "display_name": "Low",
+                    "value": "low"
+                  },
+                  {
+                    "display_name": "Medium",
+                    "value": "medium"
+                  },
+                  {
+                    "display_name": "High",
+                    "value": "high"
+                  }
+                ],
+                "hosting": "on-prem",
+                "secret": false
+              }
+            ],
+            "header": "",
+            "footer": "",
+            "custom": true
+          },
+          {
+            "key": "CallTranscriptions",
+            "title": "",
+            "subtitle": "",
+            "settings": [
+              {
+                "key": "EnableTranscriptions",
+                "display_name": "Enable call transcriptions (Beta)",
+                "type": "bool",
+                "help_text": "(Optional) When set to true, post-call transcriptions are enabled.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "TranscribeAPI",
+                "display_name": "Call transcriber API",
+                "type": "dropdown",
+                "help_text": "The speech-to-text API to use for post-call transcriptions.",
+                "placeholder": "",
+                "default": "whisper.cpp",
+                "options": [
+                  {
+                    "display_name": "Whisper.CPP",
+                    "value": "whisper.cpp"
+                  },
+                  {
+                    "display_name": "Azure AI",
+                    "value": "azure"
+                  }
+                ],
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "TranscriberModelSize",
+                "display_name": "Call transcriber model size",
+                "type": "dropdown",
+                "help_text": "The speech-to-text model size to use for post-call transcriptions. Heavier models will produce more accurate results at the expense of processing time and resources usage.",
+                "placeholder": "",
+                "default": "base",
+                "options": [
+                  {
+                    "display_name": "Tiny",
+                    "value": "tiny"
+                  },
+                  {
+                    "display_name": "Base",
+                    "value": "base"
+                  },
+                  {
+                    "display_name": "Small",
+                    "value": "small"
+                  }
+                ],
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "TranscriberNumThreads",
+                "display_name": "Call transcriber threads",
+                "type": "number",
+                "help_text": "The number of threads used by the post-call transcriber. This must be in the range [1, numCPUs].",
+                "placeholder": "",
+                "default": 2,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "TranscribeAPIAzureSpeechKey",
+                "display_name": "Azure API Key",
+                "type": "text",
+                "help_text": "The API key for Azure Speech Services",
+                "placeholder": "",
+                "default": "",
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "TranscribeAPIAzureSpeechRegion",
+                "display_name": "Azure API Region",
+                "type": "text",
+                "help_text": "The API region for Azure Speech Services",
+                "placeholder": "",
+                "default": "",
+                "hosting": "on-prem",
+                "secret": false
+              }
+            ],
+            "header": "",
+            "footer": "",
+            "custom": true
+          },
+          {
+            "key": "CallLiveCaptions",
+            "title": "",
+            "subtitle": "",
+            "settings": [
+              {
+                "key": "EnableLiveCaptions",
+                "display_name": "Enable live captions (Beta)",
+                "type": "bool",
+                "help_text": "(Optional) When set to true, live captions are enabled.",
+                "placeholder": "",
+                "default": false,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "LiveCaptionsModelSize",
+                "display_name": "Live captions: Model size",
+                "type": "dropdown",
+                "help_text": "The speech-to-text model size to use for live captions. Heavier models will produce more accurate results at the expense of processing time and resources usage.",
+                "placeholder": "",
+                "default": "tiny",
+                "options": [
+                  {
+                    "display_name": "Tiny",
+                    "value": "tiny"
+                  },
+                  {
+                    "display_name": "Base",
+                    "value": "base"
+                  },
+                  {
+                    "display_name": "Small",
+                    "value": "small"
+                  }
+                ],
+                "hosting": "on-prem",
+                "secret": false
+              },
+              {
+                "key": "LiveCaptionsNumTranscribers",
+                "display_name": "Live captions: Number of transcribers used per call",
+                "type": "number",
+                "help_text": "The number of separate live-captions transcribers for each call. Each transcribes one audio stream at a time. The product of LiveCaptionsNumTranscribers * LiveCaptionsNumThreadsPerTranscriber must be in the range [1, numCPUs].",
+                "placeholder": "",
+                "default": 1,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "LiveCaptionsNumThreadsPerTranscriber",
+                "display_name": "Live captions: Number of threads per transcriber",
+                "type": "number",
+                "help_text": "The number of threads per live-captions transcriber. The product of LiveCaptionsNumTranscribers * LiveCaptionsNumThreadsPerTranscriber must be in the range [1, numCPUs].",
+                "placeholder": "",
+                "default": 2,
+                "hosting": "",
+                "secret": false
+              },
+              {
+                "key": "LiveCaptionsLanguage",
+                "display_name": "Live captions language",
+                "type": "text",
+                "help_text": "The language passed to the live captions transcriber. Should be a 2-letter ISO 639 Set 1 language code, e.g. 'en'. If blank, will be set to English 'en' as default.",
+                "placeholder": "",
+                "default": "en",
+                "hosting": "",
+                "secret": false
+              }
+            ],
+            "header": "",
+            "footer": "",
+            "custom": true
+          }
+        ]
+      },
+      "props": {
+        "calls_recorder_version": "v0.7.6",
+        "calls_transcriber_version": "v0.4.0",
+        "min_offloader_version": "v0.8.0",
+        "min_rtcd_version": "v0.17.0"
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-calls-v1.2.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmcJVycACgkQ0bVLR6XO/sRaKBAAlPAr/21rOxnvjoZyFtJsCO7GBgl8AZ6iYwNGD4/CWwCQtVfGBfN3BwToiFgt53qP4VE1TjQJmDD9gCgfvSAi1gNa8D0IBamaEE6GfTMBISDDm6hR71W4rRBEhtccQUUJL2Wnqu3qfLLz2S09UoiM6TktU9ZyBo5o4IUUwYnqBYBDOIY1OSzZOiktNCwnlx4AcuVguB6MTo50DpJZCbN/ttZ7vM05zgqfo+gW1teZR2feM5N8hjM1j1VXiVohLd/3QDSJIRUKPBCC0/Rx38c6eRr/jTMQI0/p5goo35lpvc5BT1TF9PcrisnZ7rCNbVOLCyFz17fPaAR0WX5aAPNQCjQgoopgOyXCNrdPyAO/SO/GMgGVs9WC2O/lcixiO8u3bA5kx8aTgYytflpmYxBC2r30Yyug15p82xGzYOR4Po4sKuDWqa6SS8zmOFQ288Npqhtu/NszyLd0+4QmVlZk/x0EhwNwliyPvr625SKh98j9skX5bRDKi8UE1xg+XCfZYXL5qUJIAvSEEtz98m0kOh96u5AB1CevIsLQ8jjXdkBGEYXypTMUHkEDGhFWP46z0vcNKGBuzDWRDbowNxCtvyNjzoZwZ+0+3ODSU6sJSzF1NkggbchbOyju3H6Eu/q6uELRAm5c+JyiKUaoKMe1SFb7QY0yKWBBwC2NQ7QUvfI="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2024-10-11T16:52:57.080352964Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMiIgZmlsbD0iIzNEQjg4NyIvPgo8cGF0aCBkPSJNMjMgMjBDMjMgMTkuNDU2IDIyLjg2NCAxOC45NiAyMi41OTIgMTguNTEyQzIyLjMyIDE4LjA0OCAyMS45NTIgMTcuNjggMjEuNDg4IDE3LjQwOEMyMS4wNCAxNy4xMzYgMjAuNTQ0IDE3IDIwIDE3VjE1LjAwOEMyMC45MTIgMTUuMDA4IDIxLjc0NCAxNS4yMzIgMjIuNDk2IDE1LjY4QzIzLjI2NCAxNi4xMjggMjMuODcyIDE2LjczNiAyNC4zMiAxNy41MDRDMjQuNzY4IDE4LjI1NiAyNC45OTIgMTkuMDg4IDI0Ljk5MiAyMEgyM1pNMjcuMDA4IDIwQzI3LjAwOCAxOC43MzYgMjYuNjg4IDE3LjU2IDI2LjA0OCAxNi40NzJDMjUuNDI0IDE1LjQxNiAyNC41ODQgMTQuNTc2IDIzLjUyOCAxMy45NTJDMjIuNDQgMTMuMzEyIDIxLjI2NCAxMi45OTIgMjAgMTIuOTkyVjExQzIxLjYzMiAxMSAyMy4xNDQgMTEuNDA4IDI0LjUzNiAxMi4yMjRDMjUuODk2IDEzLjAyNCAyNi45NzYgMTQuMDk2IDI3Ljc3NiAxNS40NEMyOC41OTIgMTYuODQ4IDI5IDE4LjM2OCAyOSAyMEgyNy4wMDhaTTI3Ljk5MiAyMy41MDRDMjguMjY0IDIzLjUwNCAyOC40OTYgMjMuNiAyOC42ODggMjMuNzkyQzI4Ljg5NiAyMy45ODQgMjkgMjQuMjE2IDI5IDI0LjQ4OFYyNy45OTJDMjkgMjguMjY0IDI4Ljg5NiAyOC40OTYgMjguNjg4IDI4LjY4OEMyOC40OTYgMjguODk2IDI4LjI2NCAyOSAyNy45OTIgMjlDMjUuNjg4IDI5IDIzLjQ4IDI4LjU1MiAyMS4zNjggMjcuNjU2QzE5LjMzNiAyNi44MDggMTcuNTM2IDI1LjYgMTUuOTY4IDI0LjAzMkMxNC40IDIyLjQ2NCAxMy4xOTIgMjAuNjY0IDEyLjM0NCAxOC42MzJDMTEuNDQ4IDE2LjUyIDExIDE0LjMxMiAxMSAxMi4wMDhDMTEgMTEuNzM2IDExLjA5NiAxMS41MDQgMTEuMjg4IDExLjMxMkMxMS40OTYgMTEuMTA0IDExLjczNiAxMSAxMi4wMDggMTFIMTUuNTEyQzE1Ljc4NCAxMSAxNi4wMTYgMTEuMTA0IDE2LjIwOCAxMS4zMTJDMTYuNCAxMS41MDQgMTYuNDk2IDExLjczNiAxNi40OTYgMTIuMDA4QzE2LjQ5NiAxMy4xOTIgMTYuNjg4IDE0LjM3NiAxNy4wNzIgMTUuNTZDMTcuMTM2IDE1LjczNiAxNy4xNDQgMTUuOTIgMTcuMDk2IDE2LjExMkMxNy4wNDggMTYuMjg4IDE2Ljk2IDE2LjQ0OCAxNi44MzIgMTYuNTkyTDE0LjYyNCAxOC44QzE1LjM0NCAyMC4yMDggMTYuMjY0IDIxLjQ4IDE3LjM4NCAyMi42MTZDMTguNTIgMjMuNzM2IDE5Ljc5MiAyNC42NTYgMjEuMiAyNS4zNzZMMjMuNDA4IDIzLjE2OEMyMy41NTIgMjMuMDQgMjMuNzEyIDIyLjk1MiAyMy44ODggMjIuOTA0QzI0LjA4IDIyLjg1NiAyNC4yNjQgMjIuODY0IDI0LjQ0IDIyLjkyOEMyNS42MjQgMjMuMzEyIDI2LjgwOCAyMy41MDQgMjcuOTkyIDIzLjUwNFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-calls-v1.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-calls/releases/tag/v1.1.0",
     "hosting": "",
