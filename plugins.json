@@ -41,7 +41,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -50,7 +51,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -59,7 +61,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -68,7 +71,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -77,7 +81,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -86,7 +91,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncNotifications",
@@ -95,7 +101,8 @@
             "help_text": "Sync notifications of chat messages for any connected user that enables the feature.",
             "placeholder": "",
             "default": true,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -104,7 +111,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -113,7 +121,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -122,7 +131,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time. (Set to 0 to disable new connections.)",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersMaxPendingInvites",
@@ -131,7 +141,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they become active, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. Once invited, users may connect at any time. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersRestricted",
@@ -140,7 +151,8 @@
             "help_text": "When true, only whitelisted users may connect their account.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersWhitelist",
@@ -149,7 +161,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -158,9 +171,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -215,7 +230,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -224,7 +240,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -233,7 +250,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -242,7 +260,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -251,7 +270,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -260,7 +280,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncNotifications",
@@ -269,7 +290,8 @@
             "help_text": "Sync notifications of chat messages for any connected user that enables the feature.",
             "placeholder": "",
             "default": true,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -278,7 +300,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -287,7 +310,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -296,7 +320,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time. (Set to 0 to disable new connections.)",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersMaxPendingInvites",
@@ -305,7 +330,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they become active, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. Once invited, users may connect at any time. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersRestricted",
@@ -314,7 +340,8 @@
             "help_text": "When true, only whitelisted users may connect their account.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersWhitelist",
@@ -323,7 +350,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -332,9 +360,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -389,7 +419,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -398,7 +429,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -407,7 +439,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -416,7 +449,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -425,7 +459,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -434,7 +469,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncNotifications",
@@ -443,7 +479,8 @@
             "help_text": "Sync notifications of chat messages for any connected user that enables the feature.",
             "placeholder": "",
             "default": true,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -452,7 +489,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -461,7 +499,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -470,7 +509,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time. (Set to 0 to disable new connections.)",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersMaxPendingInvites",
@@ -479,7 +519,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they become active, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. Once invited, users may connect at any time. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersRestricted",
@@ -488,7 +529,8 @@
             "help_text": "When true, only whitelisted users may connect their account.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersWhitelist",
@@ -497,7 +539,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -506,9 +549,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -563,7 +608,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -572,7 +618,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -581,7 +628,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -590,7 +638,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -599,7 +648,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -608,7 +658,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -617,7 +668,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -626,7 +678,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncNotifications",
@@ -635,7 +688,8 @@
             "help_text": "Sync notifications of chat messages for any connected user that enables the feature.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -644,7 +698,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -653,7 +708,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -662,7 +718,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -671,7 +728,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time. (Set to 0 to disable new connections.)",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersMaxPendingInvites",
@@ -680,7 +738,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they become active, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. Once invited, users may connect at any time. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersRestricted",
@@ -689,7 +748,8 @@
             "help_text": "When true, only whitelisted users may connect their account.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersWhitelist",
@@ -698,7 +758,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -707,7 +768,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -726,7 +788,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -749,7 +812,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -758,7 +822,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -767,9 +832,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -824,7 +891,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -833,7 +901,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -842,7 +911,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -851,7 +921,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -860,7 +931,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -869,7 +941,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -878,7 +951,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -887,7 +961,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -896,7 +971,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -905,7 +981,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncNotifications",
@@ -914,7 +991,8 @@
             "help_text": "Sync notifications for any connected user. Enabling this setting disables syncing of direct messages and group messages.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -923,7 +1001,8 @@
             "help_text": "Sync direct messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGroupMessages",
@@ -932,7 +1011,8 @@
             "help_text": "Sync group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -941,7 +1021,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncRemoteOnly",
@@ -950,7 +1031,8 @@
             "help_text": "Selective Sync only syncs between connected and remote users. (Requires Selective sync = true)",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -959,7 +1041,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -968,7 +1051,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -977,7 +1061,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -986,7 +1071,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -995,7 +1081,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -1004,7 +1091,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -1013,7 +1101,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time. (Set to 0 to disable new connections.)",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersMaxPendingInvites",
@@ -1022,7 +1111,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they become active, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. Once invited, users may connect at any time. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersRestricted",
@@ -1031,7 +1121,8 @@
             "help_text": "When true, only whitelisted users may connect their account.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersWhitelist",
@@ -1040,7 +1131,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -1049,7 +1141,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -1058,7 +1151,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableCheckCredentials",
@@ -1067,7 +1161,8 @@
             "help_text": "When true, the plugin will not periodically check the validity of the application credentials.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -1086,7 +1181,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -1109,7 +1205,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -1118,7 +1215,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -1127,9 +1225,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -1184,7 +1284,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -1193,7 +1294,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -1202,7 +1304,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -1211,7 +1314,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -1220,7 +1324,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -1229,7 +1334,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -1238,7 +1344,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -1247,7 +1354,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -1256,7 +1364,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -1265,7 +1374,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -1274,7 +1384,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -1283,7 +1394,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -1292,7 +1404,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -1301,7 +1414,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -1310,7 +1424,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -1319,7 +1434,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -1328,7 +1444,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -1337,7 +1454,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "newUserConnections",
@@ -1360,7 +1478,8 @@
                 "value": "rolloutOpenRestricted"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -1369,7 +1488,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time if they become disconnected.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -1378,7 +1498,8 @@
             "help_text": "Set the maximum number of connection invites that may be pending at a given time during Rollout. As invited users connect, spaces in the invite pool will open up and more invites will be sent out as configured above.",
             "placeholder": "",
             "default": 10,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "inviteWhitelistUpload",
@@ -1387,7 +1508,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -1396,7 +1518,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -1405,7 +1528,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableCheckCredentials",
@@ -1414,7 +1538,8 @@
             "help_text": "When true, the plugin will not periodically check the validity of the application credentials.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -1433,7 +1558,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -1456,7 +1582,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -1465,7 +1592,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -1474,9 +1602,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -1531,7 +1661,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -1540,7 +1671,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -1549,7 +1681,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -1558,7 +1691,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -1567,7 +1701,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -1576,7 +1711,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -1585,7 +1721,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -1594,7 +1731,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -1603,7 +1741,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -1612,7 +1751,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -1621,7 +1761,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -1630,7 +1771,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -1639,7 +1781,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -1648,7 +1791,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -1657,7 +1801,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -1666,7 +1811,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -1675,7 +1821,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -1684,7 +1831,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "newUserConnections",
@@ -1707,7 +1855,8 @@
                 "value": "rolloutOpenRestricted"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -1716,7 +1865,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time if they become disconnected.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -1725,7 +1875,8 @@
             "help_text": "Set the maximum number of connection invites that may be pending at a given time during Rollout. As invited users connect, spaces in the invite pool will open up and more invites will be sent out as configured above.",
             "placeholder": "",
             "default": 10,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "inviteWhitelistUpload",
@@ -1734,7 +1885,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -1743,7 +1895,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -1752,7 +1905,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableCheckCredentials",
@@ -1761,7 +1915,8 @@
             "help_text": "When true, the plugin will not periodically check the validity of the application credentials.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -1780,7 +1935,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -1803,7 +1959,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -1812,7 +1969,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -1821,9 +1979,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -1878,7 +2038,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -1887,7 +2048,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -1896,7 +2058,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -1905,7 +2068,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -1914,7 +2078,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -1923,7 +2088,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -1932,7 +2098,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -1941,7 +2108,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -1950,7 +2118,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -1959,7 +2128,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -1968,7 +2138,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -1977,7 +2148,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -1986,7 +2158,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -1995,7 +2168,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -2004,7 +2178,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -2013,7 +2188,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -2022,7 +2198,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -2031,7 +2208,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "newUserConnections",
@@ -2054,7 +2232,8 @@
                 "value": "rolloutOpenRestricted"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -2063,7 +2242,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time if they become disconnected.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -2072,7 +2252,8 @@
             "help_text": "Set the maximum number of connection invites that may be pending at a given time during Rollout. As invited users connect, spaces in the invite pool will open up and more invites will be sent out as configured above.",
             "placeholder": "",
             "default": 10,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "inviteWhitelistUpload",
@@ -2081,7 +2262,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -2090,7 +2272,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -2099,7 +2282,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableCheckCredentials",
@@ -2108,7 +2292,8 @@
             "help_text": "When true, the plugin will not periodically check the validity of the application credentials.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -2127,7 +2312,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -2150,7 +2336,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -2159,7 +2346,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -2168,9 +2356,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -2225,7 +2415,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -2234,7 +2425,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -2243,7 +2435,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -2252,7 +2445,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -2261,7 +2455,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -2270,7 +2465,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -2279,7 +2475,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -2288,7 +2485,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -2297,7 +2495,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -2306,7 +2505,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -2315,7 +2515,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -2324,7 +2525,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -2333,7 +2535,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -2342,7 +2545,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -2351,7 +2555,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -2360,7 +2565,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -2369,7 +2575,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -2378,7 +2585,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "newUserConnections",
@@ -2401,7 +2609,8 @@
                 "value": "rolloutOpenRestricted"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -2410,7 +2619,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time if they become disconnected.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -2419,7 +2629,8 @@
             "help_text": "Set the maximum number of connection invites that may be pending at a given time during Rollout. As invited users connect, spaces in the invite pool will open up and more invites will be sent out as configured above.",
             "placeholder": "",
             "default": 10,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "inviteWhitelistUpload",
@@ -2428,7 +2639,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -2437,7 +2649,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -2446,7 +2659,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableCheckCredentials",
@@ -2455,7 +2669,8 @@
             "help_text": "When true, the plugin will not periodically check the validity of the application credentials.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -2474,7 +2689,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -2497,7 +2713,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -2506,7 +2723,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -2515,9 +2733,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -2572,7 +2792,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -2581,7 +2802,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -2590,7 +2812,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -2599,7 +2822,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -2608,7 +2832,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -2617,7 +2842,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -2626,7 +2852,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -2635,7 +2862,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -2644,7 +2872,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -2653,7 +2882,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -2662,7 +2892,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -2671,7 +2902,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -2680,7 +2912,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -2689,7 +2922,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -2698,7 +2932,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -2707,7 +2942,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -2716,7 +2952,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -2725,7 +2962,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "newUserConnections",
@@ -2748,7 +2986,8 @@
                 "value": "rolloutOpenRestricted"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -2757,7 +2996,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, users may reconnect at any time if they become disconnected.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -2766,7 +3006,8 @@
             "help_text": "Set the maximum number of connection invites that may be pending at a given time during Rollout. As invited users connect, spaces in the invite pool will open up and more invites will be sent out as configured above.",
             "placeholder": "",
             "default": 10,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "inviteWhitelistUpload",
@@ -2775,7 +3016,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -2784,7 +3026,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -2793,7 +3036,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableCheckCredentials",
@@ -2802,7 +3046,8 @@
             "help_text": "When true, the plugin will not periodically check the validity of the application credentials.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -2821,7 +3066,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -2844,7 +3090,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -2853,7 +3100,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -2862,9 +3110,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -2919,7 +3169,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -2928,7 +3179,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -2937,7 +3189,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -2946,7 +3199,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -2955,7 +3209,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -2964,7 +3219,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -2973,7 +3229,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -2982,7 +3239,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -2991,7 +3249,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -3000,7 +3259,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -3009,7 +3269,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -3018,7 +3279,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -3027,7 +3289,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -3036,7 +3299,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -3045,7 +3309,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -3054,7 +3319,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -3063,7 +3329,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -3072,7 +3339,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -3081,7 +3349,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -3090,7 +3359,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they login, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -3099,7 +3369,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -3108,7 +3379,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -3127,7 +3399,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -3150,7 +3423,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -3159,7 +3433,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -3168,9 +3443,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -3225,7 +3502,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -3234,7 +3512,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -3243,7 +3522,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -3252,7 +3532,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -3261,7 +3542,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -3270,7 +3552,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -3279,7 +3562,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -3288,7 +3572,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -3297,7 +3582,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -3306,7 +3592,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -3315,7 +3602,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -3324,7 +3612,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -3333,7 +3622,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -3342,7 +3632,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -3351,7 +3642,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -3360,7 +3652,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -3369,7 +3662,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -3378,7 +3672,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -3387,7 +3682,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -3396,7 +3692,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they login, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -3405,7 +3702,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -3414,7 +3712,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -3433,7 +3732,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -3456,7 +3756,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -3465,7 +3766,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -3474,9 +3776,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -3531,7 +3835,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -3540,7 +3845,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -3549,7 +3855,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -3558,7 +3865,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -3567,7 +3875,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -3576,7 +3885,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -3585,7 +3895,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -3594,7 +3905,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -3603,7 +3915,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -3612,7 +3925,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -3621,7 +3935,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -3630,7 +3945,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -3639,7 +3955,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -3648,7 +3965,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -3657,7 +3975,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -3666,7 +3985,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -3675,7 +3995,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -3684,7 +4005,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -3693,7 +4015,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -3702,7 +4025,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they login, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -3711,7 +4035,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -3720,7 +4045,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -3739,7 +4065,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -3762,7 +4089,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -3771,7 +4099,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -3780,9 +4109,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -3837,7 +4168,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -3846,7 +4178,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -3855,7 +4188,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -3864,7 +4198,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -3873,7 +4208,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -3882,7 +4218,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -3891,7 +4228,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -3900,7 +4238,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -3909,7 +4248,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -3918,7 +4258,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -3927,7 +4268,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -3936,7 +4278,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -3945,7 +4288,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -3954,7 +4298,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -3963,7 +4308,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -3972,7 +4318,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -3981,7 +4328,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -3990,7 +4338,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -3999,7 +4348,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -4008,7 +4358,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they login, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -4017,7 +4368,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -4026,7 +4378,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -4045,7 +4398,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -4068,7 +4422,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -4077,7 +4432,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -4086,9 +4442,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -4143,7 +4501,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -4152,7 +4511,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -4161,7 +4521,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -4170,7 +4531,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -4179,7 +4541,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -4188,7 +4551,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -4197,7 +4561,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -4206,7 +4571,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -4215,7 +4581,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -4224,7 +4591,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -4233,7 +4601,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -4242,7 +4611,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -4251,7 +4621,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -4260,7 +4631,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -4269,7 +4641,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -4278,7 +4651,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "promptIntervalForDMsAndGMs",
@@ -4287,7 +4661,8 @@
             "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -4296,7 +4671,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -4305,7 +4681,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -4314,7 +4691,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersInvitePoolSize",
@@ -4323,7 +4701,8 @@
             "help_text": "Invite pool size: the maximum number of connection invites that may be pending at a given time. When specified, connection invite direct messages will be sent to users as they login, up to the maximum specified here. As invited users connect, spaces in the invite pool will open up and more invites will be sent out. (Set to 0 or leave empty to disable connection invites.)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -4332,7 +4711,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -4341,7 +4721,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -4360,7 +4741,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -4383,7 +4765,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -4392,7 +4775,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -4401,9 +4785,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -4458,7 +4844,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -4467,7 +4854,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -4476,7 +4864,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -4485,7 +4874,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -4494,7 +4884,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -4503,7 +4894,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -4512,7 +4904,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -4521,7 +4914,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -4530,7 +4924,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -4539,7 +4934,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -4548,7 +4944,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "selectiveSync",
@@ -4557,7 +4954,8 @@
             "help_text": "Skip syncing messages between users on the same platform.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -4566,7 +4964,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -4575,7 +4974,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -4584,7 +4984,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -4593,7 +4994,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "promptIntervalForDMsAndGMs",
@@ -4602,7 +5004,8 @@
             "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -4611,7 +5014,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -4620,7 +5024,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -4629,7 +5034,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -4638,7 +5044,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -4647,7 +5054,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -4666,7 +5074,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -4689,7 +5098,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -4698,7 +5108,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -4707,9 +5118,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -4764,7 +5177,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -4773,7 +5187,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -4782,7 +5197,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -4791,7 +5207,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -4800,7 +5217,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -4809,7 +5227,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -4818,7 +5237,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -4827,7 +5247,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -4836,7 +5257,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -4845,7 +5267,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -4854,7 +5277,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -4863,7 +5287,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -4872,7 +5297,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -4881,7 +5307,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -4890,7 +5317,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "promptIntervalForDMsAndGMs",
@@ -4899,7 +5327,8 @@
             "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -4908,7 +5337,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -4917,7 +5347,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -4926,7 +5357,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -4935,7 +5367,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -4944,7 +5377,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -4963,7 +5397,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -4986,7 +5421,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -4995,7 +5431,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -5004,9 +5441,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -5061,7 +5500,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -5070,7 +5510,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -5079,7 +5520,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -5088,7 +5530,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -5097,7 +5540,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -5106,7 +5550,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -5115,7 +5560,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -5124,7 +5570,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -5133,7 +5580,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -5142,7 +5590,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -5151,7 +5600,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -5160,7 +5610,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -5169,7 +5620,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -5178,7 +5630,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -5187,7 +5640,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "promptIntervalForDMsAndGMs",
@@ -5196,7 +5650,8 @@
             "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -5205,7 +5660,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -5214,7 +5670,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -5223,7 +5680,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -5232,7 +5690,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "disableSyncMsg",
@@ -5241,7 +5700,8 @@
             "help_text": "When true, the plugin will not enable any sync msg infrastructure.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -5260,7 +5720,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -5283,7 +5744,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -5292,7 +5754,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -5301,9 +5764,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -5358,7 +5823,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -5367,7 +5833,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -5376,7 +5843,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -5385,7 +5853,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -5394,7 +5863,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -5403,7 +5873,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -5412,7 +5883,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -5421,7 +5893,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -5430,7 +5903,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -5439,7 +5913,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -5448,7 +5923,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncLinkedChannels",
@@ -5457,7 +5933,8 @@
             "help_text": "Sync messages from channels linked between Mattermost and MS Teams",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncReactions",
@@ -5466,7 +5943,8 @@
             "help_text": "Sync reactions on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncFileAttachments",
@@ -5475,7 +5953,8 @@
             "help_text": "Sync file attachments on messages",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -5484,7 +5963,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "promptIntervalForDMsAndGMs",
@@ -5493,7 +5973,8 @@
             "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -5502,7 +5983,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -5511,7 +5993,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -5520,7 +6003,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -5529,7 +6013,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -5548,7 +6033,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -5571,7 +6057,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -5580,7 +6067,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -5589,9 +6077,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -5646,7 +6136,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -5655,7 +6146,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -5664,7 +6156,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -5673,7 +6166,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -5682,7 +6176,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -5691,7 +6186,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -5700,7 +6196,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -5709,7 +6206,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -5718,7 +6216,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -5727,7 +6226,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -5736,7 +6236,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -5745,7 +6246,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "promptIntervalForDMsAndGMs",
@@ -5754,7 +6256,8 @@
             "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -5763,7 +6266,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -5772,7 +6276,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -5781,7 +6286,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -5790,7 +6296,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -5809,7 +6316,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -5832,7 +6340,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -5841,7 +6350,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -5850,9 +6360,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -5907,7 +6419,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -5916,7 +6429,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -5925,7 +6439,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -5934,7 +6449,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -5943,7 +6459,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -5952,7 +6469,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -5961,7 +6479,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -5970,7 +6489,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enforceConnectedUsers",
@@ -5979,7 +6499,8 @@
             "help_text": "Mattermost will ask the users to connect their account if it is not connected yet",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "allowSkipConnectUsers",
@@ -5988,7 +6509,8 @@
             "help_text": "Mattermost will allow to skip temporarily the account connection, but will prompt it again in the next refresh of the browser",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -5997,7 +6519,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -6006,7 +6529,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -6015,7 +6539,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -6024,7 +6549,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "promptIntervalForDMsAndGMs",
@@ -6033,7 +6559,8 @@
             "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -6042,7 +6569,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -6051,7 +6579,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -6060,7 +6589,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -6069,7 +6599,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -6088,7 +6619,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -6111,7 +6643,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -6120,7 +6653,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -6129,9 +6663,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
@@ -6189,7 +6725,8 @@
             "help_text": "Microsoft Teams Tenant ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientId",
@@ -6198,7 +6735,8 @@
             "help_text": "Microsoft Teams Client ID",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "clientSecret",
@@ -6207,7 +6745,8 @@
             "help_text": "Microsoft Teams Client Secret",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "encryptionKey",
@@ -6216,7 +6755,8 @@
             "help_text": "The AES encryption key used to encrypt stored access tokens",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "webhookSecret",
@@ -6225,7 +6765,8 @@
             "help_text": "Microsoft Teams will use this secret to send messages to Mattermost",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificatePublic",
@@ -6234,7 +6775,8 @@
             "help_text": "Certificate public part",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "certificateKey",
@@ -6243,7 +6785,8 @@
             "help_text": "Certificate private key",
             "placeholder": "",
             "default": null,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "evaluationAPI",
@@ -6252,7 +6795,8 @@
             "help_text": "The evaluation API pay model only allows you to get a limited number of change notifications. Be sure your system keeps them low if you enable this setting",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enforceConnectedUsers",
@@ -6261,7 +6805,8 @@
             "help_text": "Mattermost will ask the users to connect their account if it is not connected yet",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "allowSkipConnectUsers",
@@ -6270,7 +6815,8 @@
             "help_text": "Mattermost will allow to skip temporarily the account connection, but will prompt it again in the next refresh of the browser",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncUsers",
@@ -6279,7 +6825,8 @@
             "help_text": "Set the number of minutes between users sync (Leave it empty to disable users sync)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncGuestUsers",
@@ -6288,7 +6835,8 @@
             "help_text": "Set the value to 'true' to sync MS Teams guest users",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syncDirectMessages",
@@ -6297,7 +6845,8 @@
             "help_text": "Sync direct and group messages where any of the user in the conversation is a real Mattermost user connected to MS Teams account",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "enabledTeams",
@@ -6306,7 +6855,8 @@
             "help_text": "Mattermost teams where sync is enabled (comma separated Mattermost team names, empty means all enabled)",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "promptIntervalForDMsAndGMs",
@@ -6315,7 +6865,8 @@
             "help_text": "Set the time for DMs and GMs after which the user will get a prompt to connect their account when they try to post a message without connecting their account. (Leave it empty to disable the prompt)",
             "placeholder": "",
             "default": 0,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "maxSizeForCompleteDownload",
@@ -6324,7 +6875,8 @@
             "help_text": "Set the maximum size for attachments that can be loaded into the memory. Attachments bigger than this size will be streamed from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "bufferSizeForFileStreaming",
@@ -6333,7 +6885,8 @@
             "help_text": "Set the buffer size for streaming files from MS Teams to Mattermost",
             "placeholder": "",
             "default": 20,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "connectedUsersAllowed",
@@ -6342,7 +6895,8 @@
             "help_text": "The maximum number of users that may connect their MS Teams account. Once connected, the user is added to a white-list and may reconnect at any time.",
             "placeholder": "",
             "default": 1000,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "automaticallyPromoteSyntheticUsers",
@@ -6351,7 +6905,8 @@
             "help_text": "When true, synthetic users will be converted to members when they login for the first time.",
             "placeholder": "",
             "default": false,
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthService",
@@ -6370,7 +6925,8 @@
                 "value": "ldap"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "syntheticUserAuthData",
@@ -6393,7 +6949,8 @@
                 "value": "UserPrincipalName"
               }
             ],
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "appManifestDownload",
@@ -6402,7 +6959,8 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           },
           {
             "key": "ConnectedUsersReportDownload",
@@ -6411,9 +6969,11 @@
             "help_text": "",
             "placeholder": "",
             "default": "",
-            "hosting": ""
+            "hosting": "",
+            "secret": false
           }
-        ]
+        ],
+        "sections": null
       }
     },
     "platforms": {
