@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
+	mattermostModel "github.com/mattermost/mattermost/server/public/model"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

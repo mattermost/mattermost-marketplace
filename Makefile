@@ -53,16 +53,21 @@ run-server:
 ## Compile the server as a lambda function
 .PHONY: build-lambda
 build-lambda:
-	GOOS=linux go build -ldflags="-s -w $(LDFLAGS)" -o dist/marketplace-lambda ./cmd/lambda/
+	CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w $(LDFLAGS)" -tags lambda.norpc -o dist/bootstrap ./cmd/lambda/
+
+## Package the lambda binary into a .zip artifact
+.PHONY: package-artifact
+package-artifact:
+	zip -j dist/mattermost-marketplace.zip dist/bootstrap
 
 ## Deploy the lambda stack
 .PHONY: deploy-lambda
-deploy-lambda: clean build-lambda
+deploy-lambda: clean build-lambda package-artifact
 	serverless deploy --verbose --stage $(SLS_STAGE)
 
 ## Deploy the lambda function only to an existing stack
 .PHONY: deploy-lambda-fast
-deploy-lambda-fast: clean build-lambda
+deploy-lambda-fast: clean build-lambda package-artifact
 	serverless deploy function -f server --stage $(SLS_STAGE)
 
 ## Update plugins.json

@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/gorilla/mux"
-	mattermostModel "github.com/mattermost/mattermost-server/v6/model"
+	mattermostModel "github.com/mattermost/mattermost/server/public/model"
 	"github.com/stretchr/testify/require"
 
 	"github.com/mattermost/mattermost-marketplace/internal/api"
@@ -228,15 +228,15 @@ func TestPlugins(t *testing.T) {
 			Signature: "signature6",
 			Platforms: model.PlatformBundles{
 				LinuxAmd64: model.PlatformBundleMetadata{
-					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-linux-amd64.tar.gz",
+					DownloadURL: "https://plugins.releases.mattermost.com/release/mattermost-plugin-todo-v0.3.0-linux-amd64.tar.gz",
 					Signature:   "signature6 for linux",
 				},
 				DarwinAmd64: model.PlatformBundleMetadata{
-					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-osx-amd64.tar.gz",
+					DownloadURL: "https://plugins.releases.mattermost.com/release/mattermost-plugin-todo-v0.3.0-osx-amd64.tar.gz",
 					Signature:   "signature6 for darwin",
 				},
 				WindowsAmd64: model.PlatformBundleMetadata{
-					DownloadURL: "https://plugins-store.test.mattermost.com/release/mattermost-plugin-todo-v0.3.0-windows-amd64.tar.gz",
+					DownloadURL: "https://plugins.releases.mattermost.com/release/mattermost-plugin-todo-v0.3.0-windows-amd64.tar.gz",
 					Signature:   "signature6 for windows",
 				},
 			},
