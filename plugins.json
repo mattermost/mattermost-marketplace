@@ -24155,6 +24155,80 @@
     "updated_at": "2024-08-07T19:38:47.018408Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-channel-export/",
+    "icon_data": "",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-channel-export-v1.2.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-channel-export/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": true,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmdiPMkACgkQ0bVLR6XO/sRsBRAAjX1gMrbRqqexAt897l5mRnEuHTZcI51t9rM6qWhXvLSdmZEZv53gANyypi5IGUoHMizS/3PvFuKOXtDMTvmhTd2uZF57UjwasEF5dDNgKTUcZeRGEiDMWkta5rqVmg6g2ZJMhrG6ux0ZS2gnOVr7P2JMYAr0sdeSjFxzFD6iFiYy1BVZiKfYY0wUWlX6t0dHC15P3TgSMHJTsRuKdFVbt7mjfjjTCifgF+I0LLcQVpAvelLjTvCxdy8XSSNx8VJGIMVfUFO+fcsYZx7Z82cmgaaLrhtiO+ScGG0GeekMgo9hXxyiY6tIBGrRBs6+JiuAR/8gEVoGp6YBvncEqq/xtVHa9m6sQOgvFnP3Ip9u04Qrmnd29IniWp36X0eDUGiT6JA4VZr5cnB5Zdsh9NoFGhGXEeUsMQpXKpfwjQ0gAbZAwbOmCLMeRebW24zVDVjDTkFuTlJchAOqgVzFXQxUgjRL3YIuK+qo35N6Qj7A7zSl90I3X98M/iMKFFbFZ2y6YC5J7TC/KRbTXmNQAZLFnR7/NwbPnI9zMNhZk3Tqhm8WSXBFJiAdfty330ewmnCPpNTwG7ttZ3DEiBPoLFV9nvjajhYxaTveOKoNzA5atHmH82Pw6fsq8/7y30TcE+N8k5C37RYn93nvdrZPULj7xrK1rXy6XFnRZszaFS9sOgE=",
+    "repo_name": "mattermost-plugin-channel-export",
+    "manifest": {
+      "id": "com.mattermost.plugin-channel-export",
+      "name": "Channel Export",
+      "description": "This plugin allows channel export into a human readable format.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-channel-export/",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-channel-export/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-channel-export/releases/tag/v1.2.1",
+      "version": "1.2.1",
+      "min_server_version": "5.37.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnableAdminRestrictions",
+            "display_name": "Enable Admin Restrictions",
+            "type": "bool",
+            "help_text": "Restricts the exporting of channels to system administrators or channel administrators",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MaxFileSize",
+            "display_name": "Maximum size of channel export file in bytes",
+            "type": "number",
+            "help_text": "Determines the maximum size of the channel export file when using the slash command. A value of 0 will use the [FileSettings.MaxFileSize](https://docs.mattermost.com/configure/environment-configuration-settings.html#maximum-file-size) from Mattermost server.",
+            "placeholder": "",
+            "default": 0,
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-channel-export-v1.2.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmdiPMgACgkQ0bVLR6XO/sQB7A/+MC1vTC0LD8Mr0SbPXHDqPH08jqs5pUxcF3DDG9zWq3Haesm3+bMA50bJKFIC/lfVzA3UPYEwRzxgo+g4Zb4wmm+ZdO27yH30jTWqOlx33nxQeq+UcgKFuDvH/B5rUHXpkG0evmSOSEgnsuvizIwJaup6BqktlQyx2hS5Q7nzMw2ZKBeGwv68T//l/evIsn7St0Y4ZbgTq1uHzRmfyWd4tzBlPsThBkPQx+HmI7y4dPBj4Dp7XAhiUv2F9nQnZrNAyNuDrYw7nVigF/BRJmpZRweChOMBJ+VI6E/D4Jx8IADu/72PoIlV4dGR3JeHYq7zKsT3RqrDsE2G4bjaZxQNrvvYJ8W3QpEHlLdspMe7l1bwcbDrz+JyC8Zi3ZsQIn+OamRQGVgDL4VLmu8YGgJbVYzKLDaAASh7StRsaP75iplF/IKMD2KLAmjCx1sCzZfwo30hIsDzwyY/PQk4ffA2coXCaC1XRTecG+HQxzhicg3v8ne4pcI13QJDl5p6Ov5zute7NIlE/nKy3NZou/x3BJm8xxsyy3CNvdCSdhBAWBc+l2eGgyXnw8nMSEgCgObmqFzN+OSqtwqFFV0UCN8T87Vrx3kzU/YW6EnGcJJ3Mb877V5RbamMpLe74fCK0xbRhQFovsUqv55pZR3obIm02FxZekM309F5d98NKQscYKg="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-channel-export-v1.2.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmdiPMkACgkQ0bVLR6XO/sR/5A/+Jt58X8xcxoB/ASX4pTPtDcSFOUQNxp+1J9F4lXkA16D+c38jXmgh2fh3NfHT5vdZxf3wl7YdHJFyRE3C1+xyx7C2FIXpw8585hoHVcBS9fe5GhPiWL4DdbAUp0UClUOhDPDaeshygqt5OzmrQesoJdjJhF+6ZWsDMy9N1DRrk31QPEPta7W0j6tRdIEt1NASbe36DhRN9kiVA6zhs3+x4K+mawCCgjlhYWbuQpmD7gaqSb7mMlOXJ2Ty1b8PROeZZGdi6gwvDT86/VB60y84M9TYKkdgT6lfiax+HcAg11t0ht6Kv03nhWiHTNEuZAYvyhvsJ16lS+cVgIne8PkzDn6GcWL7AY560+/7dtAQoCVpZENxQQeF9GHGbso2HJOlXcBOU1J2B7oUfjZtyUoBfPx5ZceVgFQc9GHO3U2IBAo4pK2H8fuhLroACZvwsJG3rGJ0Un6xO1OUl0eSTgfbtx1UB15/HBivwyPRDB1ihZFoQV9BwQiVXw6SIxsBdgiukTglabVEEagsPeZ2x+n0qE27GcZl83W0uBcXBOpDZreE7wqCqlv2ydMMv9E0Pu9fybmEvtZWvjwtxG8Guv8FICtyyR+RJNb02DnjtaelAYC6xZRUgiObyQP4IPpRUCHq+6WEGBzG50MzDB5BEAQX3vUWpHBLOWL03TRJyPt+NB8="
+      }
+    },
+    "updated_at": "2025-01-10T13:57:06.235812976Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
     "download_url": "https://plugins-store.test.mattermost.com/release/mattermost-plugin-github-v2.3.0.tar.gz",
