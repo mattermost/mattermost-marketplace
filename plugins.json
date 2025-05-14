@@ -29386,6 +29386,91 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-metrics",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQxcHgiIGhlaWdodD0iMjQwcHgiIHZpZXdCb3g9IjAgMCAyNDEgMjQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ni4yICg0NDQ5NikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Ymx1ZS1pY29uPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IjA2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjgxLjAwMDAwMCwgLTU3Mi4wMDAwMDApIiBmaWxsPSIjMTg3NUYwIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYyNi4wMDAwMDAsIDUxNy4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMTYuOTA4MTgxLDE1My4xMjc3MDUgQzIxNi45MDgxODEsMTUzLjEyNzcwNSAyMTcuMjgwNTg4LDE2OS40NTI1MjYgMjA1LjkyODc1NCwxODAuNTQzMDM1IEMxOTQuNTc1NDYsMTkxLjYzMzU0NCAxODAuNjMxMzgzLDE5MC42MTk4ODcgMTcxLjU2MDcyMiwxODcuNTU3MDcyIEMxNjIuNDg4NjAyLDE4NC40OTQyNTYgMTUwLjc5NTAzLDE3Ni44NTI1MSAxNDguNTMxMzgxLDE2MS4xNjcwNSBDMTQ2LjI2OTE5MywxNDUuNDgwMTMzIDE1Ni41MDgxODgsMTMyLjczNjYwNyAxNTYuNTA4MTg4LDEzMi43MzY2MDcgTDE3OC44MjA0NjMsMTA1LjA2NjQwNyBMMTkxLjgxNTI2OCw4OS4yNjI5Nzc5IEwyMDIuOTY5OTQ2LDc1LjQ5MTIzMTMgQzIwMi45Njk5NDYsNzUuNDkxMjMxMyAyMDguMDg4NzEzLDY4LjY1MzQxOTMgMjA5LjU0NzY3MSw2Ny4yNDIxNjQ4IEMyMDkuODM2ODM0LDY2Ljk2MjUzNTQgMjEwLjEzMzI5OSw2Ni43NzkwMjg2IDIxMC40MjM5MjMsNjYuNjM3NzU3NiBMMjEwLjYzNTY4Myw2Ni41Mjk5ODM3IEwyMTAuNjczNjU0LDY2LjUxNTQxOTcgQzIxMS4yODcwMyw2Ni4yNTE4MTA4IDIxMS45OTM4NzMsNjYuMTk1MDExIDIxMi42NzU4ODgsNjYuNDI1MTIyNyBDMjEzLjM0MzI5OSw2Ni42NTA4NjUyIDIxMy44NjAyODgsNjcuMTA4MTc1NyAyMTQuMTg3NDIxLDY3LjY3MTgwMzcgTDIxNC4yNTYwNjEsNjcuNzgxMDMzOSBMMjE0LjMxNTkzOCw2Ny45MDYyODQ2IEMyMTQuNDc1MTI0LDY4LjIwNjMwMzYgMjE0LjYwODAyMiw2OC41NDg1NTgzIDIxNC42NzA4Miw2OC45NzA5MTUxIEMyMTQuOTY4NzQ1LDcwLjk3NjM4MiAyMTQuODcwODk3LDc5LjUwOTQ0NzEgMjE0Ljg3MDg5Nyw3OS41MDk0NDcxIEwyMTUuMzQyNjEzLDk3LjIwNDc0MzQgTDIxNi4wMzkyMzIsMTE3LjYzMDc5NSBMMjE2LjkwODE4MSwxNTMuMTI3NzA1IFogTTI0NS43OTA1ODcsNzguMjA0MzI2MSBDMjg3LjA1NzIxMiwxMDguMTU1MjUzIDMwNS45ODI5MTUsMTYyLjUwOTY2OSAyODguNzc0Mjg4LDIxMy4zNDY4NzIgQzI2Ny41OTQxMDQsMjc1LjkxMTAzMSAxOTkuNzA2MjQ1LDMwOS40NjA3MyAxMzcuMTQyOTI1LDI4OC4yODE3MTggQzc0LjU3OTYwNDgsMjY3LjEwMTI1IDQxLjAzMTgxMiwxOTkuMjEzOTM3IDYyLjIxMDU0MDIsMTM2LjY0OTc3OCBDNzkuNDQ4Mjk0Nyw4NS43Mjk1NjAzIDEyNy42MjU0NTksNTQuMDMyNDA1NyAxNzguNjkwNjMyLDU1LjQxNDUzMjIgTDE2Mi4zMjIzMzksNzQuNzU0MTA3NCBDMTMyLjAyODEwNiw4MC4yMzE2MzkgMTA1Ljg3MTQ2LDEwMC45MTk4NDMgOTUuNTkwODQ4OSwxMzEuMjkwMjE1IEM4MC4yOTQ0NTM1LDE3Ni40NzUxMTcgMTA1LjkzMjYyOCwyMjUuOTgyNjI0IDE1Mi44NTU4NDYsMjQxLjg2NjE1NSBDMTk5Ljc3NzYwOCwyNTcuNzUxMTQyIDI1MC4yMTY1MzYsMjMzLjk5ODY2NiAyNjUuNTEyOTMyLDE4OC44MTM3NjQgQzI3NS43NjAwNDYsMTU4LjU0Mzg4NCAyNjcuNjM0ODgyLDEyNi4zMzY5ODggMjQ3LjA1MDM1OSwxMDMuNTk1MjU2IEwyNDUuNzkwNTg3LDc4LjIwNDMyNjEgWiIgaWQ9ImJsdWUtaWNvbiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-metrics-v0.7.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-metrics/releases/tag/v0.7.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmgkYgAACgkQ0bVLR6XO/sQasg//ROOl87WrhkPsjwINp+QgMFIRuWEd135PnwGZtKnCrSbH7mEdaZGrX03VYUiyAouXb9wQvRWcP4LDlDb+QaPARPZqvnS+wbkkfygC0GPqPzAOxTuuMkcS8ajcbSoEkvgXPnRmsWp/tE+uwRI+zmV2pLZw/WmxEZzXk5ozZMYH1gjns6cxLtQeiFTvx008Pdt+RfEHvCaJ9ZJ/h23nRZpfaUSnHdGq34jxJYVCaWP+sY/B6Kl0SA2sIvBB3+FT7gIKiBjyqG9Gl2j7FcHzjzMKXiJBiNq3/u0FibXcIl2JOz5GvP5z6gJNfIBEPIgefJyHd3aE93iI0/Q6v2AFXMaVeX1j+tLjnYAMjA1LZosTnsJuE1FVxJmSt9FEolEVvICzaxDIuNNUoS+a2J1ISz+LJoeoKnjuNKV/U3Enuxd3EdrTykvhM6N0JiqL6AYeLDUhtjlTk63G/812m5qp72+h368JSG6bnfkVl89iMfXSfRhl5GNsEhC0ulKEo1qj+DBsoJZL+yYUUI5a1wJ4Ywfy9s8/VPJCH0WUr98tE4IEynUx2NAsy7QgaJ7b8mVbwfgADAvBrSLiXjQUwX+yghXgZ93e4cBoftgeEZZU6ojFwchdAVWSVGSE/ro3KePqHJorNFZ7wmsP4jquyQtnWT5S1cAJnvcJGlx34VaoCiW1P+I=",
+    "repo_name": "mattermost-plugin-metrics",
+    "manifest": {
+      "id": "com.mattermost.mattermost-plugin-metrics",
+      "name": "Mattermost Metrics Plugin",
+      "description": "This plugin serves as a openmetrics scraper for Mattermost. It can be used to store metrics data without Prometheus.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-metrics",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-metrics/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-metrics/releases/tag/v0.7.0",
+      "icon_path": "assets/starter-template-icon.svg",
+      "version": "0.7.0",
+      "min_server_version": "6.3.0",
+      "server": {
+        "executables": {
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Collect and store Mattermost performance data at regular intervals in a standard OpenMetrics format, without requiring third-party tool deployments. Data snapshots stored in a dump file can be consumed by a wide range of monitoring systems.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "Stats",
+            "display_name": "TSDB Stats:",
+            "type": "custom",
+            "help_text": "",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "DBPath",
+            "display_name": "TSDB Path:",
+            "type": "text",
+            "help_text": "The local path where the time series database data is stored. Changing this setting requires a plugin restart.",
+            "placeholder": "",
+            "default": "mattermost-plugin-metrics/data",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "Dumps",
+            "display_name": "Dump Table:",
+            "type": "custom",
+            "help_text": "",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      },
+      "props": {
+        "support_packet": "Performance metrics"
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-metrics-v0.7.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmgkYf8ACgkQ0bVLR6XO/sSS3xAAgeyftJa+ZxBC/nBhc+7WrFXmjdtIc09F7tcBqCSQXqr6qWLtscvQK8qkAPnVax8TlsIfHISWWNtK7ienZSokiQ4fJiF8Z9KSyQ8EGcjjS8DNFAaDc8uotPy4BxIEfpTM9QqcWwTMcq3fUn3YJH2kpukQnCIOpEFZe/5Rin9KrcZY9ekT18ILoM2HjkDak/4LqZhxpFnqa+ZcAlQq8FN0ib1gIXdGGXlQ7C1srf169ZqzpvCoeVpDigcV8uN3oQ3E11VYaKy+kDER3WBzP5MAcZzluHFcNirdEYWJgIBUnxfXQDrgdHAvyly40gRGVTjkiRrCjitIc/r4b3BEyyZOrBoSPgm1g7v9p0GgMd2sa8HNKjYwaWhpp4mGSls8Q6n0hHBAwqJwBpF0Niu5yklqUdweK8u5IfxbpwIGjBbRAHE8VhrK+T6JsH8a8BFpi9TXwHRgzAVedxnnpFYMdxh0AIgCySEQ7M/fcyDPA4725yszSQaIqkwtaqzPDAbnM+kxIFJJd1PRZFBMGGE0TdqyDheSPuy8J0qphWM7OSC6hZIr4kxMkqn9mcLQBnrCFvbQtZ9FXXC2nv+cYguTbBAZ4NNGhgonUGH7gacGZNoqerPxpG4tps22l+pR9CnlelBg5348kfGPF8v14LdJC4F/I9XoEekUz594X/Yj1yw/UIg="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-metrics-v0.7.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmgkYgAACgkQ0bVLR6XO/sQ02xAAlhQaOTt11iT1iQjLHou7gqVrsbI6annOXG+Wred1UA740mxAOBQQ5MVvnoG9t4DJS8UbWE3Ii1Xx2a7AISjLLjDdzvucxSYG14g7F7vYNvJwKucUNlrncWNN2nhk4oey6rK9jP95SQ2lhPyou3r1QY+VVucbqcMGtN2N/UxzkHUjFM3+nXOqjIiomYF0TLJjCKLCT8CgkIJ3LbuDIkOiCe2wyvhOxJayGoy5lcsOltu172PAYjRpvDQGeUODeQ8LXlLWLw2aSxZ2wNsSIs56yS+SWgnGmnf2BbMVcPaoJMH9HafMkhSxCujTk4giAmyiIMwlyiVJSOn8kg8lR1IfwVzhLTETCqsnzsYUKjeitp/dkvn6irAgqSiydxCsAnS3XRLgGffo+nybiU2hgQtknMfWx7ngSuhWbxbRxOT2kX3kATbkO7TYKMczz2wAnmktOYeh1MnM4MWjfnJpyffx6UIFHsH64IIJFsjRTNbjcVfAgQ/4H54n47f+Q2N5jJOTZHSJE2rojguaF2Bnqo5ddi5IWqV2iYR+t6mSG/gYXkNvqdD32adA38lbvcIfm90Nd+LtRPoKwSb2Ma6GSVIp0/f7YbNI0AO1ESJ5EVEr4pcQADLmOcE1AbQv4wSXhublk/mI7x9J9ptyDLXuwaz8ATvfLmBGS5Vb9sjQyTTPNF4="
+      }
+    },
+    "updated_at": "2025-05-14T10:11:41.322393624Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-metrics",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQxcHgiIGhlaWdodD0iMjQwcHgiIHZpZXdCb3g9IjAgMCAyNDEgMjQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ni4yICg0NDQ5NikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Ymx1ZS1pY29uPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IjA2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjgxLjAwMDAwMCwgLTU3Mi4wMDAwMDApIiBmaWxsPSIjMTg3NUYwIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYyNi4wMDAwMDAsIDUxNy4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMTYuOTA4MTgxLDE1My4xMjc3MDUgQzIxNi45MDgxODEsMTUzLjEyNzcwNSAyMTcuMjgwNTg4LDE2OS40NTI1MjYgMjA1LjkyODc1NCwxODAuNTQzMDM1IEMxOTQuNTc1NDYsMTkxLjYzMzU0NCAxODAuNjMxMzgzLDE5MC42MTk4ODcgMTcxLjU2MDcyMiwxODcuNTU3MDcyIEMxNjIuNDg4NjAyLDE4NC40OTQyNTYgMTUwLjc5NTAzLDE3Ni44NTI1MSAxNDguNTMxMzgxLDE2MS4xNjcwNSBDMTQ2LjI2OTE5MywxNDUuNDgwMTMzIDE1Ni41MDgxODgsMTMyLjczNjYwNyAxNTYuNTA4MTg4LDEzMi43MzY2MDcgTDE3OC44MjA0NjMsMTA1LjA2NjQwNyBMMTkxLjgxNTI2OCw4OS4yNjI5Nzc5IEwyMDIuOTY5OTQ2LDc1LjQ5MTIzMTMgQzIwMi45Njk5NDYsNzUuNDkxMjMxMyAyMDguMDg4NzEzLDY4LjY1MzQxOTMgMjA5LjU0NzY3MSw2Ny4yNDIxNjQ4IEMyMDkuODM2ODM0LDY2Ljk2MjUzNTQgMjEwLjEzMzI5OSw2Ni43NzkwMjg2IDIxMC40MjM5MjMsNjYuNjM3NzU3NiBMMjEwLjYzNTY4Myw2Ni41Mjk5ODM3IEwyMTAuNjczNjU0LDY2LjUxNTQxOTcgQzIxMS4yODcwMyw2Ni4yNTE4MTA4IDIxMS45OTM4NzMsNjYuMTk1MDExIDIxMi42NzU4ODgsNjYuNDI1MTIyNyBDMjEzLjM0MzI5OSw2Ni42NTA4NjUyIDIxMy44NjAyODgsNjcuMTA4MTc1NyAyMTQuMTg3NDIxLDY3LjY3MTgwMzcgTDIxNC4yNTYwNjEsNjcuNzgxMDMzOSBMMjE0LjMxNTkzOCw2Ny45MDYyODQ2IEMyMTQuNDc1MTI0LDY4LjIwNjMwMzYgMjE0LjYwODAyMiw2OC41NDg1NTgzIDIxNC42NzA4Miw2OC45NzA5MTUxIEMyMTQuOTY4NzQ1LDcwLjk3NjM4MiAyMTQuODcwODk3LDc5LjUwOTQ0NzEgMjE0Ljg3MDg5Nyw3OS41MDk0NDcxIEwyMTUuMzQyNjEzLDk3LjIwNDc0MzQgTDIxNi4wMzkyMzIsMTE3LjYzMDc5NSBMMjE2LjkwODE4MSwxNTMuMTI3NzA1IFogTTI0NS43OTA1ODcsNzguMjA0MzI2MSBDMjg3LjA1NzIxMiwxMDguMTU1MjUzIDMwNS45ODI5MTUsMTYyLjUwOTY2OSAyODguNzc0Mjg4LDIxMy4zNDY4NzIgQzI2Ny41OTQxMDQsMjc1LjkxMTAzMSAxOTkuNzA2MjQ1LDMwOS40NjA3MyAxMzcuMTQyOTI1LDI4OC4yODE3MTggQzc0LjU3OTYwNDgsMjY3LjEwMTI1IDQxLjAzMTgxMiwxOTkuMjEzOTM3IDYyLjIxMDU0MDIsMTM2LjY0OTc3OCBDNzkuNDQ4Mjk0Nyw4NS43Mjk1NjAzIDEyNy42MjU0NTksNTQuMDMyNDA1NyAxNzguNjkwNjMyLDU1LjQxNDUzMjIgTDE2Mi4zMjIzMzksNzQuNzU0MTA3NCBDMTMyLjAyODEwNiw4MC4yMzE2MzkgMTA1Ljg3MTQ2LDEwMC45MTk4NDMgOTUuNTkwODQ4OSwxMzEuMjkwMjE1IEM4MC4yOTQ0NTM1LDE3Ni40NzUxMTcgMTA1LjkzMjYyOCwyMjUuOTgyNjI0IDE1Mi44NTU4NDYsMjQxLjg2NjE1NSBDMTk5Ljc3NzYwOCwyNTcuNzUxMTQyIDI1MC4yMTY1MzYsMjMzLjk5ODY2NiAyNjUuNTEyOTMyLDE4OC44MTM3NjQgQzI3NS43NjAwNDYsMTU4LjU0Mzg4NCAyNjcuNjM0ODgyLDEyNi4zMzY5ODggMjQ3LjA1MDM1OSwxMDMuNTk1MjU2IEwyNDUuNzkwNTg3LDc4LjIwNDMyNjEgWiIgaWQ9ImJsdWUtaWNvbiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-metrics-v0.6.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-metrics/releases/tag/v0.6.0",
     "hosting": "",
