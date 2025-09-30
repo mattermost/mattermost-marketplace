@@ -34455,7 +34455,7 @@
       "support_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/issues",
       "release_notes_url": "https://github.com/mattermost/mattermost-plugin-msteams-meetings/releases/tag/v2.3.0",
       "icon_path": "assets/profile.svg",
-      "version": "2.2.0",
+      "version": "2.3.0",
       "min_server_version": "8.1.0",
       "server": {
         "executables": {
