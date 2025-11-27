@@ -34200,6 +34200,143 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-google-calendar",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxpdmVsbG9fMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDIwMCAyMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwMCAyMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuNzUgMy43NSkiPgoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xNDguODgyLDQzLjYxOGwtNDcuMzY4LTUuMjYzbC01Ny44OTUsNS4yNjNMMzguMzU1LDk2LjI1bDUuMjYzLDUyLjYzMmw1Mi42MzIsNi41NzlsNTIuNjMyLTYuNTc5CgkJCWw1LjI2My01My45NDdMMTQ4Ljg4Miw0My42MTh6Ii8+CgkJPHBhdGggZmlsbD0iIzFBNzNFOCIgZD0iTTY1LjIxMSwxMjUuMjc2Yy0zLjkzNC0yLjY1OC02LjY1OC02LjUzOS04LjE0NS0xMS42NzFsOS4xMzItMy43NjNjMC44MjksMy4xNTgsMi4yNzYsNS42MDUsNC4zNDIsNy4zNDIKCQkJYzIuMDUzLDEuNzM3LDQuNTUzLDIuNTkyLDcuNDc0LDIuNTkyYzIuOTg3LDAsNS41NTMtMC45MDgsNy42OTctMi43MjRzMy4yMjQtNC4xMzIsMy4yMjQtNi45MzRjMC0yLjg2OC0xLjEzMi01LjIxMS0zLjM5NS03LjAyNgoJCQlzLTUuMTA1LTIuNzI0LTguNS0yLjcyNGgtNS4yNzZ2LTkuMDM5SDc2LjVjMi45MjEsMCw1LjM4Mi0wLjc4OSw3LjM4Mi0yLjM2OGMyLTEuNTc5LDMtMy43MzcsMy02LjQ4NwoJCQljMC0yLjQ0Ny0wLjg5NS00LjM5NS0yLjY4NC01Ljg1NXMtNC4wNTMtMi4xOTctNi44MDMtMi4xOTdjLTIuNjg0LDAtNC44MTYsMC43MTEtNi4zOTUsMi4xNDVzLTIuNzI0LDMuMTk3LTMuNDQ3LDUuMjc2CgkJCWwtOS4wMzktMy43NjNjMS4xOTctMy4zOTUsMy4zOTUtNi4zOTUsNi42MTgtOC45ODdjMy4yMjQtMi41OTIsNy4zNDItMy44OTUsMTIuMzQyLTMuODk1YzMuNjk3LDAsNy4wMjYsMC43MTEsOS45NzQsMi4xNDUKCQkJYzIuOTQ3LDEuNDM0LDUuMjYzLDMuNDIxLDYuOTM0LDUuOTQ3YzEuNjcxLDIuNTM5LDIuNSw1LjM4MiwyLjUsOC41MzljMCwzLjIyNC0wLjc3Niw1Ljk0Ny0yLjMyOSw4LjE4NAoJCQljLTEuNTUzLDIuMjM3LTMuNDYxLDMuOTQ3LTUuNzI0LDUuMTQ1djAuNTM5YzIuOTg3LDEuMjUsNS40MjEsMy4xNTgsNy4zNDIsNS43MjRjMS45MDgsMi41NjYsMi44NjgsNS42MzIsMi44NjgsOS4yMTEKCQkJcy0wLjkwOCw2Ljc3Ni0yLjcyNCw5LjU3OWMtMS44MTYsMi44MDMtNC4zMjksNS4wMTMtNy41MTMsNi42MThjLTMuMTk3LDEuNjA1LTYuNzg5LDIuNDIxLTEwLjc3NiwyLjQyMQoJCQlDNzMuNDA4LDEyOS4yNjMsNjkuMTQ1LDEyNy45MzQsNjUuMjExLDEyNS4yNzZ6Ii8+CgkJPHBhdGggZmlsbD0iIzFBNzNFOCIgZD0iTTEyMS4yNSw3OS45NjFsLTkuOTc0LDcuMjVsLTUuMDEzLTcuNjA1bDE3Ljk4Ny0xMi45NzRoNi44OTV2NjEuMTk3aC05Ljg5NUwxMjEuMjUsNzkuOTYxeiIvPgoJCTxwYXRoIGZpbGw9IiNFQTQzMzUiIGQ9Ik0xNDguODgyLDE5Ni4yNWw0Ny4zNjgtNDcuMzY4bC0yMy42ODQtMTAuNTI2bC0yMy42ODQsMTAuNTI2bC0xMC41MjYsMjMuNjg0TDE0OC44ODIsMTk2LjI1eiIvPgoJCTxwYXRoIGZpbGw9IiMzNEE4NTMiIGQ9Ik0zMy4wOTIsMTcyLjU2NmwxMC41MjYsMjMuNjg0aDEwNS4yNjN2LTQ3LjM2OEg0My42MThMMzMuMDkyLDE3Mi41NjZ6Ii8+CgkJPHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTEyLjAzOS0zLjc1QzMuMzE2LTMuNzUtMy43NSwzLjMxNi0zLjc1LDEyLjAzOXYxMzYuODQybDIzLjY4NCwxMC41MjZsMjMuNjg0LTEwLjUyNlY0My42MThoMTA1LjI2MwoJCQlsMTAuNTI2LTIzLjY4NEwxNDguODgyLTMuNzVIMTIuMDM5eiIvPgoJCTxwYXRoIGZpbGw9IiMxODgwMzgiIGQ9Ik0tMy43NSwxNDguODgydjMxLjU3OWMwLDguNzI0LDcuMDY2LDE1Ljc4OSwxNS43ODksMTUuNzg5aDMxLjU3OXYtNDcuMzY4SC0zLjc1eiIvPgoJCTxwYXRoIGZpbGw9IiNGQkJDMDQiIGQ9Ik0xNDguODgyLDQzLjYxOHYxMDUuMjYzaDQ3LjM2OFY0My42MThsLTIzLjY4NC0xMC41MjZMMTQ4Ljg4Miw0My42MTh6Ii8+CgkJPHBhdGggZmlsbD0iIzE5NjdEMiIgZD0iTTE5Ni4yNSw0My42MThWMTIuMDM5YzAtOC43MjQtNy4wNjYtMTUuNzg5LTE1Ljc4OS0xNS43ODloLTMxLjU3OXY0Ny4zNjhIMTk2LjI1eiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-calendar-v1.5.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-google-calendarreleases/tag/v1.5.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmkoT/oACgkQ0bVLR6XO/sRwbA/+ICzGZB59EsWO0Dcy2eMkyJqi9CXsG+5w1JkjAiv0mgnXtVT9qMTG6pYByBbjdGfgGokx6CGxhHsEKu96G+jhSPqOFTBoIeQuQhJJrtC/Rjg8IdVrloSKmR6FwjieZZcLvdwdCRCObz05LH/reugCYQQQxixIY3PkmPyOo29zmfnGkBa7KIsQK56zc1dMOwvhekaXmyo2Qh5+5KGiCfM6tIXb539sPv9T4/B6Sm/7nxdufguEVJOK7+O9FQpnysDK4KJNGfE6p8O5lDMRpRJiFVjthSuBn1ouue7kfTPrJLQhbAqak8l4ELc8jFt0qfvilDbtYx6o6/PfH18vLA6taD35EK3+m/UkFPyR64ADJk5Aidom7SLrBEdUKXN7T2VKWGMpAPokBI/tONr/5ZOtjDe1W9+W1h80pwfJptg95pFPToo31ouNq0Z7Kskp3apWpKicwEfb1qojyugsYIYC6ZKnnnwtHSBN3LnWHvaK0yzeC2xuS4VRV7ZduB8m5d6H7Wbad8ymMy8B/A3uKaK5BBSq0gi5AE+VqkIXxq7VmMndFnxVzsNUAVLPl9nbyWZ9MR00n9VdFelzjCogX4E1Y6/l5e0XIaPa4JaDfUhPv3opRCJq2A0XnqgPMmlvFtaYHb5EgOUySpTXtFdNcacM3plCv26JXb9QkzCzXsXDCSM=",
+    "repo_name": "mattermost-plugin-google-calendar",
+    "manifest": {
+      "id": "com.mattermost.gcal",
+      "name": "Google Calendar",
+      "description": "Google Calendar Integration",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-google-calendar",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-google-calendar/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-google-calendarreleases/tag/v1.5.0",
+      "icon_path": "assets/profile-gcal.svg",
+      "version": "1.4.0-rc1",
+      "min_server_version": "6.3.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "AdminUserIDs",
+            "display_name": "Admin User IDs:",
+            "type": "text",
+            "help_text": "List of users authorized to administer the plugin in addition to the System Admins. Must be a comma-separated list of user IDs.\n \n User IDs can be found in **System Console > User Management > Users**. Select the user's name, and the ID is displayed in the top-right corner of the banner.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "AdminLogLevel",
+            "display_name": "Copy plugin logs to admins, as bot messages:",
+            "type": "dropdown",
+            "help_text": "Select the log level.",
+            "placeholder": "",
+            "default": "none",
+            "options": [
+              {
+                "display_name": "None",
+                "value": "none"
+              },
+              {
+                "display_name": "Debug",
+                "value": "debug"
+              },
+              {
+                "display_name": "Info",
+                "value": "info"
+              },
+              {
+                "display_name": "Warning",
+                "value": "warn"
+              },
+              {
+                "display_name": "Error",
+                "value": "error"
+              }
+            ],
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "AdminLogVerbose",
+            "display_name": "Display full context for each admin log message:",
+            "type": "bool",
+            "help_text": "",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "Encryption key",
+            "type": "generated",
+            "help_text": "**Required**: The encryption key used to store data in the database. If this is regenerated all user authentication data will be lost and users will need to reconnect again.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          },
+          {
+            "key": "OAuth2ClientId",
+            "display_name": "Google Application Client ID:",
+            "type": "text",
+            "help_text": "Google Auth Client ID",
+            "placeholder": "",
+            "default": "",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "OAuth2ClientSecret",
+            "display_name": "Google Client Secret:",
+            "type": "text",
+            "help_text": "Google Auth Client Secret.",
+            "placeholder": "",
+            "default": "",
+            "hosting": "",
+            "secret": true
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-calendar-v1.4.0-rc1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmknAUAACgkQ0bVLR6XO/sS/MhAAjBP4jZvJXKQGNes4imZH4pt9WYGhBYQBFD7nzLnJMoBtcdLc9adens33U842LKWckoC5mAte7zGnTyp3r8mp140Aju8IUax5Ud7tc31bJ6BfJvCByKouoLciLSfMzETvePDWHHLw5/opiolD7UdVwEnEdRj3rN6qSWvmlCNdl/CXeSl5ktQxlT+OqKhD/Kv9XiFNg7DrAVQaMC/jRJg5jMdfCvkli33fT36kzNmgezJiXVqOiQxwoQlS7SFcejhZ6RVMFS+Q+EZvzoFQXdHMc9V3kZ2BhA9qr8pYrxesyhUOVIuSB8Nlje/+9l2TQ/3UWhE3bJa58NWpiXasVMxv6GhjeE2jJIXrrPEmLQbm5eTNljFA1chh5UmHBi3FdQlOgZKP8u7Shp3WwDRVPNdG0U79R+kM6vOM05tZeIz4STSxCLpkBGtHb530l/GoY2NvrlSZ7k6JgHQfTByyrzVjWtAklkTzaBHNgrr6zjEpfFUE8Qbj5w4nebPfqik8qpy3VKqTylw1MotgfaCSBatQQK4HBoTa7BFhg0fSlOSAudXbjRCTkLV3nu//kG+iUWv2Y8XecPWeBn0Wh+k+4d717cORLsjSTF9ze8hAaDU74IYV1/ZmWa91JWh6fpHoAdfBYU2Ciug/TB/oq6AOWGbwaiDZgsNKeZlmcWYfmFM18oc="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-calendar-v1.4.0-rc1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmknAUEACgkQ0bVLR6XO/sTp0Q/+MHSpTGm6hyRabIF7DfTDoZ0K4GNkizrkCIIUh6Jd94qTwk4i6bTk7BsPobEXkKt1pJ1z4hWLY36sX5p4tqokbAfBKNrWwre50TAI2bwYJ4/q+bBJdcHQueO+Wg1siNQjDavlzYVbw4a2cQaTIvBtRb00YYiTDqFdTWpGbl3DxhBjOsRJuLBEcB1iqUmf3tGvn3HNnXJh1/PK+sZulvk1Cx84wdpjU6B+yYu8KI0XNMKBbIiasZIJmRwVFOe4TLfOkfQGVlFVdRISziSKiIqJPV1zbwL5o1t5LWe/jLb+5Yr9IkcC7gtJ20MzLBK9MuP7b/hLT7tFReT4NvaNaxy2O477ADmUwxgpfmcNraqodG28knqIg5iXjxk2VIl6ew8z+hnaMNQnc9uXwSjebP6q6JlIz1rc83/gaugS77uC1aFSPwA25L8NyOWrdgwtHhOtzZw5302A3oLrKjulROY195Qr3adU3XMbQivF+95kjSbbCTi/nPoqPXhAmfk1UQu959B4MDCfpjGHrBkUSw2BxGEJIKRjah08Zmucp2oc04rHDHJE36mYjrA2PKKQB1ZZDil3x6+gAbvaX5I9MYF8KI/5smk9cFmBjWErRnAfZe2ifYq+7pytVBAmqVcQJspvzSKA5usH49DiyVhLfxvd4YbCgMn9ZndVndHRWgQv1h4="
+      }
+    },
+    "updated_at": "2025-11-27T13:22:57.173861Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-google-calendar",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjAuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxpdmVsbG9fMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDIwMCAyMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwMCAyMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMuNzUgMy43NSkiPgoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xNDguODgyLDQzLjYxOGwtNDcuMzY4LTUuMjYzbC01Ny44OTUsNS4yNjNMMzguMzU1LDk2LjI1bDUuMjYzLDUyLjYzMmw1Mi42MzIsNi41NzlsNTIuNjMyLTYuNTc5CgkJCWw1LjI2My01My45NDdMMTQ4Ljg4Miw0My42MTh6Ii8+CgkJPHBhdGggZmlsbD0iIzFBNzNFOCIgZD0iTTY1LjIxMSwxMjUuMjc2Yy0zLjkzNC0yLjY1OC02LjY1OC02LjUzOS04LjE0NS0xMS42NzFsOS4xMzItMy43NjNjMC44MjksMy4xNTgsMi4yNzYsNS42MDUsNC4zNDIsNy4zNDIKCQkJYzIuMDUzLDEuNzM3LDQuNTUzLDIuNTkyLDcuNDc0LDIuNTkyYzIuOTg3LDAsNS41NTMtMC45MDgsNy42OTctMi43MjRzMy4yMjQtNC4xMzIsMy4yMjQtNi45MzRjMC0yLjg2OC0xLjEzMi01LjIxMS0zLjM5NS03LjAyNgoJCQlzLTUuMTA1LTIuNzI0LTguNS0yLjcyNGgtNS4yNzZ2LTkuMDM5SDc2LjVjMi45MjEsMCw1LjM4Mi0wLjc4OSw3LjM4Mi0yLjM2OGMyLTEuNTc5LDMtMy43MzcsMy02LjQ4NwoJCQljMC0yLjQ0Ny0wLjg5NS00LjM5NS0yLjY4NC01Ljg1NXMtNC4wNTMtMi4xOTctNi44MDMtMi4xOTdjLTIuNjg0LDAtNC44MTYsMC43MTEtNi4zOTUsMi4xNDVzLTIuNzI0LDMuMTk3LTMuNDQ3LDUuMjc2CgkJCWwtOS4wMzktMy43NjNjMS4xOTctMy4zOTUsMy4zOTUtNi4zOTUsNi42MTgtOC45ODdjMy4yMjQtMi41OTIsNy4zNDItMy44OTUsMTIuMzQyLTMuODk1YzMuNjk3LDAsNy4wMjYsMC43MTEsOS45NzQsMi4xNDUKCQkJYzIuOTQ3LDEuNDM0LDUuMjYzLDMuNDIxLDYuOTM0LDUuOTQ3YzEuNjcxLDIuNTM5LDIuNSw1LjM4MiwyLjUsOC41MzljMCwzLjIyNC0wLjc3Niw1Ljk0Ny0yLjMyOSw4LjE4NAoJCQljLTEuNTUzLDIuMjM3LTMuNDYxLDMuOTQ3LTUuNzI0LDUuMTQ1djAuNTM5YzIuOTg3LDEuMjUsNS40MjEsMy4xNTgsNy4zNDIsNS43MjRjMS45MDgsMi41NjYsMi44NjgsNS42MzIsMi44NjgsOS4yMTEKCQkJcy0wLjkwOCw2Ljc3Ni0yLjcyNCw5LjU3OWMtMS44MTYsMi44MDMtNC4zMjksNS4wMTMtNy41MTMsNi42MThjLTMuMTk3LDEuNjA1LTYuNzg5LDIuNDIxLTEwLjc3NiwyLjQyMQoJCQlDNzMuNDA4LDEyOS4yNjMsNjkuMTQ1LDEyNy45MzQsNjUuMjExLDEyNS4yNzZ6Ii8+CgkJPHBhdGggZmlsbD0iIzFBNzNFOCIgZD0iTTEyMS4yNSw3OS45NjFsLTkuOTc0LDcuMjVsLTUuMDEzLTcuNjA1bDE3Ljk4Ny0xMi45NzRoNi44OTV2NjEuMTk3aC05Ljg5NUwxMjEuMjUsNzkuOTYxeiIvPgoJCTxwYXRoIGZpbGw9IiNFQTQzMzUiIGQ9Ik0xNDguODgyLDE5Ni4yNWw0Ny4zNjgtNDcuMzY4bC0yMy42ODQtMTAuNTI2bC0yMy42ODQsMTAuNTI2bC0xMC41MjYsMjMuNjg0TDE0OC44ODIsMTk2LjI1eiIvPgoJCTxwYXRoIGZpbGw9IiMzNEE4NTMiIGQ9Ik0zMy4wOTIsMTcyLjU2NmwxMC41MjYsMjMuNjg0aDEwNS4yNjN2LTQ3LjM2OEg0My42MThMMzMuMDkyLDE3Mi41NjZ6Ii8+CgkJPHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTEyLjAzOS0zLjc1QzMuMzE2LTMuNzUtMy43NSwzLjMxNi0zLjc1LDEyLjAzOXYxMzYuODQybDIzLjY4NCwxMC41MjZsMjMuNjg0LTEwLjUyNlY0My42MThoMTA1LjI2MwoJCQlsMTAuNTI2LTIzLjY4NEwxNDguODgyLTMuNzVIMTIuMDM5eiIvPgoJCTxwYXRoIGZpbGw9IiMxODgwMzgiIGQ9Ik0tMy43NSwxNDguODgydjMxLjU3OWMwLDguNzI0LDcuMDY2LDE1Ljc4OSwxNS43ODksMTUuNzg5aDMxLjU3OXYtNDcuMzY4SC0zLjc1eiIvPgoJCTxwYXRoIGZpbGw9IiNGQkJDMDQiIGQ9Ik0xNDguODgyLDQzLjYxOHYxMDUuMjYzaDQ3LjM2OFY0My42MThsLTIzLjY4NC0xMC41MjZMMTQ4Ljg4Miw0My42MTh6Ii8+CgkJPHBhdGggZmlsbD0iIzE5NjdEMiIgZD0iTTE5Ni4yNSw0My42MThWMTIuMDM5YzAtOC43MjQtNy4wNjYtMTUuNzg5LTE1Ljc4OS0xNS43ODloLTMxLjU3OXY0Ny4zNjhIMTk2LjI1eiIvPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-calendar-v1.3.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-google-calendar/releases/tag/v1.3.0",
     "hosting": "",
