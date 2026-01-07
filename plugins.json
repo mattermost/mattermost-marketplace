@@ -34115,6 +34115,176 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-confluence",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjU2IDI0NiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9Ijk5LjE0MDA4NyUiIHkxPSIxMTIuNzA4MDg0JSIgeDI9IjMzLjg1ODk4MTIlIiB5Mj0iMzcuNzU0OTYwNiUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzAwNTJDQyIgb2Zmc2V0PSIxOCUiPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzI2ODRGRiIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAuOTI1NjkxNjMlIiB5MT0iLTEyLjU4MjMwNzQlIiB4Mj0iNjYuMTgwMDcxMyUiIHkyPSI2Mi4zMDU3NDcxJSIgaWQ9ImxpbmVhckdyYWRpZW50LTIiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDA1MkNDIiBvZmZzZXQ9IjE4JSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjY4NEZGIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGc+CgkJCQk8cGF0aCBkPSJNOS4yNjA1NDQ4NCwxODcuMzI5OTcxIEM2LjYxOTM5NzgyLDE5MS42MzcwNzIgMy42NTMxODY1NSwxOTYuNjM0OTM1IDEuMTMzOTM4NjMsMjAwLjYxNjk3MiBDLTEuMTIwOTgzODUsMjA0LjQyNzUxIDAuMDg5NTQ4Nzk0NSwyMDkuMzQxOTExIDMuODU2MzUxNzEsMjExLjY2OTE1NyBMNTYuNjc5MjkyMSwyNDQuMTc1NTgyIEM1OC41MzM0ODU5LDI0NS4zMjAzOTMgNjAuNzY5NzY5NSwyNDUuNjcyNTcgNjIuODg2MDY4MywyNDUuMTUzMDQ1IEM2NS4wMDIzNjcyLDI0NC42MzM1MjEgNjYuODIxMzUzNiwyNDMuMjg1ODI2IDY3LjkzNDY0MTcsMjQxLjQxMjUzNiBDNzAuMDQ3NTU5MywyMzcuODc3NDYyIDcyLjc2OTk3MjQsMjMzLjI4NTkyOSA3NS43MzYxODM3LDIyOC4zNjkzMzMgQzk2LjY2MjE5NDcsMTkzLjgzMTI1NiAxMTcuNzEwMTA1LDE5OC4wNTcwOTEgMTU1LjY2MTM1NiwyMTYuMTc5NDIzIEwyMDguMDM3MzMzLDI0MS4wODc0NzEgQzIxMC4wMjA5OTcsMjQyLjAzMTYzOSAyMTIuMzAyNDE1LDI0Mi4xMzI0NTcgMjE0LjM2MTYzMiwyNDEuMzY2OTQ5IEMyMTYuNDIwODQ4LDI0MC42MDE0NDEgMjE4LjA4MjQwNSwyMzkuMDM0ODMzIDIxOC45Njc2MTgsMjM3LjAyNDE2OCBMMjQ0LjExOTQ2NCwxODAuMTM3OTI1IEMyNDUuODk2NDgzLDE3Ni4wNzUwNDYgMjQ0LjA4ODMzNiwxNzEuMzM3NyAyNDAuMDU2MTYxLDE2OS40OTIwNzEgQzIyOS4wMDM5NzcsMTY0LjI5MTA0MyAyMDcuMDIxNTA3LDE1My45Mjk2MiAxODcuMjMzMjIxLDE0NC4zODA4NTcgQzExNi4wNDQxNTEsMTA5LjgwMjE0OCA1NS41NDE1NjcyLDExMi4wMzY5NjUgOS4yNjA1NDQ4NCwxODcuMzI5OTcxIFoiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiPjwvcGF0aD4KCQkJCTxwYXRoIGQ9Ik0yNDYuMTE1MDUsNTguMjMxOTQyOCBDMjQ4Ljc1NjE5Nyw1My45MjQ4NDE1IDI1MS43MjI0MDgsNDguOTI2OTc4NyAyNTQuMjQxNjU2LDQ0Ljk0NDk0MTYgQzI1Ni40OTY1NzksNDEuMTM0NDAzNyAyNTUuMjg2MDQ2LDM2LjIyMDAwMjUgMjUxLjUxOTI0MywzMy44OTI3NTcyIEwxOTguNjk2MzAzLDEuMzg2MzMyMzEgQzE5Ni44MjY5OCwwLjEyNzI4Mzg5MyAxOTQuNTE4NzQxLC0wLjI5ODkxNTc2MiAxOTIuMzIzMDU4LDAuMjA5NTU4MzEyIEMxOTAuMTI3Mzc0LDAuNzE4MDMyMzg2IDE4OC4yNDE0NjEsMi4xMTU1MDkyMiAxODcuMTE1ODg5LDQuMDY4MTEyMzYgQzE4NS4wMDI5NzEsNy42MDMxODYwNyAxODIuMjgwNTU4LDEyLjE5NDcxODYgMTc5LjMxNDM0NywxNy4xMTEzMTUzIEMxNTguMzg4MzM2LDUxLjY0OTM5MTggMTM3LjM0MDQyNiw0Ny40MjM1NTY1IDk5LjM4OTE3NDgsMjkuMzAxMjI0NyBMNDcuMTc1NzI5OSw0LjUxNTA3NTcgQzQ1LjE5MjA2NjEsMy41NzA5MDgyOCA0Mi45MTA2NDc1LDMuNDcwMDg5NzkgNDAuODUxNDMxMiw0LjIzNTU5NzcgQzM4Ljc5MjIxNDksNS4wMDExMDU2MiAzNy4xMzA2NTc4LDYuNTY3NzE0MzQgMzYuMjQ1NDQ0NSw4LjU3ODM3ODgxIEwxMS4wOTM1OTgzLDY1LjQ2NDYyMjMgQzkuMzE2NTc5NDIsNjkuNTI3NTAxMiAxMS4xMjQ3MjY3LDc0LjI2NDg0NzEgMTUuMTU2OTAxNCw3Ni4xMTA0NzY1IEMyNi4yMDkwODU5LDgxLjMxMTUwNDQgNDguMTkxNTU1Nyw5MS42NzI5Mjc0IDY3Ljk3OTg0MTgsMTAxLjIyMTY5IEMxMzkuMzMxNDQ0LDEzNS43NTk3NjYgMTk5LjgzNDAyOCwxMzMuNDQzNjgzIDI0Ni4xMTUwNSw1OC4yMzE5NDI4IFoiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMikiPjwvcGF0aD4KCQk8L2c+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-confluence-v1.7.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-confluence/releases/tag/v1.7.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmleFtIACgkQ0bVLR6XO/sTLXg//VAWyIFpbVUrurGoopqWYAPBYhNQ/VnTgLWFRqAkDmBPn0kEaBroywUzfGsfEZNS7V3cSevjqrLnaHxaeXZR465Nt1vzNw1VJk6BdpiY+ACsIxbB9Zq48DfIAXcYYYbbFI6QVfy7x9P7AeiWtpBkOm4pPUIKVnHQlyJM+V4KfNGgpBfs2eLQmCpZEn9xw4OqNGWtyNdLYHVLa+0VhvHEBg13TbdkMnW4VYKTqpFAl+qLmy8ICOezcGcsWqvkzfG4GaNU+yo27xYE0aCY5yrPafPszO7KzZvbn5scwBCnoybGlT0G16zmoUBWkgIgqjbrvuuKJwHWyMRw+3onLd0ukHmeBV4Mkq2XLFiacVppEgCvnZuRAbzvW3Zuucmkjcq3OtSwnRuA67s6yHNRnslP/rVK1ic3fepDsCV65b9Ka0XNB2wGac51p/M1kPdIIseeQf35oM0C5wEwzAjA2JIBrZugZ8dcYI2CkZcgGiMPKEW7aioa7Ji3r85y92mgAeNPSuO8NkZC/gTioRuNm/wEOOk1U6Ap3N/R5CNYd8ucqm3cGmHVxkI7VmgT1MaCFllQC1jKd9zCLzk2sIRVZ6vzFAlmaKpDQEXLXPLDm4I+biJSoAwbNKm/4sNEyRwzTXY3hIJA1ZE2YBkq6+SdIa7J3pVLObzDySraiHQkwyCZue6g=",
+    "repo_name": "mattermost-plugin-confluence",
+    "manifest": {
+      "id": "com.mattermost.confluence",
+      "name": "Confluence",
+      "description": "Atlassian Confluence plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-confluence",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-confluence/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-confluence/releases/tag/v1.7.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.7.0",
+      "min_server_version": "10.7.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "Secret",
+            "display_name": "Webhook Secret:",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Confluence integrations.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The encryption key used to encrypt tokens.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          },
+          {
+            "key": "AdminAPIToken",
+            "display_name": "Confluence Admin API Token",
+            "type": "text",
+            "help_text": "Set this [API token](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) to get notified for confluence events when the user triggering the event is not connected to Confluence.\n**Note:** API token should be created using an admin Confluence account. Otherwise, the notification will not be delivered for the spaces/pages user does not have access.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-confluence-v1.7.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmleFtIACgkQ0bVLR6XO/sRpXw/+PI2cys/miRE5aVc5JQ0yXYteRY1KrtqRG162bRlCXb4GGbiMcIjAP7S4hMMtV4TB5E7fOqm/oUpcNlAnqoSNoNrKdk/1KYg+LTddI/DbqTKa/emrJt782A1wuAqSi6hbnMsG+gd/zw5mKSXpaiKonQZxVET4xEXZMx54xbw8ZBtkRw5z3+N2MDIID/PTgrCYWUt8YQTH2gYSYlgkEvZscKGMKwegEzDXtlSB1Jgx5TnIhXus7Iqv6Dk5pDHF6BHrTjVywYBW25T+JfVNr/IWM/yyDYQ9dVslVg+aLHEVkM11hqPcCwtwkE1IqlggbZl6+JALA8pGmMyjJklivk1KicSM9avy+Xgmzxq+O/19Gmi8hnPJznRk9ZOBL/uj9Nj1C5kU0g0L9DJoK2s8OyOByGjPgq0PwlnG69hbefXdwqXS9tEbq5rdQ9E+OS2z/sUXWWxltIvHrmIcQoO3r+1KvcatF6qa3jIJfrHIAfWWRLsD+rR+6vrSYu2qMOk2jn5kHpcddff1aKCVBgbhsAngIvFrDg4U/cQyrWGG0yGCBkmpaoP7sua4fChAhrHhyNlcbn5gVi137quDzKjTdyQfzsx4OErC+Z0hGw4kwp52HDBFMGzSfoTisqm9UYNVbF1NS2r2wK2KwV57mfqsgtioJEM2AmeqOJlvt9mu4Y5QHLA="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-confluence-v1.7.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmleFtIACgkQ0bVLR6XO/sSkbRAAgGmYZjzDKiS7ET98nUlzOkLj15kBvUQ7phg4cJRYBjfRvIhW7lO3DKrtfMXh2FRMM2cbws8kdz4Twr6AGBhEaerCPb577ll6QrlTx3nXxDmYeDqjtA4lMayO/CR3F3oSdCa1veBC+4FL75OxThCAvrkltgdlAnTWOtmcustXkG1QgdezSC/4DQHbGg8DqpndF3lPcVYURzL2QaIQl87Uj3ETFb3VEdy1jn72jdv77es4rQ863+KRyuUrRY5WZtYFqljvMNuwPbypjsEQGyiT6DVlc3oGI+NvRPDLH1VepZxH4YW7iQVI7GsuDRDQcoSKl6DNYCo1gUvvn6jXARBLH7M1a78DqfTzA2gIvmxM4wD3F1+53Qe20QOk0Xw3SRzinjFF2LddDLtE40aUGwCfbzyV2YBjc2BR5yZgylY1ff4eY8OUbxAx+lo8zu3mLfQT1L2TXBI7dugLdC1ws7Xqr39Y4tVG9+2qOGtdQcrGQWMF0m706XqxI8JhXj/C4rasdm6BN8hoFvdNeFHyWY5bggQooU7F+YQluT6waX7000JdpEI9RIeUGQRofAydmm0PkmWWAEEeUq7lHligTuH1atnwaB5KnjtKhS0K5OQO7PqIHYAU+EyFTTcN4zMIdIur1OAmrEMeM9hdwleh97En3PwjQdch0DWUrPJ2DM0usJw="
+      }
+    },
+    "updated_at": "2026-01-07T08:23:11.406309Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-confluence",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjU2IDI0NiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9Ijk5LjE0MDA4NyUiIHkxPSIxMTIuNzA4MDg0JSIgeDI9IjMzLjg1ODk4MTIlIiB5Mj0iMzcuNzU0OTYwNiUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzAwNTJDQyIgb2Zmc2V0PSIxOCUiPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzI2ODRGRiIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAuOTI1NjkxNjMlIiB5MT0iLTEyLjU4MjMwNzQlIiB4Mj0iNjYuMTgwMDcxMyUiIHkyPSI2Mi4zMDU3NDcxJSIgaWQ9ImxpbmVhckdyYWRpZW50LTIiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDA1MkNDIiBvZmZzZXQ9IjE4JSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjY4NEZGIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGc+CgkJCQk8cGF0aCBkPSJNOS4yNjA1NDQ4NCwxODcuMzI5OTcxIEM2LjYxOTM5NzgyLDE5MS42MzcwNzIgMy42NTMxODY1NSwxOTYuNjM0OTM1IDEuMTMzOTM4NjMsMjAwLjYxNjk3MiBDLTEuMTIwOTgzODUsMjA0LjQyNzUxIDAuMDg5NTQ4Nzk0NSwyMDkuMzQxOTExIDMuODU2MzUxNzEsMjExLjY2OTE1NyBMNTYuNjc5MjkyMSwyNDQuMTc1NTgyIEM1OC41MzM0ODU5LDI0NS4zMjAzOTMgNjAuNzY5NzY5NSwyNDUuNjcyNTcgNjIuODg2MDY4MywyNDUuMTUzMDQ1IEM2NS4wMDIzNjcyLDI0NC42MzM1MjEgNjYuODIxMzUzNiwyNDMuMjg1ODI2IDY3LjkzNDY0MTcsMjQxLjQxMjUzNiBDNzAuMDQ3NTU5MywyMzcuODc3NDYyIDcyLjc2OTk3MjQsMjMzLjI4NTkyOSA3NS43MzYxODM3LDIyOC4zNjkzMzMgQzk2LjY2MjE5NDcsMTkzLjgzMTI1NiAxMTcuNzEwMTA1LDE5OC4wNTcwOTEgMTU1LjY2MTM1NiwyMTYuMTc5NDIzIEwyMDguMDM3MzMzLDI0MS4wODc0NzEgQzIxMC4wMjA5OTcsMjQyLjAzMTYzOSAyMTIuMzAyNDE1LDI0Mi4xMzI0NTcgMjE0LjM2MTYzMiwyNDEuMzY2OTQ5IEMyMTYuNDIwODQ4LDI0MC42MDE0NDEgMjE4LjA4MjQwNSwyMzkuMDM0ODMzIDIxOC45Njc2MTgsMjM3LjAyNDE2OCBMMjQ0LjExOTQ2NCwxODAuMTM3OTI1IEMyNDUuODk2NDgzLDE3Ni4wNzUwNDYgMjQ0LjA4ODMzNiwxNzEuMzM3NyAyNDAuMDU2MTYxLDE2OS40OTIwNzEgQzIyOS4wMDM5NzcsMTY0LjI5MTA0MyAyMDcuMDIxNTA3LDE1My45Mjk2MiAxODcuMjMzMjIxLDE0NC4zODA4NTcgQzExNi4wNDQxNTEsMTA5LjgwMjE0OCA1NS41NDE1NjcyLDExMi4wMzY5NjUgOS4yNjA1NDQ4NCwxODcuMzI5OTcxIFoiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiPjwvcGF0aD4KCQkJCTxwYXRoIGQ9Ik0yNDYuMTE1MDUsNTguMjMxOTQyOCBDMjQ4Ljc1NjE5Nyw1My45MjQ4NDE1IDI1MS43MjI0MDgsNDguOTI2OTc4NyAyNTQuMjQxNjU2LDQ0Ljk0NDk0MTYgQzI1Ni40OTY1NzksNDEuMTM0NDAzNyAyNTUuMjg2MDQ2LDM2LjIyMDAwMjUgMjUxLjUxOTI0MywzMy44OTI3NTcyIEwxOTguNjk2MzAzLDEuMzg2MzMyMzEgQzE5Ni44MjY5OCwwLjEyNzI4Mzg5MyAxOTQuNTE4NzQxLC0wLjI5ODkxNTc2MiAxOTIuMzIzMDU4LDAuMjA5NTU4MzEyIEMxOTAuMTI3Mzc0LDAuNzE4MDMyMzg2IDE4OC4yNDE0NjEsMi4xMTU1MDkyMiAxODcuMTE1ODg5LDQuMDY4MTEyMzYgQzE4NS4wMDI5NzEsNy42MDMxODYwNyAxODIuMjgwNTU4LDEyLjE5NDcxODYgMTc5LjMxNDM0NywxNy4xMTEzMTUzIEMxNTguMzg4MzM2LDUxLjY0OTM5MTggMTM3LjM0MDQyNiw0Ny40MjM1NTY1IDk5LjM4OTE3NDgsMjkuMzAxMjI0NyBMNDcuMTc1NzI5OSw0LjUxNTA3NTcgQzQ1LjE5MjA2NjEsMy41NzA5MDgyOCA0Mi45MTA2NDc1LDMuNDcwMDg5NzkgNDAuODUxNDMxMiw0LjIzNTU5NzcgQzM4Ljc5MjIxNDksNS4wMDExMDU2MiAzNy4xMzA2NTc4LDYuNTY3NzE0MzQgMzYuMjQ1NDQ0NSw4LjU3ODM3ODgxIEwxMS4wOTM1OTgzLDY1LjQ2NDYyMjMgQzkuMzE2NTc5NDIsNjkuNTI3NTAxMiAxMS4xMjQ3MjY3LDc0LjI2NDg0NzEgMTUuMTU2OTAxNCw3Ni4xMTA0NzY1IEMyNi4yMDkwODU5LDgxLjMxMTUwNDQgNDguMTkxNTU1Nyw5MS42NzI5Mjc0IDY3Ljk3OTg0MTgsMTAxLjIyMTY5IEMxMzkuMzMxNDQ0LDEzNS43NTk3NjYgMTk5LjgzNDAyOCwxMzMuNDQzNjgzIDI0Ni4xMTUwNSw1OC4yMzE5NDI4IFoiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMikiPjwvcGF0aD4KCQk8L2c+Cjwvc3ZnPgo=",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-confluence-v1.7.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-confluence/releases/tag/v1.7.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmleFtIACgkQ0bVLR6XO/sTLXg//VAWyIFpbVUrurGoopqWYAPBYhNQ/VnTgLWFRqAkDmBPn0kEaBroywUzfGsfEZNS7V3cSevjqrLnaHxaeXZR465Nt1vzNw1VJk6BdpiY+ACsIxbB9Zq48DfIAXcYYYbbFI6QVfy7x9P7AeiWtpBkOm4pPUIKVnHQlyJM+V4KfNGgpBfs2eLQmCpZEn9xw4OqNGWtyNdLYHVLa+0VhvHEBg13TbdkMnW4VYKTqpFAl+qLmy8ICOezcGcsWqvkzfG4GaNU+yo27xYE0aCY5yrPafPszO7KzZvbn5scwBCnoybGlT0G16zmoUBWkgIgqjbrvuuKJwHWyMRw+3onLd0ukHmeBV4Mkq2XLFiacVppEgCvnZuRAbzvW3Zuucmkjcq3OtSwnRuA67s6yHNRnslP/rVK1ic3fepDsCV65b9Ka0XNB2wGac51p/M1kPdIIseeQf35oM0C5wEwzAjA2JIBrZugZ8dcYI2CkZcgGiMPKEW7aioa7Ji3r85y92mgAeNPSuO8NkZC/gTioRuNm/wEOOk1U6Ap3N/R5CNYd8ucqm3cGmHVxkI7VmgT1MaCFllQC1jKd9zCLzk2sIRVZ6vzFAlmaKpDQEXLXPLDm4I+biJSoAwbNKm/4sNEyRwzTXY3hIJA1ZE2YBkq6+SdIa7J3pVLObzDySraiHQkwyCZue6g=",
+    "repo_name": "mattermost-plugin-confluence",
+    "manifest": {
+      "id": "com.mattermost.confluence",
+      "name": "Confluence",
+      "description": "Atlassian Confluence plugin for Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-confluence",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-confluence/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-confluence/releases/tag/v1.7.0",
+      "icon_path": "assets/icon.svg",
+      "version": "1.7.0",
+      "min_server_version": "10.7.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "Secret",
+            "display_name": "Webhook Secret:",
+            "type": "generated",
+            "help_text": "The secret used to authenticate the webhook to Mattermost.",
+            "regenerate_help_text": "Regenerates the secret for the webhook URL endpoint. Regenerating the secret invalidates your existing Confluence integrations.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The encryption key used to encrypt tokens.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          },
+          {
+            "key": "AdminAPIToken",
+            "display_name": "Confluence Admin API Token",
+            "type": "text",
+            "help_text": "Set this [API token](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html) to get notified for confluence events when the user triggering the event is not connected to Confluence.\n**Note:** API token should be created using an admin Confluence account. Otherwise, the notification will not be delivered for the spaces/pages user does not have access.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-confluence-v1.7.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmleFtIACgkQ0bVLR6XO/sRpXw/+PI2cys/miRE5aVc5JQ0yXYteRY1KrtqRG162bRlCXb4GGbiMcIjAP7S4hMMtV4TB5E7fOqm/oUpcNlAnqoSNoNrKdk/1KYg+LTddI/DbqTKa/emrJt782A1wuAqSi6hbnMsG+gd/zw5mKSXpaiKonQZxVET4xEXZMx54xbw8ZBtkRw5z3+N2MDIID/PTgrCYWUt8YQTH2gYSYlgkEvZscKGMKwegEzDXtlSB1Jgx5TnIhXus7Iqv6Dk5pDHF6BHrTjVywYBW25T+JfVNr/IWM/yyDYQ9dVslVg+aLHEVkM11hqPcCwtwkE1IqlggbZl6+JALA8pGmMyjJklivk1KicSM9avy+Xgmzxq+O/19Gmi8hnPJznRk9ZOBL/uj9Nj1C5kU0g0L9DJoK2s8OyOByGjPgq0PwlnG69hbefXdwqXS9tEbq5rdQ9E+OS2z/sUXWWxltIvHrmIcQoO3r+1KvcatF6qa3jIJfrHIAfWWRLsD+rR+6vrSYu2qMOk2jn5kHpcddff1aKCVBgbhsAngIvFrDg4U/cQyrWGG0yGCBkmpaoP7sua4fChAhrHhyNlcbn5gVi137quDzKjTdyQfzsx4OErC+Z0hGw4kwp52HDBFMGzSfoTisqm9UYNVbF1NS2r2wK2KwV57mfqsgtioJEM2AmeqOJlvt9mu4Y5QHLA="
+      },
+      "darwin-amd64": {},
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-confluence-v1.7.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmleFtIACgkQ0bVLR6XO/sSkbRAAgGmYZjzDKiS7ET98nUlzOkLj15kBvUQ7phg4cJRYBjfRvIhW7lO3DKrtfMXh2FRMM2cbws8kdz4Twr6AGBhEaerCPb577ll6QrlTx3nXxDmYeDqjtA4lMayO/CR3F3oSdCa1veBC+4FL75OxThCAvrkltgdlAnTWOtmcustXkG1QgdezSC/4DQHbGg8DqpndF3lPcVYURzL2QaIQl87Uj3ETFb3VEdy1jn72jdv77es4rQ863+KRyuUrRY5WZtYFqljvMNuwPbypjsEQGyiT6DVlc3oGI+NvRPDLH1VepZxH4YW7iQVI7GsuDRDQcoSKl6DNYCo1gUvvn6jXARBLH7M1a78DqfTzA2gIvmxM4wD3F1+53Qe20QOk0Xw3SRzinjFF2LddDLtE40aUGwCfbzyV2YBjc2BR5yZgylY1ff4eY8OUbxAx+lo8zu3mLfQT1L2TXBI7dugLdC1ws7Xqr39Y4tVG9+2qOGtdQcrGQWMF0m706XqxI8JhXj/C4rasdm6BN8hoFvdNeFHyWY5bggQooU7F+YQluT6waX7000JdpEI9RIeUGQRofAydmm0PkmWWAEEeUq7lHligTuH1atnwaB5KnjtKhS0K5OQO7PqIHYAU+EyFTTcN4zMIdIur1OAmrEMeM9hdwleh97En3PwjQdch0DWUrPJ2DM0usJw="
+      }
+    },
+    "updated_at": "2026-01-07T08:24:57.53048Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-confluence",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgMjU2IDI0NiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9Ijk5LjE0MDA4NyUiIHkxPSIxMTIuNzA4MDg0JSIgeDI9IjMzLjg1ODk4MTIlIiB5Mj0iMzcuNzU0OTYwNiUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzAwNTJDQyIgb2Zmc2V0PSIxOCUiPjwvc3RvcD4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzI2ODRGRiIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAuOTI1NjkxNjMlIiB5MT0iLTEyLjU4MjMwNzQlIiB4Mj0iNjYuMTgwMDcxMyUiIHkyPSI2Mi4zMDU3NDcxJSIgaWQ9ImxpbmVhckdyYWRpZW50LTIiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMDA1MkNDIiBvZmZzZXQ9IjE4JSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjMjY4NEZGIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGc+CgkJCQk8cGF0aCBkPSJNOS4yNjA1NDQ4NCwxODcuMzI5OTcxIEM2LjYxOTM5NzgyLDE5MS42MzcwNzIgMy42NTMxODY1NSwxOTYuNjM0OTM1IDEuMTMzOTM4NjMsMjAwLjYxNjk3MiBDLTEuMTIwOTgzODUsMjA0LjQyNzUxIDAuMDg5NTQ4Nzk0NSwyMDkuMzQxOTExIDMuODU2MzUxNzEsMjExLjY2OTE1NyBMNTYuNjc5MjkyMSwyNDQuMTc1NTgyIEM1OC41MzM0ODU5LDI0NS4zMjAzOTMgNjAuNzY5NzY5NSwyNDUuNjcyNTcgNjIuODg2MDY4MywyNDUuMTUzMDQ1IEM2NS4wMDIzNjcyLDI0NC42MzM1MjEgNjYuODIxMzUzNiwyNDMuMjg1ODI2IDY3LjkzNDY0MTcsMjQxLjQxMjUzNiBDNzAuMDQ3NTU5MywyMzcuODc3NDYyIDcyLjc2OTk3MjQsMjMzLjI4NTkyOSA3NS43MzYxODM3LDIyOC4zNjkzMzMgQzk2LjY2MjE5NDcsMTkzLjgzMTI1NiAxMTcuNzEwMTA1LDE5OC4wNTcwOTEgMTU1LjY2MTM1NiwyMTYuMTc5NDIzIEwyMDguMDM3MzMzLDI0MS4wODc0NzEgQzIxMC4wMjA5OTcsMjQyLjAzMTYzOSAyMTIuMzAyNDE1LDI0Mi4xMzI0NTcgMjE0LjM2MTYzMiwyNDEuMzY2OTQ5IEMyMTYuNDIwODQ4LDI0MC42MDE0NDEgMjE4LjA4MjQwNSwyMzkuMDM0ODMzIDIxOC45Njc2MTgsMjM3LjAyNDE2OCBMMjQ0LjExOTQ2NCwxODAuMTM3OTI1IEMyNDUuODk2NDgzLDE3Ni4wNzUwNDYgMjQ0LjA4ODMzNiwxNzEuMzM3NyAyNDAuMDU2MTYxLDE2OS40OTIwNzEgQzIyOS4wMDM5NzcsMTY0LjI5MTA0MyAyMDcuMDIxNTA3LDE1My45Mjk2MiAxODcuMjMzMjIxLDE0NC4zODA4NTcgQzExNi4wNDQxNTEsMTA5LjgwMjE0OCA1NS41NDE1NjcyLDExMi4wMzY5NjUgOS4yNjA1NDQ4NCwxODcuMzI5OTcxIFoiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiPjwvcGF0aD4KCQkJCTxwYXRoIGQ9Ik0yNDYuMTE1MDUsNTguMjMxOTQyOCBDMjQ4Ljc1NjE5Nyw1My45MjQ4NDE1IDI1MS43MjI0MDgsNDguOTI2OTc4NyAyNTQuMjQxNjU2LDQ0Ljk0NDk0MTYgQzI1Ni40OTY1NzksNDEuMTM0NDAzNyAyNTUuMjg2MDQ2LDM2LjIyMDAwMjUgMjUxLjUxOTI0MywzMy44OTI3NTcyIEwxOTguNjk2MzAzLDEuMzg2MzMyMzEgQzE5Ni44MjY5OCwwLjEyNzI4Mzg5MyAxOTQuNTE4NzQxLC0wLjI5ODkxNTc2MiAxOTIuMzIzMDU4LDAuMjA5NTU4MzEyIEMxOTAuMTI3Mzc0LDAuNzE4MDMyMzg2IDE4OC4yNDE0NjEsMi4xMTU1MDkyMiAxODcuMTE1ODg5LDQuMDY4MTEyMzYgQzE4NS4wMDI5NzEsNy42MDMxODYwNyAxODIuMjgwNTU4LDEyLjE5NDcxODYgMTc5LjMxNDM0NywxNy4xMTEzMTUzIEMxNTguMzg4MzM2LDUxLjY0OTM5MTggMTM3LjM0MDQyNiw0Ny40MjM1NTY1IDk5LjM4OTE3NDgsMjkuMzAxMjI0NyBMNDcuMTc1NzI5OSw0LjUxNTA3NTcgQzQ1LjE5MjA2NjEsMy41NzA5MDgyOCA0Mi45MTA2NDc1LDMuNDcwMDg5NzkgNDAuODUxNDMxMiw0LjIzNTU5NzcgQzM4Ljc5MjIxNDksNS4wMDExMDU2MiAzNy4xMzA2NTc4LDYuNTY3NzE0MzQgMzYuMjQ1NDQ0NSw4LjU3ODM3ODgxIEwxMS4wOTM1OTgzLDY1LjQ2NDYyMjMgQzkuMzE2NTc5NDIsNjkuNTI3NTAxMiAxMS4xMjQ3MjY3LDc0LjI2NDg0NzEgMTUuMTU2OTAxNCw3Ni4xMTA0NzY1IEMyNi4yMDkwODU5LDgxLjMxMTUwNDQgNDguMTkxNTU1Nyw5MS42NzI5Mjc0IDY3Ljk3OTg0MTgsMTAxLjIyMTY5IEMxMzkuMzMxNDQ0LDEzNS43NTk3NjYgMTk5LjgzNDAyOCwxMzMuNDQzNjgzIDI0Ni4xMTUwNSw1OC4yMzE5NDI4IFoiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMikiPjwvcGF0aD4KCQk8L2c+Cjwvc3ZnPgo=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-confluence-v1.6.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-confluence/releases/tag/v1.6.0",
     "hosting": "",
