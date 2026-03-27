@@ -36327,10 +36327,10 @@
     "updated_at": "2025-01-10T13:57:06.235812976Z"
   },
   {
-    "homepage_url": "",
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-wrangler",
     "icon_data": "",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-wrangler-v1.0.0.tar.gz",
-    "release_notes_url": "",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-wrangler/releases/tag/v1.0.0",
     "hosting": "",
     "author_type": "mattermost",
     "release_stage": "production",
