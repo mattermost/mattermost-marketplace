@@ -36327,6 +36327,195 @@
     "updated_at": "2025-01-10T13:57:06.235812976Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-wrangler",
+    "icon_data": "",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-wrangler-v1.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-wrangler/releases/tag/v1.0.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmnGiAoACgkQ0bVLR6XO/sRVSRAAg1ZrTEdyA8RMBAYucLcUFRN8W/jK9UNGQFjJnh65I0SvrlN/d/H9ejUZzPU8AChTdX3iRSnnNfgi7CcGOr+D95T6kK3wwdqVbnPItTgEah2NGo8dv3a8eXK+ek3mxiJd4MqXez5dmWMyYaX9VQDAnDz3br29sDFWJBX+F4+JuAspyHg9d8gHvLOEfYtelKeawyIp3CyjnscLHfAjSpFSezs9yUXOPm6g6z0YhyqvHnuQzJ3ibJyRFArqaoT0vh3HJol3lttk7+eakbMvhv2gF9nYVyGjB0iHgEn5NCO1fD/JdOcabbVmhznhaEEEgBOhfC279GRfXE7zuwD9vPa4noIXDtGt8Uht/3/dNGwYISSZCrJ7DZUnZ7yMoUGrKg5wjk/+aAxHBgm2LZrIOKutT6ZIiJmjPhRCH304cJg/CBqh1CWxQ2UFlHVFqPPtl2MeJWWa9drCdmxeLxYqnDyzK3JFnybHjlz2iLGevlaG0pJPqduXCmKe4u7Lgl/9ndokZfvvAKJN7Ej0COO/p1po+QDBRcQ7jhwFKRpbDwq1eaCKTOIfocYCvawhRvtST5FGYvyB66zPsvlmgG6oYLb2lm1dswSG2Cb8fBs966E/xPQhsBkg6CiJcuAzju7tDzjp1aEa0QQYiNqyT+Ge9m3e02mnecE8VPd72VJIttXk9tQ=",
+    "repo_name": "mattermost-plugin-wrangler",
+    "manifest": {
+      "id": "com.mattermost.wrangler",
+      "name": "Wrangler",
+      "description": "Manage messages across teams and channels",
+      "version": "1.0.0",
+      "min_server_version": "10.11.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "freebsd-amd64": "server/dist/plugin-freebsd-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "PermittedWranglerUsers",
+            "display_name": "Permitted Wrangler Users",
+            "type": "dropdown",
+            "help_text": "Choose who is allowed to use the Wrangler plugin. (Other permissions below still apply)",
+            "placeholder": "",
+            "default": "system-admins",
+            "options": [
+              {
+                "display_name": "System administrators only",
+                "value": "system-admins"
+              },
+              {
+                "display_name": "System administrators and users from the 'Allowed Email Domain' list",
+                "value": "system-admins-and-email-domain"
+              },
+              {
+                "display_name": "All users",
+                "value": "all-users"
+              }
+            ],
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "AllowedEmailDomain",
+            "display_name": "Allowed Email Domain",
+            "type": "text",
+            "help_text": "(Optional) When set, users must have an email ending in this domain to use Wrangler. Multiple domains can be specified by separating them with commas. This also supports full email address matching if you want to limit plugin usage to specific users.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableWebUI",
+            "display_name": "Enable Wrangler webapp functionality [BETA]",
+            "type": "bool",
+            "help_text": "Enable the work-in-progress Wrangler webapp functionality.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "CommandAutoCompleteEnable",
+            "display_name": "Enable Wrangler Command AutoComplete",
+            "type": "bool",
+            "help_text": "Control whether command autocomplete is enabled or not. If enabled and Allowed Email Domain is set, then some users will be able to see the Wrangler commands, but will be unable to run them.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadMaxCount",
+            "display_name": "Max Thread Count Move Size",
+            "type": "text",
+            "help_text": "The maximum number of messages in a thread that the plugin is allowed to move. Leave empty for unlimited messages.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadToAnotherTeamEnable",
+            "display_name": "Enable Moving Threads To Different Teams",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to move message threads from one team to another or not.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadFromPrivateChannelEnable",
+            "display_name": "Enable Moving Threads From Private Channels",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to move message threads from private channels or not.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadFromDirectMessageChannelEnable",
+            "display_name": "Enable Moving Threads From Direct Message Channels",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to move message threads from direct message channels or not.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadFromGroupMessageChannelEnable",
+            "display_name": "Enable Moving Threads From Group Message Channels",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to move message threads from group message channels or not.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MergeThreadEnable",
+            "display_name": "Enable Merging Threads [BETA]",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to merge message threads. Depending on other plugin settings these threads can be merged across channels and teams. Note that message timestamps are preserved when threads are merged which could result in unexpected or confusing message ordering.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "ThreadAttachMessage",
+            "display_name": "Info-Message: Attached a Message",
+            "type": "text",
+            "help_text": "The message being sent to the user after attaching his message to a thread. Allowed variables: {executor}, {postLink}",
+            "placeholder": "",
+            "default": "@{executor} wrangled one of your messages into a thread for you: {postLink}",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadMessage",
+            "display_name": "Info-Message: Moved a Thread",
+            "type": "text",
+            "help_text": "The message being sent to the user after moving a thread. Allowed variables: {executor}, {postLink}",
+            "placeholder": "",
+            "default": "@{executor} wrangled a thread you started to a new channel for you: {postLink}",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "CopyThreadMessage",
+            "display_name": "Info-Message: Copied a Thread",
+            "type": "text",
+            "help_text": "The message being sent to the user after copying a message. Allowed variables: {executor}, {postLink}",
+            "placeholder": "",
+            "default": "@{executor} copied a thread you started to a new channel for you: {postLink}",
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {},
+      "darwin-amd64": {},
+      "windows-amd64": {}
+    },
+    "updated_at": "2026-03-27T13:39:59.021924Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-github-v2.6.0.tar.gz",
