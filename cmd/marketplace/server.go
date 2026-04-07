@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"strings"
 	"time"
 
 	"github.com/gorilla/mux"
@@ -29,6 +30,8 @@ func init() {
 	instanceID = model.NewId()
 
 	serverCmd.PersistentFlags().String("database", "plugins.json", "The read-only JSON file backing the server.")
+	serverCmd.PersistentFlags().String("database-url", "", "A remote URL to fetch plugins.json from (e.g. a raw GitLab/GitHub URL). Overrides --database.")
+	serverCmd.PersistentFlags().Duration("database-refresh-interval", 5*time.Minute, "How often to re-fetch plugins from --database-url.")
 	serverCmd.PersistentFlags().String("listen", ":8085", "The interface and port on which to listen.")
 	serverCmd.PersistentFlags().String("upstream", upstreamURL, "An upstream marketplace server with which to merge results.")
 	serverCmd.PersistentFlags().Bool("debug", false, "Whether to output debug logs.")
@@ -45,24 +48,40 @@ var serverCmd = &cobra.Command{
 			logger.SetLevel(logrus.DebugLevel)
 		}
 
-		database, _ := command.Flags().GetString("database")
-		databaseFile, err := os.Open(database)
-		if err != nil {
-			return errors.Wrapf(err, "failed to open %s", database)
-		}
-		defer databaseFile.Close()
-
 		var apiStore store.Store
 
-		apiStore, err = store.NewStaticFromReader(databaseFile, logger)
-		if err != nil {
-			return errors.Wrap(err, "failed to initialize store")
+		databaseURL, _ := command.Flags().GetString("database-url")
+		if databaseURL != "" && strings.HasPrefix(databaseURL, "http") {
+			refreshInterval, _ := command.Flags().GetDuration("database-refresh-interval")
+			logger.WithFields(logrus.Fields{
+				"url":      databaseURL,
+				"interval": refreshInterval,
+			}).Info("Using remote database URL")
+
+			remoteStore, remoteErr := store.NewRemote(databaseURL, refreshInterval, logger)
+			if remoteErr != nil {
+				return errors.Wrap(remoteErr, "failed to initialize remote store")
+			}
+			defer remoteStore.Stop()
+			apiStore = remoteStore
+		} else {
+			database, _ := command.Flags().GetString("database")
+			databaseFile, fileErr := os.Open(database)
+			if fileErr != nil {
+				return errors.Wrapf(fileErr, "failed to open %s", database)
+			}
+			defer databaseFile.Close()
+
+			var staticErr error
+			apiStore, staticErr = store.NewStaticFromReader(databaseFile, logger)
+			if staticErr != nil {
+				return errors.Wrap(staticErr, "failed to initialize store")
+			}
 		}
 
 		upstreamURL, _ := command.Flags().GetString("upstream")
 		if upstreamURL != "" {
-			var upstreamStore *store.Proxy
-			upstreamStore, err = store.NewProxy(upstreamURL, logger)
+			upstreamStore, err := store.NewProxy(upstreamURL, logger)
 			if err != nil {
 				return errors.Wrap(err, "failed to initialize upstream store")
 			}
@@ -112,8 +131,7 @@ var serverCmd = &cobra.Command{
 
 		ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 		defer cancel()
-		err = srv.Shutdown(ctx)
-		if err != nil {
+		if err := srv.Shutdown(ctx); err != nil {
 			logger.WithField("err", err).Error("Failed to shutdown")
 		}
 
