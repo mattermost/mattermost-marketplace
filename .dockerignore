@@ -1,0 +1,6 @@
+dist/
+.git/
+*.md
+.github/
+node_modules/
+custom-plugins.json
