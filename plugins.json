@@ -36477,7 +36477,7 @@
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-scim",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQxcHgiIGhlaWdodD0iMjQwcHgiIHZpZXdCb3g9IjAgMCAyNDEgMjQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ni4yICg0NDQ5NikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Ymx1ZS1pY29uPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IjA2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjgxLjAwMDAwMCwgLTU3Mi4wMDAwMDApIiBmaWxsPSIjMTg3NUYwIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYyNi4wMDAwMDAsIDUxNy4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMTYuOTA4MTgxLDE1My4xMjc3MDUgQzIxNi45MDgxODEsMTUzLjEyNzcwNSAyMTcuMjgwNTg4LDE2OS40NTI1MjYgMjA1LjkyODc1NCwxODAuNTQzMDM1IEMxOTQuNTc1NDYsMTkxLjYzMzU0NCAxODAuNjMxMzgzLDE5MC42MTk4ODcgMTcxLjU2MDcyMiwxODcuNTU3MDcyIEMxNjIuNDg4NjAyLDE4NC40OTQyNTYgMTUwLjc5NTAzLDE3Ni44NTI1MSAxNDguNTMxMzgxLDE2MS4xNjcwNSBDMTQ2LjI2OTE5MywxNDUuNDgwMTMzIDE1Ni41MDgxODgsMTMyLjczNjYwNyAxNTYuNTA4MTg4LDEzMi43MzY2MDcgTDE3OC44MjA0NjMsMTA1LjA2NjQwNyBMMTkxLjgxNTI2OCw4OS4yNjI5Nzc5IEwyMDIuOTY5OTQ2LDc1LjQ5MTIzMTMgQzIwMi45Njk5NDYsNzUuNDkxMjMxMyAyMDguMDg4NzEzLDY4LjY1MzQxOTMgMjA5LjU0NzY3MSw2Ny4yNDIxNjQ4IEMyMDkuODM2ODM0LDY2Ljk2MjUzNTQgMjEwLjEzMzI5OSw2Ni43NzkwMjg2IDIxMC40MjM5MjMsNjYuNjM3NzU3NiBMMjEwLjYzNTY4Myw2Ni41Mjk5ODM3IEwyMTAuNjczNjU0LDY2LjUxNTQxOTcgQzIxMS4yODcwMyw2Ni4yNTE4MTA4IDIxMS45OTM4NzMsNjYuMTk1MDExIDIxMi42NzU4ODgsNjYuNDI1MTIyNyBDMjEzLjM0MzI5OSw2Ni42NTA4NjUyIDIxMy44NjAyODgsNjcuMTA4MTc1NyAyMTQuMTg3NDIxLDY3LjY3MTgwMzcgTDIxNC4yNTYwNjEsNjcuNzgxMDMzOSBMMjE0LjMxNTkzOCw2Ny45MDYyODQ2IEMyMTQuNDc1MTI0LDY4LjIwNjMwMzYgMjE0LjYwODAyMiw2OC41NDg1NTgzIDIxNC42NzA4Miw2OC45NzA5MTUxIEMyMTQuOTY4NzQ1LDcwLjk3NjM4MiAyMTQuODcwODk3LDc5LjUwOTQ0NzEgMjE0Ljg3MDg5Nyw3OS41MDk0NDcxIEwyMTUuMzQyNjEzLDk3LjIwNDc0MzQgTDIxNi4wMzkyMzIsMTE3LjYzMDc5NSBMMjE2LjkwODE4MSwxNTMuMTI3NzA1IFogTTI0NS43OTA1ODcsNzguMjA0MzI2MSBDMjg3LjA1NzIxMiwxMDguMTU1MjUzIDMwNS45ODI5MTUsMTYyLjUwOTY2OSAyODguNzc0Mjg4LDIxMy4zNDY4NzIgQzI2Ny41OTQxMDQsMjc1LjkxMTAzMSAxOTkuNzA2MjQ1LDMwOS40NjA3MyAxMzcuMTQyOTI1LDI4OC4yODE3MTggQzc0LjU3OTYwNDgsMjY3LjEwMTI1IDQxLjAzMTgxMiwxOTkuMjEzOTM3IDYyLjIxMDU0MDIsMTM2LjY0OTc3OCBDNzkuNDQ4Mjk0Nyw4NS43Mjk1NjAzIDEyNy42MjU0NTksNTQuMDMyNDA1NyAxNzguNjkwNjMyLDU1LjQxNDUzMjIgTDE2Mi4zMjIzMzksNzQuNzU0MTA3NCBDMTMyLjAyODEwNiw4MC4yMzE2MzkgMTA1Ljg3MTQ2LDEwMC45MTk4NDMgOTUuNTkwODQ4OSwxMzEuMjkwMjE1IEM4MC4yOTQ0NTM1LDE3Ni40NzUxMTcgMTA1LjkzMjYyOCwyMjUuOTgyNjI0IDE1Mi44NTU4NDYsMjQxLjg2NjE1NSBDMTk5Ljc3NzYwOCwyNTcuNzUxMTQyIDI1MC4yMTY1MzYsMjMzLjk5ODY2NiAyNjUuNTEyOTMyLDE4OC44MTM3NjQgQzI3NS43NjAwNDYsMTU4LjU0Mzg4NCAyNjcuNjM0ODgyLDEyNi4zMzY5ODggMjQ3LjA1MDM1OSwxMDMuNTk1MjU2IEwyNDUuNzkwNTg3LDc4LjIwNDMyNjEgWiIgaWQ9ImJsdWUtaWNvbiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-scim-v0.3.0.tar.gz",
-    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-scim/releases/tag/v0.1.0",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-scim/releases/tag/v0.3.0",
     "hosting": "",
     "author_type": "mattermost",
     "release_stage": "production",
@@ -36490,7 +36490,7 @@
       "description": "SCIM 2.0 provisioning for Mattermost - enables real-time user provisioning and deprovisioning from identity providers.",
       "homepage_url": "https://github.com/mattermost/mattermost-plugin-scim",
       "support_url": "https://github.com/mattermost/mattermost-plugin-scim/issues",
-      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-scim/releases/tag/v0.1.0",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-scim/releases/tag/v0.3.0",
       "icon_path": "assets/starter-template-icon.svg",
       "version": "0.1.0",
       "min_server_version": "6.2.1",
@@ -36527,12 +36527,12 @@
     },
     "platforms": {
       "linux-amd64": {
-        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-scim-v0.1.0-linux-amd64.tar.gz",
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-scim-v0.3.0-linux-amd64.tar.gz",
         "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmmLrNYACgkQ0bVLR6XO/sTAqA/9FHw84z9zBH/LrsTEGk36ZPHjYOzswxyXhaNnliu3Ae4YxnS8DgmaZC7Jzc26gjok8fQx+AB4H7bCwWaJ9hzvKgpTJWRpyYF/VsZs7NQCBlV7kAEecIM1AAHxKKD3mNlgZmOkpnOpMCJBta8qYmuxl8rR8+hTRb90PSzKB9fg/5mpi7zDkVcqRTc+Z7QWBXqjLizYJONGgAwtOLz+IQS9TEfiD+OYhZChk9lX8fFue2MJZhN8OWIULVcjctU0XzePl4iQkKqRXUulT0s6+pWcE+dKhlWmdPLdD5wiw/qvvGTWU/wBOBvraWNsl92w/6M5gsDUXa+oYqGaG9P3VRFF1QEqabE3XdyuRwJixxV746AB/VfnweHkD23cKFE3WvRpRO6gYfEev2y6Dqq0wgt8PUMk5hFW5u7LKBvFrjLJx8J8s9KhfmHKGLp5nlVNgs7uRvVUOSLYjBU0nDfY1tgjVA41aPXujElZogbfjL+pjX9aG0hJhEx6JACdUoUJV4e0yOvPIOfp0T7PplYjVClWZs2oFGL7JWi2tLGBUnnEKqHC4liSvvHKUKsZiJGz33FdC3ors/mkdYvBq5EvkmLLQ1My4rKmUXGKKC4SCKmgUqFNB4MdlSE6pYtLm2PFcwyymyp08s8lhdx4Bx3wxI0hpJxVkSlC58QIslLoD0PBgYk="
       },
       "darwin-amd64": {},
       "windows-amd64": {
-        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-scim-v0.1.0-windows-amd64.tar.gz",
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-scim-v0.3.0-windows-amd64.tar.gz",
         "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmmLrNYACgkQ0bVLR6XO/sTjFw/+OpXw6aE5Br+c0KhivK6+HxyBAXjloeWuSLPueLw7xMMe5ZTCniVp9B69XAjF6qMyINXNDoLKgh8KenSiU7jkNMPykuf+WVpS5KFdppQdPkMOfGb2ZUIuHJ/gebUIw5twNgwqMT1iBCLZKfffKfycAnq6mBPa06op4Mz2nic8zoL6H8fZcLwEKvXAHIgNNh8AqRWjFqpl+p24RmECrmk6f4lSuCmZo+Z7vj8L8wXEwMt4fIGl1yIeYh860nvBUQT094P8ScN9V3h2FOaGUFqBnZcDu2VXz71C2yC7YE/cv50q3wlRpuj7E6JAVaMhehoR56mgyHbFrd8/cm7a6Lop/WZjjHMG/H/S5eelwACQal8YnvQWTQik5GTSALjF55TtfVTezym9S1ri3Vk4VsiZbfNvlka5VH1GllN6HH74AFWhtRSnUYgHV+UWpcJiC4amHl4fTTf2eSITXnaGWoos1gbx94YqMLUrQEC8mhNrW7BtCHJUeK+8zJ7vdaKBFX3Oovk2d6FydUhLM9UHw2W2Aj8Zdl1+nECyqwfU3cWE+vEmI98d5c/ia6KkcSIGDESmzIKHCj9hGLEhuSz77arg14Kv9tpKg+8aByx+pplNRVWVp3zlhwsiGO03jHPuysh318vudznEQbPX0SO7KsnbUDiat3Ow60lQtSC0xAiZdhk="
       }
     },
