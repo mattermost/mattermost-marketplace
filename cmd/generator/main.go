@@ -532,7 +532,7 @@ func pluginsToDatabase(path string, plugins []*model.Plugin) error {
 		},
 	)
 
-	file, err := os.OpenFile(path, os.O_RDWR|os.O_TRUNC, 0644)
+	file, err := os.OpenFile(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		return errors.Wrapf(err, "failed to open existing database %s", path)
 	}

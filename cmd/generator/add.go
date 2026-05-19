@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"strings"
 	"time"
 
 	"github.com/blang/semver"
@@ -110,6 +111,10 @@ var addCmd = &cobra.Command{
 
 		if _, err = semver.ParseTolerant(tag); err != nil {
 			return errors.Wrapf(err, "%v is an invalid tag. Something like v2.3.4 is expected", tag)
+		}
+
+		if !strings.HasPrefix(tag, "v") {
+			tag = "v" + tag
 		}
 
 		pluginHost, err := command.Flags().GetString("remote-plugin-store")

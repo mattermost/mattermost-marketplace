@@ -167,7 +167,11 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 		}
 	}
 
-	if darwin := checkDarwinBundle(remotePluginHost, pluginWithVersion); darwin != "" {
+	darwin, err := checkDarwinBundle(remotePluginHost, pluginWithVersion)
+	if err != nil {
+		return nil, err
+	}
+	if darwin != "" {
 		result = append(result, darwin)
 	}
 
@@ -177,19 +181,18 @@ func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]st
 // checkDarwinBundle returns the first darwin bundle naming convention with both
 // a bundle and signature available, preferring "darwin-amd64" over "osx-amd64".
 // Returns an empty string if neither variant exists.
-func checkDarwinBundle(remotePluginHost, pluginWithVersion string) string {
+func checkDarwinBundle(remotePluginHost, pluginWithVersion string) (string, error) {
 	for _, platform := range []string{DarwinAmd64, OsxAmd64} {
 		exists, err := remoteBundleExists(remotePluginHost, pluginWithVersion, platform)
 		if err != nil {
-			logger.Debugf("Error checking darwin bundle %s: %v", platform, err)
-			continue
+			return "", err
 		}
 		if exists {
-			return platform
+			return platform, nil
 		}
 	}
 
-	return ""
+	return "", nil
 }
 
 // remoteBundleExists reports whether both a platform-specific bundle and its signature
