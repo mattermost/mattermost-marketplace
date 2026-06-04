@@ -13,8 +13,11 @@ import (
 	"github.com/mattermost/mattermost-marketplace/internal/model"
 )
 
-// OSX-specific bundle URLs are stored in the plugin store as `osx` rather than `darwin`
-const OsxAmd64 = "osx-amd64"
+// Older plugins publish darwin bundles as "osx-amd64"; newer ones use "darwin-amd64".
+const (
+	OsxAmd64    = "osx-amd64"
+	DarwinAmd64 = "darwin-amd64"
+)
 
 func init() {
 	generatorCmd.AddCommand(migrateCmd)
@@ -122,6 +125,10 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 		}
 		defer res.Body.Close()
 
+		if res.StatusCode != http.StatusOK {
+			return nil, fmt.Errorf("received %d status code downloading signature from %s", res.StatusCode, sigPath)
+		}
+
 		signatureBytes, err := io.ReadAll(res.Body)
 		if err != nil {
 			return nil, err
@@ -136,7 +143,7 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 		switch platform {
 		case model.LinuxAmd64:
 			plugin.Platforms.LinuxAmd64 = bundle
-		case OsxAmd64:
+		case OsxAmd64, DarwinAmd64:
 			plugin.Platforms.DarwinAmd64 = bundle
 		case model.WindowsAmd64:
 			plugin.Platforms.WindowsAmd64 = bundle
@@ -150,33 +157,78 @@ func addPlatformSpecificBundles(plugin *model.Plugin, pluginHost string) (*model
 func checkIfRemoteBundlesExist(remotePluginHost, pluginWithVersion string) ([]string, error) {
 	result := []string{}
 
-	platforms := []string{model.LinuxAmd64, OsxAmd64, model.WindowsAmd64}
-	for _, platform := range platforms {
-		path := fmt.Sprintf("%s/%s-%s.tar.gz", remotePluginHost, pluginWithVersion, platform)
-
-		// Check if plugin bundle exists on remote file server
-		res, err := http.Head(path)
+	for _, platform := range []string{model.LinuxAmd64, model.WindowsAmd64} {
+		exists, err := remoteBundleExists(remotePluginHost, pluginWithVersion, platform)
 		if err != nil {
 			return nil, err
 		}
-		if res.StatusCode != http.StatusOK {
-			logger.Debugf("Platform-specific bundle not found %s %s", pluginWithVersion, path)
-			continue
+		if exists {
+			result = append(result, platform)
 		}
+	}
 
-		// Check if signature exists on remote file server
-		sigPath := path + ".sig"
-		res, err = http.Head(sigPath)
-		if err != nil {
-			return nil, err
-		}
-		if res.StatusCode != http.StatusOK {
-			logger.Debugf("Platform-specific bundle signature not found %s %s", pluginWithVersion, sigPath)
-			continue
-		}
-
-		result = append(result, platform)
+	darwin, err := checkDarwinBundle(remotePluginHost, pluginWithVersion)
+	if err != nil {
+		return nil, err
+	}
+	if darwin != "" {
+		result = append(result, darwin)
 	}
 
 	return result, nil
+}
+
+// checkDarwinBundle returns the first darwin bundle naming convention with both
+// a bundle and signature available, preferring "darwin-amd64" over "osx-amd64".
+// Returns an empty string if neither variant exists.
+func checkDarwinBundle(remotePluginHost, pluginWithVersion string) (string, error) {
+	for _, platform := range []string{DarwinAmd64, OsxAmd64} {
+		exists, err := remoteBundleExists(remotePluginHost, pluginWithVersion, platform)
+		if err != nil {
+			return "", err
+		}
+		if exists {
+			return platform, nil
+		}
+	}
+
+	return "", nil
+}
+
+// remoteBundleExists reports whether both a platform-specific bundle and its signature
+// are available on the remote file server.
+func remoteBundleExists(remotePluginHost, pluginWithVersion, platform string) (bool, error) {
+	bundlePath := fmt.Sprintf("%s/%s-%s.tar.gz", remotePluginHost, pluginWithVersion, platform)
+
+	ok, err := remoteResourceExists(bundlePath)
+	if err != nil {
+		return false, err
+	}
+	if !ok {
+		logger.Debugf("Platform-specific bundle not found %s %s", pluginWithVersion, bundlePath)
+		return false, nil
+	}
+
+	sigPath := bundlePath + ".sig"
+	ok, err = remoteResourceExists(sigPath)
+	if err != nil {
+		return false, err
+	}
+	if !ok {
+		logger.Debugf("Platform-specific bundle signature not found %s %s", pluginWithVersion, sigPath)
+		return false, nil
+	}
+
+	return true, nil
+}
+
+// remoteResourceExists issues a HEAD request, returning true on a 200 response.
+func remoteResourceExists(url string) (bool, error) {
+	res, err := http.Head(url)
+	if err != nil {
+		return false, err
+	}
+	defer res.Body.Close()
+
+	return res.StatusCode == http.StatusOK, nil
 }

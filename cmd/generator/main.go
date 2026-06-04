@@ -96,20 +96,11 @@ var generatorCmd = &cobra.Command{
 
 		ctx := context.Background()
 
-		repositoryNames := []string{
-			"mattermost-plugin-github",
-			"mattermost-plugin-autolink",
-			"mattermost-plugin-zoom",
-			"mattermost-plugin-jira",
-			"mattermost-plugin-welcomebot",
-			"mattermost-plugin-jenkins",
-			"mattermost-plugin-antivirus",
-			"mattermost-plugin-custom-attributes",
-			"mattermost-plugin-aws-SNS",
-			"mattermost-plugin-gitlab",
-			"mattermost-plugin-nps",
-			"mattermost-plugin-webex",
+		repositoryNames, err := getPluginRepositoryNames(ctx, client, githubOrg)
+		if err != nil {
+			return errors.Wrap(err, "failed to discover plugin repositories")
 		}
+		logger.Infof("discovered %d plugin repositories in %s", len(repositoryNames), githubOrg)
 
 		plugins := []*model.Plugin{}
 
@@ -149,6 +140,39 @@ var generatorCmd = &cobra.Command{
 
 		return nil
 	},
+}
+
+// getPluginRepositoryNames discovers all mattermost-plugin-* repositories in the given GitHub org.
+func getPluginRepositoryNames(ctx context.Context, client *github.Client, org string) ([]string, error) {
+	var names []string
+
+	opts := &github.RepositoryListByOrgOptions{
+		Type: "public",
+		ListOptions: github.ListOptions{
+			PerPage: 100,
+		},
+	}
+
+	for {
+		repos, resp, err := client.Repositories.ListByOrg(ctx, org, opts)
+		if err != nil {
+			return nil, errors.Wrapf(err, "failed to list repositories for org %s", org)
+		}
+
+		for _, repo := range repos {
+			name := repo.GetName()
+			if strings.HasPrefix(name, "mattermost-plugin-") && !repo.GetArchived() {
+				names = append(names, name)
+			}
+		}
+
+		if resp.NextPage == 0 {
+			break
+		}
+		opts.Page = resp.NextPage
+	}
+
+	return names, nil
 }
 
 // getReleasePlugins queries GitHub for all releases of the given plugin, sorting by plugin version descending.
@@ -508,16 +532,11 @@ func pluginsToDatabase(path string, plugins []*model.Plugin) error {
 		},
 	)
 
-	file, err := os.OpenFile(path, os.O_RDWR, 0644)
+	file, err := os.OpenFile(path, os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		return errors.Wrapf(err, "failed to open existing database %s", path)
 	}
 	defer file.Close()
-
-	_, err = file.Seek(0, 0)
-	if err != nil {
-		return err
-	}
 
 	err = model.PluginsToWriter(file, plugins)
 	if err != nil {

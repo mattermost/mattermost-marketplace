@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"strings"
 	"time"
 
 	"github.com/blang/semver"
@@ -27,6 +28,7 @@ func init() {
 	addCmd.Flags().Bool("enterprise", false, "Mark this plugin as only available to installations with an E20-only plugins license")
 	addCmd.Flags().Bool("cloud", false, "Mark this plugin as only available to cloud installations")
 	addCmd.Flags().Bool("on-prem", false, "Mark this plugin as only available to on-prem installations")
+	addCmd.Flags().String("github-org", defaultGitHubOrg, "GitHub organization for fallback URLs when manifest fields are empty.")
 }
 
 var addCmd = &cobra.Command{
@@ -111,15 +113,25 @@ var addCmd = &cobra.Command{
 			return errors.Wrapf(err, "%v is an invalid tag. Something like v2.3.4 is expected", tag)
 		}
 
+		if !strings.HasPrefix(tag, "v") {
+			tag = "v" + tag
+		}
+
 		pluginHost, err := command.Flags().GetString("remote-plugin-store")
 		if err != nil {
 			return err
 		}
 
-		bundleURL := fmt.Sprintf("%s/%s-%s.tar.gz", pluginHost, repo, tag)
-		signatureURL := bundleURL + ".sig"
+		githubOrg, err := command.Flags().GetString("github-org")
+		if err != nil {
+			return err
+		}
 
-		bundleData, err := downloadBundleData(bundleURL)
+		// Use the user-provided tag to fetch the bundle; the canonical URL stored in
+		// the database is rebuilt from manifest.Version below to match CDN naming.
+		fetchURL := fmt.Sprintf("%s/%s-%s.tar.gz", pluginHost, repo, tag)
+
+		bundleData, err := downloadBundleData(fetchURL)
 		if err != nil {
 			return errors.Wrapf(err, "failed downloading bundle data")
 		}
@@ -149,21 +161,47 @@ var addCmd = &cobra.Command{
 			if err != nil {
 				return errors.Wrap(err, "failed to get icon")
 			}
+		} else {
+			logger.WithFields(logrus.Fields{
+				"repo": repo,
+				"tag":  tag,
+			}).Warn("Plugin manifest has no icon_path. Consider adding an icon to the plugin.")
 		}
+
+		bundleURL := fmt.Sprintf("%s/%s-v%s.tar.gz", pluginHost, repo, manifest.Version)
+		signatureURL := bundleURL + ".sig"
 
 		signature, err := downloadSignature(signatureURL)
 		if err != nil {
 			return errors.Wrap(err, "failed to download plugin signature")
 		}
 
+		homepageURL := manifest.HomepageURL
+		if homepageURL == "" {
+			homepageURL = fmt.Sprintf("https://github.com/%s/%s", githubOrg, repo)
+			logger.WithFields(logrus.Fields{
+				"repo":         repo,
+				"homepage_url": homepageURL,
+			}).Info("Manifest has no homepage_url, using fallback")
+		}
+
+		releaseNotesURL := manifest.ReleaseNotesURL
+		if releaseNotesURL == "" {
+			releaseNotesURL = fmt.Sprintf("https://github.com/%s/%s/releases/tag/v%s", githubOrg, repo, manifest.Version)
+			logger.WithFields(logrus.Fields{
+				"repo":              repo,
+				"release_notes_url": releaseNotesURL,
+			}).Info("Manifest has no release_notes_url, using fallback")
+		}
+
 		labels := []model.Label{}
 
 		plugin := &model.Plugin{
 			RepoName:        repo,
-			HomepageURL:     manifest.HomepageURL,
+			HomepageURL:     homepageURL,
 			IconData:        iconData,
 			DownloadURL:     bundleURL,
-			ReleaseNotesURL: manifest.ReleaseNotesURL,
+			ReleaseNotesURL: releaseNotesURL,
 			Labels:          labels,
 			Signature:       signature,
 			Manifest:        &manifest,
