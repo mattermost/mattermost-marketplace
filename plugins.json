@@ -36696,6 +36696,124 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-google-meet",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMTkyIDE5MiI+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTExMC4wMTUgMTA4Ljg4Yy02LjgyOS00LjcxOC02LjkyMS0xNC43NzgtLjE3OS0xOS42MkwxNjUgNDkuNjQzYzcuOTQtNS43MDEgMTktLjAzOCAxOSA5LjczN3Y3Ny43NTVjMCA5LjY3NS0xMC44NjEgMTUuMzU5LTE4LjgyMSA5Ljg1OXoiLz48cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNOCA3MWMwLTI0LjMgMTkuNy00NCA0NC00NGg2NGMxMS4wNDYgMCAyMCA4Ljk1NCAyMCAyMHY5OGMwIDExLjA0Ni04Ljk1NCAyMC0yMCAyMEgyOGMtMTEuMDQ2IDAtMjAtOC45NTQtMjAtMjB6Ii8+PG1hc2sgaWQ9ImUiIHdpZHRoPSIxMjkiIGhlaWdodD0iMTM4IiB4PSI4IiB5PSIyNyIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgc3R5bGU9Im1hc2stdHlwZTpsdW1pbmFuY2UiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik04IDcxYzAtMjQuMyAxOS43LTQ0IDQ0LTQ0aDY0YzExLjA0NiAwIDIwIDguOTU0IDIwIDIwdjk4YzAgMTEuMDQ2LTguOTU0IDIwLTIwIDIwSDI4Yy0xMS4wNDYgMC0yMC04Ljk1NC0yMC0yMHoiLz48L21hc2s+PGcgZmlsdGVyPSJ1cmwoI2MpIiBtYXNrPSJ1cmwoI2UpIj48cGF0aCBmaWxsPSJ1cmwoI2YpIiBkPSJtNzMuOTA2IDk5LjE5OCAxMTAtNjMuMTk4djEyNHoiLz48L2c+PGNpcmNsZSBjeD0iMzgiIGN5PSIxMzUiIHI9IjE0IiBmaWxsPSIjZmZmIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMTI4LjgiIHgyPSIyMjcuMiIgeTE9IjEwNC40NCIgeTI9IjEwNC40NCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNmNmExMDAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmJlMDAiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iZiIgeDE9IjEzNi4yMiIgeDI9Ijc4LjUiIHkxPSI5MS4zMiIgeTI9IjkxLjE5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIuMTUiIHN0b3AtY29sb3I9IiNmZmI1ZTgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmRiZjUiIHN0b3Atb3BhY2l0eT0iMCIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJiIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTE1OS43MjUgMCAwIC0xMzUuODUyIDE2MC4zMjUgOTYpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIuMTUiIHN0b3AtY29sb3I9IiNmZmU5MjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZWM3MDAiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9ImMiIHdpZHRoPSIxNjYiIGhlaWdodD0iMTgwIiB4PSI0NS45MSIgeT0iOCIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9InNoYXBlIi8+PGZlR2F1c3NpYW5CbHVyIHJlc3VsdD0iZWZmZWN0MV9mb3JlZ3JvdW5kQmx1cl8zNzU4NF85MzM4IiBzdGREZXZpYXRpb249IjE0Ii8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-meet-v1.1.1.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-google-meet/releases/tag/v1.1.1",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmpY4HMACgkQ0bVLR6XO/sRvXQ//anxNO/l8SFEkxvlMW3X9I3jwIBxKYFBGHbrDSfqB2wq0dpZ4d/b4r5GxPHpQCZ04yUvHM9tINCRUjdk9S2TUf+WvwuVVQxAqm9J7MDEvCIsi3fy7eKg+kycbcQmOTfo+6GprlTS0wHiI2j7MmpGqjxgBs5WaZsXv74HtW/yQC7/oWHwrN0/FKU+G9h/ynIxWepj9A650w6IUeUHZsoO33OkeQc5TMJ/kt+K6zdikB8SPqWDv5Hoj3n5m8832FdxB8YbkD8P+zJPrtZapHeGL2ZCmApLKPIf8L6dtlekvs+9gKbExoYVdBb4kuE8pz4odWBiTSkh31DvcEq4XvBbN912ZlfMwU/xD7YA6LCm4d6+j3P6U5FEkwkK99BYRlIV++55nFKCO9D0YJLi9g/MLmrfT3+Rb4R4OkcBWvzhGuHi1awtvlM+OQCCjCQBHmKlklot1aEqs9ydOr4A2ucPlldSyq5X3+CiaKAu0a8LhXvIznb7dA04ST9cHCfqVguH5ApeLDnQ9UE4fWU+XR1fIM7rsVySO20kGgXR3kpUp/9CGirb0rkbZkpWzvjEYObWQO2JUOiXbIPP8jOv8G73nsqIVwn7TKEuCvl8ogam6ZVvWgW+nvwWu409Wfe9WeUZiLQq+Nv78HnlLoPPy/leFm4JI+3FD2IkuK3VRWQRAr8c=",
+    "repo_name": "mattermost-plugin-google-meet",
+    "manifest": {
+      "id": "com.mattermost.google-meet",
+      "name": "Google Meet",
+      "description": "Start and join Google Meet meetings from Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-google-meet",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-google-meet/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-google-meet/releases/tag/v1.1.1",
+      "icon_path": "assets/icon.svg",
+      "version": "1.1.1",
+      "min_server_version": "10.7.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "**Setup instructions:** 1) Enable the [Google Meet REST API](https://console.cloud.google.com/apis/library/meet.googleapis.com). 2) Create an [OAuth 2.0 Client ID](https://console.cloud.google.com/apis/credentials) (Web application type). 3) The redirect URI will be shown here once the plugin is activated. 4) Enter the Client ID and Client Secret below.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "GoogleClientID",
+            "display_name": "Google OAuth Client ID",
+            "type": "text",
+            "help_text": "The Client ID from your Google OAuth 2.0 credentials.",
+            "placeholder": "",
+            "default": "",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "GoogleClientSecret",
+            "display_name": "Google OAuth Client Secret",
+            "type": "text",
+            "help_text": "The Client Secret from your Google OAuth 2.0 credentials.",
+            "placeholder": "",
+            "default": "",
+            "hosting": "",
+            "secret": true
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "Encryption Key",
+            "type": "generated",
+            "help_text": "A secret key used to encrypt OAuth tokens stored in the database. Regenerating this key will invalidate all existing user connections.",
+            "placeholder": "",
+            "default": "",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "RestrictMeetingCreation",
+            "display_name": "Restrict Meeting Creation",
+            "type": "bool",
+            "help_text": "Restrict users from creating meetings in public channels.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableConferenceArtifactPosts",
+            "display_name": "Post Recordings, Transcripts and Smart Notes",
+            "type": "bool",
+            "help_text": "When enabled, recordings, transcripts, and smart notes from subscribed meetings are automatically posted to the channel as replies.",
+            "placeholder": "",
+            "default": true,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "PollIntervalSeconds",
+            "display_name": "Polling Interval (seconds)",
+            "type": "number",
+            "help_text": "How often (in seconds) the plugin polls the Google Meet API for new recordings and transcripts. Minimum 30 seconds. Default 60.",
+            "placeholder": "",
+            "default": 60,
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-meet-v1.1.1-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmpY4HMACgkQ0bVLR6XO/sTIOA//efe2+790asZeg3AuU3nYH3ur54Zo3iARa+a+/kmVbMC7yitj6n3tuU6TMFzFyHnma7hf1VGsH5sAZ42TCY2j72g9bGGR4doxty5LalL6H2If9Sb9RRV2NMA0C40LIixJnsH+OPp2hRm4Kq7+TJg8YY6jtu+TLuvZXZgIZUJM+2uW0OUxfLCN9D1+zJL+W7qOo77K6TCpcZdeGo8dY3U4nE25bQfruqHFo51vgTSvy79UuUXzzu+tHJL8yxnWBDROjAbY7RfHt/yipHZk+nR6HXbisGi/HU9oQfj8NpECgLGlvUSlhVAk8gCNY0Mwci/O8MnqjFuHW7MTJ+D+YPSqliXx6QFqPA7t6o6Kx0M/mRREunqDeAJ+aD/dc7oMpffj8KSktRH85Vt4pFIZlFRjpYAFE8XRnLewBfzIuWaBt1hVuORpj4MWCpik7ZRBH8waURCWTAbDkQ8RkDsVWqhXWqHX5Eqe9WSxqmTnpxc11ve5TgrFW68Yqcl50XVBQjvCBHLHNikkbzKNY0h9BOiIm9MQQVs5PBvAZ+jeV3oa4GGSkBqPfqw/lu1is5ymOXcU4wPJRBz4sr9nJ7fpJBPj+Amzb84WcBp0O7ro6juQzx/0VSloYlPjzH3jI3vMEERAYyXSnFDbByU7LXFReCXr6AnnqJofXBx1deiOn/b7Woo="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-meet-v1.1.1-darwin-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmpY4HIACgkQ0bVLR6XO/sTqUg/8DW7Z+1u886dk1EfV+1ljnVJSKU9nAsIoUtfFuGV+Bo30d4S1jW23QW05YPi9reUQn2cPn3Kg7fCFU7N8OoJjFbBUHsOM2T3ifx1BHLEOeVYpLAxvDnpGkjWt9VtFwqIUKg5C7xEb3JRWOp8LjtNkQBj+WWTfbZAXblKnfaFdEnITtHNgouLYhHMO1sC3P1fLbVdiLQnvQXYUfbx4q6NXORe6MOhygvViXzQwyxyKRVWWKWNXjR4bZEOGDQzmBMOwxG2t554H654DWRA56gBvu23HusuwdXG3qkIOsJUlbKCceQtfgUpIhhXX2b6PksK+1bmkBqXD7HaoEm5T9spN+V5UibvQWlpRQMfZl537QXH/ymgUr2K4uC7kUBtECSwqcnHsRRYrjBiTeQHRrtP2CXlySH2j9FeFQe1jy4nhCrwEMDG+frwblIYkQnC/S8g84HvIaSK7jW//HCgXcG4n6L+lIk83EN3CC++somwsd53n65ts2UzMLG4ZjwH/AfZWl7BlQXnSSEM4I6PEHqQDlWJHClawPg+fnc1BrlnB4XyXE0KgdS59vKyzJBm2bKQ667gGI6cLdAvhY/sCFXqeSnfgSxZ/DlTaeeU9q3zhZB8d6JHmb4JLtrJhCh5SvDATZ1e7maKB/x1acbeIyq0A0araKce7NZ6UQrFyFLjd7R0="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-meet-v1.1.1-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmpY4HMACgkQ0bVLR6XO/sQRRg//XRpUpND+SJzt7zTtxRdDVAO0YfYZrfz/vwOwnJZe7BWtKfzL+Gflc2cz5vxVSDRJeDYZEbXmc40W+Qc7ilV6rPaICOgVdkXojwxC4sqNd7nPVPYn3EPfp7KX9CP4SXjps3EElkpO3NfmM3DTTddypAuy5VxxoyahvJ8o3dXiudrbAtxX90qaRKcYGaWgpMHbq09OQ/WGXv4tF1WFuuiyeg13BIOYODnssEJ9Prm7leaHjgfzE2cMcGoD6mqVcV8pFSYEFOtk31AR3zZtImQz+CGnNPXcH8x68EXRRV8+qY8upaB0g5wyi1WRHP0JKMiOjfOQImVws5lVXbi6sy4QA1p6eUfkYgm21zAOyx96uEK2QsxxQpDvC9+uqQh8Ts8H5JUDpxZfymo3jWTnlp+bA48hRM02mHi8L+C9Mx8tDkBaOz5wBxXiq3oIdtGLY65sb3/fwcHgC6nqqtZv5u/dRTkC7lFvnW9tXDv3jhwjJRTZlTmbanlnTqF2MyNeG2c9Z8MQ0k5R7qWHvECve05rWwdw7QUW5jHS6Ru+2hYJAdAKArlcuVOqda/RMPc77oMOCaqaRkWhL+QabqtnT9jjESgxCc6rZBt8LrRWZqwsHek30RwMHb7h4EBINgQ+lOSSSKxKW5lxlWPGgefCMwoUI1s9NHDJxOpuyok/C/zcmaY="
+      }
+    },
+    "updated_at": "2026-07-16T13:48:35.816968Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-google-meet",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMTkyIDE5MiI+PHBhdGggZmlsbD0idXJsKCNhKSIgZD0iTTExMC4wMTUgMTA4Ljg4Yy02LjgyOS00LjcxOC02LjkyMS0xNC43NzgtLjE3OS0xOS42MkwxNjUgNDkuNjQzYzcuOTQtNS43MDEgMTktLjAzOCAxOSA5LjczN3Y3Ny43NTVjMCA5LjY3NS0xMC44NjEgMTUuMzU5LTE4LjgyMSA5Ljg1OXoiLz48cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNOCA3MWMwLTI0LjMgMTkuNy00NCA0NC00NGg2NGMxMS4wNDYgMCAyMCA4Ljk1NCAyMCAyMHY5OGMwIDExLjA0Ni04Ljk1NCAyMC0yMCAyMEgyOGMtMTEuMDQ2IDAtMjAtOC45NTQtMjAtMjB6Ii8+PG1hc2sgaWQ9ImUiIHdpZHRoPSIxMjkiIGhlaWdodD0iMTM4IiB4PSI4IiB5PSIyNyIgbWFza1VuaXRzPSJ1c2VyU3BhY2VPblVzZSIgc3R5bGU9Im1hc2stdHlwZTpsdW1pbmFuY2UiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik04IDcxYzAtMjQuMyAxOS43LTQ0IDQ0LTQ0aDY0YzExLjA0NiAwIDIwIDguOTU0IDIwIDIwdjk4YzAgMTEuMDQ2LTguOTU0IDIwLTIwIDIwSDI4Yy0xMS4wNDYgMC0yMC04Ljk1NC0yMC0yMHoiLz48L21hc2s+PGcgZmlsdGVyPSJ1cmwoI2MpIiBtYXNrPSJ1cmwoI2UpIj48cGF0aCBmaWxsPSJ1cmwoI2YpIiBkPSJtNzMuOTA2IDk5LjE5OCAxMTAtNjMuMTk4djEyNHoiLz48L2c+PGNpcmNsZSBjeD0iMzgiIGN5PSIxMzUiIHI9IjE0IiBmaWxsPSIjZmZmIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJhIiB4MT0iMTI4LjgiIHgyPSIyMjcuMiIgeTE9IjEwNC40NCIgeTI9IjEwNC40NCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNmNmExMDAiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmJlMDAiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCBpZD0iZiIgeDE9IjEzNi4yMiIgeDI9Ijc4LjUiIHkxPSI5MS4zMiIgeTI9IjkxLjE5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIuMTUiIHN0b3AtY29sb3I9IiNmZmI1ZTgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZmRiZjUiIHN0b3Atb3BhY2l0eT0iMCIvPjwvbGluZWFyR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJiIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTE1OS43MjUgMCAwIC0xMzUuODUyIDE2MC4zMjUgOTYpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIuMTUiIHN0b3AtY29sb3I9IiNmZmU5MjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZWM3MDAiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9ImMiIHdpZHRoPSIxNjYiIGhlaWdodD0iMTgwIiB4PSI0NS45MSIgeT0iOCIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9InNoYXBlIi8+PGZlR2F1c3NpYW5CbHVyIHJlc3VsdD0iZWZmZWN0MV9mb3JlZ3JvdW5kQmx1cl8zNzU4NF85MzM4IiBzdGREZXZpYXRpb249IjE0Ii8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-meet-v1.1.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-google-meet/releases/tag/v1.1.0",
     "hosting": "",
