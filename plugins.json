@@ -38822,6 +38822,94 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-dataminr",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM2cHgiIGhlaWdodD0iMzM2cHgiIHZpZXdCb3g9IjAgMCAzMzYgMzM2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkRhdGFtaW5yIEljb248L3RpdGxlPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkRhdGFtaW5yLUljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzkuOSwgLTE0Ni42KSI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01MTUuOSwyNTcuNyBMNTE1LjksMjA0LjUgQzUxNS45LDE3My4yIDQ5MSwxNDcuOCA0NTkuOSwxNDYuOCBMNDU5LjksMjU3LjggTDUxNS45LDI1Ny44IEw1MTUuOSwyNTcuNyBaIiBpZD0iUGF0aCIgZmlsbD0iIzYwODhFRSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMzE4LjcsMzEzLjUgTDMxOC43LDM5OC45IEwzOTQuNSwzOTguOSBDNDE1LjMsMzk4LjkgNDMyLjIsMzgyIDQzMi4yLDM2MS4yIEw0MzIuMiwyODQuNyBMMzQ3LjUsMjg0LjcgQzMzMS42LDI4NC43IDMxOC43LDI5Ny42IDMxOC43LDMxMy41IFoiIGlkPSJQYXRoIiBmaWxsPSIjMEExNzI2Ij48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNDcuNSwyNTcuNyBMNDMyLjIsMjU3LjcgTDQzMi4yLDE0Ni42IEwyMzcuOCwxNDYuNiBDMjA1LjgsMTQ2LjYgMTc5LjksMTcyLjUgMTc5LjksMjA0LjUgTDE3OS45LDM5OC45IEwyOTEuNywzOTguOSBMMjkxLjcsMzEzLjUgQzI5MS43LDI4Mi43IDMxNi43LDI1Ny43IDM0Ny41LDI1Ny43IFoiIGlkPSJQYXRoIiBmaWxsPSIjNjA4OEVFIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik00NTkuOCwzNjEuMSBDNDU5LjgsMzk3LjEgNDMwLjUsNDI2LjQgMzk0LjUsNDI2LjQgTDMxOC43LDQyNi40IEwzMTguNyw0ODIuNCBMNDU4LDQ4Mi40IEM0OTAsNDgyLjQgNTE1LjksNDU2LjUgNTE1LjksNDI0LjUgTDUxNS45LDI4NC41IEw0NTkuOSwyODQuNSBMNDU5LjksMzYxIEw0NTkuOCwzNjEuMSBaIiBpZD0iUGF0aCIgZmlsbD0iIzYwODhFRSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMTgwLjEsNDI2LjUgQzE4MS4xLDQ1Ny42IDIwNi41LDQ4Mi41IDIzNy44LDQ4Mi41IEwyOTEuNyw0ODIuNSBMMjkxLjcsNDI2LjUgTDE4MC4xLDQyNi41IFoiIGlkPSJQYXRoIiBmaWxsPSIjNjA4OEVFIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v2.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-dataminr/releases/tag/v2.0.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": true,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqIoywACgkQ0bVLR6XO/sTUrw//SbtHy0Xlo0APmz2vpilqi7Is9ulQv6TEGYDuvdgZKBrVkuedF+4geyR4lPG64P72XyfgsuPDxuC2JLXxrkvH4sniqlZYFJFX9XMidQaEtdOCxJFAVEiqgB8qSjrbnSb5MtaBGsa1374jYrw64CCfex+v8mTjH2YfEORufW7dus3kQmklSUrq2GsQn98Rt4JLO9uICNy+WhwuUPjy8Sv0FExP0cMj3/dnUZQ7wsfyRAChplAbHeNlXijumY2+AmP7pV9ZziUnBI1IG7HvAHEdiwVgCS2Ao2y0ZmnEHm+HBiPmFUuMmis+sMo/qCeh+ep+bR7po8beu4MjcNuzgID8v5n+9hh4WQ7T7CKPqU56MPM1+4eoIBX99pvi7kh+rikirzzbr4QbfFFfLCuBQXfbL8iZJlfKhOLFK9H0a6fRN9Y3YYiVPAlmA969D/9kFUN4UsBeht+JiJYPeip8rTVATf/uQ5V+IVscd36bTiJf2rTe67EIZ1nSeOmGoaSPbSdPGdc+MMWyL7gc8Sje6OXBY+D/iW9TBvavchR3PkvQyz5Ur6EUfLwiTIbHJb6rt794URNwT0O89jMcBZ6bvADLhNchHDJWxVyU0xM30bx4anbXTYe71722l0WaKVWOLYkW50BK13bn22IopdY7H01mKArnBON81lY+1CmPJGqL/YM=",
+    "repo_name": "mattermost-plugin-dataminr",
+    "manifest": {
+      "id": "com.mattermost.plugin-dataminr",
+      "name": "Mattermost Dataminr Plugin",
+      "description": "Real-time alerting system that integrates Dataminr First Alert API with Mattermost.",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-dataminr",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-dataminr/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-dataminr/releases/tag/v2.0.0",
+      "icon_path": "assets/dataminr-icon.svg",
+      "version": "2.0.0",
+      "min_server_version": "10.7.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Configure backends to monitor for alerts. Each backend polls for events and posts them to a designated Mattermost channel.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "BotUsername",
+            "display_name": "Bot Username",
+            "type": "text",
+            "help_text": "The username that will be displayed for alert notifications.",
+            "placeholder": "dataminr-alerts",
+            "default": "dataminr-alerts",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "BotDisplayName",
+            "display_name": "Bot Display Name",
+            "type": "text",
+            "help_text": "The display name that will be shown for the alert bot.",
+            "placeholder": "Dataminr Alerts",
+            "default": "Dataminr Alerts",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "Backends",
+            "display_name": "Backend Configurations",
+            "type": "custom",
+            "help_text": "Configure alert backends to monitor. Each backend independently polls its API and posts alerts to a designated channel.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v2.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqIoysACgkQ0bVLR6XO/sSx+g/9EMotPpFa8flTvqige41kVi6ZDSaX0VN73L2HROKwtFinBf8JQSaw6UNDHLc0FOXdjliiZTUDt6EM07Bv5oH8/V0pORVEG33g+UZlf9qHJ0bBP59fltHMbgc2eOWe5FOY/tEZuYSRHg9x/7T1FNf2CkEvSXhhWDRwbiCQ+yLH+neOWykAQuQfDA7g0fQp94pEUfLw5W+gn6aFRqIExA7pZEg9Q9/89VpFp8QbAGb0XUmTvOhMWfCXf4ypbh9LQgTIPt6gAkhxIJWmeTOYfIRF9P7c6+RKmJjt0btEF69XveBEH5g/bMcLDNBYajpjlzyk3HrvRaCbeZXZ2eSOrkXWCyABzJ1WGXkgZdcGVGNehKTJERRUsa3vP0FeSXzQRgOVt2LHuu4NMeOgSDJyILybDov/+lGyN80J10OSMlzrqKQFTcwxFPnyFOYc/QNXulo6nFkUlaZqSxV7Co7WzDrh51/plVHAB8WLjwmDvJs+oI/e97WEEwlcqhXnzf038sstXrFk8U56ESTuxZB8C5iE47eIoB6M6bTee1PHA2V6/+Og/hAdy6956+lS0fmmvFsmBojAYSohMalWqo/+tlZr4qm4JQHq12IPc3flPMUHMQ5dUWjRwzFN9t1vwdOeTjKjLUuqWWnjrv9eDQVHV2OlhxlpiSsodQsekwE9DfdzQ/4="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v2.0.0-darwin-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqIoysACgkQ0bVLR6XO/sQ6Zg/+Nn8koRX57l3fEcIKzdSk4Pi4DL2HRPqq69KPcCxTMd+8OEJROPwTP4HR6Lt7+MzF0W6/rDvCkis6XwIobQe7LoE0H2riRpysjveSRXxwAo86XhDRWY/1N/L0OnDTxw4kIh326TrpMUUrwYVk2ukrRr1s4x80J4HJIWR3nXdUH/U2dzdM6znrX+hQjAigthIJOu5jXBzmh0G/Rj9Gpkx9Q+VToJFJ9xKpt+I6xIxNe4aMUFrgbkWQJfP7RV2oWZVGyqEhjyOxtnVKxo4978QuiE5BZIFUgAwKnCorAmr1bHlEYd1MBK8orFZ/T+Ghn89UM9zthv5lkgZmDOuqN6r54vVqZKW+h3cno/gGeGn/52dZnLx+QoBFD/OvaXidHodm7fM9tt14JJKhdkh3Jyf/+ugsk/nGr7jCiBqy2pYa56HbBKi+vpzXe8ULO41VHsha3deVmzyoE2+aGKuM9C2fzsatxC26uRJvI+hUDEoJSVNa7IW5EObk7j2onuthM9W23Ypt7m6+ROHTbbbIIiHVjrYkPKv297nKf2v1z5GYXTsLfhklCaN/8TXpTZM1gYBfvWhl6LBT/VzH7zaJ07Dkxu7JPYGd2jSRoeO7rasYAS0eIQUc7+GNKlNktS2PXEHRmQcav7oVXL9uV2kj7+6/e6Iv2N+y9w4bW316ar2G3Cs="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v2.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqIoywACgkQ0bVLR6XO/sRF8g/+NOzNComjBVbaAB+bJGhR1+wyqntXPxV0R3y1zBpGC01dgUG+mghQCWUEBBSk4nenPGg0GOCMu/uXA87ZOjlAPyLWGeMG8qBJNKPE6oatPhWkwCae8S7lZPcdd4ZP3Olh/RlIOd059XmkLZuUOfZPoGg7J7mEmC45vX8xlKTPhhMukCnKj8QlVa1ZGnujIWOn35wohLTNbw8wF08pWRq5pi5CtUZaTm9YXxtILrEYOoBjIyn2WvJDdpY2/fbInKhGg+z3nroq6aMXOGpssTxyhZr+j1EigIJbHpYeT45Wv/E2skN5qWlVQdj2jiiqwHFku7qFqulfG3xrV3uSDak+eXTDChxLM/PHJzkzhAEzOwVugAMycnPtx9Vb4oYFok48OoM9xIOQI2LnLTQC/GKxM4a1kJzic7BxNEhU2dY8g+FxtMDmAzV3bX0CyuYtu3quNDK6ZL5vT/TkXVd4gRSu0HlCFnZJ4zNRetIzH5wLxkNM05R2KvbXjhEZZU1z5mdQNeqIT1bHUF9UTeFOBQ5gvLcpBqyyHmjxjutZ9EkOVLIQR/2R8XHS+H3adsaofiHbHZGUyGx6YBfW2L+gPyidnNK+9+8B7khZFD7tP4QgHmhNmEPIDgqHB7JkSYfdvetycNMdX8wW9zCkMcveqMCxzwMQS7qWkgeYqSKzgWbROqU="
+      }
+    },
+    "updated_at": "2026-08-24T07:10:16.708023Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-dataminr",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM2cHgiIGhlaWdodD0iMzM2cHgiIHZpZXdCb3g9IjAgMCAzMzYgMzM2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkRhdGFtaW5yIEljb248L3RpdGxlPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkRhdGFtaW5yLUljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzkuOSwgLTE0Ni42KSI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01MTUuOSwyNTcuNyBMNTE1LjksMjA0LjUgQzUxNS45LDE3My4yIDQ5MSwxNDcuOCA0NTkuOSwxNDYuOCBMNDU5LjksMjU3LjggTDUxNS45LDI1Ny44IEw1MTUuOSwyNTcuNyBaIiBpZD0iUGF0aCIgZmlsbD0iIzYwODhFRSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMzE4LjcsMzEzLjUgTDMxOC43LDM5OC45IEwzOTQuNSwzOTguOSBDNDE1LjMsMzk4LjkgNDMyLjIsMzgyIDQzMi4yLDM2MS4yIEw0MzIuMiwyODQuNyBMMzQ3LjUsMjg0LjcgQzMzMS42LDI4NC43IDMxOC43LDI5Ny42IDMxOC43LDMxMy41IFoiIGlkPSJQYXRoIiBmaWxsPSIjMEExNzI2Ij48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNDcuNSwyNTcuNyBMNDMyLjIsMjU3LjcgTDQzMi4yLDE0Ni42IEwyMzcuOCwxNDYuNiBDMjA1LjgsMTQ2LjYgMTc5LjksMTcyLjUgMTc5LjksMjA0LjUgTDE3OS45LDM5OC45IEwyOTEuNywzOTguOSBMMjkxLjcsMzEzLjUgQzI5MS43LDI4Mi43IDMxNi43LDI1Ny43IDM0Ny41LDI1Ny43IFoiIGlkPSJQYXRoIiBmaWxsPSIjNjA4OEVFIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik00NTkuOCwzNjEuMSBDNDU5LjgsMzk3LjEgNDMwLjUsNDI2LjQgMzk0LjUsNDI2LjQgTDMxOC43LDQyNi40IEwzMTguNyw0ODIuNCBMNDU4LDQ4Mi40IEM0OTAsNDgyLjQgNTE1LjksNDU2LjUgNTE1LjksNDI0LjUgTDUxNS45LDI4NC41IEw0NTkuOSwyODQuNSBMNDU5LjksMzYxIEw0NTkuOCwzNjEuMSBaIiBpZD0iUGF0aCIgZmlsbD0iIzYwODhFRSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMTgwLjEsNDI2LjUgQzE4MS4xLDQ1Ny42IDIwNi41LDQ4Mi41IDIzNy44LDQ4Mi41IEwyOTEuNyw0ODIuNSBMMjkxLjcsNDI2LjUgTDE4MC4xLDQyNi41IFoiIGlkPSJQYXRoIiBmaWxsPSIjNjA4OEVFIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v1.0.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-dataminr/releases/tag/v1.0.0",
     "hosting": "",
