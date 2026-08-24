@@ -38827,7 +38827,7 @@
     "hosting": "",
     "author_type": "mattermost",
     "release_stage": "production",
-    "enterprise": false,
+    "enterprise": true,
     "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqIoywACgkQ0bVLR6XO/sTUrw//SbtHy0Xlo0APmz2vpilqi7Is9ulQv6TEGYDuvdgZKBrVkuedF+4geyR4lPG64P72XyfgsuPDxuC2JLXxrkvH4sniqlZYFJFX9XMidQaEtdOCxJFAVEiqgB8qSjrbnSb5MtaBGsa1374jYrw64CCfex+v8mTjH2YfEORufW7dus3kQmklSUrq2GsQn98Rt4JLO9uICNy+WhwuUPjy8Sv0FExP0cMj3/dnUZQ7wsfyRAChplAbHeNlXijumY2+AmP7pV9ZziUnBI1IG7HvAHEdiwVgCS2Ao2y0ZmnEHm+HBiPmFUuMmis+sMo/qCeh+ep+bR7po8beu4MjcNuzgID8v5n+9hh4WQ7T7CKPqU56MPM1+4eoIBX99pvi7kh+rikirzzbr4QbfFFfLCuBQXfbL8iZJlfKhOLFK9H0a6fRN9Y3YYiVPAlmA969D/9kFUN4UsBeht+JiJYPeip8rTVATf/uQ5V+IVscd36bTiJf2rTe67EIZ1nSeOmGoaSPbSdPGdc+MMWyL7gc8Sje6OXBY+D/iW9TBvavchR3PkvQyz5Ur6EUfLwiTIbHJb6rt794URNwT0O89jMcBZ6bvADLhNchHDJWxVyU0xM30bx4anbXTYe71722l0WaKVWOLYkW50BK13bn22IopdY7H01mKArnBON81lY+1CmPJGqL/YM=",
     "repo_name": "mattermost-plugin-dataminr",
     "manifest": {
