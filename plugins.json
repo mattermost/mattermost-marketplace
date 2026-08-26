@@ -39185,6 +39185,74 @@
     "updated_at": "2026-03-27T13:39:59.021924Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-boards",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjQxcHgiIGhlaWdodD0iMjQwcHgiIHZpZXdCb3g9IjAgMCAyNDEgMjQwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ni4yICg0NDQ5NikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Ymx1ZS1pY29uPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IjA2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjgxLjAwMDAwMCwgLTU3Mi4wMDAwMDApIiBmaWxsPSIjMTg3NUYwIj4KICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYyNi4wMDAwMDAsIDUxNy4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMTYuOTA4MTgxLDE1My4xMjc3MDUgQzIxNi45MDgxODEsMTUzLjEyNzcwNSAyMTcuMjgwNTg4LDE2OS40NTI1MjYgMjA1LjkyODc1NCwxODAuNTQzMDM1IEMxOTQuNTc1NDYsMTkxLjYzMzU0NCAxODAuNjMxMzgzLDE5MC42MTk4ODcgMTcxLjU2MDcyMiwxODcuNTU3MDcyIEMxNjIuNDg4NjAyLDE4NC40OTQyNTYgMTUwLjc5NTAzLDE3Ni44NTI1MSAxNDguNTMxMzgxLDE2MS4xNjcwNSBDMTQ2LjI2OTE5MywxNDUuNDgwMTMzIDE1Ni41MDgxODgsMTMyLjczNjYwNyAxNTYuNTA4MTg4LDEzMi43MzY2MDcgTDE3OC44MjA0NjMsMTA1LjA2NjQwNyBMMTkxLjgxNTI2OCw4OS4yNjI5Nzc5IEwyMDIuOTY5OTQ2LDc1LjQ5MTIzMTMgQzIwMi45Njk5NDYsNzUuNDkxMjMxMyAyMDguMDg4NzEzLDY4LjY1MzQxOTMgMjA5LjU0NzY3MSw2Ny4yNDIxNjQ4IEMyMDkuODM2ODM0LDY2Ljk2MjUzNTQgMjEwLjEzMzI5OSw2Ni43NzkwMjg2IDIxMC40MjM5MjMsNjYuNjM3NzU3NiBMMjEwLjYzNTY4Myw2Ni41Mjk5ODM3IEwyMTAuNjczNjU0LDY2LjUxNTQxOTcgQzIxMS4yODcwMyw2Ni4yNTE4MTA4IDIxMS45OTM4NzMsNjYuMTk1MDExIDIxMi42NzU4ODgsNjYuNDI1MTIyNyBDMjEzLjM0MzI5OSw2Ni42NTA4NjUyIDIxMy44NjAyODgsNjcuMTA4MTc1NyAyMTQuMTg3NDIxLDY3LjY3MTgwMzcgTDIxNC4yNTYwNjEsNjcuNzgxMDMzOSBMMjE0LjMxNTkzOCw2Ny45MDYyODQ2IEMyMTQuNDc1MTI0LDY4LjIwNjMwMzYgMjE0LjYwODAyMiw2OC41NDg1NTgzIDIxNC42NzA4Miw2OC45NzA5MTUxIEMyMTQuOTY4NzQ1LDcwLjk3NjM4MiAyMTQuODcwODk3LDc5LjUwOTQ0NzEgMjE0Ljg3MDg5Nyw3OS41MDk0NDcxIEwyMTUuMzQyNjEzLDk3LjIwNDc0MzQgTDIxNi4wMzkyMzIsMTE3LjYzMDc5NSBMMjE2LjkwODE4MSwxNTMuMTI3NzA1IFogTTI0NS43OTA1ODcsNzguMjA0MzI2MSBDMjg3LjA1NzIxMiwxMDguMTU1MjUzIDMwNS45ODI5MTUsMTYyLjUwOTY2OSAyODguNzc0Mjg4LDIxMy4zNDY4NzIgQzI2Ny41OTQxMDQsMjc1LjkxMTAzMSAxOTkuNzA2MjQ1LDMwOS40NjA3MyAxMzcuMTQyOTI1LDI4OC4yODE3MTggQzc0LjU3OTYwNDgsMjY3LjEwMTI1IDQxLjAzMTgxMiwxOTkuMjEzOTM3IDYyLjIxMDU0MDIsMTM2LjY0OTc3OCBDNzkuNDQ4Mjk0Nyw4NS43Mjk1NjAzIDEyNy42MjU0NTksNTQuMDMyNDA1NyAxNzguNjkwNjMyLDU1LjQxNDUzMjIgTDE2Mi4zMjIzMzksNzQuNzU0MTA3NCBDMTMyLjAyODEwNiw4MC4yMzE2MzkgMTA1Ljg3MTQ2LDEwMC45MTk4NDMgOTUuNTkwODQ4OSwxMzEuMjkwMjE1IEM4MC4yOTQ0NTM1LDE3Ni40NzUxMTcgMTA1LjkzMjYyOCwyMjUuOTgyNjI0IDE1Mi44NTU4NDYsMjQxLjg2NjE1NSBDMTk5Ljc3NzYwOCwyNTcuNzUxMTQyIDI1MC4yMTY1MzYsMjMzLjk5ODY2NiAyNjUuNTEyOTMyLDE4OC44MTM3NjQgQzI3NS43NjAwNDYsMTU4LjU0Mzg4NCAyNjcuNjM0ODgyLDEyNi4zMzY5ODggMjQ3LjA1MDM1OSwxMDMuNTk1MjU2IEwyNDUuNzkwNTg3LDc4LjIwNDMyNjEgWiIgaWQ9ImJsdWUtaWNvbiI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-boards-v9.4.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-boards/releases/tag/v9.4.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqMQtoACgkQ0bVLR6XO/sT9Og/7Bqpg8hr9pVGO+o2PJnf7lOIQkJTlBZgKSgOXirh5e0MF+MLOVo/thFM/UXPgVoN9obkMJFHHlxMwmFj7JcGj4LYVkb6tJU/sNm1CAEPzQZMT0KHS7hYyFHcTv9Jg2eWSm3TYA/GS5aqFwuwLqdJl2YgScYzboceLE+VDHeybPRc7MSn7L5jdnZmsaJnCG+2KhXBA80c7fiVc8DRj2F5Eq9mrsAGz0S8y8xcUDAzFIZYENB8ESgRE38zSJ9AOUQhrrmChaxt1BiX+cN3SPyQx9+aVUtbhbcD83PR4zSeik7oDBRNjyuc6bqTTWpAqPm4SgMSfLHiK3lrIJm+jPbzexN+RRmqHlbBiTzSd51pEehT59Fr1DQ+g4P/0cI07f+dnKniWX4i/74wVKV795iXrKhu3kkXx7S3WBfSgl6nEZGfRC/sDhH6+qjRwKRDc4rWwT+j3xzzDeaHSokKywD3BJfzQEyWeHrbKAZhA9GbHnU3WKdXMWeArdgsOOHUMqmZ3Dn9U1/OsDDyPPcyUb8d4WfpOzREoBApie5pJSEd02+nufsL3f5WKzXAtVJ9c9s+90LendGdHDrRtvG0PR8unQMAOrdNZIeQQ3DZm8GVnMSuPhzay9IiW8Nf+D9J6PofJI4TVyWw6LJYD4NEU1wqrw60d7EvzZj9zgoYnUR5bgK8=",
+    "repo_name": "mattermost-plugin-boards",
+    "manifest": {
+      "id": "focalboard",
+      "name": "Mattermost Boards",
+      "description": "The Mattermost Boards plugin",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-boards",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-boards/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-boards/releases/tag/v9.4.0",
+      "icon_path": "assets/starter-template-icon.svg",
+      "version": "9.4.0",
+      "min_server_version": "11.9.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "EnablePublicSharedBoards",
+            "display_name": "Enable Publicly-Shared Boards:",
+            "type": "bool",
+            "help_text": "This allows board editors to share boards that can be accessed by anyone with the link.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-boards-v9.4.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqMQtoACgkQ0bVLR6XO/sTwNw/8DAAIGN+QWvw/nn53pzY5qy+MxNLcmL6fISKR0Y9dJBugdjnbe90a8FYjz6OQ1+b5ACC/sioxZDrceCgSgFxjkOr3BHUkha7rq6DDMtC7U8SdYageWIeP2RXZGWac+NuAAr2m62Ib7ForaFoaNzo4Do8JHO3yTRsUIH5LrPxEp03yzGyRWgR+DOvVrSRR/6nGcEKRwaZAXX/IoPgWLyUZK6Ep5RtBwY42j924jAV3oI/sKD2zN7g1tMsCkZFnR9YyxbIJ0SlBJlk5zCMLxZeKlby0DYAyvxlnwhScmIfMZQHdG0DAbp1MJguhJGEGgJ5QXeMKxIxELmS/tCW+EmstwjnZFH7bnRh7uZC/S10fglR4ZsWvbvU1Q7rH3wi/cghrLBgi7Om3d2unSrfZejiJzrX+uo4rRCjIFI6Gm9YkatrR0/LygVnOjCartvPNLw8cfJkbc4EWRy52oNU5flv7dpI+SmUlBbYsPaZtzyoiKPiIq8lfU6nP9CVucf7IEPnzaeOcQ4yFJeS7eVJsqu5KUQRiO9ADT+NPNtyimg8hY4Pw+dmfG/Ak0rG0uK4nGQ5yL9SySzv2GimgkRJSBN+5lLiZXsTEkfvnzdtUHMcY5bwfmOhqUfCa4HT2ylMZySuAyH5xtU6msEHwXcnwGEa9vLqPrE7WdQ3dmgttx5Qnrx0="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-boards-v9.4.0-darwin-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqMQtkACgkQ0bVLR6XO/sRHOw//bGTbIHAookB8toruRkBm9hPdeLD1CMcPIIUr18H/WU7jCTleT6E5kqbpgiyvFPQB/bU+SMIBUjibSanCbVOiS7+UHmMLeYiRbF83AQ9/u2f+KNpLksXXVqAAzzL6N4DgJCOCh7ipu0ZkIhSUbw5sGGz0rRZeJJGxJBG2DksGD7qTbtP1Ttn+JYcwaD+b95rH8TVlr98G1zHwfwqPPWLJfymmXxy34GthBVK/kc6f84Str+OEiDEQ/bRigfL/r85VHdKPYUrxj9yt7FwzAM6Zg5dJmCPuW0MqUIq44EuZZmZ5F9d7VbIdwdkBhwcfsrS6er8UkVS1zrjntZ070S4/FNab5JZa4ouKe0kWcR05GS2g6oLVl8rujpf4l3kIMbh8comati2+GRlgY0XrkinF5ugY27TfIWlP6qxIJLpQuJ+RDO7B970cgfs+2jYoGowaPL6g/pGeW22/rOglexMmwIuSGb88BK/u0qRq5hSqrdA2vaA9pR0Sfl5jkM5Rcje3S8djcmlVJDlz5sFP/RCW0zLLAVakgJN5eZxhZ7dhi9cXLVkjpDSclSKX/tluUNwwe0qrCVMjaFQNwlYUqMmL/qH4K78xlOA7JZ6W9H84NsoCiwxPL1xebWUWJ8538jjiyJqpdqYkce76ORjn60D3ZC9qzCdsG6STZAS/J3wnbBo="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-boards-v9.4.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqMQtoACgkQ0bVLR6XO/sRlGw//Y2Ji7iLO3oAnJuxJYRb+aWzgPxbFtwXxXqvvNU0joAzkkUVxw+hf0kw0xGXKRm0ZiSww/YolVH1iifkQykah9es1bFKiXIvh+RLGqkxIOoeINO6WmUiZ2Zca/7W0iehkG7yilPDAn8Zk1aSy9XHbMNp5qH7+ImzJOIj4L34ceS+MxZkowyo86PvZiU+jV7Jr9a6rEspJVn+sEbbcVtBUYKDk+QS23qu4Zf307AwQqSTpF2Mz1pLBbHWA8Bcmy/sUFFjDyjNj8ENcL3oqPpARUCOd93OBFvwu3UPo1/X7lxMcE8+0p0o0uQMGQ1S5SpFkEIdHDUdGHP6k1JSX+0rXE2UgUFkHhUBEgJd6aXPRBSM0wkMBbSU7ZyCGqYPS4zA0r6AuQ4yiigvB5RTn29feP38sfv0wcZBWpbn0GTS7wWKqHDMzFbdcqLB3zCox9Ao3XhJlg7idc/YmNm5FTCT4SO9L/tlbXq54+fwHLHpdgRYWdeB/nVyczLHVOtTwwRz5qQu3y4lwoEAGMeojzwVaf8c0kV25+0GMP5mtGOm+tuAFzK2XIj537TGoSYEaW2VEelvAmR0xr1ipmqCg7izq84WgpGHTksFr+4D2/rCXzLqdOjqyI+eNTkIPNC+Dh0mcyuD7hLmmsirtEEm0Y+VKF4I1SjqImsw/+k3Lc1uL3e8="
+      }
+    },
+    "updated_at": "2026-08-25T11:46:46.556128Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-github",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIGljb248L3RpdGxlPjxwYXRoIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTIgMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1LjYuMTEzLjgyLS4yNTguODItLjU3NyAwLS4yODUtLjAxLTEuMDQtLjAxNS0yLjA0LTMuMzM4LjcyNC00LjA0Mi0xLjYxLTQuMDQyLTEuNjFDNC40MjIgMTguMDcgMy42MzMgMTcuNyAzLjYzMyAxNy43Yy0xLjA4Ny0uNzQ0LjA4NC0uNzI5LjA4NC0uNzI5IDEuMjA1LjA4NCAxLjgzOCAxLjIzNiAxLjgzOCAxLjIzNiAxLjA3IDEuODM1IDIuODA5IDEuMzA1IDMuNDk1Ljk5OC4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDUtMi42NjUtLjMtNS40NjYtMS4zMzItNS40NjYtNS45MyAwLTEuMzEuNDY1LTIuMzggMS4yMzUtMy4yMi0uMTM1LS4zMDMtLjU0LTEuNTIzLjEwNS0zLjE3NiAwIDAgMS4wMDUtLjMyMiAzLjMgMS4yMy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDUgMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1IDIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzLjY0NSAxLjY1My4yNCAyLjg3My4xMiAzLjE3Ni43NjUuODQgMS4yMyAxLjkxIDEuMjMgMy4yMiAwIDQuNjEtMi44MDUgNS42MjUtNS40NzUgNS45Mi40Mi4zNi44MSAxLjA5Ni44MSAyLjIyIDAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2IDAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiLz48L3N2Zz4=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-github-v2.8.0.tar.gz",
