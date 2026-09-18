@@ -3830,6 +3830,114 @@
     "updated_at": "2019-04-17T19:49:19Z"
   },
   {
+    "homepage_url": "https://github.com/mattermost-community/mattermost-plugin-google-drive",
+    "icon_data": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciICB2aWV3Qm94PSIwIDAgNDggNDgiIHdpZHRoPSI0OHB4IiBoZWlnaHQ9IjQ4cHgiPjxwYXRoIGZpbGw9IiMxZTg4ZTUiIGQ9Ik0zOC41OSwzOWMtMC41MzUsMC45My0wLjI5OCwxLjY4LTEuMTk1LDIuMTk3QzM2LjQ5OCw0MS43MTUsMzUuNDY1LDQyLDM0LjM5LDQySDEzLjYxIGMtMS4wNzQsMC0yLjEwNi0wLjI4NS0zLjAwNC0wLjgwMkM5LjcwOCw0MC42ODEsOS45NDUsMzkuOTMsOS40MSwzOWw3LjY3LTloMTMuODRMMzguNTksMzl6Ii8+PHBhdGggZmlsbD0iI2ZiYzAyZCIgZD0iTTI3LjQ2Myw2Ljk5OWMxLjA3My0wLjAwMiwyLjEwNC0wLjcxNiwzLjAwMS0wLjE5OGMwLjg5NywwLjUxOSwxLjY2LDEuMjcsMi4xOTcsMi4yMDFsMTAuMzksMTcuOTk2IGMwLjUzNywwLjkzLDAuODA3LDEuOTY3LDAuODA4LDMuMDAyYzAuMDAxLDEuMDM3LTEuMjY3LDIuMDczLTEuODA2LDMuMDAxbC0xMS4xMjctMy4wMDVsLTYuOTI0LTExLjk5M0wyNy40NjMsNi45OTl6Ii8+PHBhdGggZmlsbD0iI2U1MzkzNSIgZD0iTTQzLjg2LDMwYzAsMS4wNC0wLjI3LDIuMDctMC44MSwzbC0zLjY3LDYuMzVjLTAuNTMsMC43OC0xLjIxLDEuNC0xLjk5LDEuODVMMzAuOTIsMzBINDMuODZ6Ii8+PHBhdGggZmlsbD0iIzRjYWY1MCIgZD0iTTUuOTQ3LDMzLjAwMWMtMC41MzgtMC45MjgtMS44MDYtMS45NjQtMS44MDYtM2MwLjAwMS0xLjAzNiwwLjI3LTIuMDczLDAuODA4LTMuMDA0bDEwLjM5LTE3Ljk5NiBjMC41MzctMC45MywxLjMtMS42ODIsMi4xOTYtMi4yYzAuODk3LTAuNTE5LDEuOTI5LDAuMTk1LDMuMDAyLDAuMTk3bDMuNDU5LDExLjAwOWwtNi45MjIsMTEuOTg5TDUuOTQ3LDMzLjAwMXoiLz48cGF0aCBmaWxsPSIjMTU2NWMwIiBkPSJNMTcuMDgsMzBsLTYuNDcsMTEuMmMtMC43OC0wLjQ1LTEuNDYtMS4wNy0xLjk5LTEuODVMNC45NSwzM2MtMC41NC0wLjkzLTAuODEtMS45Ni0wLjgxLTNIMTcuMDh6Ii8+PHBhdGggZmlsbD0iIzJlN2QzMiIgZD0iTTMwLjQ2LDYuOEwyNCwxOEwxNy41Myw2LjhjMC43OC0wLjQ1LDEuNjYtMC43MywyLjYtMC43OUwyNy40Niw2QzI4LjU0LDYsMjkuNTcsNi4yOCwzMC40Niw2Ljh6Ii8+PC9zdmc+",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-drive-v2.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost-community/mattermost-plugin-google-drive/releases/tag/v2.0.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqs+Y4ACgkQ0bVLR6XO/sRKyg/+PTaSh2cXnrZHNVAX+pjcen5I0tYay0+VQKcCQRPmYjzdqY5e0ZR9KpE0W7HF4Pd4JnuGkEK4g12YH3xgjXL5RznwBha8tcYnqhyPMyiwrv1Rk4LI2gqKUp3wHHBwtkzT+vu4CyEdHVH1vbpFz18s02dcEbQMg0prxTPWBfYQ6jGHTyV7wa2ArBoWyV5NPqcghErx8vxBaY7pENO42DydXsAGvNumA4+ifqZoxvssJtUYu2uf+nqht4AdJKnFVEfWcUTkgVmUFQyPKVZr1x30E7TNDjNecpVcccBameTDXoyNllBwCTFcBXG5lQPQpG3NamP4A+esUQ+rPVlmZGWDtSnDEy7jd3PLiiCV3Hsoo+F4SUniHcSYGl5Tfd+YoY2bHQc1PHYiAWK/y3VUoZ2dXYxooqF34KOaJ3W37J7oDRzQ2S6UsYo54aO28G4cRyZLZO/E+cOh5Hm6asAQL8fQsGKkbZS94Qasbv7Li2ug9qEJNRK4T6PJPe9WqJo1RNAQ6X1vkzOCiIrBwUT0BfbTD0Zfc1LCsi0SJrNF7EeU7l5ZQM/P0MAE1jiVvf8G5Esw1YWKKZ2sRi4w8syMJXjuksC1f7B+W/k0J2PeGmp2FwpdT2EKJ3P0IsGDOxehD4CJImEVWSfXFZRcqWVZQrt57TMWFKhADOsBA8aJVJIC5Wo=",
+    "repo_name": "mattermost-plugin-google-drive",
+    "manifest": {
+      "id": "com.mattermost-community.plugin-google-drive",
+      "name": "Google Drive Plugin",
+      "description": "This plugin allows you to integrate Google Drive to your Mattermost instance.",
+      "homepage_url": "https://github.com/mattermost-community/mattermost-plugin-google-drive",
+      "support_url": "https://github.com/mattermost-community/mattermost-plugin-google-drive/issues",
+      "release_notes_url": "https://github.com/mattermost-community/mattermost-plugin-google-drive/releases/tag/v2.0.0",
+      "icon_path": "assets/icon.svg",
+      "version": "2.0.0",
+      "min_server_version": "12.0.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "The Google Drive plugin for Mattermost allows users to create, share files in Google Drive and receive notifications for shared files and comments on files to stay up-to-date. \n \n Instructions for setup are [available here](https://github.com/mattermost-community/mattermost-plugin-google-drive#configuration).",
+        "footer": "* To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/mattermost-community/mattermost-plugin-google-drive).",
+        "settings": [
+          {
+            "key": "GoogleOAuthClientID",
+            "display_name": "Google OAuth Client ID:",
+            "type": "text",
+            "help_text": "The client ID for the OAuth app registered with Google.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "GoogleOAuthClientSecret",
+            "display_name": "Google OAuth Client Secret:",
+            "type": "text",
+            "help_text": "The client secret for the OAuth app registered with Google.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          },
+          {
+            "key": "EncryptionKey",
+            "display_name": "At Rest Encryption Key:",
+            "type": "generated",
+            "help_text": "The AES encryption key used to encrypt stored access tokens.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": true
+          },
+          {
+            "key": "QueriesPerMinute",
+            "display_name": "Maximum queries per minute:",
+            "type": "number",
+            "help_text": "The number of requests per minute allowed by your Google Drive API, you can find this number under the Quotas & System limits of your Google Drive API. If you are running a high availability setup you will need to divide your quota by the number of nodes in your Mattermost cluster. So if you have 3 Mattermost nodes running and your quoata is 12000 requests per minute, you will need to set this value to 4000.",
+            "placeholder": "",
+            "default": "12000",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "BurstSize",
+            "display_name": "Maximum burst size:",
+            "type": "number",
+            "help_text": "The maximum number of requests allowed beyond the **per second** query limit. This is useful for handling short bursts of requests.",
+            "placeholder": "",
+            "default": "300",
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-drive-v2.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqs+Y0ACgkQ0bVLR6XO/sQgaw/5AaIMYUYm67+cZgPga2oPYMmQ8g5d7Elt3TRiJ8+mGcQbqRXXFeockiFdL38QQdPctUX/DkqEdacqBBDSwKi81edUaJOJx6LrzW+WS1fm9Qd1BfZzbRjx5etpcs2DCa0mYrF4isC5WCyOsCYlfXzn6+AiEeMCEHgz2syISJ/xejeKfVdXdjMYxZG7SDtUvNyeT/Tix3DWfYCspgF9jhMX83YUDpWHQI5RN/umzGda/JZ/tcFdLa6U58aLRNii5+a7uBU2HHmN2A06U5Xj/gxKC2zcT17jMLgd3p+da9TwlXBaAK1Yeex6i3FKm48qG3LaBMBrc89xtYRipu532c10HZTG378Un8vTWbbX+h8HmkOuxhuVhGY22hcmjHAYPy3yvdPCMrwx6ZLzXoNNpfug07IG6CoFP1XfsoQfTjsJfxXxLSGAxTpIG8ZlSpDDZsL40/E2YnXsJiH2BiyBnsbuUD6VQAhH2QimKIvZqSJgkTxzFK9zvfS/bv/fnKFFQzWKPEhCJtmH6dmzRr+VMvCTHCHj4X5Yvu4r3CilVQ+p5aIDN7OfFoC611PhvY1K0bAQE6MmBHG2Iw5iAOUdbTfCacSKPFzcZQcS1whZ9r7pAM+FKjJBpHdorunzIfhd4yi0iokWR7xFriSqla0/iE7bzxXlHEcaLCHqJxpG6ft4kWk="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-drive-v2.0.0-darwin-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqs+Y0ACgkQ0bVLR6XO/sTPjRAAnXs001hPWx+l63sLWH6wNvFFWiJdpcw14VmwxvdazxXK7ss4tIg0kwOBXSjWI18bRqE2CUWbPZApHF/ASci5bR6XZL1T2Sbxu6JXq8QcrigX/bSP7z75R2ZDiQTAKdHOSUAPO9duFhvKgUOQFByKL72Z++eYwJKT3zWnpN0KDeMK+dORy4JlH6R15Dwf66zYZ5Kovb9JWuSpV1gdTfNzlic/B5s0qKiIqSVhdq7CMpZPcepBYwzzp1d/xbPvC5ahpAObn+gwZvr4HGaFPJDJ6AnXtcJp59yrR9uge9m3oU8TZr9kUR8X4zwiGiKIXObVngeUO35xDxJlw37li1GaaWY5cWeL+lt9suEc1jUBe7h3D7NH4fXIyehoWCqECXagofERox6bVQlFYaha8ZFcfO77fCqE9PbDaNDnVjO41CPr05ywAomPYPC0G4LFJqYIPt1wI3Uf7nelbqWqf8k9UKvyqrCtAGRRdtJNXsNSsCh0mwRXUxaoxkFLJfiz1EEvnIEyw8aAXofPCBPrAgKdnEiOkDgB5DqsOL+riqOW8RY2JT6ec/r+yieEFy4ppWr18/LOVOOP2RB3sdsg4fK75qS4G6u3grU5AiRvYOlgb54yvPDxyNVdyFpxMX2eb8d5G5c5HlKN8AMaBRx9MV2YeWwJ4A65OLjUlXfAeadI0Ik="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-google-drive-v2.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmqs+Y0ACgkQ0bVLR6XO/sTSbA//Zji4mV2lnElbz79i1bHlUeF5VGyJVEz9qIXV+/XodYm8edS0VxwwrinIrNSLuimYQjkldOsF8LFND2ecMdi8tHMJwO0oEtqNwT/EjKwLLYwed42koJ/zrSFJ/0nQCHpTZIHhwHQpgWAaiDFnh2vF+HU1PEnok+GxGwaBHsqal64yJjDziS6LyYdJBbo+f5AqXtqWghITqcDyYIBNaEPqXB3iOx6TWFsUOsqCX9FbJUuP2Q837oGx0DveAxKWCtKmhE8UiMyd6jjQhNNCzgmh42cI1xuFZOD/ZyoGE8WDZ+LAcpi1daUUa+kxmgecmU8DzU5kHi30iPVYivnZGDgk7bkOiVrhlQtuPUtcxdszC+349Wj0xq5HDfHD5Vn+rybA/TkVPB5nSMR+qp5yhhoWbT3PH7wG+WeuRJM8YiOg8StNgWj0UJP8Yh1TdtrJptgxHn2HEHxFEOnuk40UBnaBfqapZ2cpqdop0NxoMO2mqca1wdpVlsXyFBCgn1izgH/sqewNTumBvcFvuDsMCpvnDNQCtaCUouFwWB41EQe7D1Lx3m3M0m34x3/zJv/bUONk8BOPaItqJQxLZGHsuFOmm5uwod7gKSIlOAIq2ZVBEWMhgph4h0itEt99YH3ZlTEPP9aw8Mbs1cIbzudzO6ou8Fo4xAus3ENcoxB6gn3+xJs="
+      }
+    },
+    "updated_at": "2026-09-18T08:47:24.794618Z"
+  },
+  {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-calls/",
     "icon_data": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMiIgZmlsbD0iIzNEQjg4NyIvPgo8cGF0aCBkPSJNMjMgMjBDMjMgMTkuNDU2IDIyLjg2NCAxOC45NiAyMi41OTIgMTguNTEyQzIyLjMyIDE4LjA0OCAyMS45NTIgMTcuNjggMjEuNDg4IDE3LjQwOEMyMS4wNCAxNy4xMzYgMjAuNTQ0IDE3IDIwIDE3VjE1LjAwOEMyMC45MTIgMTUuMDA4IDIxLjc0NCAxNS4yMzIgMjIuNDk2IDE1LjY4QzIzLjI2NCAxNi4xMjggMjMuODcyIDE2LjczNiAyNC4zMiAxNy41MDRDMjQuNzY4IDE4LjI1NiAyNC45OTIgMTkuMDg4IDI0Ljk5MiAyMEgyM1pNMjcuMDA4IDIwQzI3LjAwOCAxOC43MzYgMjYuNjg4IDE3LjU2IDI2LjA0OCAxNi40NzJDMjUuNDI0IDE1LjQxNiAyNC41ODQgMTQuNTc2IDIzLjUyOCAxMy45NTJDMjIuNDQgMTMuMzEyIDIxLjI2NCAxMi45OTIgMjAgMTIuOTkyVjExQzIxLjYzMiAxMSAyMy4xNDQgMTEuNDA4IDI0LjUzNiAxMi4yMjRDMjUuODk2IDEzLjAyNCAyNi45NzYgMTQuMDk2IDI3Ljc3NiAxNS40NEMyOC41OTIgMTYuODQ4IDI5IDE4LjM2OCAyOSAyMEgyNy4wMDhaTTI3Ljk5MiAyMy41MDRDMjguMjY0IDIzLjUwNCAyOC40OTYgMjMuNiAyOC42ODggMjMuNzkyQzI4Ljg5NiAyMy45ODQgMjkgMjQuMjE2IDI5IDI0LjQ4OFYyNy45OTJDMjkgMjguMjY0IDI4Ljg5NiAyOC40OTYgMjguNjg4IDI4LjY4OEMyOC40OTYgMjguODk2IDI4LjI2NCAyOSAyNy45OTIgMjlDMjUuNjg4IDI5IDIzLjQ4IDI4LjU1MiAyMS4zNjggMjcuNjU2QzE5LjMzNiAyNi44MDggMTcuNTM2IDI1LjYgMTUuOTY4IDI0LjAzMkMxNC40IDIyLjQ2NCAxMy4xOTIgMjAuNjY0IDEyLjM0NCAxOC42MzJDMTEuNDQ4IDE2LjUyIDExIDE0LjMxMiAxMSAxMi4wMDhDMTEgMTEuNzM2IDExLjA5NiAxMS41MDQgMTEuMjg4IDExLjMxMkMxMS40OTYgMTEuMTA0IDExLjczNiAxMSAxMi4wMDggMTFIMTUuNTEyQzE1Ljc4NCAxMSAxNi4wMTYgMTEuMTA0IDE2LjIwOCAxMS4zMTJDMTYuNCAxMS41MDQgMTYuNDk2IDExLjczNiAxNi40OTYgMTIuMDA4QzE2LjQ5NiAxMy4xOTIgMTYuNjg4IDE0LjM3NiAxNy4wNzIgMTUuNTZDMTcuMTM2IDE1LjczNiAxNy4xNDQgMTUuOTIgMTcuMDk2IDE2LjExMkMxNy4wNDggMTYuMjg4IDE2Ljk2IDE2LjQ0OCAxNi44MzIgMTYuNTkyTDE0LjYyNCAxOC44QzE1LjM0NCAyMC4yMDggMTYuMjY0IDIxLjQ4IDE3LjM4NCAyMi42MTZDMTguNTIgMjMuNzM2IDE5Ljc5MiAyNC42NTYgMjEuMiAyNS4zNzZMMjMuNDA4IDIzLjE2OEMyMy41NTIgMjMuMDQgMjMuNzEyIDIyLjk1MiAyMy44ODggMjIuOTA0QzI0LjA4IDIyLjg1NiAyNC4yNjQgMjIuODY0IDI0LjQ0IDIyLjkyOEMyNS42MjQgMjMuMzEyIDI2LjgwOCAyMy41MDQgMjcuOTkyIDIzLjUwNFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-calls-v1.11.5.tar.gz",
