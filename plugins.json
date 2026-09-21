@@ -38083,7 +38083,7 @@
       "description": "Microsoft Calendar Integration",
       "homepage_url": "https://mattermost.com/pl/mattermost-plugin-mscalendar",
       "support_url": "https://github.com/mattermost/mattermost-plugin-mscalendar/issues",
-      "release_notes_url": "https://mattermost.com/pl/mattermost-plugin-mscalendar/releases/tag/v2.0.0",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-mscalendar/releases/tag/v2.0.0",
       "icon_path": "assets/profile-mscalendar.svg",
       "version": "2.0.0",
       "min_server_version": "12.0.0",
