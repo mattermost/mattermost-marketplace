@@ -39990,6 +39990,207 @@
   {
     "homepage_url": "https://github.com/mattermost/mattermost-plugin-wrangler",
     "icon_data": "",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-wrangler-v2.0.0.tar.gz",
+    "release_notes_url": "https://github.com/mattermost/mattermost-plugin-wrangler/releases/tag/v2.0.0",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": false,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmq2HnIACgkQ0bVLR6XO/sRwmQ/9G/mX+upXXKKpRof1TRP25oIBHWlvUx+F7+w75SoY+8HI0tDq21eG44NTFXl5AcAb7DdpWnsiKBJatGgtyuW4xmtIojVXE/RkoNU+Ik/FGyDs9l22KGZPmXOghGsHdaypIIBkltb2AlpQlEOCy4lLpEFZkPqVG86wJIKT96l609UekW8pwxInC2qJZKE2djBtxBjbzujukTh8zvH3yp4f7hgzjnugGGUGgq3h/jooqABtvxGYuKhn4uypeiW4bRHrTVMA0mVb31H1wqYC1e3FDwI2mIYPoJFsiDDoYDfjzScZ6KmqCh0K59VS59zPJnGDJ/yFzVePdF6uR159Tx5aE94FOwwJFukO3Y1ytin0KNUONHglAzQtzBJE8+mQBNnq7XsQtYgm1d8H1rn/rqvepPxiCwD1LBHK3DmIvmFOflFJETwWQMvSaAk0ay6WQIXCkegUf8yFrhuzKQXLWV4uve9Ewr8U0lVfhdr3cs73ps4erRmyH6CKGr9XDJC6/1SjYklI1ULcHc2WWen+/z90bfM1m+yKqF/VLqDGpwNg1lGYX+BEL7DDBifVg2FYdO7opLadKlNMlHkatfyqeSwj4XVqROZ4Dr/qd6fe9THUo11ghyQLNDvCZcDvt5vv65eIEwKI5zvyr4RPWgCePIHAYxXbix52PoZxmJbM8WB295w=",
+    "repo_name": "mattermost-plugin-wrangler",
+    "manifest": {
+      "id": "com.mattermost.wrangler",
+      "name": "Wrangler",
+      "description": "Manage messages across teams and channels",
+      "homepage_url": "https://github.com/mattermost/mattermost-plugin-wrangler",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-wrangler/issues",
+      "release_notes_url": "https://github.com/mattermost/mattermost-plugin-wrangler/releases/tag/v2.0.0",
+      "version": "2.0.0",
+      "min_server_version": "12.0.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "freebsd-amd64": "server/dist/plugin-freebsd-amd64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+          {
+            "key": "PermittedWranglerUsers",
+            "display_name": "Permitted Wrangler Users",
+            "type": "dropdown",
+            "help_text": "Choose who is allowed to use the Wrangler plugin. (Other permissions below still apply)",
+            "placeholder": "",
+            "default": "system-admins",
+            "options": [
+              {
+                "display_name": "System administrators only",
+                "value": "system-admins"
+              },
+              {
+                "display_name": "System administrators and users from the 'Allowed Email Domain' list",
+                "value": "system-admins-and-email-domain"
+              },
+              {
+                "display_name": "All users",
+                "value": "all-users"
+              }
+            ],
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "AllowedEmailDomain",
+            "display_name": "Allowed Email Domain",
+            "type": "text",
+            "help_text": "(Optional) When set, users must have an email ending in this domain to use Wrangler. Multiple domains can be specified by separating them with commas. This also supports full email address matching if you want to limit plugin usage to specific users.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "EnableWebUI",
+            "display_name": "Enable Wrangler webapp functionality [BETA]",
+            "type": "bool",
+            "help_text": "Enable the work-in-progress Wrangler webapp functionality.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "CommandAutoCompleteEnable",
+            "display_name": "Enable Wrangler Command AutoComplete",
+            "type": "bool",
+            "help_text": "Control whether command autocomplete is enabled or not. If enabled and Allowed Email Domain is set, then some users will be able to see the Wrangler commands, but will be unable to run them.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadMaxCount",
+            "display_name": "Max Thread Count Move Size",
+            "type": "text",
+            "help_text": "The maximum number of messages in a thread that the plugin is allowed to move. Leave empty for unlimited messages.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadToAnotherTeamEnable",
+            "display_name": "Enable Moving Threads To Different Teams",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to move message threads from one team to another or not.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadFromPrivateChannelEnable",
+            "display_name": "Enable Moving Threads From Private Channels",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to move message threads from private channels or not.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadFromDirectMessageChannelEnable",
+            "display_name": "Enable Moving Threads From Direct Message Channels",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to move message threads from direct message channels or not.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadFromGroupMessageChannelEnable",
+            "display_name": "Enable Moving Threads From Group Message Channels",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to move message threads from group message channels or not.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MergeThreadEnable",
+            "display_name": "Enable Merging Threads [BETA]",
+            "type": "bool",
+            "help_text": "Control whether Wrangler is permitted to merge message threads. Depending on other plugin settings these threads can be merged across channels and teams. Note that message timestamps are preserved when threads are merged which could result in unexpected or confusing message ordering.",
+            "placeholder": "",
+            "default": false,
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "ThreadAttachMessage",
+            "display_name": "Info-Message: Attached a Message",
+            "type": "text",
+            "help_text": "The message being sent to the user after attaching his message to a thread. Allowed variables: {executor}, {postLink}",
+            "placeholder": "",
+            "default": "@{executor} wrangled one of your messages into a thread for you: {postLink}",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "MoveThreadMessage",
+            "display_name": "Info-Message: Moved a Thread",
+            "type": "text",
+            "help_text": "The message being sent to the user after moving a thread. Allowed variables: {executor}, {postLink}",
+            "placeholder": "",
+            "default": "@{executor} wrangled a thread you started to a new channel for you: {postLink}",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "CopyThreadMessage",
+            "display_name": "Info-Message: Copied a Thread",
+            "type": "text",
+            "help_text": "The message being sent to the user after copying a message. Allowed variables: {executor}, {postLink}",
+            "placeholder": "",
+            "default": "@{executor} copied a thread you started to a new channel for you: {postLink}",
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-wrangler-v2.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmq2HnIACgkQ0bVLR6XO/sRt+g//QX+t62TjaLnHmk8o6CAJVhhUCUiwOHc5gIGggofhoFPDKvFg4wty4cTRg5v2jouq2clz2fJ7nNmEga1agiyQx0aPBLRU2HTIaUwWDNqFEOoCaXGH4SnRYr2Jkm1c5fKCfMyKuCh7wVdnsDh/Cji2/sacRaaT3pR8ZcyQ0DDD0VlfClpNEdrv8XM/3aqKjXjuwF5QcSMv/91jz3E9sxlNYCTxZEpzNkBK+QM1B4NW+eoG0Lj9cHegnjJ+vrhgBToiXZFnI/bGTfdJPkpzB6ULq2837AvpNInqfzPxx2tbegT9ytK2WkU7NpBVMpDSJfqg0cnRlemfKchorH8mdQYnAiF8U7UFU72RIlYuI+gVUBqnsnO+JCcNv9n1L71j4h9OoclXtyDQwMOZCYMSvxwTsEgtQwQeyMcslyc3g4o5+0kYy9ZCm4ydlY8LV1Y4sqFK+XsaNviQyophzp5kzvuMYu61ICblll9bi9qxR8cZCGtTMyfset+NvqW2vBD6aXoU3g1ADFgXjbaiB47gsPhlIYIt3m3XQIqD5rAY1aKFLuLD7VPS9x9i7oW/qd+5K1CCKGmENaQEgI0kFIpQfFEarujLHTmLkN19Vw4ppWGjSyOzNUnFZgr1RdJWT+BUjBjJpZi3ckbIdEW+T/2PeobyPgkB2bNrbm3RaCXJJ7ozuwA="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-wrangler-v2.0.0-darwin-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmq2HnIACgkQ0bVLR6XO/sRxyhAAif4ppF+3EQO3GUbXsqSRiskrH/JhXhaDX2IS55UY+NKNJ8Npt1Qn6RsX9StMsr6lSarziR2oCyGGIQ929DlFie6pgMtdMOF6smkK0VvonEe7yNtz8gQlwx7ulDFilaK93Y+yAPvBf99H3B/m7wwNprSk1FUM6memtJykKTa+naefDXznfoCxpX64g+LsH0AIBu1V6cO1V4RMIUdX8z5hqnlR5rIWGtqps5J7UAmCgnAXdkogp7t9WNVKWv99aDQGllLPi5q5G4QvSU5djmKbRN38vosFv8EVKlcGlDEKyTFZQL+1ew9aJjZSRqskW9Bl4GLIuFCVbOucaQKEf0K+F08PfZ6PcaV1neY/G6V/0UDYAHvPzo6N/OcPKh3GfIB9MK9T0AGgjBPAwnYJoKHFvl191GeZax7/CTfSuLFv6R4Cg/9+5wazj+mqKTHcU7A/Es8yyYe6q/La5eSTXW5QYmOfL8I3zBi6u+oykcCMkzCdM/7X30lZdfJbfOzzKmjrQc9EJIzqeVThSd3AcM3CvyQgrVmWEyGcLZfFgiL3xHVQj7TNrKDkSlxZ+a7fWV6nq3ZQyswilYxOcdVFHw25/lb1dqcvilD4foR6YgJGQof2y3PwV/XGDZeDlKDDweL4ACGxaVG/WX8geBjPhuiTIsQnpXH9HnQthHdB7w5dzzY="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-wrangler-v2.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmq2HnIACgkQ0bVLR6XO/sTJFw/9EhYVbyJzrbDIE6iyTF60CCubYapEUUlvclAtP0aToT1re0DPcn9EE4w7VBv3nUmU4BZOy+h+1BMGOni3w95s7yNcMyZtzaA2ChzK8pU1UMyPPDzsJjmyP47dHQdwh1buvYuui0DEyTErMM3AGSrFhU7x7ghe6J2nYcITkCQX3LAr/ocL31nn+dorRrdF2Y7wlCryFCeTBt2d1tywCsarj+1pIPfz5iY1E2oOLc3TV9AR31dRAwdtYpWcMNPvTnzut7SC4/ENjB6/m4PMu3LeTzuVeojA25Ale/g/YcLKO8olvOSYgJThnWtW4e2irQJ5dMa8ytlza/u3I83mqecy4ewiwKda/xhIbo9MMDK2F5b7BIc5PAMKQDRq8HClUINf+C8Yzi6xuKTsO/1XzdXFwPfGiLZE7hvNfXOuHL1PwPrFrgf7/xjuT6HqF9CryJuGA2f7Ln9l4liQzIAg2EybHVoyYDPQpdkDMSFl+mV7SnqeAW22SCOClQW2DuPC8kmmEslgTcJHMn+qmutprzSWHUfYVFjiKQ+oJtou/TsotQEDZyLhZuyRXeaqOcPH74pVRp0yv3Ssn2YBBHcm820lNOrjmI/CRAZ4nOtooNkGyLfm1hSZeGCpdJ2vPxa7Ftjw8tjAFQ1LI7hFHr+JGFHV3I/akXIf/ErWzX8nePQwJOU="
+      }
+    },
+    "updated_at": "2026-09-25T07:29:05.283814Z"
+  },
+  {
+    "homepage_url": "https://github.com/mattermost/mattermost-plugin-wrangler",
+    "icon_data": "",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-wrangler-v1.0.0.tar.gz",
     "release_notes_url": "https://github.com/mattermost/mattermost-plugin-wrangler/releases/tag/v1.0.0",
     "hosting": "",
