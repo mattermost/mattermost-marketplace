@@ -39948,6 +39948,92 @@
   {
     "homepage_url": "",
     "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM2cHgiIGhlaWdodD0iMzM2cHgiIHZpZXdCb3g9IjAgMCAzMzYgMzM2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkRhdGFtaW5yIEljb248L3RpdGxlPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkRhdGFtaW5yLUljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzkuOSwgLTE0Ni42KSI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01MTUuOSwyNTcuNyBMNTE1LjksMjA0LjUgQzUxNS45LDE3My4yIDQ5MSwxNDcuOCA0NTkuOSwxNDYuOCBMNDU5LjksMjU3LjggTDUxNS45LDI1Ny44IEw1MTUuOSwyNTcuNyBaIiBpZD0iUGF0aCIgZmlsbD0iIzYwODhFRSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMzE4LjcsMzEzLjUgTDMxOC43LDM5OC45IEwzOTQuNSwzOTguOSBDNDE1LjMsMzk4LjkgNDMyLjIsMzgyIDQzMi4yLDM2MS4yIEw0MzIuMiwyODQuNyBMMzQ3LjUsMjg0LjcgQzMzMS42LDI4NC43IDMxOC43LDI5Ny42IDMxOC43LDMxMy41IFoiIGlkPSJQYXRoIiBmaWxsPSIjMEExNzI2Ij48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNDcuNSwyNTcuNyBMNDMyLjIsMjU3LjcgTDQzMi4yLDE0Ni42IEwyMzcuOCwxNDYuNiBDMjA1LjgsMTQ2LjYgMTc5LjksMTcyLjUgMTc5LjksMjA0LjUgTDE3OS45LDM5OC45IEwyOTEuNywzOTguOSBMMjkxLjcsMzEzLjUgQzI5MS43LDI4Mi43IDMxNi43LDI1Ny43IDM0Ny41LDI1Ny43IFoiIGlkPSJQYXRoIiBmaWxsPSIjNjA4OEVFIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik00NTkuOCwzNjEuMSBDNDU5LjgsMzk3LjEgNDMwLjUsNDI2LjQgMzk0LjUsNDI2LjQgTDMxOC43LDQyNi40IEwzMTguNyw0ODIuNCBMNDU4LDQ4Mi40IEM0OTAsNDgyLjQgNTE1LjksNDU2LjUgNTE1LjksNDI0LjUgTDUxNS45LDI4NC41IEw0NTkuOSwyODQuNSBMNDU5LjksMzYxIEw0NTkuOCwzNjEuMSBaIiBpZD0iUGF0aCIgZmlsbD0iIzYwODhFRSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMTgwLjEsNDI2LjUgQzE4MS4xLDQ1Ny42IDIwNi41LDQ4Mi41IDIzNy44LDQ4Mi41IEwyOTEuNyw0ODIuNSBMMjkxLjcsNDI2LjUgTDE4MC4xLDQyNi41IFoiIGlkPSJQYXRoIiBmaWxsPSIjNjA4OEVFIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
+    "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v3.0.0.tar.gz",
+    "release_notes_url": "",
+    "hosting": "",
+    "author_type": "mattermost",
+    "release_stage": "production",
+    "enterprise": true,
+    "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmq7YkoACgkQ0bVLR6XO/sST9A/+PsQJk7hXlqy4f5nkNgsf/E8M5HrubNFZdXtXwKVkYP6dngNzasYbI6Pbhed91wd2WRmWIH3GXKjIdafLJinxNga1u1oaibwiNZmDyuKvO0UBB5S5vtrH0TZhLYmxte53Ov+tWGric6G1BkKRDiUuWdMUAIbDGG+8ou3xbx5H6Pg27QmpRfAKh8l8dv0NZdqVudkihEKGKIz41NqIXsa/VEG+6N7F7udBfJDEC/FC6uIUwALMlUr/8LV7jFhtQ7Ikj0QwtVeX3JtZWWAVKhBTJ68wuQx8qsmZJ8xx7ysJlIqe/kmLh/wDEYJL8Kwy2qYKkBYsb7V8R6I+w9euOiXymQSrvDHQLEG+8EG8syk3/CgR7iaBoJgR6iFwnwAjm2dy92VdJGQ8TI5XlzLmGplBjFknqpsPSxUMGdlSKWoxc8IZR3aKDfMWRCR/fFwewKuPeGShhtsl0i36jnY0JQQtl1tb4WUKXBisS+yfFGWTv+ppRc8zOKUoJYjjh14tQRI4f058ezVWG77BIHCc4r8H4gimX24/O29lU/zHSvBT/SAV2Pap+E+ZpfWK5ul4rNx7L4vyw6pmnDr5HAv5pM7FscsfFQqtqNJgUiTSqqzw2/EYzNibOOZx2lvnmtviuvOXJG8FiXKNwLmzN/Z//0Y2qhTm4FIuV2+PpGWx0rFO6Qg=",
+    "repo_name": "mattermost-plugin-dataminr",
+    "manifest": {
+      "id": "com.mattermost.plugin-dataminr",
+      "name": "Mattermost Dataminr Plugin",
+      "description": "Real-time alerting system that integrates Dataminr First Alert API with Mattermost.",
+      "support_url": "https://github.com/mattermost/mattermost-plugin-dataminr/issues",
+      "icon_path": "assets/dataminr-icon.svg",
+      "version": "3.0.0",
+      "min_server_version": "12.0.0",
+      "server": {
+        "executables": {
+          "darwin-amd64": "server/dist/plugin-darwin-amd64",
+          "darwin-arm64": "server/dist/plugin-darwin-arm64",
+          "linux-amd64": "server/dist/plugin-linux-amd64",
+          "linux-arm64": "server/dist/plugin-linux-arm64",
+          "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        },
+        "executable": ""
+      },
+      "webapp": {
+        "bundle_path": "webapp/dist/main.js"
+      },
+      "settings_schema": {
+        "header": "Configure backends to monitor for alerts. Each backend polls for events and posts them to a designated Mattermost channel.",
+        "footer": "",
+        "settings": [
+          {
+            "key": "BotUsername",
+            "display_name": "Bot Username",
+            "type": "text",
+            "help_text": "The username that will be displayed for alert notifications.",
+            "placeholder": "dataminr-alerts",
+            "default": "dataminr-alerts",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "BotDisplayName",
+            "display_name": "Bot Display Name",
+            "type": "text",
+            "help_text": "The display name that will be shown for the alert bot.",
+            "placeholder": "Dataminr Alerts",
+            "default": "Dataminr Alerts",
+            "hosting": "",
+            "secret": false
+          },
+          {
+            "key": "Backends",
+            "display_name": "Backend Configurations",
+            "type": "custom",
+            "help_text": "Configure alert backends to monitor. Each backend independently polls its API and posts alerts to a designated channel.",
+            "placeholder": "",
+            "default": null,
+            "hosting": "",
+            "secret": false
+          }
+        ],
+        "sections": null
+      }
+    },
+    "platforms": {
+      "linux-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v3.0.0-linux-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmq7YkkACgkQ0bVLR6XO/sS2SA/5Abu4ncupOjVfpDsiCygjnkj7k2YXacsp5n2BNjmUzcS4/t3BrJOysj4IBbin2Ejqx2Cni4cjNzKG64oA1e0y7KeZGut+8KqFbcxrKWVKVoWeu30pkBZmBmBwJ0EaWZoCdXaBPWraGoitZ7QYzPjzHPRMFpbJraVTPEL8HBXHZzRKkT71qImvxpIta63r/Tf2nwbRPr78U0EJ0QhQW1UkbXZkMTblKIjEfRRM+rFBCKkOX++R4nUlyBAGW8YIqIeEfX3alSynJ6oknc/JluLC9HBU+/YoUlO5Rx22CMtoVIZZGirYbPb7h/9g7flXUWpMz780pMu2uc5qTCXz/HlFm+FsaLftj6F9ms4/US3eC2Drsh1PlNN6X3ap6vXI2FXYZqYU+7WbzFPAtVgdp9DHZjZ+VgVq4j85r5jnrhxvSSiD6qHPtqS8/ltafTbKcFgJjis21NneHtdf3k38DYOQhmfTTVvlNPctwQoLA9/lrF79MyDBkoRpVnsLDiMsMlzkLhY+RM26HVIk1Da2dbZlfY8X6+4k1Sk7z6HCa/iHcPZMl9xOf9mImB1X4sDbhba+i4y3Xx2Fz70CZHM1ANwdfU8IWI0cnL75EW/ySNGEOaNmi3rWFsZIlvmbFJvT4AogfK02r8tyBVcHKkbrG+EI9drHHQp01D/gAqU3IXw0Auk="
+      },
+      "darwin-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v3.0.0-darwin-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmq7YkkACgkQ0bVLR6XO/sSmYQ/+KokHCLlxhcbDIfvP5Z4CytUFO6OsdVHeOhHEPGWIKFCh/PsaZg219Uf64XgTx+hu5sFHpeXglMZ3WV0ATQ7XlyBswQ/7QlCQBYUqTNC5pBbKabc58101kJOb/+Q3ZO0UBQxkueVSrmxgVww+JvBJpSU0YRzWRp3kejTO7CqWOG/2L9s3EKqNCd3OdkbZzgQGL3bvmbfZ6An2MERycfPTJlSZkbpbaGl5kSaA4POkrhUwhyaTyEzep19wsHpWX3xEkfSEJrs32VXMdP60WWv3Xhcubu1GESCpD7oyHg7TXZH+LQjCXLfqWwl1TXd6Lx0ZalDL6TQhNfECzBWZssiq+rLRLeU2DcC/2BK3iVcGHOj4YCufOkYd08Zf3gGnvttYRuO+/OUSuIjs1/yPpmcqd1CX5DIXRGg2oRdChOsNPCue+NSnUyhJHnOhA2CnZ1VJuREFgroBKZZdZdF6YWZBBrTTyIJXsJIqorvMRvsEvnZHBb8jGpNG4l/hOX5MKOouSMMC0fEFIX6AWOl0aw0ObXRJhLLv9ho5vV9+tHGeYcV5Y3xuJuBw+Z71nmLasCz738mYUzlMhwHk/XKx76OiC+TZnNJDyp/XHijMOl+c+PKYGBoyXqqUjjABywx7bCYarJuyTZmDDTsbty0tR7qOmuK/FkMUChNk/7RxpXLiNSw="
+      },
+      "windows-amd64": {
+        "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v3.0.0-windows-amd64.tar.gz",
+        "signature": "iQIzBAABCAAdFiEExViBuA9p6GO4WtXR0bVLR6XO/sQFAmq7YkkACgkQ0bVLR6XO/sRsFw//REb0FKLDrIVQB2eeb9KDy59SaXQPqyIE/eJIxCqSRGw0IwDtXyu4l9LOHJVri13h8YNcKY3ka5guk7cwgtvFYgWU9uEEbj8ecDxRFbFKfPaNJA0rtJ/gFQnidNnH811iW2akHVmR39CCZEeK7V/OaQIycSxtVHjFPEdD8PhQAfHuS+oImAug45L6lR5kTKiktjMxcI0Dxx7Zl4N96gPPlqI8oVOttcrlVEPc9rh2O6Np8QD9CavitHd5jBo7ynVTPZ+8nnpk9WoZDfLGS3LsJZnVKn9QO0u/WyKF6mt7ImJmpbrvLIvCnCqtUMR05ddFRsy7TG5g0+5uFHolBrSAp1kVbR4gW7FQefVx7cwNqnunxlwOcdTHvRpj9yqvKtAGCPcK6wlbTqpiec9xq+AEwEOvqcGPvg2Y+Pf3VFVgC1Db82m/RpLxZQGr5vod6GDLb3gDXB/OCkPpPNqWo7I2KfCWCD8miWj98icGpy7LqGmNVpaAf9Ltpyc5XD+D697qIIWB+NCkDwKoE0pK0ZQ0E5jKytad+5HpjPFPwMg5RtB549h0ReYykxmW0EGqHwSvCK+Mnu8wYWQcT3tTm9uuWZSpc7T+Vwl12qsaqQxfqXQlKikIpuNJX2XTymfiw0M/+kBmQxsheZ7mvdBd8LtHywcnoQtuqSw6dFAPa6SGnwk="
+      }
+    },
+    "updated_at": "2026-09-29T07:06:27.21653Z"
+  },
+  {
+    "homepage_url": "",
+    "icon_data": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzM2cHgiIGhlaWdodD0iMzM2cHgiIHZpZXdCb3g9IjAgMCAzMzYgMzM2IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkRhdGFtaW5yIEljb248L3RpdGxlPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkRhdGFtaW5yLUljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNzkuOSwgLTE0Ni42KSI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01MTUuOSwyNTcuNyBMNTE1LjksMjA0LjUgQzUxNS45LDE3My4yIDQ5MSwxNDcuOCA0NTkuOSwxNDYuOCBMNDU5LjksMjU3LjggTDUxNS45LDI1Ny44IEw1MTUuOSwyNTcuNyBaIiBpZD0iUGF0aCIgZmlsbD0iIzYwODhFRSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMzE4LjcsMzEzLjUgTDMxOC43LDM5OC45IEwzOTQuNSwzOTguOSBDNDE1LjMsMzk4LjkgNDMyLjIsMzgyIDQzMi4yLDM2MS4yIEw0MzIuMiwyODQuNyBMMzQ3LjUsMjg0LjcgQzMzMS42LDI4NC43IDMxOC43LDI5Ny42IDMxOC43LDMxMy41IFoiIGlkPSJQYXRoIiBmaWxsPSIjMEExNzI2Ij48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNDcuNSwyNTcuNyBMNDMyLjIsMjU3LjcgTDQzMi4yLDE0Ni42IEwyMzcuOCwxNDYuNiBDMjA1LjgsMTQ2LjYgMTc5LjksMTcyLjUgMTc5LjksMjA0LjUgTDE3OS45LDM5OC45IEwyOTEuNywzOTguOSBMMjkxLjcsMzEzLjUgQzI5MS43LDI4Mi43IDMxNi43LDI1Ny43IDM0Ny41LDI1Ny43IFoiIGlkPSJQYXRoIiBmaWxsPSIjNjA4OEVFIj48L3BhdGg+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik00NTkuOCwzNjEuMSBDNDU5LjgsMzk3LjEgNDMwLjUsNDI2LjQgMzk0LjUsNDI2LjQgTDMxOC43LDQyNi40IEwzMTguNyw0ODIuNCBMNDU4LDQ4Mi40IEM0OTAsNDgyLjQgNTE1LjksNDU2LjUgNTE1LjksNDI0LjUgTDUxNS45LDI4NC41IEw0NTkuOSwyODQuNSBMNDU5LjksMzYxIEw0NTkuOCwzNjEuMSBaIiBpZD0iUGF0aCIgZmlsbD0iIzYwODhFRSI+PC9wYXRoPgogICAgICAgICAgICA8cGF0aCBkPSJNMTgwLjEsNDI2LjUgQzE4MS4xLDQ1Ny42IDIwNi41LDQ4Mi41IDIzNy44LDQ4Mi41IEwyOTEuNyw0ODIuNSBMMjkxLjcsNDI2LjUgTDE4MC4xLDQyNi41IFoiIGlkPSJQYXRoIiBmaWxsPSIjNjA4OEVFIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
     "download_url": "https://plugins.releases.mattermost.com/release/mattermost-plugin-dataminr-v2.0.0.tar.gz",
     "release_notes_url": "",
     "hosting": "",
