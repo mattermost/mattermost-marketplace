@@ -39960,7 +39960,6 @@
       "id": "com.mattermost.plugin-dataminr",
       "name": "Mattermost Dataminr Plugin",
       "description": "Real-time alerting system that integrates Dataminr First Alert API with Mattermost.",
-      "support_url": "https://github.com/mattermost/mattermost-plugin-dataminr/issues",
       "icon_path": "assets/dataminr-icon.svg",
       "version": "3.0.0",
       "min_server_version": "12.0.0",
